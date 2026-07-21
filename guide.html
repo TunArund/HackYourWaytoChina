@@ -63,7 +63,7 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
    Side Timeline line
    ============================================================ */
 .slide::before{
-  content:'';position:absolute;z-index:2;
+  content:'';position:absolute;z-index:0;
   left:calc(var(--tl-left) + var(--tl-dot-s)/2 - var(--tl-line-w)/2);
   top:0;bottom:0;width:var(--tl-line-w);
   background:var(--timeline-line);
@@ -75,7 +75,7 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .slide-inner{
   position:relative;z-index:1;width:100%;height:100%;
   display:flex;flex-direction:column;
-  padding:60px 20px 60px calc(var(--tl-left) + 36px);
+  padding:36px 16px 36px calc(var(--tl-left) + 36px);
   color:var(--text);
 }
 @media(min-width:640px){.slide-inner{padding:72px 32px 72px calc(var(--tl-left) + 44px)}}
@@ -110,8 +110,8 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .slide-head .s-icon{font-size:2.2rem;margin-bottom:6px;display:block}
 .slide-head .s-title{font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;line-height:1.2;color:var(--text)}
 .slide-head .s-sub{font-size:0.88rem;color:var(--text-secondary);line-height:1.5}
-.slide-body{flex:1;min-width:0}
-@media(max-width:1023px){.slide-body{margin-top:22px}}
+.slide-body{flex:1;min-width:0;position:relative}
+@media(max-width:1023px){.slide-body{margin-top:10px}}
 
 /* ============================================================
    Info Cards — solid white, v1 style
@@ -271,6 +271,89 @@ body [lang]{display:none}
    In-slide footer (last slide only)
    ============================================================ */
 .slide-footer{font-size:0.7rem;color:var(--text-muted);margin-top:12px;text-align:center;line-height:1.5}
+
+/* ============================================================
+   Detail Panel — expand/collapse within slide-body
+   ============================================================ */
+.detail-panel{
+  display:none;position:absolute;top:0;left:0;right:0;bottom:0;
+  background:var(--surface);border-radius:var(--radius);
+  padding:20px 18px;overflow-y:auto;z-index:5;
+  animation:fadeIn 0.3s ease;
+  -webkit-overflow-scrolling:touch;
+}
+.detail-panel.active{display:block}
+.detail-back{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:0.85rem;font-weight:600;color:var(--accent);
+  background:none;border:none;cursor:pointer;
+  margin-bottom:14px;padding:4px 0;
+}
+.detail-back:hover{opacity:0.7}
+.detail-panel h3{font-size:1.05rem;font-weight:700;margin-bottom:12px;color:var(--text)}
+.detail-panel h4{font-size:0.88rem;font-weight:700;margin:14px 0 6px;color:var(--text)}
+.detail-table{
+  width:100%;border-collapse:collapse;
+  font-size:0.78rem;margin:8px 0 12px;
+}
+.detail-table th,.detail-table td{
+  padding:6px 8px;text-align:left;
+  border-bottom:1px solid var(--border);
+}
+.detail-table th{font-weight:700;color:var(--text);background:var(--bg);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em}
+.detail-badge{
+  display:inline-block;padding:2px 8px;border-radius:50px;
+  font-size:0.68rem;font-weight:600;
+}
+.detail-badge--ok{background:var(--success-bg);color:var(--success)}
+.detail-badge--warn{background:var(--warning-bg);color:var(--warning)}
+.detail-badge--info{background:var(--info-bg);color:var(--info)}
+
+/* Small sub-cards inside detail panels */
+.sub-card-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.sub-card{
+  background:var(--bg);border:1px solid var(--border);
+  border-radius:var(--radius-sm);padding:12px;
+  cursor:pointer;transition:all var(--transition);
+}
+.sub-card:hover{border-color:var(--accent);background:var(--accent-light)}
+.sub-card .sc-title{font-weight:700;font-size:0.85rem;margin-bottom:2px;color:var(--text)}
+.sub-card .sc-desc{font-size:0.74rem;color:var(--text-secondary)}
+.sub-card .sc-hint{font-size:0.68rem;color:var(--text-muted);margin-top:4px}
+
+/* Nav arrows between city detail pages */
+.detail-nav{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
+.detail-nav button{
+  font-size:0.78rem;padding:6px 14px;border:1px solid var(--border);
+  border-radius:50px;background:var(--surface);color:var(--text-secondary);
+  cursor:pointer;transition:all var(--transition);
+}
+.detail-nav button:hover{background:var(--accent-light);color:var(--accent);border-color:var(--accent)}
+.detail-nav .dn-center{font-size:0.76rem;color:var(--text-muted)}
+
+/* Visa detail toggle */
+.vc-detail-btn{
+  display:inline-block;margin-top:8px;font-size:0.8rem;
+  color:var(--accent);background:none;border:none;cursor:pointer;
+  font-weight:600;text-decoration:underline;
+}
+.vc-detail-btn:hover{opacity:0.7}
+
+/* ============================================================
+   Mobile spacing — tighter to fit more content per screen
+   ============================================================ */
+@media(max-width:639px){
+  .tl-head-row{gap:12px}
+  .slide-head .s-icon{margin-bottom:2px}
+  .slide-head .s-title{margin-bottom:2px}
+  .info-cards{gap:6px}
+  .info-card{padding:10px 12px}
+  .tip-box{padding:8px 10px;font-size:0.78rem}
+  .step-list li{margin-bottom:6px}
+  .detail-panel{padding:14px 12px}
+  .detail-table{font-size:0.72rem}
+  .sub-card-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body class="version-short">
@@ -419,26 +502,66 @@ body [lang]{display:none}
         <div class="info-card"><span class="c-label" lang="zh">🚕 出行</span><span class="c-label" lang="en">🚕 Transport</span><p lang="zh"><strong>滴滴</strong>:支付宝内,EN+外卡。<br><strong>地铁</strong>:乘车码。<br><strong>高铁</strong>:12306.cn/en 外卡。<br><strong>单车</strong>:支付宝¥1.5-3/次。</p><p lang="en"><strong>DiDi</strong>:Alipay,EN+card.<br><strong>Metro</strong>:transit code.<br><strong>HSR</strong>:12306.cn/en card.<br><strong>Bike</strong>:Alipay ¥1.5-3.</p></div>
         <div class="info-card"><span class="c-label" lang="zh">🍜 饮食</span><span class="c-label" lang="en">🍜 Dining</span><p lang="zh"><strong>大众点评</strong>:看照片评分。<br><strong>微信扫→译</strong>:翻菜单。<br><strong>美团/饿了么</strong>:外卖。<br>清真:"清真餐厅"/兰州拉面。<br>素食:"素食"(注意高汤)。<br>过敏:带中英文过敏卡。</p><p lang="en"><strong>Dianping</strong>:photos+score.<br><strong>WeChat Scan→TL</strong>:menu.<br><strong>Meituan/Ele.me</strong>:delivery.<br>Halal:"清真"/Lanzhou noodle.<br>Veg:"素食"(watch broth).<br>Allergy:carry bilingual card.</p></div>
         <div class="info-card"><span class="c-label" lang="zh">🏨 住宿</span><span class="c-label" lang="en">🏨 Stay</span><p lang="zh"><strong>Trip.com/Booking</strong>:确认"可接待外宾"。<br><strong>Airbnb</strong>:已停中国境内业务。<br><strong>涉外资质</strong>:非所有酒店能接待外国人。预订时务必确认。</p><p lang="en"><strong>Trip.com/Booking</strong>:check "accepts foreign guests".<br><strong>Airbnb</strong>:stopped China ops.<br><strong>涉外资质</strong>:not all hotels can host foreigners. Confirm before booking.</p></div>
-      </div></div>
+      </div>
+      <div class="tip-box tip-box--info" style="margin-top:8px"><span lang="zh"><strong>👔 穿衣尺码</strong>CN比US小1-2码,US M≈CN L/XL。优衣库/ZARA全球一致。四季:春温和·夏湿热·秋最佳·冬北-10°C/南湿冷。</span><span lang="en"><strong>👔 Clothing</strong>CN 1-2 sizes smaller than US/EU. US M≈CN L/XL. Uniqlo/ZARA global sizing. Spring:mild·Summer:hot humid·Autumn:best·Winter:N -10°C/S humid cold.</span></div></div>
     </div>
   </section>
 
-  <!-- S7: Health+Shop+Clothing  mid -->
+  <!-- S7: Medical + Aesthetics  mid -->
   <section class="slide slide--short slide-pos--mid" id="s7">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏥🛍️👔</span><h2 class="s-title" lang="zh">医疗+购物+穿衣</h2><h2 class="s-title" lang="en">Health+Shop+Wear</h2></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" lang="zh">医疗与医美</h2><h2 class="s-title" lang="en">Medical & Aesthetics</h2><p class="s-sub" lang="zh">全国57城850+机构开展国际医疗。点击卡片查看详情。</p><p class="s-sub" lang="en">850+ institutions across 57 cities. Tap cards for details.</p></div>
       </div>
-      <div class="slide-body"><div class="info-cards col3">
-        <div class="info-card"><span class="c-label" lang="zh">🏥 医疗</span><span class="c-label" lang="en">🏥 Health</span><p lang="zh"><strong>国际医院</strong>:和睦家(全国)/嘉会(沪)/明德(京)/祈福(穗)。<br><strong>药品</strong>:布洛芬=Ibuprofen、阿莫西林=Amoxicillin(Rx)、洛哌丁胺=Loperamide(止泻)。<br><strong>⚠️买旅行医保</strong>，门诊¥800-1500+。</p><p lang="en"><strong>Intl Hospitals</strong>:United Family/Jiahui(SH)/OASIS(BJ)/Clifford(GZ).<br><strong>Meds</strong>:Ibuprofen=布洛芬, Amoxicillin=阿莫西林(Rx).<br><strong>⚠️Buy travel insurance.</strong></p></div>
-        <div class="info-card"><span class="c-label" lang="zh">🛍️ 购物</span><span class="c-label" lang="en">🛍️ Shop</span><p lang="zh"><strong>淘宝/京东</strong>:支付宝/微信付。<br><strong>拼多多</strong>:低价。<br><strong>退税</strong>:"退税商店"同日≥¥500,90天离境→退11%增值税(实约9%)。机场海关办理。</p><p lang="en"><strong>Taobao/JD</strong>:Alipay/WeChat.<br><strong>Pinduoduo</strong>:budget.<br><strong>Tax refund</strong>:"Tax Free"≥¥500/d,depart 90d→11% VAT(~9%). Airport customs.</p></div>
-        <div class="info-card"><span class="c-label" lang="zh">👔 穿衣</span><span class="c-label" lang="en">👔 Clothing</span><p lang="zh"><strong>尺码</strong>:CN比US小1-2码。US M≈CN L/XL。优衣库/ZARA全球一致。<br><strong>四季</strong>:春温和·夏湿热·秋最佳·冬北-10°C/南湿冷。</p><p lang="en"><strong>Size</strong>:CN 1-2 smaller. US M≈CN L/XL. Uniqlo/ZARA global sizing.<br><strong>Seasons</strong>:mild spring·hot humid summer·best autumn·cold winter(N -10°C).</p></div>
-      </div></div>
+      <div class="slide-body">
+        <div class="info-cards">
+          <div class="info-card info-card--hl" onclick="openDetail('s7','hospital')" style="cursor:pointer"><span class="c-label" lang="zh">🏥 基础医疗</span><span class="c-label" lang="en">🏥 Hospitals</span><h4 lang="zh">国际医院 + 常用药品</h4><h4 lang="en">Intl Hospitals & Meds</h4><p lang="zh">全国主要城市国际医院、药品中英俄对照、旅行保险</p><p lang="en">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card info-card--hl" onclick="openDetail('s7','cosmetic')" style="cursor:pointer"><span class="c-label" lang="zh">💉 医美</span><span class="c-label" lang="en">💉 Aesthetic</span><h4 lang="zh">光电·注射·手术</h4><h4 lang="en">Laser·Injection·Surgery</h4><p lang="zh">价格仅为韩国1/3。光电类无恢复期，适合短期游客。含涉外机构推荐。</p><p lang="en">1/3 of Korean prices. Laser treatments ideal for short-term. Clinic recommendations.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s7','big3')" style="cursor:pointer"><span class="c-label" lang="zh">🦷👁️🌿 新三件</span><span class="c-label" lang="en">🦷👁️🌿 Big Three</span><h4 lang="zh">牙科·眼科·中医理疗</h4><h4 lang="en">Dental·Eye·TCM</h4><p lang="zh">种植牙&lt;¥5K、验光配镜立等可取、针灸推拿正骨。俄罗斯游客#1诉求。</p><p lang="en">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s7','checkup')" style="cursor:pointer"><span class="c-label" lang="zh">📋 体检</span><span class="c-label" lang="en">📋 Checkup</span><h4 lang="zh">高端体检套餐</h4><h4 lang="en">Executive Checkup</h4><p lang="zh">¥2K-10K+，含多项检查，部分机构24h出报告。半天完成。</p><p lang="en">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+        </div>
+        <div class="detail-panel" id="detail-s7"></div>
+      </div>
     </div>
   </section>
 
-  <!-- S8: Emergency+Exit  mid -->
+  <!-- S8: Shopping & Tax Refund  mid -->
   <section class="slide slide--short slide-pos--mid" id="s8">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🛍️</span><h2 class="s-title" lang="zh">购物与退税</h2><h2 class="s-title" lang="en">Shopping & Tax Refund</h2><p class="s-sub" lang="zh">2025年退税旅客+305%。12,252家退税商店,7,000+支持即买即退。</p><p class="s-sub" lang="en">Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund.</p></div>
+      </div>
+      <div class="slide-body">
+        <div class="info-cards">
+          <div class="info-card info-card--hl" onclick="openDetail('s8','electronics')" style="cursor:pointer"><span class="c-label" lang="zh">📱 科技电子</span><span class="c-label" lang="en">📱 Electronics</span><h4 lang="zh">折叠屏·无人机·AI眼镜</h4><h4 lang="en">Foldables·Drones·AI Glasses</h4><p lang="zh">深圳华强北、北京王府井、义乌。中国科技新品，价格优势明显。</p><p lang="en">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s8','souvenirs')" style="cursor:pointer"><span class="c-label" lang="zh">🎨 文创伴手礼</span><span class="c-label" lang="en">🎨 Souvenirs</span><h4 lang="zh">故宫文创·非遗·地方特色</h4><h4 lang="en">Palace Museum·Craft·Local</h4><p lang="zh">北京冰箱贴、成都蜀锦熊猫、西安绒馍馍、贵州扎染围巾。</p><p lang="en">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card info-card--ok" onclick="openDetail('s8','taxrefund')" style="cursor:pointer"><span class="c-label" lang="zh">💰 退税攻略</span><span class="c-label" lang="en">💰 Tax Refund</span><h4 lang="zh">条件·流程·即买即退</h4><h4 lang="en">Rules·Process·Instant</h4><p lang="zh">同日同店≥¥500→退11%增值税(实约9%)。90天内离境。7,000+店即买即退。</p><p lang="en">≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s8','cityshops')" style="cursor:pointer"><span class="c-label" lang="zh">🗺️ 城市购物地图</span><span class="c-label" lang="en">🗺️ City Guide</span><h4 lang="zh">各城购物特色指南</h4><h4 lang="en">Shopping by City</h4><p lang="zh">上海面料市场·深圳华强北·义乌小商品·三亚免税城·北京王府井</p><p lang="en">SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+        </div>
+        <div class="detail-panel" id="detail-s8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S9: Destination Guide  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s9">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🗺️</span><h2 class="s-title" lang="zh">目的地指南</h2><h2 class="s-title" lang="en">Destinations</h2><p class="s-sub" lang="zh">外国游客足迹已覆盖近500城。点击探索热门目的地。</p><p class="s-sub" lang="en">Foreign travelers have explored nearly 500 cities. Tap to discover.</p></div>
+      </div>
+      <div class="slide-body">
+        <div class="info-cards col3">
+          <div class="info-card info-card--hl" onclick="openDetail('s9','top10')" style="cursor:pointer"><span class="c-label" lang="zh">🏙️ 热门TOP10</span><span class="c-label" lang="en">🏙️ Top 10</span><h4 lang="zh">经典必游城市</h4><h4 lang="en">Must-Visit Cities</h4><p lang="zh">上海·北京·广州·深圳·重庆·成都·杭州·昆明·哈尔滨·青岛</p><p lang="en">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开选择城市 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Browse cities → ]</p></div>
+          <div class="info-card" onclick="openDetail('s9','rising')" style="cursor:pointer"><span class="c-label" lang="zh">🚀 新兴黑马</span><span class="c-label" lang="en">🚀 Rising</span><h4 lang="zh">社交平台新宠</h4><h4 lang="en">Social Media Stars</h4><p lang="zh">郑州(汉服)·太原(古建)·贵阳(贵替)·福州(山水)·义乌(购物)</p><p lang="en">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开选择城市 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Browse cities → ]</p></div>
+          <div class="info-card" onclick="openDetail('s9','seasons')" style="cursor:pointer"><span class="c-label" lang="zh">🌍 四季推荐</span><span class="c-label" lang="en">🌍 Seasons</span><h4 lang="zh">各季最佳目的地</h4><h4 lang="en">Best by Season</h4><p lang="zh">春·江南 / 夏·北戴河青岛 / 秋·北京西安 / 冬·哈尔滨三亚</p><p lang="en">Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&amp;Sanya</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+        </div>
+        <div class="detail-panel" id="detail-s9"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S10: Emergency+Exit  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s10">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
         <div class="slide-head"><span class="s-icon">🆘👋</span><h2 class="s-title" lang="zh">紧急+离境</h2><h2 class="s-title" lang="en">Emergency+Exit</h2></div>
@@ -613,9 +736,7 @@ function getSlideHeading(slide,idx){
   return (idx+1)+'. '+txt;
 }
 
-let dragging=false;
-
-function getScrubberRatio(clientY){const rect=scrubber.getBoundingClientRect();return Math.max(0,Math.min(1,(clientY-rect.top)/rect.height))}
+let dragging=false,pointerDownY=0;
 
 // Find bar closest to pointer (direct mapping, not via scroll position)
 function getClosestBarIndex(clientY){
@@ -628,22 +749,50 @@ function getClosestBarIndex(clientY){
   return best;
 }
 
+function showBarTooltip(idx){
+  if(!barElements[idx])return;
+  const barRect=barElements[idx].getBoundingClientRect();
+  tooltip.style.top=(barRect.top+barRect.height/2)+'px';
+  tooltip.textContent=getSlideHeading(bars[idx],idx);
+  tooltip.classList.add('show');
+}
+
+// Hover preview + restore when cursor leaves scrubber area
+let hoverActive=false;
+function isOverScrubber(e){const r=scrubber.getBoundingClientRect();return e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom}
+scrubber.addEventListener('mousemove',e=>{
+  if(dragging)return;hoverActive=true;
+  const idx=getClosestBarIndex(e.clientY);
+  updateBarHighlight(idx);showBarTooltip(idx);
+});
+scrubber.addEventListener('mouseleave',()=>{hoverActive=false;tooltip.classList.remove('show');updateBarHighlight(currentSlideIndex())});
+document.addEventListener('mousemove',e=>{
+  if(dragging||hoverActive)return;
+  if(!isOverScrubber(e)){tooltip.classList.remove('show');updateBarHighlight(currentSlideIndex())}
+});
+
+function jumpTo(idx){if(bars[idx]){bars[idx].scrollIntoView({behavior:'smooth'});updateBarHighlight(idx)}}
+
+
 scrubber.addEventListener('pointerdown',e=>{
-  dragging=true;scrubber.setPointerCapture(e.pointerId);scrubber.classList.add('dragging');tooltip.classList.add('show');
-  const idx=getClosestBarIndex(e.clientY);updateBarHighlight(idx);
-  if(bars[idx])bars[idx].scrollIntoView({behavior:'smooth'});
-  if(barElements[idx]){const barRect=barElements[idx].getBoundingClientRect();tooltip.style.top=(barRect.top+barRect.height/2)+'px';tooltip.textContent=getSlideHeading(bars[idx],idx)}
+  pointerDownY=e.clientY;dragging=false;
+  scrubber.setPointerCapture(e.pointerId);scrubber.classList.add('dragging');
+  const idx=getClosestBarIndex(e.clientY);updateBarHighlight(idx);showBarTooltip(idx);
   e.preventDefault();
 });
 scrubber.addEventListener('pointermove',e=>{
-  if(!dragging)return;
+  if(Math.abs(e.clientY-pointerDownY)<5)return;
+  dragging=true;
   const idx=getClosestBarIndex(e.clientY);
-  container.scrollTop=getScrubberRatio(e.clientY)*(container.scrollHeight-container.clientHeight);
-  updateBarHighlight(idx);
-  if(barElements[idx]){const barRect=barElements[idx].getBoundingClientRect();tooltip.style.top=(barRect.top+barRect.height/2)+'px';tooltip.textContent=getSlideHeading(bars[idx],idx)}
+  updateBarHighlight(idx);showBarTooltip(idx);
 });
-scrubber.addEventListener('pointerup',()=>{if(!dragging)return;dragging=false;scrubber.classList.remove('dragging');tooltip.classList.remove('show');const idx=currentSlideIndex();if(bars[idx])bars[idx].scrollIntoView({behavior:'smooth'});updateBarHighlight(idx)});
-scrubber.addEventListener('pointerleave',()=>{if(dragging){dragging=false;scrubber.classList.remove('dragging');tooltip.classList.remove('show')}});
+scrubber.addEventListener('pointerup',e=>{
+  scrubber.classList.remove('dragging');
+  const idx=getClosestBarIndex(e.clientY);
+  jumpTo(idx);
+  dragging=false;tooltip.classList.remove('show');
+});
+scrubber.addEventListener('pointerleave',()=>{if(dragging){scrubber.classList.remove('dragging');tooltip.classList.remove('show')}});
 container.addEventListener('scroll',()=>{if(!dragging)updateBarHighlight(currentSlideIndex())});
 window.addEventListener('resize',()=>{if(currentVersion){buildBars();updateBarHighlight(currentSlideIndex())}});
 
@@ -663,8 +812,316 @@ function evalVisa(c,p,d){const vf=VISA_FREE.has(c),tr=TRANSIT.has(c),mf=MUTUAL.h
   if(tr&&p==='transit'&&getRadio('onward')==='yes'&&d==='short')return{type:'transit',zh_t:'✅ 240小时过境免签',en_t:'✅ 240h Transit',zh_b:'55国名单。持第三国联程机票,≤240h(10天),24省级区域,60+口岸。',en_b:'55 countries. Onward ticket→≤240h(10d),24 provincial regions,60+ ports.',zh_tips:['须持第三国联程机票','指定口岸出入境','限24省级区域'],en_tips:['Onward ticket required','Designated ports','24 provincial regions']};
   if(p==='work'&&(d==='long'||d==='xlong'))return{type:'kvisa',zh_t:'💡 可能适用K签证(STEM人才)',en_t:'💡 K Visa (STEM)',zh_b:'2025.10推出。STEM学位+<40岁→无需雇主。多Entry/5年/≤180天。',en_b:'Oct 2025. STEM degree+<~40→no employer. Multi/5yr/≤180d.',zh_tips:['STEM学士及以上','无需雇主担保','可工作/研究/创业'],en_tips:['STEM degree','No employer needed','Work/research/startup']};
   return{type:'visa',zh_t:'📋 需要申请签证',en_t:'📋 Visa Required',zh_b:'根据国籍/目的/时长,需提前申请。访问当地CVASC。',en_b:'Apply in advance per nationality/purpose/duration. Visit local CVASC.',zh_tips:['visaforchina.cn','护照+照片+申请表+邀请函','约4-5工作日'],en_tips:['visaforchina.cn','Passport+photo+form+invitation','~4-5 business days']};}
-function showResult(r){vcR.className='vc-result vc-result--'+r.type+' show';const lang=document.documentElement.getAttribute('data-lang')||'zh',t=lang==='zh'?r.zh_t:r.en_t,b=lang==='zh'?r.zh_b:r.en_b,tips=lang==='zh'?(r.zh_tips||[]):(r.en_tips||[]);vcR.innerHTML=`<strong>${t}</strong><p>${b}</p>${tips.length?'<ul>'+tips.map(x=>`<li>${x}</li>`).join('')+'</ul>':''}`;vcReset.classList.add('show')}
-function resetVisaChecker(){vcN.selectedIndex=0;document.querySelectorAll('input[name="purpose"]:checked,input[name="duration"]:checked,input[name="onward"]:checked').forEach(r=>r.checked=false);vcQ4.style.display='none';vcR.className='vc-result';vcR.innerHTML='';vcReset.classList.remove('show')}
+function showResult(r){vcR.className='vc-result vc-result--'+r.type+' show';const lang=document.documentElement.getAttribute('data-lang')||'zh',t=lang==='zh'?r.zh_t:r.en_t,b=lang==='zh'?r.zh_b:r.en_b,tips=lang==='zh'?(r.zh_tips||[]):(r.en_tips||[]);vcR.innerHTML=`<strong>${t}</strong><p>${b}</p>${tips.length?'<ul>'+tips.map(x=>`<li>${x}</li>`).join('')+'</ul>':''}<button class="vc-detail-btn" onclick="event.stopPropagation();openVisaDetail('${r.type}','${vcN.value}')"><span lang="zh">📋 查看签证详情 ▸</span><span lang="en">📋 Visa Details ▸</span></button>`;vcReset.classList.add('show')}
+function resetVisaChecker(){vcN.selectedIndex=0;document.querySelectorAll('input[name="purpose"]:checked,input[name="duration"]:checked,input[name="onward"]:checked').forEach(r=>r.checked=false);vcQ4.style.display='none';vcR.className='vc-result';vcR.innerHTML='';vcReset.classList.remove('show');closeVisaDetail()}
+
+/* ============================================================
+   Detail Panel System
+   ============================================================ */
+const currentDetail={slide:null,key:null,sub:null};
+
+function openDetail(slide,key,sub){
+  const panel=document.getElementById('detail-'+slide);
+  if(!panel)return;
+  // Lock scroll BEFORE any DOM change to prevent snap jump
+  const sec=panel.closest('.slide');
+  if(sec){sec.style.scrollSnapAlign='none';sec.style.overflow='hidden'}
+  // Render
+  currentDetail.slide=slide;currentDetail.key=key;currentDetail.sub=sub||null;
+  panel.innerHTML=renderDetail(slide,key,sub);
+  panel.classList.add('active');
+  // Hide parent info-cards after panel is ready
+  const body=panel.parentElement;
+  const cards=body.querySelector('.info-cards');
+  if(cards)cards.style.display='none';
+  // Update hash (pushState does NOT trigger popstate)
+  const hash=sub?`#${slide}-detail-${key}-${sub}`:`#${slide}-detail-${key}`;
+  history.pushState({slide,key,sub},'',hash);
+}
+
+function closeDetail(slide){
+  const panel=document.getElementById('detail-'+slide);
+  if(!panel)return;
+  // Restore snap BEFORE showing cards again
+  const sec=panel.closest('.slide');
+  if(sec){sec.style.scrollSnapAlign='start';sec.style.overflow=''}
+  panel.classList.remove('active');panel.innerHTML='';
+  const body=panel.parentElement;
+  const cards=body.querySelector('.info-cards');
+  if(cards)cards.style.display='';
+  currentDetail.slide=null;currentDetail.key=null;currentDetail.sub=null;
+  history.pushState(null,'','#'+slide);
+}
+
+window.addEventListener('popstate',e=>{
+  const cd=currentDetail;
+  if(cd.slide&&e.state&&e.state.slide===cd.slide&&e.state.key===cd.key){
+    if(e.state.sub)openDetail(e.state.slide,e.state.key,e.state.sub);
+    else openDetail(e.state.slide,e.state.key);
+  }else if(cd.slide&&(!e.state||e.state.slide!==cd.slide)){
+    closeDetail(cd.slide);
+  }
+});
+
+// Esc to close
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&currentDetail.slide)closeDetail(currentDetail.slide)});
+
+/* ============================================================
+   Visa Detail
+   ============================================================ */
+const VISA_DETAIL={
+  free:{zh_t:'单方面免签',en_t:'Unilateral Visa-Free',zh_cond:['普通护照,有效期≥6个月','停留≤30天,不可延期','需持返程机票+酒店预订确认','不可从事工作、学习等付费活动','政策有效期至2026年12月31日'],en_cond:['Ordinary passport,≥6mo valid','Stay≤30d,non-extendable','Return ticket+hotel booking required','No paid work/study allowed','Valid until Dec 31,2026'],links:[{zh:'NIA免签政策页',en:'NIA Visa-Free Policy',url:'https://en.nia.gov.cn'},{zh:'北京免签FAQ(2026.5)',en:'Beijing Visa-Free FAQ',url:'https://wb.beijing.gov.cn/home/wswm/crjxx/qzxx/qztz/202605/t20260522_4661992.html'}]},
+  mutual:{zh_t:'互免签证',en_t:'Mutual Visa Exemption',zh_cond:['双方签署互免协议','普通护照免签,通常15-30天','持返程机票+住宿证明','不可工作/学习','以互免协议具体条款为准'],en_cond:['Bilateral exemption agreement','Ordinary passport,typically 15-30d','Return ticket+accommodation','No work/study','Subject to specific agreement terms'],links:[{zh:'外交部领事司',en:'MFA Consular',url:'https://www.mfa.gov.cn'}]},
+  transit:{zh_t:'240小时过境免签',en_t:'240h Transit Visa-Free',zh_cond:['55国公民适用','须持第三国联程机票(已确认座位)','限指定口岸出入境,共60+口岸','停留≤240小时(10天)','限24个省级行政区域内活动','不可超出允许区域'],en_cond:['55 eligible countries','Onward ticket to 3rd country required','Designated ports only(60+)','Stay≤240h(10 days)','24 provincial regions only','Cannot leave allowed area'],links:[{zh:'NIA过境免签政策',en:'NIA Transit Policy',url:'https://en.nia.gov.cn'}]},
+  visa:{zh_t:'需办理签证',en_t:'Visa Required',zh_cond:['提前向中国驻外使领馆申请','护照+照片+申请表+邀请函','约4-5个工作日处理','签证类型:L(旅游)/M(商务)/Q(探亲)/Z(工作)/X(学习)','费用因国籍和类型而异'],en_cond:['Apply at Chinese embassy/consulate','Passport+photo+form+invitation','~4-5 business days processing','Types:L(tourist)/M(business)/Q(family)/Z(work)/X(student)','Fee varies by nationality & type'],links:[{zh:'CVASC签证申请',en:'CVASC Application',url:'https://www.visaforchina.cn'},{zh:'在线预约',en:'Online Booking',url:'https://bio.visaforchina.cn'},{zh:'领事服务网',en:'Consular Services',url:'https://consular.mfa.gov.cn/VISA/'}]},
+  kvisa:{zh_t:'K签证(STEM人才)',en_t:'K Visa (STEM Talent)',zh_cond:['2025年10月推出','STEM学士及以上学位','年龄<40岁(建议)','无需雇主担保','在华直接申请,无需出境','多次入境/5年有效/每次≤180天','可工作、研究、创业'],en_cond:['Launched Oct 2025','STEM bachelor degree or above','Under ~40 years old','No employer sponsorship needed','Apply in-country,no exit required','Multiple entry/5yr/≤180d per stay','Work,research,startup allowed'],links:[{zh:'NIA K签证政策',en:'NIA K Visa Policy',url:'https://en.nia.gov.cn'}]}
+};
+
+function openVisaDetail(type,country){
+  const d=VISA_DETAIL[type];if(!d)return;
+  const lang=document.documentElement.getAttribute('data-lang')||'zh';
+  const t=lang==='zh'?d.zh_t:d.en_t;
+  const conds=lang==='zh'?d.zh_cond:d.en_cond;
+  const links=d.links||[];
+  const ruNote=(country==='RU'&&type==='free')?(lang==='zh'?'<p style="margin-top:8px;padding:8px 10px;background:var(--warning-bg);border-radius:var(--radius-sm);font-size:0.82rem;color:var(--warning)"><strong>⚠️ 俄罗斯公民注意：</strong>免签至2026年9月14日（非12月31日）</p>':'<p style="margin-top:8px;padding:8px 10px;background:var(--warning-bg);border-radius:var(--radius-sm);font-size:0.82rem;color:var(--warning)"><strong>⚠️ Russian citizens:</strong> Valid until Sep 14,2026 (not Dec 31)</p>'):'';
+  vcR.innerHTML=`<div style="margin-bottom:10px"><button class="detail-back" onclick="event.stopPropagation();closeVisaDetail()">← <span lang="zh">返回检测结果</span><span lang="en">Back to result</span></button></div><h4 style="margin-bottom:10px">📋 ${t}</h4><ul class="step-list">${conds.map(c=>`<li>${c}</li>`).join('')}</ul>${ruNote}${links.length?`<div style="margin-top:12px"><p style="font-size:0.78rem;font-weight:700;margin-bottom:4px" lang="zh">🔗 官方链接</p><p style="font-size:0.78rem;font-weight:700;margin-bottom:4px" lang="en">🔗 Official Links</p>${links.map(l=>`<a href="${l.url}" target="_blank" rel="noopener" style="display:block;font-size:0.8rem;color:var(--info);text-decoration:underline;margin-bottom:2px">${lang==='zh'?l.zh:l.en} →</a>`).join('')}</div>`:''}`;
+  history.pushState({visaDetail:true,type,country},'','#s1-detail-visa');
+}
+function closeVisaDetail(){
+  const r=vcR._lastResult;
+  if(r){showResult(r);vcR._lastResult=r}
+  history.pushState(null,'','#s1');
+}
+// Save last result for return
+const _origShowResult=showResult;
+showResult=function(r){vcR._lastResult=r;_origShowResult(r)};
+
+/* ============================================================
+   S7 Medical Data
+   ============================================================ */
+function renderDetail(slide,key,sub){
+  const lang=document.documentElement.getAttribute('data-lang')||'zh';
+  const L=(zh,en)=>lang==='zh'?zh:en;
+  const backBtn=(label,onclick)=>`<button class="detail-back" onclick="${onclick}">← ${label}</button>`;
+  if(slide==='s7'){
+    if(key==='hospital')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s7')")}
+      <h3>${L('🏥 国际医疗服务','🏥 International Medical Services')}</h3>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:12px">${L('全国57城市、850+机构开展国际医疗。2025年128万国际患者(+73.6%)。','850+ institutions across 57 cities. 1.28M international patients in 2025 (+73.6%).')}</p>
+      <h4>${L('国际医院','International Hospitals')}</h4>
+      <table class="detail-table"><tr><th>${L('城市','City')}</th><th>${L('机构','Hospital')}</th><th>${L('备注','Note')}</th></tr>
+      <tr><td>${L('上海','Shanghai')}</td><td>${L('华山医院 / 嘉会国际','Huashan / Jiahui')}</td><td>${L('90+国患者','90+ countries')}</td></tr>
+      <tr><td>${L('北京','Beijing')}</td><td>${L('协和医院 / 和睦家','PUMCH / UFH')}</td><td>${L('国际部¥600-1200','Intl dept ¥600-1200')}</td></tr>
+      <tr><td>${L('广州','Guangzhou')}</td><td>${L('中山一院 / 祈福','SYSU 1st / Clifford')}</td><td>${L('25家试点','25 pilot hospitals')}</td></tr>
+      <tr><td>${L('天津','Tianjin')}</td><td>${L('鹏瑞利医院','Pengruili')}</td><td>${L('外商独资三级','Foreign-owned tertiary')}</td></tr>
+      <tr><td>${L('海南','Hainan')}</td><td>${L('博鳌乐城先行区','Lecheng Pilot Zone')}</td><td>${L('境外未批药械可用','Intl drugs/devices')}</td></tr></table>
+      <h4>${L('常用药品中英俄对照','Common Meds (CN/EN/RU)')}</h4>
+      <table class="detail-table"><tr><th>${L('中文','CN')}</th><th>English</th><th>Русский</th><th>${L('用途','Use')}</th></tr>
+      <tr><td>布洛芬</td><td>Ibuprofen</td><td>Ибупрофен</td><td>${L('止痛/退烧','Pain/Fever')}</td></tr>
+      <tr><td>阿莫西林</td><td>Amoxicillin</td><td>Амоксициллин</td><td>${L('抗生素(Rx)','Antibiotic(Rx)')}</td></tr>
+      <tr><td>洛哌丁胺</td><td>Loperamide</td><td>Лоперамид</td><td>${L('止泻','Anti-diarrheal')}</td></tr>
+      <tr><td>氯雷他定</td><td>Loratadine</td><td>Лоратадин</td><td>${L('抗过敏','Antihistamine')}</td></tr>
+      <tr><td>奥美拉唑</td><td>Omeprazole</td><td>Омепразол</td><td>${L('胃酸/胃痛','Acid reflux')}</td></tr></table>
+      <div class="tip-box tip-box--warn"><strong>${L('⚠️ 务必购买旅行医疗保险','⚠️ Buy Travel Insurance')}</strong><span>${L('门诊¥800-1,500+，国际部挂号¥600-1,200。推荐Cigna/Allianz/Bupa。','Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa.')}</span></div>`;
+    if(key==='cosmetic')return sub?renderCosmeticClinic(sub):
+      `${backBtn(L('返回','Back'),"closeDetail('s7')")}
+      <h3>${L('💉 医美指南','💉 Aesthetic Medicine Guide')}</h3>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:10px">${L('💡 中国价格约为韩国1/3。韩国2026年起取消外国人整形退税。','💡 ~1/3 of Korean prices. Korea ended foreigner plastic surgery tax refund in 2026.')}</p>
+      <h4>${L('⚡ 光电类（无恢复期，适合短期游客）','⚡ Laser/Light (No downtime — ideal for visitors)')}</h4>
+      <table class="detail-table"><tr><th>${L('项目','Treatment')}</th><th>${L('价格(元)','Price(¥)')}</th><th>${L('时长','Time')}</th></tr>
+      <tr><td>${L('光子嫩肤M22','IPL/M22 Full Face')}</td><td>1,200-3,000</td><td>30min</td></tr>
+      <tr><td>${L('超皮秒祛斑','PicoSure/Picoway')}</td><td>2,500-5,000</td><td>40min</td></tr>
+      <tr><td>${L('热玛吉五代','Thermage FLX 5')}</td><td>12,000-18,000</td><td>90min</td></tr>
+      <tr><td>${L('超声炮','Ultherapy/HIFU')}</td><td>5,000-12,000</td><td>60min</td></tr>
+      <tr><td>${L('激光脱毛(小腿)','Laser Hair Removal(Leg)')}</td><td>1,000-2,000</td><td>30min</td></tr></table>
+      <h4>${L('💉 注射类（即做即走）','💉 Injectables (Walk-in/Walk-out)')}</h4>
+      <table class="detail-table"><tr><th>${L('项目','Treatment')}</th><th>${L('价格(元)','Price(¥)')}</th></tr>
+      <tr><td>${L('进口瘦脸针(保妥适50U)','Botox 50U (Import)')}</td><td>2,000-3,500</td></tr>
+      <tr><td>${L('进口玻尿酸1ml(乔雅登)','Juvederm 1ml')}</td><td>3,000-8,000</td></tr>
+      <tr><td>${L('国产瘦脸针(衡力100U)','BTX-A 100U (Domestic)')}</td><td>800-2,800</td></tr>
+      <tr><td>${L('国产玻尿酸1ml','HA Filler 1ml (Domestic)')}</td><td>1,000-3,000</td></tr>
+      <tr><td>${L('嗨体颈纹','Neck Line Filler')}</td><td>1,800-3,000</td></tr></table>
+      <h4>${L('🔪 手术类（需恢复期→不推荐短期游客）','🔪 Surgical (Recovery needed — not for short stays)')}</h4>
+      <table class="detail-table"><tr><th>${L('项目','Procedure')}</th><th>${L('价格(元)','Price(¥)')}</th><th>${L('恢复期','Recovery')}</th></tr>
+      <tr><td>${L('埋线双眼皮','Thread Lift Eyelid')}</td><td>2,000-8,000</td><td>3-7${L('天','d')}</td></tr>
+      <tr><td>${L('全切双眼皮','Incisional Eyelid')}</td><td>3,000-15,000</td><td>7-14${L('天','d')}</td></tr>
+      <tr><td>${L('鼻综合(硅胶+耳软骨)','Rhinoplasty(Silicone+Cartilage)')}</td><td>8,000-18,000</td><td>14-30${L('天','d')}</td></tr>
+      <tr><td>${L('肋软骨鼻综合','Rib Cartilage Rhinoplasty')}</td><td>15,000-40,000</td><td>30+${L('天','d')}</td></tr></table>
+      <h4>${L('🏥 推荐机构（点击查看详情）','🏥 Recommended Clinics (tap for details)')}</h4>
+      <div class="sub-card-grid">
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s7','cosmetic','jiahui')"><div class="sc-title">${L('上海嘉会国际医院','Shanghai Jiahui Intl')}</div><div class="sc-desc">${L('JCI标准·多语种·手术+非手术','JCI·Multilingual·Surg+Non-surg')}</div><div class="sc-hint">${L('[ 查看详情 → ]','[ Details → ]')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s7','cosmetic','mhwd')"><div class="sc-title">${L('美华沃德·丁香门诊部','MHWD·Dingxiang Clinic')}</div><div class="sc-desc">${L('国际部·合规设备·个性化方案','Intl Dept·Compliant·Personalized')}</div><div class="sc-hint">${L('[ 查看详情 → ]','[ Details → ]')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s7','cosmetic','rodeo')"><div class="sc-title">RODEO ${L('柔缇欧(上海)','(Shanghai)')}</div><div class="sc-desc">${L('美式连锁·美国医生背景','American Chain·US Background')}</div><div class="sc-hint">${L('[ 查看详情 → ]','[ Details → ]')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s7','cosmetic','yuansong')"><div class="sc-title">${L('媛颂医美(上海)','YuanSong (Shanghai)')}</div><div class="sc-desc">${L('韩/日/中东客户经验·自然审美','KR/JP/MidEast clients·Natural')}</div><div class="sc-hint">${L('[ 查看详情 → ]','[ Details → ]')}</div></div>
+      </div>`;
+    if(key==='big3')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s7')")}
+      <h3>${L('🦷👁️🌿 医疗新三件','🦷👁️🌿 Medical "Big Three"')}</h3>
+      <h4>${L('🦷 牙科','🦷 Dental')}</h4>
+      <table class="detail-table"><tr><th>${L('项目','Item')}</th><th>${L('中国价格','China')}</th><th>${L('美国/欧洲','US/EU')}</th></tr>
+      <tr><td>${L('种植牙','Dental Implant')}</td><td>&lt; ¥5,000</td><td>$3,000-5,000</td></tr>
+      <tr><td>${L('洗牙','Cleaning')}</td><td>¥200-500</td><td>$200-400</td></tr>
+      <tr><td>${L('美容牙冠','Cosmetic Crown')}</td><td>¥2,000-5,000</td><td>$800-2,000</td></tr></table>
+      <h4>${L('👁️ 眼科','👁️ Ophthalmology')}</h4>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:8px">${L('验光配镜"立等可取"，当天取镜。激光近视手术¥8,000-20,000。推荐：上海眼耳鼻喉科医院。','Glasses same-day service. Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital.')}</p>
+      <h4>${L('🌿 中医理疗（俄罗斯游客 #1 诉求）','🌿 TCM Therapy (#1 Russian request)')}</h4>
+      <table class="detail-table"><tr><th>${L('项目','Therapy')}</th><th>${L('说明','Description')}</th><th>${L('价格','Price')}</th></tr>
+      <tr><td>${L('针灸','Acupuncture')}</td><td>${L('颈椎/腰椎/肩周炎','Neck/Back/Shoulder')}</td><td>¥100-300/${L('次','sess')}</td></tr>
+      <tr><td>${L('推拿','Tuina Massage')}</td><td>${L('经络推拿','Meridian massage')}</td><td>¥150-400/${L('次','sess')}</td></tr>
+      <tr><td>${L('正骨','Bone-Setting')}</td><td>${L('骨伤复位','Orthopedic reset')}</td><td>¥200-500/${L('次','sess')}</td></tr>
+      <tr><td>${L('草药','Herbal Medicine')}</td><td>${L('个性化配方','Personalized formula')}</td><td>¥100-500/${L('剂','dose')}</td></tr></table>
+      <div class="tip-box tip-box--info" style="margin-top:8px"><strong>${L('📍 TCM 热门目的地','📍 TCM Hotspots')}</strong><span>${L('三亚市中医院(国际部)·黑河市中医院(俄语服务,年2,000+)·珲春市医院(俄语翻译)·饶河县中医院(保健浴+推拿)','Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(baths+massage)')}</span></div>`;
+    if(key==='checkup')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s7')")}
+      <h3>${L('📋 健康体检','📋 Health Checkup')}</h3>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:10px">${L('中国大型三甲医院体检中心,套餐¥2,000-10,000+,含多项检查。部分机构24h出报告,无需住院,半天完成。','Major hospitals offer executive checkups, ¥2K-10K+. Some 24h reports. No overnight stay, half-day visit.')}</p>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:8px">${L('<strong>推荐：</strong>协和国际部、华山国际部、嘉会国际','<strong>Recommended:</strong> PUMCH Intl, Huashan Intl, Jiahui Intl')}</p>
+      <div class="tip-box tip-box--warn"><strong>${L('⚠️ 注意','⚠️ Note')}</strong><span>${L('建议提前1-2周预约。空腹前往,部分项目需停服药物(遵医嘱)。','Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications.')}</span></div>`;
+  }
+  // S8 Shopping
+  if(slide==='s8'){
+    if(key==='electronics')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s8')")}
+      <h3>${L('📱 科技电子产品','📱 Electronics & Gadgets')}</h3>
+      <table class="detail-table"><tr><th>${L('品类','Category')}</th><th>${L('推荐理由','Why Buy')}</th><th>${L('参考价','Price')}</th></tr>
+      <tr><td>${L('折叠屏手机','Foldable Phone')}</td><td>${L('中国品牌全球领先','Chinese brands lead globally')}</td><td>¥5K-15K</td></tr>
+      <tr><td>${L('无人机','Drone')}</td><td>${L('DJI全球霸主','DJI dominates globally')}</td><td>¥2K-10K</td></tr>
+      <tr><td>${L('AI眼镜','AI Glasses')}</td><td>${L('新兴品类,中国先行','New category,China-first')}</td><td>¥2K-5K</td></tr>
+      <tr><td>${L('智能翻译器','Smart Translator')}</td><td>${L('100+语种实时互译','100+ languages real-time')}</td><td>¥500-2K</td></tr>
+      <tr><td>${L('蓝牙耳机','TWS Earbuds')}</td><td>${L('性价比极高','Great value')}</td><td>¥100-1K</td></tr></table>
+      <div class="tip-box tip-box--info" style="margin-top:8px"><strong>${L('📍 推荐购买地','📍 Where to Buy')}</strong><span>${L('深圳华强北—"中国电子第一街",35家专业市场,多语种+外卡+退税。北京王府井—品牌旗舰店集中。浙江义乌—"世界超市",一站式。','SZ Huaqiangbei—"China Electronics Street",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—"World Supermarket",one-stop.')}</span></div>`;
+    if(key==='souvenirs')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s8')")}
+      <h3>${L('🎨 文创伴手礼','🎨 Cultural Souvenirs')}</h3>
+      <table class="detail-table"><tr><th>${L('城市','City')}</th><th>${L('代表商品','Item')}</th></tr>
+      <tr><td>${L('北京','Beijing')}</td><td>${L('天宫藻井冰箱贴·故宫文创','Forbidden City fridge magnets')}</td></tr>
+      <tr><td>${L('成都','Chengdu')}</td><td>${L('非遗蜀锦熊猫文创·宽窄巷子手信','Panda brocade crafts·Kuanzhai gifts')}</td></tr>
+      <tr><td>${L('西安',"Xi'an")}</td><td>${L('"绒馍馍"肉夹馍文创·兵马俑周边','Plush "Roujiamo"·Terracotta souvenirs')}</td></tr>
+      <tr><td>${L('重庆','Chongqing')}</td><td>${L('黄铜摆件(铜师傅)·洪崖洞文创','Brass ornaments·Hongyadong crafts')}</td></tr>
+      <tr><td>${L('贵州','Guizhou')}</td><td>${L('扎染围巾·银饰冰箱贴·民族风钥匙扣','Indigo scarves·Silver magnets·Ethnic keychains')}</td></tr></table>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-top:8px">${L('💡 各城市文创店集中在景区周边和特色街区','💡 Cultural shops cluster near scenic spots and heritage streets')}</p>`;
+    if(key==='taxrefund')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s8')")}
+      <h3>${L('💰 离境退税指南','💰 Tax Refund Guide')}</h3>
+      <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:8px">${L('📊 全国12,252家退税商店。2025年退税旅客+305%。','📊 12,252 refund stores nationwide. +305% refund travelers in 2025.')}</p>
+      <h4>${L('退税条件','Requirements')}</h4><ul class="step-list">
+      <li>${L('外国游客,停留不超过183天','Foreign visitor, stay ≤183 days')}</li>
+      <li>${L('同日同店消费≥¥500','Same store same day ≥¥500')}</li>
+      <li>${L('离境日距购买日≤90天','Departure ≤90 days from purchase')}</li>
+      <li>${L('商品随身携带(勿托运)','Carry items (do NOT check in)')}</li></ul>
+      <h4>${L('退税流程','Process')}</h4><ol class="step-list">
+      <li>${L('购物时索要《离境退税申请单》+ 发票','Ask for "Tax Refund Application" + invoice')}</li>
+      <li>${L('机场海关核验(出示商品+护照+单证)','Customs verification (show goods+passport+docs)')}</li>
+      <li>${L('退税窗口领取退税款(现金/卡/支付宝)','Collect refund (cash/card/Alipay)')}</li></ol>
+      <div class="tip-box tip-box--good"><strong>${L('💡 "即买即退"','💡 Instant Refund')}</strong><span>${L('7,000+商店支持,购物时直接抵扣,无需机场排队。上海"全市通退"全域覆盖,海南离岛免税。','7,000+ stores: deduct at purchase, no airport queue. Shanghai city-wide. Hainan duty-free.')}</span></div>`;
+    if(key==='cityshops')return sub?renderShopCity(sub):
+      `${backBtn(L('返回','Back'),"closeDetail('s8')")}
+      <h3>${L('🗺️ 城市购物地图','🗺️ City Shopping Guide')}</h3>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-bottom:10px">${L('点击城市查看详情','Tap a city for details')}</p>
+      <div class="sub-card-grid">
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','shenzhen')"><div class="sc-title">${L('深圳·华强北','Shenzhen·Huaqiangbei')}</div><div class="sc-desc">${L('中国电子第一街','China Electronics Street')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','shanghai')"><div class="sc-title">${L('上海·面料市场','Shanghai·Fabric Market')}</div><div class="sc-desc">${L('旗袍定制·西装定制','Qipao & Suit Tailoring')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','yiwu')"><div class="sc-title">${L('义乌·国际商贸城','Yiwu·Trade City')}</div><div class="sc-desc">${L('世界超市·一站式','World Supermarket')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','sanya')"><div class="sc-title">${L('三亚·免税城','Sanya·Duty Free')}</div><div class="sc-desc">${L('离岛免税·国际品牌','Offshore Duty-Free')}</div></div>
+        <div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','beijing')"><div class="sc-title">${L('北京·王府井','Beijing·Wangfujing')}</div><div class="sc-desc">${L('品牌旗舰·老字号','Flagship·Heritage')}</div></div>
+      </div>`;
+  }
+  // S9 Destinations
+  if(slide==='s9'){
+    if(key==='top10')return sub?renderDestCity(sub,'top10'):
+      `${backBtn(L('返回','Back'),"closeDetail('s9')")}
+      <h3>${L('🏙️ 热门城市 TOP10','🏙️ Top 10 Cities')}</h3>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-bottom:10px">${L('点击城市查看详情','Tap a city for details')}</p>
+      <div class="sub-card-grid">${['shanghai','beijing','guangzhou','shenzhen','chongqing','chengdu','hangzhou','kunming','harbin','qingdao'].map(c=>{
+        const d=DEST_CITIES[c];return `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','top10','${c}')"><div class="sc-title">${d.flag} ${L(d.zh_name,d.en_name)}</div><div class="sc-desc">${L(d.zh_tag,d.en_tag)}</div></div>`;
+      }).join('')}</div>`;
+    if(key==='rising')return sub?renderDestCity(sub,'rising'):
+      `${backBtn(L('返回','Back'),"closeDetail('s9')")}
+      <h3>${L('🚀 新兴黑马城市','🚀 Rising Star Cities')}</h3>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-bottom:10px">${L('社交平台爆红的新兴目的地','Trending destinations on social media')}</p>
+      <div class="sub-card-grid">${['zhengzhou','taiyuan','guiyang','fuzhou','yiwu'].map(c=>{
+        const d=DEST_CITIES[c];return `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','rising','${c}')"><div class="sc-title">${d.flag} ${L(d.zh_name,d.en_name)}</div><div class="sc-desc">${L(d.zh_tag,d.en_tag)}</div></div>`;
+      }).join('')}</div>`;
+    if(key==='seasons')return `
+      ${backBtn(L('返回','Back'),"closeDetail('s9')")}
+      <h3>${L('🌍 四季推荐','🌍 Seasonal Picks')}</h3>
+      <div class="tip-box tip-box--info"><strong>🌸 ${L('春 (3-5月)','Spring (Mar-May)')}</strong><span>${L('温暖舒适,江南最佳。杭州西湖·苏州园林·昆明花海。','Mild & pleasant. Hangzhou West Lake·Suzhou Gardens·Kunming flowers.')}</span></div>
+      <div class="tip-box tip-box--info"><strong>🌿 ${L('夏 (6-8月)','Summer (Jun-Aug)')}</strong><span>${L('北戴河/青岛避暑。青岛啤酒节·哈尔滨凉爽·张家界。','Escape heat: Beidaihe/Qingdao. Beer Festival·Harbin cool·Zhangjiajie.')}</span></div>
+      <div class="tip-box tip-box--good"><strong>🍂 ${L('秋 (9-11月) 最佳季节','Autumn (Sep-Nov) Best!')}</strong><span>${L('全国皆宜。北京香山红叶·西安古城·桂林山水。','Best nationwide. Beijing red leaves·Xi\'an ancient city·Guilin scenery.')}</span></div>
+      <div class="tip-box tip-box--info"><strong>❄️ ${L('冬 (12-2月)','Winter (Dec-Feb)')}</strong><span>${L('北国冰雪vs南国暖阳。哈尔滨冰雪大世界(东南亚最爱)·三亚热带海滨(俄罗斯最爱)。','North ice vs South sun. Harbin Ice Festival(SE Asia fav)·Sanya tropics(Russian fav).')}</span></div>
+      <p style="font-size:0.78rem;color:var(--text-muted);margin-top:10px">${L('👔 尺码提示:CN比US小1-2码,US M≈CN L/XL。优衣库/ZARA全球一致。','👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing.')}</p>`;
+  }
+  return '';
+}
+
+/* S7 sub-panels */
+function renderCosmeticClinic(key){
+  const lang=document.documentElement.getAttribute('data-lang')||'zh';const L=(zh,en)=>lang==='zh'?zh:en;
+  const clinics={
+    jiahui:{zh_n:'上海嘉会国际医院',en_n:'Shanghai Jiahui Intl Hospital',addr:'上海市徐汇区桂平路689号',tel:'4008-919191',web:'jiahui.com',desc_zh:'国际JCI标准,多语种服务团队。手术类(软组织切除、腹壁整形、形体塑形)与非手术类(肉毒素、各类填充剂注射)。年服务外籍10+例专程手术。',desc_en:'JCI-standard, multilingual team. Surgical (soft tissue, abdominoplasty, body contouring) & non-surgical (Botox, fillers). 10+ intl surgical cases/year.'},
+    mhwd:{zh_n:'美华沃德·丁香门诊部',en_n:'MHWD·Dingxiang Clinic',addr:'上海市',tel:'—',web:'—',desc_zh:'设有国际部,多语种服务。所有医美服务在正规医疗资质下开展,使用合规设备与产品。由国内皮肤医美与注射美容领域专家领衔。',desc_en:'International dept, multilingual. All services under proper medical licensing with compliant equipment. Led by dermatology & injection experts.'},
+    rodeo:{zh_n:'RODEO柔缇欧(上海)',en_n:'RODEO (Shanghai)',addr:'上海市黄浦区茂名南路7号2楼',tel:'—',web:'—',desc_zh:'美式跨境连锁医美品牌。医生团队含美国顶尖医学中心背景专家,获多个国际品牌官方认证。涉外服务:配置对应语言服务人员,流程符合国际标准。',desc_en:'American cross-border chain. US-trained physicians with international brand certifications. Language-matched service staff, internationally compliant protocols.'},
+    yuansong:{zh_n:'媛颂医美(上海)',en_n:'YuanSong Aesthetics (Shanghai)',addr:'上海市(多个院区)',tel:'—',web:'—',desc_zh:'已服务韩国、日本、中东等地区客户。采用注射填充方案替代高风险磨骨手术。推崇自然"妈生脸"效果,审美开放多元。',desc_en:'Served clients from Korea, Japan, Middle East. Uses filler-based contouring instead of high-risk bone shaving. Natural aesthetics philosophy.'}
+  };
+  const c=clinics[key];if(!c)return'';
+  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s7','cosmetic')">← ${L('返回医美指南','Back to Aesthetics')}</button>
+    <h3>🏥 ${L(c.zh_n,c.en_n)}</h3>
+    <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:4px">📍 ${c.addr}</p>
+    ${c.tel!=='—'?`<p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:4px">📞 ${c.tel}</p>`:''}
+    ${c.web!=='—'?`<p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:10px">🌐 ${c.web}</p>`:''}
+    <p style="font-size:0.83rem;color:var(--text);line-height:1.55">${L(c.desc_zh,c.desc_en)}</p>`;
+}
+
+/* S8 city shops sub-panels */
+function renderShopCity(key){
+  const lang=document.documentElement.getAttribute('data-lang')||'zh';const L=(zh,en)=>lang==='zh'?zh:en;
+  const cities={
+    shenzhen:{zh_n:'深圳·华强北',en_n:'Shenzhen·Huaqiangbei',desc_zh:'"中国电子第一街",35家专业市场。品类:手机、配件、无人机、智能穿戴。多语种标识+外卡支付+退税配套。交通:地铁1号线华强路站。贴士:货比三家,部分市场可砍价。',desc_en:'"China Electronics Street",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable.'},
+    shanghai:{zh_n:'上海·面料市场',en_n:'Shanghai·Fabric Market',desc_zh:'南外滩轻纺面料市场等。旗袍定制、西装定制,落地量身。价格¥300-2,000+不等,2-3天取货。支持外卡。',desc_en:'South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted.'},
+    yiwu:{zh_n:'义乌·国际商贸城',en_n:'Yiwu·Trade City',desc_zh:'"世界超市",从手机壳到智能家电、无人机应有尽有。2026上半年机票量+60%。一站式购物体验,多语种标识+外卡支付。',desc_en:'"World Supermarket", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards.'},
+    sanya:{zh_n:'三亚·国际免税城',en_n:'Sanya·Duty Free Mall',desc_zh:'离岛+离境旅客均享免税优惠。国际品牌齐全,价格优势明显。2025年政策升级。购物流程简单:登记→扫码支付→机场提货,<3分钟办完。',desc_en:'Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min.'},
+    beijing:{zh_n:'北京·王府井',en_n:'Beijing·Wangfujing',desc_zh:'品牌数码旗舰店集中,传统老字号+现代购物中心。配眼镜"立等可取"。退税商店密集,支持即买即退。',desc_en:'Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund.'}
+  };
+  const c=cities[key];if(!c)return'';
+  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s8','cityshops')">← ${L('返回购物地图','Back to City Guide')}</button>
+    <h3>🛍️ ${L(c.zh_n,c.en_n)}</h3>
+    <p style="font-size:0.85rem;color:var(--text);line-height:1.6">${L(c.desc_zh,c.desc_en)}</p>`;
+}
+
+/* S9 destination city data & sub-panels */
+const DEST_CITIES={
+  shanghai:{flag:'🇨🇳',zh_name:'上海',en_name:'Shanghai',zh_tag:'外滩·豫园·迪士尼',en_tag:'Bund·Yu Garden·Disney',zh_desc:'全年入境828万+。必去:外滩、豫园、迪士尼乐园。美食:小笼包、生煎、本帮菜。购物:南京路、面料市场旗袍定制。贴士:地铁四通八达,72h过境免签可用。',en_desc:'8.28M+ annual arrivals. Must-see: the Bund, Yu Garden, Disney. Food: xiaolongbao, shengjian, Shanghainese cuisine. Shop: Nanjing Rd, fabric market qipao. Tip: extensive metro, 72h transit visa usable.'},
+  beijing:{flag:'🇨🇳',zh_name:'北京',en_name:'Beijing',zh_tag:'故宫·长城·胡同',en_tag:'Forbidden City·Great Wall·Hutongs',zh_desc:'千年古都。必去:故宫、长城、天坛。美食:烤鸭、炸酱面、涮羊肉。购物:王府井、潘家园古玩市场。贴士:景点需提前预约,地铁方便。',en_desc:'Ancient capital. Must-see: Forbidden City, Great Wall, Temple of Heaven. Food: Peking duck, zhajiang noodles, hotpot lamb. Shop: Wangfujing, Panjiayuan antiques. Tip: book attractions in advance, metro is easy.'},
+  guangzhou:{flag:'🇨🇳',zh_name:'广州',en_name:'Guangzhou',zh_tag:'美食·商贸·花城',en_tag:'Cuisine·Trade·Flower City',zh_desc:'入境消费额全国第一。必去:广州塔、沙面岛、白云山。美食:早茶、烧腊、煲仔饭。购物:天河商圈、白马服装市场。贴士:东南亚航线密集,热门首站。',en_desc:'#1 in inbound spending. Must-see: Canton Tower, Shamian Island, Baiyun Mountain. Food: dim sum, roast meats, claypot rice. Shop: Tianhe malls, Baima clothing market. Tip: dense SE Asia flights, popular first stop.'},
+  shenzhen:{flag:'🇨🇳',zh_name:'深圳',en_name:'Shenzhen',zh_tag:'科技·设计·创新',en_tag:'Tech·Design·Innovation',zh_desc:'中国硅谷。必去:华强北、深圳湾公园、华侨城。美食:潮汕牛肉火锅、海鲜。购物:华强北电子、万象城。贴士:紧邻香港,高铁15分钟。',en_desc:"China's Silicon Valley. Must-see: Huaqiangbei, Shenzhen Bay Park, OCT. Food: Chaoshan beef hotpot, seafood. Shop: Huaqiangbei electronics, MixC mall. Tip: 15min HSR to Hong Kong."},
+  chongqing:{flag:'🇨🇳',zh_name:'重庆',en_name:'Chongqing',zh_tag:'8D魔幻·火锅·夜景',en_tag:'8D Magic·Hotpot·Night Views',zh_desc:'增速最高(+30%)。必去:洪崖洞、磁器口、长江索道。美食:火锅、小面、江湖菜。购物:解放碑商圈。贴士:地形复杂建议穿平底鞋,导航可能失灵。',en_desc:'Fastest growing (+30%). Must-see: Hongyadong, Ciqikou, Yangtze cableway. Food: hotpot, xiaomian noodles, Jianghu cuisine. Shop: Jiefangbei. Tip: wear flats, GPS may fail in 8D terrain.'},
+  chengdu:{flag:'🇨🇳',zh_name:'成都',en_name:'Chengdu',zh_tag:'熊猫·火锅·慢生活',en_tag:'Pandas·Hotpot·Slow Life',zh_desc:'中西部第一。必去:大熊猫基地、宽窄巷子、锦里。美食:火锅、串串、担担面。购物:非遗蜀锦熊猫文创。贴士:成都人讲安逸,慢慢玩。',en_desc:'#1 in central-west China. Must-see: Panda Base, Kuanzhai Alley, Jinli. Food: hotpot, chuanchuan, dandan noodles. Shop: panda brocade crafts. Tip: locals value "anyi" (comfort), take it slow.'},
+  hangzhou:{flag:'🇨🇳',zh_name:'杭州',en_name:'Hangzhou',zh_tag:'西湖·龙井·丝绸',en_tag:'West Lake·Longjing·Silk',zh_desc:'人间天堂。必去:西湖、灵隐寺、龙井茶园。美食:东坡肉、西湖醋鱼、龙井虾仁。购物:丝绸市场、南宋御街。贴士:春季最佳,避开国庆。',en_desc:'Paradise on earth. Must-see: West Lake, Lingyin Temple, Longjing tea fields. Food: Dongpo pork, West Lake fish, Longjing shrimp. Shop: silk market, Southern Song Street. Tip: best in spring, avoid Golden Week.'},
+  kunming:{flag:'🇨🇳',zh_name:'昆明',en_name:'Kunming',zh_tag:'春城·花海·民族',en_tag:'Spring City·Flowers·Ethnic',zh_desc:'四季如春。必去:石林、滇池、斗南花市。美食:过桥米线、汽锅鸡、菌子火锅。购物:斗南鲜花、民族工艺品。贴士:东南亚门户,气候宜人全年可游。',en_desc:'Eternal spring. Must-see: Stone Forest, Dian Lake, Dounan flower market. Food: cross-bridge noodles, steam pot chicken, mushroom hotpot. Shop: fresh flowers, ethnic crafts. Tip: SE Asia gateway, pleasant year-round.'},
+  harbin:{flag:'🇨🇳',zh_name:'哈尔滨',en_name:'Harbin',zh_tag:'冰雪·俄式·东北',en_tag:'Ice·Russian·Dongbei',zh_desc:'东南亚游客最爱。必去:冰雪大世界、中央大街、圣索菲亚教堂。美食:锅包肉、红肠、俄式西餐。购物:中央大街俄货。贴士:冬季-20°C,注意保暖。',en_desc:'SE Asia favorite. Must-see: Ice Festival, Zhongyang Street, St. Sophia. Food: guobaorou, red sausage, Russian cuisine. Shop: Russian imports on Zhongyang. Tip: -20°C in winter, bundle up.'},
+  qingdao:{flag:'🇨🇳',zh_name:'青岛',en_name:'Qingdao',zh_tag:'啤酒·海滨·德式',en_tag:'Beer·Coast·German',zh_desc:'海滨名城。必去:栈桥、八大关、崂山。美食:海鲜、青岛啤酒、鲅鱼饺子。购物:台东步行街。贴士:夏季啤酒节,7-8月最佳。',en_desc:'Coastal gem. Must-see: Zhanqiao Pier, Badaguan, Laoshan. Food: seafood, Tsingtao beer, mackerel dumplings. Shop: Taidong pedestrian street. Tip: Beer Festival Jul-Aug, best in summer.'},
+  zhengzhou:{flag:'🇨🇳',zh_name:'郑州',en_name:'Zhengzhou',zh_tag:'汉服·古风·街拍',en_tag:'Hanfu·Ancient·Street Photo',zh_desc:'汉服古风街拍圣地。必去:二七塔、河南博物院、少林寺(近郊)。美食:烩面、胡辣汤。贴士:适合穿汉服拍照,沉浸式中式美学体验。',en_desc:'Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.'},
+  taiyuan:{flag:'🇨🇳',zh_name:'太原',en_name:'Taiyuan',zh_tag:'古建·悟空·晋商',en_tag:'Ancient Architecture',zh_desc:'《黑神话:悟空》取景古建打卡。必去:晋祠、双塔寺、平遥古城(近郊)。美食:刀削面、过油肉。贴士:配合游戏场景打卡,古建爱好者天堂。',en_desc:'Black Myth: Wukong filming locations. Must-see: Jinci Temple, Twin Pagodas, Pingyao (nearby). Food: daoxiaomian noodles, guoyourou. Tip: follow the game trail, ancient architecture paradise.'},
+  guiyang:{flag:'🇨🇳',zh_name:'贵阳',en_name:'Guiyang',zh_tag:'首尔贵替·素食天堂',en_tag:'Seoul Alt·Veggie Heaven',zh_desc:'韩国游客"首尔贵替",欧美素食天堂。必去:黔灵山、青岩古镇、花溪。美食:酸汤鱼、肠旺面、丝娃娃。贴士:夏季凉爽,避暑胜地。',en_desc:'Korean "Seoul alternative", Western veggie haven. Must-see: Qianling Mountain, Qingyan Old Town, Huaxi. Food: sour soup fish, changwang noodles, siwawa wraps. Tip: cool summer escape.'},
+  fuzhou:{flag:'🇨🇳',zh_name:'福州',en_name:'Fuzhou',zh_tag:'山水·温泉·茶文化',en_tag:'Nature·Hot Springs·Tea',zh_desc:'沿海山水与文化遗产。必去:三坊七巷、鼓山、西湖公园。美食:佛跳墙、鱼丸、肉燕。贴士:温泉资源丰富,适合休闲养生。',en_desc:'Coastal nature & heritage. Must-see: Sanfang Qixiang, Gushan, West Lake Park. Food: Buddha Jumps Over the Wall, fish balls, rouyan. Tip: abundant hot springs, wellness destination.'},
+  yiwu:{flag:'🇨🇳',zh_name:'义乌',en_name:'Yiwu',zh_tag:'世界超市·小商品',en_tag:'World Market·Wholesale',zh_desc:'"世界小商品之都"。2026上半年机票量+60%。必逛:国际商贸城(5个区)。美食:中东餐厅众多(常驻外商需求)。购物:从手机壳到无人机一站式。',en_desc:'"World Small Commodity Capital". Flights +60% H1 2026. Must-visit: International Trade City (5 districts). Food: many Middle Eastern restaurants. Shop: phone cases to drones, one-stop.'}
+};
+
+function renderDestCity(key,group){
+  const lang=document.documentElement.getAttribute('data-lang')||'zh';const L=(zh,en)=>lang==='zh'?zh:en;
+  const d=DEST_CITIES[key];if(!d)return'';
+  const allKeys=group==='top10'?['shanghai','beijing','guangzhou','shenzhen','chongqing','chengdu','hangzhou','kunming','harbin','qingdao']:['zhengzhou','taiyuan','guiyang','fuzhou','yiwu'];
+  const idx=allKeys.indexOf(key);
+  const prev=idx>0?allKeys[idx-1]:null;
+  const next=idx<allKeys.length-1?allKeys[idx+1]:null;
+  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s9','${group}')">← ${L('返回城市列表','Back to City List')}</button>
+    <h3>${d.flag} ${L(d.zh_name,d.en_name)}</h3>
+    <p style="font-size:0.88rem;font-weight:600;color:var(--text-secondary);margin-bottom:8px">${L(d.zh_tag,d.en_tag)}</p>
+    <p style="font-size:0.85rem;color:var(--text);line-height:1.6;margin-bottom:16px">${L(d.zh_desc,d.en_desc)}</p>
+    <div class="detail-nav">${prev?`<button onclick="event.stopPropagation();openDetail('s9','${group}','${prev}')">← ${L(DEST_CITIES[prev].zh_name,DEST_CITIES[prev].en_name)}</button>`:'<span></span>'}
+    <span class="dn-center">${idx+1}/${allKeys.length}</span>
+    ${next?`<button onclick="event.stopPropagation();openDetail('s9','${group}','${next}')">${L(DEST_CITIES[next].zh_name,DEST_CITIES[next].en_name)} →</button>`:'<span></span>'}</div>`;
+}
 
 /* ============================================================
    Language

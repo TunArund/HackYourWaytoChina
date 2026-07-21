@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>入境中国图文攻略 | China Entry Guide</title>
+<style>:root { --bg:#faf9f6;--surface:#fff;--text:#1a1a1a;--text-secondary:#5e5e5e; --text-muted:#8e8e8e;--border:#e5e0d8;--accent:#c41e3a;--accent-light:#fef0f2; --success:#2d6a4f;--success-bg:#edf7f1;--warning:#b45309;--warning-bg:#fffbeb; --info:#1e40af;--info-bg:#eff6ff; --long-accent:#7c3aed;--long-accent-light:#f5f3ff; --short-accent:#059669;--short-accent-light:#ecfdf5; --timeline-line:#d5cfc6;--timeline-dot:#c41e3a; --card-shadow:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04); --card-shadow-hover:0 4px 16px rgba(0,0,0,0.08); --radius:12px;--radius-sm:8px; --font:"PingFang SC","Noto Sans SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif; --transition:0.25s cubic-bezier(0.4,0,0.2,1); --tl-left:24px;--tl-dot-s:12px;--tl-line-w:2px; } @media(min-width:640px){:root{--tl-left:36px;--tl-dot-s:14px}} @media(min-width:1024px){:root{--tl-left:44px}} *,*::before,*::after{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth} body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased} .slides-container{ height:100dvh;overflow-y:scroll; scroll-snap-type:y mandatory;scroll-behavior:smooth; -webkit-overflow-scrolling:touch; } .slides-container::-webkit-scrollbar{display:none} .slides-container.locked{overflow:hidden} .slide--short,.slide--long{display:none} body.version-short .slide--short,body.version-long .slide--long{display:flex} body.version-short .slide--cover,body.version-long .slide--cover{display:flex} .slide{ height:100dvh;scroll-snap-align:start;overflow:hidden; position:relative;display:flex;flex-direction:column; background:var(--bg); } .slide--cover{background:linear-gradient(160deg,#fef0f2 0%,var(--bg) 50%,#eff6ff 100%)} .slide::before{ content:'';position:absolute;z-index:0; left:calc(var(--tl-left) + var(--tl-dot-s)/2 - var(--tl-line-w)/2); top:0;bottom:0;width:var(--tl-line-w); background:var(--timeline-line); } .slide-inner{ position:relative;z-index:1;width:100%;height:100%; display:flex;flex-direction:column; padding:36px 50px 36px calc(var(--tl-left) + 36px); color:var(--text); } @media(min-width:640px){.slide-inner{padding:72px 56px 72px calc(var(--tl-left) + 44px)}} @media(min-width:1024px){.slide-inner{flex-direction:row;align-items:center;gap:48px;padding:72px 64px 72px calc(var(--tl-left) + 44px)}} .slide-pos--top .slide-inner{justify-content:flex-start} .slide-pos--mid .slide-inner{justify-content:center} .slide-pos--bot .slide-inner{justify-content:flex-end} .tl-head-row{ display:flex;align-items:center;gap:20px; flex-shrink:0; margin-left:-36px; } @media(min-width:640px){.tl-head-row{margin-left:-44px}} .tl-dot{ flex-shrink:0;position:relative;z-index:3; width:var(--tl-dot-s);height:var(--tl-dot-s);border-radius:50%; background:var(--timeline-dot); box-shadow:0 0 0 4px var(--accent-light); } .slide-head{flex-shrink:0} @media(min-width:1024px){.slide-head{width:260px}} .slide-head .s-icon{font-size:2.2rem;margin-bottom:6px;display:block} .slide-head .s-title{font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;line-height:1.2;color:var(--text)} .slide-head .s-sub{font-size:0.88rem;color:var(--text-secondary);line-height:1.5} .slide-body{flex:1;min-width:0;min-height:0;position:relative;overflow-y:auto;overflow-x:hidden;display:flex;flex-direction:column} @media(max-width:1023px){.slide-body{margin-top:10px}} .info-cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))} .info-cards.col3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))} .info-card{ background:var(--surface);border:1px solid var(--border); border-radius:var(--radius);padding:14px 16px; box-shadow:var(--card-shadow);transition:all var(--transition); } .info-card:hover{box-shadow:var(--card-shadow-hover);border-color:color-mix(in srgb,var(--border) 70%,var(--accent))} .info-card .c-label{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:3px} .info-card h4{font-size:0.93rem;font-weight:700;margin-bottom:3px;color:var(--text)} .info-card p{font-size:0.81rem;color:var(--text-secondary);line-height:1.5} .info-card ol,.info-card ul{margin:6px 0 0 16px;font-size:0.8rem;color:var(--text-secondary);line-height:1.5} .info-card--hl{border-left:3px solid var(--accent)} .info-card--ok{border-left:3px solid var(--success)} .info-card--warn{border-left:3px solid var(--warning)} .info-card--info{border-left:3px solid var(--info)} .cover-grid{display:grid;gap:20px;width:100%;max-width:560px;grid-template-columns:1fr;margin:0 auto} @media(min-width:520px){.cover-grid{grid-template-columns:1fr 1fr}} .cover-card{ display:flex;flex-direction:column;align-items:center;justify-content:center; padding:32px 22px;border-radius:16px;cursor:pointer; border:2px solid var(--border);background:var(--surface); box-shadow:var(--card-shadow);transition:all var(--transition);text-align:center; } .cover-card:hover{transform:translateY(-4px);box-shadow:var(--card-shadow-hover)} .cover-card--short:hover{border-color:var(--short-accent);background:var(--short-accent-light)} .cover-card--long:hover{border-color:var(--long-accent);background:var(--long-accent-light)} .cover-card .icon{font-size:2.8rem;margin-bottom:10px;display:block} .cover-card h3{font-size:1.25rem;font-weight:700;margin-bottom:4px;color:var(--text)} .cover-card .tagline{font-size:0.85rem;color:var(--text-secondary)} .cover-card .examples{font-size:0.78rem;color:var(--text-muted);margin-top:8px} .visa-checker{max-width:500px} .vc-q{margin-bottom:14px} .vc-q label{display:block;font-weight:700;font-size:0.86rem;margin-bottom:6px;color:var(--text)} .vc-select{ width:100%;padding:10px 36px 10px 14px;border:1px solid var(--border); border-radius:var(--radius-sm);font-size:0.9rem;font-family:var(--font); background:var(--surface);color:var(--text);transition:border-color var(--transition); appearance:none;-webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238e8e8e' fill='none' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat:no-repeat;background-position:right 12px center; } .vc-select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(196,30,58,0.12)} .vc-radio-group{display:flex;flex-wrap:wrap;gap:5px} .vc-radio-label{display:inline-flex;align-items:center;gap:4px;padding:7px 14px;border:1px solid var(--border);border-radius:50px;font-size:0.82rem;cursor:pointer;transition:all var(--transition);background:var(--surface);color:var(--text-secondary);user-select:none} .vc-radio-label:hover{border-color:var(--accent);background:var(--accent-light)} .vc-radio-label:has(input:checked){background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600} .vc-radio-label input{display:none} .vc-result{display:none;margin-top:14px;padding:14px 16px;border-radius:var(--radius-sm);font-size:0.88rem;line-height:1.55} .vc-result.show{display:block;animation:fadeIn 0.35s ease} .vc-result strong{display:block;font-size:0.98rem;margin-bottom:4px} .vc-result ul{margin:4px 0 0 16px} .vc-result--free{background:var(--success-bg);border:1px solid var(--success);color:var(--success)} .vc-result--transit{background:var(--info-bg);border:1px solid var(--info);color:var(--info)} .vc-result--mutual{background:var(--success-bg);border:1px solid var(--success);color:var(--success)} .vc-result--visa{background:var(--warning-bg);border:1px solid var(--warning);color:var(--warning)} .vc-result--kvisa{background:var(--info-bg);border:1px solid var(--info);color:var(--info)} .vc-reset{display:none;margin-top:8px;font-size:0.8rem;color:var(--accent);background:none;border:none;cursor:pointer;text-decoration:underline} .vc-reset.show{display:inline-block} .tip-box{padding:12px 14px;border-radius:var(--radius-sm);font-size:0.83rem;line-height:1.5;margin-top:10px} .tip-box--warn{background:var(--warning-bg);color:var(--warning)} .tip-box--info{background:var(--info-bg);color:var(--info)} .tip-box--good{background:var(--success-bg);color:var(--success)} .tip-box strong{display:block;margin-bottom:2px} .slide-table{width:100%;border-collapse:collapse;font-size:0.82rem} .slide-table td{padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-secondary)} .slide-table td:first-child{font-weight:600;white-space:nowrap;width:35%;color:var(--text)} .slide-table tr:last-child td{border-bottom:none} .em-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px} @media(max-width:400px){.em-grid{grid-template-columns:1fr}} .em-card{background:var(--bg);border-radius:var(--radius-sm);padding:12px;text-align:center;border:1px solid var(--border)} .em-card .num{font-size:1.3rem;font-weight:800;color:var(--accent)} .em-card .lbl{font-size:0.76rem;color:var(--text-secondary);margin-top:2px} .step-list{list-style:none;counter-reset:step} .step-list li{counter-increment:step;position:relative;padding-left:32px;margin-bottom:10px;font-size:0.83rem;color:var(--text-secondary);line-height:1.45} .step-list li::before{content:counter(step);position:absolute;left:0;top:0;width:22px;height:22px;background:var(--accent-light);color:var(--accent);border-radius:50%;font-size:0.72rem;font-weight:700;display:flex;align-items:center;justify-content:center} .step-list li strong{color:var(--text)} .nav-scrubber{ position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:100; display:flex;flex-direction:column;gap:7px;padding:8px 6px;cursor:pointer; opacity:0;pointer-events:none;transition:opacity 0.3s; } .nav-scrubber.visible{opacity:1;pointer-events:auto} .nav-bar{width:22px;height:3px;border-radius:2px;background:var(--timeline-line);transition:all var(--transition);pointer-events:none} .nav-bar.active{width:32px;background:var(--accent);box-shadow:0 0 4px rgba(196,30,58,0.3)} .nav-scrubber.dragging .nav-bar{width:28px} .nav-scrubber.dragging .nav-bar.active{width:40px;background:var(--accent);box-shadow:0 0 10px rgba(196,30,58,0.5);transform:scaleX(1.2)} .scrub-tooltip{ display:none;position:fixed;right:56px;z-index:101; background:var(--text);color:var(--bg);padding:6px 14px;border-radius:8px; font-size:0.8rem;font-weight:600;white-space:nowrap; pointer-events:none;transform:translateY(-50%); } .scrub-tooltip.show{display:block} @media(max-width:480px){.nav-scrubber{right:4px;gap:6px;padding:6px 8px}.nav-bar{width:18px}.nav-bar.active{width:26px}} .top-bar{ position:fixed;top:0;left:0;right:0;z-index:100; display:flex;align-items:center;justify-content:space-between; padding:8px 16px; background:color-mix(in srgb,var(--bg) 92%,transparent); backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--border); } .top-bar-title{font-size:0.82rem;font-weight:600;color:var(--text-secondary)} .top-bar-actions{display:flex;gap:6px} .top-btn{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text-secondary);cursor:pointer;font-size:0.8rem;transition:all var(--transition);display:flex;align-items:center;justify-content:center} .top-btn:hover{background:var(--accent-light);color:var(--accent);border-color:var(--accent)} .top-btn--version{width:auto;padding:4px 12px;font-size:0.78rem;border-radius:50px;opacity:0;pointer-events:none;transition:all var(--transition);border:1px solid var(--border);background:var(--surface);color:var(--text-secondary);cursor:pointer} .top-btn--version.visible{opacity:0.8;pointer-events:auto} .top-btn--version.visible:hover{opacity:1;background:var(--accent-light);color:var(--accent);border-color:var(--accent)} .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);color:var(--text-muted);font-size:0.75rem;z-index:1;display:flex;flex-direction:column;align-items:center;gap:4px;animation:bounce 2s infinite} @keyframes bounce{0%,100%{opacity:0.4}50%{opacity:1}} body [lang]{display:none} :root[data-lang="zh"] body [lang="zh"]{display:revert} :root[data-lang="en"] body [lang="en"]{display:revert} :root[data-lang="zh"] body [lang="zh"].inline{display:inline} :root[data-lang="en"] body [lang="en"].inline{display:inline} @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}} .slide-footer{font-size:0.7rem;color:var(--text-muted);margin-top:auto;padding-top:12px;text-align:center;line-height:1.5} .detail-panel{ display:none;flex:1;overflow-y:auto;z-index:5; background:var(--surface);border-radius:var(--radius); padding:20px 18px; animation:fadeIn 0.3s ease; -webkit-overflow-scrolling:touch; } .detail-panel.active{display:block} .detail-back{ display:inline-flex;align-items:center;gap:4px; font-size:0.85rem;font-weight:600;color:var(--accent); background:none;border:none;cursor:pointer; margin-bottom:14px;padding:4px 0; } .detail-back:hover{opacity:0.7} .detail-panel h3{font-size:1.05rem;font-weight:700;margin-bottom:12px;color:var(--text)} .detail-panel h4{font-size:0.88rem;font-weight:700;margin:14px 0 6px;color:var(--text)} .dp-intro{font-size:0.82rem;color:var(--text-secondary);margin-bottom:10px;line-height:1.5} .dp-text{font-size:0.85rem;color:var(--text);line-height:1.6;margin-bottom:16px} .dp-subtitle{font-size:0.88rem;font-weight:600;color:var(--text-secondary);margin-bottom:8px} .dp-info{font-size:0.82rem;color:var(--text-secondary);margin-bottom:2px} .mt-sm{margin-top:8px} .muted-sm{font-size:0.78rem;color:var(--text-muted)} .muted-sm.mt-sm{margin-top:10px} .detail-table{ width:100%;border-collapse:collapse; font-size:0.78rem;margin:8px 0 12px; } .detail-table th,.detail-table td{ padding:6px 8px;text-align:left; border-bottom:1px solid var(--border); } .detail-table th{font-weight:700;color:var(--text);background:var(--bg);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em} .detail-badge{ display:inline-block;padding:2px 8px;border-radius:50px; font-size:0.68rem;font-weight:600; } .detail-badge--ok{background:var(--success-bg);color:var(--success)} .detail-badge--warn{background:var(--warning-bg);color:var(--warning)} .detail-badge--info{background:var(--info-bg);color:var(--info)} .sub-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin:10px 0} .sub-card{ background:var(--bg);border:1px solid var(--border); border-radius:var(--radius-sm);padding:12px; cursor:pointer;transition:all var(--transition); } .sub-card:hover{border-color:var(--accent);background:var(--accent-light)} .sub-card .sc-title{font-weight:700;font-size:0.85rem;margin-bottom:2px;color:var(--text)} .sub-card .sc-desc{font-size:0.74rem;color:var(--text-secondary)} .sub-card .sc-hint{font-size:0.68rem;color:var(--text-muted);margin-top:4px} .detail-nav{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px} .detail-nav button{ font-size:0.78rem;padding:6px 14px;border:1px solid var(--border); border-radius:50px;background:var(--surface);color:var(--text-secondary); cursor:pointer;transition:all var(--transition); } .detail-nav button:hover{background:var(--accent-light);color:var(--accent);border-color:var(--accent)} .detail-nav .dn-center{font-size:0.76rem;color:var(--text-muted)} .vc-detail-btn{ display:inline-block;margin-top:8px;font-size:0.8rem; color:var(--accent);background:none;border:none;cursor:pointer; font-weight:600;text-decoration:underline; } .vc-detail-btn:hover{opacity:0.7} @media(max-width:639px){ .tl-head-row{gap:12px} .slide-head .s-icon{margin-bottom:2px} .slide-head .s-title{margin-bottom:2px} .info-cards{gap:6px} .info-card{padding:10px 12px} .tip-box{padding:8px 10px;font-size:0.78rem} .step-list li{margin-bottom:6px} .detail-panel{padding:14px 12px} .detail-table{font-size:0.72rem} }</style>
+</head>
+<body class="version-short">
+
+<!-- ============================================================
+     Top Bar
+     ============================================================ -->
+<div class="top-bar" id="topBar">
+  <span class="top-bar-title" lang="zh">🧳 入境中国攻略</span>
+  <span class="top-bar-title" lang="en">🧳 China Entry Guide</span>
+  <div class="top-bar-actions">
+    <button class="top-btn--version" id="versionSwitch" onclick="toggleVersion()"><span lang="zh">🔄 长期居留版</span><span lang="en">🔄 Long-term</span></button>
+    <button class="top-btn" id="btnLang" aria-label="Switch language"><span lang="zh">EN</span><span lang="en">中</span></button>
+  </div>
+</div>
+
+<!-- ============================================================
+     Nav Scrubber
+     ============================================================ -->
+<div class="nav-scrubber" id="navScrubber"></div>
+<div class="scrub-tooltip" id="scrubTooltip"></div>
+
+<!-- ============================================================
+     Slides
+     ============================================================ -->
+<div class="slides-container locked" id="slidesContainer">
+
+  <!-- ====== COVER ====== -->
+  <section class="slide slide--cover slide-pos--mid" id="s0">
+    <div class="slide-inner" style="justify-content:center;align-items:center;text-align:center;flex-direction:column">
+      <div style="max-width:560px">
+        <span style="font-size:3.2rem;display:block;margin-bottom:10px">🇨🇳</span>
+        <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;margin-bottom:8px;color:var(--text)"><span lang="zh">外国人来华全攻略</span><span lang="en">The Complete China Guide</span></h2>
+        <p style="font-size:1rem;color:var(--text-secondary);margin-bottom:28px" lang="zh">选择你的身份，获取专属指南</p>
+        <p style="font-size:1rem;color:var(--text-secondary);margin-bottom:28px" lang="en">Choose your journey for a tailored guide</p>
+        <div class="cover-grid">
+          <div class="cover-card cover-card--short" onclick="startVersion('short')" role="button" tabindex="0"><span class="icon">🛫</span><h3 lang="zh">短期游客</h3><h3 lang="en">Short-term Visitor</h3><span class="tagline" lang="zh">2天 – 30天</span><span class="tagline" lang="en">2 – 30 days</span><span class="examples" lang="zh">旅游 · 商务 · 探亲 · 过境</span><span class="examples" lang="en">Tourism · Business · Visit · Transit</span></div>
+          <div class="cover-card cover-card--long" onclick="startVersion('long')" role="button" tabindex="0"><span class="icon">🏠</span><h3 lang="zh">长期居留</h3><h3 lang="en">Long-term Resident</h3><span class="tagline" lang="zh">已在华 · 打算定居</span><span class="tagline" lang="en">Already in China · Settling</span><span class="examples" lang="zh">工作 · 留学 · 身份转换 · 安居</span><span class="examples" lang="en">Work · Study · Visa Transfer · Settle</span></div>
+        </div>
+        <p style="margin-top:20px;font-size:0.8rem;color:var(--text-muted)"><span lang="zh">📅 更新于 2026年7月 &nbsp;·&nbsp; 🌐 中英双语</span><span lang="en">📅 Updated July 2026 &nbsp;·&nbsp; 🌐 Bilingual</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SHORT-TERM (10 slides) ====== -->
+
+  <!-- S1: Visa  pos=top -->
+  <section class="slide slide--short slide-pos--top" id="s1">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🔍</span><h2 class="s-title" lang="zh">我需要签证吗？</h2><h2 class="s-title" lang="en">Do I Need a Visa?</h2><p class="s-sub" lang="zh">3问自动判断。<strong>近80国</strong>免签或过境免签。</p><p class="s-sub" lang="en">3 questions. <strong>Nearly 80 countries</strong> visa-free or transit.</p></div>
+      </div>
+      <div class="slide-body"><div class="visa-checker">
+        <div class="vc-q"><label for="vcNationality"><span lang="zh">Q1 · 国籍？</span><span lang="en">Q1 · Nationality?</span></label><select class="vc-select" id="vcNationality"><option value="" disabled selected lang="zh">— 选择国家/地区 —</option><option value="" disabled selected lang="en">— Select —</option></select></div>
+        <div class="vc-q"><label><span lang="zh">Q2 · 目的？</span><span lang="en">Q2 · Purpose?</span></label><div class="vc-radio-group" id="vcPurpose">
+          <label class="vc-radio-label"><input type="radio" name="purpose" value="tourism"><span lang="zh">🏖 旅游</span><span lang="en">🏖 Tourism</span></label>
+          <label class="vc-radio-label"><input type="radio" name="purpose" value="business"><span lang="zh">💼 商务</span><span lang="en">💼 Business</span></label>
+          <label class="vc-radio-label"><input type="radio" name="purpose" value="family"><span lang="zh">👨‍👩‍👧 探亲</span><span lang="en">👨‍👩‍👧 Visit</span></label>
+          <label class="vc-radio-label"><input type="radio" name="purpose" value="transit"><span lang="zh">🔄 过境</span><span lang="en">🔄 Transit</span></label>
+          <label class="vc-radio-label"><input type="radio" name="purpose" value="work"><span lang="zh">💻 工作/学习</span><span lang="en">💻 Work/Study</span></label>
+        </div></div>
+        <div class="vc-q"><label><span lang="zh">Q3 · 多久？</span><span lang="en">Q3 · Duration?</span></label><div class="vc-radio-group" id="vcDuration">
+          <label class="vc-radio-label"><input type="radio" name="duration" value="short"><span lang="zh">≤10天</span><span lang="en">≤10d</span></label>
+          <label class="vc-radio-label"><input type="radio" name="duration" value="medium"><span lang="zh">11-30天</span><span lang="en">11-30d</span></label>
+          <label class="vc-radio-label"><input type="radio" name="duration" value="long"><span lang="zh">31-180天</span><span lang="en">31-180d</span></label>
+          <label class="vc-radio-label"><input type="radio" name="duration" value="xlong"><span lang="zh">>180天</span><span lang="en">>180d</span></label>
+        </div></div>
+        <div class="vc-q" id="vcQ4" style="display:none"><label><span lang="zh">Q4 · 第三国联程机票？</span><span lang="en">Q4 · Onward ticket?</span></label><div class="vc-radio-group" id="vcOnward">
+          <label class="vc-radio-label"><input type="radio" name="onward" value="yes"><span lang="zh">✅ 有</span><span lang="en">✅ Yes</span></label>
+          <label class="vc-radio-label"><input type="radio" name="onward" value="no"><span lang="zh">❌ 没有</span><span lang="en">❌ No</span></label>
+        </div></div>
+        <div id="vcResult" class="vc-result"></div>
+        <button id="vcReset" class="vc-reset" onclick="resetVisaChecker()"><span lang="zh">🔄 重新检测</span><span lang="en">🔄 Check Again</span></button>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- S2: Prep  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s2">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" lang="zh">出发前准备</h2><h2 class="s-title" lang="en">Before You Go</h2><p class="s-sub" lang="zh">材料清单 + 入境卡预填 + 最终检查。北京口岸<strong>97%</strong>旅客已在线填入境卡。</p><p class="s-sub" lang="en">Checklist + arrival card + final check. <strong>97%</strong> Beijing arrivals use online filing.</p></div>
+      </div>
+      <div class="slide-body">
+        <div class="info-cards">
+          <div class="info-card info-card--hl"><span class="c-label" lang="zh">📘 必备</span><span class="c-label" lang="en">📘 Req</span><h4 lang="zh">护照</h4><h4 lang="en">Passport</h4><p lang="zh">有效期≥6个月，≥2空白页</p><p lang="en">≥6mo valid, ≥2 blank pages</p></div>
+          <div class="info-card info-card--hl"><span class="c-label" lang="zh">🎫 必备</span><span class="c-label" lang="en">🎫 Req</span><h4 lang="zh">返程机票+酒店</h4><h4 lang="en">Return+Hotel</h4><p lang="zh">打印或截图电子行程单；酒店订单含中文地址</p><p lang="en">Print/screenshot e-ticket; hotel with address</p></div>
+          <div class="info-card"><span class="c-label" lang="zh">📱 在线入境卡</span><span class="c-label" lang="en">📱 Arrival Card</span><h4 lang="zh">提前在线填写</h4><h4 lang="en">Pre-fill Online</h4><p lang="zh">s.nia.gov.cn → 填好 → 截图二维码 → 扫码通关。支持拍照识别护照。也可用"移民局12367"APP/微信/支付宝小程序。</p><p lang="en">s.nia.gov.cn → fill → screenshot QR → scan. Supports passport photo scan. Also: NIA 12367 APP / WeChat / Alipay mini programs.</p></div>
+          <div class="info-card info-card--ok"><span class="c-label" lang="zh">✅ 最终检查</span><span class="c-label" lang="en">✅ Final Check</span><ol class="step-list"><li lang="zh"><strong>护照≥6个月？</strong></li><li lang="en"><strong>Passport ≥6mo?</strong></li><li lang="zh"><strong>签证/免签确认？</strong></li><li lang="en"><strong>Visa eligibility?</strong></li><li lang="zh"><strong>入境卡填好？截图</strong></li><li lang="en"><strong>Arrival card? Screenshot</strong></li><li lang="zh"><strong>支付宝/微信绑卡？</strong></li><li lang="en"><strong>Alipay/WeChat ready?</strong></li><li lang="zh"><strong>酒店地址中英文保存？</strong></li><li lang="en"><strong>Hotel address saved?</strong></li></ol></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3: Entry  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s3">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">✈️</span><h2 class="s-title" lang="zh">落地入境</h2><h2 class="s-title" lang="en">Arrival & Immigration</h2><p class="s-sub" lang="zh">通关流程+海关限额+住宿登记。14岁以下/70岁以上免指纹。</p><p class="s-sub" lang="en">Flow+customs+registration. Under 14 / over 70 fingerprint exempt.</p></div>
+      </div>
+      <div class="slide-body"><div class="info-cards col3">
+        <div class="info-card info-card--hl"><span class="c-label" lang="zh">🛂 通关6步</span><span class="c-label" lang="en">🛂 6 Steps</span><p lang="zh">①健康检疫→②指纹→③边检(护照+入境卡QR)→④行李→⑤海关→⑥到达大厅</p><p lang="en">①Health→②Fingerprint→③Border→④Baggage→⑤Customs→⑥Arrival Hall</p></div>
+        <div class="info-card info-card--warn"><span class="c-label" lang="zh">🛃 海关</span><span class="c-label" lang="en">🛃 Limits</span><p lang="zh">现金≤$5K·酒≤1.5L·烟≤400支。处方药带处方。无申报走绿通。禁止:武器/毒品/象牙/违禁出版物。</p><p lang="en">Cash≤$5K·Alc≤1.5L·Cigs≤400. Rx meds with note. Green channel. Ban:weapons/drugs/ivory.</p></div>
+        <div class="info-card info-card--info"><span class="c-label" lang="zh">🏨 住宿登记</span><span class="c-label" lang="en">🏨 Register</span><p lang="zh">酒店自动登记。私人住所:12367在线(7省试点)或派出所。换住所重登。《出境入境管理法》第39条:24h内完成。</p><p lang="en">Hotels auto. Private:12367 online(7 pilot) or police. Re-register per move. Art.39:within 24h.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- S4: Connectivity  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s4">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">📶</span><h2 class="s-title" lang="zh">通讯与网络</h2><h2 class="s-title" lang="en">Connectivity</h2><p class="s-sub" lang="zh">Google/WA/IG 不可用。落地第一件事：搞定网络。</p><p class="s-sub" lang="en">Google/WA/IG blocked. Priority: get online.</p></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card"><span class="c-label" lang="zh">📱 优选</span><span class="c-label" lang="en">📱 Best</span><h4 lang="zh">eSIM</h4><h4 lang="en">eSIM</h4><p lang="zh">Airalo/Holafly/Nomad。出发前买,落地有网。仅流量，不分配中国号码。</p><p lang="en">Airalo/Holafly/Nomad. Buy before→data on landing. Data only, no CN number.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">📱 备选</span><span class="c-label" lang="en">📱 Alt</span><h4 lang="zh">中国SIM卡</h4><h4 lang="en">CN SIM</h4><p lang="zh">机场到达厅移动/联通/电信。护照办理。月¥29-99。得号码→注册App。</p><p lang="en">Airport:Mobile/Unicom/Telecom. Passport. ¥29-99/mo. Get number→register apps.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">🔐 VPN</span><span class="c-label" lang="en">🔐 VPN</span><h4 lang="zh">出发前装好</h4><h4 lang="en">Install Early</h4><p lang="zh">Mullvad/Astrill。出发前安装+付费。备2个不同协议以防万一。</p><p lang="en">Mullvad/Astrill. Install+pay before. Keep 2 different protocols as backup.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">🚫 被墙服务</span><span class="c-label" lang="en">🚫 Blocked</span><p lang="zh">🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>替代:百度/小红书/微博/哔哩哔哩</p><p lang="en">🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>Alt:Baidu/Xiaohongshu/Weibo/Bilibili</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- S5: Payment  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s5">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">💳</span><h2 class="s-title" lang="zh">移动支付</h2><h2 class="s-title" lang="en">Mobile Payment</h2><p class="s-sub" lang="zh">中国是无现金社会。出发前绑定外卡，最关键一步。</p><p class="s-sub" lang="en">China is cashless. Link foreign card before — most critical step.</p></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card info-card--hl"><span class="c-label">Alipay</span><h4 lang="zh">支付宝绑卡教程</h4><h4 lang="en">Setup Guide</h4><ol class="step-list"><li lang="zh">App Store搜"Alipay"</li><li lang="en">Search "Alipay"</li><li lang="zh">国际号注册→护照实名</li><li lang="en">Intl#→passport verify</li><li lang="zh">我→银行卡→加Visa/MC/JCB/Amex</li><li lang="en">Me→Cards→Add Visa/MC/JCB/Amex</li><li lang="zh">扫码/付款码。≤¥200免手续费</li><li lang="en">Scan/pay code. ≤¥200 free</li></ol></div>
+        <div class="info-card"><span class="c-label">WeChat</span><h4 lang="zh">微信支付</h4><h4 lang="en">WeChat Pay</h4><ol class="step-list"><li lang="zh">WeChat→注册</li><li lang="en">Download→sign up</li><li lang="zh">我→服务→钱包→银行卡</li><li lang="en">Me→Services→Wallet→Cards</li><li lang="zh">绑Visa/MC(限额较支付宝低)</li><li lang="en">Link Visa/MC(lower limit)</li></ol><div class="tip-box tip-box--info"><strong lang="zh">💡 备用方案</strong><strong lang="en">💡 Backup</strong><span lang="zh">带少量人民币现金+ATM取现。如一个App失败，切换另一个。</span><span lang="en">Carry some RMB cash+ATM. If one app fails, try the other.</span></div></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- S6: Move+Eat+Stay  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s6">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🚇🍜🏨</span><h2 class="s-title" lang="zh">出行+饮食+住宿</h2><h2 class="s-title" lang="en">Move+Eat+Stay</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards col3">
+        <div class="info-card"><span class="c-label" lang="zh">🚕 出行</span><span class="c-label" lang="en">🚕 Transport</span><p lang="zh"><strong>滴滴</strong>:支付宝内,EN+外卡。<br><strong>地铁</strong>:乘车码。<br><strong>高铁</strong>:12306.cn/en 外卡。<br><strong>单车</strong>:支付宝¥1.5-3/次。</p><p lang="en"><strong>DiDi</strong>:Alipay,EN+card.<br><strong>Metro</strong>:transit code.<br><strong>HSR</strong>:12306.cn/en card.<br><strong>Bike</strong>:Alipay ¥1.5-3.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">🍜 饮食</span><span class="c-label" lang="en">🍜 Dining</span><p lang="zh"><strong>大众点评</strong>:看照片评分。<br><strong>微信扫→译</strong>:翻菜单。<br><strong>美团/饿了么</strong>:外卖。<br>清真:"清真餐厅"/兰州拉面。<br>素食:"素食"(注意高汤)。<br>过敏:带中英文过敏卡。</p><p lang="en"><strong>Dianping</strong>:photos+score.<br><strong>WeChat Scan→TL</strong>:menu.<br><strong>Meituan/Ele.me</strong>:delivery.<br>Halal:"清真"/Lanzhou noodle.<br>Veg:"素食"(watch broth).<br>Allergy:carry bilingual card.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">🏨 住宿</span><span class="c-label" lang="en">🏨 Stay</span><p lang="zh"><strong>Trip.com/Booking</strong>:确认"可接待外宾"。<br><strong>Airbnb</strong>:已停中国境内业务。<br><strong>涉外资质</strong>:非所有酒店能接待外国人。预订时务必确认。</p><p lang="en"><strong>Trip.com/Booking</strong>:check "accepts foreign guests".<br><strong>Airbnb</strong>:stopped China ops.<br><strong>涉外资质</strong>:not all hotels can host foreigners. Confirm before booking.</p></div>
+      </div>
+      <div class="tip-box tip-box--info" style="margin-top:8px"><span lang="zh"><strong>👔 穿衣尺码</strong>CN比US小1-2码,US M≈CN L/XL。优衣库/ZARA全球一致。四季:春温和·夏湿热·秋最佳·冬北-10°C/南湿冷。</span><span lang="en"><strong>👔 Clothing</strong>CN 1-2 sizes smaller than US/EU. US M≈CN L/XL. Uniqlo/ZARA global sizing. Spring:mild·Summer:hot humid·Autumn:best·Winter:N -10°C/S humid cold.</span></div></div>
+    </div>
+  </section>
+
+  <!-- S7: Medical + Aesthetics  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s7">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" lang="zh">医疗与医美</h2><h2 class="s-title" lang="en">Medical & Aesthetics</h2><p class="s-sub" lang="zh">全国57城850+机构开展国际医疗。点击卡片查看详情。</p><p class="s-sub" lang="en">850+ institutions across 57 cities. Tap cards for details.</p></div>
+      </div>
+      <div class="slide-body">
+        <div class="info-cards">
+          <div class="info-card info-card--hl" onclick="openDetail('s7','hospital')" style="cursor:pointer"><span class="c-label" lang="zh">🏥 基础医疗</span><span class="c-label" lang="en">🏥 Hospitals</span><h4 lang="zh">国际医院 + 常用药品</h4><h4 lang="en">Intl Hospitals & Meds</h4><p lang="zh">全国主要城市国际医院、药品中英俄对照、旅行保险</p><p lang="en">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card info-card--hl" onclick="openDetail('s7','cosmetic')" style="cursor:pointer"><span class="c-label" lang="zh">💉 医美</span><span class="c-label" lang="en">💉 Aesthetic</span><h4 lang="zh">光电·注射·手术</h4><h4 lang="en">Laser·Injection·Surgery</h4><p lang="zh">价格仅为韩国1/3。光电类无恢复期，适合短期游客。含涉外机构推荐。</p><p lang="en">1/3 of Korean prices. Laser treatments ideal for short-term. Clinic recommendations.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s7','big3')" style="cursor:pointer"><span class="c-label" lang="zh">🦷👁️🌿 新三件</span><span class="c-label" lang="en">🦷👁️🌿 Big Three</span><h4 lang="zh">牙科·眼科·中医理疗</h4><h4 lang="en">Dental·Eye·TCM</h4><p lang="zh">种植牙&lt;¥5K、验光配镜立等可取、针灸推拿正骨。俄罗斯游客#1诉求。</p><p lang="en">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s7','checkup')" style="cursor:pointer"><span class="c-label" lang="zh">📋 体检</span><span class="c-label" lang="en">📋 Checkup</span><h4 lang="zh">高端体检套餐</h4><h4 lang="en">Executive Checkup</h4><p lang="zh">¥2K-10K+，含多项检查，部分机构24h出报告。半天完成。</p><p lang="en">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+        </div>
+        <div class="detail-panel" id="detail-s7"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S8: Shopping & Tax Refund  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s8">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🛍️</span><h2 class="s-title" lang="zh">购物与退税</h2><h2 class="s-title" lang="en">Shopping & Tax Refund</h2><p class="s-sub" lang="zh">2025年退税旅客+305%。12,252家退税商店,7,000+支持即买即退。</p><p class="s-sub" lang="en">Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund.</p></div>
+      </div>
+      <div class="slide-body">
+        <div class="info-cards">
+          <div class="info-card info-card--hl" onclick="openDetail('s8','electronics')" style="cursor:pointer"><span class="c-label" lang="zh">📱 科技电子</span><span class="c-label" lang="en">📱 Electronics</span><h4 lang="zh">折叠屏·无人机·AI眼镜</h4><h4 lang="en">Foldables·Drones·AI Glasses</h4><p lang="zh">深圳华强北、北京王府井、义乌。中国科技新品，价格优势明显。</p><p lang="en">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s8','souvenirs')" style="cursor:pointer"><span class="c-label" lang="zh">🎨 文创伴手礼</span><span class="c-label" lang="en">🎨 Souvenirs</span><h4 lang="zh">故宫文创·非遗·地方特色</h4><h4 lang="en">Palace Museum·Craft·Local</h4><p lang="zh">北京冰箱贴、成都蜀锦熊猫、西安绒馍馍、贵州扎染围巾。</p><p lang="en">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card info-card--ok" onclick="openDetail('s8','taxrefund')" style="cursor:pointer"><span class="c-label" lang="zh">💰 退税攻略</span><span class="c-label" lang="en">💰 Tax Refund</span><h4 lang="zh">条件·流程·即买即退</h4><h4 lang="en">Rules·Process·Instant</h4><p lang="zh">同日同店≥¥500→退11%增值税(实约9%)。90天内离境。7,000+店即买即退。</p><p lang="en">≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card" onclick="openDetail('s8','cityshops')" style="cursor:pointer"><span class="c-label" lang="zh">🗺️ 城市购物地图</span><span class="c-label" lang="en">🗺️ City Guide</span><h4 lang="zh">各城购物特色指南</h4><h4 lang="en">Shopping by City</h4><p lang="zh">上海面料市场·深圳华强北·义乌小商品·三亚免税城·北京王府井</p><p lang="en">SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+        </div>
+        <div class="detail-panel" id="detail-s8"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S9: Destination Guide  mid -->
+  <section class="slide slide--short slide-pos--mid" id="s9">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🗺️</span><h2 class="s-title" lang="zh">目的地指南</h2><h2 class="s-title" lang="en">Destinations</h2><p class="s-sub" lang="zh">外国游客足迹已覆盖近500城。点击探索热门目的地。</p><p class="s-sub" lang="en">Foreign travelers have explored nearly 500 cities. Tap to discover.</p></div>
+      </div>
+      <div class="slide-body">
+        <div class="info-cards col3">
+          <div class="info-card info-card--hl" onclick="openDetail('s9','top10')" style="cursor:pointer"><span class="c-label" lang="zh">🏙️ 热门TOP10</span><span class="c-label" lang="en">🏙️ Top 10</span><h4 lang="zh">经典必游城市</h4><h4 lang="en">Must-Visit Cities</h4><p lang="zh">上海·北京·广州·深圳·重庆·成都·杭州·昆明·哈尔滨·青岛</p><p lang="en">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开选择城市 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Browse cities → ]</p></div>
+          <div class="info-card" onclick="openDetail('s9','rising')" style="cursor:pointer"><span class="c-label" lang="zh">🚀 新兴黑马</span><span class="c-label" lang="en">🚀 Rising</span><h4 lang="zh">社交平台新宠</h4><h4 lang="en">Social Media Stars</h4><p lang="zh">郑州(汉服)·太原(古建)·贵阳(贵替)·福州(山水)·义乌(购物)</p><p lang="en">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开选择城市 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Browse cities → ]</p></div>
+          <div class="info-card" onclick="openDetail('s9','seasons')" style="cursor:pointer"><span class="c-label" lang="zh">🌍 四季推荐</span><span class="c-label" lang="en">🌍 Seasons</span><h4 lang="zh">各季最佳目的地</h4><h4 lang="en">Best by Season</h4><p lang="zh">春·江南 / 夏·北戴河青岛 / 秋·北京西安 / 冬·哈尔滨三亚</p><p lang="en">Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&amp;Sanya</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+        </div>
+        <div class="detail-panel" id="detail-s9"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S10: Emergency+Exit  mid -->
+  <section class="slide slide--short" id="s10">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🆘👋</span><h2 class="s-title" lang="zh">紧急+离境</h2><h2 class="s-title" lang="en">Emergency+Exit</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card info-card--hl"><span class="c-label" lang="zh">📞 热线</span><span class="c-label" lang="en">📞 Hotlines</span><div class="em-grid"><div class="em-card"><div class="num">12367</div><div class="lbl" lang="zh">移民管理24h多语种</div><div class="lbl" lang="en">Immigration 24h</div></div><div class="em-card"><div class="num">110</div><div class="lbl" lang="zh">报警</div><div class="lbl" lang="en">Police</div></div><div class="em-card"><div class="num">120</div><div class="lbl" lang="zh">急救</div><div class="lbl" lang="en">Ambulance</div></div><div class="em-card"><div class="num">119</div><div class="lbl" lang="zh">火警</div><div class="lbl" lang="en">Fire</div></div></div><div class="tip-box tip-box--warn" style="margin-top:6px"><strong lang="zh">⚠️ 护照</strong><strong lang="en">⚠️ Passport</strong><span lang="zh">随身携带。遗失→报警→回执→使领馆补办。手机存好使领馆地址电话。</span><span lang="en">Carry always. Lost→police→consulate. Save embassy contacts.</span></div></div>
+        <div class="info-card"><span class="c-label" lang="zh">👋 离境</span><span class="c-label" lang="en">👋 Depart</span><ol class="step-list"><li lang="zh">提前<strong>2-3h</strong>到机场</li><li lang="en"><strong>2-3h</strong> early</li><li lang="zh">退税物品<strong>随身</strong>勿托运</li><li lang="en"><strong>Carry</strong> refund items</li><li lang="zh">花完剩余RMB(免税店)</li><li lang="en">Spend leftover RMB</li><li lang="zh">提前备份照片(Google Photos不可用)</li><li lang="en">Backup photos(Google Photos blocked)</li></ol></div>
+      </div><p class="slide-footer"><span lang="zh">🧳 入境中国图文攻略 · 更新于 2026年7月 · 信息基于 NIA、外交部领事司公开资料 · NIA 12367 · s.nia.gov.cn</span><span lang="en">🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn</span></p></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LONG-TERM (8 slides)
+       ============================================================ -->
+
+  <!-- L1: Status Transfer  top -->
+  <section class="slide slide--long slide-pos--top" id="l1">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" lang="zh">身份转换</h2><h2 class="s-title" lang="en">Status Transfer</h2><p class="s-sub" lang="zh">你已在华。将当前签证转为长期居留。</p><p class="s-sub" lang="en">Already in China. Convert to long-term.</p></div>
+      </div>
+      <div class="slide-body"><div class="info-cards col3">
+        <div class="info-card info-card--hl"><span class="c-label">Path A</span><h4 lang="zh">旅游→工作</h4><h4 lang="en">Tourist→Work</h4><p lang="zh">找雇主→工作许可→出境转Z签再入境(或特定城市境内转换,咨询当地出入境管理局)。</p><p lang="en">Employer→WP→exit&re-enter Z visa(or in-country per local Exit-Entry Bureau).</p></div>
+        <div class="info-card info-card--hl"><span class="c-label">Path B</span><h4 lang="zh">学生→工作</h4><h4 lang="en">Student→Work</h4><p lang="zh">毕业后凭工作许可直接在境内申请居留许可(无需出境)。适用于中国高校应届毕业生。</p><p lang="en">RP in-country with WP after graduation(no exit). For fresh Chinese university grads.</p></div>
+        <div class="info-card info-card--info"><span class="c-label">Path C</span><h4 lang="zh">K签证(STEM)</h4><h4 lang="en">K Visa(STEM)</h4><p lang="zh">2025.10推出。STEM学位+<40岁→无需雇主。在华直接申请。工作/研究/创业均可。</p><p lang="en">Oct 2025. STEM degree+<~40→no employer. Apply in-country. Work/research/startup.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L2: Permits  mid -->
+  <section class="slide slide--long slide-pos--mid" id="l2">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">💼</span><h2 class="s-title" lang="zh">工作与居留许可</h2><h2 class="s-title" lang="en">Work & Residence</h2><p class="s-sub" lang="zh">两步走。入境后30天内完成。</p><p class="s-sub" lang="en">Two steps. Within 30 days of entry.</p></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card info-card--hl"><span class="c-label">Step 1</span><h4 lang="zh">工作许可证</h4><h4 lang="en">Work Permit</h4><p lang="zh">雇主在线申请。需:学历认证+无犯罪(公证+认证)+体检+合同。15-20工作日。</p><p lang="en">Employer online. Need:degree+background check+health+contract. 15-20 biz days.</p></div>
+        <div class="info-card"><span class="c-label">Step 2</span><h4 lang="zh">居留许可证</h4><h4 lang="en">Residence Permit</h4><p lang="zh">拿工作许可→出入境管理局。带:护照+工作许可+住宿登记+照片。有效期1-5年。</p><p lang="en">After WP→Exit-Entry Bureau. Bring:passport+WP+registration+photo. 1-5yr.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L3: Phone+Bank  mid -->
+  <section class="slide slide--long slide-pos--mid" id="l3">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">📶💳</span><h2 class="s-title" lang="zh">通讯+银行</h2><h2 class="s-title" lang="en">Phone+Bank</h2><p class="s-sub" lang="zh">中国号码+银行账户→完整数字生活。</p><p class="s-sub" lang="en">CN number+bank→full digital life.</p></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card"><span class="c-label" lang="zh">📱 手机</span><span class="c-label" lang="en">📱 Phone</span><p lang="zh">移动/联通/电信。护照实名。月¥29-99。办后:支付宝/微信解限→开通完整功能→注册所有App。</p><p lang="en">Mobile/Unicom/Telecom. Passport. ¥29-99/mo. Then:unlock Alipay/WeChat→full features.</p></div>
+        <div class="info-card info-card--hl"><span class="c-label" lang="zh">🏦 银行</span><span class="c-label" lang="en">🏦 Bank</span><p lang="zh">护照+居留许可+工作证明+手机号。推荐中行/工行。开户后绑支付宝/微信→解除¥200限额→收发红包转账。</p><p lang="en">Passport+RP+work+phone. Rec:BOC/ICBC. Then link Alipay/WeChat→lift ¥200 limit.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L4: Housing  mid -->
+  <section class="slide slide--long slide-pos--mid" id="l4">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🏢</span><h2 class="s-title" lang="zh">租房安居</h2><h2 class="s-title" lang="en">Finding a Home</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card info-card--hl"><span class="c-label" lang="zh">🏠 租房</span><span class="c-label" lang="en">🏠 Rent</span><p lang="zh"><strong>自如</strong>(ziroom.com)/<strong>贝壳</strong>(ke.com)涉外房源。<br><strong>合同</strong>:押一付三,中英双语。确认房东协助住宿登记。<br><strong>外籍区</strong>:上海古北/静安,北京朝阳/顺义,广州天河。</p><p lang="en"><strong>Ziroom/Beike</strong> expat listings.<br><strong>Contract</strong>:1mo dep+3mo rent,bilingual. Confirm landlord helps registration.<br><strong>Areas</strong>:SH Gubei/Jing'an,BJ Chaoyang/Shunyi,GZ Tianhe.</p></div>
+        <div class="info-card info-card--warn"><span class="c-label" lang="zh">📝 登记</span><span class="c-label" lang="en">📝 Register</span><p lang="zh">每次搬家24h内重新登记。2026.3起12367在线(7省试点)。登记是所有行政手续前置条件。未登记可能被警告+罚款(第76条)。</p><p lang="en">Re-register within 24h/move. Since Mar 2026:12367 online(7 pilot). Prerequisite for all admin. Failure=warning+fine(Art.76).</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L5: Health+Social  bot -->
+  <section class="slide slide--long slide-pos--bot" id="l5">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" lang="zh">医保+社保</h2><h2 class="s-title" lang="en">Health+Social</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card"><span class="c-label" lang="zh">🏥 社保(五险一金)</span><span class="c-label" lang="en">🏥 Social Insurance</span><p lang="zh">养老+医疗+工伤+失业+生育(五险)+住房公积金(一金)。个人+单位共缴。社保卡公立医院部分报销。</p><p lang="en">Pension+medical+injury+unemployment+maternity+housing fund. Paid jointly. Public hospital partial reimbursement.</p></div>
+        <div class="info-card info-card--info"><span class="c-label" lang="zh">🛡️ 商业医保</span><span class="c-label" lang="en">🛡️ Private</span><p lang="zh">大多数外籍额外买商业国际医保→私立/国际医院。Cigna/Allianz/Bupa。年¥15K-50K。国际医院:和睦家/嘉会/明德/祈福。</p><p lang="en">Most buy supplementary intl insurance→private clinics. Cigna/Allianz/Bupa. ~¥15K-50K/yr. Hospitals:UFH/Jiahui/OASIS/Clifford.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L6: Drive+School  mid -->
+  <section class="slide slide--long slide-pos--mid" id="l6">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🚗👨‍👩‍👧</span><h2 class="s-title" lang="zh">出行+子女教育</h2><h2 class="s-title" lang="en">Drive+School</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card"><span class="c-label" lang="zh">🚗 驾照</span><span class="c-label" lang="en">🚗 License</span><p lang="zh"><strong>临时</strong>:本国驾照+公证翻译(各省不同)。<br><strong>换领</strong>:部分国家(比/法)直接免试换。其余考科目一(英/日/韩等语种)。</p><p lang="en"><strong>Temp</strong>:foreign+notarized translation.<br><strong>Transfer</strong>:some(BE/FR)direct swap. Others:written test(EN/JP/KR).</p></div>
+        <div class="info-card info-card--hl"><span class="c-label" lang="zh">🎒 教育</span><span class="c-label" lang="en">🎒 School</span><p lang="zh"><strong>类型</strong>:纯国际(仅外籍)/双语/公立国际部。<br><strong>分布</strong>:北京顺义,上海浦东/长宁,广州天河。<br><strong>费用</strong>:¥80K-300K+/年。提前半年申请+面试。</p><p lang="en"><strong>Types</strong>:pure intl/bilingual/public intl.<br><strong>Areas</strong>:BJ Shunyi,SH Pudong/Changning,GZ Tianhe.<br><strong>Cost</strong>:¥80K-300K+/yr. Apply 6mo ahead+interview.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L7: Daily  mid -->
+  <section class="slide slide--long slide-pos--mid" id="l7">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">🛒🍜</span><h2 class="s-title" lang="zh">日常生活</h2><h2 class="s-title" lang="en">Daily Life</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards col3">
+        <div class="info-card"><span class="c-label" lang="zh">🛒 购物</span><span class="c-label" lang="en">🛒 Shop</span><p lang="zh"><strong>淘宝/京东</strong>:最大电商。<br><strong>拼多多</strong>:低价。<br><strong>盒马</strong>:生鲜+配送。<br>快递当日/次日达。</p><p lang="en"><strong>Taobao/JD</strong>:biggest.<br><strong>Pinduoduo</strong>:budget.<br><strong>Hema</strong>:fresh+delivery.<br>Same/next-day delivery.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">🍜 饮食</span><span class="c-label" lang="en">🍜 Food</span><p lang="zh"><strong>大众点评</strong>:找餐厅。<br><strong>美团/饿了么</strong>:外卖。<br>进口超市:CityShop/盒马/Ole'。<br>清真/素食搜索技巧同短期版。</p><p lang="en"><strong>Dianping</strong>:find.<br><strong>Meituan/Ele.me</strong>:delivery.<br>Import:CityShop/Hema/Ole'.<br>Halal/veg tips same as short-term.</p></div>
+        <div class="info-card"><span class="c-label" lang="zh">👔 穿衣</span><span class="c-label" lang="en">👔 Clothing</span><p lang="zh">CN比US小1-2码。US M≈CN L/XL。优衣库/ZARA全球一致。四季:冬北-10°C/夏湿热。秋最佳。</p><p lang="en">CN 1-2 smaller. US M≈CN L/XL. Uniqlo/ZARA global. 4 seasons:N -10°C/S humid. Autumn best.</p></div>
+      </div></div>
+    </div>
+  </section>
+
+  <!-- L8: Compliance  mid -->
+  <section class="slide slide--long" id="l8">
+    <div class="slide-inner">
+      <div class="tl-head-row"><div class="tl-dot"></div>
+        <div class="slide-head"><span class="s-icon">📅🆘</span><h2 class="s-title" lang="zh">合规+紧急</h2><h2 class="s-title" lang="en">Compliance+Emergency</h2></div>
+      </div>
+      <div class="slide-body"><div class="info-cards">
+        <div class="info-card info-card--warn"><span class="c-label" lang="zh">📅 续期与合规</span><span class="c-label" lang="en">📅 Renewal</span><p lang="zh"><strong>到期前30天</strong>续期。过期滞留日罚¥500→限期离境/黑名单。<br><strong>换护照</strong>:10天内转移居留许可。<br><strong>换工作</strong>:重办工作许可→更新居留。<br><strong>永居</strong>:连续工作3年+(年≥6月在华),收入本地2-3倍(约¥240K-360K/年)。</p><p lang="en"><strong>30d before expiry.</strong> Overstay=¥500/day→deportation.<br><strong>New passport</strong>:transfer RP 10d.<br><strong>Job change</strong>:re-WP→update RP.<br><strong>Green Card</strong>:3yr+work(≥6mo/yr),income 2-3x local avg(~¥240K-360K/yr).</p></div>
+        <div class="info-card info-card--hl"><span class="c-label" lang="zh">🆘 紧急</span><span class="c-label" lang="en">🆘 Emerg</span><div class="em-grid"><div class="em-card"><div class="num">12367</div><div class="lbl" lang="zh">移民管理24h多语种</div><div class="lbl" lang="en">Immigration 24h</div></div><div class="em-card"><div class="num">110</div><div class="lbl" lang="zh">报警</div><div class="lbl" lang="en">Police</div></div><div class="em-card"><div class="num">120</div><div class="lbl" lang="zh">急救</div><div class="lbl" lang="en">Ambulance</div></div><div class="em-card"><div class="num">119</div><div class="lbl" lang="zh">火警</div><div class="lbl" lang="en">Fire</div></div></div><div class="tip-box tip-box--warn" style="margin-top:6px"><strong lang="zh">⚠️ 护照随身携带</strong><strong lang="en">⚠️ Carry Passport</strong><span lang="zh">遗失→报警→回执→使领馆。手机存好本国使领馆地址电话。</span><span lang="en">Lost→police→consulate. Save embassy contacts in phone.</span></div></div>
+      </div><p class="slide-footer"><span lang="zh">🧳 入境中国图文攻略 · 更新于 2026年7月 · 信息基于 NIA、外交部领事司公开资料 · NIA 12367 · s.nia.gov.cn</span><span lang="en">🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn</span></p></div>
+    </div>
+  </section>
+
+</div><!-- end slides-container -->
+
+<!-- ============================================================
+     Scripts (order matters: data → i18n → detail → app)
+     ============================================================ -->
+<script>/* ============================================================
+   data.js — Pure structured data (no language strings)
+   All display text lives in i18n/*.json
+   ============================================================ */
+
+/* ---- Visa Rules ---- */
+const VISA_FREE = new Set(['FR','DE','IT','NL','ES','CH','IE','HU','AT','BE','LU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','BG','RO','HR','ME','MK','MT','EE','LV','RU','SE','GB','BN','KR','JP','SA','OM','KW','BH','BR','AR','CL','PE','UY','CA','AU','NZ']);
+const TRANSIT = new Set(['AT','BE','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IT','LV','LT','LU','MT','NL','PL','PT','SK','SI','ES','SE','CH','MC','RU','GB','IE','CY','BG','RO','UA','RS','HR','BA','ME','MK','AL','BY','NO','US','CA','BR','MX','AR','CL','AU','NZ','KR','JP','SG','BN','AE','QA','ID']);
+const MUTUAL = new Set(['SG','AE','RS','MU','SC','BB','BS','EC','FJ','GD','JM','MV','MD','MC','LC','VC','WS','SB','TO','AG','AM','AZ','BY','BR','DM','GA','GE','KZ','KG','TH','UZ','SR']);
+
+/* ---- Country list (code + flag only; names in i18n countries.{code}) ---- */
+const COUNTRY_CODES = ['AU','NZ','JP','KR','SG','MY','TH','ID','IN','PH','VN','BN','AE','QA','SA','KW','OM','BH','GB','FR','DE','IT','ES','PT','NL','BE','CH','AT','SE','NO','DK','FI','IS','IE','PL','HU','GR','RO','RU','US','CA','BR','AR','CL','MX','PE','UY','ZA','OTHER'];
+
+/* ---- Visa detail data (conditions now in i18n; links reference i18n keys) ---- */
+const VISA_DETAIL = {
+  free: {
+    links: [
+      {key:'niaVisaFree', url:'https://en.nia.gov.cn'},
+      {key:'beijingVisaFaq', url:'https://wb.beijing.gov.cn/home/wswm/crjxx/qzxx/qztz/202605/t20260522_4661992.html'}
+    ]
+  },
+  mutual: {
+    links: [
+      {key:'mfaConsular', url:'https://www.mfa.gov.cn'}
+    ]
+  },
+  transit: {
+    links: [
+      {key:'niaTransit', url:'https://en.nia.gov.cn'}
+    ]
+  },
+  visaRequired: {
+    links: [
+      {key:'cvasc', url:'https://www.visaforchina.cn'},
+      {key:'onlineBooking', url:'https://bio.visaforchina.cn'},
+      {key:'consularServices', url:'https://consular.mfa.gov.cn/VISA/'}
+    ]
+  },
+  kvisa: {
+    links: [
+      {key:'niaKVisa', url:'https://en.nia.gov.cn'}
+    ]
+  }
+};
+
+/* ---- City keys for destinations ---- */
+const TOP10_CITIES = ['shanghai','beijing','guangzhou','shenzhen','chongqing','chengdu','hangzhou','kunming','harbin','qingdao'];
+const RISING_CITIES = ['zhengzhou','taiyuan','guiyang','fuzhou','yiwu'];
+const HOSPITAL_CITIES = ['shanghai','beijing','guangzhou','tianjin','hainan'];
+
+/* ---- Aesthetic clinic contact data ---- */
+const COSMETIC_CLINICS = {
+  jiahui: { addr:'上海市徐汇区桂平路689号', tel:'4008-919191', web:'jiahui.com' },
+  mhwd:   { addr:'上海市', tel:'', web:'' },
+  rodeo:  { addr:'上海市黄浦区茂名南路7号2楼', tel:'', web:'' },
+  yuansong: { addr:'上海市(多个院区)', tel:'', web:'' }
+};
+const CLINIC_KEYS = Object.keys(COSMETIC_CLINICS);
+
+/* ---- Shop city keys ---- */
+const SHOP_CITY_KEYS = ['shenzhen','shanghai','yiwu','sanya','beijing'];
+
+/* ---- Medication data (trilingual; use key in i18n for usage description) ---- */
+const MEDS = [
+  { cn:'布洛芬', en:'Ibuprofen', ru:'Ибупрофен', k:'ibuprofen' },
+  { cn:'阿莫西林', en:'Amoxicillin', ru:'Амоксициллин', k:'amoxicillin' },
+  { cn:'洛哌丁胺', en:'Loperamide', ru:'Лоперамид', k:'loperamide' },
+  { cn:'氯雷他定', en:'Loratadine', ru:'Лоратадин', k:'loratadine' },
+  { cn:'奥美拉唑', en:'Omeprazole', ru:'Омепразол', k:'omeprazole' },
+];
+
+/* ---- Treatment lists (keys map to i18n for display) ---- */
+const COSMETIC_LASER = ['ipl','pico','thermage','hifu','hair_removal'];
+const COSMETIC_INJECTION = ['botox_import','juvederm','btx_domestic','ha_domestic','neck_filler'];
+const COSMETIC_SURGERY = ['thread_lift','incisional','rhinoplasty','rib_rhino'];
+const BIG3_DENTAL = ['implant','cleaning','crown'];
+const BIG3_TCM = ['acupuncture','tuina','bonesetting','herbal'];
+const SHOP_ELECTRONICS = ['foldable','drone','ai_glasses','translator','earbuds'];
+const SOUVENIR_CITIES = ['beijing','chengdu','xian','chongqing','guizhou'];
+const TAXREFUND_REQS = ['reqStay','reqAmount','reqDeparture','reqCarry'];
+const TAXREFUND_STEPS = ['stepInvoice','stepCustoms','stepCollect'];
+const SEASONS = ['spring','summer','autumn','winter'];
+</script>
+<script>/* ============================================================
+   i18n.js — Lightweight i18n engine
+   ============================================================ */
+
+let I18N = {};
+let _ready = false;
+
+/* Init: load bundled (offline) or fetch (dev) immediately */
+(async function () {
+  const saved = localStorage.getItem('guide-lang') || 'zh';
+  if (window.__I18N_BUNDLE) {
+    I18N = window.__I18N_BUNDLE[saved] || window.__I18N_BUNDLE['zh'] || {};
+    _ready = true;
+  } else {
+    try {
+      const res = await fetch('i18n/' + saved + '.json');
+      I18N = await res.json();
+      _ready = true;
+    } catch (e) {
+      console.warn('i18n: fetch failed, trying zh fallback');
+      try {
+        const res = await fetch('i18n/zh.json');
+        I18N = await res.json();
+        _ready = true;
+      } catch (e2) {
+        console.error('i18n: cannot load any language file');
+        I18N = {};
+        _ready = true;
+      }
+    }
+  }
+  document.documentElement.setAttribute('data-lang', saved);
+  if (typeof updateCountryLang === 'function') updateCountryLang();
+  if (typeof refreshUI === 'function') refreshUI();
+})();
+
+function t(key) {
+  if (!_ready) return '…';
+  // Try flat lookup first (supports dot-in-key names from data.js migration)
+  if (I18N[key] !== undefined) return String(I18N[key]);
+  // Try nested traversal (supports the agent's nested JSON structure)
+  const parts = key.split('.');
+  let v = I18N;
+  for (const p of parts) {
+    if (v == null || typeof v !== 'object') return '[' + key + ']';
+    v = v[p];
+  }
+  return v !== undefined ? String(v) : '[' + key + ']';
+}
+
+/* ta(key) — like t() but returns raw value (for arrays, objects) */
+function ta(key) {
+  if (!_ready) return [];
+  if (I18N[key] !== undefined) return I18N[key];
+  const parts = key.split('.');
+  let v = I18N;
+  for (const p of parts) {
+    if (v == null || typeof v !== 'object') return [];
+    v = v[p];
+  }
+  return v !== undefined ? v : [];
+}
+
+async function setLang(lang) {
+  if (window.__I18N_BUNDLE && window.__I18N_BUNDLE[lang]) {
+    I18N = window.__I18N_BUNDLE[lang];
+  } else {
+    try {
+      const res = await fetch('i18n/' + lang + '.json');
+      I18N = await res.json();
+    } catch (e) { console.warn('i18n: cannot load', lang); return; }
+  }
+  _ready = true;
+  document.documentElement.setAttribute('data-lang', lang);
+  localStorage.setItem('guide-lang', lang);
+  if (typeof updateCountryLang === 'function') updateCountryLang();
+  if (typeof refreshUI === 'function') refreshUI();
+}
+
+function refreshUI() {
+  const vcR = document.getElementById('vcResult');
+  if (vcR && vcR.classList.contains('show') && typeof checkVisa === 'function') checkVisa();
+  if (typeof currentDetail !== 'undefined' && currentDetail.slide) {
+    const panel = document.getElementById('detail-' + currentDetail.slide);
+    if (panel && panel.classList.contains('active') && typeof renderDetail === 'function') {
+      panel.innerHTML = renderDetail(currentDetail.slide, currentDetail.key, currentDetail.sub);
+    }
+  }
+  if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
+  if (typeof updateCountryLang === 'function') updateCountryLang();
+}
+</script>
+<script>/* ============================================================
+   detail.js — Detail panel system (data-driven)
+   ============================================================ */
+
+const currentDetail = { slide: null, key: null, sub: null };
+
+/* ---- open / close ---- */
+function openDetail(slide, key, sub) {
+  const panel = document.getElementById('detail-' + slide);
+  if (!panel) return;
+  const sec = panel.closest('.slide');
+  const container = document.getElementById('slidesContainer');
+
+  // Temporarily disable snap to prevent auto-jump to another slide during DOM change
+  if (container) container.style.scrollSnapType = 'none';
+  if (sec) sec.style.overflow = 'hidden';
+
+  currentDetail.slide = slide; currentDetail.key = key; currentDetail.sub = sub || null;
+  panel.innerHTML = renderDetail(slide, key, sub);
+  panel.classList.add('active');
+  const body = panel.parentElement;
+  const cards = body.querySelector('.info-cards');
+  if (cards) cards.style.display = 'none';
+
+  // Scroll to this slide and re-enable snap after layout settles
+  if (sec) sec.scrollIntoView({ behavior: 'instant', block: 'start' });
+  setTimeout(() => {
+    if (container) container.style.scrollSnapType = 'y mandatory';
+  }, 120);
+
+  history.pushState({ slide, key, sub }, '', `#${slide}-detail-${key}${sub ? '-' + sub : ''}`);
+}
+
+function closeDetail(slide) {
+  const panel = document.getElementById('detail-' + slide);
+  if (!panel) return;
+  const sec = panel.closest('.slide');
+  const container = document.getElementById('slidesContainer');
+
+  if (container) container.style.scrollSnapType = 'none';
+  if (sec) sec.style.overflow = '';
+
+  panel.classList.remove('active'); panel.innerHTML = '';
+  const body = panel.parentElement;
+  const cards = body.querySelector('.info-cards');
+  if (cards) cards.style.display = '';
+
+  currentDetail.slide = null; currentDetail.key = null; currentDetail.sub = null;
+
+  if (sec) sec.scrollIntoView({ behavior: 'instant', block: 'start' });
+  setTimeout(() => {
+    if (container) container.style.scrollSnapType = 'y mandatory';
+  }, 120);
+
+  history.pushState(null, '', '#' + slide);
+}
+
+window.addEventListener('popstate', e => {
+  const cd = currentDetail;
+  if (cd.slide && e.state && e.state.slide === cd.slide && e.state.key === cd.key) {
+    openDetail(e.state.slide, e.state.key, e.state.sub || null);
+  } else if (cd.slide && (!e.state || e.state.slide !== cd.slide)) {
+    closeDetail(cd.slide);
+  }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && currentDetail.slide) closeDetail(currentDetail.slide); });
+
+
+/* ---- Render helpers ---- */
+
+const H = {
+  back: (slide) => `<button class="detail-back" onclick="closeDetail('${slide}')">← ${t(slide + '_detail.back')}</button>`,
+  title: (text) => `<h3>${text}</h3>`,
+  h4: (text) => `<h4>${text}</h4>`,
+  intro: (key) => `<p class="dp-intro">${t(key)}</p>`,
+  table: (headers, rows) => `<table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`,
+  tip: (type, title, body) => `<div class="tip-box tip-box--${type}"><strong>${title}</strong><span>${body}</span></div>`,
+  subGrid: (items) => `<div class="sub-card-grid">${items.join('')}</div>`,
+  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('s7_detail.cosmetic.clinicExpandHint')} ]</div></div>`,
+  nav: (prev, next, idx, total) => `<div class="detail-nav">${prev || '<span></span>'}<span class="dn-center">${idx + 1}/${total}</span>${next || '<span></span>'}</div>`,
+  muted: (text) => `<p class="muted-sm mt-sm">${text}</p>`,
+};
+
+/* ---- Master dispatch ---- */
+
+function renderDetail(slide, key, sub) {
+  if (slide === 's7') return renderS7(key, sub);
+  if (slide === 's8') return renderS8(key, sub);
+  if (slide === 's9') return renderS9(key, sub);
+  return '';
+}
+
+
+/* ============================================================
+   S7  Medical & Aesthetics
+   ============================================================ */
+
+function renderS7(key, sub) {
+  const P = 's7_detail.';
+
+  if (key === 'hospital') {
+    const cols = [t(P + 'hospital.colCity'), t(P + 'hospital.colHospital'), t(P + 'hospital.colNote')];
+    const hrows = HOSPITAL_CITIES.map(c => [t('city.' + c + '.name'), t(P + 'hospital.' + c + 'Name'), t(P + 'hospital.' + c + 'Note')]);
+    const mcols = [t(P + 'hospital.colCn'), 'English', 'Русский', t(P + 'hospital.colUse')];
+    const mrows = MEDS.map(m => [m.cn, m.en, m.ru, t(P + 'hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]);
+    return H.back('s7') + H.title(t(P + 'hospital.title')) + H.intro(P + 'hospital.intro')
+      + H.h4(t(P + 'hospital.sectionHospitals')) + H.table(cols, hrows)
+      + H.h4(t(P + 'hospital.sectionMeds')) + H.table(mcols, mrows)
+      + H.tip('warn', t(P + 'hospital.insuranceWarning'), t(P + 'hospital.insuranceDetail'));
+  }
+
+  if (key === 'cosmetic') {
+    if (sub) {
+      const cp = P + 'cosmetic.clinics.' + sub + '.';
+      const c = COSMETIC_CLINICS[sub]; if (!c) return '';
+      return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s7','cosmetic')">← ${t(P + 'cosmetic.backToCosmetic')}</button>
+        <h3>🏥 ${t(cp + 'name')}</h3>
+        ${c.addr ? `<p class="dp-info">📍 ${c.addr}</p>` : ''}${c.tel ? `<p class="dp-info">📞 ${c.tel}</p>` : ''}${c.web ? `<p class="dp-info">🌐 ${c.web}</p>` : ''}
+        <p class="dp-text">${t(cp + 'desc')}</p>`;
+    }
+    const CP = P + 'cosmetic.';
+    const laserCols = [t(CP + 'colTreatment'), t(CP + 'colPrice'), t(CP + 'colTime')];
+    const laserRows = COSMETIC_LASER.map(k => [t(CP + 'laser.' + k), t(CP + 'laser.' + k + '_price'), t(CP + 'laser.' + k + '_time')]);
+    const injCols = [t(CP + 'colTreatment'), t(CP + 'colPrice')];
+    const injRows = COSMETIC_INJECTION.map(k => [t(CP + 'injection.' + k), t(CP + 'injection.' + k + '_price')]);
+    const surgCols = [t(CP + 'colTreatment'), t(CP + 'colPrice'), t(CP + 'colRecovery')];
+    const surgRows = COSMETIC_SURGERY.map(k => [t(CP + 'surgery.' + k), t(CP + 'surgery.' + k + '_price'), t(CP + 'surgery.' + k + '_recovery')]);
+    const clinicCards = CLINIC_KEYS.map(k => H.subCard(t(CP + 'clinics.' + k + '.name'), t(CP + 'clinics.' + k + '.subtitle'), `event.stopPropagation();openDetail('s7','cosmetic','${k}')`));
+    return H.back('s7') + H.title(t(CP + 'title')) + H.intro(CP + 'intro')
+      + H.h4(t(CP + 'sectionLaser')) + H.table(laserCols, laserRows)
+      + H.h4(t(CP + 'sectionInjection')) + H.table(injCols, injRows)
+      + H.h4(t(CP + 'sectionSurgery')) + H.table(surgCols, surgRows)
+      + H.h4(t(CP + 'sectionClinics')) + H.subGrid(clinicCards);
+  }
+
+  if (key === 'big3') {
+    const BP = P + 'big3.';
+    const dCols = [t(BP + 'colItem'), t(BP + 'colChinaPrice'), t(BP + 'colUsEuPrice')];
+    const dRows = BIG3_DENTAL.map(k => [t(BP + 'dental_' + k), t(BP + 'dental_' + k + '_cn'), t(BP + 'dental_' + k + '_us')]);
+    const tCols = [t(BP + 'colTherapy'), t(BP + 'colDescription'), t(BP + 'colPrice')];
+    const tRows = BIG3_TCM.map(k => [t(BP + 'tcm_' + k), t(BP + 'tcm_' + k + '_desc'), t(BP + 'tcm_' + k + '_price')]);
+    return H.back('s7') + H.title(t(BP + 'title'))
+      + H.h4(t(BP + 'sectionDental')) + H.table(dCols, dRows)
+      + H.h4(t(BP + 'sectionEye')) + H.intro(BP + 'eyeDesc')
+      + H.h4(t(BP + 'sectionTcm')) + H.table(tCols, tRows)
+      + H.tip('info', t(BP + 'tcmHotspots'), t(BP + 'tcmHotspotsDetail'));
+  }
+
+  if (key === 'checkup') {
+    const CP = P + 'checkup.';
+    return H.back('s7') + H.title(t(CP + 'title')) + H.intro(CP + 'intro') + H.intro(CP + 'recommended')
+      + H.tip('warn', t(CP + 'warning'), t(CP + 'warningDetail'));
+  }
+  return '';
+}
+
+
+/* ============================================================
+   S8  Shopping
+   ============================================================ */
+
+function renderS8(key, sub) {
+  const P = 's8_detail.';
+
+  if (key === 'electronics') {
+    const EP = P + 'electronics.';
+    const eCols = [t(EP + 'colCategory'), t(EP + 'colWhy'), t(EP + 'colPrice')];
+    const eRows = SHOP_ELECTRONICS.map(k => [t(EP + k), t(EP + k + '_why'), t(EP + k + '_price') || '—']);
+    return H.back('s8') + H.title(t(EP + 'title')) + H.table(eCols, eRows)
+      + H.tip('info', t(EP + 'whereToBuy'), t(EP + 'whereToBuyDetail'));
+  }
+
+  if (key === 'souvenirs') {
+    const SP = P + 'souvenirs.';
+    const sCols = [t(SP + 'colCity'), t(SP + 'colItem')];
+    const sRows = SOUVENIR_CITIES.map(k => [t('city.' + (k === 'xian' ? 'xian' : k) + '.name'), t(SP + k + '_item')]);
+    return H.back('s8') + H.title(t(SP + 'title')) + H.table(sCols, sRows) + H.muted(t(SP + 'tip'));
+  }
+
+  if (key === 'taxrefund') {
+    const TP = P + 'taxrefund.';
+    return H.back('s8') + H.title(t(TP + 'title')) + H.intro(TP + 'stats')
+      + H.h4(t(TP + 'sectionRequirements')) + '<ul class="step-list">' + TAXREFUND_REQS.map(k => `<li>${t(TP + k)}</li>`).join('') + '</ul>'
+      + H.h4(t(TP + 'sectionProcess')) + '<ol class="step-list">' + TAXREFUND_STEPS.map(k => `<li>${t(TP + k)}</li>`).join('') + '</ol>'
+      + H.tip('good', t(TP + 'instantRefundTitle'), t(TP + 'instantRefundDetail'));
+  }
+
+  if (key === 'cityshops') {
+    if (sub) {
+      return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s8','cityshops')">← ${t(P + 'cityshops.backToCityGuide')}</button>
+        <h3>🛍️ ${t('shop.' + sub + '.name')}</h3><p class="dp-text">${t('shop.' + sub + '.desc')}</p>`;
+    }
+    const cards = SHOP_CITY_KEYS.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','${k}')"><div class="sc-title">${t('shop.' + k + '.name')}</div><div class="sc-desc">${t(P + 'cityshops.cities.' + k + '.subtitle')}</div></div>`);
+    return H.back('s8') + H.title(t(P + 'cityshops.title')) + H.muted(t(P + 'cityshops.tapHint')) + H.subGrid(cards);
+  }
+  return '';
+}
+
+
+/* ============================================================
+   S9  Destinations
+   ============================================================ */
+
+function renderS9(key, sub) {
+  const P = 's9_detail.';
+
+  if (key === 'top10') {
+    if (sub) return renderDestCity(sub, TOP10_CITIES);
+    const cards = TOP10_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','top10','${k}')"><div class="sc-title">${t('city.' + k + '.flag')} ${t('city.' + k + '.name')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
+    return H.back('s9') + H.title(t(P + 'top10.title')) + H.muted(t(P + 'tapHint')) + H.subGrid(cards);
+  }
+
+  if (key === 'rising') {
+    if (sub) return renderDestCity(sub, RISING_CITIES);
+    const cards = RISING_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','rising','${k}')"><div class="sc-title">${t('city.' + k + '.flag')} ${t('city.' + k + '.name')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
+    return H.back('s9') + H.title(t(P + 'rising.title')) + H.muted(t(P + 'rising.subtitle')) + H.subGrid(cards);
+  }
+
+  if (key === 'seasons') {
+    const SP = P + 'seasons.';
+    return H.back('s9') + H.title(t(SP + 'title'))
+      + SEASONS.map(s => H.tip('info', t(SP + s + '.title'), t(SP + s + '.desc'))).join('')
+      + H.muted(t(SP + 'sizingTip'));
+  }
+  return '';
+}
+
+function renderDestCity(key, cities) {
+  const idx = cities.indexOf(key);
+  const prev = idx > 0 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx - 1]}')">← ${t('city.' + cities[idx - 1] + '.name')}</button>` : null;
+  const next = idx < cities.length - 1 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx + 1]}')">${t('city.' + cities[idx + 1] + '.name')} →</button>` : null;
+  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}')">← ${t('s9_detail.backToCityList')}</button>
+    <h3>${t('city.' + key + '.flag')} ${t('city.' + key + '.name')}</h3>
+    <p class="dp-subtitle">${t('city.' + key + '.tag')}</p>
+    <p class="dp-text">${t('city.' + key + '.desc')}</p>
+    ${H.nav(prev, next, idx, cities.length)}`;
+}
+</script>
+<script>/* ============================================================
+   app.js — Version management, navigation, visa checker, language
+   ============================================================ */
+
+/* ============================================================
+   Version Management
+   ============================================================ */
+let currentVersion = null;
+const container = document.getElementById('slidesContainer');
+const scrubber = document.getElementById('navScrubber');
+const versionSwitch = document.getElementById('versionSwitch');
+const tooltip = document.getElementById('scrubTooltip');
+
+function startVersion(v) {
+  currentVersion = v;
+  document.body.className = 'version-' + v;
+  // Explicitly hide slides from the other version (belt-and-suspenders with CSS)
+  container.querySelectorAll('.slide--short,.slide--long').forEach(s => {
+    if (v === 'short') { s.style.display = s.classList.contains('slide--short') ? '' : 'none'; }
+    else { s.style.display = s.classList.contains('slide--long') ? '' : 'none'; }
+  });
+  container.classList.remove('locked');
+  versionSwitch.classList.add('visible');
+  scrubber.classList.add('visible');
+  updateVersionSwitchText();
+  buildBars();
+  const first = v === 'short' ? document.getElementById('s1') : document.getElementById('l1');
+  if (first) first.scrollIntoView({ behavior: 'smooth' });
+}
+
+function toggleVersion() {
+  if (!currentVersion) return;
+  startVersion(currentVersion === 'short' ? 'long' : 'short');
+}
+
+function updateVersionSwitchText() {
+  versionSwitch.innerHTML = currentVersion === 'short'
+    ? (t('app.versionSwitchToLong'))
+    : (t('app.versionSwitchToShort'));
+}
+
+
+/* ============================================================
+   Draggable Scrubber
+   ============================================================ */
+let bars = [], barElements = [];
+
+function getVisibleSlides() {
+  const all = container.querySelectorAll('section.slide');
+  const vis = [];
+  all.forEach(s => {
+    if (s.id === 's0') return;
+    if (window.getComputedStyle(s).display !== 'none') vis.push(s);
+  });
+  return vis;
+}
+
+function buildBars() {
+  scrubber.innerHTML = '';
+  barElements = [];
+  bars = getVisibleSlides();
+  bars.forEach((s, i) => {
+    const bar = document.createElement('div');
+    bar.className = 'nav-bar';
+    scrubber.appendChild(bar);
+    barElements.push(bar);
+  });
+}
+
+function updateBarHighlight(slideIdx) {
+  barElements.forEach((b, i) => b.classList.toggle('active', i === slideIdx));
+}
+
+function currentSlideIndex() {
+  const ch = container.clientHeight;
+  let idx = 0;
+  bars.forEach((s, i) => { if (s.getBoundingClientRect().top < ch * 0.5) idx = i; });
+  return idx;
+}
+
+function getSlideHeading(slide, idx) {
+  const h2s = slide.querySelectorAll('.s-title');
+  let txt = '';
+  h2s.forEach(h => { if (window.getComputedStyle(h).display !== 'none') txt = h.textContent.trim(); });
+  return (idx + 1) + '. ' + txt;
+}
+
+let dragging = false, pointerDownY = 0;
+
+function getClosestBarIndex(clientY) {
+  let best = 0, min = Infinity;
+  barElements.forEach((b, i) => {
+    const r = b.getBoundingClientRect(), cy = r.top + r.height / 2;
+    const d = Math.abs(clientY - cy);
+    if (d < min) { min = d; best = i; }
+  });
+  return best;
+}
+
+function showBarTooltip(idx) {
+  if (!barElements[idx]) return;
+  const barRect = barElements[idx].getBoundingClientRect();
+  tooltip.style.top = (barRect.top + barRect.height / 2) + 'px';
+  tooltip.textContent = getSlideHeading(bars[idx], idx);
+  tooltip.classList.add('show');
+}
+
+let hoverActive = false;
+function isOverScrubber(e) { const r = scrubber.getBoundingClientRect(); return e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; }
+
+scrubber.addEventListener('mousemove', e => {
+  if (dragging) return; hoverActive = true;
+  const idx = getClosestBarIndex(e.clientY);
+  updateBarHighlight(idx); showBarTooltip(idx);
+});
+scrubber.addEventListener('mouseleave', () => { hoverActive = false; tooltip.classList.remove('show'); updateBarHighlight(currentSlideIndex()); });
+document.addEventListener('mousemove', e => {
+  if (dragging || hoverActive) return;
+  if (!isOverScrubber(e)) { tooltip.classList.remove('show'); updateBarHighlight(currentSlideIndex()); }
+});
+
+function jumpTo(idx) { if (bars[idx]) { bars[idx].scrollIntoView({ behavior: 'smooth' }); updateBarHighlight(idx); } }
+
+scrubber.addEventListener('pointerdown', e => {
+  pointerDownY = e.clientY; dragging = false;
+  scrubber.setPointerCapture(e.pointerId); scrubber.classList.add('dragging');
+  const idx = getClosestBarIndex(e.clientY); updateBarHighlight(idx); showBarTooltip(idx);
+  e.preventDefault();
+});
+scrubber.addEventListener('pointermove', e => {
+  if (Math.abs(e.clientY - pointerDownY) < 5) return;
+  dragging = true;
+  const idx = getClosestBarIndex(e.clientY);
+  updateBarHighlight(idx); showBarTooltip(idx);
+});
+scrubber.addEventListener('pointerup', e => {
+  scrubber.classList.remove('dragging');
+  const idx = getClosestBarIndex(e.clientY);
+  jumpTo(idx);
+  dragging = false; tooltip.classList.remove('show');
+});
+scrubber.addEventListener('pointerleave', () => { if (dragging) { scrubber.classList.remove('dragging'); tooltip.classList.remove('show'); } });
+container.addEventListener('scroll', () => { if (!dragging) updateBarHighlight(currentSlideIndex()); });
+window.addEventListener('resize', () => { if (currentVersion) { buildBars(); updateBarHighlight(currentSlideIndex()); } });
+
+
+/* ============================================================
+   Visa Checker
+   ============================================================ */
+const vcN = document.getElementById('vcNationality');
+const vcQ4 = document.getElementById('vcQ4');
+const vcR = document.getElementById('vcResult');
+const vcReset = document.getElementById('vcReset');
+
+document.querySelectorAll('input[name="purpose"]').forEach(r => r.addEventListener('change', () => {
+  vcQ4.style.display = r.value === 'transit' ? 'block' : 'none'; checkVisa();
+}));
+document.querySelectorAll('input[name="duration"]').forEach(r => r.addEventListener('change', checkVisa));
+document.querySelectorAll('input[name="onward"]').forEach(r => r.addEventListener('change', checkVisa));
+vcN.addEventListener('change', checkVisa);
+
+// Populate country dropdown
+(function () {
+  const s = document.getElementById('vcNationality');
+  // Single placeholder, text from i18n
+  const ph = document.createElement('option'); ph.value = ''; ph.disabled = true; ph.selected = true;
+  ph.textContent = t('s1.placeholder') || '…';
+  s.appendChild(ph);
+  COUNTRY_CODES.forEach(code => {
+    const o = document.createElement('option');
+    o.value = code;
+    o.textContent = t('countries.' + code) || code;
+    s.appendChild(o);
+  });
+})();
+
+function updateCountryLang() {
+  Array.from(document.getElementById('vcNationality').options).forEach(o => {
+    if (!o.value) { o.textContent = t('s1.placeholder') || '…'; return; }
+    o.textContent = t('countries.' + o.value) || o.value;
+  });
+}
+
+function getRadio(n) { const e = document.querySelector(`input[name="${n}"]:checked`); return e ? e.value : null; }
+
+function checkVisa() {
+  const c = vcN.value, p = getRadio('purpose'), d = getRadio('duration');
+  if (!c || !p || !d) { vcR.className = 'vc-result'; vcR.innerHTML = ''; vcReset.classList.remove('show'); return; }
+  if (p === 'transit' && !getRadio('onward')) return;
+  showResult(evalVisa(c, p, d));
+}
+
+function evalVisa(c, p, d) {
+  const vf = VISA_FREE.has(c), tr = TRANSIT.has(c), mf = MUTUAL.has(c);
+  if (mf && (p === 'tourism' || p === 'business' || p === 'family') && (d === 'short' || d === 'medium'))
+    return { type: 'mutual' };
+  if (vf && (p === 'tourism' || p === 'business' || p === 'family') && (d === 'short' || d === 'medium'))
+    return { type: 'free', country: c };
+  if (tr && p === 'transit' && getRadio('onward') === 'yes' && d === 'short')
+    return { type: 'transit' };
+  if (p === 'work' && (d === 'long' || d === 'xlong'))
+    return { type: 'kvisa' };
+  return { type: 'visaRequired' };
+}
+
+function showResult(r) {
+  vcR._lastResult = r;
+  const vd = VISA_DETAIL[r.type];
+  if (!vd) return;
+  const cls = r.type === 'visaRequired' ? 'visa' : r.type;
+  vcR.className = 'vc-result vc-result--' + cls + ' show';
+  const bodyKey = r.country === 'RU' && r.type === 'free' ? 'visa.free.bodyRuNote' : `visa.${r.type}.body`;
+  const conds = ta('visa.' + r.type + '.conditions');
+  const condList = Array.isArray(conds) ? conds : [];
+  vcR.innerHTML = `<strong>${t('visa.' + r.type + '.title')}</strong><p>${t(bodyKey)}</p><ul>${condList.map(c => `<li>${c}</li>`).join('')}</ul><button class="vc-detail-btn" onclick="event.stopPropagation();openVisaDetail('${r.type}','${r.country || ''}')">${t('app.visaDetailButton')}</button>`;
+  vcReset.classList.add('show');
+}
+
+function resetVisaChecker() {
+  vcN.selectedIndex = 0;
+  document.querySelectorAll('input[name="purpose"]:checked,input[name="duration"]:checked,input[name="onward"]:checked').forEach(r => r.checked = false);
+  vcQ4.style.display = 'none'; vcR.className = 'vc-result'; vcR.innerHTML = ''; vcReset.classList.remove('show');
+  if (typeof closeVisaDetail === 'function') closeVisaDetail();
+}
+
+
+/* ============================================================
+   Visa Detail (expand from result card)
+   ============================================================ */
+function openVisaDetail(type, country) {
+  const d = VISA_DETAIL[type]; if (!d) return;
+  const conds = ta('visa.' + type + '.conditions');
+  const condList = Array.isArray(conds) ? conds : [];
+  const links = d.links || [];
+  const ruNote = (country === 'RU' && type === 'free') ? `<p class="tip-box tip-box--warn" style="margin-top:8px"><strong>${t('visa.free.ruWarning')}</strong></p>` : '';
+  vcR.innerHTML = `<div style="margin-bottom:10px"><button class="detail-back" onclick="event.stopPropagation();closeVisaDetail()">← ${t('app.backToResult')}</button></div><h4 style="margin-bottom:10px">📋 ${t('visa.' + type + '.detailTitle')}</h4><ul class="step-list">${condList.map(c => `<li>${c}</li>`).join('')}</ul>${ruNote}${links.length ? `<div style="margin-top:12px"><p style="font-size:0.78rem;font-weight:700;margin-bottom:4px">🔗 ${t('app.officialLinks')}</p>${links.map(l => `<a href="${l.url}" target="_blank" rel="noopener" style="display:block;font-size:0.8rem;color:var(--info);text-decoration:underline;margin-bottom:2px">${t('visa.links.' + l.key)} →</a>`).join('')}</div>` : ''}`;
+  history.pushState({ visaDetail: true, type, country }, '', '#s1-detail-visa');
+}
+
+function closeVisaDetail() {
+  const r = vcR._lastResult;
+  if (r) showResult(r);
+  history.pushState(null, '', '#s1');
+}
+
+
+/* ============================================================
+   Language toggle (button in top bar)
+   ============================================================ */
+document.getElementById('btnLang').addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-lang') || 'zh';
+  setLang(current === 'zh' ? 'en' : 'zh');
+});
+</script>
+</body>
+</html>
