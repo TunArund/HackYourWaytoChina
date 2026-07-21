@@ -15,15 +15,15 @@
 
 ### v4.1 — 内容扩展
 - [x] S1 签证详情 — 5 种签证类型展开面板（条件+材料+官方链接）
-- [x] S7 医疗医美重写 — 4 子面板：国际医院+药品三语对照、医美价格表+4 机构、牙科/眼科/中医新三件、体检
+- [x] S7 医疗服务重写 — 3 子面板：国际医院+药品三语对照、牙科/眼科/中医新三件、体检
 - [x] S8 购物退税新增 — 4 子面板：科技电子、文创伴手礼、退税攻略、5 城购物地图
 - [x] S9 目的地指南新增 — 3 面板：TOP10 城市、5 黑马城市、四季推荐
 - [x] S6 补充尺码穿衣提示
 - [x] 交互框架 — `openDetail`/`closeDetail` + `popstate` + `Esc` + 二/三级展开
 
-### v4.2 — 架构重构 ✅（本次完成）
+### v4.2 — 架构重构 ✅
 - [x] CSS 提取 → `css/style.css`（349 行）
-- [x] 数据提取 → `js/data.js`（VISA_FREE, TRANSIT, MUTUAL, COUNTRIES, VISA_DETAIL, DEST_CITIES, COSMETIC_CLINICS, SHOP_CITIES）
+- [x] 数据提取 → `js/data.js`（VISA_FREE, TRANSIT, MUTUAL, COUNTRIES, VISA_DETAIL, DEST_CITIES, SHOP_CITIES）
 - [x] i18n 系统 → `i18n/` + `js/i18n.js`（zh.json + en.json，637 键各；支持 fetch 和 bundled 两种模式）
 - [x] 应用逻辑 → `js/app.js`（版本管理、导航、签证、语言切换）
 - [x] 详情面板 → `js/detail.js`（openDetail/closeDetail/renderDetail + 所有子渲染器）
@@ -31,6 +31,37 @@
 - [x] 构建脚本 → `build.py`（多文件→单文件合并，支持 `--watch`）
 - [x] 文档整合 → 合并为 4 个 .md + 1 个 .html
 - [x] 原 `guide.html` 保留（旧版单文件参考）
+
+### v4.3 — 医美清理 + 牙科调研 ✅（2026-07-21）
+
+**背景**：医美风险大，三年内不予考虑。公司一阶段重点：牙科医疗旅游。
+
+#### 清理医美内容
+- [x] resources.md：删除医美专题
+- [x] index.html：S7 标题改为"医疗服务"，删除医美卡片
+- [x] js/data.js：删除 COSMETIC_CLINICS 等医美数据
+- [x] js/detail.js：删除 cosmetic 渲染逻辑
+- [x] i18n/zh.json + en.json：删除所有医美翻译键（90+ 行）
+- [x] 文档同步：README.md、roadmap.md 更新
+
+#### 牙科市场调研
+- [x] 创建 research.md（整合 dental_research.md + resources.md）
+- [x] 价格对比：中国 vs 韩日泰美
+- [x] Reddit 外籍人士反馈整理
+- [x] 亚洲竞争格局分析
+- [x] **明确标注信息缺口**：缺乏真实案例、供给侧详情、多语言服务验证
+- [x] 调研方法论反思：过度依赖 AI 搜索，需补充一手资料
+- [x] 下一步调研计划：小红书、Reddit 具体帖子、日韩平台、实地询价
+
+**关键发现**：
+- 中国牙科价格为韩国 60%、日本 40%、美国 25%
+- 地理优势：韩日游客 2-3 小时航程
+- 主要劣势：语言服务不如泰国，国际知名度低
+- **信息缺口**：缺乏韩日游客真实案例、涉外诊所价格表、多语言服务覆盖
+
+**产出文件**：
+- research.md（牙科市场调研 + 统计数据）
+- feedback.md（Boss 反馈记录）
 
 ### 架构总览
 
@@ -101,7 +132,6 @@
 | 5 黑马城市 | 5 | Unsplash/Pexels |
 | 华强北商圈 | 1 | Unsplash |
 | 义乌商贸城 | 1 | Unsplash |
-| 医美机构 logo（嘉会/美华等） | 4 | 各机构官网 press kit |
 | App 图标 | 8 | 各 App 官网 |
 
 ---

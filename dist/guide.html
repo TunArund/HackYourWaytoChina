@@ -159,13 +159,12 @@
   <section class="slide slide--short slide-pos--mid" id="s7">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" lang="zh">医疗与医美</h2><h2 class="s-title" lang="en">Medical & Aesthetics</h2><p class="s-sub" lang="zh">全国57城850+机构开展国际医疗。点击卡片查看详情。</p><p class="s-sub" lang="en">850+ institutions across 57 cities. Tap cards for details.</p></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" lang="zh">医疗服务</h2><h2 class="s-title" lang="en">Medical Services</h2><p class="s-sub" lang="zh">全国57城850+机构开展国际医疗。点击卡片查看详情。</p><p class="s-sub" lang="en">850+ institutions across 57 cities. Tap cards for details.</p></div>
       </div>
       <div class="slide-body">
         <div class="info-cards">
           <div class="info-card info-card--hl" onclick="openDetail('s7','hospital')" style="cursor:pointer"><span class="c-label" lang="zh">🏥 基础医疗</span><span class="c-label" lang="en">🏥 Hospitals</span><h4 lang="zh">国际医院 + 常用药品</h4><h4 lang="en">Intl Hospitals & Meds</h4><p lang="zh">全国主要城市国际医院、药品中英俄对照、旅行保险</p><p lang="en">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
-          <div class="info-card info-card--hl" onclick="openDetail('s7','cosmetic')" style="cursor:pointer"><span class="c-label" lang="zh">💉 医美</span><span class="c-label" lang="en">💉 Aesthetic</span><h4 lang="zh">光电·注射·手术</h4><h4 lang="en">Laser·Injection·Surgery</h4><p lang="zh">价格仅为韩国1/3。光电类无恢复期，适合短期游客。含涉外机构推荐。</p><p lang="en">1/3 of Korean prices. Laser treatments ideal for short-term. Clinic recommendations.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
-          <div class="info-card" onclick="openDetail('s7','big3')" style="cursor:pointer"><span class="c-label" lang="zh">🦷👁️🌿 新三件</span><span class="c-label" lang="en">🦷👁️🌿 Big Three</span><h4 lang="zh">牙科·眼科·中医理疗</h4><h4 lang="en">Dental·Eye·TCM</h4><p lang="zh">种植牙&lt;¥5K、验光配镜立等可取、针灸推拿正骨。俄罗斯游客#1诉求。</p><p lang="en">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
+          <div class="info-card info-card--hl" onclick="openDetail('s7','big3')" style="cursor:pointer"><span class="c-label" lang="zh">🦷👁️🌿 医疗旅游三件套</span><span class="c-label" lang="en">🦷👁️🌿 Medical Tourism</span><h4 lang="zh">牙科·眼科·中医理疗</h4><h4 lang="en">Dental·Eye·TCM</h4><p lang="zh">种植牙&lt;¥5K、验光配镜立等可取、针灸推拿正骨。俄罗斯游客#1诉求。</p><p lang="en">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
           <div class="info-card" onclick="openDetail('s7','checkup')" style="cursor:pointer"><span class="c-label" lang="zh">📋 体检</span><span class="c-label" lang="en">📋 Checkup</span><h4 lang="zh">高端体检套餐</h4><h4 lang="en">Executive Checkup</h4><p lang="zh">¥2K-10K+，含多项检查，部分机构24h出报告。半天完成。</p><p lang="en">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="zh">[ 展开查看 → ]</p><p class="c-label" style="margin-top:6px;color:var(--accent)" lang="en">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel" id="detail-s7"></div>
@@ -386,15 +385,6 @@ const TOP10_CITIES = ['shanghai','beijing','guangzhou','shenzhen','chongqing','c
 const RISING_CITIES = ['zhengzhou','taiyuan','guiyang','fuzhou','yiwu'];
 const HOSPITAL_CITIES = ['shanghai','beijing','guangzhou','tianjin','hainan'];
 
-/* ---- Aesthetic clinic contact data ---- */
-const COSMETIC_CLINICS = {
-  jiahui: { addr:'上海市徐汇区桂平路689号', tel:'4008-919191', web:'jiahui.com' },
-  mhwd:   { addr:'上海市', tel:'', web:'' },
-  rodeo:  { addr:'上海市黄浦区茂名南路7号2楼', tel:'', web:'' },
-  yuansong: { addr:'上海市(多个院区)', tel:'', web:'' }
-};
-const CLINIC_KEYS = Object.keys(COSMETIC_CLINICS);
-
 /* ---- Shop city keys ---- */
 const SHOP_CITY_KEYS = ['shenzhen','shanghai','yiwu','sanya','beijing'];
 
@@ -408,11 +398,8 @@ const MEDS = [
 ];
 
 /* ---- Treatment lists (keys map to i18n for display) ---- */
-const COSMETIC_LASER = ['ipl','pico','thermage','hifu','hair_removal'];
-const COSMETIC_INJECTION = ['botox_import','juvederm','btx_domestic','ha_domestic','neck_filler'];
-const COSMETIC_SURGERY = ['thread_lift','incisional','rhinoplasty','rib_rhino'];
-const BIG3_DENTAL = ['implant','cleaning','crown'];
-const BIG3_TCM = ['acupuncture','tuina','bonesetting','herbal'];
+const BIG3_DENTAL = ['cleaning','filling','root','implant','crown'];
+const BIG3_TCM = ['acupuncture','tuina','bonesetting','cupping','herbal'];
 const SHOP_ELECTRONICS = ['foldable','drone','ai_glasses','translator','earbuds'];
 const SOUVENIR_CITIES = ['beijing','chengdu','xian','chongqing','guizhou'];
 const TAXREFUND_REQS = ['reqStay','reqAmount','reqDeparture','reqCarry'];
@@ -589,7 +576,7 @@ const H = {
   table: (headers, rows) => `<table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`,
   tip: (type, title, body) => `<div class="tip-box tip-box--${type}"><strong>${title}</strong><span>${body}</span></div>`,
   subGrid: (items) => `<div class="sub-card-grid">${items.join('')}</div>`,
-  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('s7_detail.cosmetic.clinicExpandHint')} ]</div></div>`,
+  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('s7_detail.big3.expandHint')} ]</div></div>`,
   nav: (prev, next, idx, total) => `<div class="detail-nav">${prev || '<span></span>'}<span class="dn-center">${idx + 1}/${total}</span>${next || '<span></span>'}</div>`,
   muted: (text) => `<p class="muted-sm mt-sm">${text}</p>`,
 };
@@ -620,30 +607,6 @@ function renderS7(key, sub) {
       + H.h4(t(P + 'hospital.sectionHospitals')) + H.table(cols, hrows)
       + H.h4(t(P + 'hospital.sectionMeds')) + H.table(mcols, mrows)
       + H.tip('warn', t(P + 'hospital.insuranceWarning'), t(P + 'hospital.insuranceDetail'));
-  }
-
-  if (key === 'cosmetic') {
-    if (sub) {
-      const cp = P + 'cosmetic.clinics.' + sub + '.';
-      const c = COSMETIC_CLINICS[sub]; if (!c) return '';
-      return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s7','cosmetic')">← ${t(P + 'cosmetic.backToCosmetic')}</button>
-        <h3>🏥 ${t(cp + 'name')}</h3>
-        ${c.addr ? `<p class="dp-info">📍 ${c.addr}</p>` : ''}${c.tel ? `<p class="dp-info">📞 ${c.tel}</p>` : ''}${c.web ? `<p class="dp-info">🌐 ${c.web}</p>` : ''}
-        <p class="dp-text">${t(cp + 'desc')}</p>`;
-    }
-    const CP = P + 'cosmetic.';
-    const laserCols = [t(CP + 'colTreatment'), t(CP + 'colPrice'), t(CP + 'colTime')];
-    const laserRows = COSMETIC_LASER.map(k => [t(CP + 'laser.' + k), t(CP + 'laser.' + k + '_price'), t(CP + 'laser.' + k + '_time')]);
-    const injCols = [t(CP + 'colTreatment'), t(CP + 'colPrice')];
-    const injRows = COSMETIC_INJECTION.map(k => [t(CP + 'injection.' + k), t(CP + 'injection.' + k + '_price')]);
-    const surgCols = [t(CP + 'colTreatment'), t(CP + 'colPrice'), t(CP + 'colRecovery')];
-    const surgRows = COSMETIC_SURGERY.map(k => [t(CP + 'surgery.' + k), t(CP + 'surgery.' + k + '_price'), t(CP + 'surgery.' + k + '_recovery')]);
-    const clinicCards = CLINIC_KEYS.map(k => H.subCard(t(CP + 'clinics.' + k + '.name'), t(CP + 'clinics.' + k + '.subtitle'), `event.stopPropagation();openDetail('s7','cosmetic','${k}')`));
-    return H.back('s7') + H.title(t(CP + 'title')) + H.intro(CP + 'intro')
-      + H.h4(t(CP + 'sectionLaser')) + H.table(laserCols, laserRows)
-      + H.h4(t(CP + 'sectionInjection')) + H.table(injCols, injRows)
-      + H.h4(t(CP + 'sectionSurgery')) + H.table(surgCols, surgRows)
-      + H.h4(t(CP + 'sectionClinics')) + H.subGrid(clinicCards);
   }
 
   if (key === 'big3') {

@@ -178,7 +178,7 @@
     "footer": "🧳 入境中国图文攻略 · 更新于 2026年7月 · 信息基于 NIA、外交部领事司公开资料 · NIA 12367 · s.nia.gov.cn"
   },
   "s7": {
-    "title": "医疗与医美",
+    "title": "医疗服务",
     "sub": "全国57城850+机构开展国际医疗。点击卡片查看详情。",
     "hospital": {
       "label": "🏥 基础医疗",
@@ -186,14 +186,8 @@
       "desc": "全国主要城市国际医院、药品中英俄对照、旅行保险",
       "expandHint": "[ 展开查看 → ]"
     },
-    "cosmetic": {
-      "label": "💉 医美",
-      "title": "光电·注射·手术",
-      "desc": "价格仅为韩国1/3。光电类无恢复期，适合短期游客。含涉外机构推荐。",
-      "expandHint": "[ 展开查看 → ]"
-    },
     "big3": {
-      "label": "🦷👁️🌿 新三件",
+      "label": "🦷👁️🌿 医疗旅游三件套",
       "title": "牙科·眼科·中医理疗",
       "desc": "种植牙<¥5K、验光配镜立等可取、针灸推拿正骨。俄罗斯游客#1诉求。",
       "expandHint": "[ 展开查看 → ]"
@@ -235,111 +229,32 @@
       "insuranceWarning": "⚠️ 务必购买旅行医疗保险",
       "insuranceDetail": "门诊¥800-1,500+，国际部挂号¥600-1,200。推荐Cigna/Allianz/Bupa。"
     },
-    "cosmetic": {
-      "title": "💉 医美指南",
-      "intro": "💡 中国价格约为韩国1/3。韩国2026年起取消外国人整形退税。",
-      "backToCosmetic": "← 返回医美指南",
-      "sectionLaser": "⚡ 光电类（无恢复期，适合短期游客）",
-      "sectionInjection": "💉 注射类（即做即走）",
-      "sectionSurgery": "🔪 手术类（需恢复期→不推荐短期游客）",
-      "colTreatment": "项目",
-      "colPrice": "价格(元)",
-      "colTime": "时长",
-      "colRecovery": "恢复期",
-      "sectionClinics": "🏥 推荐机构（点击查看详情）",
-      "clinicExpandHint": "[ 查看详情 → ]",
-      "laser": {
-        "ipl": "光子嫩肤M22",
-        "ipl_price": "1,200-3,000",
-        "ipl_time": "30min",
-        "pico": "超皮秒祛斑",
-        "pico_price": "2,500-5,000",
-        "pico_time": "40min",
-        "thermage": "热玛吉五代",
-        "thermage_price": "12,000-18,000",
-        "thermage_time": "90min",
-        "hifu": "超声炮",
-        "hifu_price": "5,000-12,000",
-        "hifu_time": "60min",
-        "hair_removal": "激光脱毛(小腿)",
-        "hair_removal_price": "1,000-2,000",
-        "hair_removal_time": "30min"
-      },
-      "injection": {
-        "botox_import": "进口瘦脸针(保妥适50U)",
-        "botox_import_price": "2,000-3,500",
-        "juvederm": "进口玻尿酸1ml(乔雅登)",
-        "juvederm_price": "3,000-8,000",
-        "btx_domestic": "国产瘦脸针(衡力100U)",
-        "btx_domestic_price": "800-2,800",
-        "ha_domestic": "国产玻尿酸1ml",
-        "ha_domestic_price": "1,000-3,000",
-        "neck_filler": "嗨体颈纹",
-        "neck_filler_price": "1,800-3,000"
-      },
-      "surgery": {
-        "thread_lift": "埋线双眼皮",
-        "thread_lift_price": "2,000-8,000",
-        "thread_lift_recovery": "3-7天",
-        "incisional": "全切双眼皮",
-        "incisional_price": "3,000-15,000",
-        "incisional_recovery": "7-14天",
-        "rhinoplasty": "鼻综合(硅胶+耳软骨)",
-        "rhinoplasty_price": "8,000-18,000",
-        "rhinoplasty_recovery": "14-30天",
-        "rib_rhino": "肋软骨鼻综合",
-        "rib_rhino_price": "15,000-40,000",
-        "rib_rhino_recovery": "30+天"
-      },
-      "clinics": {
-        "jiahui": {
-          "name": "上海嘉会国际医院",
-          "addr": "上海市徐汇区桂平路689号",
-          "tel": "4008-919191",
-          "web": "jiahui.com",
-          "subtitle": "JCI标准·多语种·手术+非手术",
-          "desc": "国际JCI标准,多语种服务团队。手术类(软组织切除、腹壁整形、形体塑形)与非手术类(肉毒素、各类填充剂注射)。年服务外籍10+例专程手术。"
-        },
-        "mhwd": {
-          "name": "美华沃德·丁香门诊部",
-          "addr": "上海市",
-          "tel": "—",
-          "web": "—",
-          "subtitle": "国际部·合规设备·个性化方案",
-          "desc": "设有国际部,多语种服务。所有医美服务在正规医疗资质下开展,使用合规设备与产品。由国内皮肤医美与注射美容领域专家领衔。"
-        },
-        "rodeo": {
-          "name": "RODEO柔缇欧(上海)",
-          "addr": "上海市黄浦区茂名南路7号2楼",
-          "tel": "—",
-          "web": "—",
-          "subtitle": "美式连锁·美国医生背景",
-          "desc": "美式跨境连锁医美品牌。医生团队含美国顶尖医学中心背景专家,获多个国际品牌官方认证。涉外服务:配置对应语言服务人员,流程符合国际标准。"
-        },
-        "yuansong": {
-          "name": "媛颂医美(上海)",
-          "addr": "上海市(多个院区)",
-          "tel": "—",
-          "web": "—",
-          "subtitle": "韩/日/中东客户经验·自然审美",
-          "desc": "已服务韩国、日本、中东等地区客户。采用注射填充方案替代高风险磨骨手术。推崇自然\"妈生脸\"效果,审美开放多元。"
-        }
-      }
-    },
     "big3": {
       "title": "🦷👁️🌿 医疗新三件",
       "sectionDental": "🦷 牙科",
       "colItem": "项目",
       "colChinaPrice": "中国价格",
       "colUsEuPrice": "美国/欧洲",
-      "dental_implant": "种植牙",
-      "dental_implant_cn": "< ¥5,000",
       "dental_cleaning": "洗牙",
       "dental_cleaning_cn": "¥200-500",
+      "dental_cleaning_us": "$100-200",
+      "dental_filling": "补牙",
+      "dental_filling_cn": "¥300-800",
+      "dental_filling_us": "$150-400",
+      "dental_root": "根管治疗",
+      "dental_root_cn": "¥1,500-3,000",
+      "dental_root_us": "$800-1,500",
+      "dental_implant": "种植牙",
+      "dental_implant_cn": "¥5,000-15,000",
+      "dental_implant_us": "$3,000-6,000",
       "dental_crown": "美容牙冠",
       "dental_crown_cn": "¥2,000-5,000",
+      "dental_crown_us": "$1,000-2,500",
+      "dentalNote": "💡 价格优势：中国牙科为欧美的25-35%。数据来源：大众点评、Reddit expat社区反馈（2024-2025）",
+      "dentalClinics": "🏥 推荐机构",
+      "dentalClinicsDetail": "上海嘉会口腔(英语服务)·北京和睦家口腔·深圳爱康健·瑞尔齿科(全国连锁)。建议：提前预约，询问是否提供英语服务。",
       "sectionEye": "👁️ 眼科",
-      "eyeDesc": "验光配镜\"立等可取\"，当天取镜。激光近视手术¥8,000-20,000。推荐：上海眼耳鼻喉科医院。",
+      "eyeDesc": "验光配镜\"立等可取\"，当天取镜(¥500-2,000)。激光近视手术¥8,000-20,000。推荐：上海眼耳鼻喉科医院、北京同仁医院、爱尔眼科(全国连锁)。",
       "sectionTcm": "🌿 中医理疗（俄罗斯游客 #1 诉求）",
       "colTherapy": "项目",
       "colDescription": "说明",
@@ -353,11 +268,14 @@
       "tcm_bonesetting": "正骨",
       "tcm_bonesetting_desc": "骨伤复位",
       "tcm_bonesetting_price": "¥200-500/次",
+      "tcm_cupping": "拔罐",
+      "tcm_cupping_desc": "祛湿排毒",
+      "tcm_cupping_price": "¥50-150/次",
       "tcm_herbal": "草药",
       "tcm_herbal_desc": "个性化配方",
       "tcm_herbal_price": "¥100-500/剂",
       "tcmHotspots": "📍 TCM 热门目的地",
-      "tcmHotspotsDetail": "三亚市中医院(国际部)·黑河市中医院(俄语服务,年2,000+)·珲春市医院(俄语翻译)·饶河县中医院(保健浴+推拿)"
+      "tcmHotspotsDetail": "三亚市中医院(国际部)·黑河市中医院(俄语服务,年2,000+患者)·珲春市医院(俄语翻译)·饶河县中医院(保健浴+推拿)·北京同仁堂(传统老字号)"
     },
     "checkup": {
       "title": "📋 健康体检",

@@ -178,7 +178,7 @@
     "footer": "🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn"
   },
   "s7": {
-    "title": "Medical & Aesthetics",
+    "title": "Medical Services",
     "sub": "850+ institutions across 57 cities. Tap cards for details.",
     "hospital": {
       "label": "🏥 Hospitals",
@@ -186,14 +186,8 @@
       "desc": "Major city hospitals, trilingual meds list, travel insurance",
       "expandHint": "[ Expand → ]"
     },
-    "cosmetic": {
-      "label": "💉 Aesthetic",
-      "title": "Laser·Injection·Surgery",
-      "desc": "1/3 of Korean prices. Laser treatments ideal for short-term. Clinic recommendations.",
-      "expandHint": "[ Expand → ]"
-    },
     "big3": {
-      "label": "🦷👁️🌿 Big Three",
+      "label": "🦷👁️🌿 Medical Tourism",
       "title": "Dental·Eye·TCM",
       "desc": "Implants <¥5K, glasses same-day, acupuncture & massage. #1 for Russians.",
       "expandHint": "[ Expand → ]"
@@ -235,111 +229,32 @@
       "insuranceWarning": "⚠️ Buy Travel Insurance",
       "insuranceDetail": "Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa."
     },
-    "cosmetic": {
-      "title": "💉 Aesthetic Medicine Guide",
-      "intro": "💡 ~1/3 of Korean prices. Korea ended foreigner plastic surgery tax refund in 2026.",
-      "backToCosmetic": "← Back to Aesthetics",
-      "sectionLaser": "⚡ Laser/Light (No downtime — ideal for visitors)",
-      "sectionInjection": "💉 Injectables (Walk-in/Walk-out)",
-      "sectionSurgery": "🔪 Surgical (Recovery needed — not for short stays)",
-      "colTreatment": "Treatment",
-      "colPrice": "Price(¥)",
-      "colTime": "Time",
-      "colRecovery": "Recovery",
-      "sectionClinics": "🏥 Recommended Clinics (tap for details)",
-      "clinicExpandHint": "[ Details → ]",
-      "laser": {
-        "ipl": "IPL/M22 Full Face",
-        "ipl_price": "1,200-3,000",
-        "ipl_time": "30min",
-        "pico": "PicoSure/Picoway",
-        "pico_price": "2,500-5,000",
-        "pico_time": "40min",
-        "thermage": "Thermage FLX 5",
-        "thermage_price": "12,000-18,000",
-        "thermage_time": "90min",
-        "hifu": "Ultherapy/HIFU",
-        "hifu_price": "5,000-12,000",
-        "hifu_time": "60min",
-        "hair_removal": "Laser Hair Removal(Leg)",
-        "hair_removal_price": "1,000-2,000",
-        "hair_removal_time": "30min"
-      },
-      "injection": {
-        "botox_import": "Botox 50U (Import)",
-        "botox_import_price": "2,000-3,500",
-        "juvederm": "Juvederm 1ml",
-        "juvederm_price": "3,000-8,000",
-        "btx_domestic": "BTX-A 100U (Domestic)",
-        "btx_domestic_price": "800-2,800",
-        "ha_domestic": "HA Filler 1ml (Domestic)",
-        "ha_domestic_price": "1,000-3,000",
-        "neck_filler": "Neck Line Filler",
-        "neck_filler_price": "1,800-3,000"
-      },
-      "surgery": {
-        "thread_lift": "Thread Lift Eyelid",
-        "thread_lift_price": "2,000-8,000",
-        "thread_lift_recovery": "3-7d",
-        "incisional": "Incisional Eyelid",
-        "incisional_price": "3,000-15,000",
-        "incisional_recovery": "7-14d",
-        "rhinoplasty": "Rhinoplasty(Silicone+Cartilage)",
-        "rhinoplasty_price": "8,000-18,000",
-        "rhinoplasty_recovery": "14-30d",
-        "rib_rhino": "Rib Cartilage Rhinoplasty",
-        "rib_rhino_price": "15,000-40,000",
-        "rib_rhino_recovery": "30+d"
-      },
-      "clinics": {
-        "jiahui": {
-          "name": "Shanghai Jiahui Intl Hospital",
-          "addr": "689 Guiping Rd, Xuhui, Shanghai",
-          "tel": "4008-919191",
-          "web": "jiahui.com",
-          "subtitle": "JCI·Multilingual·Surg+Non-surg",
-          "desc": "JCI-standard, multilingual team. Surgical (soft tissue, abdominoplasty, body contouring) & non-surgical (Botox, fillers). 10+ intl surgical cases/year."
-        },
-        "mhwd": {
-          "name": "MHWD·Dingxiang Clinic",
-          "addr": "Shanghai",
-          "tel": "—",
-          "web": "—",
-          "subtitle": "Intl Dept·Compliant·Personalized",
-          "desc": "International dept, multilingual. All services under proper medical licensing with compliant equipment. Led by dermatology & injection experts."
-        },
-        "rodeo": {
-          "name": "RODEO (Shanghai)",
-          "addr": "2F, 7 Maoming South Rd, Huangpu, Shanghai",
-          "tel": "—",
-          "web": "—",
-          "subtitle": "American Chain·US Background",
-          "desc": "American cross-border chain. US-trained physicians with international brand certifications. Language-matched service staff, internationally compliant protocols."
-        },
-        "yuansong": {
-          "name": "YuanSong Aesthetics (Shanghai)",
-          "addr": "Shanghai (multiple locations)",
-          "tel": "—",
-          "web": "—",
-          "subtitle": "KR/JP/MidEast clients·Natural",
-          "desc": "Served clients from Korea, Japan, Middle East. Uses filler-based contouring instead of high-risk bone shaving. Natural aesthetics philosophy."
-        }
-      }
-    },
     "big3": {
       "title": "🦷👁️🌿 Medical \"Big Three\"",
       "sectionDental": "🦷 Dental",
       "colItem": "Item",
       "colChinaPrice": "China",
       "colUsEuPrice": "US/EU",
-      "dental_implant": "Dental Implant",
-      "dental_implant_cn": "< ¥5,000",
       "dental_cleaning": "Cleaning",
       "dental_cleaning_cn": "¥200-500",
+      "dental_cleaning_us": "$100-200",
+      "dental_filling": "Filling",
+      "dental_filling_cn": "¥300-800",
+      "dental_filling_us": "$150-400",
+      "dental_root": "Root Canal",
+      "dental_root_cn": "¥1,500-3,000",
+      "dental_root_us": "$800-1,500",
+      "dental_implant": "Dental Implant",
+      "dental_implant_cn": "¥5,000-15,000",
+      "dental_implant_us": "$3,000-6,000",
       "dental_crown": "Cosmetic Crown",
       "dental_crown_cn": "¥2,000-5,000",
+      "dental_crown_us": "$1,000-2,500",
+      "dentalNote": "💡 Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
+      "dentalClinics": "🏥 Recommended Clinics",
+      "dentalClinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service.",
       "sectionEye": "👁️ Ophthalmology",
-      "eyeDesc": "Glasses same-day service. Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital.",
+      "eyeDesc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide).",
       "sectionTcm": "🌿 TCM Therapy (#1 Russian request)",
       "colTherapy": "Therapy",
       "colDescription": "Description",
@@ -353,11 +268,14 @@
       "tcm_bonesetting": "Bone-Setting",
       "tcm_bonesetting_desc": "Orthopedic reset",
       "tcm_bonesetting_price": "¥200-500/sess",
+      "tcm_cupping": "Cupping",
+      "tcm_cupping_desc": "Detox & moisture",
+      "tcm_cupping_price": "¥50-150/sess",
       "tcm_herbal": "Herbal Medicine",
       "tcm_herbal_desc": "Personalized formula",
       "tcm_herbal_price": "¥100-500/dose",
       "tcmHotspots": "📍 TCM Hotspots",
-      "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(baths+massage)"
+      "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
     },
     "checkup": {
       "title": "📋 Health Checkup",

@@ -1,0 +1,14 @@
+# Cloudflare Pages Configuration
+# This file is optional - Cloudflare Pages can be configured via dashboard
+
+name = "hackyourwaytochina"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "python build.py"
+cwd = ""
+watch_dir = "."
+
+[build.upload]
+format = "directory"
+dir = "dist"

@@ -48,15 +48,6 @@ const TOP10_CITIES = ['shanghai','beijing','guangzhou','shenzhen','chongqing','c
 const RISING_CITIES = ['zhengzhou','taiyuan','guiyang','fuzhou','yiwu'];
 const HOSPITAL_CITIES = ['shanghai','beijing','guangzhou','tianjin','hainan'];
 
-/* ---- Aesthetic clinic contact data ---- */
-const COSMETIC_CLINICS = {
-  jiahui: { addr:'上海市徐汇区桂平路689号', tel:'4008-919191', web:'jiahui.com' },
-  mhwd:   { addr:'上海市', tel:'', web:'' },
-  rodeo:  { addr:'上海市黄浦区茂名南路7号2楼', tel:'', web:'' },
-  yuansong: { addr:'上海市(多个院区)', tel:'', web:'' }
-};
-const CLINIC_KEYS = Object.keys(COSMETIC_CLINICS);
-
 /* ---- Shop city keys ---- */
 const SHOP_CITY_KEYS = ['shenzhen','shanghai','yiwu','sanya','beijing'];
 
@@ -70,11 +61,8 @@ const MEDS = [
 ];
 
 /* ---- Treatment lists (keys map to i18n for display) ---- */
-const COSMETIC_LASER = ['ipl','pico','thermage','hifu','hair_removal'];
-const COSMETIC_INJECTION = ['botox_import','juvederm','btx_domestic','ha_domestic','neck_filler'];
-const COSMETIC_SURGERY = ['thread_lift','incisional','rhinoplasty','rib_rhino'];
-const BIG3_DENTAL = ['implant','cleaning','crown'];
-const BIG3_TCM = ['acupuncture','tuina','bonesetting','herbal'];
+const BIG3_DENTAL = ['cleaning','filling','root','implant','crown'];
+const BIG3_TCM = ['acupuncture','tuina','bonesetting','cupping','herbal'];
 const SHOP_ELECTRONICS = ['foldable','drone','ai_glasses','translator','earbuds'];
 const SOUVENIR_CITIES = ['beijing','chengdu','xian','chongqing','guizhou'];
 const TAXREFUND_REQS = ['reqStay','reqAmount','reqDeparture','reqCarry'];

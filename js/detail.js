@@ -76,7 +76,7 @@ const H = {
   table: (headers, rows) => `<table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`,
   tip: (type, title, body) => `<div class="tip-box tip-box--${type}"><strong>${title}</strong><span>${body}</span></div>`,
   subGrid: (items) => `<div class="sub-card-grid">${items.join('')}</div>`,
-  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('s7_detail.cosmetic.clinicExpandHint')} ]</div></div>`,
+  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('s7_detail.big3.expandHint')} ]</div></div>`,
   nav: (prev, next, idx, total) => `<div class="detail-nav">${prev || '<span></span>'}<span class="dn-center">${idx + 1}/${total}</span>${next || '<span></span>'}</div>`,
   muted: (text) => `<p class="muted-sm mt-sm">${text}</p>`,
 };
@@ -107,30 +107,6 @@ function renderS7(key, sub) {
       + H.h4(t(P + 'hospital.sectionHospitals')) + H.table(cols, hrows)
       + H.h4(t(P + 'hospital.sectionMeds')) + H.table(mcols, mrows)
       + H.tip('warn', t(P + 'hospital.insuranceWarning'), t(P + 'hospital.insuranceDetail'));
-  }
-
-  if (key === 'cosmetic') {
-    if (sub) {
-      const cp = P + 'cosmetic.clinics.' + sub + '.';
-      const c = COSMETIC_CLINICS[sub]; if (!c) return '';
-      return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s7','cosmetic')">← ${t(P + 'cosmetic.backToCosmetic')}</button>
-        <h3>🏥 ${t(cp + 'name')}</h3>
-        ${c.addr ? `<p class="dp-info">📍 ${c.addr}</p>` : ''}${c.tel ? `<p class="dp-info">📞 ${c.tel}</p>` : ''}${c.web ? `<p class="dp-info">🌐 ${c.web}</p>` : ''}
-        <p class="dp-text">${t(cp + 'desc')}</p>`;
-    }
-    const CP = P + 'cosmetic.';
-    const laserCols = [t(CP + 'colTreatment'), t(CP + 'colPrice'), t(CP + 'colTime')];
-    const laserRows = COSMETIC_LASER.map(k => [t(CP + 'laser.' + k), t(CP + 'laser.' + k + '_price'), t(CP + 'laser.' + k + '_time')]);
-    const injCols = [t(CP + 'colTreatment'), t(CP + 'colPrice')];
-    const injRows = COSMETIC_INJECTION.map(k => [t(CP + 'injection.' + k), t(CP + 'injection.' + k + '_price')]);
-    const surgCols = [t(CP + 'colTreatment'), t(CP + 'colPrice'), t(CP + 'colRecovery')];
-    const surgRows = COSMETIC_SURGERY.map(k => [t(CP + 'surgery.' + k), t(CP + 'surgery.' + k + '_price'), t(CP + 'surgery.' + k + '_recovery')]);
-    const clinicCards = CLINIC_KEYS.map(k => H.subCard(t(CP + 'clinics.' + k + '.name'), t(CP + 'clinics.' + k + '.subtitle'), `event.stopPropagation();openDetail('s7','cosmetic','${k}')`));
-    return H.back('s7') + H.title(t(CP + 'title')) + H.intro(CP + 'intro')
-      + H.h4(t(CP + 'sectionLaser')) + H.table(laserCols, laserRows)
-      + H.h4(t(CP + 'sectionInjection')) + H.table(injCols, injRows)
-      + H.h4(t(CP + 'sectionSurgery')) + H.table(surgCols, surgRows)
-      + H.h4(t(CP + 'sectionClinics')) + H.subGrid(clinicCards);
   }
 
   if (key === 'big3') {
