@@ -234,6 +234,23 @@ python scripts/build.py --watch
 pip install watchdog
 ```
 
+### 本地预览
+
+```bash
+# 方式 1：直接打开（推荐）
+python scripts/build.py && start dist/guide.html
+
+# 方式 2：本地服务器
+cd dist && python -m http.server 8000
+# 访问 http://localhost:8000/guide.html
+```
+
+### 使用 wrangler CLI 部署（可选）
+
+如果你想使用命令行部署而不是 Web 界面，参考 [WRANGLER.md](WRANGLER.md)。
+
+**注意**：对于 Pages 项目，推荐使用 Web 界面连接 GitHub 实现自动部署。
+
 ### 验证构建
 
 ```bash

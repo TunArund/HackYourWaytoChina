@@ -13,3 +13,8 @@ https://m.sohu.com/a/984367763_100116740
 https://news.ifeng.com/c/8qS0bVJSZEv
 
 TikTok Youtube：Medical Tourism
+核心问题：不够细致，没有亲手操作一遍
+手动牙科调研
+避雷项目、推荐项目、项目介绍、
+适用人群与常见病症
+牙齿健康百科
