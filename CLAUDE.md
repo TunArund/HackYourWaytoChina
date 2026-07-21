@@ -1,24 +1,44 @@
 # HackYourWaytoChina
 
-外国人入境中国图文攻略 — 单 HTML 文件（`guide.html`），PPT 式全屏 snap 滚动，中英双语。
+外国人入境中国图文攻略 — 多文件架构，构建为单 HTML 文件。
 
 ## 项目结构
 
-| 文件 | 用途 |
-|------|------|
-| `guide.html` | 主页面（当前单文件；下一步拆分多文件） |
-| `README.md` | 设计系统、屏幕规划、已知缺口 |
-| `resources.md` | 调研数据 + 链接索引 |
-| `roadmap.md` | 路线图 + 实施规格 |
-| `img/` | 图片素材 |
+```
+HackYourWaytoChina/
+├── src/                    # 源代码
+│   ├── index.html         # 主页面
+│   ├── css/style.css      # 样式
+│   ├── js/                # 脚本
+│   │   ├── app.js
+│   │   ├── data.js
+│   │   ├── detail.js
+│   │   └── i18n.js
+│   ├── i18n/              # 国际化
+│   │   ├── zh.json
+│   │   └── en.json
+│   └── img/               # 图片资源
+├── scripts/               # 构建脚本
+│   ├── build.py           # 多文件→单文件构建
+│   └── docx2md.py         # 文档转换
+├── docs/                  # 文档
+│   ├── DEPLOYMENT.md      # 部署指南
+│   ├── research.md        # 市场调研
+│   ├── roadmap.md         # 路线图
+│   └── feedback.md        # 反馈记录
+├── dist/                  # 构建产物
+│   └── guide.html         # 单文件输出（自包含）
+└── README.md              # 项目说明
+```
 
 ## 工作约定
 
-- `guide.html` 是当前产出文件
-- 下一步拆分为 `index.html` + `css/` + `js/` + `i18n/` 多文件架构
-- 运行 `python build.py` 合并为单文件供离线预览
-- 修改前先读 `README.md` 了解设计系统
-- 内容决策参考 `resources.md`
+- 源代码在 `src/` 目录
+- 运行 `python scripts/build.py` 构建为单文件
+- 构建产物输出到 `dist/guide.html`
+- 修改前先读 [README.md](README.md) 了解设计系统
+- 内容决策参考 [docs/research.md](docs/research.md)
+- 部署指南见 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
 ## Python 环境
 
@@ -49,8 +69,14 @@ conda activate md
 
 ### 工具脚本
 
-- `docx2md.py` — 将 .docx 转为 .md（python-docx + markdownify）
+- `scripts/build.py` — 多文件构建为单 HTML（离线可用）
 
 ```bash
-python docx2md.py <input.docx> [output.md]
+python scripts/build.py
+```
+
+- `scripts/docx2md.py` — 将 .docx 转为 .md（python-docx + markdownify）
+
+```bash
+python scripts/docx2md.py <input.docx> [output.md]
 ```

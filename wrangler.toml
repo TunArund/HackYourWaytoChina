@@ -5,9 +5,9 @@ name = "hackyourwaytochina"
 compatibility_date = "2024-01-01"
 
 [build]
-command = "python build.py"
+command = "python scripts/build.py"
 cwd = ""
-watch_dir = "."
+watch_dir = "src"
 
 [build.upload]
 format = "directory"

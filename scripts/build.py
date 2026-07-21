@@ -3,10 +3,10 @@
 build.py — Bundle multi-file project into single self-contained HTML file.
 
 Usage:
-    python build.py              # Output to dist/guide.html
-    python build.py --watch      # Rebuild on file changes (requires watchdog)
+    python scripts/build.py              # Output to dist/guide.html
+    python scripts/build.py --watch      # Rebuild on file changes (requires watchdog)
 
-Reads:  index.html, css/style.css, js/*.js, i18n/*.json
+Reads:  src/index.html, src/css/style.css, src/js/*.js, src/i18n/*.json
 Writes: dist/guide.html (self-contained, offline-able)
 """
 
@@ -22,8 +22,8 @@ from pathlib import Path
 if sys.platform == 'win32':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
-ROOT = Path(__file__).parent
-SRC = ROOT
+ROOT = Path(__file__).parent.parent  # Go up from scripts/ to project root
+SRC = ROOT / "src"
 DIST = ROOT / "dist"
 
 
@@ -130,7 +130,7 @@ if __name__ == "__main__":
             observer.schedule(Handler(), str(SRC / "css"), recursive=False)
             observer.schedule(Handler(), str(SRC / "js"), recursive=False)
             observer.schedule(Handler(), str(SRC / "i18n"), recursive=False)
-            observer.schedule(Handler(), str(SRC / "index.html"), recursive=False)
+            observer.schedule(Handler(), str(SRC), recursive=False)
             observer.start()
             print("Watching for changes... (Ctrl+C to stop)")
             build()

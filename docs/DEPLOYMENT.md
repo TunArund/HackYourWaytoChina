@@ -32,7 +32,7 @@ git push -u origin main
    | 设置项 | 值 |
    |--------|-----|
    | **Production branch** | `main` |
-   | **Build command** | `python build.py` |
+   | **Build command** | `python scripts/build.py` |
    | **Build output directory** | `dist` |
    | **Root directory** | `/` (留空) |
 
@@ -66,7 +66,7 @@ source /c/Users/TunArund/miniconda3/etc/profile.d/conda.sh
 conda activate md
 
 # 构建
-python build.py
+python scripts/build.py
 
 # 预览（在浏览器打开 dist/guide.html）
 start dist/guide.html
@@ -74,7 +74,7 @@ start dist/guide.html
 
 ## 构建说明
 
-- **输入**：`index.html` + `css/` + `js/` + `i18n/`
+- **输入**：`src/index.html` + `src/css/` + `src/js/` + `src/i18n/`
 - **输出**：`dist/guide.html`（单文件，自包含）
 - **构建时间**：< 5 秒
 - **文件大小**：~90 KB
@@ -91,7 +91,7 @@ start dist/guide.html
 ### 构建失败："python: command not found"
 
 Cloudflare Pages 默认提供 Python，如果报错检查：
-- Build command 是否为 `python build.py`（不是 `python3`）
+- Build command 是否为 `python scripts/build.py`（不是 `python3`）
 
 ### 部署后页面 404
 

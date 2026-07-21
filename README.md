@@ -82,8 +82,9 @@
 
 | 文档 | 内容 |
 |------|------|
-| [guide.html](guide.html) | 主页面（当前：单文件；下一步：多文件架构） |
-| [research.md](research.md) | 市场调研（统计数据、牙科专项调研、客群画像、实用链接） |
-| [roadmap.md](roadmap.md) | 路线图 + 实施规格（已完成、下一步、暂缓、架构规划） |
-| [feedback.md](feedback.md) | Boss 反馈记录 |
+| [src/index.html](src/index.html) | 主页面（多文件架构） |
+| [docs/research.md](docs/research.md) | 市场调研（统计数据、牙科专项调研、客群画像、实用链接） |
+| [docs/roadmap.md](docs/roadmap.md) | 路线图 + 实施规格（已完成、下一步、暂缓、架构规划） |
+| [docs/feedback.md](docs/feedback.md) | Boss 反馈记录 |
+| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Cloudflare Pages 部署指南 |
 | [CLAUDE.md](CLAUDE.md) | 开发环境 + 项目结构 + 工作约定 |
