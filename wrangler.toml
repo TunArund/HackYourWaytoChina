@@ -1,6 +1,0 @@
-# Cloudflare Pages Configuration
-# For Pages projects, build settings are configured in the dashboard
-# This file is optional and primarily used for local development
-
-name = "hackyourwaytochina"
-pages_build_output_dir = "dist"

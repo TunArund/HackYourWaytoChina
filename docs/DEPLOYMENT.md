@@ -75,6 +75,11 @@ start dist/guide.html
 | **Build output directory** | `dist` | 构建输出目录 |
 | **Root directory** | （留空） | 项目根目录 |
 
+⚠️ **重要**：在 Cloudflare Pages 设置中，确保：
+- **Build command** 只填 `python scripts/build.py`
+- **没有** Deploy command（留空或删除）
+- Pages 会自动部署 `dist` 目录的内容
+
 #### 环境变量
 
 不需要添加任何环境变量。Cloudflare Pages 默认提供 Python 3.7+。
