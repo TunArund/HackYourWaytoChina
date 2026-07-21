@@ -245,47 +245,76 @@ function closeVisaDetail() {
 
 
 /* ============================================================
-   Language toggle (button in top bar) - Multi-language support
+   Language selector (dropdown in top bar)
    ============================================================ */
 const SUPPORTED_LANGUAGES = [
-  { code: 'zh', name: '中文', flag: '🇨🇳' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'ko', name: '한국어', flag: '🇰🇷' },
-  { code: 'ja', name: '日本語', flag: '🇯🇵' },
-  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
-  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' }
+  { code: 'en', name: 'English', flag: '🇬🇧' },      // Default
+  { code: 'ko', name: '한국어', flag: '🇰🇷' },      // #1 Korea
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },     // #2 Russia
+  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' },  // #4 Vietnam
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },      // #8 Japan
+  { code: 'zh', name: '中文', flag: '🇨🇳' }          // Chinese
 ];
 
-let currentLangIndex = 0;
+function buildLanguageDropdown() {
+  const btn = document.getElementById('btnLang');
+  if (!btn) return;
 
-function initLanguageIndex() {
-  const current = document.documentElement.getAttribute('data-lang') || 'zh';
-  currentLangIndex = SUPPORTED_LANGUAGES.findIndex(l => l.code === current);
-  if (currentLangIndex === -1) currentLangIndex = 0;
-  updateLanguageButton();
+  // Create dropdown container
+  const dropdown = document.createElement('div');
+  dropdown.className = 'lang-dropdown';
+  dropdown.id = 'langDropdown';
+  dropdown.style.display = 'none';
+
+  SUPPORTED_LANGUAGES.forEach(lang => {
+    const item = document.createElement('button');
+    item.className = 'lang-dropdown-item';
+    item.innerHTML = `${lang.flag} ${lang.name}`;
+    item.onclick = (e) => {
+      e.stopPropagation();
+      setLang(lang.code);
+      dropdown.style.display = 'none';
+    };
+    dropdown.appendChild(item);
+  });
+
+  btn.parentElement.appendChild(dropdown);
 }
 
 function updateLanguageButton() {
   const btn = document.getElementById('btnLang');
   if (!btn) return;
-  const nextIndex = (currentLangIndex + 1) % SUPPORTED_LANGUAGES.length;
-  const nextLang = SUPPORTED_LANGUAGES[nextIndex];
-  btn.innerHTML = `${nextLang.flag} ${nextLang.name}`;
-  btn.setAttribute('aria-label', `Switch to ${nextLang.name}`);
+
+  const current = document.documentElement.getAttribute('data-lang') || 'en';
+  const currentLang = SUPPORTED_LANGUAGES.find(l => l.code === current) || SUPPORTED_LANGUAGES[0];
+
+  btn.innerHTML = `${currentLang.flag} ${currentLang.name} <span style="margin-left:4px">▼</span>`;
+  btn.setAttribute('aria-label', `Current language: ${currentLang.name}`);
 }
 
-function switchToNextLanguage() {
-  currentLangIndex = (currentLangIndex + 1) % SUPPORTED_LANGUAGES.length;
-  const lang = SUPPORTED_LANGUAGES[currentLangIndex];
-  setLang(lang.code);
-  updateLanguageButton();
+function toggleLanguageDropdown(e) {
+  e.stopPropagation();
+  const dropdown = document.getElementById('langDropdown');
+  if (!dropdown) return;
+
+  dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }
 
-document.getElementById('btnLang').addEventListener('click', switchToNextLanguage);
+// Close dropdown when clicking outside
+document.addEventListener('click', () => {
+  const dropdown = document.getElementById('langDropdown');
+  if (dropdown) dropdown.style.display = 'none';
+});
+
+document.getElementById('btnLang').addEventListener('click', toggleLanguageDropdown);
 
 // Initialize on DOM ready
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initLanguageIndex);
+  document.addEventListener('DOMContentLoaded', () => {
+    buildLanguageDropdown();
+    updateLanguageButton();
+  });
 } else {
-  initLanguageIndex();
+  buildLanguageDropdown();
+  updateLanguageButton();
 }

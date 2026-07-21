@@ -18,3 +18,4 @@ TikTok Youtube：Medical Tourism
 避雷项目、推荐项目、项目介绍、
 适用人群与常见病症
 牙齿健康百科
+面向外国人

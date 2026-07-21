@@ -7,9 +7,9 @@ let _ready = false;
 
 /* Init: load bundled (offline) or fetch (dev) immediately */
 (async function () {
-  const saved = localStorage.getItem('guide-lang') || 'zh';
+  const saved = localStorage.getItem('guide-lang') || 'en';
   if (window.__I18N_BUNDLE) {
-    I18N = window.__I18N_BUNDLE[saved] || window.__I18N_BUNDLE['zh'] || {};
+    I18N = window.__I18N_BUNDLE[saved] || window.__I18N_BUNDLE['en'] || {};
     _ready = true;
   } else {
     try {
@@ -17,9 +17,9 @@ let _ready = false;
       I18N = await res.json();
       _ready = true;
     } catch (e) {
-      console.warn('i18n: fetch failed, trying zh fallback');
+      console.warn('i18n: fetch failed, trying en fallback');
       try {
-        const res = await fetch('i18n/zh.json');
+        const res = await fetch('i18n/en.json');
         I18N = await res.json();
         _ready = true;
       } catch (e2) {
