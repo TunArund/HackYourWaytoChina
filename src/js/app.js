@@ -245,9 +245,47 @@ function closeVisaDetail() {
 
 
 /* ============================================================
-   Language toggle (button in top bar)
+   Language toggle (button in top bar) - Multi-language support
    ============================================================ */
-document.getElementById('btnLang').addEventListener('click', () => {
+const SUPPORTED_LANGUAGES = [
+  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' }
+];
+
+let currentLangIndex = 0;
+
+function initLanguageIndex() {
   const current = document.documentElement.getAttribute('data-lang') || 'zh';
-  setLang(current === 'zh' ? 'en' : 'zh');
-});
+  currentLangIndex = SUPPORTED_LANGUAGES.findIndex(l => l.code === current);
+  if (currentLangIndex === -1) currentLangIndex = 0;
+  updateLanguageButton();
+}
+
+function updateLanguageButton() {
+  const btn = document.getElementById('btnLang');
+  if (!btn) return;
+  const nextIndex = (currentLangIndex + 1) % SUPPORTED_LANGUAGES.length;
+  const nextLang = SUPPORTED_LANGUAGES[nextIndex];
+  btn.innerHTML = `${nextLang.flag} ${nextLang.name}`;
+  btn.setAttribute('aria-label', `Switch to ${nextLang.name}`);
+}
+
+function switchToNextLanguage() {
+  currentLangIndex = (currentLangIndex + 1) % SUPPORTED_LANGUAGES.length;
+  const lang = SUPPORTED_LANGUAGES[currentLangIndex];
+  setLang(lang.code);
+  updateLanguageButton();
+}
+
+document.getElementById('btnLang').addEventListener('click', switchToNextLanguage);
+
+// Initialize on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLanguageIndex);
+} else {
+  initLanguageIndex();
+}
