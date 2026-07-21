@@ -69,14 +69,14 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && currentDet
 /* ---- Render helpers ---- */
 
 const H = {
-  back: (slide) => `<button class="detail-back" onclick="closeDetail('${slide}')">← ${t(slide + '_detail.back')}</button>`,
+  back: (slide) => `<button class="detail-back" onclick="closeDetail('${slide}')">← ${t(slide + '.detail.back')}</button>`,
   title: (text) => `<h3>${text}</h3>`,
   h4: (text) => `<h4>${text}</h4>`,
   intro: (key) => `<p class="dp-intro">${t(key)}</p>`,
   table: (headers, rows) => `<table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`,
   tip: (type, title, body) => `<div class="tip-box tip-box--${type}"><strong>${title}</strong><span>${body}</span></div>`,
   subGrid: (items) => `<div class="sub-card-grid">${items.join('')}</div>`,
-  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('s7_detail.big3.expandHint')} ]</div></div>`,
+  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('app.buttons.expand')} ]</div></div>`,
   nav: (prev, next, idx, total) => `<div class="detail-nav">${prev || '<span></span>'}<span class="dn-center">${idx + 1}/${total}</span>${next || '<span></span>'}</div>`,
   muted: (text) => `<p class="muted-sm mt-sm">${text}</p>`,
 };
@@ -96,11 +96,11 @@ function renderDetail(slide, key, sub) {
    ============================================================ */
 
 function renderS7(key, sub) {
-  const P = 's7_detail.';
+  const P = 's7.detail.';
 
   if (key === 'hospital') {
     const cols = [t(P + 'hospital.colCity'), t(P + 'hospital.colHospital'), t(P + 'hospital.colNote')];
-    const hrows = HOSPITAL_CITIES.map(c => [t('city.' + c + '.name'), t(P + 'hospital.' + c + 'Name'), t(P + 'hospital.' + c + 'Note')]);
+    const hrows = HOSPITAL_CITIES.map(c => [t('city.' + c + '.label'), t(P + 'hospital.' + c + 'Name'), t(P + 'hospital.' + c + 'Note')]);
     const mcols = [t(P + 'hospital.colCn'), 'English', 'Русский', t(P + 'hospital.colUse')];
     const mrows = MEDS.map(m => [m.cn, m.en, m.ru, t(P + 'hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]);
     return H.back('s7') + H.title(t(P + 'hospital.title')) + H.intro(P + 'hospital.intro')
@@ -136,7 +136,7 @@ function renderS7(key, sub) {
    ============================================================ */
 
 function renderS8(key, sub) {
-  const P = 's8_detail.';
+  const P = 's8.detail.';
 
   if (key === 'electronics') {
     const EP = P + 'electronics.';
@@ -149,7 +149,7 @@ function renderS8(key, sub) {
   if (key === 'souvenirs') {
     const SP = P + 'souvenirs.';
     const sCols = [t(SP + 'colCity'), t(SP + 'colItem')];
-    const sRows = SOUVENIR_CITIES.map(k => [t('city.' + (k === 'xian' ? 'xian' : k) + '.name'), t(SP + k + '_item')]);
+    const sRows = SOUVENIR_CITIES.map(k => [t('city.' + (k === 'xian' ? 'xian' : k) + '.label'), t(SP + k + '_item')]);
     return H.back('s8') + H.title(t(SP + 'title')) + H.table(sCols, sRows) + H.muted(t(SP + 'tip'));
   }
 
@@ -178,17 +178,17 @@ function renderS8(key, sub) {
    ============================================================ */
 
 function renderS9(key, sub) {
-  const P = 's9_detail.';
+  const P = 's9.detail.';
 
   if (key === 'top10') {
     if (sub) return renderDestCity(sub, TOP10_CITIES);
-    const cards = TOP10_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','top10','${k}')"><div class="sc-title">${t('city.' + k + '.flag')} ${t('city.' + k + '.name')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
+    const cards = TOP10_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','top10','${k}')"><div class="sc-title">${t('city.' + k + '.label')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
     return H.back('s9') + H.title(t(P + 'top10.title')) + H.muted(t(P + 'tapHint')) + H.subGrid(cards);
   }
 
   if (key === 'rising') {
     if (sub) return renderDestCity(sub, RISING_CITIES);
-    const cards = RISING_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','rising','${k}')"><div class="sc-title">${t('city.' + k + '.flag')} ${t('city.' + k + '.name')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
+    const cards = RISING_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','rising','${k}')"><div class="sc-title">${t('city.' + k + '.label')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
     return H.back('s9') + H.title(t(P + 'rising.title')) + H.muted(t(P + 'rising.subtitle')) + H.subGrid(cards);
   }
 
@@ -203,10 +203,10 @@ function renderS9(key, sub) {
 
 function renderDestCity(key, cities) {
   const idx = cities.indexOf(key);
-  const prev = idx > 0 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx - 1]}')">← ${t('city.' + cities[idx - 1] + '.name')}</button>` : null;
-  const next = idx < cities.length - 1 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx + 1]}')">${t('city.' + cities[idx + 1] + '.name')} →</button>` : null;
-  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}')">← ${t('s9_detail.backToCityList')}</button>
-    <h3>${t('city.' + key + '.flag')} ${t('city.' + key + '.name')}</h3>
+  const prev = idx > 0 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx - 1]}')">← ${t('city.' + cities[idx - 1] + '.label')}</button>` : null;
+  const next = idx < cities.length - 1 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx + 1]}')">${t('city.' + cities[idx + 1] + '.label')} →</button>` : null;
+  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}')">← ${t('s9.detail.backToCityList')}</button>
+    <h3>${t('city.' + key + '.label')}</h3>
     <p class="dp-subtitle">${t('city.' + key + '.tag')}</p>
     <p class="dp-text">${t('city.' + key + '.desc')}</p>
     ${H.nav(prev, next, idx, cities.length)}`;

@@ -258,8 +258,16 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 body [lang]{display:none}
 :root[data-lang="zh"] body [lang="zh"]{display:revert}
 :root[data-lang="en"] body [lang="en"]{display:revert}
+:root[data-lang="ja"] body [lang="ja"]{display:revert}
+:root[data-lang="ko"] body [lang="ko"]{display:revert}
+:root[data-lang="ru"] body [lang="ru"]{display:revert}
+:root[data-lang="vi"] body [lang="vi"]{display:revert}
 :root[data-lang="zh"] body [lang="zh"].inline{display:inline}
 :root[data-lang="en"] body [lang="en"].inline{display:inline}
+:root[data-lang="ja"] body [lang="ja"].inline{display:inline}
+:root[data-lang="ko"] body [lang="ko"].inline{display:inline}
+:root[data-lang="ru"] body [lang="ru"].inline{display:inline}
+:root[data-lang="vi"] body [lang="vi"].inline{display:inline}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 /* ============================================================

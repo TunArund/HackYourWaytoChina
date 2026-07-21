@@ -1,94 +1,40 @@
 {
   "app": {
-    "shortTitle": "Du khách ngắn hạn",
-    "longTitle": "Cư trú dài hạn",
-    "coverTitle": "Hướng dẫn toàn diện về Trung Quốc",
-    "coverSubtitle": "Chọn hành trình của bạn để nhận hướng dẫn phù hợp",
-    "coverShortLabel": "Du khách ngắn hạn",
-    "coverShortTagline": "2 – 30 ngày",
-    "coverShortExamples": "Du lịch · Kinh doanh · Thăm thân · Quá cảnh",
-    "coverLongLabel": "Cư trú dài hạn",
-    "coverLongTagline": "Đã ở Trung Quốc · Định cư",
-    "coverLongExamples": "Làm việc · Học tập · Chuyển đổi thị thực · Định cư",
-    "coverFooter": "📅 Cập nhật tháng 7/2026 · 🌐 Song ngữ",
-    "topBarTitle": "🧳 Hướng dẫn nhập cảnh Trung Quốc",
-    "versionSwitchToLong": "🔄 Dài hạn",
-    "versionSwitchToShort": "🔄 Ngắn hạn",
-    "langSwitchLabel": "中",
-    "resetButton": "🔄 Kiểm tra lại",
-    "visaDetailButton": "📋 Chi tiết thị thực ▸",
-    "backToResult": "← Quay lại kết quả",
-    "officialLinks": "🔗 Liên kết chính thức",
-    "scrollHint": "Cuộn xuống"
+    "nav": {
+      "title": "🧳 Hướng dẫn nhập cảnh Trung Quốc",
+      "versionSwitch": {
+        "toLong": "🔄 Dài hạn",
+        "toShort": "🔄 Ngắn hạn"
+      }
+    },
+    "cover": {
+      "title": "Hướng dẫn toàn diện về Trung Quốc",
+      "subtitle": "Chọn hành trình của bạn để nhận hướng dẫn phù hợp",
+      "footer": "📅 Cập nhật tháng 7/2026 · 🌐 Song ngữ",
+      "short": {
+        "label": "Du khách ngắn hạn",
+        "tagline": "2 – 30 ngày",
+        "examples": "Du lịch · Kinh doanh · Thăm thân · Quá cảnh"
+      },
+      "long": {
+        "label": "Cư trú dài hạn",
+        "tagline": "Đã ở Trung Quốc · Định cư",
+        "examples": "Làm việc · Học tập · Chuyển đổi thị thực · Định cư"
+      }
+    },
+    "buttons": {
+      "reset": "🔄 Kiểm tra lại",
+      "back": "← Quay lại kết quả",
+      "details": "📋 Chi tiết thị thực ▸",
+      "expand": "[ Expand → ]"
+    },
+    "links": {
+      "official": "🔗 Liên kết chính thức"
+    },
+    "hints": {
+      "scroll": "Cuộn xuống"
+    }
   },
-  "city.beijing.desc": "Kinh đô cổ. Phải đến: Tử Cấm Thành, Vạn Lý Trường Thành, Thiên Đàn. Ẩm thực: vịt quay Bắc Kinh, mì tương đen, lẩu thịt cừu. Mua sắm: Vương Phủ Tỉnh, chợ đồ cổ Phan Gia Viên. Mẹo: đặt vé trước, tàu điện ngầm tiện lợi.",
-  "city.beijing.flag": "beijing",
-  "city.beijing.name": "Bắc Kinh",
-  "city.beijing.tag": "Tử Cấm Thành·Trường Thành·Hồ Đồng",
-  "city.chengdu.desc": "Số 1 Trung-Tây Trung Quốc. Phải đến: Căn cứ gấu trúc, Phố Khoan Trại, Cẩm Lý. Ẩm thực: lẩu, xiên nướng, mì đảm đảm. Mua sắm: thổ cẩm gấu trúc. Mẹo: người địa phương thích \"an dật\" (thư thái), chơi chậm rãi.",
-  "city.chengdu.flag": "chengdu",
-  "city.chengdu.name": "Thành Đô",
-  "city.chengdu.tag": "Gấu trúc·Lẩu·Đời sống chậm",
-  "city.chongqing.desc": "Tăng trưởng nhanh nhất (+30%). Phải đến: Hồng Nha Động, Từ Khí Khẩu, cáp treo sông Dương Tử. Ẩm thực: lẩu, mì tiểu diện, món giang hồ. Mua sắm: Giải Phóng Bội. Mẹo: đi giày bằng, GPS có thể lỗi trong địa hình 8D.",
-  "city.chongqing.flag": "chongqing",
-  "city.chongqing.name": "Trùng Khánh",
-  "city.chongqing.tag": "Ma thuật 8D·Lẩu·Cảnh đêm",
-  "city.fuzhou.desc": "Thiên nhiên ven biển & di sản. Phải đến: Tam Phường Thất Hạng, núi Cổ, công viên Tây Hồ. Ẩm thực: Phật nhảy tường, viên cá, nhục yến. Mẹo: suối nước nóng dồi dào, điểm đến chăm sóc sức khỏe.",
-  "city.fuzhou.flag": "fuzhou",
-  "city.fuzhou.name": "Phúc Châu",
-  "city.fuzhou.tag": "Thiên nhiên·Suối nóng·Trà",
-  "city.guangzhou.desc": "Số 1 chi tiêu nhập cảnh. Phải đến: Tháp Quảng Châu, Đảo Sa Diện, núi Bạch Vân. Ẩm thực: dim sum, thịt nướng, cơm nồi đất. Mua sắm: khu Thiên Hà, chợ quần áo Bạch Mã. Mẹo: chuyến bay Đông Nam Á dày đặc, điểm dừng đầu tiên phổ biến.",
-  "city.guangzhou.flag": "guangzhou",
-  "city.guangzhou.name": "Quảng Châu",
-  "city.guangzhou.tag": "Ẩm thực·Thương mại·Thành phố hoa",
-  "city.guiyang.desc": "\"Thay thế Seoul\" của Hàn Quốc, thiên đường chay phương Tây. Phải đến: núi Kiền Linh, cổ trấn Thanh Nham, Hoa Khê. Ẩm thực: cá canh chua, mì trường vượng, bánh cuốn tơ wa wa. Mẹo: mùa hè mát mẻ.",
-  "city.guiyang.flag": "guiyang",
-  "city.guiyang.name": "Quý Dương",
-  "city.guiyang.tag": "Thay thế Seoul·Thiên đường chay",
-  "city.hangzhou.desc": "Thiên đường nhân gian. Phải đến: Tây Hồ, chùa Linh Ẩn, đồn chè Long Tỉnh. Ẩm thực: thịt lợn Đông Pha, cá Tây Hồ, tôm Long Tỉnh. Mua sắm: chợ lụa, phố Nam Tống. Mẹo: đẹp nhất mùa xuân, tránh Tuần lễ Vàng.",
-  "city.hangzhou.flag": "hangzhou",
-  "city.hangzhou.name": "Hàng Châu",
-  "city.hangzhou.tag": "Tây Hồ·Long Tỉnh·Lụa",
-  "city.harbin.desc": "Yêu thích của Đông Nam Á. Phải đến: Lễ hội băng, phố Trung Ương, nhà thờ St. Sophia. Ẩm thực: thịt lợn bao quốc nhục, xúc xích đỏ, món Nga. Mua sắm: hàng Nga trên phố Trung Ương. Mẹo: mùa đông -20°C, mặc ấm.",
-  "city.harbin.flag": "harbin",
-  "city.harbin.name": "Cáp Nhĩ Tân",
-  "city.harbin.tag": "Băng tuyết·Nga·Đông Bắc",
-  "city.kunming.desc": "Xuân vĩnh cửu. Phải đến: Rừng Đá, hồ Điền, chợ hoa Đấu Nam. Ẩm thực: mì cầu qua sông, gà nồi hơi, lẩu nấm. Mua sắm: hoa tươi, thủ công dân tộc. Mẹo: cổng Đông Nam Á, khí hậu dễ chịu quanh năm.",
-  "city.kunming.flag": "kunming",
-  "city.kunming.name": "Côn Minh",
-  "city.kunming.tag": "Thành phố mùa xuân·Hoa·Dân tộc",
-  "city.qingdao.desc": "Viên ngọc ven biển. Phải đến: cầu tàu Trại Kiều, Bát Đại Quan, Lao Sơn. Ẩm thực: hải sản, bia Thanh Đảo, há cảo cá thu. Mua sắm: phố đi bộ Đài Đông. Mẹo: lễ hội bia 7-8, đẹp nhất mùa hè.",
-  "city.qingdao.flag": "qingdao",
-  "city.qingdao.name": "Thanh Đảo",
-  "city.qingdao.tag": "Bia·Ven biển·Đức",
-  "city.shanghai.desc": "8,28 triệu+ lượt khách hàng năm. Phải đến: Bến Thượng Hải, Dự Viên, Disneyland. Ẩm thực: tiểu long bao, bánh chiên, món bản bang. Mua sắm: đường Nam Kinh, may áo dài vải chợ. Mẹo: tàu điện ngầm rộng khắp, thị thực quá cảnh 72h có thể dùng.",
-  "city.shanghai.flag": "shanghai",
-  "city.shanghai.name": "Thượng Hải",
-  "city.shanghai.tag": "Bến Thượng Hải·Dự Viên·Disney",
-  "city.shenzhen.desc": "Thung lũng Silicon Trung Quốc. Phải đến: Hoa Cường Bắc, công viên vịnh Thâm Quyến, OCT. Ẩm thực: lẩu thịt bò Triều Sán, hải sản. Mua sắm: điện tử Hoa Cường Bắc, trung tâm MixC. Mẹo: tàu cao tốc 15 phút đến Hồng Kông.",
-  "city.shenzhen.flag": "shenzhen",
-  "city.shenzhen.name": "Thâm Quyến",
-  "city.shenzhen.tag": "Công nghệ·Thiết kế·Đổi mới",
-  "city.taiyuan.desc": "Địa điểm quay Black Myth: Wukong. Phải đến: đền Tấn Từ, Tháp Đôi, Bình Dao (gần). Ẩm thực: mì đao tiêu diện, quá dầu nhục. Mẹo: theo dấu game, thiên đường kiến trúc cổ.",
-  "city.taiyuan.flag": "taiyuan",
-  "city.taiyuan.name": "Thái Nguyên",
-  "city.taiyuan.tag": "Kiến trúc cổ",
-  "city.yiwu.desc": "\"Thủ đô hàng hóa nhỏ thế giới\". Chuyến bay +60% H1 2026. Phải đến: Thành Thương mại Quốc tế (5 khu). Ẩm thực: nhiều nhà hàng Trung Đông. Mua sắm: từ ốp điện thoại đến drone, một điểm.",
-  "city.yiwu.flag": "yiwu",
-  "city.yiwu.name": "Nghĩa Ô",
-  "city.yiwu.tag": "Chợ thế giới·Bán sỉ",
-  "city.zhengzhou.desc": "Điểm chụp ảnh phố cổ trang Hán. Phải đến: tháp Nhị Thất, Bảo tàng Hà Nam, chùa Thiếu Lâm (gần). Ẩm thực: mì hối diện, súp hồ la thang. Mẹo: mặc trang phục truyền thống chụp ảnh, trải nghiệm thẩm mỹ Trung Hoa đắm chìm.",
-  "city.zhengzhou.flag": "zhengzhou",
-  "city.zhengzhou.name": "Trịnh Châu",
-  "city.zhengzhou.tag": "Hán phục·Cổ phong·Chụp phố",
-  "clinic.jiahui.desc": "Tiêu chuẩn JCI, đội ngũ đa ngôn ngữ. Phẫu thuật (mô mềm, thẩm mỹ bụng, điêu khắc cơ thể) & không phẫu thuật (Botox, filler). 10+ ca phẫu thuật quốc tế/năm.",
-  "clinic.jiahui.name": "Bệnh viện Quốc tế Gia Hội Thượng Hải",
-  "clinic.mhwd.desc": "Phòng khám quốc tế, đa ngôn ngữ. Tất cả dịch vụ theo giấy phép y tế đúng quy định với thiết bị tuân thủ. Chuyên gia da liễu & tiêm chất làm đầy.",
-  "clinic.mhwd.name": "Phòng khám MHWD·Đinh Hương",
-  "clinic.rodeo.desc": "Chuỗi xuyên biên giới Mỹ. Bác sĩ được đào tạo tại Mỹ với chứng nhận thương hiệu quốc tế. Nhân viên phù hợp ngôn ngữ, quy trình tuân thủ quốc tế.",
-  "clinic.rodeo.name": "RODEO (Thượng Hải)",
-  "clinic.yuansong.desc": "Đã phục vụ khách từ Hàn Quốc, Nhật Bản, Trung Đông. Sử dụng phương pháp filler thay vì phẫu thuật xương nguy hiểm. Triết lý thẩm mỹ tự nhiên.",
-  "clinic.yuansong.name": "YuanSong Aesthetics (Thượng Hải)",
   "countries": {
     "default": "— Chọn —",
     "AU": "🇦🇺 Úc",
@@ -141,45 +87,169 @@
     "ZA": "🇿🇦 Nam Phi",
     "OTHER": "🌍 Khác"
   },
+  "s0": {},
   "s1": {
-    "title": "Tôi có cần thị thực không?",
-    "sub": "3 câu hỏi. Gần 80 quốc gia miễn thị thực hoặc quá cảnh.",
-    "q1": "Q1 · Quốc t적?",
-    "q2": "Q2 · Mục đích?",
-    "q3": "Q3 · Thời gian?",
-    "q4": "Q4 · Vé máy bay tiếp nối?",
-    "purposeTourism": "🏖 Du lịch",
-    "purposeBusiness": "💼 Kinh doanh",
-    "purposeFamily": "👨‍👩‍👧 Thăm thân",
-    "purposeTransit": "🔄 Quá cảnh",
-    "purposeWork": "💻 Làm việc/Học tập",
-    "durationShort": "≤10 ngày",
-    "durationMedium": "11-30 ngày",
-    "durationLong": "31-180 ngày",
-    "durationXlong": ">180 ngày",
-    "onwardYes": "✅ Có",
-    "onwardNo": "❌ Không"
+    "meta": {
+      "title": "Tôi có cần thị thực không?",
+      "sub": "3 câu hỏi. Gần 80 quốc gia miễn thị thực hoặc quá cảnh."
+    },
+    "questions": {
+      "q1": "Q1 · Quốc t적?",
+      "q2": "Q2 · Mục đích?",
+      "q3": "Q3 · Thời gian?",
+      "q4": "Q4 · Vé máy bay tiếp nối?"
+    },
+    "purpose": {
+      "tourism": "🏖 Du lịch",
+      "business": "💼 Kinh doanh",
+      "family": "👨‍👩‍👧 Thăm thân",
+      "transit": "🔄 Quá cảnh",
+      "work": "💻 Làm việc/Học tập"
+    },
+    "duration": {
+      "short": "≤10 ngày",
+      "medium": "11-30 ngày",
+      "long": "31-180 ngày",
+      "xlong": ">180 ngày"
+    },
+    "onward": {
+      "yes": "✅ Có",
+      "no": "❌ Không"
+    },
+    "placeholder": "— Chọn —"
   },
-  "s1.placeholder": "— Chọn —",
-  "s10": {
-    "title": "Khẩn cấp+Xuất cảnh",
-    "hotlines": "📞 Đường dây nóng",
-    "immigration24h": "Quản lý Xuất nhập cảnh 24h",
-    "police": "Cảnh sát",
-    "ambulance": "Xe cứu thương",
-    "fire": "Cứu hỏa",
-    "passportWarning": "⚠️ Hộ chiếu",
-    "passportWarningDetail": "Luôn mang theo. Mất→cảnh sát→lãnh sự quán. Lưu số liên lạc đại sứ quán.",
-    "departure": "👋 Khởi hành",
-    "departStep1": "Đến sân bay sớm 2-3 giờ",
-    "departStep2": "Mang theo hàng hoàn thuế",
-    "departStep3": "Tiêu hết RMB còn lại",
-    "departStep4": "Sao lưu ảnh (Google Photos bị chặn)",
-    "footer": "🧳 Hướng dẫn nhập cảnh Trung Quốc · Cập nhật tháng 7/2026 · Dựa trên thông tin công khai NIA & MFA · NIA 12367 · s.nia.gov.cn"
+  "s2": {
+    "meta": {
+      "title": "Trước khi đi",
+      "sub": "Danh sách kiểm tra + thẻ nhập cảnh + kiểm tra cuối. 97% du khách tại Bắc Kinh sử dụng điền trực tuyến."
+    },
+    "passport": {
+      "label": "📘 Bắt buộc",
+      "title": "Hộ chiếu",
+      "desc": "Hiệu lực≥6 tháng, ≥2 trang trống"
+    },
+    "tickets": {
+      "label": "🎫 Bắt buộc",
+      "title": "Vé khứ hồi+Khách sạn",
+      "desc": "In/chụp màn hình vé điện tử; khách sạn có địa chỉ"
+    },
+    "arrivalCard": {
+      "label": "📱 Thẻ nhập cảnh",
+      "title": "Điền trực tuyến trước",
+      "desc": "s.nia.gov.cn → điền → chụp màn hình QR → quét. Hỗ trợ quét ảnh hộ chiếu. Cũng có: NIA 12367 APP / WeChat / Alipay mini programs."
+    },
+    "finalCheck": {
+      "label": "✅ Kiểm tra cuối",
+      "items": [
+        "<strong>Hộ chiếu≥6 tháng?</strong>",
+        "<strong>Xác nhận thị thực?</strong>",
+        "<strong>Thẻ nhập cảnh? Chụp màn hình</strong>",
+        "<strong>Alipay/WeChat sẵn sàng?</strong>",
+        "<strong>Địa chỉ khách sạn đã lưu?</strong>"
+      ]
+    }
+  },
+  "s3": {
+    "meta": {
+      "title": "Đến và nhập cảnh",
+      "sub": "Quy trình+hải quan+đăng ký. Dưới 14 / trên 70 miễn vân tay."
+    },
+    "steps": {
+      "label": "🛂 6 bước",
+      "desc": "①Y tế→②Vân tay→③Biên giới→④Hành lý→⑤Hải quan→⑥Sảnh đến"
+    },
+    "customs": {
+      "label": "🛃 Giới hạn",
+      "desc": "Tiền mặt≤$5K·Rượu≤1.5L·Thuốc lá≤400. Thuốc theo toa cần đơn. Kênh xanh. Cấm：vũ khí/ma túy/ngà voi."
+    },
+    "registration": {
+      "label": "🏨 Đăng ký",
+      "desc": "Khách sạn tự động. Nhà riêng：12367 trực tuyến(7 thành phố thí điểm) hoặc công an. Đăng ký lại mỗi lần di chuyển. Điều 39：trong 24h."
+    }
+  },
+  "s4": {
+    "meta": {
+      "title": "Kết nối",
+      "sub": "Google/WA/IG bị chặn. Ưu tiên: trực tuyến."
+    },
+    "esim": {
+      "label": "📱 Tốt nhất",
+      "title": "eSIM",
+      "desc": "Airalo/Holafly/Nomad. Mua trước→dữ liệu khi hạ cánh. Chỉ dữ liệu, không có số Trung Quốc."
+    },
+    "sim": {
+      "label": "📱 Thay thế",
+      "title": "SIM Trung Quốc",
+      "desc": "Sân bay：Mobile/Unicom/Telecom. Hộ chiếu. ¥29-99/tháng. Lấy số→đăng ký ứng dụng."
+    },
+    "vpn": {
+      "label": "🔐 VPN",
+      "title": "Cài đặt sớm",
+      "desc": "Mullvad/Astrill. Cài đặt+thanh toán trước. Giữ 2 giao thức khác nhau dự phòng."
+    },
+    "blocked": {
+      "label": "🚫 Bị chặn",
+      "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>Thay thế：Baidu/Xiaohongshu/Weibo/Bilibili"
+    }
+  },
+  "s5": {
+    "meta": {
+      "title": "Cuộc sống hàng ngày",
+      "sub": "Ứng dụng + giao thông + ăn uống + lưu trú. Tải trước."
+    },
+    "payment": {
+      "label": "💳 Thanh toán",
+      "desc": "Alipay/WeChat chấp nhận thẻ nước ngoài (không cần tài khoản ngân hàng). Dự phòng tiền mặt. UnionPay được chấp nhận rộng rãi."
+    },
+    "transport": {
+      "label": "🚕 Giao thông",
+      "desc": "Didi (taxi), Ứng dụng tàu điện ngầm, Tàu cao tốc 12306, xe đạp chia sẻ (Meituan/Hellobike)"
+    },
+    "food": {
+      "label": "🍜 Ăn uống",
+      "desc": "Đánh giá Dianping, dịch thực đơn (quét WeChat), giao hàng (Meituan/Eleme), bộ lọc ăn kiêng"
+    },
+    "accommodation": {
+      "label": "🏨 Lưu trú",
+      "desc": "Trip.com, Ctrip, Airbnb (giới hạn). Khách sạn thân thiện với người nước ngoài bắt buộc đăng ký."
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "Ứng dụng cần thiết",
+      "sub": "Ứng dụng thiết yếu. Tải trước khi vào Trung Quốc."
+    },
+    "essential": {
+      "label": "✅ Thiết yếu",
+      "items": [
+        "WeChat (trò chuyện+thanh toán)",
+        "Alipay (thanh toán)",
+        "Didi (taxi)",
+        "Bản đồ Baidu"
+      ]
+    },
+    "travel": {
+      "label": "🧳 Du lịch",
+      "items": [
+        "12306 (tàu)",
+        "Trip.com (khách sạn)",
+        "Dianping (ẩm thực)"
+      ]
+    },
+    "useful": {
+      "label": "📱 Hữu ích",
+      "items": [
+        "Meituan (giao hàng)",
+        "Xiaohongshu (mạng xã hội)",
+        "Pleco (từ điển)"
+      ]
+    }
   },
   "s7": {
-    "title": "Dịch vụ y tế",
-    "sub": "850+ cơ sở tại 57 thành phố. Nhấn thẻ để xem chi tiết.",
+    "meta": {
+      "title": "Dịch vụ y tế",
+      "sub": "850+ cơ sở tại 57 thành phố. Nhấn thẻ để xem chi tiết."
+    },
     "hospital": {
       "label": "🏥 Bệnh viện",
       "title": "Bệnh viện Quốc tế & Thuốc",
@@ -197,102 +267,99 @@
       "title": "Khám sức khỏe tổng quát",
       "desc": "¥2K-10K+, bảng toàn diện, một số báo cáo 24h. Nửa ngày.",
       "expandHint": "[ Mở rộng → ]"
+    },
+    "detail": {
+      "back": "← Quay lại",
+      "hospital": {
+        "title": "🏥 Dịch vụ Y tế Quốc tế",
+        "intro": "850+ cơ sở tại 57 thành phố. 1,28 triệu bệnh nhân quốc tế năm 2025 (+73,6%).",
+        "sectionHospitals": "Bệnh viện Quốc tế",
+        "colCity": "Thành phố",
+        "colHospital": "Bệnh viện",
+        "colNote": "Ghi chú",
+        "shanghaiName": "Huashan / Jiahui",
+        "shanghaiNote": "90+ quốc gia",
+        "beijingName": "PUMCH / UFH",
+        "beijingNote": "Phòng quốc tế ¥600-1200",
+        "guangzhouName": "SYSU 1st / Clifford",
+        "guangzhouNote": "25 bệnh viện thí điểm",
+        "tianjinName": "Pengruili",
+        "tianjinNote": "Bệnh viện cấp ba nước ngoài",
+        "hainanName": "Khu thí điểm Lecheng",
+        "hainanNote": "Thuốc/thiết bị quốc tế",
+        "sectionMeds": "Thuốc thông dụng (CN/EN/RU)",
+        "colCn": "CN",
+        "colUse": "Công dụng",
+        "medIbuprofenUse": "Giảm đau/Hạ sốt",
+        "medAmoxicillinUse": "Kháng sinh(Rx)",
+        "medLoperamideUse": "Chống tiêu chảy",
+        "medLoratadineUse": "Kháng histamine",
+        "medOmeprazoleUse": "Trào ngược axit",
+        "insuranceWarning": "⚠️ Mua Bảo hiểm Du lịch",
+        "insuranceDetail": "Ngoại trú ¥800-1.500+. Đăng ký phòng quốc tế ¥600-1.200. Khuyến nghị Cigna/Allianz/Bupa."
+      },
+      "big3": {
+        "title": "🦷👁️🌿 \"Bộ ba Y tế\"",
+        "sectionDental": "🦷 Nha khoa",
+        "colItem": "Hạng mục",
+        "colChinaPrice": "Trung Quốc",
+        "colUsEuPrice": "Mỹ/EU",
+        "dental_cleaning": "Lấy cao răng",
+        "dental_cleaning_cn": "¥200-500",
+        "dental_cleaning_us": "$100-200",
+        "dental_filling": "Hàn răng",
+        "dental_filling_cn": "¥300-800",
+        "dental_filling_us": "$150-400",
+        "dental_root": "Điều trị tủy",
+        "dental_root_cn": "¥1.500-3.000",
+        "dental_root_us": "$800-1.500",
+        "dental_implant": "Cấy ghép răng",
+        "dental_implant_cn": "¥5.000-15.000",
+        "dental_implant_us": "$3.000-6.000",
+        "dental_crown": "Mão răng thẩm mỹ",
+        "dental_crown_cn": "¥2.000-5.000",
+        "dental_crown_us": "$1.000-2.500",
+        "dentalNote": "💡 Ưu thế chi phí: Nha khoa Trung Quốc 25-35% so với Mỹ/EU. Nguồn: Dianping, phản hồi Reddit expat (2024-2025)",
+        "dentalClinics": "🏥 Phòng khám khuyến nghị",
+        "dentalClinicsDetail": "Nha khoa Jiahui Thượng Hải (tiếng Anh)·Nha khoa UFH Bắc Kinh·Nha khoa iKang Thâm Quyến·Nha khoa Arrail (Toàn quốc). Mẹo: Đặt trước, hỏi về dịch vụ tiếng Anh.",
+        "sectionEye": "👁️ Nhãn khoa",
+        "eyeDesc": "Kính mắt dịch vụ trong ngày (¥500-2.000). Phẫu thuật mắt laser ¥8K-20K. Khuyến nghị: Bệnh viện Mắt & Tai Mũi Họng Thượng Hải, Tông Nhân Bắc Kinh, Bệnh viện Mắt Aier (Toàn quốc).",
+        "sectionTcm": "🌿 Trị liệu Y học cổ truyền Trung Quốc (#1 yêu cầu Nga)",
+        "colTherapy": "Liệu pháp",
+        "colDescription": "Mô tả",
+        "colPrice": "Giá",
+        "tcm_acupuncture": "Châm cứu",
+        "tcm_acupuncture_desc": "Cổ/Lưng/Vai",
+        "tcm_acupuncture_price": "¥100-300/buổi",
+        "tcm_tuina": "Massage Tuina",
+        "tcm_tuina_desc": "Massage kinh mạch",
+        "tcm_tuina_price": "¥150-400/buổi",
+        "tcm_bonesetting": "Chỉnh xương",
+        "tcm_bonesetting_desc": "Phục hồi chỉnh hình",
+        "tcm_bonesetting_price": "¥200-500/buổi",
+        "tcm_cupping": "Giác hơi",
+        "tcm_cupping_desc": "Giải độc & ẩm",
+        "tcm_cupping_price": "¥50-150/buổi",
+        "tcm_herbal": "Thuốc thảo dược",
+        "tcm_herbal_desc": "Công thức cá nhân hóa",
+        "tcm_herbal_price": "¥100-500/liều",
+        "tcmHotspots": "📍 Điểm nóng Y học cổ truyền",
+        "tcmHotspotsDetail": "Bệnh viện Y học cổ truyền Tam Á (quốc tế)·Y học cổ truyền Hắc Hà (dịch vụ tiếng Nga, 2000+ bệnh nhân/năm)·Bệnh viện Hỗn Xuân (phiên dịch tiếng Nga)·Y học cổ truyền Nhiêu Hà (spa+massage)·Đồng Nhân Đường Bắc Kinh (truyền thống)"
+      },
+      "checkup": {
+        "title": "📋 Khám sức khỏe",
+        "intro": "Bệnh viện lớn cung cấp khám sức khỏe tổng quát, ¥2K-10K+. Một số báo cáo 24h. Không cần ở lại qua đêm, nửa ngày.",
+        "recommended": "<strong>Khuyến nghị:</strong> PUMCH Quốc tế, Huashan Quốc tế, Jiahui Quốc tế",
+        "warning": "⚠️ Lưu ý",
+        "warningDetail": "Đặt trước 1-2 tuần. Nhịn ăn cho một số xét nghiệm. Tham khảo bác sĩ về thuốc."
+      }
     }
   },
-  "s7_detail": {
-    "back": "← Quay lại",
-    "hospital": {
-      "title": "🏥 Dịch vụ Y tế Quốc tế",
-      "intro": "850+ cơ sở tại 57 thành phố. 1,28 triệu bệnh nhân quốc tế năm 2025 (+73,6%).",
-      "sectionHospitals": "Bệnh viện Quốc tế",
-      "colCity": "Thành phố",
-      "colHospital": "Bệnh viện",
-      "colNote": "Ghi chú",
-      "shanghaiName": "Huashan / Jiahui",
-      "shanghaiNote": "90+ quốc gia",
-      "beijingName": "PUMCH / UFH",
-      "beijingNote": "Phòng quốc tế ¥600-1200",
-      "guangzhouName": "SYSU 1st / Clifford",
-      "guangzhouNote": "25 bệnh viện thí điểm",
-      "tianjinName": "Pengruili",
-      "tianjinNote": "Bệnh viện cấp ba nước ngoài",
-      "hainanName": "Khu thí điểm Lecheng",
-      "hainanNote": "Thuốc/thiết bị quốc tế",
-      "sectionMeds": "Thuốc thông dụng (CN/EN/RU)",
-      "colCn": "CN",
-      "colUse": "Công dụng",
-      "medIbuprofenUse": "Giảm đau/Hạ sốt",
-      "medAmoxicillinUse": "Kháng sinh(Rx)",
-      "medLoperamideUse": "Chống tiêu chảy",
-      "medLoratadineUse": "Kháng histamine",
-      "medOmeprazoleUse": "Trào ngược axit",
-      "insuranceWarning": "⚠️ Mua Bảo hiểm Du lịch",
-      "insuranceDetail": "Ngoại trú ¥800-1.500+. Đăng ký phòng quốc tế ¥600-1.200. Khuyến nghị Cigna/Allianz/Bupa."
-    },
-    "big3": {
-      "title": "🦷👁️🌿 \"Bộ ba Y tế\"",
-      "sectionDental": "🦷 Nha khoa",
-      "colItem": "Hạng mục",
-      "colChinaPrice": "Trung Quốc",
-      "colUsEuPrice": "Mỹ/EU",
-      "dental_cleaning": "Lấy cao răng",
-      "dental_cleaning_cn": "¥200-500",
-      "dental_cleaning_us": "$100-200",
-      "dental_filling": "Hàn răng",
-      "dental_filling_cn": "¥300-800",
-      "dental_filling_us": "$150-400",
-      "dental_root": "Điều trị tủy",
-      "dental_root_cn": "¥1.500-3.000",
-      "dental_root_us": "$800-1.500",
-      "dental_implant": "Cấy ghép răng",
-      "dental_implant_cn": "¥5.000-15.000",
-      "dental_implant_us": "$3.000-6.000",
-      "dental_crown": "Mão răng thẩm mỹ",
-      "dental_crown_cn": "¥2.000-5.000",
-      "dental_crown_us": "$1.000-2.500",
-      "dentalNote": "💡 Ưu thế chi phí: Nha khoa Trung Quốc 25-35% so với Mỹ/EU. Nguồn: Dianping, phản hồi Reddit expat (2024-2025)",
-      "dentalClinics": "🏥 Phòng khám khuyến nghị",
-      "dentalClinicsDetail": "Nha khoa Jiahui Thượng Hải (tiếng Anh)·Nha khoa UFH Bắc Kinh·Nha khoa iKang Thâm Quyến·Nha khoa Arrail (Toàn quốc). Mẹo: Đặt trước, hỏi về dịch vụ tiếng Anh.",
-      "sectionEye": "👁️ Nhãn khoa",
-      "eyeDesc": "Kính mắt dịch vụ trong ngày (¥500-2.000). Phẫu thuật mắt laser ¥8K-20K. Khuyến nghị: Bệnh viện Mắt & Tai Mũi Họng Thượng Hải, Tông Nhân Bắc Kinh, Bệnh viện Mắt Aier (Toàn quốc).",
-      "sectionTcm": "🌿 Trị liệu Y học cổ truyền Trung Quốc (#1 yêu cầu Nga)",
-      "colTherapy": "Liệu pháp",
-      "colDescription": "Mô tả",
-      "colPrice": "Giá",
-      "tcm_acupuncture": "Châm cứu",
-      "tcm_acupuncture_desc": "Cổ/Lưng/Vai",
-      "tcm_acupuncture_price": "¥100-300/buổi",
-      "tcm_tuina": "Massage Tuina",
-      "tcm_tuina_desc": "Massage kinh mạch",
-      "tcm_tuina_price": "¥150-400/buổi",
-      "tcm_bonesetting": "Chỉnh xương",
-      "tcm_bonesetting_desc": "Phục hồi chỉnh hình",
-      "tcm_bonesetting_price": "¥200-500/buổi",
-      "tcm_cupping": "Giác hơi",
-      "tcm_cupping_desc": "Giải độc & ẩm",
-      "tcm_cupping_price": "¥50-150/buổi",
-      "tcm_herbal": "Thuốc thảo dược",
-      "tcm_herbal_desc": "Công thức cá nhân hóa",
-      "tcm_herbal_price": "¥100-500/liều",
-      "tcmHotspots": "📍 Điểm nóng Y học cổ truyền",
-      "tcmHotspotsDetail": "Bệnh viện Y học cổ truyền Tam Á (quốc tế)·Y học cổ truyền Hắc Hà (dịch vụ tiếng Nga, 2000+ bệnh nhân/năm)·Bệnh viện Hỗn Xuân (phiên dịch tiếng Nga)·Y học cổ truyền Nhiêu Hà (spa+massage)·Đồng Nhân Đường Bắc Kinh (truyền thống)"
-    },
-    "checkup": {
-      "title": "📋 Khám sức khỏe",
-      "intro": "Bệnh viện lớn cung cấp khám sức khỏe tổng quát, ¥2K-10K+. Một số báo cáo 24h. Không cần ở lại qua đêm, nửa ngày.",
-      "recommended": "<strong>Khuyến nghị:</strong> PUMCH Quốc tế, Huashan Quốc tế, Jiahui Quốc tế",
-      "warning": "⚠️ Lưu ý",
-      "warningDetail": "Đặt trước 1-2 tuần. Nhịn ăn cho một số xét nghiệm. Tham khảo bác sĩ về thuốc."
-    }
-  },
-  "s7_detail.hospital.medAmoxicillinUse": "Kháng sinh(Rx)",
-  "s7_detail.hospital.medIbuprofenUse": "Giảm đau/Hạ sốt",
-  "s7_detail.hospital.medLoperamideUse": "Chống tiêu chảy",
-  "s7_detail.hospital.medLoratadineUse": "Kháng histamine",
-  "s7_detail.hospital.medOmeprazoleUse": "Trào ngược axit",
   "s8": {
-    "title": "Mua sắm & Hoàn thuế",
-    "sub": "Du khách hoàn thuế +305% năm 2025. 12.252 cửa hàng, 7.000+ hoàn ngay.",
+    "meta": {
+      "title": "Mua sắm & Hoàn thuế",
+      "sub": "Du khách hoàn thuế +305% năm 2025. 12.252 cửa hàng, 7.000+ hoàn ngay."
+    },
     "electronics": {
       "label": "📱 Điện tử",
       "title": "Điện thoại gập·Drone·Kính AI",
@@ -318,88 +385,11 @@
       "expandHint": "[ Mở rộng → ]"
     }
   },
-  "s8_detail": {
-    "back": "← Quay lại",
-    "electronics": {
-      "title": "📱 Điện tử & Thiết bị",
-      "colCategory": "Danh mục",
-      "colWhy": "Tại sao mua",
-      "colPrice": "Giá",
-      "foldable": "Điện thoại gập",
-      "foldable_why": "Thương hiệu Trung Quốc dẫn đầu toàn cầu",
-      "drone": "Drone",
-      "drone_why": "DJI thống trị toàn cầu",
-      "ai_glasses": "Kính AI",
-      "ai_glasses_why": "Danh mục mới, Trung Quốc đầu tiên",
-      "translator": "Máy dịch thông minh",
-      "translator_why": "100+ ngôn ngữ thời gian thực",
-      "earbuds": "Tai nghe TWS",
-      "earbuds_why": "Giá trị tuyệt vời",
-      "whereToBuy": "📍 Mua ở đâu",
-      "whereToBuyDetail": "Hoa Cường Bắc SZ—\"Phố điện tử Trung Quốc\", 35 chợ, đa ngôn ngữ+thẻ+hoàn thuế. Vương Phủ Tỉnh BJ—cửa hàng hàng đầu. Nghĩa Ô—\"Siêu thị thế giới\", một điểm."
-    },
-    "souvenirs": {
-      "title": "🎨 Quà lưu niệm văn hóa",
-      "colCity": "Thành phố",
-      "colItem": "Sản phẩm",
-      "beijing_item": "Nam châm tủ lạnh Tử Cấm Thành",
-      "chengdu_item": "Thủ công thổ cẩm gấu trúc·Quà Khoan Trại",
-      "xian_item": "Nhồi bông \"Roujiamo\"·Quà lưu niệm Binh Mã Dũng",
-      "chongqing_item": "Đồ trang trí đồng·Thủ công Hồng Nha Động",
-      "guizhou_item": "Khăn quàng chàm·Nam châm bạc·Móc chìa khóa dân tộc",
-      "tip": "💡 Cửa hàng văn hóa tập trung gần điểm tham quan và phố di sản"
-    },
-    "taxrefund": {
-      "title": "💰 Hướng dẫn Hoàn thuế",
-      "stats": "📊 12.252 cửa hàng hoàn thuế toàn quốc. +305% du khách hoàn thuế năm 2025.",
-      "sectionRequirements": "Yêu cầu",
-      "reqStay": "Du khách nước ngoài, ở ≤183 ngày",
-      "reqAmount": "Cùng cửa hàng cùng ngày ≥¥500",
-      "reqDeparture": "Khởi hành ≤90 ngày từ khi mua",
-      "reqCarry": "Mang theo hàng (KHÔNG ký gửi)",
-      "sectionProcess": "Quy trình",
-      "stepInvoice": "Yêu cầu \"Đơn xin hoàn thuế\" + hóa đơn",
-      "stepCustoms": "Xác minh hải quan (xuất trình hàng+hộ chiếu+tài liệu)",
-      "stepCollect": "Nhận hoàn thuế (tiền mặt/thẻ/Alipay)",
-      "instantRefundTitle": "💡 Hoàn thuế ngay",
-      "instantRefundDetail": "7.000+ cửa hàng: khấu trừ khi mua, không cần xếp hàng sân bay. Toàn thành phố Thượng Hải. Miễn thuế Hải Nam."
-    },
-    "cityshops": {
-      "title": "🗺️ Hướng dẫn Mua sắm Thành phố",
-      "tapHint": "Nhấn vào thành phố để xem chi tiết",
-      "backToCityGuide": "← Quay lại Hướng dẫn Thành phố",
-      "cities": {
-        "shenzhen": {
-          "name": "Thâm Quyến·Hoa Cường Bắc",
-          "subtitle": "Phố điện tử Trung Quốc",
-          "desc": "\"Phố điện tử Trung Quốc\", 35 chợ chuyên dụng. Danh mục: điện thoại, phụ kiện, drone, thiết bị đeo. Biển báo đa ngôn ngữ+thẻ quốc tế+hoàn thuế. Tàu điện ngầm Tuyến 1 Hoa Cường Lộ. Mẹo: so sánh giá, một số chợ có thể trả giá."
-        },
-        "shanghai": {
-          "name": "Thượng Hải·Chợ vải",
-          "subtitle": "May áo dài & Vest",
-          "desc": "Chợ vải Nam Ngoại Thân v.v. Áo dài & vest tùy chỉnh, đo tại chỗ. ¥300-2.000+, giao trong 2-3 ngày. Chấp nhận thẻ quốc tế."
-        },
-        "yiwu": {
-          "name": "Nghĩa Ô·Thành Thương mại",
-          "subtitle": "Siêu thị thế giới",
-          "desc": "\"Siêu thị thế giới\", từ ốp điện thoại đến thiết bị gia dụng thông minh đến drone. Đặt chuyến bay +60% H1 2026. Mua sắm một điểm, đa ngôn ngữ+thẻ quốc tế."
-        },
-        "sanya": {
-          "name": "Tam Á·Trung tâm Miễn thuế",
-          "subtitle": "Miễn thuế ngoại đảo",
-          "desc": "Miễn thuế ngoại đảo & khởi hành. Đầy đủ thương hiệu quốc tế. Chính sách nâng cấp 2025. Quy trình đơn giản: đăng ký→quét→thanh toán→nhận tại sân bay, <3 phút."
-        },
-        "beijing": {
-          "name": "Bắc Kinh·Vương Phủ Tỉnh",
-          "subtitle": "Hàng đầu·Di sản",
-          "desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay."
-        }
-      }
-    }
-  },
   "s9": {
-    "title": "Điểm đến",
-    "sub": "Du khách nước ngoài đã khám phá gần 500 thành phố. Nhấn để khám phá.",
+    "meta": {
+      "title": "Điểm đến",
+      "sub": "Du khách nước ngoài đã khám phá gần 500 thành phố. Nhấn để khám phá."
+    },
     "top10": {
       "label": "🏙️ Top 10",
       "title": "Thành phố phải đến",
@@ -419,140 +409,135 @@
       "expandHint": "[ Mở rộng → ]"
     }
   },
-  "s9_cities": {
-    "shanghai": {
-      "flag": "🇨🇳",
-      "name": "Thượng Hải",
-      "tag": "Bến Thượng Hải·Dự Viên·Disney",
-      "desc": "8,28 triệu+ lượt khách hàng năm. Phải đến: Bến Thượng Hải, Dự Viên, Disneyland. Ẩm thực: tiểu long bao, bánh chiên, món bản bang. Mua sắm: đường Nam Kinh, may áo dài vải chợ. Mẹo: tàu điện ngầm rộng khắp, thị thực quá cảnh 72h có thể dùng."
+  "s10": {
+    "meta": {
+      "title": "Khẩn cấp+Xuất cảnh",
+      "sub": ""
     },
+    "hotlines": "📞 Đường dây nóng",
+    "immigration24h": "Quản lý Xuất nhập cảnh 24h",
+    "police": "Cảnh sát",
+    "ambulance": "Xe cứu thương",
+    "fire": "Cứu hỏa",
+    "passportWarning": "⚠️ Hộ chiếu",
+    "passportWarningDetail": "Luôn mang theo. Mất→cảnh sát→lãnh sự quán. Lưu số liên lạc đại sứ quán.",
+    "departure": "👋 Khởi hành",
+    "departStep1": "Đến sân bay sớm 2-3 giờ",
+    "departStep2": "Mang theo hàng hoàn thuế",
+    "departStep3": "Tiêu hết RMB còn lại",
+    "departStep4": "Sao lưu ảnh (Google Photos bị chặn)",
+    "footer": "🧳 Hướng dẫn nhập cảnh Trung Quốc · Cập nhật tháng 7/2026 · Dựa trên thông tin công khai NIA & MFA · NIA 12367 · s.nia.gov.cn"
+  },
+  "city": {
     "beijing": {
-      "flag": "🇨🇳",
-      "name": "Bắc Kinh",
-      "tag": "Tử Cấm Thành·Trường Thành·Hồ Đồng",
-      "desc": "Kinh đô cổ. Phải đến: Tử Cấm Thành, Vạn Lý Trường Thành, Thiên Đàn. Ẩm thực: vịt quay Bắc Kinh, mì tương đen, lẩu thịt cừu. Mua sắm: Vương Phủ Tỉnh, chợ đồ cổ Phan Gia Viên. Mẹo: đặt vé trước, tàu điện ngầm tiện lợi."
-    },
-    "guangzhou": {
-      "flag": "🇨🇳",
-      "name": "Quảng Châu",
-      "tag": "Ẩm thực·Thương mại·Thành phố hoa",
-      "desc": "Số 1 chi tiêu nhập cảnh. Phải đến: Tháp Quảng Châu, Đảo Sa Diện, núi Bạch Vân. Ẩm thực: dim sum, thịt nướng, cơm nồi đất. Mua sắm: khu Thiên Hà, chợ quần áo Bạch Mã. Mẹo: chuyến bay Đông Nam Á dày đặc, điểm dừng đầu tiên phổ biến."
-    },
-    "shenzhen": {
-      "flag": "🇨🇳",
-      "name": "Thâm Quyến",
-      "tag": "Công nghệ·Thiết kế·Đổi mới",
-      "desc": "Thung lũng Silicon Trung Quốc. Phải đến: Hoa Cường Bắc, công viên vịnh Thâm Quyến, OCT. Ẩm thực: lẩu thịt bò Triều Sán, hải sản. Mua sắm: điện tử Hoa Cường Bắc, trung tâm MixC. Mẹo: tàu cao tốc 15 phút đến Hồng Kông."
-    },
-    "chongqing": {
-      "flag": "🇨🇳",
-      "name": "Trùng Khánh",
-      "tag": "Ma thuật 8D·Lẩu·Cảnh đêm",
-      "desc": "Tăng trưởng nhanh nhất (+30%). Phải đến: Hồng Nha Động, Từ Khí Khẩu, cáp treo sông Dương Tử. Ẩm thực: lẩu, mì tiểu diện, món giang hồ. Mua sắm: Giải Phóng Bội. Mẹo: đi giày bằng, GPS có thể lỗi trong địa hình 8D."
+      "label": "Bắc Kinh",
+      "desc": "Kinh đô cổ. Phải đến: Tử Cấm Thành, Vạn Lý Trường Thành, Thiên Đàn. Ẩm thực: vịt quay Bắc Kinh, mì tương đen, lẩu thịt cừu. Mua sắm: Vương Phủ Tỉnh, chợ đồ cổ Phan Gia Viên. Mẹo: đặt vé trước, tàu điện ngầm tiện lợi.",
+      "tag": "Tử Cấm Thành·Trường Thành·Hồ Đồng"
     },
     "chengdu": {
-      "flag": "🇨🇳",
-      "name": "Thành Đô",
-      "tag": "Gấu trúc·Lẩu·Đời sống chậm",
-      "desc": "Số 1 Trung-Tây Trung Quốc. Phải đến: Căn cứ gấu trúc, Phố Khoan Trại, Cẩm Lý. Ẩm thực: lẩu, xiên nướng, mì đảm đảm. Mua sắm: thổ cẩm gấu trúc. Mẹo: người địa phương thích \"an dật\" (thư thái), chơi chậm rãi."
+      "label": "Thành Đô",
+      "desc": "Số 1 Trung-Tây Trung Quốc. Phải đến: Căn cứ gấu trúc, Phố Khoan Trại, Cẩm Lý. Ẩm thực: lẩu, xiên nướng, mì đảm đảm. Mua sắm: thổ cẩm gấu trúc. Mẹo: người địa phương thích \"an dật\" (thư thái), chơi chậm rãi.",
+      "tag": "Gấu trúc·Lẩu·Đời sống chậm"
     },
-    "hangzhou": {
-      "flag": "🇨🇳",
-      "name": "Hàng Châu",
-      "tag": "Tây Hồ·Long Tỉnh·Lụa",
-      "desc": "Thiên đường nhân gian. Phải đến: Tây Hồ, chùa Linh Ẩn, đồn chè Long Tỉnh. Ẩm thực: thịt lợn Đông Pha, cá Tây Hồ, tôm Long Tỉnh. Mua sắm: chợ lụa, phố Nam Tống. Mẹo: đẹp nhất mùa xuân, tránh Tuần lễ Vàng."
-    },
-    "kunming": {
-      "flag": "🇨🇳",
-      "name": "Côn Minh",
-      "tag": "Thành phố mùa xuân·Hoa·Dân tộc",
-      "desc": "Xuân vĩnh cửu. Phải đến: Rừng Đá, hồ Điền, chợ hoa Đấu Nam. Ẩm thực: mì cầu qua sông, gà nồi hơi, lẩu nấm. Mua sắm: hoa tươi, thủ công dân tộc. Mẹo: cổng Đông Nam Á, khí hậu dễ chịu quanh năm."
-    },
-    "harbin": {
-      "flag": "🇨🇳",
-      "name": "Cáp Nhĩ Tân",
-      "tag": "Băng tuyết·Nga·Đông Bắc",
-      "desc": "Yêu thích của Đông Nam Á. Phải đến: Lễ hội băng, phố Trung Ương, nhà thờ St. Sophia. Ẩm thực: thịt lợn bao quốc nhục, xúc xích đỏ, món Nga. Mua sắm: hàng Nga trên phố Trung Ương. Mẹo: mùa đông -20°C, mặc ấm."
-    },
-    "qingdao": {
-      "flag": "🇨🇳",
-      "name": "Thanh Đảo",
-      "tag": "Bia·Ven biển·Đức",
-      "desc": "Viên ngọc ven biển. Phải đến: cầu tàu Trại Kiều, Bát Đại Quan, Lao Sơn. Ẩm thực: hải sản, bia Thanh Đảo, há cảo cá thu. Mua sắm: phố đi bộ Đài Đông. Mẹo: lễ hội bia 7-8, đẹp nhất mùa hè."
-    },
-    "zhengzhou": {
-      "flag": "🇨🇳",
-      "name": "Trịnh Châu",
-      "tag": "Hán phục·Cổ phong·Chụp phố",
-      "desc": "Điểm chụp ảnh phố cổ trang Hán. Phải đến: tháp Nhị Thất, Bảo tàng Hà Nam, chùa Thiếu Lâm (gần). Ẩm thực: mì hối diện, súp hồ la thang. Mẹo: mặc trang phục truyền thống chụp ảnh, trải nghiệm thẩm mỹ Trung Hoa đắm chìm."
-    },
-    "taiyuan": {
-      "flag": "🇨🇳",
-      "name": "Thái Nguyên",
-      "tag": "Kiến trúc cổ",
-      "desc": "Địa điểm quay Black Myth: Wukong. Phải đến: đền Tấn Từ, Tháp Đôi, Bình Dao (gần). Ẩm thực: mì đao tiêu diện, quá dầu nhục. Mẹo: theo dấu game, thiên đường kiến trúc cổ."
-    },
-    "guiyang": {
-      "flag": "🇨🇳",
-      "name": "Quý Dương",
-      "tag": "Thay thế Seoul·Thiên đường chay",
-      "desc": "\"Thay thế Seoul\" của Hàn Quốc, thiên đường chay phương Tây. Phải đến: núi Kiền Linh, cổ trấn Thanh Nham, Hoa Khê. Ẩm thực: cá canh chua, mì trường vượng, bánh cuốn tơ wa wa. Mẹo: mùa hè mát mẻ."
+    "chongqing": {
+      "label": "Trùng Khánh",
+      "desc": "Tăng trưởng nhanh nhất (+30%). Phải đến: Hồng Nha Động, Từ Khí Khẩu, cáp treo sông Dương Tử. Ẩm thực: lẩu, mì tiểu diện, món giang hồ. Mua sắm: Giải Phóng Bội. Mẹo: đi giày bằng, GPS có thể lỗi trong địa hình 8D.",
+      "tag": "Ma thuật 8D·Lẩu·Cảnh đêm"
     },
     "fuzhou": {
-      "flag": "🇨🇳",
-      "name": "Phúc Châu",
-      "tag": "Thiên nhiên·Suối nóng·Trà",
-      "desc": "Thiên nhiên ven biển & di sản. Phải đến: Tam Phường Thất Hạng, núi Cổ, công viên Tây Hồ. Ẩm thực: Phật nhảy tường, viên cá, nhục yến. Mẹo: suối nước nóng dồi dào, điểm đến chăm sóc sức khỏe."
+      "label": "Phúc Châu",
+      "desc": "Thiên nhiên ven biển & di sản. Phải đến: Tam Phường Thất Hạng, núi Cổ, công viên Tây Hồ. Ẩm thực: Phật nhảy tường, viên cá, nhục yến. Mẹo: suối nước nóng dồi dào, điểm đến chăm sóc sức khỏe.",
+      "tag": "Thiên nhiên·Suối nóng·Trà"
+    },
+    "guangzhou": {
+      "label": "Quảng Châu",
+      "desc": "Số 1 chi tiêu nhập cảnh. Phải đến: Tháp Quảng Châu, Đảo Sa Diện, núi Bạch Vân. Ẩm thực: dim sum, thịt nướng, cơm nồi đất. Mua sắm: khu Thiên Hà, chợ quần áo Bạch Mã. Mẹo: chuyến bay Đông Nam Á dày đặc, điểm dừng đầu tiên phổ biến.",
+      "tag": "Ẩm thực·Thương mại·Thành phố hoa"
+    },
+    "guiyang": {
+      "label": "Quý Dương",
+      "desc": "\"Thay thế Seoul\" của Hàn Quốc, thiên đường chay phương Tây. Phải đến: núi Kiền Linh, cổ trấn Thanh Nham, Hoa Khê. Ẩm thực: cá canh chua, mì trường vượng, bánh cuốn tơ wa wa. Mẹo: mùa hè mát mẻ.",
+      "tag": "Thay thế Seoul·Thiên đường chay"
+    },
+    "hangzhou": {
+      "label": "Hàng Châu",
+      "desc": "Thiên đường nhân gian. Phải đến: Tây Hồ, chùa Linh Ẩn, đồn chè Long Tỉnh. Ẩm thực: thịt lợn Đông Pha, cá Tây Hồ, tôm Long Tỉnh. Mua sắm: chợ lụa, phố Nam Tống. Mẹo: đẹp nhất mùa xuân, tránh Tuần lễ Vàng.",
+      "tag": "Tây Hồ·Long Tỉnh·Lụa"
+    },
+    "harbin": {
+      "label": "Cáp Nhĩ Tân",
+      "desc": "Yêu thích của Đông Nam Á. Phải đến: Lễ hội băng, phố Trung Ương, nhà thờ St. Sophia. Ẩm thực: thịt lợn bao quốc nhục, xúc xích đỏ, món Nga. Mua sắm: hàng Nga trên phố Trung Ương. Mẹo: mùa đông -20°C, mặc ấm.",
+      "tag": "Băng tuyết·Nga·Đông Bắc"
+    },
+    "kunming": {
+      "label": "Côn Minh",
+      "desc": "Xuân vĩnh cửu. Phải đến: Rừng Đá, hồ Điền, chợ hoa Đấu Nam. Ẩm thực: mì cầu qua sông, gà nồi hơi, lẩu nấm. Mua sắm: hoa tươi, thủ công dân tộc. Mẹo: cổng Đông Nam Á, khí hậu dễ chịu quanh năm.",
+      "tag": "Thành phố mùa xuân·Hoa·Dân tộc"
+    },
+    "qingdao": {
+      "label": "Thanh Đảo",
+      "desc": "Viên ngọc ven biển. Phải đến: cầu tàu Trại Kiều, Bát Đại Quan, Lao Sơn. Ẩm thực: hải sản, bia Thanh Đảo, há cảo cá thu. Mua sắm: phố đi bộ Đài Đông. Mẹo: lễ hội bia 7-8, đẹp nhất mùa hè.",
+      "tag": "Bia·Ven biển·Đức"
+    },
+    "shanghai": {
+      "label": "Thượng Hải",
+      "desc": "8,28 triệu+ lượt khách hàng năm. Phải đến: Bến Thượng Hải, Dự Viên, Disneyland. Ẩm thực: tiểu long bao, bánh chiên, món bản bang. Mua sắm: đường Nam Kinh, may áo dài vải chợ. Mẹo: tàu điện ngầm rộng khắp, thị thực quá cảnh 72h có thể dùng.",
+      "tag": "Bến Thượng Hải·Dự Viên·Disney"
+    },
+    "shenzhen": {
+      "label": "Thâm Quyến",
+      "desc": "Thung lũng Silicon Trung Quốc. Phải đến: Hoa Cường Bắc, công viên vịnh Thâm Quyến, OCT. Ẩm thực: lẩu thịt bò Triều Sán, hải sản. Mua sắm: điện tử Hoa Cường Bắc, trung tâm MixC. Mẹo: tàu cao tốc 15 phút đến Hồng Kông.",
+      "tag": "Công nghệ·Thiết kế·Đổi mới"
+    },
+    "taiyuan": {
+      "label": "Thái Nguyên",
+      "desc": "Địa điểm quay Black Myth: Wukong. Phải đến: đền Tấn Từ, Tháp Đôi, Bình Dao (gần). Ẩm thực: mì đao tiêu diện, quá dầu nhục. Mẹo: theo dấu game, thiên đường kiến trúc cổ.",
+      "tag": "Kiến trúc cổ"
+    },
+    "tianjin": {
+      "label": "Thiên Tân",
+      "desc": "Thành phố cảng phía Bắc, khu nhượng địa Ý. Điểm đến: Năm Đại Đạo, Phố Văn hóa Cổ, Mắt Thiên Tân. Ẩm thực: bánh bao Goubuli, jianbing guozi, mahua. Mua sắm: khu phố Ý. Mẹo: 30 phút tàu cao tốc từ Bắc Kinh.",
+      "tag": "Cảng·Phố Ý·Ẩm thực đường phố"
+    },
+    "hainan": {
+      "label": "Hải Nam",
+      "desc": "Hawaii của Trung Quốc. Điểm đến: Vịnh Á Long, Đảo Ngô Chi Châu, chùa Nam Sơn. Ẩm thực: gà Văn Xương, cơm dừa. Mua sắm: thiên đường miễn thuế. Mẹo: miễn thị thực, khí hậu nhiệt đới quanh năm.",
+      "tag": "Bãi biển·Miễn thuế·Nhiệt đới"
+    },
+    "xian": {
+      "label": "Tây An",
+      "desc": "Cố đô 13 triều đại. Điểm đến: Binh mã dũng, Thành cổ, Phố Hồi. Ẩm thực: roujiamo, yangrou paomo, mì biangbiang. Mua sắm: thư pháp, đồ cổ. Mẹo: đặt vé Binh mã dũng trước.",
+      "tag": "Binh mã dũng·Cố đô·Con đường Tơ lụa"
     },
     "yiwu": {
-      "flag": "🇨🇳",
-      "name": "Nghĩa Ô",
-      "tag": "Chợ thế giới·Bán sỉ",
-      "desc": "\"Thủ đô hàng hóa nhỏ thế giới\". Chuyến bay +60% H1 2026. Phải đến: Thành Thương mại Quốc tế (5 khu). Ẩm thực: nhiều nhà hàng Trung Đông. Mua sắm: từ ốp điện thoại đến drone, một điểm."
+      "label": "Nghĩa Ô",
+      "desc": "\"Thủ đô hàng hóa nhỏ thế giới\". Chuyến bay +60% H1 2026. Phải đến: Thành Thương mại Quốc tế (5 khu). Ẩm thực: nhiều nhà hàng Trung Đông. Mua sắm: từ ốp điện thoại đến drone, một điểm.",
+      "tag": "Chợ thế giới·Bán sỉ"
+    },
+    "zhengzhou": {
+      "label": "Trịnh Châu",
+      "desc": "Điểm chụp ảnh phố cổ trang Hán. Phải đến: tháp Nhị Thất, Bảo tàng Hà Nam, chùa Thiếu Lâm (gần). Ẩm thực: mì hối diện, súp hồ la thang. Mẹo: mặc trang phục truyền thống chụp ảnh, trải nghiệm thẩm mỹ Trung Hoa đắm chìm.",
+      "tag": "Hán phục·Cổ phong·Chụp phố"
     }
   },
-  "s9_detail": {
-    "back": "← Quay lại",
-    "backToCityList": "← Quay lại danh sách thành phố",
-    "tapHint": "Nhấn vào thành phố để xem chi tiết",
-    "top10": {
-      "title": "🏙️ Top 10 thành phố"
+  "clinic": {
+    "jiahui": {
+      "label": "Bệnh viện Quốc tế Gia Hội Thượng Hải",
+      "desc": "Tiêu chuẩn JCI, đội ngũ đa ngôn ngữ. Phẫu thuật (mô mềm, thẩm mỹ bụng, điêu khắc cơ thể) & không phẫu thuật (Botox, filler). 10+ ca phẫu thuật quốc tế/năm."
     },
-    "rising": {
-      "title": "🚀 Thành phố Ngôi sao Đang lên",
-      "subtitle": "Điểm đến xu hướng trên mạng xã hội"
+    "mhwd": {
+      "label": "Phòng khám MHWD·Đinh Hương",
+      "desc": "Phòng khám quốc tế, đa ngôn ngữ. Tất cả dịch vụ theo giấy phép y tế đúng quy định với thiết bị tuân thủ. Chuyên gia da liễu & tiêm chất làm đầy."
     },
-    "seasons": {
-      "title": "🌍 Gợi ý theo mùa",
-      "spring": {
-        "title": "🌸 Xuân (3-5)",
-        "desc": "Ôn hòa & dễ chịu. Tây Hồ Hàng Châu·Vườn Tô Châu·hoa Côn Minh."
-      },
-      "summer": {
-        "title": "🌿 Hạ (6-8)",
-        "desc": "Tránh nóng: Bắc Đới Hà/Thanh Đảo. Lễ hội bia·Cáp Nhĩ Tân mát·Trương Gia Giới."
-      },
-      "autumn": {
-        "title": "🍂 Thu (9-11) Tốt nhất!",
-        "desc": "Tốt nhất toàn quốc. Lá đỏ Bắc Kinh·cổ thành Tây An·cảnh Quế Lâm."
-      },
-      "winter": {
-        "title": "❄️ Đông (12-2)",
-        "desc": "Băng Bắc vs nắng Nam. Lễ hội băng Cáp Nhĩ Tân (yêu thích Đông Nam Á)·nhiệt đới Tam Á (yêu thích Nga)."
-      },
-      "sizingTip": "👔 Kích cỡ: CN nhỏ hơn US 1-2 cỡ. US M≈CN L/XL. Uniqlo/ZARA kích cỡ toàn cầu."
+    "rodeo": {
+      "label": "RODEO (Thượng Hải)",
+      "desc": "Chuỗi xuyên biên giới Mỹ. Bác sĩ được đào tạo tại Mỹ với chứng nhận thương hiệu quốc tế. Nhân viên phù hợp ngôn ngữ, quy trình tuân thủ quốc tế."
+    },
+    "yuansong": {
+      "label": "YuanSong Aesthetics (Thượng Hải)",
+      "desc": "Đã phục vụ khách từ Hàn Quốc, Nhật Bản, Trung Đông. Sử dụng phương pháp filler thay vì phẫu thuật xương nguy hiểm. Triết lý thẩm mỹ tự nhiên."
     }
   },
-  "shop.beijing.desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay.",
-  "shop.beijing.name": "Bắc Kinh·Vương Phủ Tỉnh",
-  "shop.sanya.desc": "Miễn thuế ngoại đảo & khởi hành. Đầy đủ thương hiệu quốc tế. Chính sách nâng cấp 2025. Quy trình đơn giản: đăng ký→quét→thanh toán→nhận tại sân bay, <3 phút.",
-  "shop.sanya.name": "Tam Á·Trung tâm Miễn thuế",
-  "shop.shanghai.desc": "Chợ vải Nam Ngoại Thân v.v. Áo dài & vest tùy chỉnh, đo tại chỗ. ¥300-2.000+, giao trong 2-3 ngày. Chấp nhận thẻ quốc tế.",
-  "shop.shanghai.name": "Thượng Hải·Chợ vải",
-  "shop.shenzhen.desc": "\"Phố điện tử Trung Quốc\", 35 chợ chuyên dụng. Danh mục: điện thoại, phụ kiện, drone, thiết bị đeo. Biển báo đa ngôn ngữ+thẻ quốc tế+hoàn thuế. Tàu điện ngầm Tuyến 1 Hoa Cường Lộ. Mẹo: so sánh giá, một số chợ có thể trả giá.",
-  "shop.shenzhen.name": "Thâm Quyến·Hoa Cường Bắc",
-  "shop.yiwu.desc": "\"Siêu thị thế giới\", từ ốp điện thoại đến thiết bị gia dụng thông minh đến drone. Đặt chuyến bay +60% H1 2026. Mua sắm một điểm, đa ngôn ngữ+thẻ quốc tế.",
-  "shop.yiwu.name": "Nghĩa Ô·Thành Thương mại",
   "visa": {
     "mutual": {
       "title": "✅ Không cần thị thực (Tương hỗ)",

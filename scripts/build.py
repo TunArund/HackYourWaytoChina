@@ -92,15 +92,13 @@ def build():
     html = inline_css(html)
     print("  ✓ CSS inlined")
 
-    # Inline JS
+    # Inline i18n bundle FIRST (before JS inlining)
+    html = inline_i18n(html)
+    print("  ✓ i18n bundled")
+
+    # Inline JS (will now also inline i18n.js which follows the bundle)
     html = inline_js(html)
     print("  ✓ JS inlined")
-
-    # Inline i18n bundle + patch i18n.js to use it
-    html = inline_i18n(html)
-    # Now also inline the i18n.js itself (it was skipped by the src-based inline_js since we added a bundle before it)
-    html = inline_js(html)  # second pass catches i18n.js
-    print("  ✓ i18n bundled")
 
     # Write output
     DIST.mkdir(exist_ok=True)

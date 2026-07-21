@@ -15,21 +15,36 @@ HackYourWaytoChina/
 │   │   ├── detail.js
 │   │   └── i18n.js
 │   ├── i18n/              # 国际化
-│   │   ├── zh.json
-│   │   └── en.json
+│   │   ├── zh.json        # 中文（完全支持）
+│   │   ├── en.json        # 英文（完全支持）
+│   │   ├── ja.json        # 日语（动态内容）
+│   │   ├── ko.json        # 韩语（动态内容）
+│   │   ├── ru.json        # 俄语（动态内容）
+│   │   └── vi.json        # 越南语（动态内容）
 │   └── img/               # 图片资源
 ├── scripts/               # 构建脚本
 │   ├── build.py           # 多文件→单文件构建
+│   ├── flatten_to_nested.py  # i18n结构转换
 │   └── docx2md.py         # 文档转换
 ├── docs/                  # 文档
-│   ├── DEPLOYMENT.md      # 部署指南
 │   ├── research.md        # 市场调研
 │   ├── roadmap.md         # 路线图
 │   └── feedback.md        # 反馈记录
 ├── dist/                  # 构建产物
-│   └── guide.html         # 单文件输出（自包含）
+│   └── guide.html         # 单文件输出（自包含，离线可用）
 └── README.md              # 项目说明
 ```
+
+### 多语言支持说明
+
+**完全支持**：中文（zh）、英文（en）
+- HTML中硬编码双语内容
+- 所有UI元素、表单、按钮均支持
+
+**部分支持**：日语（ja）、韩语（ko）、俄语（ru）、越南语（vi）
+- 仅支持动态渲染内容（城市列表、详情页、下拉选项等）
+- 部分UI元素仍显示中英文
+- 适用于核心内容浏览
 
 ## 工作约定
 
@@ -38,7 +53,25 @@ HackYourWaytoChina/
 - 构建产物输出到 `dist/guide.html`
 - 修改前先读 [README.md](README.md) 了解设计系统
 - 内容决策参考 [docs/research.md](docs/research.md)
-- 部署指南见 [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
+
+### 提交和部署
+
+⚠️ **Cloudflare Pages 每月仅500次构建额度，谨慎提交！**
+
+- **不要自动提交**：每次修改完使用本地服务器测试
+- **等用户指示**：用户明确说"提交"时再 `git commit && git push`
+- **本地测试流程**：
+  1. 修改源文件 (`src/`)
+  2. 提供测试服务器启动指令：`python -m http.server 8888 --directory src`
+  3. 提供浏览器测试步骤供用户验证
+  4. 等待用户确认后再提交
+
+### 开发模式说明
+
+- **多文件开发**：直接在 `src/` 目录修改，`i18n.js` 会自动 fetch JSON 文件
+- **单文件构建**：运行 `python scripts/build.py` 生成 `dist/guide.html`（离线可用）
+- **测试服务器**：`python -m http.server 8888 --directory src` 启动多文件模式
+- **构建必要性**：仅用于生成离线版本，开发时无需构建
 
 ## Python 环境
 

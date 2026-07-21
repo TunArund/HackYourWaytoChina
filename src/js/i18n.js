@@ -3,11 +3,13 @@
    ============================================================ */
 
 let I18N = {};
+let LANG = 'en';
 let _ready = false;
 
 /* Init: load bundled (offline) or fetch (dev) immediately */
 (async function () {
   const saved = localStorage.getItem('guide-lang') || 'en';
+  LANG = saved;
   if (window.__I18N_BUNDLE) {
     I18N = window.__I18N_BUNDLE[saved] || window.__I18N_BUNDLE['en'] || {};
     _ready = true;
@@ -30,6 +32,14 @@ let _ready = false;
     }
   }
   document.documentElement.setAttribute('data-lang', saved);
+
+  // Translate DOM after i18n is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', translateDOM);
+  } else {
+    translateDOM();
+  }
+
   if (typeof updateCountryLang === 'function') updateCountryLang();
   if (typeof refreshUI === 'function') refreshUI();
 })();
@@ -62,6 +72,7 @@ function ta(key) {
 }
 
 async function setLang(lang) {
+  LANG = lang;
   if (window.__I18N_BUNDLE && window.__I18N_BUNDLE[lang]) {
     I18N = window.__I18N_BUNDLE[lang];
   } else {
@@ -73,11 +84,15 @@ async function setLang(lang) {
   _ready = true;
   document.documentElement.setAttribute('data-lang', lang);
   localStorage.setItem('guide-lang', lang);
+  if (typeof updateLanguageButton === 'function') updateLanguageButton();
   if (typeof updateCountryLang === 'function') updateCountryLang();
   if (typeof refreshUI === 'function') refreshUI();
 }
 
 function refreshUI() {
+  // Translate all [data-i18n] elements
+  translateDOM();
+
   const vcR = document.getElementById('vcResult');
   if (vcR && vcR.classList.contains('show') && typeof checkVisa === 'function') checkVisa();
   if (typeof currentDetail !== 'undefined' && currentDetail.slide) {
@@ -88,4 +103,16 @@ function refreshUI() {
   }
   if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
   if (typeof updateCountryLang === 'function') updateCountryLang();
+}
+
+/* Translate all elements with data-i18n attribute */
+function translateDOM() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = t(key);
+    if (translation && !translation.startsWith('[')) {
+      // Use innerHTML to preserve HTML tags like <strong>
+      el.innerHTML = translation;
+    }
+  });
 }

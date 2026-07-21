@@ -35,8 +35,8 @@ function toggleVersion() {
 
 function updateVersionSwitchText() {
   versionSwitch.innerHTML = currentVersion === 'short'
-    ? (t('app.versionSwitchToLong'))
-    : (t('app.versionSwitchToShort'));
+    ? (t('app.nav.versionSwitch.toLong'))
+    : (t('app.nav.versionSwitch.toShort'));
 }
 
 
@@ -139,7 +139,13 @@ scrubber.addEventListener('pointerup', e => {
   jumpTo(idx);
   dragging = false; tooltip.classList.remove('show');
 });
-scrubber.addEventListener('pointerleave', () => { if (dragging) { scrubber.classList.remove('dragging'); tooltip.classList.remove('show'); } });
+scrubber.addEventListener('pointerleave', () => {
+  if (dragging) {
+    scrubber.classList.remove('dragging');
+    tooltip.classList.remove('show');
+    dragging = false;
+  }
+});
 container.addEventListener('scroll', () => { if (!dragging) updateBarHighlight(currentSlideIndex()); });
 window.addEventListener('resize', () => { if (currentVersion) { buildBars(); updateBarHighlight(currentSlideIndex()); } });
 
@@ -212,7 +218,7 @@ function showResult(r) {
   const bodyKey = r.country === 'RU' && r.type === 'free' ? 'visa.free.bodyRuNote' : `visa.${r.type}.body`;
   const conds = ta('visa.' + r.type + '.conditions');
   const condList = Array.isArray(conds) ? conds : [];
-  vcR.innerHTML = `<strong>${t('visa.' + r.type + '.title')}</strong><p>${t(bodyKey)}</p><ul>${condList.map(c => `<li>${c}</li>`).join('')}</ul><button class="vc-detail-btn" onclick="event.stopPropagation();openVisaDetail('${r.type}','${r.country || ''}')">${t('app.visaDetailButton')}</button>`;
+  vcR.innerHTML = `<strong>${t('visa.' + r.type + '.title')}</strong><p>${t(bodyKey)}</p><ul>${condList.map(c => `<li>${c}</li>`).join('')}</ul><button class="vc-detail-btn" onclick="event.stopPropagation();openVisaDetail('${r.type}','${r.country || ''}')">${t('app.buttons.details')}</button>`;
   vcReset.classList.add('show');
 }
 
@@ -233,7 +239,7 @@ function openVisaDetail(type, country) {
   const condList = Array.isArray(conds) ? conds : [];
   const links = d.links || [];
   const ruNote = (country === 'RU' && type === 'free') ? `<p class="tip-box tip-box--warn" style="margin-top:8px"><strong>${t('visa.free.ruWarning')}</strong></p>` : '';
-  vcR.innerHTML = `<div style="margin-bottom:10px"><button class="detail-back" onclick="event.stopPropagation();closeVisaDetail()">← ${t('app.backToResult')}</button></div><h4 style="margin-bottom:10px">📋 ${t('visa.' + type + '.detailTitle')}</h4><ul class="step-list">${condList.map(c => `<li>${c}</li>`).join('')}</ul>${ruNote}${links.length ? `<div style="margin-top:12px"><p style="font-size:0.78rem;font-weight:700;margin-bottom:4px">🔗 ${t('app.officialLinks')}</p>${links.map(l => `<a href="${l.url}" target="_blank" rel="noopener" style="display:block;font-size:0.8rem;color:var(--info);text-decoration:underline;margin-bottom:2px">${t('visa.links.' + l.key)} →</a>`).join('')}</div>` : ''}`;
+  vcR.innerHTML = `<div style="margin-bottom:10px"><button class="detail-back" onclick="event.stopPropagation();closeVisaDetail()">← ${t('app.buttons.back')}</button></div><h4 style="margin-bottom:10px">📋 ${t('visa.' + type + '.detailTitle')}</h4><ul class="step-list">${condList.map(c => `<li>${c}</li>`).join('')}</ul>${ruNote}${links.length ? `<div style="margin-top:12px"><p style="font-size:0.78rem;font-weight:700;margin-bottom:4px">🔗 ${t('app.links.official')}</p>${links.map(l => `<a href="${l.url}" target="_blank" rel="noopener" style="display:block;font-size:0.8rem;color:var(--info);text-decoration:underline;margin-bottom:2px">${t('visa.links.' + l.key)} →</a>`).join('')}</div>` : ''}`;
   history.pushState({ visaDetail: true, type, country }, '', '#s1-detail-visa');
 }
 

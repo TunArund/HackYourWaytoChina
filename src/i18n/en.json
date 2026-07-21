@@ -1,94 +1,40 @@
 {
   "app": {
-    "shortTitle": "Short-term Visitor",
-    "longTitle": "Long-term Resident",
-    "coverTitle": "The Complete China Guide",
-    "coverSubtitle": "Choose your journey for a tailored guide",
-    "coverShortLabel": "Short-term Visitor",
-    "coverShortTagline": "2 – 30 days",
-    "coverShortExamples": "Tourism · Business · Visit · Transit",
-    "coverLongLabel": "Long-term Resident",
-    "coverLongTagline": "Already in China · Settling",
-    "coverLongExamples": "Work · Study · Visa Transfer · Settle",
-    "coverFooter": "📅 Updated July 2026 · 🌐 Bilingual",
-    "topBarTitle": "🧳 China Entry Guide",
-    "versionSwitchToLong": "🔄 Long-term",
-    "versionSwitchToShort": "🔄 Short-term",
-    "langSwitchLabel": "中",
-    "resetButton": "🔄 Check Again",
-    "visaDetailButton": "📋 Visa Details ▸",
-    "backToResult": "← Back to result",
-    "officialLinks": "🔗 Official Links",
-    "scrollHint": "Scroll down"
+    "nav": {
+      "title": "🧳 China Entry Guide",
+      "versionSwitch": {
+        "toLong": "🔄 Long-term",
+        "toShort": "🔄 Short-term"
+      }
+    },
+    "cover": {
+      "title": "The Complete China Guide",
+      "subtitle": "Choose your journey for a tailored guide",
+      "footer": "📅 Updated July 2026 · 🌐 Bilingual",
+      "short": {
+        "label": "Short-term Visitor",
+        "tagline": "2 – 30 days",
+        "examples": "Tourism · Business · Visit · Transit"
+      },
+      "long": {
+        "label": "Long-term Resident",
+        "tagline": "Already in China · Settling",
+        "examples": "Work · Study · Visa Transfer · Settle"
+      }
+    },
+    "buttons": {
+      "reset": "🔄 Check Again",
+      "back": "← Back to result",
+      "details": "📋 Visa Details ▸",
+      "expand": "[ Expand → ]"
+    },
+    "links": {
+      "official": "🔗 Official Links"
+    },
+    "hints": {
+      "scroll": "Scroll down"
+    }
   },
-  "city.beijing.desc": "Ancient capital. Must-see: Forbidden City, Great Wall, Temple of Heaven. Food: Peking duck, zhajiang noodles, hotpot lamb. Shop: Wangfujing, Panjiayuan antiques. Tip: book attractions in advance, metro is easy.",
-  "city.beijing.flag": "beijing",
-  "city.beijing.name": "Beijing",
-  "city.beijing.tag": "Forbidden City·Great Wall·Hutongs",
-  "city.chengdu.desc": "#1 in central-west China. Must-see: Panda Base, Kuanzhai Alley, Jinli. Food: hotpot, chuanchuan, dandan noodles. Shop: panda brocade crafts. Tip: locals value \"anyi\" (comfort), take it slow.",
-  "city.chengdu.flag": "chengdu",
-  "city.chengdu.name": "Chengdu",
-  "city.chengdu.tag": "Pandas·Hotpot·Slow Life",
-  "city.chongqing.desc": "Fastest growing (+30%). Must-see: Hongyadong, Ciqikou, Yangtze cableway. Food: hotpot, xiaomian noodles, Jianghu cuisine. Shop: Jiefangbei. Tip: wear flats, GPS may fail in 8D terrain.",
-  "city.chongqing.flag": "chongqing",
-  "city.chongqing.name": "Chongqing",
-  "city.chongqing.tag": "8D Magic·Hotpot·Night Views",
-  "city.fuzhou.desc": "Coastal nature & heritage. Must-see: Sanfang Qixiang, Gushan, West Lake Park. Food: Buddha Jumps Over the Wall, fish balls, rouyan. Tip: abundant hot springs, wellness destination.",
-  "city.fuzhou.flag": "fuzhou",
-  "city.fuzhou.name": "Fuzhou",
-  "city.fuzhou.tag": "Nature·Hot Springs·Tea",
-  "city.guangzhou.desc": "#1 in inbound spending. Must-see: Canton Tower, Shamian Island, Baiyun Mountain. Food: dim sum, roast meats, claypot rice. Shop: Tianhe malls, Baima clothing market. Tip: dense SE Asia flights, popular first stop.",
-  "city.guangzhou.flag": "guangzhou",
-  "city.guangzhou.name": "Guangzhou",
-  "city.guangzhou.tag": "Cuisine·Trade·Flower City",
-  "city.guiyang.desc": "Korean \"Seoul alternative\", Western veggie haven. Must-see: Qianling Mountain, Qingyan Old Town, Huaxi. Food: sour soup fish, changwang noodles, siwawa wraps. Tip: cool summer escape.",
-  "city.guiyang.flag": "guiyang",
-  "city.guiyang.name": "Guiyang",
-  "city.guiyang.tag": "Seoul Alt·Veggie Heaven",
-  "city.hangzhou.desc": "Paradise on earth. Must-see: West Lake, Lingyin Temple, Longjing tea fields. Food: Dongpo pork, West Lake fish, Longjing shrimp. Shop: silk market, Southern Song Street. Tip: best in spring, avoid Golden Week.",
-  "city.hangzhou.flag": "hangzhou",
-  "city.hangzhou.name": "Hangzhou",
-  "city.hangzhou.tag": "West Lake·Longjing·Silk",
-  "city.harbin.desc": "SE Asia favorite. Must-see: Ice Festival, Zhongyang Street, St. Sophia. Food: guobaorou, red sausage, Russian cuisine. Shop: Russian imports on Zhongyang. Tip: -20°C in winter, bundle up.",
-  "city.harbin.flag": "harbin",
-  "city.harbin.name": "Harbin",
-  "city.harbin.tag": "Ice·Russian·Dongbei",
-  "city.kunming.desc": "Eternal spring. Must-see: Stone Forest, Dian Lake, Dounan flower market. Food: cross-bridge noodles, steam pot chicken, mushroom hotpot. Shop: fresh flowers, ethnic crafts. Tip: SE Asia gateway, pleasant year-round.",
-  "city.kunming.flag": "kunming",
-  "city.kunming.name": "Kunming",
-  "city.kunming.tag": "Spring City·Flowers·Ethnic",
-  "city.qingdao.desc": "Coastal gem. Must-see: Zhanqiao Pier, Badaguan, Laoshan. Food: seafood, Tsingtao beer, mackerel dumplings. Shop: Taidong pedestrian street. Tip: Beer Festival Jul-Aug, best in summer.",
-  "city.qingdao.flag": "qingdao",
-  "city.qingdao.name": "Qingdao",
-  "city.qingdao.tag": "Beer·Coast·German",
-  "city.shanghai.desc": "8.28M+ annual arrivals. Must-see: the Bund, Yu Garden, Disney. Food: xiaolongbao, shengjian, Shanghainese cuisine. Shop: Nanjing Rd, fabric market qipao. Tip: extensive metro, 72h transit visa usable.",
-  "city.shanghai.flag": "shanghai",
-  "city.shanghai.name": "Shanghai",
-  "city.shanghai.tag": "Bund·Yu Garden·Disney",
-  "city.shenzhen.desc": "China's Silicon Valley. Must-see: Huaqiangbei, Shenzhen Bay Park, OCT. Food: Chaoshan beef hotpot, seafood. Shop: Huaqiangbei electronics, MixC mall. Tip: 15min HSR to Hong Kong.",
-  "city.shenzhen.flag": "shenzhen",
-  "city.shenzhen.name": "Shenzhen",
-  "city.shenzhen.tag": "Tech·Design·Innovation",
-  "city.taiyuan.desc": "Black Myth: Wukong filming locations. Must-see: Jinci Temple, Twin Pagodas, Pingyao (nearby). Food: daoxiaomian noodles, guoyourou. Tip: follow the game trail, ancient architecture paradise.",
-  "city.taiyuan.flag": "taiyuan",
-  "city.taiyuan.name": "Taiyuan",
-  "city.taiyuan.tag": "Ancient Architecture",
-  "city.yiwu.desc": "\"World Small Commodity Capital\". Flights +60% H1 2026. Must-visit: International Trade City (5 districts). Food: many Middle Eastern restaurants. Shop: phone cases to drones, one-stop.",
-  "city.yiwu.flag": "yiwu",
-  "city.yiwu.name": "Yiwu",
-  "city.yiwu.tag": "World Market·Wholesale",
-  "city.zhengzhou.desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.",
-  "city.zhengzhou.flag": "zhengzhou",
-  "city.zhengzhou.name": "Zhengzhou",
-  "city.zhengzhou.tag": "Hanfu·Ancient·Street Photo",
-  "clinic.jiahui.desc": "JCI-standard, multilingual team. Surgical (soft tissue, abdominoplasty, body contouring) & non-surgical (Botox, fillers). 10+ intl surgical cases/year.",
-  "clinic.jiahui.name": "Shanghai Jiahui Intl Hospital",
-  "clinic.mhwd.desc": "International dept, multilingual. All services under proper medical licensing with compliant equipment. Led by dermatology & injection experts.",
-  "clinic.mhwd.name": "MHWD·Dingxiang Clinic",
-  "clinic.rodeo.desc": "American cross-border chain. US-trained physicians with international brand certifications. Language-matched service staff, internationally compliant protocols.",
-  "clinic.rodeo.name": "RODEO (Shanghai)",
-  "clinic.yuansong.desc": "Served clients from Korea, Japan, Middle East. Uses filler-based contouring instead of high-risk bone shaving. Natural aesthetics philosophy.",
-  "clinic.yuansong.name": "YuanSong Aesthetics (Shanghai)",
   "countries": {
     "default": "— Select —",
     "AU": "🇦🇺 Australia",
@@ -141,45 +87,169 @@
     "ZA": "🇿🇦 South Africa",
     "OTHER": "🌍 Other"
   },
+  "s0": {},
   "s1": {
-    "title": "Do I Need a Visa?",
-    "sub": "3 questions. Nearly 80 countries visa-free or transit.",
-    "q1": "Q1 · Nationality?",
-    "q2": "Q2 · Purpose?",
-    "q3": "Q3 · Duration?",
-    "q4": "Q4 · Onward ticket?",
-    "purposeTourism": "🏖 Tourism",
-    "purposeBusiness": "💼 Business",
-    "purposeFamily": "👨‍👩‍👧 Visit",
-    "purposeTransit": "🔄 Transit",
-    "purposeWork": "💻 Work/Study",
-    "durationShort": "≤10d",
-    "durationMedium": "11-30d",
-    "durationLong": "31-180d",
-    "durationXlong": ">180d",
-    "onwardYes": "✅ Yes",
-    "onwardNo": "❌ No"
+    "meta": {
+      "title": "Do I Need a Visa?",
+      "sub": "3 questions. Nearly 80 countries visa-free or transit."
+    },
+    "questions": {
+      "q1": "Q1 · Nationality?",
+      "q2": "Q2 · Purpose?",
+      "q3": "Q3 · Duration?",
+      "q4": "Q4 · Onward ticket?"
+    },
+    "purpose": {
+      "tourism": "🏖 Tourism",
+      "business": "💼 Business",
+      "family": "👨‍👩‍👧 Visit",
+      "transit": "🔄 Transit",
+      "work": "💻 Work/Study"
+    },
+    "duration": {
+      "short": "≤10d",
+      "medium": "11-30d",
+      "long": "31-180d",
+      "xlong": ">180d"
+    },
+    "onward": {
+      "yes": "✅ Yes",
+      "no": "❌ No"
+    },
+    "placeholder": "— Select —"
   },
-  "s1.placeholder": "— Select —",
-  "s10": {
-    "title": "Emergency+Exit",
-    "hotlines": "📞 Hotlines",
-    "immigration24h": "Immigration 24h",
-    "police": "Police",
-    "ambulance": "Ambulance",
-    "fire": "Fire",
-    "passportWarning": "⚠️ Passport",
-    "passportWarningDetail": "Carry always. Lost→police→consulate. Save embassy contacts.",
-    "departure": "👋 Depart",
-    "departStep1": "2-3h early",
-    "departStep2": "Carry refund items",
-    "departStep3": "Spend leftover RMB",
-    "departStep4": "Backup photos(Google Photos blocked)",
-    "footer": "🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn"
+  "s2": {
+    "meta": {
+      "title": "Before You Go",
+      "sub": "Checklist + arrival card + final check. <strong>97%</strong> Beijing arrivals use online filing."
+    },
+    "passport": {
+      "label": "📘 Req",
+      "title": "Passport",
+      "desc": "≥6mo valid, ≥2 blank pages"
+    },
+    "tickets": {
+      "label": "🎫 Req",
+      "title": "Return+Hotel",
+      "desc": "Print/screenshot e-ticket; hotel with address"
+    },
+    "arrivalCard": {
+      "label": "📱 Arrival Card",
+      "title": "Pre-fill Online",
+      "desc": "s.nia.gov.cn → fill → screenshot QR → scan. Supports passport photo scan. Also: NIA 12367 APP / WeChat / Alipay mini programs."
+    },
+    "finalCheck": {
+      "label": "✅ Final Check",
+      "items": [
+        "<strong>Passport ≥6mo?</strong>",
+        "<strong>Visa eligibility?</strong>",
+        "<strong>Arrival card? Screenshot</strong>",
+        "<strong>Alipay/WeChat ready?</strong>",
+        "<strong>Hotel address saved?</strong>"
+      ]
+    }
+  },
+  "s3": {
+    "meta": {
+      "title": "Arrival & Immigration",
+      "sub": "Flow+customs+registration. Under 14 / over 70 fingerprint exempt."
+    },
+    "steps": {
+      "label": "🛂 6 Steps",
+      "desc": "①Health→②Fingerprint→③Border→④Baggage→⑤Customs→⑥Arrival Hall"
+    },
+    "customs": {
+      "label": "🛃 Limits",
+      "desc": "Cash≤$5K·Alc≤1.5L·Cigs≤400. Rx meds with note. Green channel. Ban:weapons/drugs/ivory."
+    },
+    "registration": {
+      "label": "🏨 Register",
+      "desc": "Hotels auto. Private:12367 online(7 pilot) or police. Re-register per move. Art.39:within 24h."
+    }
+  },
+  "s4": {
+    "meta": {
+      "title": "Connectivity",
+      "sub": "Google/WA/IG blocked. Priority: get online."
+    },
+    "esim": {
+      "label": "📱 Best",
+      "title": "eSIM",
+      "desc": "Airalo/Holafly/Nomad. Buy before→data on landing. Data only, no CN number."
+    },
+    "sim": {
+      "label": "📱 Alt",
+      "title": "CN SIM",
+      "desc": "Airport:Mobile/Unicom/Telecom. Passport. ¥29-99/mo. Get number→register apps."
+    },
+    "vpn": {
+      "label": "🔐 VPN",
+      "title": "Install Early",
+      "desc": "Mullvad/Astrill. Install+pay before. Keep 2 different protocols as backup."
+    },
+    "blocked": {
+      "label": "🚫 Blocked",
+      "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>Alt:Baidu/Xiaohongshu/Weibo/Bilibili"
+    }
+  },
+  "s5": {
+    "meta": {
+      "title": "Daily Life",
+      "sub": "Apps + transport + food + hotels. Download before."
+    },
+    "payment": {
+      "label": "💳 Payment",
+      "desc": "Alipay/WeChat accept foreign cards (no bank account). Cash backup. UnionPay widely accepted."
+    },
+    "transport": {
+      "label": "🚕 Transport",
+      "desc": "Didi (Uber-like), Metro apps, HSR 12306, bike-share (Meituan/Hellobike)"
+    },
+    "food": {
+      "label": "🍜 Food",
+      "desc": "Dianping reviews, translate menus (WeChat scan), delivery (Meituan/Eleme), dietary filters"
+    },
+    "accommodation": {
+      "label": "🏨 Hotels",
+      "desc": "Trip.com, Ctrip, Airbnb (limited). Foreign-friendly hotels required for registration."
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "Apps to Download",
+      "sub": "Essential apps. Download before entering China."
+    },
+    "essential": {
+      "label": "✅ Essential",
+      "items": [
+        "WeChat (chat+pay)",
+        "Alipay (pay)",
+        "Didi (taxi)",
+        "Baidu Maps"
+      ]
+    },
+    "travel": {
+      "label": "🧳 Travel",
+      "items": [
+        "12306 (train)",
+        "Trip.com (hotels)",
+        "Dianping (food)"
+      ]
+    },
+    "useful": {
+      "label": "📱 Useful",
+      "items": [
+        "Meituan (delivery)",
+        "Xiaohongshu (social)",
+        "Pleco (dictionary)"
+      ]
+    }
   },
   "s7": {
-    "title": "Medical Services",
-    "sub": "850+ institutions across 57 cities. Tap cards for details.",
+    "meta": {
+      "title": "Medical Services",
+      "sub": "850+ institutions across 57 cities. Tap cards for details."
+    },
     "hospital": {
       "label": "🏥 Hospitals",
       "title": "Intl Hospitals & Meds",
@@ -197,102 +267,99 @@
       "title": "Executive Checkup",
       "desc": "¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.",
       "expandHint": "[ Expand → ]"
+    },
+    "detail": {
+      "back": "← Back",
+      "hospital": {
+        "title": "🏥 International Medical Services",
+        "intro": "850+ institutions across 57 cities. 1.28M international patients in 2025 (+73.6%).",
+        "sectionHospitals": "International Hospitals",
+        "colCity": "City",
+        "colHospital": "Hospital",
+        "colNote": "Note",
+        "shanghaiName": "Huashan / Jiahui",
+        "shanghaiNote": "90+ countries",
+        "beijingName": "PUMCH / UFH",
+        "beijingNote": "Intl dept ¥600-1200",
+        "guangzhouName": "SYSU 1st / Clifford",
+        "guangzhouNote": "25 pilot hospitals",
+        "tianjinName": "Pengruili",
+        "tianjinNote": "Foreign-owned tertiary",
+        "hainanName": "Lecheng Pilot Zone",
+        "hainanNote": "Intl drugs/devices",
+        "sectionMeds": "Common Meds (CN/EN/RU)",
+        "colCn": "CN",
+        "colUse": "Use",
+        "medIbuprofenUse": "Pain/Fever",
+        "medAmoxicillinUse": "Antibiotic(Rx)",
+        "medLoperamideUse": "Anti-diarrheal",
+        "medLoratadineUse": "Antihistamine",
+        "medOmeprazoleUse": "Acid reflux",
+        "insuranceWarning": "⚠️ Buy Travel Insurance",
+        "insuranceDetail": "Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa."
+      },
+      "big3": {
+        "title": "🦷👁️🌿 Medical \"Big Three\"",
+        "sectionDental": "🦷 Dental",
+        "colItem": "Item",
+        "colChinaPrice": "China",
+        "colUsEuPrice": "US/EU",
+        "dental_cleaning": "Cleaning",
+        "dental_cleaning_cn": "¥200-500",
+        "dental_cleaning_us": "$100-200",
+        "dental_filling": "Filling",
+        "dental_filling_cn": "¥300-800",
+        "dental_filling_us": "$150-400",
+        "dental_root": "Root Canal",
+        "dental_root_cn": "¥1,500-3,000",
+        "dental_root_us": "$800-1,500",
+        "dental_implant": "Dental Implant",
+        "dental_implant_cn": "¥5,000-15,000",
+        "dental_implant_us": "$3,000-6,000",
+        "dental_crown": "Cosmetic Crown",
+        "dental_crown_cn": "¥2,000-5,000",
+        "dental_crown_us": "$1,000-2,500",
+        "dentalNote": "💡 Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
+        "dentalClinics": "🏥 Recommended Clinics",
+        "dentalClinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service.",
+        "sectionEye": "👁️ Ophthalmology",
+        "eyeDesc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide).",
+        "sectionTcm": "🌿 TCM Therapy (#1 Russian request)",
+        "colTherapy": "Therapy",
+        "colDescription": "Description",
+        "colPrice": "Price",
+        "tcm_acupuncture": "Acupuncture",
+        "tcm_acupuncture_desc": "Neck/Back/Shoulder",
+        "tcm_acupuncture_price": "¥100-300/sess",
+        "tcm_tuina": "Tuina Massage",
+        "tcm_tuina_desc": "Meridian massage",
+        "tcm_tuina_price": "¥150-400/sess",
+        "tcm_bonesetting": "Bone-Setting",
+        "tcm_bonesetting_desc": "Orthopedic reset",
+        "tcm_bonesetting_price": "¥200-500/sess",
+        "tcm_cupping": "Cupping",
+        "tcm_cupping_desc": "Detox & moisture",
+        "tcm_cupping_price": "¥50-150/sess",
+        "tcm_herbal": "Herbal Medicine",
+        "tcm_herbal_desc": "Personalized formula",
+        "tcm_herbal_price": "¥100-500/dose",
+        "tcmHotspots": "📍 TCM Hotspots",
+        "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
+      },
+      "checkup": {
+        "title": "📋 Health Checkup",
+        "intro": "Major hospitals offer executive checkups, ¥2K-10K+. Some 24h reports. No overnight stay, half-day visit.",
+        "recommended": "<strong>Recommended:</strong> PUMCH Intl, Huashan Intl, Jiahui Intl",
+        "warning": "⚠️ Note",
+        "warningDetail": "Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications."
+      }
     }
   },
-  "s7_detail": {
-    "back": "← Back",
-    "hospital": {
-      "title": "🏥 International Medical Services",
-      "intro": "850+ institutions across 57 cities. 1.28M international patients in 2025 (+73.6%).",
-      "sectionHospitals": "International Hospitals",
-      "colCity": "City",
-      "colHospital": "Hospital",
-      "colNote": "Note",
-      "shanghaiName": "Huashan / Jiahui",
-      "shanghaiNote": "90+ countries",
-      "beijingName": "PUMCH / UFH",
-      "beijingNote": "Intl dept ¥600-1200",
-      "guangzhouName": "SYSU 1st / Clifford",
-      "guangzhouNote": "25 pilot hospitals",
-      "tianjinName": "Pengruili",
-      "tianjinNote": "Foreign-owned tertiary",
-      "hainanName": "Lecheng Pilot Zone",
-      "hainanNote": "Intl drugs/devices",
-      "sectionMeds": "Common Meds (CN/EN/RU)",
-      "colCn": "CN",
-      "colUse": "Use",
-      "medIbuprofenUse": "Pain/Fever",
-      "medAmoxicillinUse": "Antibiotic(Rx)",
-      "medLoperamideUse": "Anti-diarrheal",
-      "medLoratadineUse": "Antihistamine",
-      "medOmeprazoleUse": "Acid reflux",
-      "insuranceWarning": "⚠️ Buy Travel Insurance",
-      "insuranceDetail": "Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa."
-    },
-    "big3": {
-      "title": "🦷👁️🌿 Medical \"Big Three\"",
-      "sectionDental": "🦷 Dental",
-      "colItem": "Item",
-      "colChinaPrice": "China",
-      "colUsEuPrice": "US/EU",
-      "dental_cleaning": "Cleaning",
-      "dental_cleaning_cn": "¥200-500",
-      "dental_cleaning_us": "$100-200",
-      "dental_filling": "Filling",
-      "dental_filling_cn": "¥300-800",
-      "dental_filling_us": "$150-400",
-      "dental_root": "Root Canal",
-      "dental_root_cn": "¥1,500-3,000",
-      "dental_root_us": "$800-1,500",
-      "dental_implant": "Dental Implant",
-      "dental_implant_cn": "¥5,000-15,000",
-      "dental_implant_us": "$3,000-6,000",
-      "dental_crown": "Cosmetic Crown",
-      "dental_crown_cn": "¥2,000-5,000",
-      "dental_crown_us": "$1,000-2,500",
-      "dentalNote": "💡 Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
-      "dentalClinics": "🏥 Recommended Clinics",
-      "dentalClinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service.",
-      "sectionEye": "👁️ Ophthalmology",
-      "eyeDesc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide).",
-      "sectionTcm": "🌿 TCM Therapy (#1 Russian request)",
-      "colTherapy": "Therapy",
-      "colDescription": "Description",
-      "colPrice": "Price",
-      "tcm_acupuncture": "Acupuncture",
-      "tcm_acupuncture_desc": "Neck/Back/Shoulder",
-      "tcm_acupuncture_price": "¥100-300/sess",
-      "tcm_tuina": "Tuina Massage",
-      "tcm_tuina_desc": "Meridian massage",
-      "tcm_tuina_price": "¥150-400/sess",
-      "tcm_bonesetting": "Bone-Setting",
-      "tcm_bonesetting_desc": "Orthopedic reset",
-      "tcm_bonesetting_price": "¥200-500/sess",
-      "tcm_cupping": "Cupping",
-      "tcm_cupping_desc": "Detox & moisture",
-      "tcm_cupping_price": "¥50-150/sess",
-      "tcm_herbal": "Herbal Medicine",
-      "tcm_herbal_desc": "Personalized formula",
-      "tcm_herbal_price": "¥100-500/dose",
-      "tcmHotspots": "📍 TCM Hotspots",
-      "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
-    },
-    "checkup": {
-      "title": "📋 Health Checkup",
-      "intro": "Major hospitals offer executive checkups, ¥2K-10K+. Some 24h reports. No overnight stay, half-day visit.",
-      "recommended": "<strong>Recommended:</strong> PUMCH Intl, Huashan Intl, Jiahui Intl",
-      "warning": "⚠️ Note",
-      "warningDetail": "Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications."
-    }
-  },
-  "s7_detail.hospital.medAmoxicillinUse": "Antibiotic(Rx)",
-  "s7_detail.hospital.medIbuprofenUse": "Pain/Fever",
-  "s7_detail.hospital.medLoperamideUse": "Anti-diarrheal",
-  "s7_detail.hospital.medLoratadineUse": "Antihistamine",
-  "s7_detail.hospital.medOmeprazoleUse": "Acid reflux",
   "s8": {
-    "title": "Shopping & Tax Refund",
-    "sub": "Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund.",
+    "meta": {
+      "title": "Shopping & Tax Refund",
+      "sub": "Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund."
+    },
     "electronics": {
       "label": "📱 Electronics",
       "title": "Foldables·Drones·AI Glasses",
@@ -318,88 +385,11 @@
       "expandHint": "[ Expand → ]"
     }
   },
-  "s8_detail": {
-    "back": "← Back",
-    "electronics": {
-      "title": "📱 Electronics & Gadgets",
-      "colCategory": "Category",
-      "colWhy": "Why Buy",
-      "colPrice": "Price",
-      "foldable": "Foldable Phone",
-      "foldable_why": "Chinese brands lead globally",
-      "drone": "Drone",
-      "drone_why": "DJI dominates globally",
-      "ai_glasses": "AI Glasses",
-      "ai_glasses_why": "New category,China-first",
-      "translator": "Smart Translator",
-      "translator_why": "100+ languages real-time",
-      "earbuds": "TWS Earbuds",
-      "earbuds_why": "Great value",
-      "whereToBuy": "📍 Where to Buy",
-      "whereToBuyDetail": "SZ Huaqiangbei—\"China Electronics Street\",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—\"World Supermarket\",one-stop."
-    },
-    "souvenirs": {
-      "title": "🎨 Cultural Souvenirs",
-      "colCity": "City",
-      "colItem": "Item",
-      "beijing_item": "Forbidden City fridge magnets",
-      "chengdu_item": "Panda brocade crafts·Kuanzhai gifts",
-      "xian_item": "Plush \"Roujiamo\"·Terracotta souvenirs",
-      "chongqing_item": "Brass ornaments·Hongyadong crafts",
-      "guizhou_item": "Indigo scarves·Silver magnets·Ethnic keychains",
-      "tip": "💡 Cultural shops cluster near scenic spots and heritage streets"
-    },
-    "taxrefund": {
-      "title": "💰 Tax Refund Guide",
-      "stats": "📊 12,252 refund stores nationwide. +305% refund travelers in 2025.",
-      "sectionRequirements": "Requirements",
-      "reqStay": "Foreign visitor, stay ≤183 days",
-      "reqAmount": "Same store same day ≥¥500",
-      "reqDeparture": "Departure ≤90 days from purchase",
-      "reqCarry": "Carry items (do NOT check in)",
-      "sectionProcess": "Process",
-      "stepInvoice": "Ask for \"Tax Refund Application\" + invoice",
-      "stepCustoms": "Customs verification (show goods+passport+docs)",
-      "stepCollect": "Collect refund (cash/card/Alipay)",
-      "instantRefundTitle": "💡 Instant Refund",
-      "instantRefundDetail": "7,000+ stores: deduct at purchase, no airport queue. Shanghai city-wide. Hainan duty-free."
-    },
-    "cityshops": {
-      "title": "🗺️ City Shopping Guide",
-      "tapHint": "Tap a city for details",
-      "backToCityGuide": "← Back to City Guide",
-      "cities": {
-        "shenzhen": {
-          "name": "Shenzhen·Huaqiangbei",
-          "subtitle": "China Electronics Street",
-          "desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable."
-        },
-        "shanghai": {
-          "name": "Shanghai·Fabric Market",
-          "subtitle": "Qipao & Suit Tailoring",
-          "desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted."
-        },
-        "yiwu": {
-          "name": "Yiwu·Trade City",
-          "subtitle": "World Supermarket",
-          "desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards."
-        },
-        "sanya": {
-          "name": "Sanya·Duty Free Mall",
-          "subtitle": "Offshore Duty-Free",
-          "desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min."
-        },
-        "beijing": {
-          "name": "Beijing·Wangfujing",
-          "subtitle": "Flagship·Heritage",
-          "desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund."
-        }
-      }
-    }
-  },
   "s9": {
-    "title": "Destinations",
-    "sub": "Foreign travelers have explored nearly 500 cities. Tap to discover.",
+    "meta": {
+      "title": "Destinations",
+      "sub": "Foreign travelers have explored nearly 500 cities. Tap to discover."
+    },
     "top10": {
       "label": "🏙️ Top 10",
       "title": "Must-Visit Cities",
@@ -419,140 +409,135 @@
       "expandHint": "[ Expand → ]"
     }
   },
-  "s9_cities": {
-    "shanghai": {
-      "flag": "🇨🇳",
-      "name": "Shanghai",
-      "tag": "Bund·Yu Garden·Disney",
-      "desc": "8.28M+ annual arrivals. Must-see: the Bund, Yu Garden, Disney. Food: xiaolongbao, shengjian, Shanghainese cuisine. Shop: Nanjing Rd, fabric market qipao. Tip: extensive metro, 72h transit visa usable."
+  "s10": {
+    "meta": {
+      "title": "Emergency+Exit",
+      "sub": ""
     },
+    "hotlines": "📞 Hotlines",
+    "immigration24h": "Immigration 24h",
+    "police": "Police",
+    "ambulance": "Ambulance",
+    "fire": "Fire",
+    "passportWarning": "⚠️ Passport",
+    "passportWarningDetail": "Carry always. Lost→police→consulate. Save embassy contacts.",
+    "departure": "👋 Depart",
+    "departStep1": "2-3h early",
+    "departStep2": "Carry refund items",
+    "departStep3": "Spend leftover RMB",
+    "departStep4": "Backup photos(Google Photos blocked)",
+    "footer": "🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn"
+  },
+  "city": {
     "beijing": {
-      "flag": "🇨🇳",
-      "name": "Beijing",
-      "tag": "Forbidden City·Great Wall·Hutongs",
-      "desc": "Ancient capital. Must-see: Forbidden City, Great Wall, Temple of Heaven. Food: Peking duck, zhajiang noodles, hotpot lamb. Shop: Wangfujing, Panjiayuan antiques. Tip: book attractions in advance, metro is easy."
-    },
-    "guangzhou": {
-      "flag": "🇨🇳",
-      "name": "Guangzhou",
-      "tag": "Cuisine·Trade·Flower City",
-      "desc": "#1 in inbound spending. Must-see: Canton Tower, Shamian Island, Baiyun Mountain. Food: dim sum, roast meats, claypot rice. Shop: Tianhe malls, Baima clothing market. Tip: dense SE Asia flights, popular first stop."
-    },
-    "shenzhen": {
-      "flag": "🇨🇳",
-      "name": "Shenzhen",
-      "tag": "Tech·Design·Innovation",
-      "desc": "China's Silicon Valley. Must-see: Huaqiangbei, Shenzhen Bay Park, OCT. Food: Chaoshan beef hotpot, seafood. Shop: Huaqiangbei electronics, MixC mall. Tip: 15min HSR to Hong Kong."
-    },
-    "chongqing": {
-      "flag": "🇨🇳",
-      "name": "Chongqing",
-      "tag": "8D Magic·Hotpot·Night Views",
-      "desc": "Fastest growing (+30%). Must-see: Hongyadong, Ciqikou, Yangtze cableway. Food: hotpot, xiaomian noodles, Jianghu cuisine. Shop: Jiefangbei. Tip: wear flats, GPS may fail in 8D terrain."
+      "label": "Beijing",
+      "desc": "Ancient capital. Must-see: Forbidden City, Great Wall, Temple of Heaven. Food: Peking duck, zhajiang noodles, hotpot lamb. Shop: Wangfujing, Panjiayuan antiques. Tip: book attractions in advance, metro is easy.",
+      "tag": "Forbidden City·Great Wall·Hutongs"
     },
     "chengdu": {
-      "flag": "🇨🇳",
-      "name": "Chengdu",
-      "tag": "Pandas·Hotpot·Slow Life",
-      "desc": "#1 in central-west China. Must-see: Panda Base, Kuanzhai Alley, Jinli. Food: hotpot, chuanchuan, dandan noodles. Shop: panda brocade crafts. Tip: locals value \"anyi\" (comfort), take it slow."
+      "label": "Chengdu",
+      "desc": "#1 in central-west China. Must-see: Panda Base, Kuanzhai Alley, Jinli. Food: hotpot, chuanchuan, dandan noodles. Shop: panda brocade crafts. Tip: locals value \"anyi\" (comfort), take it slow.",
+      "tag": "Pandas·Hotpot·Slow Life"
     },
-    "hangzhou": {
-      "flag": "🇨🇳",
-      "name": "Hangzhou",
-      "tag": "West Lake·Longjing·Silk",
-      "desc": "Paradise on earth. Must-see: West Lake, Lingyin Temple, Longjing tea fields. Food: Dongpo pork, West Lake fish, Longjing shrimp. Shop: silk market, Southern Song Street. Tip: best in spring, avoid Golden Week."
-    },
-    "kunming": {
-      "flag": "🇨🇳",
-      "name": "Kunming",
-      "tag": "Spring City·Flowers·Ethnic",
-      "desc": "Eternal spring. Must-see: Stone Forest, Dian Lake, Dounan flower market. Food: cross-bridge noodles, steam pot chicken, mushroom hotpot. Shop: fresh flowers, ethnic crafts. Tip: SE Asia gateway, pleasant year-round."
-    },
-    "harbin": {
-      "flag": "🇨🇳",
-      "name": "Harbin",
-      "tag": "Ice·Russian·Dongbei",
-      "desc": "SE Asia favorite. Must-see: Ice Festival, Zhongyang Street, St. Sophia. Food: guobaorou, red sausage, Russian cuisine. Shop: Russian imports on Zhongyang. Tip: -20°C in winter, bundle up."
-    },
-    "qingdao": {
-      "flag": "🇨🇳",
-      "name": "Qingdao",
-      "tag": "Beer·Coast·German",
-      "desc": "Coastal gem. Must-see: Zhanqiao Pier, Badaguan, Laoshan. Food: seafood, Tsingtao beer, mackerel dumplings. Shop: Taidong pedestrian street. Tip: Beer Festival Jul-Aug, best in summer."
-    },
-    "zhengzhou": {
-      "flag": "🇨🇳",
-      "name": "Zhengzhou",
-      "tag": "Hanfu·Ancient·Street Photo",
-      "desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic."
-    },
-    "taiyuan": {
-      "flag": "🇨🇳",
-      "name": "Taiyuan",
-      "tag": "Ancient Architecture",
-      "desc": "Black Myth: Wukong filming locations. Must-see: Jinci Temple, Twin Pagodas, Pingyao (nearby). Food: daoxiaomian noodles, guoyourou. Tip: follow the game trail, ancient architecture paradise."
-    },
-    "guiyang": {
-      "flag": "🇨🇳",
-      "name": "Guiyang",
-      "tag": "Seoul Alt·Veggie Heaven",
-      "desc": "Korean \"Seoul alternative\", Western veggie haven. Must-see: Qianling Mountain, Qingyan Old Town, Huaxi. Food: sour soup fish, changwang noodles, siwawa wraps. Tip: cool summer escape."
+    "chongqing": {
+      "label": "Chongqing",
+      "desc": "Fastest growing (+30%). Must-see: Hongyadong, Ciqikou, Yangtze cableway. Food: hotpot, xiaomian noodles, Jianghu cuisine. Shop: Jiefangbei. Tip: wear flats, GPS may fail in 8D terrain.",
+      "tag": "8D Magic·Hotpot·Night Views"
     },
     "fuzhou": {
-      "flag": "🇨🇳",
-      "name": "Fuzhou",
-      "tag": "Nature·Hot Springs·Tea",
-      "desc": "Coastal nature & heritage. Must-see: Sanfang Qixiang, Gushan, West Lake Park. Food: Buddha Jumps Over the Wall, fish balls, rouyan. Tip: abundant hot springs, wellness destination."
+      "label": "Fuzhou",
+      "desc": "Coastal nature & heritage. Must-see: Sanfang Qixiang, Gushan, West Lake Park. Food: Buddha Jumps Over the Wall, fish balls, rouyan. Tip: abundant hot springs, wellness destination.",
+      "tag": "Nature·Hot Springs·Tea"
+    },
+    "guangzhou": {
+      "label": "Guangzhou",
+      "desc": "#1 in inbound spending. Must-see: Canton Tower, Shamian Island, Baiyun Mountain. Food: dim sum, roast meats, claypot rice. Shop: Tianhe malls, Baima clothing market. Tip: dense SE Asia flights, popular first stop.",
+      "tag": "Cuisine·Trade·Flower City"
+    },
+    "guiyang": {
+      "label": "Guiyang",
+      "desc": "Korean \"Seoul alternative\", Western veggie haven. Must-see: Qianling Mountain, Qingyan Old Town, Huaxi. Food: sour soup fish, changwang noodles, siwawa wraps. Tip: cool summer escape.",
+      "tag": "Seoul Alt·Veggie Heaven"
+    },
+    "hangzhou": {
+      "label": "Hangzhou",
+      "desc": "Paradise on earth. Must-see: West Lake, Lingyin Temple, Longjing tea fields. Food: Dongpo pork, West Lake fish, Longjing shrimp. Shop: silk market, Southern Song Street. Tip: best in spring, avoid Golden Week.",
+      "tag": "West Lake·Longjing·Silk"
+    },
+    "harbin": {
+      "label": "Harbin",
+      "desc": "SE Asia favorite. Must-see: Ice Festival, Zhongyang Street, St. Sophia. Food: guobaorou, red sausage, Russian cuisine. Shop: Russian imports on Zhongyang. Tip: -20°C in winter, bundle up.",
+      "tag": "Ice·Russian·Dongbei"
+    },
+    "kunming": {
+      "label": "Kunming",
+      "desc": "Eternal spring. Must-see: Stone Forest, Dian Lake, Dounan flower market. Food: cross-bridge noodles, steam pot chicken, mushroom hotpot. Shop: fresh flowers, ethnic crafts. Tip: SE Asia gateway, pleasant year-round.",
+      "tag": "Spring City·Flowers·Ethnic"
+    },
+    "qingdao": {
+      "label": "Qingdao",
+      "desc": "Coastal gem. Must-see: Zhanqiao Pier, Badaguan, Laoshan. Food: seafood, Tsingtao beer, mackerel dumplings. Shop: Taidong pedestrian street. Tip: Beer Festival Jul-Aug, best in summer.",
+      "tag": "Beer·Coast·German"
+    },
+    "shanghai": {
+      "label": "Shanghai",
+      "desc": "8.28M+ annual arrivals. Must-see: the Bund, Yu Garden, Disney. Food: xiaolongbao, shengjian, Shanghainese cuisine. Shop: Nanjing Rd, fabric market qipao. Tip: extensive metro, 72h transit visa usable.",
+      "tag": "Bund·Yu Garden·Disney"
+    },
+    "shenzhen": {
+      "label": "Shenzhen",
+      "desc": "China's Silicon Valley. Must-see: Huaqiangbei, Shenzhen Bay Park, OCT. Food: Chaoshan beef hotpot, seafood. Shop: Huaqiangbei electronics, MixC mall. Tip: 15min HSR to Hong Kong.",
+      "tag": "Tech·Design·Innovation"
+    },
+    "taiyuan": {
+      "label": "Taiyuan",
+      "desc": "Black Myth: Wukong filming locations. Must-see: Jinci Temple, Twin Pagodas, Pingyao (nearby). Food: daoxiaomian noodles, guoyourou. Tip: follow the game trail, ancient architecture paradise.",
+      "tag": "Ancient Architecture"
+    },
+    "tianjin": {
+      "label": "Tianjin",
+      "desc": "Port city with Italian concession. Must-see: Five Avenues, Ancient Culture Street, Eye of Tianjin. Food: goubuli buns, jianbing, mahua twists. Shop: Italian-style district. Tip: 30min HSR from Beijing.",
+      "tag": "Port·Italian Quarter·Snacks"
+    },
+    "hainan": {
+      "label": "Hainan",
+      "desc": "China's Hawaii. Must-see: Yalong Bay, Wuzhizhou Island, Nanshan Temple. Food: Wenchang chicken, coconut rice. Shop: duty-free paradise. Tip: visa-free entry, tropical climate year-round.",
+      "tag": "Beaches·Duty-free·Tropical"
+    },
+    "xian": {
+      "label": "Xi'an",
+      "desc": "Ancient capital of 13 dynasties. Must-see: Terracotta Warriors, Ancient City Wall, Muslim Quarter. Food: roujiamo, yangrou paomo, biangbiang noodles. Shop: calligraphy, replicas. Tip: book Terracotta Warriors in advance.",
+      "tag": "Terracotta·Ancient Capital·Silk Road"
     },
     "yiwu": {
-      "flag": "🇨🇳",
-      "name": "Yiwu",
-      "tag": "World Market·Wholesale",
-      "desc": "\"World Small Commodity Capital\". Flights +60% H1 2026. Must-visit: International Trade City (5 districts). Food: many Middle Eastern restaurants. Shop: phone cases to drones, one-stop."
+      "label": "Yiwu",
+      "desc": "\"World Small Commodity Capital\". Flights +60% H1 2026. Must-visit: International Trade City (5 districts). Food: many Middle Eastern restaurants. Shop: phone cases to drones, one-stop.",
+      "tag": "World Market·Wholesale"
+    },
+    "zhengzhou": {
+      "label": "Zhengzhou",
+      "desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.",
+      "tag": "Hanfu·Ancient·Street Photo"
     }
   },
-  "s9_detail": {
-    "back": "← Back",
-    "backToCityList": "← Back to City List",
-    "tapHint": "Tap a city for details",
-    "top10": {
-      "title": "🏙️ Top 10 Cities"
+  "clinic": {
+    "jiahui": {
+      "label": "Shanghai Jiahui Intl Hospital",
+      "desc": "JCI-standard, multilingual team. Surgical (soft tissue, abdominoplasty, body contouring) & non-surgical (Botox, fillers). 10+ intl surgical cases/year."
     },
-    "rising": {
-      "title": "🚀 Rising Star Cities",
-      "subtitle": "Trending destinations on social media"
+    "mhwd": {
+      "label": "MHWD·Dingxiang Clinic",
+      "desc": "International dept, multilingual. All services under proper medical licensing with compliant equipment. Led by dermatology & injection experts."
     },
-    "seasons": {
-      "title": "🌍 Seasonal Picks",
-      "spring": {
-        "title": "🌸 Spring (Mar-May)",
-        "desc": "Mild & pleasant. Hangzhou West Lake·Suzhou Gardens·Kunming flowers."
-      },
-      "summer": {
-        "title": "🌿 Summer (Jun-Aug)",
-        "desc": "Escape heat: Beidaihe/Qingdao. Beer Festival·Harbin cool·Zhangjiajie."
-      },
-      "autumn": {
-        "title": "🍂 Autumn (Sep-Nov) Best!",
-        "desc": "Best nationwide. Beijing red leaves·Xi'an ancient city·Guilin scenery."
-      },
-      "winter": {
-        "title": "❄️ Winter (Dec-Feb)",
-        "desc": "North ice vs South sun. Harbin Ice Festival(SE Asia fav)·Sanya tropics(Russian fav)."
-      },
-      "sizingTip": "👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
+    "rodeo": {
+      "label": "RODEO (Shanghai)",
+      "desc": "American cross-border chain. US-trained physicians with international brand certifications. Language-matched service staff, internationally compliant protocols."
+    },
+    "yuansong": {
+      "label": "YuanSong Aesthetics (Shanghai)",
+      "desc": "Served clients from Korea, Japan, Middle East. Uses filler-based contouring instead of high-risk bone shaving. Natural aesthetics philosophy."
     }
   },
-  "shop.beijing.desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund.",
-  "shop.beijing.name": "Beijing·Wangfujing",
-  "shop.sanya.desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min.",
-  "shop.sanya.name": "Sanya·Duty Free Mall",
-  "shop.shanghai.desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted.",
-  "shop.shanghai.name": "Shanghai·Fabric Market",
-  "shop.shenzhen.desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable.",
-  "shop.shenzhen.name": "Shenzhen·Huaqiangbei",
-  "shop.yiwu.desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards.",
-  "shop.yiwu.name": "Yiwu·Trade City",
   "visa": {
     "mutual": {
       "title": "✅ No Visa (Mutual)",
