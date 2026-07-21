@@ -26,7 +26,8 @@
       "reset": "🔄 Check Again",
       "back": "← Back to result",
       "details": "📋 Visa Details ▸",
-      "expand": "[ Expand → ]"
+      "expand": "[ Expand → ]",
+      "browse": "[ Browse cities → ]"
     },
     "links": {
       "official": "🔗 Official Links"
@@ -826,5 +827,7 @@
   "city.zhengzhou.desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.",
   "city.zhengzhou.flag": "zhengzhou",
   "city.zhengzhou.name": "Zhengzhou",
-  "city.zhengzhou.tag": "Hanfu·Ancient·Street Photo"
+  "city.zhengzhou.tag": "Hanfu·Ancient·Street Photo",
+  "city.guizhou.label": "Guizhou",
+  "city.guizhou.name": "Guizhou"
 }

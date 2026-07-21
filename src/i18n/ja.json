@@ -26,7 +26,8 @@
       "reset": "🔄 再チェック",
       "back": "← 結果に戻る",
       "details": "📋 ビザ詳細 ▸",
-      "expand": "[ Expand → ]"
+      "expand": "[ 展開 → ]",
+      "browse": "[ 都市を見る → ]"
     },
     "links": {
       "official": "🔗 公式リンク"
@@ -826,5 +827,7 @@
   "city.zhengzhou.desc": "漢服ストリート撮影の聖地。必見：二七塔、河南博物院、少林寺（近郊）。グルメ：燴麺、胡辣湯。ヒント：漢服着用で撮影、中国美学体験。",
   "city.zhengzhou.flag": "zhengzhou",
   "city.zhengzhou.name": "鄭州（テイシュウ）",
-  "city.zhengzhou.tag": "漢服·古風·ストリート撮影"
+  "city.zhengzhou.tag": "漢服·古風·ストリート撮影",
+  "city.guizhou.label": "貴州",
+  "city.guizhou.name": "貴州"
 }

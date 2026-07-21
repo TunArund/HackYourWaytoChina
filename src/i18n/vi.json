@@ -26,7 +26,8 @@
       "reset": "🔄 Kiểm tra lại",
       "back": "← Quay lại kết quả",
       "details": "📋 Chi tiết thị thực ▸",
-      "expand": "[ Expand → ]"
+      "expand": "[ Mở rộng → ]",
+      "browse": "[ Duyệt thành phố → ]"
     },
     "links": {
       "official": "🔗 Liên kết chính thức"
@@ -826,5 +827,7 @@
   "city.zhengzhou.desc": "Điểm chụp ảnh phố cổ trang Hán. Phải đến: tháp Nhị Thất, Bảo tàng Hà Nam, chùa Thiếu Lâm (gần). Ẩm thực: mì hối diện, súp hồ la thang. Mẹo: mặc trang phục truyền thống chụp ảnh, trải nghiệm thẩm mỹ Trung Hoa đắm chìm.",
   "city.zhengzhou.flag": "zhengzhou",
   "city.zhengzhou.name": "Trịnh Châu",
-  "city.zhengzhou.tag": "Hán phục·Cổ phong·Chụp phố"
+  "city.zhengzhou.tag": "Hán phục·Cổ phong·Chụp phố",
+  "city.guizhou.label": "Quý Châu",
+  "city.guizhou.name": "Quý Châu"
 }

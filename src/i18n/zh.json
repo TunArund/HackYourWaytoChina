@@ -26,7 +26,8 @@
       "reset": "🔄 重新检测",
       "back": "← 返回检测结果",
       "details": "📋 查看签证详情 ▸",
-      "expand": "[ Expand → ]"
+      "expand": "[ 展开查看 → ]",
+      "browse": "[ 浏览城市 → ]"
     },
     "links": {
       "official": "🔗 官方链接"
@@ -826,5 +827,7 @@
   "city.zhengzhou.desc": "汉服古风街拍圣地。必去:二七塔、河南博物院、少林寺(近郊)。美食:烩面、胡辣汤。贴士:适合穿汉服拍照,沉浸式中式美学体验。",
   "city.zhengzhou.flag": "zhengzhou",
   "city.zhengzhou.name": "郑州",
-  "city.zhengzhou.tag": "汉服·古风·街拍"
+  "city.zhengzhou.tag": "汉服·古风·街拍",
+  "city.guizhou.label": "贵州",
+  "city.guizhou.name": "贵州"
 }
