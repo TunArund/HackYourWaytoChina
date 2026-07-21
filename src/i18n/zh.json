@@ -383,6 +383,90 @@
       "title": "各城购物特色指南",
       "desc": "上海面料市场·深圳华强北·义乌小商品·三亚免税城·北京王府井",
       "expandHint": "[ 展开查看 → ]"
+    },
+    "detail": {
+      "back": "← 返回",
+      "electronics": {
+        "title": "📱 科技电子产品",
+        "colCategory": "品类",
+        "colWhy": "推荐理由",
+        "colPrice": "参考价",
+        "foldable": "折叠屏手机",
+        "foldable_why": "中国品牌全球领先",
+        "drone": "无人机",
+        "drone_why": "DJI全球霸主",
+        "ai_glasses": "AI眼镜",
+        "ai_glasses_why": "新兴品类,中国先行",
+        "translator": "智能翻译器",
+        "translator_why": "100+语种实时互译",
+        "earbuds": "蓝牙耳机",
+        "earbuds_why": "性价比极高",
+        "whereToBuy": "📍 推荐购买地",
+        "whereToBuyDetail": "深圳华强北—\"中国电子第一街\",35家专业市场,多语种+外卡+退税。北京王府井—品牌旗舰店集中。浙江义乌—\"世界超市\",一站式。",
+        "foldable_price": "¥5,000-15,000",
+        "drone_price": "¥2,000-8,000",
+        "ai_glasses_price": "¥1,500-3,000",
+        "translator_price": "¥300-1,500",
+        "earbuds_price": "¥100-500"
+      },
+      "souvenirs": {
+        "title": "🎨 文创伴手礼",
+        "colCity": "城市",
+        "colItem": "代表商品",
+        "beijing_item": "天宫藻井冰箱贴·故宫文创",
+        "chengdu_item": "非遗蜀锦熊猫文创·宽窄巷子手信",
+        "xian_item": "\"绒馍馍\"肉夹馍文创·兵马俑周边",
+        "chongqing_item": "黄铜摆件(铜师傅)·洪崖洞文创",
+        "guizhou_item": "扎染围巾·银饰冰箱贴·民族风钥匙扣",
+        "tip": "💡 各城市文创店集中在景区周边和特色街区"
+      },
+      "taxrefund": {
+        "title": "💰 离境退税指南",
+        "stats": "📊 全国12,252家退税商店。2025年退税旅客+305%。",
+        "sectionRequirements": "退税条件",
+        "reqStay": "外国游客,停留不超过183天",
+        "reqAmount": "同日同店消费≥¥500",
+        "reqDeparture": "离境日距购买日≤90天",
+        "reqCarry": "商品随身携带(勿托运)",
+        "sectionProcess": "退税流程",
+        "stepInvoice": "购物时索要《离境退税申请单》+ 发票",
+        "stepCustoms": "机场海关核验(出示商品+护照+单证)",
+        "stepCollect": "退税窗口领取退税款(现金/卡/支付宝)",
+        "instantRefundTitle": "💡 \"即买即退\"",
+        "instantRefundDetail": "7,000+商店支持,购物时直接抵扣,无需机场排队。上海\"全市通退\"全域覆盖,海南离岛免税。"
+      },
+      "cityshops": {
+        "title": "🗺️ 城市购物地图",
+        "tapHint": "点击城市查看详情",
+        "backToCityGuide": "← 返回购物地图",
+        "cities": {
+          "shenzhen": {
+            "name": "深圳·华强北",
+            "subtitle": "中国电子第一街",
+            "desc": "\"中国电子第一街\",35家专业市场。品类:手机、配件、无人机、智能穿戴。多语种标识+外卡支付+退税配套。交通:地铁1号线华强路站。贴士:货比三家,部分市场可砍价。"
+          },
+          "shanghai": {
+            "name": "上海·面料市场",
+            "subtitle": "旗袍定制·西装定制",
+            "desc": "南外滩轻纺面料市场等。旗袍定制、西装定制,落地量身。价格¥300-2,000+不等,2-3天取货。支持外卡。"
+          },
+          "yiwu": {
+            "name": "义乌·国际商贸城",
+            "subtitle": "世界超市·一站式",
+            "desc": "\"世界超市\",从手机壳到智能家电、无人机应有尽有。2026上半年机票量+60%。一站式购物体验,多语种标识+外卡支付。"
+          },
+          "sanya": {
+            "name": "三亚·免税城",
+            "subtitle": "离岛免税·国际品牌",
+            "desc": "离岛+离境旅客均享免税优惠。国际品牌齐全,价格优势明显。2025年政策升级。购物流程简单:登记→扫码支付→机场提货,<3分钟办完。"
+          },
+          "beijing": {
+            "name": "北京·王府井",
+            "subtitle": "品牌旗舰·老字号",
+            "desc": "品牌数码旗舰店集中,传统老字号+现代购物中心。配眼镜\"立等可取\"。退税商店密集,支持即买即退。"
+          }
+        }
+      }
     }
   },
   "s9": {
@@ -407,6 +491,38 @@
       "title": "各季最佳目的地",
       "desc": "春·江南 / 夏·北戴河青岛 / 秋·北京西安 / 冬·哈尔滨三亚",
       "expandHint": "[ 展开查看 → ]"
+    },
+    "detail": {
+      "back": "← 返回",
+      "backToCityList": "← 返回城市列表",
+      "tapHint": "点击城市查看详情",
+      "top10": {
+        "title": "🏙️ 热门城市 TOP10"
+      },
+      "rising": {
+        "title": "🚀 新兴黑马城市",
+        "subtitle": "社交平台爆红的新兴目的地"
+      },
+      "seasons": {
+        "title": "🌍 四季推荐",
+        "spring": {
+          "title": "🌸 春 (3-5月)",
+          "desc": "温暖舒适,江南最佳。杭州西湖·苏州园林·昆明花海。"
+        },
+        "summer": {
+          "title": "🌿 夏 (6-8月)",
+          "desc": "北戴河/青岛避暑。青岛啤酒节·哈尔滨凉爽·张家界。"
+        },
+        "autumn": {
+          "title": "🍂 秋 (9-11月) 最佳季节",
+          "desc": "全国皆宜。北京香山红叶·西安古城·桂林山水。"
+        },
+        "winter": {
+          "title": "❄️ 冬 (12-2月)",
+          "desc": "北国冰雪vs南国暖阳。哈尔滨冰雪大世界(东南亚最爱)·三亚热带海滨(俄罗斯最爱)。"
+        },
+        "sizingTip": "👔 尺码提示:CN比US小1-2码,US M≈CN L/XL。优衣库/ZARA全球一致。"
+      }
     }
   },
   "s10": {
@@ -640,5 +756,75 @@
       "consularServices": "领事服务网",
       "niaKVisa": "NIA K签证政策"
     }
-  }
+  },
+  "shop.beijing.desc": "品牌数码旗舰店集中,传统老字号+现代购物中心。配眼镜“立等可取”。退税商店密集,支持即买即退。",
+  "shop.beijing.name": "北京·王府井",
+  "shop.sanya.desc": "离岛+离境旅客均享免税优惠。国际品牌齐全,价格优势明显。2025年政策升级。购物流程简单:登记→扫码支付→机场提货,<3分钟办完。",
+  "shop.sanya.name": "三亚·国际免税城",
+  "shop.shanghai.desc": "南外滩轻纺面料市场等。旗袍定制、西装定制,落地量身。价格¥300-2,000+不等,2-3天取货。支持外卡。",
+  "shop.shanghai.name": "上海·面料市场",
+  "shop.shenzhen.desc": "“中国电子第一街”,35家专业市场。品类:手机、配件、无人机、智能穿戴。多语种标识+外卡支付+退税配套。交通:地铁1号线华强路站。贴士:货比三家,部分市场可砍价。",
+  "shop.shenzhen.name": "深圳·华强北",
+  "shop.yiwu.desc": "“世界超市”,从手机壳到智能家电、无人机应有尽有。2026上半年机票量+60%。一站式购物体验,多语种标识+外卡支付。",
+  "shop.yiwu.name": "义乌·国际商贸城",
+  "city.beijing.desc": "千年古都。必去:故宫、长城、天坛。美食:烤鸭、炸酱面、涮羊肉。购物:王府井、潘家园古玩市场。贴士:景点需提前预约,地铁方便。",
+  "city.beijing.flag": "beijing",
+  "city.beijing.name": "北京",
+  "city.beijing.tag": "故宫·长城·胡同",
+  "city.chengdu.desc": "中西部第一。必去:大熊猫基地、宽窄巷子、锦里。美食:火锅、串串、担担面。购物:非遗蜀锦熊猫文创。贴士:成都人讲安逸,慢慢玩。",
+  "city.chengdu.flag": "chengdu",
+  "city.chengdu.name": "成都",
+  "city.chengdu.tag": "熊猫·火锅·慢生活",
+  "city.chongqing.desc": "增速最高(+30%)。必去:洪崖洞、磁器口、长江索道。美食:火锅、小面、江湖菜。购物:解放碑商圈。贴士:地形复杂建议穿平底鞋,导航可能失灵。",
+  "city.chongqing.flag": "chongqing",
+  "city.chongqing.name": "重庆",
+  "city.chongqing.tag": "8D魔幻·火锅·夜景",
+  "city.fuzhou.desc": "沿海山水与文化遗产。必去:三坊七巷、鼓山、西湖公园。美食:佛跳墙、鱼丸、肉燕。贴士:温泉资源丰富,适合休闲养生。",
+  "city.fuzhou.flag": "fuzhou",
+  "city.fuzhou.name": "福州",
+  "city.fuzhou.tag": "山水·温泉·茶文化",
+  "city.guangzhou.desc": "入境消费额全国第一。必去:广州塔、沙面岛、白云山。美食:早茶、烧腊、煲仔饭。购物:天河商圈、白马服装市场。贴士:东南亚航线密集,热门首站。",
+  "city.guangzhou.flag": "guangzhou",
+  "city.guangzhou.name": "广州",
+  "city.guangzhou.tag": "美食·商贸·花城",
+  "city.guiyang.desc": "韩国游客“首尔贵替”,欧美素食天堂。必去:黔灵山、青岩古镇、花溪。美食:酸汤鱼、肠旺面、丝娃娃。贴士:夏季凉爽,避暑胜地。",
+  "city.guiyang.flag": "guiyang",
+  "city.guiyang.name": "贵阳",
+  "city.guiyang.tag": "首尔贵替·素食天堂",
+  "city.hangzhou.desc": "人间天堂。必去:西湖、灵隐寺、龙井茶园。美食:东坡肉、西湖醋鱼、龙井虾仁。购物:丝绸市场、南宋御街。贴士:春季最佳,避开国庆。",
+  "city.hangzhou.flag": "hangzhou",
+  "city.hangzhou.name": "杭州",
+  "city.hangzhou.tag": "西湖·龙井·丝绸",
+  "city.harbin.desc": "东南亚游客最爱。必去:冰雪大世界、中央大街、圣索菲亚教堂。美食:锅包肉、红肠、俄式西餐。购物:中央大街俄货。贴士:冬季-20°C,注意保暖。",
+  "city.harbin.flag": "harbin",
+  "city.harbin.name": "哈尔滨",
+  "city.harbin.tag": "冰雪·俄式·东北",
+  "city.kunming.desc": "四季如春。必去:石林、滇池、斗南花市。美食:过桥米线、汽锅鸡、菌子火锅。购物:斗南鲜花、民族工艺品。贴士:东南亚门户,气候宜人全年可游。",
+  "city.kunming.flag": "kunming",
+  "city.kunming.name": "昆明",
+  "city.kunming.tag": "春城·花海·民族",
+  "city.qingdao.desc": "海滨名城。必去:栈桥、八大关、崂山。美食:海鲜、青岛啤酒、鲅鱼饺子。购物:台东步行街。贴士:夏季啤酒节,7-8月最佳。",
+  "city.qingdao.flag": "qingdao",
+  "city.qingdao.name": "青岛",
+  "city.qingdao.tag": "啤酒·海滨·德式",
+  "city.shanghai.desc": "全年入境828万+。必去:外滩、豫园、迪士尼乐园。美食:小笼包、生煎、本帮菜。购物:南京路、面料市场旗袍定制。贴士:地铁四通八达,72h过境免签可用。",
+  "city.shanghai.flag": "shanghai",
+  "city.shanghai.name": "上海",
+  "city.shanghai.tag": "外滩·豫园·迪士尼",
+  "city.shenzhen.desc": "中国硅谷。必去:华强北、深圳湾公园、华侨城。美食:潮汕牛肉火锅、海鲜。购物:华强北电子、万象城。贴士:紧邻香港,高铁15分钟。",
+  "city.shenzhen.flag": "shenzhen",
+  "city.shenzhen.name": "深圳",
+  "city.shenzhen.tag": "科技·设计·创新",
+  "city.taiyuan.desc": "《黑神话:悟空》取景古建打卡。必去:晋祠、双塔寺、平遥古城(近郊)。美食:刀削面、过油肉。贴士:配合游戏场景打卡,古建爱好者天堂。",
+  "city.taiyuan.flag": "taiyuan",
+  "city.taiyuan.name": "太原",
+  "city.taiyuan.tag": "古建·悟空·晋商",
+  "city.yiwu.desc": "“世界小商品之都”。2026上半年机票量+60%。必逛:国际商贸城(5个区)。美食:中东餐厅众多(常驻外商需求)。购物:从手机壳到无人机一站式。",
+  "city.yiwu.flag": "yiwu",
+  "city.yiwu.name": "义乌",
+  "city.yiwu.tag": "世界超市·小商品",
+  "city.zhengzhou.desc": "汉服古风街拍圣地。必去:二七塔、河南博物院、少林寺(近郊)。美食:烩面、胡辣汤。贴士:适合穿汉服拍照,沉浸式中式美学体验。",
+  "city.zhengzhou.flag": "zhengzhou",
+  "city.zhengzhou.name": "郑州",
+  "city.zhengzhou.tag": "汉服·古风·街拍"
 }

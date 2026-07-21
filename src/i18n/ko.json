@@ -383,6 +383,90 @@
       "title": "각 도시 쇼핑 특색 가이드",
       "desc": "상하이 원단시장·선전 화창베이·이우 소상품·싼야 면세점·베이징 왕푸징",
       "expandHint": "[ 펼쳐보기 → ]"
+    },
+    "detail": {
+      "back": "← 돌아가기",
+      "electronics": {
+        "title": "📱 전자제품",
+        "colCategory": "카테고리",
+        "colWhy": "추천 이유",
+        "colPrice": "참고가",
+        "foldable": "폴더블폰",
+        "foldable_why": "중국 브랜드 세계 선도",
+        "drone": "드론",
+        "drone_why": "DJI 세계 최강자",
+        "ai_glasses": "AI 안경",
+        "ai_glasses_why": "신흥 카테고리, 중국 선행",
+        "translator": "스마트 번역기",
+        "translator_why": "100+개 언어 실시간 통역",
+        "earbuds": "블루투스 이어폰",
+        "earbuds_why": "가성비 최고",
+        "whereToBuy": "📍 추천 구매지",
+        "whereToBuyDetail": "선전 화창베이—'중국 전자 제1거리', 35개 전문시장, 다국어+해외카드+환급. 베이징 왕푸징—브랜드 플래그십 스토어 집중. 저장 이우—'세계 슈퍼마켓', 원스톱.",
+        "foldable_price": "¥5,000-15,000",
+        "drone_price": "¥2,000-8,000",
+        "ai_glasses_price": "¥1,500-3,000",
+        "translator_price": "¥300-1,500",
+        "earbuds_price": "¥100-500"
+      },
+      "souvenirs": {
+        "title": "🎨 문화 기념품",
+        "colCity": "도시",
+        "colItem": "대표 상품",
+        "beijing_item": "천궁 조정 냉장고 자석·고궁 문화상품",
+        "chengdu_item": "무형문화재 촉나라 비단 판다 문화상품·관자이 골목 기념품",
+        "xian_item": "'융마오마오' 러우자모 문화상품·병마용 기념품",
+        "chongqing_item": "황동 장식품(퉁스푸)·홍야동 문화상품",
+        "guizhou_item": "쪽염색 스카프·은 장식 냉장고 자석·민족풍 열쇠고리",
+        "tip": "💡 각 도시 문화상품점은 관광지 주변과 특색거리에 집중"
+      },
+      "taxrefund": {
+        "title": "💰 출국 환급 가이드",
+        "stats": "📊 전국 12,252개 환급 상점. 2025년 환급 여행객 +305%.",
+        "sectionRequirements": "환급 조건",
+        "reqStay": "외국 관광객, 체류 183일 이하",
+        "reqAmount": "같은 날 같은 점포 소비 ≥¥500",
+        "reqDeparture": "출국일이 구매일로부터 ≤90일",
+        "reqCarry": "상품 휴대 소지(수하물 부치지 않기)",
+        "sectionProcess": "환급 절차",
+        "stepInvoice": "쇼핑 시 《출국 환급 신청서》+ 영수증 요청",
+        "stepCustoms": "공항 세관 검증(상품+여권+서류 제시)",
+        "stepCollect": "환급 창구에서 환급금 수령(현금/카드/알리페이)",
+        "instantRefundTitle": "💡 '즉시환급'",
+        "instantRefundDetail": "7,000+개 상점 지원, 쇼핑 시 직접 공제, 공항 줄서기 불필요. 상하이 '전시 통합환급' 전역 커버, 하이난 도서면세."
+      },
+      "cityshops": {
+        "title": "🗺️ 도시 쇼핑 지도",
+        "tapHint": "도시 클릭하여 상세정보 보기",
+        "backToCityGuide": "← 쇼핑 지도로 돌아가기",
+        "cities": {
+          "shenzhen": {
+            "name": "선전·화창베이",
+            "subtitle": "중국 전자 제1거리",
+            "desc": "'중국 전자 제1거리', 35개 전문시장. 품목: 휴대폰, 액세서리, 드론, 스마트웨어러블. 다국어 표시+해외카드 결제+환급 지원. 교통: 지하철 1호선 화창루역. 팁: 가격 비교, 일부 시장 흥정 가능."
+          },
+          "shanghai": {
+            "name": "상하이·원단시장",
+            "subtitle": "치파오 맞춤·정장 맞춤",
+            "desc": "난와이탄 경방 원단시장 등. 치파오 맞춤, 정장 맞춤, 현장 채치. 가격 ¥300-2,000+, 2-3일 수령. 해외카드 지원."
+          },
+          "yiwu": {
+            "name": "이우·국제상역성",
+            "subtitle": "세계 슈퍼마켓·원스톱",
+            "desc": "'세계 슈퍼마켓', 휴대폰 케이스부터 스마트 가전, 드론까지 모두 보유. 2026년 상반기 항공권 +60%. 원스톱 쇼핑 경험, 다국어 표시+해외카드 결제."
+          },
+          "sanya": {
+            "name": "싼야·면세점",
+            "subtitle": "도서면세·국제 브랜드",
+            "desc": "도서+출국 여행객 모두 면세 혜택 향유. 국제 브랜드 완비, 가격 우위 확실. 2025년 정책 업그레이드. 쇼핑 절차 간편: 등록→스캔 결제→공항 수령, <3분 완료."
+          },
+          "beijing": {
+            "name": "베이징·왕푸징",
+            "subtitle": "브랜드 플래그십·노포",
+            "desc": "브랜드 디지털 플래그십 스토어 집중, 전통 노포+현대 쇼핑센터. 안경 '당일 수령'. 환급 상점 밀집, 즉시환급 지원."
+          }
+        }
+      }
     }
   },
   "s9": {
@@ -407,6 +491,38 @@
       "title": "각 계절 최적 목적지",
       "desc": "봄·장난 / 여름·베이다이허 칭다오 / 가을·베이징 시안 / 겨울·하얼빈 싼야",
       "expandHint": "[ 펼쳐보기 → ]"
+    },
+    "detail": {
+      "back": "← 돌아가기",
+      "backToCityList": "← 도시 목록으로 돌아가기",
+      "tapHint": "도시 클릭하여 상세정보 보기",
+      "top10": {
+        "title": "🏙️ 인기 도시 TOP10"
+      },
+      "rising": {
+        "title": "🚀 신흥 흑마 도시",
+        "subtitle": "소셜 플랫폼에서 폭발적 인기를 끄는 신흥 목적지"
+      },
+      "seasons": {
+        "title": "🌍 사계절 추천",
+        "spring": {
+          "title": "🌸 봄 (3-5월)",
+          "desc": "따뜻하고 쾌적, 장난 지역 최적. 항저우 서호·쑤저우 정원·쿤밍 꽃바다."
+        },
+        "summer": {
+          "title": "🌿 여름 (6-8월)",
+          "desc": "베이다이허/칭다오 피서. 칭다오 맥주축제·하얼빈 시원함·장자제."
+        },
+        "autumn": {
+          "title": "🍂 가을 (9-11월) 최적 계절",
+          "desc": "전국 모두 적합. 베이징 샹산 단풍·시안 고성·구이린 산수."
+        },
+        "winter": {
+          "title": "❄️ 겨울 (12-2월)",
+          "desc": "북국 빙설vs남국 따뜻한 햇살. 하얼빈 빙설대세계(동남아 최애)·싼야 열대 해변(러시아 최애)."
+        },
+        "sizingTip": "👔 사이즈 팁: CN은 US보다 1-2사이즈 작음, US M≈CN L/XL. 유니클로/ZARA는 전 세계 동일."
+      }
     }
   },
   "s10": {
@@ -640,5 +756,75 @@
       "consularServices": "영사서비스망",
       "niaKVisa": "NIA K비자 정책"
     }
-  }
+  },
+  "shop.beijing.desc": "브랜드 디지털 플래그십 스토어 집중, 전통 노포+현대 쇼핑센터. 안경 '당일 수령'. 환급 상점 밀집, 즉시환급 지원.",
+  "shop.beijing.name": "베이징·왕푸징",
+  "shop.sanya.desc": "도서+출국 여행객 모두 면세 혜택 향유. 국제 브랜드 완비, 가격 우위 확실. 2025년 정책 업그레이드. 쇼핑 절차 간편: 등록→스캔 결제→공항 수령, <3분 완료.",
+  "shop.sanya.name": "싼야·국제면세점",
+  "shop.shanghai.desc": "난와이탄 경방 원단시장 등. 치파오 맞춤, 정장 맞춤, 현장 채치. 가격 ¥300-2,000+, 2-3일 수령. 해외카드 지원.",
+  "shop.shanghai.name": "상하이·원단시장",
+  "shop.shenzhen.desc": "'중국 전자 제1거리', 35개 전문시장. 품목: 휴대폰, 액세서리, 드론, 스마트웨어러블. 다국어 표시+해외카드 결제+환급 지원. 교통: 지하철 1호선 화창루역. 팁: 가격 비교, 일부 시장 흥정 가능.",
+  "shop.shenzhen.name": "선전·화창베이",
+  "shop.yiwu.desc": "'세계 슈퍼마켓', 휴대폰 케이스부터 스마트 가전, 드론까지 모두 보유. 2026년 상반기 항공권 +60%. 원스톱 쇼핑 경험, 다국어 표시+해외카드 결제.",
+  "shop.yiwu.name": "이우·국제상역성",
+  "city.beijing.desc": "천년 고도. 필수 관광지: 자금성, 만리장성, 천단. 음식: 베이징 오리구이, 짜장면, 훠궈 양고기. 쇼핑: 왕푸징, 판자위안 골동품시장. 팁: 명소는 사전예약 필수, 지하철 편리.",
+  "city.beijing.flag": "beijing",
+  "city.beijing.name": "베이징",
+  "city.beijing.tag": "자금성·만리장성·후퉁",
+  "city.chengdu.desc": "서부 제1도시. 필수 관광지: 판다기지, 관자이 골목, 진리. 음식: 훠궈, 꼬치, 딴딴면. 쇼핑: 촉나라 비단 판다 문화상품. 팁: 청두 사람들은 편안함을 중시, 여유롭게 즐기세요.",
+  "city.chengdu.flag": "chengdu",
+  "city.chengdu.name": "청두",
+  "city.chengdu.tag": "판다·훠궈·여유로운 생활",
+  "city.chongqing.desc": "성장률 최고(+30%). 필수 관광지: 홍야동, 츠치커우, 장강 케이블카. 음식: 훠궈, 샤오미엔, 장후 요리. 쇼핑: 지에팡베이 상권. 팁: 지형 복잡, 편한 신발 추천, 네비게이션 오류 가능.",
+  "city.chongqing.flag": "chongqing",
+  "city.chongqing.name": "충칭",
+  "city.chongqing.tag": "8D 마법도시·훠궈·야경",
+  "city.fuzhou.desc": "해안 산수와 문화유산. 필수 관광지: 산팡치샹, 구산, 서호공원. 음식: 불도장, 어묵, 러우옌. 팁: 온천 자원 풍부, 휴양지로 적합.",
+  "city.fuzhou.flag": "fuzhou",
+  "city.fuzhou.name": "푸저우",
+  "city.fuzhou.tag": "산수·온천·차문화",
+  "city.guangzhou.desc": "입국 소비액 전국 1위. 필수 관광지: 광저우 타워, 사면도, 바이윈산. 음식: 딤섬, 바베큐, 뚝배기밥. 쇼핑: 톈허 상권, 바이마 의류시장. 팁: 동남아 항공편 많음, 인기 첫 기착지.",
+  "city.guangzhou.flag": "guangzhou",
+  "city.guangzhou.name": "광저우",
+  "city.guangzhou.tag": "미식·무역·꽃의 도시",
+  "city.guiyang.desc": "한국인 관광객의 '서울 대체' 도시, 서양인 채식 천국. 필수 관광지: 첸링산, 칭옌 고진, 화시. 음식: 산탕위, 창왕면, 쓰와와. 팁: 여름 시원함, 피서지로 최고.",
+  "city.guiyang.flag": "guiyang",
+  "city.guiyang.name": "구이양",
+  "city.guiyang.tag": "서울 대체·채식 천국",
+  "city.hangzhou.desc": "인간 천국. 필수 관광지: 서호, 링인사, 롱징 차밭. 음식: 동파육, 서호 식초 생선, 롱징 새우. 쇼핑: 비단 시장, 난송 어제거리. 팁: 봄이 최적기, 국경절 피하기.",
+  "city.hangzhou.flag": "hangzhou",
+  "city.hangzhou.name": "항저우",
+  "city.hangzhou.tag": "서호·롱징차·비단",
+  "city.harbin.desc": "동남아 관광객 최애. 필수 관광지: 빙설대세계, 중양거리, 성 소피아 성당. 음식: 궈바오러우, 홍창, 러시아식 양식. 쇼핑: 중양거리 러시아 상품. 팁: 겨울 -20°C, 방한 필수.",
+  "city.harbin.flag": "harbin",
+  "city.harbin.name": "하얼빈",
+  "city.harbin.tag": "빙설·러시아풍·동북",
+  "city.kunming.desc": "사계절 봄. 필수 관광지: 석림, 전지, 더우난 꽃시장. 음식: 과교미선, 기선계, 버섯 훠궈. 쇼핑: 더우난 생화, 민족 공예품. 팁: 동남아 관문, 기후 좋아 연중 방문 가능.",
+  "city.kunming.flag": "kunming",
+  "city.kunming.name": "쿤밍",
+  "city.kunming.tag": "봄의 도시·꽃바다·민족",
+  "city.qingdao.desc": "해변 명소. 필수 관광지: 잔차오, 바다관, 라오산. 음식: 해산물, 칭다오 맥주, 고등어 만두. 쇼핑: 타이둥 보행거리. 팁: 여름 맥주축제, 7-8월 최적기.",
+  "city.qingdao.flag": "qingdao",
+  "city.qingdao.name": "칭다오",
+  "city.qingdao.tag": "맥주·해변·독일풍",
+  "city.shanghai.desc": "연간 입국자 828만+. 필수 관광지: 와이탄, 위위안, 디즈니랜드. 음식: 샤오롱바오, 생전, 상하이 본방 요리. 쇼핑: 난징루, 원단시장 치파오 맞춤. 팁: 지하철 편리, 72시간 경유 비자 사용 가능.",
+  "city.shanghai.flag": "shanghai",
+  "city.shanghai.name": "상하이",
+  "city.shanghai.tag": "와이탄·위위안·디즈니",
+  "city.shenzhen.desc": "중국 실리콘밸리. 필수 관광지: 화창베이, 선전만 공원, 화차오청. 음식: 차오산 소고기 훠궈, 해산물. 쇼핑: 화창베이 전자제품, 만샹청. 팁: 홍콩과 인접, 고속철 15분.",
+  "city.shenzhen.flag": "shenzhen",
+  "city.shenzhen.name": "선전",
+  "city.shenzhen.tag": "과학기술·디자인·혁신",
+  "city.taiyuan.desc": "흑신화:오공 촬영지 고건축 명소. 필수 관광지: 진사, 쌍탑사, 평요고성(근교). 음식: 도삭면, 궈요우러우. 팁: 게임 장면 인증샷, 고건축 애호가 천국.",
+  "city.taiyuan.flag": "taiyuan",
+  "city.taiyuan.name": "타이위안",
+  "city.taiyuan.tag": "고건축·오공·진상",
+  "city.yiwu.desc": "'세계 소상품의 도시'. 2026년 상반기 항공권 +60%. 필수 방문: 국제상역성(5개 구역). 음식: 중동 식당 다수(상주 외국 상인 수요). 쇼핑: 휴대폰 케이스부터 드론까지 원스톱.",
+  "city.yiwu.flag": "yiwu",
+  "city.yiwu.name": "이우",
+  "city.yiwu.tag": "세계 슈퍼마켓·소상품",
+  "city.zhengzhou.desc": "한복 거리 촬영 성지. 필수 관광지: 얼치 타워, 허난박물관, 소림사(근교). 음식: 후이미엔, 후라탕. 팁: 한복 입고 사진 촬영 적합, 몰입형 중국식 미학 체험.",
+  "city.zhengzhou.flag": "zhengzhou",
+  "city.zhengzhou.name": "정저우",
+  "city.zhengzhou.tag": "한복·고풍·거리 촬영"
 }

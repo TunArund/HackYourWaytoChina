@@ -383,6 +383,90 @@
       "title": "都市別ショッピング",
       "desc": "上海生地市場·深圳電子街·義烏卸売·三亜免税·北京王府井",
       "expandHint": "[ 展開 → ]"
+    },
+    "detail": {
+      "back": "← 戻る",
+      "electronics": {
+        "title": "📱 電子機器とガジェット",
+        "colCategory": "カテゴリ",
+        "colWhy": "購入理由",
+        "colPrice": "価格",
+        "foldable": "折りたたみ式スマートフォン",
+        "foldable_why": "中国ブランドが世界をリード",
+        "drone": "ドローン",
+        "drone_why": "DJIが世界を支配",
+        "ai_glasses": "AIメガネ",
+        "ai_glasses_why": "新カテゴリ、中国先行",
+        "translator": "スマート翻訳機",
+        "translator_why": "100以上の言語をリアルタイム",
+        "earbuds": "TWSイヤホン",
+        "earbuds_why": "コスパ最高",
+        "whereToBuy": "📍 購入場所",
+        "whereToBuyDetail": "深圳華強北—「中国電子街」、35市場、多言語+カード+免税。北京王府井—フラッグシップストア。義烏—「世界スーパーマーケット」、ワンストップ。",
+        "foldable_price": "¥5,000-15,000",
+        "drone_price": "¥2,000-8,000",
+        "ai_glasses_price": "¥1,500-3,000",
+        "translator_price": "¥300-1,500",
+        "earbuds_price": "¥100-500"
+      },
+      "souvenirs": {
+        "title": "🎨 文化的お土産",
+        "colCity": "都市",
+        "colItem": "商品",
+        "beijing_item": "故宮冷蔵庫マグネット",
+        "chengdu_item": "パンダ刺繍工芸品·寛窄巷子ギフト",
+        "xian_item": "ぬいぐるみ「肉夹馍」·兵馬俑お土産",
+        "chongqing_item": "真鍮装飾品·洪崖洞工芸品",
+        "guizhou_item": "藍染スカーフ·シルバーマグネット·民族キーホルダー",
+        "tip": "💡 文化ショップは観光地や歴史的街並みに集中"
+      },
+      "taxrefund": {
+        "title": "💰 免税ガイド",
+        "stats": "📊 全国12,252の免税店。2025年は免税旅行者+305%。",
+        "sectionRequirements": "要件",
+        "reqStay": "外国人訪問者、滞在≤183日",
+        "reqAmount": "同店同日≥¥500",
+        "reqDeparture": "購入から出国まで≤90日",
+        "reqCarry": "商品を手荷物で携帯（預け入れ禁止）",
+        "sectionProcess": "プロセス",
+        "stepInvoice": "「免税申請書」+領収書を依頼",
+        "stepCustoms": "税関確認（商品+パスポート+書類を提示）",
+        "stepCollect": "免税金受取（現金/カード/Alipay）",
+        "instantRefundTitle": "💡 即時免税",
+        "instantRefundDetail": "7,000店以上：購入時に控除、空港で並ぶ必要なし。上海市全域。海南免税。"
+      },
+      "cityshops": {
+        "title": "🗺️ 都市別ショッピングガイド",
+        "tapHint": "都市をタップして詳細表示",
+        "backToCityGuide": "← 都市ガイドに戻る",
+        "cities": {
+          "shenzhen": {
+            "name": "深圳·華強北",
+            "subtitle": "中国電子街",
+            "desc": "「中国電子街」、35の専門市場。カテゴリ：スマホ、アクセサリー、ドローン、ウェアラブル。多言語標識+国際カード+免税。地下鉄1号線華強路駅。ヒント：価格比較、一部市場で交渉可。"
+          },
+          "shanghai": {
+            "name": "上海·生地市場",
+            "subtitle": "チャイナドレス＆スーツテーラリング",
+            "desc": "南外灘生地市場など。オーダーメイドチャイナドレス＆スーツ、その場で採寸。¥300〜2,000+、2〜3日で受取。国際カード可。"
+          },
+          "yiwu": {
+            "name": "義烏·貿易城",
+            "subtitle": "世界スーパーマーケット",
+            "desc": "「世界スーパーマーケット」、スマホケースからスマート家電、ドローンまで。2026年上半期フライト予約+60%。ワンストップショッピング、多言語+国際カード。"
+          },
+          "sanya": {
+            "name": "三亜·免税モール",
+            "subtitle": "オフショア免税",
+            "desc": "オフショア＆出発免税。国際ブランド完備。2025年政策アップグレード。簡単プロセス：登録→スキャン→支払→空港受取、<3分。"
+          },
+          "beijing": {
+            "name": "北京·王府井",
+            "subtitle": "フラッグシップ·老舗",
+            "desc": "フラッグシップ電子機器店、老舗ブランド+モダンモール。メガネ即日。密集免税店、即時免税あり。"
+          }
+        }
+      }
     }
   },
   "s9": {
@@ -407,6 +491,38 @@
       "title": "季節別ベスト",
       "desc": "春：江南 / 夏：北戴河 / 秋：北京 / 冬：ハルビン＆三亜",
       "expandHint": "[ 展開 → ]"
+    },
+    "detail": {
+      "back": "← 戻る",
+      "backToCityList": "← 都市リストに戻る",
+      "tapHint": "都市をタップして詳細表示",
+      "top10": {
+        "title": "🏙️ トップ10都市"
+      },
+      "rising": {
+        "title": "🚀 注目の新興都市",
+        "subtitle": "SNSでトレンドの目的地"
+      },
+      "seasons": {
+        "title": "🌍 季節別おすすめ",
+        "spring": {
+          "title": "🌸 春（3〜5月）",
+          "desc": "温暖で快適。杭州西湖·蘇州庭園·昆明の花。"
+        },
+        "summer": {
+          "title": "🌿 夏（6〜8月）",
+          "desc": "暑さを逃れて：北戴河/青島。ビール祭り·ハルビンの涼しさ·張家界。"
+        },
+        "autumn": {
+          "title": "🍂 秋（9〜11月）ベスト！",
+          "desc": "全国的にベスト。北京の紅葉·西安古城·桂林の風景。"
+        },
+        "winter": {
+          "title": "❄️ 冬（12〜2月）",
+          "desc": "北の氷vs南の太陽。ハルビン氷祭り（東南アジア人気）·三亜熱帯（ロシア人人気）。"
+        },
+        "sizingTip": "👔 サイズ：中国はUSより1〜2サイズ小さめ。US M≈中国L/XL。ユニクロ/ZARAはグローバルサイズ。"
+      }
     }
   },
   "s10": {
@@ -640,5 +756,75 @@
       "consularServices": "領事サービス",
       "niaKVisa": "NIA Kビザ政策"
     }
-  }
+  },
+  "shop.beijing.desc": "フラッグシップ電子機器店、老舗ブランド+モダンモール。メガネ即日。密集免税店、即時免税あり。",
+  "shop.beijing.name": "北京·王府井",
+  "shop.sanya.desc": "オフショア＆出発免税。国際ブランド完備。2025年政策アップグレード。簡単プロセス：登録→スキャン→支払→空港受取、<3分。",
+  "shop.sanya.name": "三亜·免税モール",
+  "shop.shanghai.desc": "南外灘生地市場など。オーダーメイドチャイナドレス＆スーツ、その場で採寸。¥300〜2,000+、2〜3日で受取。国際カード可。",
+  "shop.shanghai.name": "上海·生地市場",
+  "shop.shenzhen.desc": "「中国電子街」、35の専門市場。カテゴリ：スマホ、アクセサリー、ドローン、ウェアラブル。多言語標識+国際カード+免税。地下鉄1号線華強路駅。ヒント：価格比較、一部市場で交渉可。",
+  "shop.shenzhen.name": "深圳·華強北",
+  "shop.yiwu.desc": "「世界スーパーマーケット」、スマホケースからスマート家電、ドローンまで。2026年上半期フライト予約+60%。ワンストップショッピング、多言語+国際カード。",
+  "shop.yiwu.name": "義烏·貿易城",
+  "city.beijing.desc": "古都。必見：故宮、万里の長城、天壇。グルメ：北京ダック、炸醤麺、羊肉しゃぶしゃぶ。ショッピング：王府井、潘家園骨董市場。ヒント：事前予約必須、地下鉄が便利。",
+  "city.beijing.flag": "beijing",
+  "city.beijing.name": "北京（ペキン）",
+  "city.beijing.tag": "故宮·万里の長城·胡同",
+  "city.chengdu.desc": "中西部No.1。必見：パンダ基地、寛窄巷子、錦里。グルメ：火鍋、串串、担担麺。ショッピング：パンダ刺繍工芸品。ヒント：地元の人は「安逸（ゆったり）」を大切にします。",
+  "city.chengdu.flag": "chengdu",
+  "city.chengdu.name": "成都（チェンドゥ）",
+  "city.chengdu.tag": "パンダ·火鍋·スローライフ",
+  "city.chongqing.desc": "成長率No.1（+30%）。必見：洪崖洞、磁器口、長江ロープウェイ。グルメ：火鍋、小麺、江湖料理。ショッピング：解放碑。ヒント：フラットシューズ推奨、GPSが効かないことも。",
+  "city.chongqing.flag": "chongqing",
+  "city.chongqing.name": "重慶（チョンチン）",
+  "city.chongqing.tag": "8D魔法都市·火鍋·夜景",
+  "city.fuzhou.desc": "沿岸の自然と文化遺産。必見：三坊七巷、鼓山、西湖公園。グルメ：仏跳牆、魚丸、肉燕。ヒント：温泉が豊富、ウェルネス観光に最適。",
+  "city.fuzhou.flag": "fuzhou",
+  "city.fuzhou.name": "福州（フージョウ）",
+  "city.fuzhou.tag": "自然·温泉·お茶",
+  "city.guangzhou.desc": "入国消費額No.1。必見：広州タワー、沙面島、白雲山。グルメ：点心、焼き物、土鍋ご飯。ショッピング：天河商業圏、白馬服装市場。ヒント：東南アジア便が多数、人気の最初の訪問地。",
+  "city.guangzhou.flag": "guangzhou",
+  "city.guangzhou.name": "広州（コウシュウ）",
+  "city.guangzhou.tag": "グルメ·貿易·花城",
+  "city.guiyang.desc": "韓国人の「ソウル代替」、欧米ベジタリアンの天国。必見：黔霊山、青岩古鎮、花渓。グルメ：酸湯魚、腸旺麺、糸娃娃。ヒント：夏は涼しい避暑地。",
+  "city.guiyang.flag": "guiyang",
+  "city.guiyang.name": "貴陽（キヨウ）",
+  "city.guiyang.tag": "ソウル代替·ベジタリアン天国",
+  "city.hangzhou.desc": "地上の楽園。必見：西湖、霊隠寺、龍井茶畑。グルメ：東坡肉、西湖醋魚、龍井蝦仁。ショッピング：シルク市場、南宋御街。ヒント：春が最適、ゴールデンウィーク回避を。",
+  "city.hangzhou.flag": "hangzhou",
+  "city.hangzhou.name": "杭州（ハンジョウ）",
+  "city.hangzhou.tag": "西湖·龍井茶·シルク",
+  "city.harbin.desc": "東南アジア観光客に人気。必見：氷雪大世界、中央大街、聖ソフィア教会。グルメ：鍋包肉、ソーセージ、ロシア料理。ショッピング：中央大街のロシア雑貨。ヒント：冬は-20℃、防寒対策を。",
+  "city.harbin.flag": "harbin",
+  "city.harbin.name": "ハルビン",
+  "city.harbin.tag": "氷雪·ロシア風·東北",
+  "city.kunming.desc": "常春の都。必見：石林、滇池、斗南花卉市場。グルメ：過橋米線、汽鍋鶏、キノコ火鍋。ショッピング：生花、民族工芸品。ヒント：東南アジアへの玄関口、年中快適。",
+  "city.kunming.flag": "kunming",
+  "city.kunming.name": "昆明（コンメイ）",
+  "city.kunming.tag": "春城·花·民族",
+  "city.qingdao.desc": "海浜の宝石。必見：桟橋、八大関、崂山。グルメ：海鮮、青島ビール、サバ餃子。ショッピング：台東歩行街。ヒント：7〜8月はビール祭り、夏が最適。",
+  "city.qingdao.flag": "qingdao",
+  "city.qingdao.name": "青島（チンタオ）",
+  "city.qingdao.tag": "ビール·海岸·ドイツ風",
+  "city.shanghai.desc": "年間828万人以上の入国者。必見：外灘、豫園、ディズニー。グルメ：小籠包、焼き小籠包、上海料理。ショッピング：南京路、生地市場でチャイナドレスオーダー。ヒント：地下鉄網充実、72時間トランジットビザ利用可。",
+  "city.shanghai.flag": "shanghai",
+  "city.shanghai.name": "上海（シャンハイ）",
+  "city.shanghai.tag": "外灘·豫園·ディズニー",
+  "city.shenzhen.desc": "中国のシリコンバレー。必見：華強北、深圳湾公園、華僑城。グルメ：潮汕牛肉火鍋、海鮮。ショッピング：華強北電子街、万象城。ヒント：香港まで高速鉄道15分。",
+  "city.shenzhen.flag": "shenzhen",
+  "city.shenzhen.name": "深圳（シェンジェン）",
+  "city.shenzhen.tag": "テクノロジー·デザイン·イノベーション",
+  "city.taiyuan.desc": "『Black Myth: Wukong』ロケ地巡り。必見：晋祠、双塔寺、平遥古城（近郊）。グルメ：刀削麺、過油肉。ヒント：ゲームシーン巡礼、古建築愛好家の天国。",
+  "city.taiyuan.flag": "taiyuan",
+  "city.taiyuan.name": "太原（タイゲン）",
+  "city.taiyuan.tag": "古建築",
+  "city.yiwu.desc": "「世界の小商品の都」。2026年上半期フライト+60%。必訪：国際貿易城（5地区）。グルメ：中東レストラン多数。ショッピング：スマホケースからドローンまでワンストップ。",
+  "city.yiwu.flag": "yiwu",
+  "city.yiwu.name": "義烏（イーウー）",
+  "city.yiwu.tag": "世界市場·卸売",
+  "city.zhengzhou.desc": "漢服ストリート撮影の聖地。必見：二七塔、河南博物院、少林寺（近郊）。グルメ：燴麺、胡辣湯。ヒント：漢服着用で撮影、中国美学体験。",
+  "city.zhengzhou.flag": "zhengzhou",
+  "city.zhengzhou.name": "鄭州（テイシュウ）",
+  "city.zhengzhou.tag": "漢服·古風·ストリート撮影"
 }

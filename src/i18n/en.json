@@ -383,6 +383,90 @@
       "title": "Shopping by City",
       "desc": "SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing",
       "expandHint": "[ Expand → ]"
+    },
+    "detail": {
+      "back": "← Back",
+      "electronics": {
+        "title": "📱 Electronics & Gadgets",
+        "colCategory": "Category",
+        "colWhy": "Why Buy",
+        "colPrice": "Price",
+        "foldable": "Foldable Phone",
+        "foldable_why": "Chinese brands lead globally",
+        "drone": "Drone",
+        "drone_why": "DJI dominates globally",
+        "ai_glasses": "AI Glasses",
+        "ai_glasses_why": "New category,China-first",
+        "translator": "Smart Translator",
+        "translator_why": "100+ languages real-time",
+        "earbuds": "TWS Earbuds",
+        "earbuds_why": "Great value",
+        "whereToBuy": "📍 Where to Buy",
+        "whereToBuyDetail": "SZ Huaqiangbei—\"China Electronics Street\",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—\"World Supermarket\",one-stop.",
+        "foldable_price": "¥5,000-15,000",
+        "drone_price": "¥2,000-8,000",
+        "ai_glasses_price": "¥1,500-3,000",
+        "translator_price": "¥300-1,500",
+        "earbuds_price": "¥100-500"
+      },
+      "souvenirs": {
+        "title": "🎨 Cultural Souvenirs",
+        "colCity": "City",
+        "colItem": "Item",
+        "beijing_item": "Forbidden City fridge magnets",
+        "chengdu_item": "Panda brocade crafts·Kuanzhai gifts",
+        "xian_item": "Plush \"Roujiamo\"·Terracotta souvenirs",
+        "chongqing_item": "Brass ornaments·Hongyadong crafts",
+        "guizhou_item": "Indigo scarves·Silver magnets·Ethnic keychains",
+        "tip": "💡 Cultural shops cluster near scenic spots and heritage streets"
+      },
+      "taxrefund": {
+        "title": "💰 Tax Refund Guide",
+        "stats": "📊 12,252 refund stores nationwide. +305% refund travelers in 2025.",
+        "sectionRequirements": "Requirements",
+        "reqStay": "Foreign visitor, stay ≤183 days",
+        "reqAmount": "Same store same day ≥¥500",
+        "reqDeparture": "Departure ≤90 days from purchase",
+        "reqCarry": "Carry items (do NOT check in)",
+        "sectionProcess": "Process",
+        "stepInvoice": "Ask for \"Tax Refund Application\" + invoice",
+        "stepCustoms": "Customs verification (show goods+passport+docs)",
+        "stepCollect": "Collect refund (cash/card/Alipay)",
+        "instantRefundTitle": "💡 Instant Refund",
+        "instantRefundDetail": "7,000+ stores: deduct at purchase, no airport queue. Shanghai city-wide. Hainan duty-free."
+      },
+      "cityshops": {
+        "title": "🗺️ City Shopping Guide",
+        "tapHint": "Tap a city for details",
+        "backToCityGuide": "← Back to City Guide",
+        "cities": {
+          "shenzhen": {
+            "name": "Shenzhen·Huaqiangbei",
+            "subtitle": "China Electronics Street",
+            "desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable."
+          },
+          "shanghai": {
+            "name": "Shanghai·Fabric Market",
+            "subtitle": "Qipao & Suit Tailoring",
+            "desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted."
+          },
+          "yiwu": {
+            "name": "Yiwu·Trade City",
+            "subtitle": "World Supermarket",
+            "desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards."
+          },
+          "sanya": {
+            "name": "Sanya·Duty Free Mall",
+            "subtitle": "Offshore Duty-Free",
+            "desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min."
+          },
+          "beijing": {
+            "name": "Beijing·Wangfujing",
+            "subtitle": "Flagship·Heritage",
+            "desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund."
+          }
+        }
+      }
     }
   },
   "s9": {
@@ -407,6 +491,38 @@
       "title": "Best by Season",
       "desc": "Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&Sanya",
       "expandHint": "[ Expand → ]"
+    },
+    "detail": {
+      "back": "← Back",
+      "backToCityList": "← Back to City List",
+      "tapHint": "Tap a city for details",
+      "top10": {
+        "title": "🏙️ Top 10 Cities"
+      },
+      "rising": {
+        "title": "🚀 Rising Star Cities",
+        "subtitle": "Trending destinations on social media"
+      },
+      "seasons": {
+        "title": "🌍 Seasonal Picks",
+        "spring": {
+          "title": "🌸 Spring (Mar-May)",
+          "desc": "Mild & pleasant. Hangzhou West Lake·Suzhou Gardens·Kunming flowers."
+        },
+        "summer": {
+          "title": "🌿 Summer (Jun-Aug)",
+          "desc": "Escape heat: Beidaihe/Qingdao. Beer Festival·Harbin cool·Zhangjiajie."
+        },
+        "autumn": {
+          "title": "🍂 Autumn (Sep-Nov) Best!",
+          "desc": "Best nationwide. Beijing red leaves·Xi'an ancient city·Guilin scenery."
+        },
+        "winter": {
+          "title": "❄️ Winter (Dec-Feb)",
+          "desc": "North ice vs South sun. Harbin Ice Festival(SE Asia fav)·Sanya tropics(Russian fav)."
+        },
+        "sizingTip": "👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
+      }
     }
   },
   "s10": {
@@ -640,5 +756,75 @@
       "consularServices": "Consular Services",
       "niaKVisa": "NIA K Visa Policy"
     }
-  }
+  },
+  "shop.beijing.desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund.",
+  "shop.beijing.name": "Beijing·Wangfujing",
+  "shop.sanya.desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min.",
+  "shop.sanya.name": "Sanya·Duty Free Mall",
+  "shop.shanghai.desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted.",
+  "shop.shanghai.name": "Shanghai·Fabric Market",
+  "shop.shenzhen.desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable.",
+  "shop.shenzhen.name": "Shenzhen·Huaqiangbei",
+  "shop.yiwu.desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards.",
+  "shop.yiwu.name": "Yiwu·Trade City",
+  "city.beijing.desc": "Ancient capital. Must-see: Forbidden City, Great Wall, Temple of Heaven. Food: Peking duck, zhajiang noodles, hotpot lamb. Shop: Wangfujing, Panjiayuan antiques. Tip: book attractions in advance, metro is easy.",
+  "city.beijing.flag": "beijing",
+  "city.beijing.name": "Beijing",
+  "city.beijing.tag": "Forbidden City·Great Wall·Hutongs",
+  "city.chengdu.desc": "#1 in central-west China. Must-see: Panda Base, Kuanzhai Alley, Jinli. Food: hotpot, chuanchuan, dandan noodles. Shop: panda brocade crafts. Tip: locals value \"anyi\" (comfort), take it slow.",
+  "city.chengdu.flag": "chengdu",
+  "city.chengdu.name": "Chengdu",
+  "city.chengdu.tag": "Pandas·Hotpot·Slow Life",
+  "city.chongqing.desc": "Fastest growing (+30%). Must-see: Hongyadong, Ciqikou, Yangtze cableway. Food: hotpot, xiaomian noodles, Jianghu cuisine. Shop: Jiefangbei. Tip: wear flats, GPS may fail in 8D terrain.",
+  "city.chongqing.flag": "chongqing",
+  "city.chongqing.name": "Chongqing",
+  "city.chongqing.tag": "8D Magic·Hotpot·Night Views",
+  "city.fuzhou.desc": "Coastal nature & heritage. Must-see: Sanfang Qixiang, Gushan, West Lake Park. Food: Buddha Jumps Over the Wall, fish balls, rouyan. Tip: abundant hot springs, wellness destination.",
+  "city.fuzhou.flag": "fuzhou",
+  "city.fuzhou.name": "Fuzhou",
+  "city.fuzhou.tag": "Nature·Hot Springs·Tea",
+  "city.guangzhou.desc": "#1 in inbound spending. Must-see: Canton Tower, Shamian Island, Baiyun Mountain. Food: dim sum, roast meats, claypot rice. Shop: Tianhe malls, Baima clothing market. Tip: dense SE Asia flights, popular first stop.",
+  "city.guangzhou.flag": "guangzhou",
+  "city.guangzhou.name": "Guangzhou",
+  "city.guangzhou.tag": "Cuisine·Trade·Flower City",
+  "city.guiyang.desc": "Korean \"Seoul alternative\", Western veggie haven. Must-see: Qianling Mountain, Qingyan Old Town, Huaxi. Food: sour soup fish, changwang noodles, siwawa wraps. Tip: cool summer escape.",
+  "city.guiyang.flag": "guiyang",
+  "city.guiyang.name": "Guiyang",
+  "city.guiyang.tag": "Seoul Alt·Veggie Heaven",
+  "city.hangzhou.desc": "Paradise on earth. Must-see: West Lake, Lingyin Temple, Longjing tea fields. Food: Dongpo pork, West Lake fish, Longjing shrimp. Shop: silk market, Southern Song Street. Tip: best in spring, avoid Golden Week.",
+  "city.hangzhou.flag": "hangzhou",
+  "city.hangzhou.name": "Hangzhou",
+  "city.hangzhou.tag": "West Lake·Longjing·Silk",
+  "city.harbin.desc": "SE Asia favorite. Must-see: Ice Festival, Zhongyang Street, St. Sophia. Food: guobaorou, red sausage, Russian cuisine. Shop: Russian imports on Zhongyang. Tip: -20°C in winter, bundle up.",
+  "city.harbin.flag": "harbin",
+  "city.harbin.name": "Harbin",
+  "city.harbin.tag": "Ice·Russian·Dongbei",
+  "city.kunming.desc": "Eternal spring. Must-see: Stone Forest, Dian Lake, Dounan flower market. Food: cross-bridge noodles, steam pot chicken, mushroom hotpot. Shop: fresh flowers, ethnic crafts. Tip: SE Asia gateway, pleasant year-round.",
+  "city.kunming.flag": "kunming",
+  "city.kunming.name": "Kunming",
+  "city.kunming.tag": "Spring City·Flowers·Ethnic",
+  "city.qingdao.desc": "Coastal gem. Must-see: Zhanqiao Pier, Badaguan, Laoshan. Food: seafood, Tsingtao beer, mackerel dumplings. Shop: Taidong pedestrian street. Tip: Beer Festival Jul-Aug, best in summer.",
+  "city.qingdao.flag": "qingdao",
+  "city.qingdao.name": "Qingdao",
+  "city.qingdao.tag": "Beer·Coast·German",
+  "city.shanghai.desc": "8.28M+ annual arrivals. Must-see: the Bund, Yu Garden, Disney. Food: xiaolongbao, shengjian, Shanghainese cuisine. Shop: Nanjing Rd, fabric market qipao. Tip: extensive metro, 72h transit visa usable.",
+  "city.shanghai.flag": "shanghai",
+  "city.shanghai.name": "Shanghai",
+  "city.shanghai.tag": "Bund·Yu Garden·Disney",
+  "city.shenzhen.desc": "China's Silicon Valley. Must-see: Huaqiangbei, Shenzhen Bay Park, OCT. Food: Chaoshan beef hotpot, seafood. Shop: Huaqiangbei electronics, MixC mall. Tip: 15min HSR to Hong Kong.",
+  "city.shenzhen.flag": "shenzhen",
+  "city.shenzhen.name": "Shenzhen",
+  "city.shenzhen.tag": "Tech·Design·Innovation",
+  "city.taiyuan.desc": "Black Myth: Wukong filming locations. Must-see: Jinci Temple, Twin Pagodas, Pingyao (nearby). Food: daoxiaomian noodles, guoyourou. Tip: follow the game trail, ancient architecture paradise.",
+  "city.taiyuan.flag": "taiyuan",
+  "city.taiyuan.name": "Taiyuan",
+  "city.taiyuan.tag": "Ancient Architecture",
+  "city.yiwu.desc": "\"World Small Commodity Capital\". Flights +60% H1 2026. Must-visit: International Trade City (5 districts). Food: many Middle Eastern restaurants. Shop: phone cases to drones, one-stop.",
+  "city.yiwu.flag": "yiwu",
+  "city.yiwu.name": "Yiwu",
+  "city.yiwu.tag": "World Market·Wholesale",
+  "city.zhengzhou.desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.",
+  "city.zhengzhou.flag": "zhengzhou",
+  "city.zhengzhou.name": "Zhengzhou",
+  "city.zhengzhou.tag": "Hanfu·Ancient·Street Photo"
 }
