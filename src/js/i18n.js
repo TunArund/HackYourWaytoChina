@@ -6,6 +6,39 @@ let I18N = {};
 let LANG = 'en';
 let _ready = false;
 
+/* Translate all elements with data-i18n attribute */
+function translateDOM() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = t(key);
+
+    // Skip if translation is missing (format: [some.key])
+    // But allow translations that happen to start with [ (like button text "[ Expand → ]")
+    const isMissingKey = translation && translation.startsWith('[') && translation.endsWith(']') && !translation.includes(' ');
+
+    if (translation && !isMissingKey) {
+      // Use innerHTML to preserve HTML tags like <strong>
+      el.innerHTML = translation;
+    }
+  });
+}
+
+function refreshUI() {
+  // Translate all [data-i18n] elements
+  translateDOM();
+
+  const vcR = document.getElementById('vcResult');
+  if (vcR && vcR.classList.contains('show') && typeof checkVisa === 'function') checkVisa();
+  if (typeof currentDetail !== 'undefined' && currentDetail.slide) {
+    const panel = document.getElementById('detail-' + currentDetail.slide);
+    if (panel && panel.classList.contains('active') && typeof renderDetail === 'function') {
+      panel.innerHTML = renderDetail(currentDetail.slide, currentDetail.key, currentDetail.sub);
+    }
+  }
+  if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
+  if (typeof updateCountryLang === 'function') updateCountryLang();
+}
+
 /* Init: load bundled (offline) or fetch (dev) immediately */
 (async function () {
   const saved = localStorage.getItem('guide-lang') || 'en';
@@ -87,32 +120,4 @@ async function setLang(lang) {
   if (typeof updateLanguageButton === 'function') updateLanguageButton();
   if (typeof updateCountryLang === 'function') updateCountryLang();
   if (typeof refreshUI === 'function') refreshUI();
-}
-
-function refreshUI() {
-  // Translate all [data-i18n] elements
-  translateDOM();
-
-  const vcR = document.getElementById('vcResult');
-  if (vcR && vcR.classList.contains('show') && typeof checkVisa === 'function') checkVisa();
-  if (typeof currentDetail !== 'undefined' && currentDetail.slide) {
-    const panel = document.getElementById('detail-' + currentDetail.slide);
-    if (panel && panel.classList.contains('active') && typeof renderDetail === 'function') {
-      panel.innerHTML = renderDetail(currentDetail.slide, currentDetail.key, currentDetail.sub);
-    }
-  }
-  if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
-  if (typeof updateCountryLang === 'function') updateCountryLang();
-}
-
-/* Translate all elements with data-i18n attribute */
-function translateDOM() {
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const translation = t(key);
-    if (translation && !translation.startsWith('[')) {
-      // Use innerHTML to preserve HTML tags like <strong>
-      el.innerHTML = translation;
-    }
-  });
 }
