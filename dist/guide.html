@@ -16,7 +16,7 @@
   <span class="top-bar-title" lang="en">🧳 China Entry Guide</span>
   <div class="top-bar-actions">
     <button class="top-btn--version" id="versionSwitch" onclick="toggleVersion()"><span lang="zh">🔄 长期居留版</span><span lang="en">🔄 Long-term</span></button>
-    <button class="top-btn" id="btnLang" aria-label="Switch language"><span lang="zh">EN</span><span lang="en">中</span></button>
+    <button class="top-btn" id="btnLang" aria-label="Switch language">🇬🇧 English</button>
   </div>
 </div>
 
@@ -43,7 +43,7 @@
           <div class="cover-card cover-card--short" onclick="startVersion('short')" role="button" tabindex="0"><span class="icon">🛫</span><h3 lang="zh">短期游客</h3><h3 lang="en">Short-term Visitor</h3><span class="tagline" lang="zh">2天 – 30天</span><span class="tagline" lang="en">2 – 30 days</span><span class="examples" lang="zh">旅游 · 商务 · 探亲 · 过境</span><span class="examples" lang="en">Tourism · Business · Visit · Transit</span></div>
           <div class="cover-card cover-card--long" onclick="startVersion('long')" role="button" tabindex="0"><span class="icon">🏠</span><h3 lang="zh">长期居留</h3><h3 lang="en">Long-term Resident</h3><span class="tagline" lang="zh">已在华 · 打算定居</span><span class="tagline" lang="en">Already in China · Settling</span><span class="examples" lang="zh">工作 · 留学 · 身份转换 · 安居</span><span class="examples" lang="en">Work · Study · Visa Transfer · Settle</span></div>
         </div>
-        <p style="margin-top:20px;font-size:0.8rem;color:var(--text-muted)"><span lang="zh">📅 更新于 2026年7月 &nbsp;·&nbsp; 🌐 中英双语</span><span lang="en">📅 Updated July 2026 &nbsp;·&nbsp; 🌐 Bilingual</span></p>
+        <p style="margin-top:20px;font-size:0.8rem;color:var(--text-muted)"><span lang="zh">📅 更新于 2026年7月 &nbsp;·&nbsp; 🌐 多语言</span><span lang="en">📅 Updated July 2026 &nbsp;·&nbsp; 🌐 Multilingual</span></p>
       </div>
     </div>
   </section>
@@ -959,12 +959,50 @@ function closeVisaDetail() {
 
 
 /* ============================================================
-   Language toggle (button in top bar)
+   Language toggle (button in top bar) - Multi-language support
    ============================================================ */
-document.getElementById('btnLang').addEventListener('click', () => {
+const SUPPORTED_LANGUAGES = [
+  { code: 'zh', name: '中文', flag: '🇨🇳' },
+  { code: 'en', name: 'English', flag: '🇬🇧' },
+  { code: 'ko', name: '한국어', flag: '🇰🇷' },
+  { code: 'ja', name: '日本語', flag: '🇯🇵' },
+  { code: 'ru', name: 'Русский', flag: '🇷🇺' },
+  { code: 'vi', name: 'Tiếng Việt', flag: '🇻🇳' }
+];
+
+let currentLangIndex = 0;
+
+function initLanguageIndex() {
   const current = document.documentElement.getAttribute('data-lang') || 'zh';
-  setLang(current === 'zh' ? 'en' : 'zh');
-});
+  currentLangIndex = SUPPORTED_LANGUAGES.findIndex(l => l.code === current);
+  if (currentLangIndex === -1) currentLangIndex = 0;
+  updateLanguageButton();
+}
+
+function updateLanguageButton() {
+  const btn = document.getElementById('btnLang');
+  if (!btn) return;
+  const nextIndex = (currentLangIndex + 1) % SUPPORTED_LANGUAGES.length;
+  const nextLang = SUPPORTED_LANGUAGES[nextIndex];
+  btn.innerHTML = `${nextLang.flag} ${nextLang.name}`;
+  btn.setAttribute('aria-label', `Switch to ${nextLang.name}`);
+}
+
+function switchToNextLanguage() {
+  currentLangIndex = (currentLangIndex + 1) % SUPPORTED_LANGUAGES.length;
+  const lang = SUPPORTED_LANGUAGES[currentLangIndex];
+  setLang(lang.code);
+  updateLanguageButton();
+}
+
+document.getElementById('btnLang').addEventListener('click', switchToNextLanguage);
+
+// Initialize on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initLanguageIndex);
+} else {
+  initLanguageIndex();
+}
 </script>
 </body>
 </html>
