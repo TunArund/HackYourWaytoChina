@@ -27,8 +27,7 @@
 - [x] i18n 系统 → `i18n/` + `js/i18n.js`（zh.json + en.json，637 键各；支持 fetch 和 bundled 两种模式）
 - [x] 应用逻辑 → `js/app.js`（版本管理、导航、签证、语言切换）
 - [x] 详情面板 → `js/detail.js`（openDetail/closeDetail/renderDetail + 所有子渲染器）
-- [x] 壳页面 → `index.html`（引用外部 CSS/JS）
-- [x] 构建脚本 → `build.py`（多文件→单文件合并，支持 `--watch`）
+- [x] 多文件架构 → `src/index.html`（直接serve，无需构建）
 - [x] 文档整合 → 合并为 4 个 .md + 1 个 .html
 - [x] 原 `guide.html` 保留（旧版单文件参考）
 
@@ -66,18 +65,21 @@
 ### 架构总览
 
 ```
-源文件（开发）              产出（交付）
-├── index.html              →  python build.py
-├── css/style.css           →  dist/guide.html (单文件，离线可用)
+src/                            # 直接serve，无需构建
+├── index.html                  # 主页面
+├── css/style.css               # 样式
 ├── js/
-│   ├── data.js (389 行)
-│   ├── i18n.js (51 行)
-│   ├── detail.js (256 行)
-│   └── app.js (247 行)
-├── i18n/
-│   ├── zh.json (637 键)
-│   └── en.json (637 键)
-└── img/
+│   ├── data.js                 # 数据定义
+│   ├── i18n.js                 # 国际化引擎
+│   ├── detail.js               # 详情页渲染
+│   └── app.js                  # 应用逻辑
+└── i18n/                       # 6语言翻译文件
+    ├── zh.json
+    ├── en.json
+    ├── ja.json
+    ├── ko.json
+    ├── ru.json
+    └── vi.json
 ```
 
 总计：~3,000 行源代码，分散在 9 个文件中，模块化可维护。

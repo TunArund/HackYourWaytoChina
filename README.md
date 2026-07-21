@@ -1,6 +1,41 @@
-# 入境中国图文攻略 — 方案 v4
+# 入境中国图文攻略
 
-单 HTML 文件（`guide.html`），零依赖。PPT 式全屏 snap 滚动，中英双语。
+单 HTML 文件，零依赖。PPT 式全屏 snap 滚动，6 语言支持。
+
+## 项目结构
+
+```
+HackYourWaytoChina/
+├── src/                    # 源代码（直接serve）
+│   ├── index.html         # 主页面
+│   ├── css/style.css      # 样式
+│   ├── js/                # 脚本
+│   │   ├── app.js         # 应用逻辑
+│   │   ├── data.js        # 数据定义
+│   │   ├── detail.js      # 详情页渲染
+│   │   └── i18n.js        # 国际化引擎
+│   └── i18n/              # 6语言翻译文件
+│       ├── zh.json        # 中文
+│       ├── en.json        # 英文
+│       ├── ja.json        # 日语
+│       ├── ko.json        # 韩语
+│       ├── ru.json        # 俄语
+│       └── vi.json        # 越南语
+├── scripts/               # 工具脚本
+│   └── docx2md.py         # 文档转换
+└── docs/                  # 文档
+    ├── research.md        # 市场调研
+    ├── roadmap.md         # 路线图
+    ├── feedback.md        # 反馈记录
+    └── DEPLOYMENT.md      # 部署指南
+```
+
+## 多语言支持
+
+**6种语言完整支持**：中文、英文、日语、韩语、俄语、越南语
+- 所有timeline标题、卡片内容、详情页、按钮完整翻译
+- 动态语言切换，偏好存入localStorage
+- i18n引擎自动加载JSON翻译文件
 
 ## 设计系统
 
@@ -82,9 +117,9 @@
 
 | 文档 | 内容 |
 |------|------|
-| [src/index.html](src/index.html) | 主页面（多文件架构） |
-| [docs/research.md](docs/research.md) | 市场调研（统计数据、牙科专项调研、客群画像、实用链接） |
-| [docs/roadmap.md](docs/roadmap.md) | 路线图 + 实施规格（已完成、下一步、暂缓、架构规划） |
+| [src/index.html](src/index.html) | 主页面 |
+| [CLAUDE.md](CLAUDE.md) | 开发环境（Python、工具脚本、本地开发） |
+| [docs/research.md](docs/research.md) | 市场调研（统计数据、牙科专项调研、客群画像） |
+| [docs/roadmap.md](docs/roadmap.md) | 路线图 + 实施规格 |
 | [docs/feedback.md](docs/feedback.md) | Boss 反馈记录 |
 | [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Cloudflare Pages 部署指南 |
-| [CLAUDE.md](CLAUDE.md) | 开发环境 + 项目结构 + 工作约定 |
