@@ -35,7 +35,7 @@
   }
 }
 ## content—plan和roadmap有些重复
-## BROWSE按钮统一为EXPAND
+## 
 ## 内容如何修改？
 细致化问题如何解决？如果添加/修改内容，多语言支持会不会很麻烦fallback to en?
 不要一股脑填写research，要自主思考：一个外国人，如何一步步来中国看牙 走一遍流程，跟着流程填写content
