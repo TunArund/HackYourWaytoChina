@@ -26,8 +26,8 @@
       "reset": "🔄 Kiểm tra lại",
       "back": "← Quay lại kết quả",
       "details": "📋 Chi tiết thị thực ▸",
-      "expand": "[ Mở rộng → ]",
-      "browse": "[ Duyệt thành phố → ]"
+      "expand": "Mở rộng →",
+      "browse": "Duyệt thành phố →"
     },
     "links": {
       "official": "🔗 Liên kết chính thức"
@@ -195,24 +195,37 @@
   },
   "s5": {
     "meta": {
-      "title": "Cuộc sống hàng ngày",
-      "sub": "Ứng dụng + giao thông + ăn uống + lưu trú. Tải trước."
+      "title": "Thanh toán di động",
+      "sub": "Trung Quốc không dùng tiền mặt. Liên kết thẻ nước ngoài trước — bước quan trọng nhất."
     },
-    "payment": {
-      "label": "💳 Thanh toán",
-      "desc": "Alipay/WeChat chấp nhận thẻ nước ngoài (không cần tài khoản ngân hàng). Dự phòng tiền mặt. UnionPay được chấp nhận rộng rãi."
+    "alipay": {
+      "label": "Alipay",
+      "title": "Hướng dẫn thiết lập",
+      "step1": "Tìm kiếm \"Alipay\"",
+      "step2": "Phiên bản quốc tế→xác minh hộ chiếu",
+      "step3": "Tôi→Thẻ→Thêm Visa/MC/JCB/Amex",
+      "step4": "Quét/thanh toán mã. ≤¥200 miễn phí"
+    },
+    "wechat": {
+      "label": "WeChat",
+      "title": "WeChat Pay",
+      "step1": "Tải xuống→đăng ký",
+      "step2": "Tôi→Dịch vụ→Ví→Thẻ",
+      "step3": "Liên kết Visa/MC (giới hạn thấp hơn)",
+      "backupTitle": "💡 Dự phòng",
+      "backupDesc": "Mang theo một ít tiền mặt RMB+thẻ ATM. Nếu một ứng dụng không hoạt động, hãy thử ứng dụng khác."
     },
     "transport": {
       "label": "🚕 Giao thông",
-      "desc": "Didi (taxi), Ứng dụng tàu điện ngầm, Tàu cao tốc 12306, xe đạp chia sẻ (Meituan/Hellobike)"
+      "desc": "<strong>DiDi</strong>:Alipay, tiếng Anh+thẻ.<br><strong>Tàu điện ngầm</strong>:mã đi lại.<br><strong>Tàu cao tốc</strong>:12306.cn/en thẻ.<br><strong>Xe đạp</strong>:Alipay ¥1.5-3."
     },
     "food": {
       "label": "🍜 Ăn uống",
-      "desc": "Đánh giá Dianping, dịch thực đơn (quét WeChat), giao hàng (Meituan/Eleme), bộ lọc ăn kiêng"
+      "desc": "<strong>Dianping</strong>:ảnh+điểm.<br><strong>Quét WeChat→Dịch</strong>:thực đơn.<br><strong>Meituan/Ele.me</strong>:giao hàng.<br>Halal:\"清真\"/mì Lanzhou.<br>Chay:\"素食\"(chú ý nước dùng).<br>Dị ứng:mang thẻ song ngữ."
     },
     "accommodation": {
       "label": "🏨 Lưu trú",
-      "desc": "Trip.com, Ctrip, Airbnb (giới hạn). Khách sạn thân thiện với người nước ngoài bắt buộc đăng ký."
+      "desc": "<strong>Trip.com/Booking</strong>:kiểm tra \"chấp nhận khách nước ngoài\".<br><strong>Airbnb</strong>:đã ngừng hoạt động tại Trung Quốc.<br><strong>Tiêu chuẩn khách nước ngoài</strong>:không phải tất cả khách sạn đều có thể nhận khách nước ngoài. Xác nhận trước khi đặt."
     }
   },
   "s6": {
@@ -254,20 +267,17 @@
     "hospital": {
       "label": "🏥 Bệnh viện",
       "title": "Bệnh viện Quốc tế & Thuốc",
-      "desc": "Bệnh viện thành phố lớn, danh sách thuốc ba ngôn ngữ, bảo hiểm du lịch",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "Bệnh viện thành phố lớn, danh sách thuốc ba ngôn ngữ, bảo hiểm du lịch"
     },
     "big3": {
       "label": "🦷👁️🌿 Du lịch y tế",
       "title": "Nha khoa·Mắt·Y học cổ truyền",
-      "desc": "Cấy ghép <¥5K, kính mắt trong ngày, châm cứu & massage. #1 cho người Nga.",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "Cấy ghép <¥5K, kính mắt trong ngày, châm cứu & massage. #1 cho người Nga."
     },
     "checkup": {
       "label": "📋 Khám sức khỏe",
       "title": "Khám sức khỏe tổng quát",
-      "desc": "¥2K-10K+, bảng toàn diện, một số báo cáo 24h. Nửa ngày.",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "¥2K-10K+, bảng toàn diện, một số báo cáo 24h. Nửa ngày."
     },
     "detail": {
       "back": "← Quay lại",
@@ -364,26 +374,22 @@
     "electronics": {
       "label": "📱 Điện tử",
       "title": "Điện thoại gập·Drone·Kính AI",
-      "desc": "Hoa Cường Bắc SZ, Vương Phủ Tỉnh BJ, Nghĩa Ô. Công nghệ mới nhất giá tốt.",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "Hoa Cường Bắc SZ, Vương Phủ Tỉnh BJ, Nghĩa Ô. Công nghệ mới nhất giá tốt."
     },
     "souvenirs": {
       "label": "🎨 Quà lưu niệm",
       "title": "Bảo tàng Cố Cung·Thủ công·Địa phương",
-      "desc": "Nam châm Tử Cấm Thành, thổ cẩm gấu trúc Thành Đô, nhồi bông Tây An, chàm Quý Châu.",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "Nam châm Tử Cấm Thành, thổ cẩm gấu trúc Thành Đô, nhồi bông Tây An, chàm Quý Châu."
     },
     "taxrefund": {
       "label": "💰 Hoàn thuế",
       "title": "Quy định·Quy trình·Hoàn ngay",
-      "desc": "≥¥500 cùng cửa hàng→11% VAT (~9% ròng). Khởi hành trong 90 ngày. 7.000+ hoàn ngay.",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "≥¥500 cùng cửa hàng→11% VAT (~9% ròng). Khởi hành trong 90 ngày. 7.000+ hoàn ngay."
     },
     "cityshops": {
       "label": "🗺️ Hướng dẫn thành phố",
       "title": "Mua sắm theo thành phố",
-      "desc": "Chợ vải SH·Điện tử SZ·Bán sỉ Nghĩa Ô·Miễn thuế Tam Á·Vương Phủ Tỉnh BJ",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "Chợ vải SH·Điện tử SZ·Bán sỉ Nghĩa Ô·Miễn thuế Tam Á·Vương Phủ Tỉnh BJ"
     },
     "detail": {
       "back": "← Quay lại",
@@ -478,20 +484,17 @@
     "top10": {
       "label": "🏙️ Top 10",
       "title": "Thành phố phải đến",
-      "desc": "Thượng Hải·Bắc Kinh·Quảng Châu·Thâm Quyến·Trùng Khánh·Thành Đô·Hàng Châu·Côn Minh·Cáp Nhĩ Tân·Thanh Đảo",
-      "expandHint": "[ Duyệt thành phố → ]"
+      "desc": "Thượng Hải·Bắc Kinh·Quảng Châu·Thâm Quyến·Trùng Khánh·Thành Đô·Hàng Châu·Côn Minh·Cáp Nhĩ Tân·Thanh Đảo"
     },
     "rising": {
       "label": "🚀 Đang lên",
       "title": "Ngôi sao Mạng xã hội",
-      "desc": "Trịnh Châu·Thái Nguyên·Quý Dương·Phúc Châu·Nghĩa Ô — xu hướng trên mạng xã hội",
-      "expandHint": "[ Duyệt thành phố → ]"
+      "desc": "Trịnh Châu·Thái Nguyên·Quý Dương·Phúc Châu·Nghĩa Ô — xu hướng trên mạng xã hội"
     },
     "seasons": {
       "label": "🌍 Mùa",
       "title": "Tốt nhất theo mùa",
-      "desc": "Xuân:Giang Nam / Hạ:Bắc Đới Hà / Thu:Bắc Kinh / Đông:Cáp Nhĩ Tân&Tam Á",
-      "expandHint": "[ Mở rộng → ]"
+      "desc": "Xuân:Giang Nam / Hạ:Bắc Đới Hà / Thu:Bắc Kinh / Đông:Cáp Nhĩ Tân&Tam Á"
     },
     "detail": {
       "back": "← Quay lại",
