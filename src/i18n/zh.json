@@ -2,10 +2,7 @@
   "app": {
     "nav": {
       "title": "🧳 入境中国攻略",
-      "versionSwitch": {
-        "toLong": "🔄 长期居留版",
-        "toShort": "🔄 短期游客版"
-      }
+      "home": "↩ 首页"
     },
     "cover": {
       "title": "外国人来华全攻略",

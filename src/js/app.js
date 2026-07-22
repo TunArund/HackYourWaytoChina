@@ -28,15 +28,19 @@ function startVersion(v) {
   if (first) first.scrollIntoView({ behavior: 'smooth' });
 }
 
-function toggleVersion() {
+function resetToCover() {
   if (!currentVersion) return;
-  startVersion(currentVersion === 'short' ? 'long' : 'short');
+  currentVersion = null;
+  container.classList.add('locked');
+  container.scrollTo({ top: 0, behavior: 'instant' });
+  // Clear inline display styles so CSS rules take over
+  container.querySelectorAll('.slide--short,.slide--long').forEach(s => { s.style.display = ''; });
+  versionSwitch.classList.remove('visible');
+  scrubber.classList.remove('visible');
 }
 
 function updateVersionSwitchText() {
-  versionSwitch.innerHTML = currentVersion === 'short'
-    ? (t('app.nav.versionSwitch.toLong'))
-    : (t('app.nav.versionSwitch.toShort'));
+  versionSwitch.innerHTML = t('app.nav.home') || '↩ Home';
 }
 
 
@@ -168,7 +172,6 @@ vcN.addEventListener('change', checkVisa);
 // Populate country dropdown
 (function () {
   const s = document.getElementById('vcNationality');
-  // Single placeholder, text from i18n
   const ph = document.createElement('option'); ph.value = ''; ph.disabled = true; ph.selected = true;
   ph.textContent = t('s1.placeholder') || '…';
   s.appendChild(ph);
@@ -313,6 +316,9 @@ document.addEventListener('click', () => {
 });
 
 document.getElementById('btnLang').addEventListener('click', toggleLanguageDropdown);
+
+// Prevent browser from restoring scroll position on refresh
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
 // Initialize on DOM ready
 if (document.readyState === 'loading') {

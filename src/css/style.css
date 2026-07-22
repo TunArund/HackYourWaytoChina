@@ -23,29 +23,34 @@
    Reset
    ============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html,body{height:100%;overflow:hidden}
 body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
 
 /* ============================================================
    Slides Container
+   Only one scrollable element on the page (critical for Safari snap)
    ============================================================ */
 .slides-container{
-  height:100dvh;overflow-y:scroll;
-  scroll-snap-type:y mandatory;scroll-behavior:smooth;
-  overscroll-behavior-y:contain;
+  height:100svh;
+  overflow-y:auto;
+  scroll-snap-type:y mandatory;
+  scroll-behavior:smooth;
+  touch-action:pan-y;
   -webkit-overflow-scrolling:touch;
 }
 .slides-container::-webkit-scrollbar{display:none}
-.slides-container.locked{overflow:hidden}
+/* Locked: avoid overflow:hidden — prevents Safari from re-activating scroll */
+.slides-container.locked{touch-action:none;overflow-y:hidden}
 .slide--short,.slide--long{display:none}
 body.version-short .slide--short,body.version-long .slide--long{display:flex}
 body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 
 /* ============================================================
    Slide
+   min-height instead of height — dvh for dynamic address bar
    ============================================================ */
 .slide{
-  height:100dvh;scroll-snap-align:start;overflow:hidden;
+  min-height:100dvh;scroll-snap-align:start;overflow:hidden;
   position:relative;display:flex;flex-direction:column;
   background:var(--bg);
 }
@@ -213,6 +218,8 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
   position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:100;
   display:flex;flex-direction:column;gap:7px;padding:8px 6px;cursor:pointer;
   opacity:0;pointer-events:none;transition:opacity 0.3s;
+  touch-action:none;
+  -webkit-tap-highlight-color:transparent;
 }
 .nav-scrubber.visible{opacity:1;pointer-events:auto}
 .nav-bar{width:22px;height:3px;border-radius:2px;background:var(--timeline-line);transition:all var(--transition);pointer-events:none}

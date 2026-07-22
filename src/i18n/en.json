@@ -2,10 +2,7 @@
   "app": {
     "nav": {
       "title": "🧳 China Entry Guide",
-      "versionSwitch": {
-        "toLong": "🔄 Long-term",
-        "toShort": "🔄 Short-term"
-      }
+      "home": "↩ Home"
     },
     "cover": {
       "title": "The Complete China Guide",

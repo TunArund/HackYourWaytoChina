@@ -2,10 +2,7 @@
   "app": {
     "nav": {
       "title": "🧳 中国入国ガイド",
-      "versionSwitch": {
-        "toLong": "🔄 長期滞在版",
-        "toShort": "🔄 短期訪問版"
-      }
+      "home": "↩ ホーム"
     },
     "cover": {
       "title": "中国入国完全ガイド",

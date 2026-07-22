@@ -2,10 +2,7 @@
   "app": {
     "nav": {
       "title": "🧳 중국 입국 가이드",
-      "versionSwitch": {
-        "toLong": "🔄 장기 거주 버전",
-        "toShort": "🔄 단기 방문 버전"
-      }
+      "home": "↩ 홈"
     },
     "cover": {
       "title": "외국인 중국 입국 완벽 가이드",

@@ -2,10 +2,7 @@
   "app": {
     "nav": {
       "title": "🧳 Hướng dẫn nhập cảnh Trung Quốc",
-      "versionSwitch": {
-        "toLong": "🔄 Dài hạn",
-        "toShort": "🔄 Ngắn hạn"
-      }
+      "home": "↩ Trang chủ"
     },
     "cover": {
       "title": "Hướng dẫn toàn diện về Trung Quốc",
