@@ -8,8 +8,15 @@ const VISA_FREE = new Set(['FR','DE','IT','NL','ES','CH','IE','HU','AT','BE','LU
 const TRANSIT = new Set(['AT','BE','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IT','LV','LT','LU','MT','NL','PL','PT','SK','SI','ES','SE','CH','MC','RU','GB','IE','CY','BG','RO','UA','RS','HR','BA','ME','MK','AL','BY','NO','US','CA','BR','MX','AR','CL','AU','NZ','KR','JP','SG','BN','AE','QA','ID']);
 const MUTUAL = new Set(['SG','AE','RS','MU','SC','BB','BS','EC','FJ','GD','JM','MV','MD','MC','LC','VC','WS','SB','TO','AG','AM','AZ','BY','BR','DM','GA','GE','KZ','KG','TH','UZ','SR']);
 
-/* ---- Country list (code + flag only; names in i18n countries.{code}) ---- */
+/* ---- Country list with continent grouping (names in i18n countries.{code}) ---- */
 const COUNTRY_CODES = ['AU','NZ','JP','KR','SG','MY','TH','ID','IN','PH','VN','BN','AE','QA','SA','KW','OM','BH','GB','FR','DE','IT','ES','PT','NL','BE','CH','AT','SE','NO','DK','FI','IS','IE','PL','HU','GR','RO','RU','US','CA','BR','AR','CL','MX','PE','UY','ZA','OTHER'];
+const COUNTRY_CONTINENTS = {
+  asiaPacific: ['AU','NZ','JP','KR','SG','MY','TH','ID','IN','PH','VN','BN'],
+  middleEast:  ['AE','QA','SA','KW','OM','BH'],
+  europe:      ['GB','FR','DE','IT','ES','PT','NL','BE','CH','AT','SE','NO','DK','FI','IS','IE','PL','HU','GR','RO','RU'],
+  americas:    ['US','CA','BR','AR','CL','MX','PE','UY'],
+  africa:      ['ZA']
+};
 
 /* ---- Visa detail data (conditions now in i18n; links reference i18n keys) ---- */
 const VISA_DETAIL = {

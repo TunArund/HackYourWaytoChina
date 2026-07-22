@@ -28,7 +28,7 @@ function refreshUI() {
   translateDOM();
 
   const vcR = document.getElementById('vcResult');
-  if (vcR && vcR.classList.contains('show') && typeof checkVisa === 'function') checkVisa();
+  if (vcR && vcR.classList.contains('show') && vcR._lastCountry && typeof showVisaPolicies === 'function') showVisaPolicies(vcR._lastCountry);
   if (typeof currentDetail !== 'undefined' && currentDetail.slide) {
     const panel = document.getElementById('detail-' + currentDetail.slide);
     if (panel && panel.classList.contains('active') && typeof renderDetail === 'function') {
@@ -77,31 +77,42 @@ function refreshUI() {
   if (typeof refreshUI === 'function') refreshUI();
 })();
 
-function t(key) {
-  if (!_ready) return '…';
-  // Try flat lookup first (supports dot-in-key names from data.js migration)
-  if (I18N[key] !== undefined) return String(I18N[key]);
-  // Try nested traversal (supports the agent's nested JSON structure)
+/* _lookup(bundle, key) — traverse nested bundle for dot-separated key; returns value or undefined */
+function _lookup(bundle, key) {
   const parts = key.split('.');
-  let v = I18N;
+  let v = bundle;
   for (const p of parts) {
-    if (v == null || typeof v !== 'object') return '[' + key + ']';
+    if (v == null || typeof v !== 'object') return undefined;
     v = v[p];
   }
-  return v !== undefined ? String(v) : '[' + key + ']';
+  return v;
+}
+
+/* _fallback(key, raw) — try English bundle if current language isn't en */
+function _fallback(key, raw) {
+  if (LANG === 'en') return undefined;
+  const enBundle = (window.__I18N_BUNDLE && window.__I18N_BUNDLE.en) || null;
+  if (!enBundle) return undefined;
+  return _lookup(enBundle, key);
+}
+
+function t(key) {
+  if (!_ready) return '…';
+  let v = _lookup(I18N, key);
+  if (v !== undefined) return String(v);
+  v = _fallback(key, false);
+  if (v !== undefined) return String(v);
+  return '[' + key + ']';
 }
 
 /* ta(key) — like t() but returns raw value (for arrays, objects) */
 function ta(key) {
   if (!_ready) return [];
-  if (I18N[key] !== undefined) return I18N[key];
-  const parts = key.split('.');
-  let v = I18N;
-  for (const p of parts) {
-    if (v == null || typeof v !== 'object') return [];
-    v = v[p];
-  }
-  return v !== undefined ? v : [];
+  let v = _lookup(I18N, key);
+  if (v !== undefined) return v;
+  v = _fallback(key, true);
+  if (v !== undefined) return v;
+  return [];
 }
 
 async function setLang(lang) {

@@ -26,73 +26,21 @@
       "expand": "Mở rộng →"
     },
     "links": {
-      "official": "🔗 Liên kết chính thức"
+      "official": "Liên kết chính thức"
     },
     "hints": {
       "scroll": "Cuộn xuống"
     }
   },
-  "countries": {
-    "default": "— Chọn —",
-    "AU": "🇦🇺 Úc",
-    "NZ": "🇳🇿 New Zealand",
-    "JP": "🇯🇵 Nhật Bản",
-    "KR": "🇰🇷 Hàn Quốc",
-    "SG": "🇸🇬 Singapore",
-    "MY": "🇲🇾 Malaysia",
-    "TH": "🇹🇭 Thái Lan",
-    "ID": "🇮🇩 Indonesia",
-    "IN": "🇮🇳 Ấn Độ",
-    "PH": "🇵🇭 Philippines",
-    "VN": "🇻🇳 Việt Nam",
-    "BN": "🇧🇳 Brunei",
-    "AE": "🇦🇪 UAE",
-    "QA": "🇶🇦 Qatar",
-    "SA": "🇸🇦 Ả Rập Saudi",
-    "KW": "🇰🇼 Kuwait",
-    "OM": "🇴🇲 Oman",
-    "BH": "🇧🇭 Bahrain",
-    "GB": "🇬🇧 Anh",
-    "FR": "🇫🇷 Pháp",
-    "DE": "🇩🇪 Đức",
-    "IT": "🇮🇹 Ý",
-    "ES": "🇪🇸 Tây Ban Nha",
-    "PT": "🇵🇹 Bồ Đào Nha",
-    "NL": "🇳🇱 Hà Lan",
-    "BE": "🇧🇪 Bỉ",
-    "CH": "🇨🇭 Thụy Sĩ",
-    "AT": "🇦🇹 Áo",
-    "SE": "🇸🇪 Thụy Điển",
-    "NO": "🇳🇴 Na Uy",
-    "DK": "🇩🇰 Đan Mạch",
-    "FI": "🇫🇮 Phần Lan",
-    "IS": "🇮🇸 Iceland",
-    "IE": "🇮🇪 Ireland",
-    "PL": "🇵🇱 Ba Lan",
-    "HU": "🇭🇺 Hungary",
-    "GR": "🇬🇷 Hy Lạp",
-    "RO": "🇷🇴 Romania",
-    "RU": "🇷🇺 Nga",
-    "US": "🇺🇸 Hoa Kỳ",
-    "CA": "🇨🇦 Canada",
-    "BR": "🇧🇷 Brazil",
-    "AR": "🇦🇷 Argentina",
-    "CL": "🇨🇱 Chile",
-    "MX": "🇲🇽 Mexico",
-    "PE": "🇵🇪 Peru",
-    "UY": "🇺🇾 Uruguay",
-    "ZA": "🇿🇦 Nam Phi",
-    "OTHER": "🌍 Khác"
-  },
   "s0": {},
   "s1": {
     "meta": {
       "title": "Tôi có cần thị thực không?",
-      "sub": "3 câu hỏi. Gần 80 quốc gia miễn thị thực hoặc quá cảnh."
+      "sub": "Chọn quốc tịch để xem chính sách áp dụng."
     },
     "questions": {
-      "q1": "Q1 · Quốc t적?",
-      "q2": "Q2 · Mục đích?",
+      "q1": "Bước 1: Khu vực",
+      "q2": "Bước 2: Quốc gia",
       "q3": "Q3 · Thời gian?",
       "q4": "Q4 · Vé máy bay tiếp nối?"
     },
@@ -113,7 +61,15 @@
       "yes": "✅ Có",
       "no": "❌ Không"
     },
-    "placeholder": "— Chọn —"
+    "placeholder": "— Chọn —",
+    "continents": {
+      "asiaPacific": "🌏 Châu Á-Thái Bình Dương",
+      "middleEast": "🏜️ Trung Đông",
+      "europe": "🌍 Châu Âu",
+      "americas": "🌎 Châu Mỹ",
+      "africa": "🌍 Châu Phi",
+      "other": "🌐 Khác"
+    }
   },
   "s2": {
     "meta": {
@@ -613,6 +569,33 @@
       "label": "Trịnh Châu",
       "desc": "Điểm chụp ảnh phố cổ trang Hán. Phải đến: tháp Nhị Thất, Bảo tàng Hà Nam, chùa Thiếu Lâm (gần). Ẩm thực: mì hối diện, súp hồ la thang. Mẹo: mặc trang phục truyền thống chụp ảnh, trải nghiệm thẩm mỹ Trung Hoa đắm chìm.",
       "tag": "Hán phục·Cổ phong·Chụp phố"
+    },
+    "guizhou": {
+      "label": "Quý Châu",
+      "desc": "",
+      "tag": ""
+    }
+  },
+  "shop": {
+    "beijing": {
+      "name": "Bắc Kinh·Vương Phủ Tỉnh",
+      "desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay."
+    },
+    "sanya": {
+      "name": "Tam Á·Trung tâm Miễn thuế",
+      "desc": "Miễn thuế ngoại đảo & khởi hành. Đầy đủ thương hiệu quốc tế. Chính sách nâng cấp 2025. Quy trình đơn giản: đăng ký→quét→thanh toán→nhận tại sân bay, <3 phút."
+    },
+    "shanghai": {
+      "name": "Thượng Hải·Chợ vải",
+      "desc": "Chợ vải Nam Ngoại Thân v.v. Áo dài & vest tùy chỉnh, đo tại chỗ. ¥300-2.000+, giao trong 2-3 ngày. Chấp nhận thẻ quốc tế."
+    },
+    "shenzhen": {
+      "name": "Thâm Quyến·Hoa Cường Bắc",
+      "desc": "\"Phố điện tử Trung Quốc\", 35 chợ chuyên dụng. Danh mục: điện thoại, phụ kiện, drone, thiết bị đeo. Biển báo đa ngôn ngữ+thẻ quốc tế+hoàn thuế. Tàu điện ngầm Tuyến 1 Hoa Cường Lộ. Mẹo: so sánh giá, một số chợ có thể trả giá."
+    },
+    "yiwu": {
+      "name": "Nghĩa Ô·Thành Thương mại",
+      "desc": "\"Siêu thị thế giới\", từ ốp điện thoại đến thiết bị gia dụng thông minh đến drone. Đặt chuyến bay +60% H1 2026. Mua sắm một điểm, đa ngôn ngữ+thẻ quốc tế."
     }
   },
   "clinic": {
@@ -632,6 +615,58 @@
       "label": "YuanSong Aesthetics (Thượng Hải)",
       "desc": "Đã phục vụ khách từ Hàn Quốc, Nhật Bản, Trung Đông. Sử dụng phương pháp filler thay vì phẫu thuật xương nguy hiểm. Triết lý thẩm mỹ tự nhiên."
     }
+  },
+  "countries": {
+    "default": "— Chọn —",
+    "AU": "🇦🇺 Úc",
+    "NZ": "🇳🇿 New Zealand",
+    "JP": "🇯🇵 Nhật Bản",
+    "KR": "🇰🇷 Hàn Quốc",
+    "SG": "🇸🇬 Singapore",
+    "MY": "🇲🇾 Malaysia",
+    "TH": "🇹🇭 Thái Lan",
+    "ID": "🇮🇩 Indonesia",
+    "IN": "🇮🇳 Ấn Độ",
+    "PH": "🇵🇭 Philippines",
+    "VN": "🇻🇳 Việt Nam",
+    "BN": "🇧🇳 Brunei",
+    "AE": "🇦🇪 UAE",
+    "QA": "🇶🇦 Qatar",
+    "SA": "🇸🇦 Ả Rập Saudi",
+    "KW": "🇰🇼 Kuwait",
+    "OM": "🇴🇲 Oman",
+    "BH": "🇧🇭 Bahrain",
+    "GB": "🇬🇧 Anh",
+    "FR": "🇫🇷 Pháp",
+    "DE": "🇩🇪 Đức",
+    "IT": "🇮🇹 Ý",
+    "ES": "🇪🇸 Tây Ban Nha",
+    "PT": "🇵🇹 Bồ Đào Nha",
+    "NL": "🇳🇱 Hà Lan",
+    "BE": "🇧🇪 Bỉ",
+    "CH": "🇨🇭 Thụy Sĩ",
+    "AT": "🇦🇹 Áo",
+    "SE": "🇸🇪 Thụy Điển",
+    "NO": "🇳🇴 Na Uy",
+    "DK": "🇩🇰 Đan Mạch",
+    "FI": "🇫🇮 Phần Lan",
+    "IS": "🇮🇸 Iceland",
+    "IE": "🇮🇪 Ireland",
+    "PL": "🇵🇱 Ba Lan",
+    "HU": "🇭🇺 Hungary",
+    "GR": "🇬🇷 Hy Lạp",
+    "RO": "🇷🇴 Romania",
+    "RU": "🇷🇺 Nga",
+    "US": "🇺🇸 Hoa Kỳ",
+    "CA": "🇨🇦 Canada",
+    "BR": "🇧🇷 Brazil",
+    "AR": "🇦🇷 Argentina",
+    "CL": "🇨🇱 Chile",
+    "MX": "🇲🇽 Mexico",
+    "PE": "🇵🇪 Peru",
+    "UY": "🇺🇾 Uruguay",
+    "ZA": "🇿🇦 Nam Phi",
+    "OTHER": "🌍 Khác"
   },
   "visa": {
     "mutual": {
@@ -735,77 +770,5 @@
       "consularServices": "Dịch vụ Lãnh sự",
       "niaKVisa": "Chính sách Thị thực K NIA"
     }
-  },
-  "shop.beijing.desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay.",
-  "shop.beijing.name": "Bắc Kinh·Vương Phủ Tỉnh",
-  "shop.sanya.desc": "Miễn thuế ngoại đảo & khởi hành. Đầy đủ thương hiệu quốc tế. Chính sách nâng cấp 2025. Quy trình đơn giản: đăng ký→quét→thanh toán→nhận tại sân bay, <3 phút.",
-  "shop.sanya.name": "Tam Á·Trung tâm Miễn thuế",
-  "shop.shanghai.desc": "Chợ vải Nam Ngoại Thân v.v. Áo dài & vest tùy chỉnh, đo tại chỗ. ¥300-2.000+, giao trong 2-3 ngày. Chấp nhận thẻ quốc tế.",
-  "shop.shanghai.name": "Thượng Hải·Chợ vải",
-  "shop.shenzhen.desc": "\"Phố điện tử Trung Quốc\", 35 chợ chuyên dụng. Danh mục: điện thoại, phụ kiện, drone, thiết bị đeo. Biển báo đa ngôn ngữ+thẻ quốc tế+hoàn thuế. Tàu điện ngầm Tuyến 1 Hoa Cường Lộ. Mẹo: so sánh giá, một số chợ có thể trả giá.",
-  "shop.shenzhen.name": "Thâm Quyến·Hoa Cường Bắc",
-  "shop.yiwu.desc": "\"Siêu thị thế giới\", từ ốp điện thoại đến thiết bị gia dụng thông minh đến drone. Đặt chuyến bay +60% H1 2026. Mua sắm một điểm, đa ngôn ngữ+thẻ quốc tế.",
-  "shop.yiwu.name": "Nghĩa Ô·Thành Thương mại",
-  "city.beijing.desc": "Kinh đô cổ. Phải đến: Tử Cấm Thành, Vạn Lý Trường Thành, Thiên Đàn. Ẩm thực: vịt quay Bắc Kinh, mì tương đen, lẩu thịt cừu. Mua sắm: Vương Phủ Tỉnh, chợ đồ cổ Phan Gia Viên. Mẹo: đặt vé trước, tàu điện ngầm tiện lợi.",
-  "city.beijing.flag": "beijing",
-  "city.beijing.name": "Bắc Kinh",
-  "city.beijing.tag": "Tử Cấm Thành·Trường Thành·Hồ Đồng",
-  "city.chengdu.desc": "Số 1 Trung-Tây Trung Quốc. Phải đến: Căn cứ gấu trúc, Phố Khoan Trại, Cẩm Lý. Ẩm thực: lẩu, xiên nướng, mì đảm đảm. Mua sắm: thổ cẩm gấu trúc. Mẹo: người địa phương thích \"an dật\" (thư thái), chơi chậm rãi.",
-  "city.chengdu.flag": "chengdu",
-  "city.chengdu.name": "Thành Đô",
-  "city.chengdu.tag": "Gấu trúc·Lẩu·Đời sống chậm",
-  "city.chongqing.desc": "Tăng trưởng nhanh nhất (+30%). Phải đến: Hồng Nha Động, Từ Khí Khẩu, cáp treo sông Dương Tử. Ẩm thực: lẩu, mì tiểu diện, món giang hồ. Mua sắm: Giải Phóng Bội. Mẹo: đi giày bằng, GPS có thể lỗi trong địa hình 8D.",
-  "city.chongqing.flag": "chongqing",
-  "city.chongqing.name": "Trùng Khánh",
-  "city.chongqing.tag": "Ma thuật 8D·Lẩu·Cảnh đêm",
-  "city.fuzhou.desc": "Thiên nhiên ven biển & di sản. Phải đến: Tam Phường Thất Hạng, núi Cổ, công viên Tây Hồ. Ẩm thực: Phật nhảy tường, viên cá, nhục yến. Mẹo: suối nước nóng dồi dào, điểm đến chăm sóc sức khỏe.",
-  "city.fuzhou.flag": "fuzhou",
-  "city.fuzhou.name": "Phúc Châu",
-  "city.fuzhou.tag": "Thiên nhiên·Suối nóng·Trà",
-  "city.guangzhou.desc": "Số 1 chi tiêu nhập cảnh. Phải đến: Tháp Quảng Châu, Đảo Sa Diện, núi Bạch Vân. Ẩm thực: dim sum, thịt nướng, cơm nồi đất. Mua sắm: khu Thiên Hà, chợ quần áo Bạch Mã. Mẹo: chuyến bay Đông Nam Á dày đặc, điểm dừng đầu tiên phổ biến.",
-  "city.guangzhou.flag": "guangzhou",
-  "city.guangzhou.name": "Quảng Châu",
-  "city.guangzhou.tag": "Ẩm thực·Thương mại·Thành phố hoa",
-  "city.guiyang.desc": "\"Thay thế Seoul\" của Hàn Quốc, thiên đường chay phương Tây. Phải đến: núi Kiền Linh, cổ trấn Thanh Nham, Hoa Khê. Ẩm thực: cá canh chua, mì trường vượng, bánh cuốn tơ wa wa. Mẹo: mùa hè mát mẻ.",
-  "city.guiyang.flag": "guiyang",
-  "city.guiyang.name": "Quý Dương",
-  "city.guiyang.tag": "Thay thế Seoul·Thiên đường chay",
-  "city.hangzhou.desc": "Thiên đường nhân gian. Phải đến: Tây Hồ, chùa Linh Ẩn, đồn chè Long Tỉnh. Ẩm thực: thịt lợn Đông Pha, cá Tây Hồ, tôm Long Tỉnh. Mua sắm: chợ lụa, phố Nam Tống. Mẹo: đẹp nhất mùa xuân, tránh Tuần lễ Vàng.",
-  "city.hangzhou.flag": "hangzhou",
-  "city.hangzhou.name": "Hàng Châu",
-  "city.hangzhou.tag": "Tây Hồ·Long Tỉnh·Lụa",
-  "city.harbin.desc": "Yêu thích của Đông Nam Á. Phải đến: Lễ hội băng, phố Trung Ương, nhà thờ St. Sophia. Ẩm thực: thịt lợn bao quốc nhục, xúc xích đỏ, món Nga. Mua sắm: hàng Nga trên phố Trung Ương. Mẹo: mùa đông -20°C, mặc ấm.",
-  "city.harbin.flag": "harbin",
-  "city.harbin.name": "Cáp Nhĩ Tân",
-  "city.harbin.tag": "Băng tuyết·Nga·Đông Bắc",
-  "city.kunming.desc": "Xuân vĩnh cửu. Phải đến: Rừng Đá, hồ Điền, chợ hoa Đấu Nam. Ẩm thực: mì cầu qua sông, gà nồi hơi, lẩu nấm. Mua sắm: hoa tươi, thủ công dân tộc. Mẹo: cổng Đông Nam Á, khí hậu dễ chịu quanh năm.",
-  "city.kunming.flag": "kunming",
-  "city.kunming.name": "Côn Minh",
-  "city.kunming.tag": "Thành phố mùa xuân·Hoa·Dân tộc",
-  "city.qingdao.desc": "Viên ngọc ven biển. Phải đến: cầu tàu Trại Kiều, Bát Đại Quan, Lao Sơn. Ẩm thực: hải sản, bia Thanh Đảo, há cảo cá thu. Mua sắm: phố đi bộ Đài Đông. Mẹo: lễ hội bia 7-8, đẹp nhất mùa hè.",
-  "city.qingdao.flag": "qingdao",
-  "city.qingdao.name": "Thanh Đảo",
-  "city.qingdao.tag": "Bia·Ven biển·Đức",
-  "city.shanghai.desc": "8,28 triệu+ lượt khách hàng năm. Phải đến: Bến Thượng Hải, Dự Viên, Disneyland. Ẩm thực: tiểu long bao, bánh chiên, món bản bang. Mua sắm: đường Nam Kinh, may áo dài vải chợ. Mẹo: tàu điện ngầm rộng khắp, thị thực quá cảnh 72h có thể dùng.",
-  "city.shanghai.flag": "shanghai",
-  "city.shanghai.name": "Thượng Hải",
-  "city.shanghai.tag": "Bến Thượng Hải·Dự Viên·Disney",
-  "city.shenzhen.desc": "Thung lũng Silicon Trung Quốc. Phải đến: Hoa Cường Bắc, công viên vịnh Thâm Quyến, OCT. Ẩm thực: lẩu thịt bò Triều Sán, hải sản. Mua sắm: điện tử Hoa Cường Bắc, trung tâm MixC. Mẹo: tàu cao tốc 15 phút đến Hồng Kông.",
-  "city.shenzhen.flag": "shenzhen",
-  "city.shenzhen.name": "Thâm Quyến",
-  "city.shenzhen.tag": "Công nghệ·Thiết kế·Đổi mới",
-  "city.taiyuan.desc": "Địa điểm quay Black Myth: Wukong. Phải đến: đền Tấn Từ, Tháp Đôi, Bình Dao (gần). Ẩm thực: mì đao tiêu diện, quá dầu nhục. Mẹo: theo dấu game, thiên đường kiến trúc cổ.",
-  "city.taiyuan.flag": "taiyuan",
-  "city.taiyuan.name": "Thái Nguyên",
-  "city.taiyuan.tag": "Kiến trúc cổ",
-  "city.yiwu.desc": "\"Thủ đô hàng hóa nhỏ thế giới\". Chuyến bay +60% H1 2026. Phải đến: Thành Thương mại Quốc tế (5 khu). Ẩm thực: nhiều nhà hàng Trung Đông. Mua sắm: từ ốp điện thoại đến drone, một điểm.",
-  "city.yiwu.flag": "yiwu",
-  "city.yiwu.name": "Nghĩa Ô",
-  "city.yiwu.tag": "Chợ thế giới·Bán sỉ",
-  "city.zhengzhou.desc": "Điểm chụp ảnh phố cổ trang Hán. Phải đến: tháp Nhị Thất, Bảo tàng Hà Nam, chùa Thiếu Lâm (gần). Ẩm thực: mì hối diện, súp hồ la thang. Mẹo: mặc trang phục truyền thống chụp ảnh, trải nghiệm thẩm mỹ Trung Hoa đắm chìm.",
-  "city.zhengzhou.flag": "zhengzhou",
-  "city.zhengzhou.name": "Trịnh Châu",
-  "city.zhengzhou.tag": "Hán phục·Cổ phong·Chụp phố",
-  "city.guizhou.label": "Quý Châu",
-  "city.guizhou.name": "Quý Châu"
+  }
 }

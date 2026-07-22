@@ -26,73 +26,21 @@
       "expand": "Expand →"
     },
     "links": {
-      "official": "🔗 Official Links"
+      "official": "Official Links"
     },
     "hints": {
       "scroll": "Scroll down"
     }
   },
-  "countries": {
-    "default": "— Select —",
-    "AU": "🇦🇺 Australia",
-    "NZ": "🇳🇿 New Zealand",
-    "JP": "🇯🇵 Japan",
-    "KR": "🇰🇷 South Korea",
-    "SG": "🇸🇬 Singapore",
-    "MY": "🇲🇾 Malaysia",
-    "TH": "🇹🇭 Thailand",
-    "ID": "🇮🇩 Indonesia",
-    "IN": "🇮🇳 India",
-    "PH": "🇵🇭 Philippines",
-    "VN": "🇻🇳 Vietnam",
-    "BN": "🇧🇳 Brunei",
-    "AE": "🇦🇪 UAE",
-    "QA": "🇶🇦 Qatar",
-    "SA": "🇸🇦 Saudi Arabia",
-    "KW": "🇰🇼 Kuwait",
-    "OM": "🇴🇲 Oman",
-    "BH": "🇧🇭 Bahrain",
-    "GB": "🇬🇧 UK",
-    "FR": "🇫🇷 France",
-    "DE": "🇩🇪 Germany",
-    "IT": "🇮🇹 Italy",
-    "ES": "🇪🇸 Spain",
-    "PT": "🇵🇹 Portugal",
-    "NL": "🇳🇱 Netherlands",
-    "BE": "🇧🇪 Belgium",
-    "CH": "🇨🇭 Switzerland",
-    "AT": "🇦🇹 Austria",
-    "SE": "🇸🇪 Sweden",
-    "NO": "🇳🇴 Norway",
-    "DK": "🇩🇰 Denmark",
-    "FI": "🇫🇮 Finland",
-    "IS": "🇮🇸 Iceland",
-    "IE": "🇮🇪 Ireland",
-    "PL": "🇵🇱 Poland",
-    "HU": "🇭🇺 Hungary",
-    "GR": "🇬🇷 Greece",
-    "RO": "🇷🇴 Romania",
-    "RU": "🇷🇺 Russia",
-    "US": "🇺🇸 United States",
-    "CA": "🇨🇦 Canada",
-    "BR": "🇧🇷 Brazil",
-    "AR": "🇦🇷 Argentina",
-    "CL": "🇨🇱 Chile",
-    "MX": "🇲🇽 Mexico",
-    "PE": "🇵🇪 Peru",
-    "UY": "🇺🇾 Uruguay",
-    "ZA": "🇿🇦 South Africa",
-    "OTHER": "🌍 Other"
-  },
   "s0": {},
   "s1": {
     "meta": {
       "title": "Do I Need a Visa?",
-      "sub": "3 questions. Nearly 80 countries visa-free or transit."
+      "sub": "Select your nationality to see applicable policies."
     },
     "questions": {
-      "q1": "Q1 · Nationality?",
-      "q2": "Q2 · Purpose?",
+      "q1": "Step 1: Region",
+      "q2": "Step 2: Country",
       "q3": "Q3 · Duration?",
       "q4": "Q4 · Onward ticket?"
     },
@@ -113,7 +61,15 @@
       "yes": "✅ Yes",
       "no": "❌ No"
     },
-    "placeholder": "— Select —"
+    "placeholder": "— Select —",
+    "continents": {
+      "asiaPacific": "🌏 Asia-Pacific",
+      "middleEast": "🏜️ Middle East",
+      "europe": "🌍 Europe",
+      "americas": "🌎 Americas",
+      "africa": "🌍 Africa",
+      "other": "🌐 Other"
+    }
   },
   "s2": {
     "meta": {
@@ -613,6 +569,33 @@
       "label": "Zhengzhou",
       "desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.",
       "tag": "Hanfu·Ancient·Street Photo"
+    },
+    "guizhou": {
+      "label": "Guizhou",
+      "desc": "",
+      "tag": ""
+    }
+  },
+  "shop": {
+    "beijing": {
+      "name": "Beijing·Wangfujing",
+      "desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund."
+    },
+    "sanya": {
+      "name": "Sanya·Duty Free Mall",
+      "desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min."
+    },
+    "shanghai": {
+      "name": "Shanghai·Fabric Market",
+      "desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted."
+    },
+    "shenzhen": {
+      "name": "Shenzhen·Huaqiangbei",
+      "desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable."
+    },
+    "yiwu": {
+      "name": "Yiwu·Trade City",
+      "desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards."
     }
   },
   "clinic": {
@@ -632,6 +615,58 @@
       "label": "YuanSong Aesthetics (Shanghai)",
       "desc": "Served clients from Korea, Japan, Middle East. Uses filler-based contouring instead of high-risk bone shaving. Natural aesthetics philosophy."
     }
+  },
+  "countries": {
+    "default": "— Select —",
+    "AU": "🇦🇺 Australia",
+    "NZ": "🇳🇿 New Zealand",
+    "JP": "🇯🇵 Japan",
+    "KR": "🇰🇷 South Korea",
+    "SG": "🇸🇬 Singapore",
+    "MY": "🇲🇾 Malaysia",
+    "TH": "🇹🇭 Thailand",
+    "ID": "🇮🇩 Indonesia",
+    "IN": "🇮🇳 India",
+    "PH": "🇵🇭 Philippines",
+    "VN": "🇻🇳 Vietnam",
+    "BN": "🇧🇳 Brunei",
+    "AE": "🇦🇪 UAE",
+    "QA": "🇶🇦 Qatar",
+    "SA": "🇸🇦 Saudi Arabia",
+    "KW": "🇰🇼 Kuwait",
+    "OM": "🇴🇲 Oman",
+    "BH": "🇧🇭 Bahrain",
+    "GB": "🇬🇧 UK",
+    "FR": "🇫🇷 France",
+    "DE": "🇩🇪 Germany",
+    "IT": "🇮🇹 Italy",
+    "ES": "🇪🇸 Spain",
+    "PT": "🇵🇹 Portugal",
+    "NL": "🇳🇱 Netherlands",
+    "BE": "🇧🇪 Belgium",
+    "CH": "🇨🇭 Switzerland",
+    "AT": "🇦🇹 Austria",
+    "SE": "🇸🇪 Sweden",
+    "NO": "🇳🇴 Norway",
+    "DK": "🇩🇰 Denmark",
+    "FI": "🇫🇮 Finland",
+    "IS": "🇮🇸 Iceland",
+    "IE": "🇮🇪 Ireland",
+    "PL": "🇵🇱 Poland",
+    "HU": "🇭🇺 Hungary",
+    "GR": "🇬🇷 Greece",
+    "RO": "🇷🇴 Romania",
+    "RU": "🇷🇺 Russia",
+    "US": "🇺🇸 United States",
+    "CA": "🇨🇦 Canada",
+    "BR": "🇧🇷 Brazil",
+    "AR": "🇦🇷 Argentina",
+    "CL": "🇨🇱 Chile",
+    "MX": "🇲🇽 Mexico",
+    "PE": "🇵🇪 Peru",
+    "UY": "🇺🇾 Uruguay",
+    "ZA": "🇿🇦 South Africa",
+    "OTHER": "🌍 Other"
   },
   "visa": {
     "mutual": {
@@ -735,77 +770,5 @@
       "consularServices": "Consular Services",
       "niaKVisa": "NIA K Visa Policy"
     }
-  },
-  "shop.beijing.desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund.",
-  "shop.beijing.name": "Beijing·Wangfujing",
-  "shop.sanya.desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min.",
-  "shop.sanya.name": "Sanya·Duty Free Mall",
-  "shop.shanghai.desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted.",
-  "shop.shanghai.name": "Shanghai·Fabric Market",
-  "shop.shenzhen.desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable.",
-  "shop.shenzhen.name": "Shenzhen·Huaqiangbei",
-  "shop.yiwu.desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards.",
-  "shop.yiwu.name": "Yiwu·Trade City",
-  "city.beijing.desc": "Ancient capital. Must-see: Forbidden City, Great Wall, Temple of Heaven. Food: Peking duck, zhajiang noodles, hotpot lamb. Shop: Wangfujing, Panjiayuan antiques. Tip: book attractions in advance, metro is easy.",
-  "city.beijing.flag": "beijing",
-  "city.beijing.name": "Beijing",
-  "city.beijing.tag": "Forbidden City·Great Wall·Hutongs",
-  "city.chengdu.desc": "#1 in central-west China. Must-see: Panda Base, Kuanzhai Alley, Jinli. Food: hotpot, chuanchuan, dandan noodles. Shop: panda brocade crafts. Tip: locals value \"anyi\" (comfort), take it slow.",
-  "city.chengdu.flag": "chengdu",
-  "city.chengdu.name": "Chengdu",
-  "city.chengdu.tag": "Pandas·Hotpot·Slow Life",
-  "city.chongqing.desc": "Fastest growing (+30%). Must-see: Hongyadong, Ciqikou, Yangtze cableway. Food: hotpot, xiaomian noodles, Jianghu cuisine. Shop: Jiefangbei. Tip: wear flats, GPS may fail in 8D terrain.",
-  "city.chongqing.flag": "chongqing",
-  "city.chongqing.name": "Chongqing",
-  "city.chongqing.tag": "8D Magic·Hotpot·Night Views",
-  "city.fuzhou.desc": "Coastal nature & heritage. Must-see: Sanfang Qixiang, Gushan, West Lake Park. Food: Buddha Jumps Over the Wall, fish balls, rouyan. Tip: abundant hot springs, wellness destination.",
-  "city.fuzhou.flag": "fuzhou",
-  "city.fuzhou.name": "Fuzhou",
-  "city.fuzhou.tag": "Nature·Hot Springs·Tea",
-  "city.guangzhou.desc": "#1 in inbound spending. Must-see: Canton Tower, Shamian Island, Baiyun Mountain. Food: dim sum, roast meats, claypot rice. Shop: Tianhe malls, Baima clothing market. Tip: dense SE Asia flights, popular first stop.",
-  "city.guangzhou.flag": "guangzhou",
-  "city.guangzhou.name": "Guangzhou",
-  "city.guangzhou.tag": "Cuisine·Trade·Flower City",
-  "city.guiyang.desc": "Korean \"Seoul alternative\", Western veggie haven. Must-see: Qianling Mountain, Qingyan Old Town, Huaxi. Food: sour soup fish, changwang noodles, siwawa wraps. Tip: cool summer escape.",
-  "city.guiyang.flag": "guiyang",
-  "city.guiyang.name": "Guiyang",
-  "city.guiyang.tag": "Seoul Alt·Veggie Heaven",
-  "city.hangzhou.desc": "Paradise on earth. Must-see: West Lake, Lingyin Temple, Longjing tea fields. Food: Dongpo pork, West Lake fish, Longjing shrimp. Shop: silk market, Southern Song Street. Tip: best in spring, avoid Golden Week.",
-  "city.hangzhou.flag": "hangzhou",
-  "city.hangzhou.name": "Hangzhou",
-  "city.hangzhou.tag": "West Lake·Longjing·Silk",
-  "city.harbin.desc": "SE Asia favorite. Must-see: Ice Festival, Zhongyang Street, St. Sophia. Food: guobaorou, red sausage, Russian cuisine. Shop: Russian imports on Zhongyang. Tip: -20°C in winter, bundle up.",
-  "city.harbin.flag": "harbin",
-  "city.harbin.name": "Harbin",
-  "city.harbin.tag": "Ice·Russian·Dongbei",
-  "city.kunming.desc": "Eternal spring. Must-see: Stone Forest, Dian Lake, Dounan flower market. Food: cross-bridge noodles, steam pot chicken, mushroom hotpot. Shop: fresh flowers, ethnic crafts. Tip: SE Asia gateway, pleasant year-round.",
-  "city.kunming.flag": "kunming",
-  "city.kunming.name": "Kunming",
-  "city.kunming.tag": "Spring City·Flowers·Ethnic",
-  "city.qingdao.desc": "Coastal gem. Must-see: Zhanqiao Pier, Badaguan, Laoshan. Food: seafood, Tsingtao beer, mackerel dumplings. Shop: Taidong pedestrian street. Tip: Beer Festival Jul-Aug, best in summer.",
-  "city.qingdao.flag": "qingdao",
-  "city.qingdao.name": "Qingdao",
-  "city.qingdao.tag": "Beer·Coast·German",
-  "city.shanghai.desc": "8.28M+ annual arrivals. Must-see: the Bund, Yu Garden, Disney. Food: xiaolongbao, shengjian, Shanghainese cuisine. Shop: Nanjing Rd, fabric market qipao. Tip: extensive metro, 72h transit visa usable.",
-  "city.shanghai.flag": "shanghai",
-  "city.shanghai.name": "Shanghai",
-  "city.shanghai.tag": "Bund·Yu Garden·Disney",
-  "city.shenzhen.desc": "China's Silicon Valley. Must-see: Huaqiangbei, Shenzhen Bay Park, OCT. Food: Chaoshan beef hotpot, seafood. Shop: Huaqiangbei electronics, MixC mall. Tip: 15min HSR to Hong Kong.",
-  "city.shenzhen.flag": "shenzhen",
-  "city.shenzhen.name": "Shenzhen",
-  "city.shenzhen.tag": "Tech·Design·Innovation",
-  "city.taiyuan.desc": "Black Myth: Wukong filming locations. Must-see: Jinci Temple, Twin Pagodas, Pingyao (nearby). Food: daoxiaomian noodles, guoyourou. Tip: follow the game trail, ancient architecture paradise.",
-  "city.taiyuan.flag": "taiyuan",
-  "city.taiyuan.name": "Taiyuan",
-  "city.taiyuan.tag": "Ancient Architecture",
-  "city.yiwu.desc": "\"World Small Commodity Capital\". Flights +60% H1 2026. Must-visit: International Trade City (5 districts). Food: many Middle Eastern restaurants. Shop: phone cases to drones, one-stop.",
-  "city.yiwu.flag": "yiwu",
-  "city.yiwu.name": "Yiwu",
-  "city.yiwu.tag": "World Market·Wholesale",
-  "city.zhengzhou.desc": "Hanfu street photography hotspot. Must-see: Erqi Tower, Henan Museum, Shaolin Temple (nearby). Food: huimian noodles, hulatang soup. Tip: wear traditional dress for photos, immersive Chinese aesthetic.",
-  "city.zhengzhou.flag": "zhengzhou",
-  "city.zhengzhou.name": "Zhengzhou",
-  "city.zhengzhou.tag": "Hanfu·Ancient·Street Photo",
-  "city.guizhou.label": "Guizhou",
-  "city.guizhou.name": "Guizhou"
+  }
 }

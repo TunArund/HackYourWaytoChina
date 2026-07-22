@@ -2,6 +2,11 @@
    app.js — Version management, navigation, visa checker, language
    ============================================================ */
 
+// Clean up stale hash fragments that match slide IDs (would force-scroll on refresh)
+if (/^#s\d/.test(window.location.hash)) {
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+
 /* ============================================================
    Version Management
    ============================================================ */
@@ -155,101 +160,116 @@ window.addEventListener('resize', () => { if (currentVersion) { buildBars(); upd
 
 
 /* ============================================================
-   Visa Checker
+   Visa Checker — two-level: continent → country → detail
    ============================================================ */
+const vcC = document.getElementById('vcContinent');
 const vcN = document.getElementById('vcNationality');
-const vcQ4 = document.getElementById('vcQ4');
+const vcSA = document.getElementById('vcSelectArea');
 const vcR = document.getElementById('vcResult');
 const vcReset = document.getElementById('vcReset');
 
-document.querySelectorAll('input[name="purpose"]').forEach(r => r.addEventListener('change', () => {
-  vcQ4.style.display = r.value === 'transit' ? 'block' : 'none'; checkVisa();
-}));
-document.querySelectorAll('input[name="duration"]').forEach(r => r.addEventListener('change', checkVisa));
-document.querySelectorAll('input[name="onward"]').forEach(r => r.addEventListener('change', checkVisa));
-vcN.addEventListener('change', checkVisa);
-
-// Populate country dropdown
+// Populate continent dropdown
 (function () {
-  const s = document.getElementById('vcNationality');
+  const s = vcC;
   const ph = document.createElement('option'); ph.value = ''; ph.disabled = true; ph.selected = true;
   ph.textContent = t('s1.placeholder') || '…';
   s.appendChild(ph);
-  COUNTRY_CODES.forEach(code => {
+  const groupOrder = ['asiaPacific','middleEast','europe','americas','africa'];
+  for (const continent of groupOrder) {
     const o = document.createElement('option');
-    o.value = code;
-    o.textContent = t('countries.' + code) || code;
+    o.value = continent;
+    o.textContent = t('s1.continents.' + continent) || continent;
     s.appendChild(o);
-  });
+  }
+  const oOther = document.createElement('option');
+  oOther.value = 'other';
+  oOther.textContent = t('s1.continents.other') || 'Other';
+  s.appendChild(oOther);
 })();
 
+// Populate country dropdown when continent changes
+function populateCountries(continent) {
+  const s = vcN;
+  const prev = s.value;
+  s.innerHTML = '';
+  const ph = document.createElement('option'); ph.value = ''; ph.disabled = true; ph.selected = true;
+  ph.textContent = t('s1.placeholder') || '…';
+  s.appendChild(ph);
+  const codes = COUNTRY_CONTINENTS[continent];
+  if (codes) {
+    codes.forEach(code => {
+      const o = document.createElement('option');
+      o.value = code;
+      o.textContent = t('countries.' + code) || code;
+      if (code === prev) o.selected = true;
+      s.appendChild(o);
+    });
+  } else {
+    const o = document.createElement('option');
+    o.value = 'OTHER';
+    o.textContent = t('countries.OTHER') || 'Other';
+    if ('OTHER' === prev) o.selected = true;
+    s.appendChild(o);
+  }
+  s.disabled = false;
+}
+
+vcC.addEventListener('change', () => {
+  if (vcC.value) { populateCountries(vcC.value); } else { vcN.innerHTML = ''; vcN.disabled = true; }
+});
+vcN.addEventListener('change', () => showVisaPolicies(vcN.value));
+
 function updateCountryLang() {
-  Array.from(document.getElementById('vcNationality').options).forEach(o => {
+  const groupOrder = ['asiaPacific','middleEast','europe','americas','africa'];
+  Array.from(vcC.options).forEach(o => {
     if (!o.value) { o.textContent = t('s1.placeholder') || '…'; return; }
-    o.textContent = t('countries.' + o.value) || o.value;
+    if (o.value === 'other') { o.textContent = t('s1.continents.other') || 'Other'; return; }
+    o.textContent = t('s1.continents.' + o.value) || o.value;
   });
+  if (vcC.value) populateCountries(vcC.value);
 }
 
-function getRadio(n) { const e = document.querySelector(`input[name="${n}"]:checked`); return e ? e.value : null; }
+/* Show visa detail for selected country — replaces dropdown area */
+function showVisaPolicies(code) {
+  if (!code) return;
 
-function checkVisa() {
-  const c = vcN.value, p = getRadio('purpose'), d = getRadio('duration');
-  if (!c || !p || !d) { vcR.className = 'vc-result'; vcR.innerHTML = ''; vcReset.classList.remove('show'); return; }
-  if (p === 'transit' && !getRadio('onward')) return;
-  showResult(evalVisa(c, p, d));
-}
+  const types = [];
+  if (MUTUAL.has(code)) types.push('mutual');
+  if (VISA_FREE.has(code)) types.push('free');
+  if (TRANSIT.has(code)) types.push('transit');
+  if (types.length === 0) types.push('visaRequired');
 
-function evalVisa(c, p, d) {
-  const vf = VISA_FREE.has(c), tr = TRANSIT.has(c), mf = MUTUAL.has(c);
-  if (mf && (p === 'tourism' || p === 'business' || p === 'family') && (d === 'short' || d === 'medium'))
-    return { type: 'mutual' };
-  if (vf && (p === 'tourism' || p === 'business' || p === 'family') && (d === 'short' || d === 'medium'))
-    return { type: 'free', country: c };
-  if (tr && p === 'transit' && getRadio('onward') === 'yes' && d === 'short')
-    return { type: 'transit' };
-  if (p === 'work' && (d === 'long' || d === 'xlong'))
-    return { type: 'kvisa' };
-  return { type: 'visaRequired' };
-}
+  vcSA.style.display = 'none';
+  vcR.className = 'vc-result show';
+  vcR._lastCountry = code;
+  vcR._lastTypes = types;
 
-function showResult(r) {
-  vcR._lastResult = r;
-  const vd = VISA_DETAIL[r.type];
-  if (!vd) return;
-  const cls = r.type === 'visaRequired' ? 'visa' : r.type;
-  vcR.className = 'vc-result vc-result--' + cls + ' show';
-  const bodyKey = r.country === 'RU' && r.type === 'free' ? 'visa.free.bodyRuNote' : `visa.${r.type}.body`;
-  const conds = ta('visa.' + r.type + '.conditions');
-  const condList = Array.isArray(conds) ? conds : [];
-  vcR.innerHTML = `<strong>${t('visa.' + r.type + '.title')}</strong><p>${t(bodyKey)}</p><ul>${condList.map(c => `<li>${c}</li>`).join('')}</ul><button class="vc-detail-btn" onclick="event.stopPropagation();openVisaDetail('${r.type}','${r.country || ''}')">${t('app.buttons.details')}</button>`;
+  vcR.innerHTML = types.map(type => renderVisaSection(type, code)).join('');
+
   vcReset.classList.add('show');
 }
 
-function resetVisaChecker() {
-  vcN.selectedIndex = 0;
-  document.querySelectorAll('input[name="purpose"]:checked,input[name="duration"]:checked,input[name="onward"]:checked').forEach(r => r.checked = false);
-  vcQ4.style.display = 'none'; vcR.className = 'vc-result'; vcR.innerHTML = ''; vcReset.classList.remove('show');
-  if (typeof closeVisaDetail === 'function') closeVisaDetail();
-}
-
-
-/* ============================================================
-   Visa Detail (expand from result card)
-   ============================================================ */
-function openVisaDetail(type, country) {
-  const d = VISA_DETAIL[type]; if (!d) return;
+function renderVisaSection(type, code) {
   const conds = ta('visa.' + type + '.conditions');
   const condList = Array.isArray(conds) ? conds : [];
-  const links = d.links || [];
-  const ruNote = (country === 'RU' && type === 'free') ? `<p class="tip-box tip-box--warn" style="margin-top:8px"><strong>${t('visa.free.ruWarning')}</strong></p>` : '';
-  vcR.innerHTML = `<div style="margin-bottom:10px"><button class="detail-back" onclick="event.stopPropagation();closeVisaDetail()">← ${t('app.buttons.back')}</button></div><h4 style="margin-bottom:10px">📋 ${t('visa.' + type + '.detailTitle')}</h4><ul class="step-list">${condList.map(c => `<li>${c}</li>`).join('')}</ul>${ruNote}${links.length ? `<div style="margin-top:12px"><p style="font-size:0.78rem;font-weight:700;margin-bottom:4px">🔗 ${t('app.links.official')}</p>${links.map(l => `<a href="${l.url}" target="_blank" rel="noopener" style="display:block;font-size:0.8rem;color:var(--info);text-decoration:underline;margin-bottom:2px">${t('visa.links.' + l.key)} →</a>`).join('')}</div>` : ''}`;
-  history.pushState({ visaDetail: true, type, country }, '', '#s1-detail-visa');
+  const links = (VISA_DETAIL[type] && VISA_DETAIL[type].links) || [];
+  const ruNote = (code === 'RU' && type === 'free')
+    ? '<p class="tip-box tip-box--warn"><strong>' + t('visa.free.ruWarning') + '</strong></p>' : '';
+  const linksBlock = links.length
+    ? '<div class="vc-links-block"><p class="vc-links-heading">🔗 ' + t('app.links.official') + '</p>' + links.map(l => '<a href="' + l.url + '" target="_blank" rel="noopener" class="vc-link">' + t('visa.links.' + l.key) + ' →</a>').join('') + '</div>' : '';
+
+  return '<h4 class="vc-section-title">📋 ' + t('visa.' + type + '.detailTitle') + '</h4>' +
+    '<ul class="step-list">' + condList.map(c => '<li>' + c + '</li>').join('') + '</ul>' +
+    ruNote + linksBlock;
 }
 
-function closeVisaDetail() {
-  const r = vcR._lastResult;
-  if (r) showResult(r);
-  history.pushState(null, '', '#s1');
+function resetVisaChecker() {
+  vcC.selectedIndex = 0;
+  vcN.innerHTML = ''; vcN.disabled = true;
+  vcSA.style.display = '';
+  vcR.className = 'vc-result'; vcR.innerHTML = '';
+  vcR._lastCountry = null;
+  vcReset.classList.remove('show');
 }
 
 
