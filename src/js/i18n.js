@@ -36,6 +36,7 @@ function refreshUI() {
     }
   }
   if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
+  if (typeof updateLanguageButton === 'function') updateLanguageButton();
   if (typeof updateCountryLang === 'function') updateCountryLang();
 }
 

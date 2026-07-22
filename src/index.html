@@ -32,8 +32,8 @@
 
   <!-- ====== COVER ====== -->
   <section class="slide slide--cover slide-pos--mid" id="s0">
-    <div class="slide-inner" style="justify-content:center;align-items:center;text-align:center;flex-direction:column">
-      <div style="max-width:560px">
+    <div class="slide-inner">
+      <div class="cover-wrap">
         <span style="font-size:3.2rem;display:block;margin-bottom:10px">🇨🇳</span>
         <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;margin-bottom:8px;color:var(--text)" data-i18n="app.cover.title">The Complete China Guide</h2>
         <p style="font-size:1rem;color:var(--text-secondary);margin-bottom:28px" data-i18n="app.cover.subtitle">Choose your journey for a tailored guide</p>
@@ -41,7 +41,7 @@
           <div class="cover-card cover-card--short" onclick="startVersion('short')" role="button" tabindex="0"><span class="icon">🛫</span><h3 data-i18n="app.cover.short.label">Short-term Visitor</h3><span class="tagline" data-i18n="app.cover.short.tagline">2 – 30 days</span><span class="examples" data-i18n="app.cover.short.examples">Tourism · Business · Visit · Transit</span></div>
           <div class="cover-card cover-card--long" onclick="startVersion('long')" role="button" tabindex="0"><span class="icon">🏠</span><h3 data-i18n="app.cover.long.label">Long-term Resident</h3><span class="tagline" data-i18n="app.cover.long.tagline">Already in China · Settling</span><span class="examples" data-i18n="app.cover.long.examples">Work · Study · Visa Transfer · Settle</span></div>
         </div>
-        <p style="margin-top:20px;font-size:0.8rem;color:var(--text-muted)" data-i18n="app.cover.footer">📅 Updated July 2026 &nbsp;·&nbsp; 🌐 Multilingual</p>
+        <p class="slide-footer slide-footer--cover" data-i18n="app.cover.footer">📅 Updated July 2026 &nbsp;·&nbsp; 🌐 Multilingual</p>
       </div>
     </div>
   </section>
@@ -189,7 +189,7 @@
   </section>
 
   <!-- S10: Emergency+Exit  mid -->
-  <section class="slide slide--short" id="s10">
+  <section class="slide slide--short slide-pos--mid" id="s10">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
         <div class="slide-head"><span class="s-icon">🆘👋</span><h2 class="s-title" data-i18n="s10.meta.title">Emergency+Exit</h2></div>

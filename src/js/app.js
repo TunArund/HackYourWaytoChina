@@ -115,7 +115,7 @@ function showBarTooltip(idx) {
 }
 
 let hoverActive = false;
-function isOverScrubber(e) { const r = scrubber.getBoundingClientRect(); return e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; }
+function isOverScrubber(e) { const r = scrubber.getBoundingClientRect(); const buf = 36; return e.clientX >= r.left - buf && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; }
 
 scrubber.addEventListener('mousemove', e => {
   if (dragging) return; hoverActive = true;

@@ -14,10 +14,10 @@
   --radius:12px;--radius-sm:8px;
   --font:"PingFang SC","Noto Sans SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
   --transition:0.25s cubic-bezier(0.4,0,0.2,1);
-  --tl-left:24px;--tl-dot-s:12px;--tl-line-w:2px;
+  --tl-right:24px;--tl-dot-s:12px;--tl-line-w:2px;
 }
-@media(min-width:640px){:root{--tl-left:36px;--tl-dot-s:14px}}
-@media(min-width:1024px){:root{--tl-left:44px}}
+@media(min-width:640px){:root{--tl-right:36px;--tl-dot-s:14px}}
+@media(min-width:1024px){:root{--tl-right:44px}}
 
 /* ============================================================
    Reset
@@ -44,26 +44,23 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 .slide--short,.slide--long{display:none}
 body.version-short .slide--short,body.version-long .slide--long{display:flex}
 body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
+.slide:not(.slide--cover){scroll-margin-top:49px}
 
 /* ============================================================
    Slide
    min-height instead of height — dvh for dynamic address bar
    ============================================================ */
 .slide{
-  min-height:100dvh;scroll-snap-align:start;overflow:hidden;
-  position:relative;display:flex;flex-direction:column;
+  min-height:100svh;scroll-snap-align:start;overflow:hidden;
+  position:relative;display:grid;grid-template-rows:minmax(100svh,auto);
   background:var(--bg);
 }
-
-/* Cover slide gets a subtle warm tint */
-.slide--cover{background:linear-gradient(160deg,#fef0f2 0%,var(--bg) 50%,#eff6ff 100%)}
-
 /* ============================================================
    Side Timeline line
    ============================================================ */
 .slide::before{
   content:'';position:absolute;z-index:0;
-  left:calc(var(--tl-left) + var(--tl-dot-s)/2 - var(--tl-line-w)/2);
+  right:calc(var(--tl-right) + var(--tl-dot-s)/2 - var(--tl-line-w)/2);
   top:0;bottom:0;width:var(--tl-line-w);
   background:var(--timeline-line);
 }
@@ -72,43 +69,64 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
    Slide Inner
    ============================================================ */
 .slide-inner{
-  position:relative;z-index:1;width:100%;height:100%;
+  position:relative;z-index:1;width:100%;
   display:flex;flex-direction:column;
-  padding:36px 50px 36px calc(var(--tl-left) + 36px);
+  padding:0 calc(var(--tl-right) + 36px) 0 24px;
   color:var(--text);
 }
-@media(min-width:640px){.slide-inner{padding:72px 56px 72px calc(var(--tl-left) + 44px)}}
-@media(min-width:1024px){.slide-inner{flex-direction:row;align-items:center;gap:48px;padding:72px 64px 72px calc(var(--tl-left) + 44px)}}
+@media(min-width:640px){.slide-inner{padding:0 calc(var(--tl-right) + 44px) 0 32px}}
+@media(min-width:1024px){.slide-inner{flex-direction:row;align-items:center;gap:48px;padding:0 calc(var(--tl-right) + 44px) 0 36px}}
 
 /* Position variants */
 .slide-pos--top .slide-inner{justify-content:flex-start}
-.slide-pos--mid .slide-inner{justify-content:center}
+.slide-pos--mid .slide-inner{justify-content:flex-start}
 .slide-pos--bot .slide-inner{justify-content:flex-end}
+
+/* Cover slide gets a subtle warm tint */
+.slide--cover{background:linear-gradient(160deg,#fef0f2 0%,var(--bg) 50%,#eff6ff 100%)}
+.slide--cover::before{display:none}
+.slide--cover .slide-inner{flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:36px;padding-bottom:36px}
+.slide--cover .slide-inner>.cover-wrap{max-width:560px}
 
 /* ============================================================
    Timeline Dot + Head Row
    ============================================================ */
 .tl-head-row{
-  display:flex;align-items:center;gap:20px;
-  flex-shrink:0;
-  margin-left:-36px; /* dot centered on timeline line */
+  display:flex;align-items:center;gap:12px;
+  flex-shrink:0;position:relative;
+  justify-content:flex-end;
+  padding-right:calc(var(--tl-dot-s) + 8px);
+  width:calc(100% + 36px);margin-right:-36px; /* extend into R padding, dot→timeline */
 }
-@media(min-width:640px){.tl-head-row{margin-left:-44px}}
+@media(min-width:640px){.tl-head-row{gap:16px;width:calc(100% + 44px);margin-right:-44px}}
+@media(min-width:1024px){.tl-head-row{
+  order:1;margin-left:auto;margin-right:-44px;gap:4px;
+  width:clamp(220px,18vw,340px);flex-shrink:0;
+  flex-direction:column;align-items:flex-end;justify-content:center;
+  padding-right:calc(var(--tl-dot-s) + 12px);
+}}
 .tl-dot{
-  flex-shrink:0;position:relative;z-index:3;
+  position:absolute;z-index:3;
+  right:0;top:50%;transform:translateY(-50%);
   width:var(--tl-dot-s);height:var(--tl-dot-s);border-radius:50%;
   background:var(--timeline-dot);
   box-shadow:0 0 0 4px var(--accent-light);
 }
+@media(min-width:1024px){.tl-dot{
+  right:calc(var(--tl-dot-s)/2);transform:translate(50%,-50%);
+}}
 
 /* ============================================================
    Slide Head & Body
    ============================================================ */
-.slide-head{flex-shrink:0}
-@media(min-width:1024px){.slide-head{width:260px}}
-.slide-head .s-icon{font-size:2.2rem;margin-bottom:6px;display:block}
-.slide-head .s-title{font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;line-height:1.2;color:var(--text)}
-.slide-head .s-sub{font-size:0.88rem;color:var(--text-secondary);line-height:1.5}
+.slide-head{min-width:0;text-align:right}
+.slide-head .s-icon{font-size:2.2rem;display:inline;margin-right:0.3em;vertical-align:middle}
+.slide-head .s-title{display:inline;font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;line-height:1.2;color:var(--text)}
+.slide-head .s-sub{font-size:0.88rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+@media(min-width:1024px){
+  .slide-head .s-icon{display:block;margin-right:0;margin-bottom:6px}
+  .slide-head .s-title{display:block}
+}
 .slide-body{flex:1;min-width:0;min-height:0;position:relative;overflow-y:auto;overflow-x:hidden;display:flex;flex-direction:column}
 @media(max-width:1023px){.slide-body{margin-top:10px}}
 
@@ -125,8 +143,8 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .info-card:hover{box-shadow:var(--card-shadow-hover);border-color:color-mix(in srgb,var(--border) 70%,var(--accent))}
 .info-card .c-label{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:3px}
 .info-card h4{font-size:0.93rem;font-weight:700;margin-bottom:3px;color:var(--text)}
-.info-card p{font-size:0.81rem;color:var(--text-secondary);line-height:1.5}
-.info-card ol,.info-card ul{margin:6px 0 0 16px;font-size:0.8rem;color:var(--text-secondary);line-height:1.5}
+.info-card p{font-size:0.81rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+.info-card ol,.info-card ul{margin:6px 0 0 16px;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
 
 /* Card accent: left border highlight */
 .info-card--hl{border-left:3px solid var(--accent)}
@@ -207,19 +225,15 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .tip-box strong{display:block;margin-bottom:2px}
 
 /* ============================================================
-   Tables / Emergency / Steps
+   Emergency Grid / Steps
    ============================================================ */
-.slide-table{width:100%;border-collapse:collapse;font-size:0.82rem}
-.slide-table td{padding:7px 10px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-secondary)}
-.slide-table td:first-child{font-weight:600;white-space:nowrap;width:35%;color:var(--text)}
-.slide-table tr:last-child td{border-bottom:none}
 .em-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media(max-width:400px){.em-grid{grid-template-columns:1fr}}
 .em-card{background:var(--bg);border-radius:var(--radius-sm);padding:12px;text-align:center;border:1px solid var(--border)}
 .em-card .num{font-size:1.3rem;font-weight:800;color:var(--accent)}
 .em-card .lbl{font-size:0.76rem;color:var(--text-secondary);margin-top:2px}
 .step-list{list-style:none;counter-reset:step}
-.step-list li{counter-increment:step;position:relative;padding-left:32px;margin-bottom:10px;font-size:0.83rem;color:var(--text-secondary);line-height:1.45}
+.step-list li{counter-increment:step;position:relative;padding-left:32px;margin-bottom:10px;font-size:0.83rem;color:var(--text-secondary);line-height:1.45;overflow-wrap:break-word}
 .step-list li::before{content:counter(step);position:absolute;left:0;top:0;width:22px;height:22px;background:var(--accent-light);color:var(--accent);border-radius:50%;font-size:0.72rem;font-weight:700;display:flex;align-items:center;justify-content:center}
 .step-list li strong{color:var(--text)}
 
@@ -227,25 +241,45 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
    Draggable Scrubber — dark bars on light bg
    ============================================================ */
 .nav-scrubber{
-  position:fixed;right:10px;top:50%;transform:translateY(-50%);z-index:100;
-  display:flex;flex-direction:column;gap:7px;padding:8px 6px;cursor:pointer;
+  position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:100;
+  display:flex;flex-direction:column;align-items:flex-end;gap:7px;
+  padding:0 20px 0 0;cursor:pointer;
   opacity:0;pointer-events:none;transition:opacity 0.3s;
   touch-action:none;
   -webkit-tap-highlight-color:transparent;
 }
 .nav-scrubber.visible{opacity:1;pointer-events:auto}
-.nav-bar{width:22px;height:3px;border-radius:2px;background:var(--timeline-line);transition:all var(--transition);pointer-events:none}
-.nav-bar.active{width:32px;background:var(--accent);box-shadow:0 0 4px rgba(196,30,58,0.3)}
-.nav-scrubber.dragging .nav-bar{width:28px}
-.nav-scrubber.dragging .nav-bar.active{width:40px;background:var(--accent);box-shadow:0 0 10px rgba(196,30,58,0.5);transform:scaleX(1.2)}
+.nav-bar{
+  width:22px;height:3px;border-radius:2px;
+  background:var(--timeline-line);
+  transition:all var(--transition);
+  pointer-events:none;
+}
+.nav-bar.active{
+  width:calc(var(--tl-right) + var(--tl-dot-s)/2);
+  background:var(--accent);
+  box-shadow:0 0 4px rgba(196,30,58,0.3);
+}
+.nav-scrubber.dragging .nav-bar{width:22px}
+.nav-scrubber.dragging .nav-bar.active{
+  width:calc(var(--tl-right) + var(--tl-dot-s)/2 + 6px);
+  background:var(--accent);
+  box-shadow:0 0 10px rgba(196,30,58,0.5);
+}
 .scrub-tooltip{
-  display:none;position:fixed;right:56px;z-index:101;
+  display:none;position:fixed;
+  right:calc(var(--tl-right) + var(--tl-dot-s)/2 + 16px);
+  z-index:101;
   background:var(--text);color:var(--bg);padding:6px 14px;border-radius:8px;
   font-size:0.8rem;font-weight:600;white-space:nowrap;
   pointer-events:none;transform:translateY(-50%);
 }
 .scrub-tooltip.show{display:block}
-@media(max-width:480px){.nav-scrubber{right:4px;gap:6px;padding:6px 8px}.nav-bar{width:18px}.nav-bar.active{width:26px}}
+@media(max-width:480px){
+  .nav-scrubber{gap:5px;padding:0}
+  .nav-bar{width:16px}
+  .nav-scrubber.dragging .nav-bar{width:20px}
+}
 
 /* ============================================================
    Top Bar — light, subtle
@@ -291,16 +325,16 @@ body [lang]{display:none}
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 
 /* ============================================================
-   In-slide footer (last slide only)
+   Footer — unified across cover & slides
    ============================================================ */
-.slide-footer{font-size:0.7rem;color:var(--text-muted);margin-top:auto;padding-top:12px;text-align:center;line-height:1.5}
+.slide-footer{font-size:0.75rem;color:var(--text-muted);text-align:center;line-height:1.5;margin-top:auto;padding-top:12px}
+.slide-footer--cover{margin-top:20px;padding-top:0}
 
 /* ============================================================
    Detail Panel — expand/collapse within slide-body
    ============================================================ */
 .detail-panel{
-  display:none;flex:1;overflow-y:auto;z-index:5;
-  background:var(--surface);border-radius:var(--radius);
+  display:none;flex:1;overflow-y:auto;overflow-x:hidden;z-index:5;
   padding:20px 18px;
   animation:fadeIn 0.3s ease;
   -webkit-overflow-scrolling:touch;
@@ -313,10 +347,10 @@ body [lang]{display:none}
   margin-bottom:14px;padding:4px 0;
 }
 .detail-back:hover{opacity:0.7}
-.detail-panel h3{font-size:1.05rem;font-weight:700;margin-bottom:12px;color:var(--text)}
-.detail-panel h4{font-size:0.88rem;font-weight:700;margin:14px 0 6px;color:var(--text)}
-.dp-intro{font-size:0.82rem;color:var(--text-secondary);margin-bottom:10px;line-height:1.5}
-.dp-text{font-size:0.85rem;color:var(--text);line-height:1.6;margin-bottom:16px}
+.detail-panel h3{font-size:1.05rem;font-weight:700;margin-bottom:12px;color:var(--text);overflow-wrap:break-word}
+.detail-panel h4{font-size:0.88rem;font-weight:700;margin:14px 0 6px;color:var(--text);overflow-wrap:break-word}
+.dp-intro{font-size:0.82rem;color:var(--text-secondary);margin-bottom:10px;line-height:1.5;overflow-wrap:break-word}
+.dp-text{font-size:0.85rem;color:var(--text);line-height:1.6;margin-bottom:16px;overflow-wrap:break-word}
 .dp-subtitle{font-size:0.88rem;font-weight:600;color:var(--text-secondary);margin-bottom:8px}
 .dp-info{font-size:0.82rem;color:var(--text-secondary);margin-bottom:2px}
 .mt-sm{margin-top:8px}
@@ -329,8 +363,13 @@ body [lang]{display:none}
 .detail-table th,.detail-table td{
   padding:6px 8px;text-align:left;
   border-bottom:1px solid var(--border);
+  overflow-wrap:break-word;
 }
-.detail-table th{font-weight:700;color:var(--text);background:var(--bg);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.04em}
+.table-wrapper{
+  overflow-x:auto;width:100%;
+  -webkit-overflow-scrolling:touch;
+}
+.detail-table th{font-weight:700;color:var(--text);background:var(--bg);font-size:0.72rem;letter-spacing:0.04em}
 .detail-badge{
   display:inline-block;padding:2px 8px;border-radius:50px;
   font-size:0.68rem;font-weight:600;
@@ -366,8 +405,6 @@ body [lang]{display:none}
    Mobile spacing — tighter to fit more content per screen
    ============================================================ */
 @media(max-width:639px){
-  .tl-head-row{gap:12px}
-  .slide-head .s-icon{margin-bottom:2px}
   .slide-head .s-title{margin-bottom:2px}
   .info-cards{gap:6px}
   .info-card{padding:10px 12px}
@@ -375,4 +412,5 @@ body [lang]{display:none}
   .step-list li{margin-bottom:6px}
   .detail-panel{padding:14px 12px}
   .detail-table{font-size:0.72rem}
+  .detail-table th,.detail-table td{padding:4px 6px}
 }

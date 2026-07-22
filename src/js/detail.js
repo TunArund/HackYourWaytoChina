@@ -73,7 +73,7 @@ const H = {
   title: (text) => `<h3>${text}</h3>`,
   h4: (text) => `<h4>${text}</h4>`,
   intro: (key) => `<p class="dp-intro">${t(key)}</p>`,
-  table: (headers, rows) => `<table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`,
+  table: (headers, rows) => `<div class="table-wrapper"><table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`,
   tip: (type, title, body) => `<div class="tip-box tip-box--${type}"><strong>${title}</strong><span>${body}</span></div>`,
   subGrid: (items) => `<div class="sub-card-grid">${items.join('')}</div>`,
   subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('app.buttons.expand')} ]</div></div>`,
