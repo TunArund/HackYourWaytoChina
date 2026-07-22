@@ -25,9 +25,7 @@ HackYourWaytoChina/
 │   └── docx2md.py         # 文档转换
 └── docs/                  # 文档
     ├── research.md        # 市场调研
-    ├── roadmap.md         # 路线图
-    ├── feedback.md        # 反馈记录
-    └── DEPLOYMENT.md      # 部署指南
+    └── todo.md            # 待办
 ```
 
 ## 多语言支持
@@ -59,7 +57,9 @@ HackYourWaytoChina/
 | **核心痛点** | 支付壁垒、语言障碍、上不了 Google | 居留许可、租房、银行开户、医保、子女教育 |
 | **入境手续** | 完整保留（签证→通关→登记） | **大幅简化**（用户已入境，跳过签证和通关） |
 | **信息深度** | 快速上手 | 深入安居指南 |
-
+## 部署
+已通过GitHub托管到Cloudflare Pages
+域名: hackyourwaytochina.tunarund.workers.dev
 ## 屏幕规划
 
 ### 公共屏
@@ -100,26 +100,15 @@ HackYourWaytoChina/
 | L7 | 🛒🍜👔 日常生活 | 电商(淘宝/京东/拼多多/盒马)、饮食+进口超市、尺码+四季穿衣 |
 | L8 | 📅🆘 合规+紧急 | 续期提醒(30天前)、过期滞留后果、换护照/换工作流程、永居条件、4条热线 |
 
-## 已知缺口
+## 待办
 
-以下问题已通过 [resources.md](resources.md) 调研确认，待下期实现：
-
-| # | 缺口 | 影响 | 计划 |
-|---|------|------|------|
-| 1 | **语言仅中英** | TOP10 客源国中仅覆盖 3 国（中+英+新加坡），韩国(#1)、俄罗斯(#2)、日本(#8)、越南(#4) 等均缺 | [roadmap.md](roadmap.md) 语言扩展 |
-| 2 | **牙科内容薄弱** | S7 仅几行文字，但韩日客群核心诉求之一即牙科；需深入市场调研 | 公司一阶段重点 |
-| 3 | **签证缺详情** | S1 自测器仅判断类型，不展示签证要求、材料、申请链接、费用 | [roadmap.md](roadmap.md) 签证详情页 |
-| 4 | **医疗旅游缺位** | 2025年128万国际患者(+73.6%)，但仅 L5 几行文字；缺牙科/眼科/中医专题 | [roadmap.md](roadmap.md) 医疗旅游专题 |
-| 5 | **短/长版共用配色** | CSS 定义了 `--short-accent` / `--long-accent` 但两版实际使用同一调色板 | 暂缓 |
-| 6 | **签证政策俄语区特殊** | 俄罗斯免签至 2026.9.14（非 12.31），自测器未做区分提示 | 待修复 |
+待解决问题和计划功能详见 [todo.md](docs/todo.md)。
 
 ## 文档索引
 
 | 文档 | 内容 |
 |------|------|
 | [src/index.html](src/index.html) | 主页面 |
-| [CLAUDE.md](CLAUDE.md) | 开发环境（Python、工具脚本、本地开发） |
-| [docs/research.md](docs/research.md) | 市场调研（统计数据、牙科专项调研、客群画像） |
-| [docs/roadmap.md](docs/roadmap.md) | 路线图 + 实施规格 |
-| [docs/feedback.md](docs/feedback.md) | Boss 反馈记录 |
-| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Cloudflare Pages 部署指南 |
+| [docs/todo.md](docs/todo.md) | 待办与计划 |
+| [docs/research.md](docs/research.md) | 市场调研（统计数据、客群画像） |
+| [docs/dental-resarch.md](docs/dental-resarch.md) | 牙科专项调研 |

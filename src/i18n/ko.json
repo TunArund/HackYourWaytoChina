@@ -213,6 +213,12 @@
       "step3": "Visa/MC 연결(낮은 한도)",
       "backupTitle": "💡 백업",
       "backupDesc": "현금과 ATM 카드를 조금 휴대. 한 앱이 실패하면 다른 앱 사용."
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "이동+식사+숙박",
+      "sub": "교통·식사·숙박·의류 팁"
     },
     "transport": {
       "label": "🚕 교통",
@@ -225,37 +231,10 @@
     "accommodation": {
       "label": "🏨 숙박",
       "desc": "<strong>Trip.com/Booking</strong>:\"외국인 수용\" 확인.<br><strong>Airbnb</strong>:중국 사업 중단.<br><strong>외국인 수용 자격</strong>:모든 호텔이 외국인을 받을 수 있는 것은 아님. 예약 전 확인."
-    }
-  },
-  "s6": {
-    "meta": {
-      "title": "필수 앱",
-      "sub": "필수 앱. 입국 전 다운로드."
     },
-    "essential": {
-      "label": "✅ 필수",
-      "items": [
-        "WeChat(채팅+결제)",
-        "Alipay(결제)",
-        "Didi(택시)",
-        "바이두 지도"
-      ]
-    },
-    "travel": {
-      "label": "🧳 여행",
-      "items": [
-        "12306(기차)",
-        "씨트립(호텔)",
-        "따중댄핑(맛집)"
-      ]
-    },
-    "useful": {
-      "label": "📱 유용",
-      "items": [
-        "메이투안(배달)",
-        "샤오홍슈(SNS)",
-        "Pleco(사전)"
-      ]
+    "clothing": {
+      "label": "👔 의류",
+      "desc": "중국 사이즈는 구미보다 1-2 작음. US M≈CN L/XL. 유니클로/ZARA 글로벌 사이즈. 봄:온화·여름:무덥고 습함·가을:최적·겨울:북 -10°C/남 습하고 추움."
     }
   },
   "s7": {

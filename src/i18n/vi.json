@@ -213,6 +213,12 @@
       "step3": "Liên kết Visa/MC (giới hạn thấp hơn)",
       "backupTitle": "💡 Dự phòng",
       "backupDesc": "Mang theo một ít tiền mặt RMB+thẻ ATM. Nếu một ứng dụng không hoạt động, hãy thử ứng dụng khác."
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "Di chuyển+Ăn uống+Lưu trú",
+      "sub": "Di chuyển, ăn uống, lưu trú & mẹo quần áo"
     },
     "transport": {
       "label": "🚕 Giao thông",
@@ -225,37 +231,10 @@
     "accommodation": {
       "label": "🏨 Lưu trú",
       "desc": "<strong>Trip.com/Booking</strong>:kiểm tra \"chấp nhận khách nước ngoài\".<br><strong>Airbnb</strong>:đã ngừng hoạt động tại Trung Quốc.<br><strong>Tiêu chuẩn khách nước ngoài</strong>:không phải tất cả khách sạn đều có thể nhận khách nước ngoài. Xác nhận trước khi đặt."
-    }
-  },
-  "s6": {
-    "meta": {
-      "title": "Ứng dụng cần thiết",
-      "sub": "Ứng dụng thiết yếu. Tải trước khi vào Trung Quốc."
     },
-    "essential": {
-      "label": "✅ Thiết yếu",
-      "items": [
-        "WeChat (trò chuyện+thanh toán)",
-        "Alipay (thanh toán)",
-        "Didi (taxi)",
-        "Bản đồ Baidu"
-      ]
-    },
-    "travel": {
-      "label": "🧳 Du lịch",
-      "items": [
-        "12306 (tàu)",
-        "Trip.com (khách sạn)",
-        "Dianping (ẩm thực)"
-      ]
-    },
-    "useful": {
-      "label": "📱 Hữu ích",
-      "items": [
-        "Meituan (giao hàng)",
-        "Xiaohongshu (mạng xã hội)",
-        "Pleco (từ điển)"
-      ]
+    "clothing": {
+      "label": "👔 Quần áo",
+      "desc": "Size Trung Quốc nhỏ hơn US/EU 1-2 size. US M≈CN L/XL. Uniqlo/ZARA size quốc tế. Xuân:ấm·Hè:nóng ẩm·Thu:tuyệt nhất·Đông:Bắc -10°C/Nam ẩm lạnh."
     }
   },
   "s7": {

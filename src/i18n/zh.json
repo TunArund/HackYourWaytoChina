@@ -213,6 +213,12 @@
       "step3": "绑定Visa/MC（额度较低）",
       "backupTitle": "💡 备用方案",
       "backupDesc": "随身携带少量人民币现金+ATM卡。如一个App失败，尝试另一个。"
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "出行+饮食+住宿",
+      "sub": "交通出行、餐饮美食、酒店住宿与穿衣指南"
     },
     "transport": {
       "label": "🚕 出行",
@@ -225,37 +231,10 @@
     "accommodation": {
       "label": "🏨 住宿",
       "desc": "<strong>Trip.com/Booking</strong>:勾选\"接待外宾\"。<br><strong>Airbnb</strong>:已停止中国业务。<br><strong>涉外资质</strong>:并非所有酒店都能接待外国人。预订前确认。"
-    }
-  },
-  "s6": {
-    "meta": {
-      "title": "必备App",
-      "sub": "必装应用。入境前下载。"
     },
-    "essential": {
-      "label": "✅ 必装",
-      "items": [
-        "微信(聊天+支付)",
-        "支付宝(支付)",
-        "滴滴(打车)",
-        "百度地图"
-      ]
-    },
-    "travel": {
-      "label": "🧳 出行",
-      "items": [
-        "12306(火车)",
-        "携程(酒店)",
-        "大众点评(美食)"
-      ]
-    },
-    "useful": {
-      "label": "📱 实用",
-      "items": [
-        "美团(外卖)",
-        "小红书(社交)",
-        "Pleco(词典)"
-      ]
+    "clothing": {
+      "label": "👔 穿衣指南",
+      "desc": "中国尺码比欧美小1-2码，US M≈CN L/XL。优衣库/ZARA全球尺码一致。春季温暖·夏季湿热·秋季最佳·冬季北方-10°C/南方湿冷。"
     }
   },
   "s7": {

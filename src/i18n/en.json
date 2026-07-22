@@ -213,6 +213,12 @@
       "step3": "Link Visa/MC(lower limit)",
       "backupTitle": "💡 Backup",
       "backupDesc": "Carry some RMB cash+ATM. If one app fails, try the other."
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "Move+Eat+Stay",
+      "sub": "Transport, dining, accommodation & clothing tips"
     },
     "transport": {
       "label": "🚕 Transport",
@@ -225,37 +231,10 @@
     "accommodation": {
       "label": "🏨 Stay",
       "desc": "<strong>Trip.com/Booking</strong>:check \"accepts foreign guests\".<br><strong>Airbnb</strong>:stopped China ops.<br><strong>Foreign guest qualification</strong>:not all hotels can host foreigners. Confirm before booking."
-    }
-  },
-  "s6": {
-    "meta": {
-      "title": "Apps to Download",
-      "sub": "Essential apps. Download before entering China."
     },
-    "essential": {
-      "label": "✅ Essential",
-      "items": [
-        "WeChat (chat+pay)",
-        "Alipay (pay)",
-        "Didi (taxi)",
-        "Baidu Maps"
-      ]
-    },
-    "travel": {
-      "label": "🧳 Travel",
-      "items": [
-        "12306 (train)",
-        "Trip.com (hotels)",
-        "Dianping (food)"
-      ]
-    },
-    "useful": {
-      "label": "📱 Useful",
-      "items": [
-        "Meituan (delivery)",
-        "Xiaohongshu (social)",
-        "Pleco (dictionary)"
-      ]
+    "clothing": {
+      "label": "👔 Clothing",
+      "desc": "CN 1-2 sizes smaller than US/EU. US M≈CN L/XL. Uniqlo/ZARA global sizing. Spring:mild·Summer:hot humid·Autumn:best·Winter:N -10°C/S humid cold."
     }
   },
   "s7": {

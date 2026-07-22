@@ -213,6 +213,12 @@
       "step3": "Visa/MCをリンク（制限低め）",
       "backupTitle": "💡 バックアップ",
       "backupDesc": "現金とATMカードを少し持参。一方のアプリが失敗した場合、もう一方を試す。"
+    }
+  },
+  "s6": {
+    "meta": {
+      "title": "移動+食事+宿泊",
+      "sub": "交通・食事・宿泊・服装のヒント"
     },
     "transport": {
       "label": "🚕 交通",
@@ -225,37 +231,10 @@
     "accommodation": {
       "label": "🏨 宿泊",
       "desc": "<strong>Trip.com/Booking</strong>:\"外国人受入可\"を確認。<br><strong>Airbnb</strong>:中国事業停止。<br><strong>外国人受入資格</strong>:すべてのホテルが外国人を受け入れられるわけではない。予約前に確認。"
-    }
-  },
-  "s6": {
-    "meta": {
-      "title": "必須アプリ",
-      "sub": "必須アプリ。入国前ダウンロード。"
     },
-    "essential": {
-      "label": "✅ 必須",
-      "items": [
-        "WeChat(チャット+決済)",
-        "Alipay(決済)",
-        "Didi(タクシー)",
-        "百度地図"
-      ]
-    },
-    "travel": {
-      "label": "🧳 旅行",
-      "items": [
-        "12306(列車)",
-        "携程(ホテル)",
-        "大衆点評(グルメ)"
-      ]
-    },
-    "useful": {
-      "label": "📱 便利",
-      "items": [
-        "美団(デリバリー)",
-        "小紅書(SNS)",
-        "Pleco(辞書)"
-      ]
+    "clothing": {
+      "label": "👔 服装",
+      "desc": "中国サイズは欧米より1-2サイズ小さめ。US M≈CN L/XL。ユニクロ/ZARAは世界共通。春:温暖·夏:蒸し暑い·秋:最適·冬:北は-10°C/南は湿冷。"
     }
   },
   "s7": {
