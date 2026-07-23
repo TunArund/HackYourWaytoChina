@@ -74,32 +74,61 @@
   "s2": {
     "meta": {
       "title": "出发前准备",
-      "sub": "材料清单 + 入境卡预填 + 最终检查。北京口岸<strong>97%</strong>旅客已在线填入境卡。"
+      "sub": "材料清单 + 入境卡预填 + 最终检查。北京口岸97%旅客已在线填入境卡。"
+    },
+    "intro": "出发前请确认以下材料准备就绪。点击每项查看详情。",
+    "detail": {
+      "back": "返回"
     },
     "passport": {
-      "label": "📘 必备",
-      "title": "护照",
-      "desc": "有效期≥6个月，≥2空白页"
+      "label": "护照",
+      "title": "护照要求",
+      "steps": [
+        "有效期距离计划离境日期至少6个月以上。",
+        "至少2页空白签证页（备注/加注页不算）。",
+        "如护照即将到期：先换新护照再申请中国签证。",
+        "手机上保存护照信息页照片——以防丢失。",
+        "双重国籍者：全程使用同一本护照（签证申请、入境、出境）。"
+      ],
+      "sub": "有效期与空白页要求"
     },
     "tickets": {
-      "label": "🎫 必备",
-      "title": "返程机票+酒店",
-      "desc": "打印或截图电子行程单；酒店订单含中文地址"
+      "label": "机票+酒店",
+      "title": "返程机票与酒店预订",
+      "steps": [
+        "打印或截图返程/联程机票——边检可能要求出示离境证明。",
+        "酒店预订确认单含完整中英文地址。",
+        "如住在亲友家：准备邀请函，含邀请人姓名、地址、电话和身份证复印件。",
+        "小技巧：预订可免费取消的酒店用于签证/入境，抵达后再取消。"
+      ],
+      "sub": "返程机票与酒店凭证"
     },
     "arrivalCard": {
-      "label": "📱 在线入境卡",
-      "title": "提前在线填写",
-      "desc": "s.nia.gov.cn → 填好 → 截图二维码 → 扫码通关。支持拍照识别护照。也可用\"移民局12367\"APP/微信/支付宝小程序。"
+      "label": "入境卡",
+      "title": "入境卡 — 提前在线填写",
+      "steps": [
+        "出发前访问 s.nia.gov.cn 在线填写入境卡（免费）。",
+        "提交后截图保存二维码——入境时在边检扫描。",
+        "支持护照拍照扫描（自动填入你的信息）。",
+        "其他方式：移民局12367 APP（iOS/安卓）、微信小程序、支付宝小程序。",
+        "北京口岸97%的旅客已使用在线填报。完全跳过纸质入境卡。",
+        "每人需填一张入境卡（包括儿童）。"
+      ],
+      "sub": "在线预填，保存二维码"
     },
     "finalCheck": {
-      "label": "✅ 最终检查",
-      "items": [
-        "<strong>护照≥6个月？</strong>",
-        "<strong>签证/免签确认？</strong>",
-        "<strong>入境卡填好？截图</strong>",
-        "<strong>支付宝/微信绑卡？</strong>",
-        "<strong>酒店地址中英文保存？</strong>"
-      ]
+      "label": "最终检查",
+      "title": "出发前最终检查清单",
+      "steps": [
+        "护照：有效期6个月以上，2页以上空白页。",
+        "签证或免签资格确认（用S1检查）。",
+        "入境卡：在线填写完成，二维码截图保存。",
+        "支付宝/微信：已下载并绑定外卡（出发前完成——见S5）。",
+        "酒店地址：中英文保存到手机（给边检和出租车司机看）。",
+        "VPN：出发前安装、付费、测试（见S4）。",
+        "旅行保险：保单号保存，紧急联系电话记好。"
+      ],
+      "sub": "登机前7项检查清单"
     }
   },
   "s3": {
@@ -108,17 +137,65 @@
       "sub": "通关流程+海关限额+住宿登记。14岁以下/70岁以上免指纹。"
     },
     "steps": {
-      "label": "🛂 通关6步",
-      "desc": "①健康检疫→②指纹→③边检(护照+入境卡QR)→④行李→⑤海关→⑥到达大厅"
+      "label": "入境流程",
+      "desc": "<strong>① 健康检疫</strong> — 体温检测，出示健康申报二维码（建议出发前在线填写）<br><strong>② 指纹采集</strong> — 14-70岁外国人需留指纹（14岁以下、70岁以上免采）<br><strong>③ 边检</strong> — 出示护照、签证、入境卡，现场拍照<br><strong>④ 行李提取</strong> — 根据航班号查看电子屏找到对应转盘<br><strong>⑤ 海关</strong> — 绿通（无申报物品）或红通（有物品需申报）<br><strong>⑥ 到达大厅</strong> — 出口右转：出租车、地铁、机场大巴<br><a class=\"card-link\" href=\"https://www.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">国家移民管理局官网 →</a>",
+      "sub": "边检6步通关指南"
     },
     "customs": {
-      "label": "🛃 海关",
-      "desc": "现金≤$5K·酒≤1.5L·烟≤400支。处方药带处方。无申报走绿通。禁止:武器/毒品/象牙/违禁出版物。"
+      "label": "海关申报",
+      "desc": "<strong>现金</strong>: ≤$5,000（或等值外币）— 超出需申报<br><strong>酒类</strong>: ≤1.5L（含白酒、红酒、啤酒合计）<br><strong>香烟</strong>: ≤400支（2条）<br><strong>处方药</strong>: 携带医生处方+说明，管制药品需申报<br><strong>🟢 绿色通道</strong>: 无申报物品 — 直接通行<br><strong>🔴 红色通道</strong>: 超出免税限额或有限制物品 — 填写申报单<br><strong>⛔ 禁止入境</strong>: 武器、毒品、象牙及其制品、濒危动植物、新鲜水果/植物<br><a class=\"card-link\" href=\"https://www.customs.gov.cn\" target=\"_blank\" rel=\"noopener\">中国海关 →</a>",
+      "sub": "免税限额与违禁品清单"
     },
     "registration": {
-      "label": "🏨 住宿登记",
-      "desc": "酒店自动登记。私人住所:12367在线(7省试点)或派出所。换住所重登。《出境入境管理法》第39条:24h内完成。"
-    }
+      "label": "住宿登记",
+      "desc": "<strong>酒店住宿</strong>: 前台自动办理登记 — 入住时提供护照即可<br><strong>私人住所</strong>: 入住后24小时内到<strong>当地派出所</strong>办理登记<br><strong>网上登记（7个试点城市）</strong>: 上海、北京、广州、深圳、成都、杭州、厦门 — 使用NIA政务平台或12367 APP<br><strong>所需材料</strong>: 护照、有效签证、租房合同或房东身份证复印件<br><strong>法律依据</strong>: 《出境入境管理法》第39条 — 24小时内办理住宿登记是法定义务<br><strong>换住所须重新登记</strong><br><a class=\"card-link\" href=\"https://s.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">NIA 在线登记 →</a> ",
+      "sub": "酒店自动 / 派出所 / 线上"
+    },
+    "detail": {
+      "back": "返回",
+      "steps": {
+        "title": "入境通关 — 6步",
+        "steps": [
+          "健康检疫：体温检测，出示健康申报二维码。",
+          "指纹采集：14-70岁外国人需留指纹。",
+          "边检：出示护照+签证+入境卡，拍照。",
+          "行李提取：查看电子屏找对应转盘。",
+          "海关：绿通（无申报）或红通（申报）。",
+          "到达大厅：出租车、地铁、机场大巴、网约车。"
+        ],
+        "linkUrl": "https://www.nia.gov.cn",
+        "linkLabel": "国家移民管理局官网"
+      },
+      "customs": {
+        "title": "海关规定",
+        "steps": [
+          "现金：不超过$5,000或等值外币。",
+          "酒类：总计1.5升。",
+          "香烟：400支（2条）。",
+          "电子产品：自用没问题，礼品超5000Y应申报。",
+          "处方药：携带医生处方。",
+          "禁止：武器、毒品、象牙、新鲜水果/植物。",
+          "绿色通道：无申报。",
+          "红色通道：超免税限额，填申报单。"
+        ],
+        "linkUrl": "https://www.customs.gov.cn",
+        "linkLabel": "中国海关"
+      },
+      "registration": {
+        "title": "住宿登记",
+        "steps": [
+          "酒店：前台自动办理。",
+          "私人住所：24小时内到派出所。",
+          "网上登记（7城）：上海 北京 广州 深圳 成都 杭州 厦门。",
+          "法律：《出境入境管理法》第39条。",
+          "换住所须重新登记。",
+          "12367热线：24小时多语种。"
+        ],
+        "linkUrl": "https://s.nia.gov.cn",
+        "linkLabel": "NIA在线登记"
+      }
+    },
+    "intro": "即将落地中国？点击了解入境流程、海关规定和住宿登记。"
   },
   "s4": {
     "meta": {
@@ -126,68 +203,193 @@
       "sub": "Google/WA/IG 不可用。落地第一件事：搞定网络。"
     },
     "esim": {
-      "label": "📱 优选",
+      "label": "eSIM",
       "title": "eSIM",
-      "desc": "Airalo/Holafly/Nomad。出发前买,落地有网。仅流量，不分配中国号码。"
+      "desc": "<strong>Airalo</strong> — 全球eSIM平台，中国流量$5起<br><strong>Holafly</strong> — 无限流量，中国$19起<br><strong>Nomad</strong> — 实惠之选，中国$4起<br><strong>出发前购买+安装</strong> — 落地即连<br><strong>⚠️ 注意</strong>: 仅流量，无中国手机号（部分App如美团注册受限）<br><a class=\"card-link\" href=\"https://www.airalo.com\" target=\"_blank\" rel=\"noopener\">Airalo →</a> <a class=\"card-link\" href=\"https://holafly.com\" target=\"_blank\" rel=\"noopener\">Holafly →</a>",
+      "sub": "出发前购买，最低$4起"
     },
     "sim": {
-      "label": "📱 备选",
+      "label": "国内SIM",
       "title": "中国SIM卡",
-      "desc": "机场到达厅移动/联通/电信。护照办理。月¥29-99。得号码→注册App。"
+      "desc": "<strong>中国移动 / 中国联通 / 中国电信</strong><br>机场到达厅设有柜台（出关后、出大厅前）<br><strong>所需材料</strong>: 护照原件（不接受复印件）<br><strong>游客套餐</strong>: ¥29-99/月 — 含流量+国内通话+短信<br><strong>提示</strong>: 先办号码，再用号码注册支付宝、微信、滴滴、美团<br><strong>eSIM游客版</strong>: 部分运营商提供短期游客eSIM — 向柜台咨询",
+      "sub": "机场柜台办理，29-99元/月"
     },
     "vpn": {
-      "label": "🔐 VPN",
+      "label": "VPN",
       "title": "出发前装好",
-      "desc": "Mullvad/Astrill。出发前安装+付费。备2个不同协议以防万一。"
+      "desc": "<strong>Mullvad</strong> — 开源，€5/月，无日志，支持WireGuard<br><strong>Astrill</strong> — 中国线路优化，约$15-30/月，多协议<br><strong>⚠️ 务必出发前安装+订阅</strong> — VPN官网在国内可能无法访问<br><strong>备2个协议</strong>: WireGuard（日常快速）+ OpenVPN/StealthVPN（备用）<br><a class=\"card-link\" href=\"https://mullvad.net\" target=\"_blank\" rel=\"noopener\">Mullvad →</a> <a class=\"card-link\" href=\"https://www.astrill.com\" target=\"_blank\" rel=\"noopener\">Astrill →</a>",
+      "sub": "出发前安装——关键步骤"
     },
     "blocked": {
-      "label": "🚫 被墙服务",
-      "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>替代:百度/小红书/微博/哔哩哔哩"
-    }
+      "label": "被墙应用",
+      "desc": "🚫 <strong>被屏蔽</strong>: Google, Gmail, Maps, YouTube, WhatsApp, Instagram, Facebook, X/Twitter, Dropbox, LINE<br>✅ <strong>可直接使用</strong>: iCloud, Slack, Zoom, Microsoft Teams, Outlook<br>🔄 <strong>国内替代</strong>:<br><a class=\"card-link\" href=\"https://www.xiaohongshu.com\" target=\"_blank\" rel=\"noopener\">小红书 (替代Ins) →</a><br><a class=\"card-link\" href=\"https://weibo.com\" target=\"_blank\" rel=\"noopener\">微博 (替代Twitter) →</a><br><a class=\"card-link\" href=\"https://www.bilibili.com\" target=\"_blank\" rel=\"noopener\">哔哩哔哩 (替代YouTube) →</a><br><a class=\"card-link\" href=\"https://www.amap.com\" target=\"_blank\" rel=\"noopener\">高德地图 (替代Google Maps) →</a>",
+      "sub": "哪些不能用 & 替代方案"
+    },
+    "detail": {
+      "back": "返回",
+      "esim": {
+        "title": "eSIM — 出发前购买",
+        "steps": [
+          "Airalo：中国流量$5起（1GB/7天）。",
+          "Holafly：无限流量$19起。",
+          "Nomad：实惠之选$4起。",
+          "出发前购买安装。",
+          "注意：仅流量，无手机号。"
+        ]
+      },
+      "sim": {
+        "title": "中国SIM卡",
+        "steps": [
+          "机场到达厅柜台（移动/联通/电信）。",
+          "需要：护照原件。",
+          "套餐：29-99Y/月。",
+          "得号码→注册支付宝/微信/滴滴。",
+          "保留原SIM卡收验证码。"
+        ]
+      },
+      "vpn": {
+        "title": "VPN — 出发前装好",
+        "steps": [
+          "Mullvad：5EUR/月，开源，WireGuard。",
+          "Astrill：$15-30/月，中国优化。",
+          "出发前安装+付费。",
+          "备2个协议。",
+          "出发前测试。"
+        ]
+      },
+      "blocked": {
+        "title": "被墙服务与替代",
+        "steps": [
+          "被屏蔽：Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE。",
+          "可直接用：iCloud, Slack, Zoom, Teams, Outlook。",
+          "地图→高德/百度地图。",
+          "Ins→小红书。",
+          "Twitter→微博。",
+          "YouTube→B站。",
+          "WhatsApp→微信。"
+        ]
+      }
+    },
+    "intro": "Google、WhatsApp、Instagram在中国被屏蔽。落地前搞定网络。"
   },
   "s5": {
     "meta": {
       "title": "移动支付",
       "sub": "中国是无现金社会。提前绑定外卡 — 最关键步骤。"
     },
+    "intro": "中国已基本实现无现金化 — 移动支付覆盖了86%以上的消费交易。外国游客现在可以直接将Visa、Mastercard、JCB和Amex绑定到支付宝和微信支付，无需中国银行卡。",
+    "stat1": "消费交易通过移动支付",
+    "stat2": "单笔交易免手续费",
+    "stat3": "两个App覆盖95%+场景",
+    "backup": "<strong>💡 备用方案</strong><span>随身携带¥500-1,000现金备用。中国银行/工商银行/招商银行ATM支持外卡取现（认Visa/MC标志）。如一个App出问题，换另一个试试。</span>",
+    "detail": {
+      "back": "返回支付页"
+    },
     "alipay": {
-      "label": "支付宝",
-      "title": "设置指南",
-      "step1": "搜索\"支付宝\"",
-      "step2": "国际版→护照认证",
-      "step3": "我的→银行卡→添加Visa/MC/JCB/Amex",
-      "step4": "扫码/付款码。≤¥200免手续费"
+      "title": "支付宝设置指南",
+      "steps": [
+        "从 <a href=\"https://www.alipay.com\" target=\"_blank\" rel=\"noopener\">alipay.com</a> 或应用商店下载支付宝",
+        "手机号注册 → 护照拍照验证身份",
+        "我的 → 银行卡 → 添加银行卡 → 支持 Visa / Mastercard / JCB / Amex",
+        "扫商家码或出示付款码。<strong>≤¥200/笔：免手续费。>¥200：3% 服务费。</strong>",
+        "<strong>TourPass</strong>: 外国游客预付卡 — 无需中国银行卡"
+      ],
+      "links": [
+        {
+          "key": "download",
+          "label": "下载支付宝",
+          "url": "https://www.alipay.com"
+        },
+        {
+          "key": "support",
+          "label": "☎ 客服: 95188 / +86-571-26886000",
+          "url": "https://render.alipay.com/p/s/alipaycard"
+        }
+      ]
     },
     "wechat": {
-      "label": "微信",
-      "title": "微信支付",
-      "step1": "下载→注册",
-      "step2": "我→服务→钱包→银行卡",
-      "step3": "绑定Visa/MC（额度较低）",
-      "backupTitle": "💡 备用方案",
-      "backupDesc": "随身携带少量人民币现金+ATM卡。如一个App失败，尝试另一个。"
+      "title": "微信支付设置指南",
+      "steps": [
+        "从 <a href=\"https://www.wechat.com\" target=\"_blank\" rel=\"noopener\">wechat.com</a> 或应用商店下载微信",
+        "我 → 服务 → 钱包 → 银行卡 → 添加 Visa/MC/Amex",
+        "绑定外卡（额度较支付宝低；部分功能需中国银行卡）",
+        "<strong>小程序</strong>: 点外卖、打车、买火车票 — 一个微信全搞定"
+      ],
+      "links": [
+        {
+          "key": "download",
+          "label": "下载微信",
+          "url": "https://www.wechat.com"
+        },
+        {
+          "key": "support",
+          "label": "☎ 客服: 95017",
+          "url": "https://www.wechat.com"
+        }
+      ]
     }
   },
   "s6": {
-    "meta": {
-      "title": "出行+饮食+住宿",
-      "sub": "交通出行、餐饮美食、酒店住宿与穿衣指南"
+    "intro": "出行、饮食、住宿和穿衣。点击每项查看实用提示。",
+    "detail": {
+      "back": "返回",
+      "transport": {
+        "title": "出行交通",
+        "steps": [
+          "滴滴：内置于支付宝，英文界面，外卡支付。",
+          "地铁：支付宝乘车码扫码。覆盖40+城市。",
+          "高铁：12306.cn/en订票，支持外卡。",
+          "共享单车：支付宝/美团扫码，1.5-3Y/次。",
+          "提示：支付宝小程序全搞定。"
+        ]
+      },
+      "food": {
+        "title": "餐饮美食",
+        "steps": [
+          "大众点评：餐厅评价、图片、评分。",
+          "微信扫一扫→翻译：对准菜单自动翻译。",
+          "美团/饿了么：外卖送到酒店。",
+          "清真：认准清真标识或兰州牛肉面。",
+          "素食：说纯素，注意汤底。",
+          "过敏：携带双语过敏卡。"
+        ]
+      },
+      "accommodation": {
+        "title": "住宿选择",
+        "steps": [
+          "Trip.com/Booking.com：筛选接待外宾。",
+          "Airbnb：已停止中国业务，改用途家。",
+          "涉外资质：酒店需特殊许可。经济型酒店可能拒住。",
+          "涉外连锁：万豪、希尔顿、洲际、凯悦、锦江之星。",
+          "被拒住：拨打12367求助。"
+        ]
+      },
+      "clothing": {
+        "title": "穿衣指南",
+        "steps": [
+          "尺码：中国比欧美小1-2码。US M=CN L/XL。",
+          "春季(3-5月)：10-22°C，薄外套+叠穿。",
+          "夏季(6-8月)：28-38°C湿热，透气面料+防晒+伞。",
+          "秋季(9-11月)：10-25°C最佳季节，薄毛衣。",
+          "冬季(12-2月)：北方-10°C厚羽绒服，南方0-10°C湿冷多层。"
+        ]
+      }
     },
     "transport": {
-      "label": "🚕 出行",
-      "desc": "<strong>滴滴</strong>:支付宝，英文+外卡。<br><strong>地铁</strong>:乘车码。<br><strong>高铁</strong>:12306.cn/en 外卡。<br><strong>共享单车</strong>:支付宝 ¥1.5-3。"
+      "label": "出行",
+      "sub": "滴滴、地铁、高铁"
     },
     "food": {
-      "label": "🍜 饮食",
-      "desc": "<strong>大众点评</strong>:图片+评分。<br><strong>微信扫一扫→翻译</strong>:菜单。<br><strong>美团/饿了么</strong>:外卖。<br>清真:\"清真\"/兰州拉面。<br>素食:\"素食\"(注意汤底)。<br>过敏:携带双语过敏卡。"
+      "label": "美食",
+      "sub": "中文点餐、饮食禁忌提示"
     },
     "accommodation": {
-      "label": "🏨 住宿",
-      "desc": "<strong>Trip.com/Booking</strong>:勾选\"接待外宾\"。<br><strong>Airbnb</strong>:已停止中国业务。<br><strong>涉外资质</strong>:并非所有酒店都能接待外国人。预订前确认。"
+      "label": "住宿",
+      "sub": "预订、登记、实用建议"
     },
     "clothing": {
-      "label": "👔 穿衣指南",
-      "desc": "中国尺码比欧美小1-2码，US M≈CN L/XL。优衣库/ZARA全球尺码一致。春季温暖·夏季湿热·秋季最佳·冬季北方-10°C/南方湿冷。"
+      "label": "穿衣",
+      "sub": "尺码、季节、行李清单"
     }
   },
   "s7": {
@@ -465,19 +667,71 @@
       "title": "紧急+离境",
       "sub": ""
     },
-    "hotlines": "📞 热线",
-    "immigration24h": "移民管理24h多语种",
-    "police": "报警",
-    "ambulance": "急救",
-    "fire": "火警",
-    "passportWarning": "⚠️ 护照",
-    "passportWarningDetail": "随身携带。遗失→报警→回执→使领馆补办。手机存好使领馆地址电话。",
-    "departure": "👋 离境",
-    "departStep1": "提前2-3h到机场",
-    "departStep2": "退税物品随身勿托运",
-    "departStep3": "花完剩余RMB(免税店)",
-    "departStep4": "提前备份照片(Google Photos不可用)",
-    "footer": "🧳 入境中国图文攻略 · 更新于 2026年7月 · 信息基于 NIA、外交部领事司公开资料 · NIA 12367 · s.nia.gov.cn"
+    "intro": "保存这些号码。点击每个号码了解何时拨打以及会发生什么。",
+    "departIntro": "准备离开中国？这是你的离境前清单。",
+    "detail": {
+      "back": "返回"
+    },
+    "departure": "离境清单",
+    "passportWarning": "护照丢失？",
+    "passportWarningDetail": "1) 立即报警（拨打110）。2) 联系大使馆/领事馆申请紧急旅行证件。3) 手机上保存护照信息页和签证照片。",
+    "hotline": {
+      "12367": {
+        "label": "移民局",
+        "title": "12367 — 移民局服务热线",
+        "steps": [
+          "国家移民管理局24小时服务热线。",
+          "语言：中文、英语、俄语、日语、韩语等多语种。",
+          "何时拨打：签证问题、住宿登记、逾期滞留、护照丢失、出入境咨询。",
+          "也可通过APP和微信小程序使用。",
+          "境外拨打：+86-10-12367。"
+        ]
+      },
+      "110": {
+        "label": "警察",
+        "title": "110 — 公安报警",
+        "steps": [
+          "公安紧急报警电话。",
+          "何时拨打：正在发生的犯罪、盗窃、护照丢失、人身安全威胁、交通事故。",
+          "说明位置和需要英语协助。",
+          "非紧急：前往派出所办理。",
+          "护照丢失报警后索取书面报警回执。"
+        ]
+      },
+      "120": {
+        "label": "急救",
+        "title": "120 — 医疗急救",
+        "steps": [
+          "紧急医疗服务。",
+          "何时拨打：严重受伤、胸痛、呼吸困难、大出血、意识丧失。",
+          "城市内救护车10-15分钟到达。急救人员英语可能有限。",
+          "准备好：位置、护照、保险卡、药物清单。",
+          "如条件允许，直接前往国际医院（见S7）。"
+        ]
+      },
+      "119": {
+        "label": "火警",
+        "title": "119 — 火警救援",
+        "steps": [
+          "火灾和救援服务。",
+          "何时拨打：火灾、燃气泄漏、被困电梯、建筑坍塌、洪水。",
+          "说明地址、燃烧物、是否有人被困。",
+          "注意酒店房门上的消防逃生图。"
+        ]
+      },
+      "depart": {
+        "label": "离境",
+        "title": "离境清单",
+        "steps": [
+          "提前2-3小时到机场办国际航班值机、安检、退税。",
+          "退税商品放随身行李，托运行李前办海关盖章。",
+          "机场兑换剩余人民币。",
+          "离境前备份照片到iCloud或U盘（Google Photos被屏蔽）。",
+          "归还随身WiFi/退SIM卡押金。",
+          "保留入境卡存根——出境边检可能需要。"
+        ]
+      }
+    }
   },
   "city": {
     "beijing": {

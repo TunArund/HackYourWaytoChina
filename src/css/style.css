@@ -15,9 +15,12 @@
   --font:"PingFang SC","Noto Sans SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
   --transition:0.25s cubic-bezier(0.4,0,0.2,1);
   --tl-right:24px;--tl-dot-s:12px;--tl-line-w:2px;
+  font-size:16px;
 }
 @media(min-width:640px){:root{--tl-right:36px;--tl-dot-s:14px}}
 @media(min-width:1024px){:root{--tl-right:44px}}
+@media(min-width:1600px){:root{font-size:17px}}
+@media(min-width:2200px){:root{font-size:18px}}
 
 /* ============================================================
    Reset
@@ -122,12 +125,15 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .slide-head{min-width:0;text-align:right}
 .slide-head .s-icon{font-size:2.2rem;display:inline;margin-right:0.3em;vertical-align:middle}
 .slide-head .s-title{display:inline;font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;line-height:1.2;color:var(--text)}
-.slide-head .s-sub{font-size:0.88rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+.slide-head .s-sub{font-size:0.92rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+@media(min-width:1024px){.slide-head .s-sub{font-size:1rem}}
+@media(min-width:1600px){.slide-head .s-sub{font-size:1.05rem;line-height:1.55}}
 @media(min-width:1024px){
   .slide-head .s-icon{display:block;margin-right:0;margin-bottom:6px}
   .slide-head .s-title{display:block}
 }
 .slide-body{flex:1;min-width:0;min-height:0;position:relative;overflow-y:auto;overflow-x:hidden;display:flex;flex-direction:column}
+.slide-body--pay{overflow-y:visible}
 @media(max-width:1023px){.slide-body{margin-top:10px}}
 
 /* ============================================================
@@ -135,22 +141,54 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
    ============================================================ */
 .info-cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .info-cards.col3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+@media(min-width:1024px){.info-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
+@media(min-width:1440px){.info-cards{grid-template-columns:repeat(4,1fr);gap:14px}}
+@media(min-width:1920px){.info-cards{grid-template-columns:repeat(5,1fr);gap:16px}}
+@media(min-width:1024px){.info-cards.col3{grid-template-columns:repeat(3,1fr)}}
 .info-card{
   background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius);padding:14px 16px;
+  border-radius:var(--radius);padding:14px 16px;max-width:480px;
   box-shadow:var(--card-shadow);transition:all var(--transition);
 }
 .info-card:hover{box-shadow:var(--card-shadow-hover);border-color:color-mix(in srgb,var(--border) 70%,var(--accent))}
 .info-card .c-label{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:3px}
-.info-card h4{font-size:0.93rem;font-weight:700;margin-bottom:3px;color:var(--text)}
-.info-card p{font-size:0.81rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+.info-card h4{font-size:1rem;font-weight:700;margin-bottom:3px;color:var(--text)}
+.info-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
 .info-card ol,.info-card ul{margin:6px 0 0 16px;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
 
-/* Card accent: left border highlight */
-.info-card--hl{border-left:3px solid var(--accent)}
-.info-card--ok{border-left:3px solid var(--success)}
-.info-card--warn{border-left:3px solid var(--warning)}
-.info-card--info{border-left:3px solid var(--info)}
+/* Embedded links + icons inside cards */
+.card-link{color:var(--info);text-decoration:underline;font-size:0.78rem}
+.card-link:hover{opacity:0.7}
+.card-icon{width:28px;height:28px;vertical-align:middle;margin-right:4px;border-radius:4px;object-fit:contain}
+
+/* ============================================================
+   Payment Slide (S5)
+   ============================================================ */
+.pay-intro{font-size:1.05rem;line-height:1.6;color:var(--text-secondary);margin-bottom:16px}
+.pay-stats{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin-bottom:20px}
+@media(max-width:359px){.pay-stats{grid-template-columns:1fr}}
+@media(min-width:520px){.pay-stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
+@media(min-width:1024px){.pay-stats{grid-template-columns:repeat(3,1fr);gap:12px}}
+@media(min-width:1440px){.pay-stats{grid-template-columns:repeat(4,1fr)}}
+.pay-stat{text-align:center;min-width:80px}
+.pay-stat-num{display:block;font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1.2}
+.pay-stat span{font-size:0.8rem;color:var(--text-muted)}
+.pay-icons{display:grid;gap:16px;grid-template-columns:repeat(2,1fr);margin-bottom:18px}
+.pay-icon-btn{display:flex;flex-direction:column;align-items:center;gap:8px;
+  padding:20px 16px;border:1px solid var(--border);border-radius:var(--radius);
+  background:var(--surface);cursor:pointer;transition:all var(--transition);
+  font-size:0.92rem;font-weight:600;color:var(--text);font-family:var(--font);text-align:center}
+.pay-icon-btn:hover{transform:translateY(-2px);box-shadow:var(--card-shadow-hover);border-color:var(--accent)}
+.pay-icon-btn img{width:48px;height:48px;border-radius:12px}
+.pay-icon-btn .pay-btn-sub{display:block;font-size:0.78rem;font-weight:400;color:var(--text-muted);margin-top:-4px}
+.pay-summary{transition:opacity 0.3s ease,transform 0.3s ease}
+.pay-summary.hide{display:none}
+.pay-detail{display:none;opacity:0;transform:translateY(12px);transition:opacity 0.35s ease,transform 0.35s ease}
+.pay-detail.show{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto;opacity:1;transform:translateY(0)}
+.pay-detail .step-list{margin-top:4px;margin-bottom:0}
+.pay-detail .step-list li:last-child{margin-bottom:0}
+.pay-detail > :last-child{margin-bottom:0}
+.pay-summary > :last-child{margin-bottom:0}
 
 /* ============================================================
    Cover Slide
@@ -170,18 +208,20 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .cover-card h3{font-size:1.25rem;font-weight:700;margin-bottom:4px;color:var(--text)}
 .cover-card .tagline{font-size:0.85rem;color:var(--text-secondary)}
 .cover-card .examples{font-size:0.78rem;color:var(--text-muted);margin-top:8px}
+@media(min-width:1440px){.cover-grid{max-width:680px;gap:24px}.cover-card{padding:36px 26px}}
+@media(min-width:1920px){.cover-card{padding:44px 32px}.cover-card h3{font-size:1.35rem}}
 
 /* ============================================================
    Components — Visa Checker
    ============================================================ */
 
 /* Layout */
-.visa-checker{max-width:500px}
+.visa-checker{max-width:540px;margin:0 auto}
 
 /* Select */
 .vc-select{
-  width:100%;padding:0.625rem 2.25rem 0.625rem 0.875rem;border:1px solid var(--border);
-  border-radius:var(--radius-sm);font-size:0.9rem;font-family:var(--font);
+  width:100%;padding:0.7rem 2.25rem 0.7rem 0.875rem;border:1px solid var(--border);
+  border-radius:var(--radius-sm);font-size:0.94rem;font-family:var(--font);
   background:var(--surface);color:var(--text);transition:border-color var(--transition);
   appearance:none;-webkit-appearance:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238e8e8e' fill='none' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
@@ -195,15 +235,16 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 @media(max-width:480px){.vc-row{flex-direction:column;gap:0}}
 
 /* Question label + spacing */
-.vc-q{margin-bottom:0.875rem}
-.vc-q label{display:block;font-weight:700;font-size:0.86rem;margin-bottom:0.375rem;color:var(--text)}
+.vc-q{margin-bottom:1rem}
+.vc-q label{display:block;font-weight:700;font-size:0.9rem;margin-bottom:0.4rem;color:var(--text)}
 
 /* Result panel */
-.vc-result{display:none;margin-top:0.875rem;font-size:0.88rem;line-height:1.55}
+.vc-result{display:none;margin-top:0.875rem;font-size:0.94rem;line-height:1.6}
 .vc-result.show{display:block;animation:fadeIn 0.35s ease}
+@media(min-width:1600px){.vc-result{font-size:1rem}}
 
 /* Section title inside result */
-.vc-section-title{font-size:0.95rem;font-weight:700;margin-bottom:0.625rem;color:var(--text)}
+.vc-section-title{font-size:1rem;font-weight:700;margin-bottom:0.625rem;color:var(--text)}
 
 /* Links block inside result */
 .vc-links-block{margin-top:0.75rem}
@@ -233,8 +274,8 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .em-card .num{font-size:1.3rem;font-weight:800;color:var(--accent)}
 .em-card .lbl{font-size:0.76rem;color:var(--text-secondary);margin-top:2px}
 .step-list{list-style:none;counter-reset:step}
-.step-list li{counter-increment:step;position:relative;padding-left:32px;margin-bottom:10px;font-size:0.83rem;color:var(--text-secondary);line-height:1.45;overflow-wrap:break-word}
-.step-list li::before{content:counter(step);position:absolute;left:0;top:0;width:22px;height:22px;background:var(--accent-light);color:var(--accent);border-radius:50%;font-size:0.72rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step-list li{counter-increment:step;position:relative;padding-left:32px;margin-bottom:10px;font-size:0.88rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+.step-list li::before{content:counter(step);position:absolute;left:0;top:0;width:22px;height:22px;background:var(--accent-light);color:var(--accent);border-radius:50%;font-size:0.74rem;font-weight:700;display:flex;align-items:center;justify-content:center}
 .step-list li strong{color:var(--text)}
 
 /* ============================================================
@@ -243,7 +284,7 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .nav-scrubber{
   position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:100;
   display:flex;flex-direction:column;align-items:flex-end;gap:7px;
-  padding:0 20px 0 0;cursor:pointer;
+  padding:0 18px 0 0;cursor:pointer;
   opacity:0;pointer-events:none;transition:opacity 0.3s;
   touch-action:none;
   -webkit-tap-highlight-color:transparent;
@@ -413,4 +454,7 @@ body [lang]{display:none}
   .detail-panel{padding:14px 12px}
   .detail-table{font-size:0.72rem}
   .detail-table th,.detail-table td{padding:4px 6px}
+  .pay-icon-btn{padding:16px 12px;font-size:0.88rem}
+  .pay-icon-btn .pay-btn-sub{font-size:0.74rem}
+  .pay-stats{gap:8px}
 }

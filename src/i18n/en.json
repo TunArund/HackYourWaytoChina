@@ -74,32 +74,61 @@
   "s2": {
     "meta": {
       "title": "Before You Go",
-      "sub": "Checklist + arrival card + final check. <strong>97%</strong> Beijing arrivals use online filing."
+      "sub": "Checklist + arrival card + final check. 97% Beijing arrivals use online filing."
+    },
+    "intro": "Before you fly, make sure you have these essentials ready. Tap each item for details.",
+    "detail": {
+      "back": "Back"
     },
     "passport": {
-      "label": "📘 Req",
-      "title": "Passport",
-      "desc": "≥6mo valid, ≥2 blank pages"
+      "label": "Passport",
+      "title": "Passport Requirements",
+      "steps": [
+        "Valid for at least 6 months beyond your planned departure from China.",
+        "At least 2 blank visa pages (amendment/endorsement pages do not count).",
+        "If your passport expires soon: renew it before applying for a Chinese visa.",
+        "Keep a digital copy (photo or scan) of your passport ID page on your phone and in email — in case of loss.",
+        "For dual citizens: use the same passport throughout (visa application, entry, exit)."
+      ],
+      "sub": "Validity & blank pages"
     },
     "tickets": {
-      "label": "🎫 Req",
-      "title": "Return+Hotel",
-      "desc": "Print/screenshot e-ticket; hotel with address"
+      "label": "Return+Hotel",
+      "title": "Return Ticket & Hotel Booking",
+      "steps": [
+        "Print or screenshot your return/onward flight ticket — immigration may ask to see proof of departure.",
+        "Hotel booking confirmation with full address in Chinese and English.",
+        "If staying with friends/family: have an invitation letter with the host's name, address, phone number, and ID copy.",
+        "Pro tip: book a refundable hotel for visa/entry purposes, then cancel after arrival if plans change."
+      ],
+      "sub": "Return flight & hotel proof"
     },
     "arrivalCard": {
-      "label": "📱 Arrival Card",
-      "title": "Pre-fill Online",
-      "desc": "s.nia.gov.cn → fill → screenshot QR → scan. Supports passport photo scan. Also: NIA 12367 APP / WeChat / Alipay mini programs."
+      "label": "Arrival Card",
+      "title": "Arrival Card — Pre-fill Online",
+      "steps": [
+        "Visit s.nia.gov.cn before your flight — fill out the arrival card online (free).",
+        "Take a screenshot of the QR code after submission — you will scan this at the immigration counter.",
+        "The form supports passport photo scan (auto-fills your details).",
+        "Alternative methods: NIA 12367 APP (iOS/Android), WeChat mini-program, Alipay mini-program.",
+        "97% of travelers at Beijing Capital Airport now use the online form. Skip the paper form entirely.",
+        "Each traveler needs their own arrival card (including children)."
+      ],
+      "sub": "Pre-fill online, save QR code"
     },
     "finalCheck": {
-      "label": "✅ Final Check",
-      "items": [
-        "<strong>Passport ≥6mo?</strong>",
-        "<strong>Visa eligibility?</strong>",
-        "<strong>Arrival card? Screenshot</strong>",
-        "<strong>Alipay/WeChat ready?</strong>",
-        "<strong>Hotel address saved?</strong>"
-      ]
+      "label": "Final Check",
+      "title": "Final Checklist Before Departure",
+      "steps": [
+        "Passport: valid for 6+ months, 2+ blank pages.",
+        "Visa or visa-free eligibility confirmed (use S1 to check).",
+        "Arrival card: filled online, QR code screenshot saved on phone.",
+        "Alipay / WeChat: downloaded and foreign card linked (do this before departure — see S5).",
+        "Hotel address: saved in Chinese and English on your phone (show to immigration and taxi driver).",
+        "VPN: installed, paid, and tested before departure (see S4).",
+        "Travel insurance: policy number saved, emergency contact number noted."
+      ],
+      "sub": "7-item checklist before boarding"
     }
   },
   "s3": {
@@ -108,17 +137,65 @@
       "sub": "Flow+customs+registration. Under 14 / over 70 fingerprint exempt."
     },
     "steps": {
-      "label": "🛂 6 Steps",
-      "desc": "①Health→②Fingerprint→③Border→④Baggage→⑤Customs→⑥Arrival Hall"
+      "label": "Immigration",
+      "desc": "<strong>① Health Check</strong> — temperature scan, health declaration QR (fill online before landing)<br><strong>② Fingerprint</strong> — all foreigners aged 14-70 (exempt: under 14 / over 70)<br><strong>③ Border Control</strong> — present passport, visa, arrival card; photo taken<br><strong>④ Baggage Claim</strong> — check flight carousel number on screens<br><strong>⑤ Customs</strong> — Green channel (nothing to declare) or Red channel (goods to declare)<br><strong>⑥ Arrival Hall</strong> — exit to taxi stand, metro, or airport bus<br><a class=\"card-link\" href=\"https://en.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">NIA Official Site →</a>",
+      "sub": "6-step process at border control"
     },
     "customs": {
-      "label": "🛃 Limits",
-      "desc": "Cash≤$5K·Alc≤1.5L·Cigs≤400. Rx meds with note. Green channel. Ban:weapons/drugs/ivory."
+      "label": "Customs",
+      "desc": "<strong>Cash</strong>: ≤$5,000 (or foreign currency equivalent) — declare if exceeding<br><strong>Alcohol</strong>: ≤1.5L (liquor/wine/beer combined)<br><strong>Cigarettes</strong>: ≤400 sticks (2 cartons)<br><strong>Rx Medication</strong>: carry doctor's note + prescription; declare controlled substances<br><strong>🟢 Green Channel</strong>: nothing to declare — walk through<br><strong>🔴 Red Channel</strong>: goods exceeding duty-free limits — submit declaration form<br><strong>⛔ Banned</strong>: weapons, drugs, ivory, endangered species products, fresh fruit/plants<br><a class=\"card-link\" href=\"https://www.customs.gov.cn\" target=\"_blank\" rel=\"noopener\">China Customs →</a>",
+      "sub": "Duty-free limits & restricted items"
     },
     "registration": {
-      "label": "🏨 Register",
-      "desc": "Hotels auto. Private:12367 online(7 pilot) or police. Re-register per move. Art.39:within 24h."
-    }
+      "label": "Registration",
+      "desc": "<strong>Hotels</strong>: front desk registers you automatically — just hand over your passport at check-in<br><strong>Private Residence</strong>: must register at <strong>local police station</strong> within 24 hours of arrival<br><strong>Online Registration (7 pilot cities)</strong>: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen — use NIA platform or 12367 APP<br><strong>Documents needed</strong>: passport, valid visa, lease contract or host's Chinese ID copy<br><strong>Legal basis</strong>: Exit-Entry Administration Law Art.39 — registration within 24h is mandatory<br><strong>Re-register</strong> if you move to a new address or change cities<br><a class=\"card-link\" href=\"https://s.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">NIA Online Registration →</a> ",
+      "sub": "Hotel / police station / online"
+    },
+    "detail": {
+      "back": "Back",
+      "steps": {
+        "title": "Immigration — 6 Steps",
+        "steps": [
+          "Health Check: Temperature scan. Show health declaration QR.",
+          "Fingerprint: All foreigners 14-70. Under 14 / over 70 exempt.",
+          "Border Control: Passport + visa + arrival card. Photo taken.",
+          "Baggage Claim: Check screens for carousel number.",
+          "Customs: Green (nothing to declare) or Red channel.",
+          "Arrival Hall: Taxi, metro, airport bus, ride-hailing."
+        ],
+        "linkUrl": "https://en.nia.gov.cn",
+        "linkLabel": "NIA Official Site"
+      },
+      "customs": {
+        "title": "Customs Rules",
+        "steps": [
+          "Cash: Up to $5,000 USD. Declare if exceeding.",
+          "Alcohol: 1.5L total.",
+          "Cigarettes: 400 sticks (2 cartons).",
+          "Electronics: Personal fine. Gifts >5000Y should declare.",
+          "Rx Medication: Doctor note + prescription required.",
+          "Prohibited: Weapons, drugs, ivory, fresh fruit/plants.",
+          "Green Channel: Nothing to declare.",
+          "Red Channel: Goods exceed limits. Fill declaration form."
+        ],
+        "linkUrl": "https://www.customs.gov.cn",
+        "linkLabel": "China Customs"
+      },
+      "registration": {
+        "title": "Accommodation Registration",
+        "steps": [
+          "Hotels: Automatic at check-in with passport.",
+          "Private: Go to police station within 24h.",
+          "Online (7 cities): Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.",
+          "Legal: Exit-Entry Law Art.39 — mandatory.",
+          "Re-register when moving address/city.",
+          "12367 hotline: 24/7 multi-language."
+        ],
+        "linkUrl": "https://s.nia.gov.cn",
+        "linkLabel": "NIA Registration"
+      }
+    },
+    "intro": "Landing in China? Tap to learn about immigration, customs, and registration."
   },
   "s4": {
     "meta": {
@@ -126,68 +203,193 @@
       "sub": "Google/WA/IG blocked. Priority: get online."
     },
     "esim": {
-      "label": "📱 Best",
+      "label": "eSIM",
       "title": "eSIM",
-      "desc": "Airalo/Holafly/Nomad. Buy before→data on landing. Data only, no CN number."
+      "desc": "<strong>Airalo</strong> — global eSIM marketplace, China data from $5<br><strong>Holafly</strong> — unlimited data, China from $19<br><strong>Nomad</strong> — budget eSIM, China from $4<br>Buy & install <strong>before departure</strong> — connects on landing<br><strong>⚠️ Note</strong>: data only, no Chinese phone number (can't register some apps like Meituan)<br><a class=\"card-link\" href=\"https://www.airalo.com\" target=\"_blank\" rel=\"noopener\">Airalo →</a> <a class=\"card-link\" href=\"https://holafly.com\" target=\"_blank\" rel=\"noopener\">Holafly →</a>",
+      "sub": "Buy before flying, data from $4"
     },
     "sim": {
-      "label": "📱 Alt",
+      "label": "CN SIM",
       "title": "CN SIM",
-      "desc": "Airport:Mobile/Unicom/Telecom. Passport. ¥29-99/mo. Get number→register apps."
+      "desc": "<strong>China Mobile / China Unicom / China Telecom</strong><br>Kiosks in airport arrival halls (before exiting to transport)<br><strong>Required</strong>: original passport (not a copy)<br><strong>Tourist plans</strong>: ¥29-99/month — includes data + domestic calls + texts<br><strong>Tip</strong>: get a local number first, then use it to register Alipay, WeChat, DiDi, Meituan<br><strong>eSIM tourist option</strong>: some carriers offer short-term tourist eSIMs — ask at the kiosk",
+      "sub": "Airport kiosk, 29-99 yuan/month"
     },
     "vpn": {
-      "label": "🔐 VPN",
+      "label": "VPN",
       "title": "Install Early",
-      "desc": "Mullvad/Astrill. Install+pay before. Keep 2 different protocols as backup."
+      "desc": "<strong>Mullvad</strong> — open-source, €5/month, no logs, WireGuard<br><strong>Astrill</strong> — optimized for China users, ~$15-30/month, multiple protocols<br><strong>⚠️ Install + subscribe BEFORE arriving</strong> — VPN provider websites are blocked inside China<br><strong>Keep 2 protocols</strong>: WireGuard (fast, primary) + OpenVPN/StealthVPN (backup)<br><a class=\"card-link\" href=\"https://mullvad.net\" target=\"_blank\" rel=\"noopener\">Mullvad →</a> <a class=\"card-link\" href=\"https://www.astrill.com\" target=\"_blank\" rel=\"noopener\">Astrill →</a>",
+      "sub": "Install before arriving - critical"
     },
     "blocked": {
-      "label": "🚫 Blocked",
-      "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>Alt:Baidu/Xiaohongshu/Weibo/Bilibili"
-    }
+      "label": "Blocked",
+      "desc": "🚫 <strong>Blocked</strong>: Google, Gmail, Maps, YouTube, WhatsApp, Instagram, Facebook, X/Twitter, Dropbox, LINE<br>✅ <strong>Works without VPN</strong>: iCloud, Slack, Zoom, Microsoft Teams, Outlook<br>🔄 <strong>Chinese alternatives</strong>:<br><a class=\"card-link\" href=\"https://www.xiaohongshu.com\" target=\"_blank\" rel=\"noopener\">Xiaohongshu (Insta alt) →</a><br><a class=\"card-link\" href=\"https://weibo.com\" target=\"_blank\" rel=\"noopener\">Weibo (Twitter alt) →</a><br><a class=\"card-link\" href=\"https://www.bilibili.com\" target=\"_blank\" rel=\"noopener\">Bilibili (YouTube alt) →</a><br><a class=\"card-link\" href=\"https://www.amap.com\" target=\"_blank\" rel=\"noopener\">Amap (Google Maps alt) →</a>",
+      "sub": "What is blocked & alternatives"
+    },
+    "detail": {
+      "back": "Back",
+      "esim": {
+        "title": "eSIM — Buy Before You Fly",
+        "steps": [
+          "Airalo: China from $5 (1GB/7 days).",
+          "Holafly: Unlimited data, China from $19.",
+          "Nomad: Budget, China from $4.",
+          "Buy & install BEFORE departure.",
+          "Note: Data only, no phone number."
+        ]
+      },
+      "sim": {
+        "title": "China SIM Card",
+        "steps": [
+          "Airport arrival hall kiosks (Mobile/Unicom/Telecom).",
+          "Need: Original passport.",
+          "Plans: 29-99Y/month. Data + calls + SMS.",
+          "Get number -> register Alipay/WeChat/DiDi.",
+          "Keep home SIM for SMS verification."
+        ]
+      },
+      "vpn": {
+        "title": "VPN — Install Before Arriving",
+        "steps": [
+          "Mullvad: 5EUR/month. Open-source. WireGuard.",
+          "Astrill: $15-30/month. China-optimized.",
+          "Install + pay BEFORE arriving.",
+          "Keep 2 protocols: WireGuard + fallback.",
+          "Test before departure."
+        ]
+      },
+      "blocked": {
+        "title": "Blocked Services & Alternatives",
+        "steps": [
+          "Blocked: Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE.",
+          "Works: iCloud, Slack, Zoom, Teams, Outlook.",
+          "Maps -> Amap/Baidu Maps.",
+          "Instagram -> Xiaohongshu.",
+          "Twitter/X -> Weibo.",
+          "YouTube -> Bilibili.",
+          "WhatsApp -> WeChat."
+        ]
+      }
+    },
+    "intro": "Google, WhatsApp, Instagram blocked. Get connected before you land."
   },
   "s5": {
     "meta": {
       "title": "Mobile Payment",
       "sub": "China is cashless. Link foreign card before — most critical step."
     },
+    "intro": "China is largely cashless — mobile payment is the default, accounting for over 86% of consumer transactions. Foreign visitors can now link Visa, Mastercard, JCB, and Amex directly to Alipay and WeChat Pay. No Chinese bank account needed.",
+    "stat1": "cashless transactions",
+    "stat2": "no fee per transaction",
+    "stat3": "apps cover 95%+ of scenarios",
+    "backup": "<strong>💡 Backup</strong><span>Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one payment app fails, try the other.</span>",
+    "detail": {
+      "back": "Back to Payment"
+    },
     "alipay": {
-      "label": "Alipay",
-      "title": "Setup Guide",
-      "step1": "Search \"Alipay\"",
-      "step2": "Intl#→passport verify",
-      "step3": "Me→Cards→Add Visa/MC/JCB/Amex",
-      "step4": "Scan/pay code. ≤¥200 free"
+      "title": "Alipay Setup Guide",
+      "steps": [
+        "Download Alipay from <a href=\"https://www.alipay.com\" target=\"_blank\" rel=\"noopener\">alipay.com</a> or your app store",
+        "Sign up with your phone number → verify identity with passport photo",
+        "Me → Bank Cards → Add Card → Visa / Mastercard / JCB / Amex supported",
+        "Scan merchant QR or show your pay code. <strong>≤¥200/transaction: no fee. >¥200: 3% service fee.</strong>",
+        "<strong>TourPass</strong>: prepaid card for visitors — no Chinese bank account needed"
+      ],
+      "links": [
+        {
+          "key": "download",
+          "label": "Download Alipay",
+          "url": "https://www.alipay.com"
+        },
+        {
+          "key": "support",
+          "label": "☎ Support: 95188 / +86-571-26886000",
+          "url": "https://render.alipay.com/p/s/alipaycard"
+        }
+      ]
     },
     "wechat": {
-      "label": "WeChat",
-      "title": "WeChat Pay",
-      "step1": "Download→sign up",
-      "step2": "Me→Services→Wallet→Cards",
-      "step3": "Link Visa/MC(lower limit)",
-      "backupTitle": "💡 Backup",
-      "backupDesc": "Carry some RMB cash+ATM. If one app fails, try the other."
+      "title": "WeChat Pay Setup Guide",
+      "steps": [
+        "Download WeChat from <a href=\"https://www.wechat.com\" target=\"_blank\" rel=\"noopener\">wechat.com</a> or your app store",
+        "Me → Services → Wallet → Cards → Add foreign Visa/MC/Amex",
+        "Link card (lower spending limit than Alipay; some features require Chinese bank card)",
+        "<strong>Mini-Programs</strong>: order food, hail taxis, buy train tickets — all inside WeChat"
+      ],
+      "links": [
+        {
+          "key": "download",
+          "label": "Download WeChat",
+          "url": "https://www.wechat.com"
+        },
+        {
+          "key": "support",
+          "label": "☎ Support: 95017",
+          "url": "https://www.wechat.com"
+        }
+      ]
     }
   },
   "s6": {
-    "meta": {
-      "title": "Move+Eat+Stay",
-      "sub": "Transport, dining, accommodation & clothing tips"
+    "intro": "Getting around, eating well, and finding a place to stay. Tap each item for practical tips.",
+    "detail": {
+      "back": "Back",
+      "transport": {
+        "title": "Getting Around",
+        "steps": [
+          "DiDi: Ride-hailing built into Alipay. English UI. Pay with linked foreign card.",
+          "Metro: Use Alipay transport QR code at gates. 40+ cities. No ticket machine needed.",
+          "HSR (High-Speed Rail): Book at 12306.cn/en. Foreign cards accepted.",
+          "Shared Bikes: Scan with Alipay/Meituan. 1.5-3Y/ride. No deposit for most.",
+          "Tip: Alipay mini-programs handle DiDi, metro, bikes, trains — one app."
+        ]
+      },
+      "food": {
+        "title": "Dining Out",
+        "steps": [
+          "Dianping: Restaurant reviews, photos, ratings. Search by area or cuisine.",
+          "WeChat Scan > Translate: Point camera at Chinese menu, auto-translates.",
+          "Meituan / Ele.me: Food delivery to your hotel (like Uber Eats).",
+          "Halal: Look for halal sign or Lanzhou beef noodle chains.",
+          "Vegetarian: Say chun su (pure vegan). Watch for meat broth.",
+          "Allergy: Carry a bilingual allergy card. Show to staff."
+        ]
+      },
+      "accommodation": {
+        "title": "Where to Stay",
+        "steps": [
+          "Trip.com / Booking.com: Filter accepts foreign guests. Not all hotels can host foreigners.",
+          "Airbnb: Stopped China operations. Use Tujia instead.",
+          "Foreign Guest Qualification: Chinese hotels need a special license. Budget hotels may turn you away.",
+          "Foreigner-friendly chains: Marriott, Hilton, IHG, Hyatt, Jin Jiang.",
+          "If turned away: Call 12367 for help finding compliant accommodation."
+        ]
+      },
+      "clothing": {
+        "title": "What to Wear",
+        "steps": [
+          "Sizing: China sizes 1-2 smaller than US/EU. US M = CN L/XL.",
+          "Spring (Mar-May): 10-22C. Light jacket + layers.",
+          "Summer (Jun-Aug): 28-38C hot humid. Breathable fabrics, sunscreen, umbrella.",
+          "Autumn (Sep-Nov): 10-25C. Best season. Light sweater.",
+          "Winter (Dec-Feb): North -10C heavy coat. South 0-10C damp cold, layers work best."
+        ]
+      }
     },
     "transport": {
-      "label": "🚕 Transport",
-      "desc": "<strong>DiDi</strong>:Alipay,EN+card.<br><strong>Metro</strong>:transit code.<br><strong>HSR</strong>:12306.cn/en card.<br><strong>Bike</strong>:Alipay ¥1.5-3."
+      "label": "Transport",
+      "sub": "DiDi, metro, high-speed rail"
     },
     "food": {
-      "label": "🍜 Dining",
-      "desc": "<strong>Dianping</strong>:photos+score.<br><strong>WeChat Scan→TL</strong>:menu.<br><strong>Meituan/Ele.me</strong>:delivery.<br>Halal:\"清真\"/Lanzhou noodle.<br>Veg:\"素食\"(watch broth).<br>Allergy:carry bilingual card."
+      "label": "Dining",
+      "sub": "Order in Chinese, dietary tips"
     },
     "accommodation": {
-      "label": "🏨 Stay",
-      "desc": "<strong>Trip.com/Booking</strong>:check \"accepts foreign guests\".<br><strong>Airbnb</strong>:stopped China ops.<br><strong>Foreign guest qualification</strong>:not all hotels can host foreigners. Confirm before booking."
+      "label": "Stay",
+      "sub": "Booking, registration, tips"
     },
     "clothing": {
-      "label": "👔 Clothing",
-      "desc": "CN 1-2 sizes smaller than US/EU. US M≈CN L/XL. Uniqlo/ZARA global sizing. Spring:mild·Summer:hot humid·Autumn:best·Winter:N -10°C/S humid cold."
+      "label": "Clothing",
+      "sub": "Sizes, seasons, what to pack"
     }
   },
   "s7": {
@@ -462,22 +664,74 @@
   },
   "s10": {
     "meta": {
-      "title": "Emergency+Exit",
+      "title": "Emergency + Exit",
       "sub": ""
     },
-    "hotlines": "📞 Hotlines",
-    "immigration24h": "Immigration 24h",
-    "police": "Police",
-    "ambulance": "Ambulance",
-    "fire": "Fire",
-    "passportWarning": "⚠️ Passport",
-    "passportWarningDetail": "Carry always. Lost→police→consulate. Save embassy contacts.",
-    "departure": "👋 Depart",
-    "departStep1": "2-3h early",
-    "departStep2": "Carry refund items",
-    "departStep3": "Spend leftover RMB",
-    "departStep4": "Backup photos(Google Photos blocked)",
-    "footer": "🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn"
+    "intro": "Save these numbers. Tap each one to learn when to call and what to expect.",
+    "departIntro": "Leaving China? Here is your pre-flight checklist.",
+    "detail": {
+      "back": "Back"
+    },
+    "departure": "Departure Checklist",
+    "passportWarning": "Lost Passport?",
+    "passportWarningDetail": "1) File a police report immediately (call 110). 2) Contact your embassy/consulate for an emergency travel document. 3) Keep a photo of your passport ID page and visa on your phone.",
+    "hotline": {
+      "12367": {
+        "label": "Immigration 24h",
+        "title": "12367 — NIA Immigration Hotline",
+        "steps": [
+          "National Immigration Administration 24/7 hotline.",
+          "Languages: Chinese, English, Russian, Japanese, Korean, and more.",
+          "When to call: Visa questions, registration, overstay, lost passport, entry/exit inquiries.",
+          "Also as mobile APP and WeChat mini-program.",
+          "From abroad: +86-10-12367."
+        ]
+      },
+      "110": {
+        "label": "Police",
+        "title": "110 — Police",
+        "steps": [
+          "Emergency police number (like 911/112).",
+          "When to call: Crime, theft, lost passport, safety threat, traffic accident.",
+          "State your location and need for English-speaking assistance.",
+          "Non-emergency: visit nearest police station for reports.",
+          "After reporting lost passport, get a written police report receipt."
+        ]
+      },
+      "120": {
+        "label": "Ambulance",
+        "title": "120 — Medical Emergency",
+        "steps": [
+          "Emergency medical services.",
+          "When to call: Serious injury, chest pain, breathing difficulty, severe bleeding, unconsciousness.",
+          "Ambulance arrives 10-15 min in cities. Paramedics may have limited English.",
+          "Have ready: location, passport, insurance card, medications list.",
+          "If possible, go directly to an international hospital (see S7)."
+        ]
+      },
+      "119": {
+        "label": "Fire",
+        "title": "119 — Fire Emergency",
+        "steps": [
+          "Fire and rescue services.",
+          "When to call: Fire, gas leak, trapped in elevator, building collapse, flood.",
+          "Give address, what is burning, if anyone is trapped.",
+          "Note fire exit map on hotel room door."
+        ]
+      },
+      "depart": {
+        "label": "Depart",
+        "title": "Departure Checklist",
+        "steps": [
+          "Arrive 2-3 hours early for international check-in, security, tax refund.",
+          "Carry tax refund items in hand luggage. Get customs stamp before checking bags.",
+          "Spend or convert leftover RMB at airport.",
+          "Backup photos to iCloud or USB before leaving (Google Photos blocked).",
+          "Return portable WiFi / collect SIM deposits.",
+          "Keep arrival card stub — may need at exit border control."
+        ]
+      }
+    }
   },
   "city": {
     "beijing": {

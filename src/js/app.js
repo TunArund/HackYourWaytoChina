@@ -274,6 +274,53 @@ function resetVisaChecker() {
 
 
 /* ============================================================
+   Summary -> Detail overlay (S2-S6, S10)
+   ============================================================ */
+function openPayDetail(slide, key) {
+  const summary = document.getElementById(slide + 'Summary');
+  const detail = document.getElementById(slide + 'Detail');
+  if (!summary || !detail) return;
+  detail.innerHTML = renderPayDetail(slide, key);
+  summary.classList.add('hide');
+  detail.classList.add('show');
+}
+
+function closePayDetail(slide) {
+  const summary = document.getElementById(slide + 'Summary');
+  const detail = document.getElementById(slide + 'Detail');
+  if (!summary || !detail) return;
+  summary.classList.remove('hide');
+  detail.classList.remove('show');
+}
+
+function renderPayDetail(slide, key) {
+  if (slide === 's5') return _pd('s5.', key, true);
+  if (slide === 's3') return _pd('s3.detail.', key, false);
+  if (slide === 's4') return _pd('s4.detail.', key, false);
+  if (slide === 's6') return _pd('s6.detail.', key, false);
+  if (slide === 's2') return _pd('s2.', key, false);
+  if (slide === 's10') return _pd('s10.hotline.', key, false);
+  return '';
+}
+
+function _pd(ns, key, hasLinks) {
+  var P = ns + key + '.';
+  var steps = ta(P + 'steps'); var stepList = Array.isArray(steps) ? steps : [];
+  var links = hasLinks ? ta(ns.replace('.detail.', '.').replace('.hotline.', '.') + key + '.links') : null;
+  var linkList = Array.isArray(links) ? links : [];
+  var h = '<button class="detail-back" onclick="closePayDetail(\'' + (ns.match(/s\d+/)[0]) + '\')">← ' + t(ns.match(/s\d+/)[0] + '.detail.back') + '</button>';
+  h += '<h3>' + t(P + 'title') + '</h3>';
+  h += '<ol class="step-list">' + stepList.map(function(s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
+  if (linkList.length) {
+    h += '<p style="margin-top:12px">' + linkList.map(function(l) {
+      return '<a class="card-link" href="' + l.url + '" target="_blank" rel="noopener">' + (l.label || l.key) + ' →</a>';
+    }).join('<br>') + '</p>';
+  }
+  return h;
+}
+
+
+/* ============================================================
    Language selector (dropdown in top bar)
    ============================================================ */
 const SUPPORTED_LANGUAGES = [

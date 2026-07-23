@@ -84,10 +84,39 @@ const H = {
 /* ---- Master dispatch ---- */
 
 function renderDetail(slide, key, sub) {
+  if (slide === 's3') return renderS3(key);
+  if (slide === 's4') return renderS4(key);
   if (slide === 's7') return renderS7(key, sub);
   if (slide === 's8') return renderS8(key, sub);
   if (slide === 's9') return renderS9(key, sub);
   return '';
+}
+
+
+/* ============================================================
+   S3  Arrival & Immigration
+   ============================================================ */
+
+function renderS3(key) {
+  const P = 's3.detail.' + key + '.';
+  const items = ta(P + 'items');
+  const itemList = Array.isArray(items) ? items : [];
+  return H.back('s3') + H.title(t(P + 'title')) + H.intro(P + 'intro')
+    + '<ul class="step-list">' + itemList.map(i => '<li>' + i + '</li>').join('') + '</ul>'
+    + (t(P + 'linkUrl') ? '<p style="margin-top:12px"><a class="card-link" href="' + t(P + 'linkUrl') + '" target="_blank" rel="noopener">' + t(P + 'linkLabel') + ' →</a></p>' : '');
+}
+
+
+/* ============================================================
+   S4  Connectivity
+   ============================================================ */
+
+function renderS4(key) {
+  const P = 's4.detail.' + key + '.';
+  const items = ta(P + 'items');
+  const itemList = Array.isArray(items) ? items : [];
+  return H.back('s4') + H.title(t(P + 'title')) + H.intro(P + 'intro')
+    + '<ul class="step-list">' + itemList.map(i => '<li>' + i + '</li>').join('') + '</ul>';
 }
 
 

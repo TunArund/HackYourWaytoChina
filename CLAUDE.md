@@ -14,20 +14,14 @@ source /c/Users/TunArund/miniconda3/etc/profile.d/conda.sh && conda activate
 ```powershell
 & "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy ByPass -NoExit -Command "& 'C:\Users\TunArund\miniconda3\shell\condabin\conda-hook.ps1' ; conda activate 'C:\Users\TunArund\miniconda3'"
 ```
-激活环境并serve
+## 测试
+给用户serve指令
 ```powershell
 ~\miniconda3\shell\condabin\conda-hook.ps1
 conda activate md
 python -m http.server -d src -b 0.0.0.0 8081
 ```
-之后可查询IP然后通过Web fetch测试
-## `md` 环境
-`conda activate md`
-**已安装包**：
-- `python-docx` 1.2.0 — 读取 .docx 文件
-- `markdownify` 1.2.2 — HTML → Markdown 转换
-
-
+之后可通过`curl -s http://localhost:8081/`测试
 
 ## 脚本
 
