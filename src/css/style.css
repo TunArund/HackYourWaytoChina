@@ -124,10 +124,7 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
    ============================================================ */
 .slide-head{min-width:0;text-align:right}
 .slide-head .s-icon{font-size:2.2rem;display:inline;margin-right:0.3em;vertical-align:middle}
-.slide-head .s-title{display:inline;font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:4px;line-height:1.2;color:var(--text)}
-.slide-head .s-sub{font-size:0.92rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
-@media(min-width:1024px){.slide-head .s-sub{font-size:1rem}}
-@media(min-width:1600px){.slide-head .s-sub{font-size:1.05rem;line-height:1.55}}
+.slide-head .s-title{display:inline;font-size:clamp(1.3rem,2.8vw,1.8rem);font-weight:800;letter-spacing:-0.02em;line-height:1.2;color:var(--text)}
 @media(min-width:1024px){
   .slide-head .s-icon{display:block;margin-right:0;margin-bottom:6px}
   .slide-head .s-title{display:block}
@@ -139,13 +136,13 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 /* ============================================================
    Info Cards — solid white, v1 style
    ============================================================ */
-.info-cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.info-cards.col3{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.info-cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));overflow:hidden}
+.info-cards.col3{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
 @media(min-width:1024px){.info-cards{grid-template-columns:repeat(3,1fr);gap:12px}}
 @media(min-width:1440px){.info-cards{grid-template-columns:repeat(4,1fr);gap:14px}}
 @media(min-width:1920px){.info-cards{grid-template-columns:repeat(5,1fr);gap:16px}}
 @media(min-width:1024px){.info-cards.col3{grid-template-columns:repeat(3,1fr)}}
-.info-card{
+.info-card{min-width:0;
   background:var(--surface);border:1px solid var(--border);
   border-radius:var(--radius);padding:14px 16px;max-width:480px;
   box-shadow:var(--card-shadow);transition:all var(--transition);
@@ -164,10 +161,12 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 /* ============================================================
    Payment Slide (S5)
    ============================================================ */
+.pay-kicker{font-size:clamp(1.5rem,3.5vw,2rem);font-weight:800;line-height:1.15;color:var(--text);margin-bottom:8px;letter-spacing:-0.02em}
 .pay-intro{font-size:1.05rem;line-height:1.6;color:var(--text-secondary);margin-bottom:16px}
-.pay-stats{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin-bottom:20px}
-@media(max-width:359px){.pay-stats{grid-template-columns:1fr}}
-@media(min-width:520px){.pay-stats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
+.pay-stats{display:grid;gap:12px;grid-template-columns:1fr;margin-bottom:20px}
+@media(min-width:520px){.pay-stats{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.pay-stats{grid-template-columns:repeat(3,1fr);gap:12px}}
+@media(min-width:1440px){.pay-stats{grid-template-columns:repeat(4,1fr)}}
 @media(min-width:1024px){.pay-stats{grid-template-columns:repeat(3,1fr);gap:12px}}
 @media(min-width:1440px){.pay-stats{grid-template-columns:repeat(4,1fr)}}
 .pay-stat{text-align:center;min-width:80px}
@@ -368,7 +367,7 @@ body [lang]{display:none}
 /* ============================================================
    Footer — unified across cover & slides
    ============================================================ */
-.slide-footer{font-size:0.75rem;color:var(--text-muted);text-align:center;line-height:1.5;margin-top:auto;padding-top:12px}
+.slide-footer{font-size:0.75rem;color:var(--text-muted);text-align:center;line-height:1.5;margin-top:18px;padding-top:12px;flex-shrink:0}
 .slide-footer--cover{margin-top:20px;padding-top:0}
 
 /* ============================================================
@@ -446,7 +445,7 @@ body [lang]{display:none}
    Mobile spacing — tighter to fit more content per screen
    ============================================================ */
 @media(max-width:639px){
-  .slide-head .s-title{margin-bottom:2px}
+
   .info-cards{gap:6px}
   .info-card{padding:10px 12px}
   .tip-box{padding:8px 10px;font-size:0.78rem}

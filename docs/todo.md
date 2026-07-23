@@ -1,8 +1,13 @@
 # TODO
-
+## 功能架构
+i18n 引擎增强：特殊文本翻译为样式（参考md）结构优化：事实信息重复、屏幕相关S1-9 L1-8 
+统一detail函数
+css命名设计 paySummary payDetail
 ## 页面设计
-S2-S4,S6 详情页溢出问题
+S1 太小
+S2-S4,S6 小屏幕详情页溢出问题
 S7-S9使用S5的pd函数 统一summary Detail的css样式 与嵌套简化可以合作
+中屏幕未居中 应该和大屏幕一样居中
 favicon.ico
 桌面端点击expand时，详情页会闪烁滚动条
 | # | 待办 | 优先级 | 说明 |
@@ -47,7 +52,6 @@ favicon.ico
 ### 如何添加/修改内容
 
 1. **走用户旅程**：
-2. **先写中文**（`zh.json`），再翻译到其他 5 语言
 3. **i18n 键命名**：使用 `slide.key.subkey` 层级，不要用扁平化点分隔键
 4. **fallback**：翻译缺失时自动 fallback 到 en.json
 

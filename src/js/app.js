@@ -2,11 +2,6 @@
    app.js — Version management, navigation, visa checker, language
    ============================================================ */
 
-// Clean up stale hash fragments that match slide IDs (would force-scroll on refresh)
-if (/^#s\d/.test(window.location.hash)) {
-  history.replaceState(null, '', window.location.pathname + window.location.search);
-}
-
 /* ============================================================
    Version Management
    ============================================================ */
@@ -16,10 +11,9 @@ const scrubber = document.getElementById('navScrubber');
 const versionSwitch = document.getElementById('versionSwitch');
 const tooltip = document.getElementById('scrubTooltip');
 
-function startVersion(v) {
+function startVersion(v, targetSlide) {
   currentVersion = v;
   document.body.className = 'version-' + v;
-  // Explicitly hide slides from the other version (belt-and-suspenders with CSS)
   container.querySelectorAll('.slide--short,.slide--long').forEach(s => {
     if (v === 'short') { s.style.display = s.classList.contains('slide--short') ? '' : 'none'; }
     else { s.style.display = s.classList.contains('slide--long') ? '' : 'none'; }
@@ -29,8 +23,8 @@ function startVersion(v) {
   scrubber.classList.add('visible');
   updateVersionSwitchText();
   buildBars();
-  const first = v === 'short' ? document.getElementById('s1') : document.getElementById('l1');
-  if (first) first.scrollIntoView({ behavior: 'smooth' });
+  var dest = targetSlide || (v === 'short' ? document.getElementById('s1') : document.getElementById('l1'));
+  if (dest) dest.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
 
 function resetToCover() {
@@ -276,6 +270,9 @@ function resetVisaChecker() {
 /* ============================================================
    Summary -> Detail overlay (S2-S6, S10)
    ============================================================ */
+var _activePaySlide = null;
+var _restoring = false;
+
 function openPayDetail(slide, key) {
   const summary = document.getElementById(slide + 'Summary');
   const detail = document.getElementById(slide + 'Detail');
@@ -283,6 +280,12 @@ function openPayDetail(slide, key) {
   detail.innerHTML = renderPayDetail(slide, key);
   summary.classList.add('hide');
   detail.classList.add('show');
+  _activePaySlide = slide;
+  if (_restoring) {
+    history.replaceState({ paySlide: slide, payKey: key }, '', '#' + slide + '-detail-' + key);
+  } else {
+    history.pushState({ paySlide: slide, payKey: key }, '', '#' + slide + '-detail-' + key);
+  }
 }
 
 function closePayDetail(slide) {
@@ -291,16 +294,51 @@ function closePayDetail(slide) {
   if (!summary || !detail) return;
   summary.classList.remove('hide');
   detail.classList.remove('show');
+  _activePaySlide = null;
+  history.replaceState(null, '', '#' + slide);
 }
 
+// Handle browser back/forward for pay-detail slides
+window.addEventListener('popstate', function(e) {
+  if (e.state && e.state.paySlide) {
+    // Forward navigation to a detail — reopen it (don't trigger from closePayDetail replaceState)
+    if (!_activePaySlide) openPayDetail(e.state.paySlide, e.state.payKey);
+  } else if (_activePaySlide) {
+    // Back navigation away from detail — close it
+    closePayDetail(_activePaySlide);
+  }
+});
+
 function renderPayDetail(slide, key) {
+  // Short-term slides
   if (slide === 's5') return _pd('s5.', key, true);
   if (slide === 's3') return _pd('s3.detail.', key, false);
   if (slide === 's4') return _pd('s4.detail.', key, false);
   if (slide === 's6') return _pd('s6.detail.', key, false);
   if (slide === 's2') return _pd('s2.', key, false);
   if (slide === 's10') return _pd('s10.hotline.', key, false);
+  // Long-term slides — all use unified _pd()
+  if (slide === 'l1') return _pd('l1.', key, false);
+  if (slide === 'l2') return _pd('l2.', key, false);
+  if (slide === 'l3') return _pd('l3.', key, false);
+  if (slide === 'l4') return _pd('l4.', key, false);
+  if (slide === 'l5') return _pd('l5.', key, false);
+  if (slide === 'l6') return _pd('l6.', key, false);
+  if (slide === 'l7') return _pd('l7.', key, false);
+  // L8: renewal uses _pd, hotlines reuse s10.hotline data
+  if (slide === 'l8') {
+    if (key === 'renewal') return _pd('l8.', key, false);
+    return _pdL8Hotline(key);
+  }
   return '';
+}
+
+function _pdL8Hotline(key) {
+  var steps = ta('s10.hotline.' + key + '.steps');
+  var stepList = Array.isArray(steps) ? steps : [];
+  return '<button class="detail-back" onclick="closePayDetail(\'l8\')">← ' + t('l8.detail.back') + '</button>'
+    + '<h3>' + t('s10.hotline.' + key + '.title') + '</h3>'
+    + '<ol class="step-list">' + stepList.map(function(s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
 }
 
 function _pd(ns, key, hasLinks) {
@@ -308,7 +346,9 @@ function _pd(ns, key, hasLinks) {
   var steps = ta(P + 'steps'); var stepList = Array.isArray(steps) ? steps : [];
   var links = hasLinks ? ta(ns.replace('.detail.', '.').replace('.hotline.', '.') + key + '.links') : null;
   var linkList = Array.isArray(links) ? links : [];
-  var h = '<button class="detail-back" onclick="closePayDetail(\'' + (ns.match(/s\d+/)[0]) + '\')">← ' + t(ns.match(/s\d+/)[0] + '.detail.back') + '</button>';
+  var slideId = (ns.match(/[sl]\d+/) || [''])[0];
+  var backLabel = t(slideId + '.detail.back') || '← Back';
+  var h = '<button class="detail-back" onclick="closePayDetail(\'' + slideId + '\')">← ' + backLabel + '</button>';
   h += '<h3>' + t(P + 'title') + '</h3>';
   h += '<ol class="step-list">' + stepList.map(function(s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
   if (linkList.length) {
@@ -387,13 +427,63 @@ document.getElementById('btnLang').addEventListener('click', toggleLanguageDropd
 // Prevent browser from restoring scroll position on refresh
 if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
+/* ============================================================
+   Hash URL restore — on page load, parse hash and restore state
+   ============================================================ */
+function restoreFromHash() {
+  var hash = window.location.hash;
+  if (!hash || hash === '#s0' || hash === '#') return false;
+
+  // Parse: #slideId  or  #slideId-detail-key
+  var rest = hash.replace('#', '');
+  var dashIdx = rest.indexOf('-detail-');
+  var slideId, detailKey;
+  if (dashIdx > -1) {
+    slideId = rest.substring(0, dashIdx);
+    detailKey = rest.substring(dashIdx + 8); // '-detail-'.length === 8
+  } else {
+    slideId = rest;
+    detailKey = null;
+  }
+
+  // Validate slideId
+  var slideEl = document.getElementById(slideId);
+  if (!slideEl) return false;
+
+  // Determine version
+  var version = slideId.charAt(0) === 'l' ? 'long' : 'short';
+
+  // Start version, targeting the specific slide (instant scroll, no animation)
+  startVersion(version, slideEl);
+
+  // If a detail was open, restore it after a brief DOM settle
+  if (detailKey) {
+    _restoring = true;
+    setTimeout(function () {
+      // Determine which detail system to use: pay-detail vs detail-panel
+      if (document.getElementById(slideId + 'Detail')) {
+        // pay-detail pattern (S2-S6,S10,L1-L8)
+        openPayDetail(slideId, detailKey);
+      } else {
+        // detail-panel pattern (S7,S8,S9)
+        openDetail(slideId, detailKey);
+      }
+      _restoring = false;
+    }, 150);
+  }
+
+  return true;
+}
+
 // Initialize on DOM ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', () => {
-    buildLanguageDropdown();
-    updateLanguageButton();
-  });
-} else {
+function _appInit() {
   buildLanguageDropdown();
   updateLanguageButton();
+  restoreFromHash();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', _appInit);
+} else {
+  _appInit();
 }

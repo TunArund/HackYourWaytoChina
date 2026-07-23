@@ -52,9 +52,9 @@
   <section class="slide slide--short slide-pos--top" id="s1">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🔍</span><h2 class="s-title" data-i18n="s1.meta.title">Do I Need a Visa?</h2><p class="s-sub" data-i18n="s1.meta.sub">Select your nationality to see applicable policies.</p></div>
+        <div class="slide-head"><span class="s-icon">🔍</span><h2 class="s-title" data-i18n="s1.meta.title">Do I Need a Visa?</h2></div>
       </div>
-      <div class="slide-body"><div class="visa-checker">
+      <div class="slide-body"><p class="pay-kicker" data-i18n="s1.kicker">Visa Check</p><div class="visa-checker">
         <div id="vcSelectArea"><div class="vc-row"><div class="vc-q"><label data-i18n="s1.questions.q1">Step 1: Region</label><select class="vc-select" id="vcContinent"></select></div><div class="vc-q"><label data-i18n="s1.questions.q2">Step 2: Country</label><select class="vc-select" id="vcNationality" disabled></select></div></div></div>
         <div id="vcResult" class="vc-result"></div>
         <button id="vcReset" class="vc-reset" onclick="resetVisaChecker()"><span data-i18n="app.buttons.reset">↩ Select Again</span></button>
@@ -66,10 +66,11 @@
   <section class="slide slide--short slide-pos--mid" id="s2">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="s2.meta.title">Before You Go</h2><p class="s-sub" data-i18n="s2.meta.sub">Checklist + arrival card + final check. <strong>97%</strong> Beijing arrivals use online filing.</p></div>
+        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="s2.meta.title">Before You Go</h2></div>
       </div>
       <div class="slide-body slide-body--pay">
         <div class="pay-summary" id="s2Summary">
+          <p class="pay-kicker" data-i18n="s2.kicker">Kicker</p>
           <p class="pay-intro" data-i18n="s2.intro">Before you fly, make sure you have these essentials ready. Tap each item for details.</p>
           <div class="pay-stats">
             <button class="pay-icon-btn" onclick="openPayDetail('s2','passport')"><span>📘</span><span data-i18n="s2.passport.label">Passport</span><span class="pay-btn-sub" data-i18n="s2.passport.sub">Validity & blank pages</span></button>
@@ -87,10 +88,11 @@
   <section class="slide slide--short slide-pos--mid" id="s3">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">✈️</span><h2 class="s-title" data-i18n="s3.meta.title">Arrival & Immigration</h2><p class="s-sub" data-i18n="s3.meta.sub">Flow+customs+registration. Under 14 / over 70 fingerprint exempt.</p></div>
+        <div class="slide-head"><span class="s-icon">✈️</span><h2 class="s-title" data-i18n="s3.meta.title">Arrival & Immigration</h2></div>
       </div>
             <div class="slide-body slide-body--pay">
         <div class="pay-summary" id="s3Summary">
+          <p class="pay-kicker" data-i18n="s3.kicker">Kicker</p>
           <p class="pay-intro" data-i18n="s3.intro">Landing in China? Tap to learn about immigration, customs, and registration.</p>
           <div class="pay-stats">
             <button class="pay-icon-btn" onclick="openPayDetail('s3','steps')"><span>🛂</span><span data-i18n="s3.steps.label">Immigration</span><span class="pay-btn-sub" data-i18n="s3.steps.sub">6-step process at border control</span></button>
@@ -107,10 +109,11 @@
   <section class="slide slide--short slide-pos--mid" id="s4">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📶</span><h2 class="s-title" data-i18n="s4.meta.title">Connectivity</h2><p class="s-sub" data-i18n="s4.meta.sub">Google/WA/IG blocked. Priority: get online.</p></div>
+        <div class="slide-head"><span class="s-icon">📶</span><h2 class="s-title" data-i18n="s4.meta.title">Connectivity</h2></div>
       </div>
             <div class="slide-body slide-body--pay">
         <div class="pay-summary" id="s4Summary">
+          <p class="pay-kicker" data-i18n="s4.kicker">Kicker</p>
           <p class="pay-intro" data-i18n="s4.intro">Google, WhatsApp, and Instagram are blocked in China. Here is how to stay connected.</p>
           <div class="pay-stats">
             <button class="pay-icon-btn" onclick="openPayDetail('s4','esim')"><span>📱</span><span data-i18n="s4.esim.label">eSIM</span><span class="pay-btn-sub" data-i18n="s4.esim.sub">Buy before flying, from $4</span></button>
@@ -128,10 +131,11 @@
   <section class="slide slide--short slide-pos--mid" id="s5">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">💳</span><h2 class="s-title" data-i18n="s5.meta.title">Mobile Payment</h2><p class="s-sub" data-i18n="s5.meta.sub">China is cashless. Link foreign card before — most critical step.</p></div>
+        <div class="slide-head"><span class="s-icon">💳</span><h2 class="s-title" data-i18n="s5.meta.title">Mobile Payment</h2></div>
       </div>
       <div class="slide-body slide-body--pay">
         <div class="pay-summary" id="s5Summary">
+          <p class="pay-kicker" data-i18n="s5.kicker">Kicker</p>
           <p class="pay-intro" data-i18n="s5.intro">China is largely cashless — mobile payment is the default, accounting for over 86% of consumer transactions. Foreign visitors can now link Visa, Mastercard, JCB, and Amex directly to Alipay and WeChat Pay. No Chinese bank account needed.</p>
           <div class="pay-stats">
             <div class="pay-stat"><strong class="pay-stat-num">86%</strong><span data-i18n="s5.stat1">cashless transactions</span></div>
@@ -157,6 +161,7 @@
       </div>
             <div class="slide-body slide-body--pay">
         <div class="pay-summary" id="s6Summary">
+          <p class="pay-kicker" data-i18n="s6.kicker">Kicker</p>
           <p class="pay-intro" data-i18n="s6.intro">Getting around, eating well, and finding a place to stay. Tap each item for practical tips.</p>
           <div class="pay-stats">
             <button class="pay-icon-btn" onclick="openPayDetail('s6','transport')"><span>🚕</span><span data-i18n="s6.transport.label">Transport</span><span class="pay-btn-sub" data-i18n="s6.transport.sub">DiDi, metro, high-speed rail</span></button>
@@ -174,9 +179,10 @@
   <section class="slide slide--short slide-pos--mid" id="s7">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="s7.meta.title">Medical Services</h2><p class="s-sub" data-i18n="s7.meta.sub">850+ institutions across 57 cities. Tap cards for details.</p></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="s7.meta.title">Medical Services</h2></div>
       </div>
       <div class="slide-body">
+        <p class="pay-kicker" data-i18n="s7.kicker">Kicker</p>
         <div class="info-cards">
           <div class="info-card" onclick="openDetail('s7','hospital')" style="cursor:pointer"><span class="c-label" data-i18n="s7.hospital.label">🏥 Hospitals</span><h4 data-i18n="s7.hospital.title">Intl Hospitals & Meds</h4><p data-i18n="s7.hospital.desc">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
           <div class="info-card" onclick="openDetail('s7','big3')" style="cursor:pointer"><span class="c-label" data-i18n="s7.big3.label">🦷👁️🌿 Medical Tourism</span><h4 data-i18n="s7.big3.title">Dental·Eye·TCM</h4><p data-i18n="s7.big3.desc">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
@@ -191,9 +197,10 @@
   <section class="slide slide--short slide-pos--mid" id="s8">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🛍️</span><h2 class="s-title" data-i18n="s8.meta.title">Shopping & Tax Refund</h2><p class="s-sub" data-i18n="s8.meta.sub">Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund.</p></div>
+        <div class="slide-head"><span class="s-icon">🛍️</span><h2 class="s-title" data-i18n="s8.meta.title">Shopping & Tax Refund</h2></div>
       </div>
       <div class="slide-body">
+        <p class="pay-kicker" data-i18n="s8.kicker">Kicker</p>
         <div class="info-cards">
           <div class="info-card" onclick="openDetail('s8','electronics')" style="cursor:pointer"><span class="c-label" data-i18n="s8.electronics.label">📱 Electronics</span><h4 data-i18n="s8.electronics.title">Foldables·Drones·AI Glasses</h4><p data-i18n="s8.electronics.desc">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
           <div class="info-card" onclick="openDetail('s8','souvenirs')" style="cursor:pointer"><span class="c-label" data-i18n="s8.souvenirs.label">🎨 Souvenirs</span><h4 data-i18n="s8.souvenirs.title">Palace Museum·Craft·Local</h4><p data-i18n="s8.souvenirs.desc">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
@@ -209,9 +216,10 @@
   <section class="slide slide--short slide-pos--mid" id="s9">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🗺️</span><h2 class="s-title" data-i18n="s9.meta.title">Destinations</h2><p class="s-sub" data-i18n="s9.meta.sub">Foreign travelers have explored nearly 500 cities. Tap to discover.</p></div>
+        <div class="slide-head"><span class="s-icon">🗺️</span><h2 class="s-title" data-i18n="s9.meta.title">Destinations</h2></div>
       </div>
       <div class="slide-body">
+        <p class="pay-kicker" data-i18n="s9.kicker">Kicker</p>
         <div class="info-cards col3">
           <div class="info-card" onclick="openDetail('s9','top10')" style="cursor:pointer"><span class="c-label" data-i18n="s9.top10.label">🏙️ Top 10</span><h4 data-i18n="s9.top10.title">Must-Visit Cities</h4><p data-i18n="s9.top10.desc">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
           <div class="info-card" onclick="openDetail('s9','rising')" style="cursor:pointer"><span class="c-label" data-i18n="s9.rising.label">🚀 Rising</span><h4 data-i18n="s9.rising.title">Social Media Stars</h4><p data-i18n="s9.rising.desc">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
@@ -230,6 +238,7 @@
       </div>
       <div class="slide-body slide-body--pay">
         <div class="pay-summary" id="s10Summary">
+          <p class="pay-kicker" data-i18n="s10.kicker">Kicker</p>
           <p class="pay-intro" data-i18n="s10.intro">Save these numbers. In an emergency, knowing who to call can make the difference.</p>
           <div class="pay-stats">
             <button class="pay-icon-btn" onclick="openPayDetail('s10','12367')"><span class="pay-stat-num">12367</span><span data-i18n="s10.hotline.12367.label">Immigration 24h</span></button>
@@ -242,39 +251,58 @@
           <button class="pay-icon-btn" onclick="openPayDetail('s10','depart')"><span>👋</span><span data-i18n="s10.departure">Departure Checklist</span></button>
         </div>
         <div class="pay-detail" id="s10Detail"></div>
-        <p class="slide-footer"><span>🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn</span></p>
+        <p class="slide-footer" data-i18n="app.cover.footer">📅 Updated July 2026 · 🌐 Bilingual</p>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       LONG-TERM (8 slides)
+       LONG-TERM (8 slides) — S5 pattern: pay-kicker + pay-intro + pay-icons
        ============================================================ -->
 
   <!-- L1: Status Transfer  top -->
   <section class="slide slide--long slide-pos--top" id="l1">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title">Status Transfer</h2><p class="s-sub" data-i18n="s9.meta.sub">Already in China. Convert to long-term.</p></div>
+        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="l1.meta.title">Status Transfer</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards col3">
-        <div class="info-card"><span class="c-label">Path A</span><h4>Tourist→Work</h4><p>Employer→WP→exit&re-enter Z visa(or in-country per local Exit-Entry Bureau).</p></div>
-        <div class="info-card"><span class="c-label">Path B</span><h4>Student→Work</h4><p>RP in-country with WP after graduation(no exit). For fresh Chinese university grads.</p></div>
-        <div class="info-card"><span class="c-label">Path C</span><h4>K Visa(STEM)</h4><p>Oct 2025. STEM degree+<~40→no employer. Apply in-country. Work/research/startup.</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l1Summary">
+          <p class="pay-kicker" data-i18n="l1.kicker">Your Route In</p>
+          <p class="pay-intro" data-i18n="l1.intro">Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process.</p>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l1','pathA')"><span>🔄</span><span data-i18n="l1.pathA.label">Path A</span><span class="pay-btn-sub" data-i18n="l1.pathA.sub">Tourist → Work</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l1','pathB')"><span>🎓</span><span data-i18n="l1.pathB.label">Path B</span><span class="pay-btn-sub" data-i18n="l1.pathB.sub">Student → Work</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l1','pathC')"><span>🔬</span><span data-i18n="l1.pathC.label">Path C</span><span class="pay-btn-sub" data-i18n="l1.pathC.sub">K Visa (STEM Talent)</span></button>
+          </div>
+        </div>
+        <div class="pay-detail" id="l1Detail"></div>
+      </div>
     </div>
   </section>
 
-  <!-- L2: Permits  mid -->
+  <!-- L2: Work & Residence Permits  mid -->
   <section class="slide slide--long slide-pos--mid" id="l2">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">💼</span><h2 class="s-title">Work & Residence</h2><p class="s-sub" data-i18n="s10.meta.sub">Two steps. Within 30 days of entry.</p></div>
+        <div class="slide-head"><span class="s-icon">💼</span><h2 class="s-title" data-i18n="l2.meta.title">Work & Residence Permits</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards">
-        <div class="info-card"><span class="c-label">Step 1</span><h4>Work Permit</h4><p>Employer online. Need:degree+background check+health+contract. 15-20 biz days.</p></div>
-        <div class="info-card"><span class="c-label">Step 2</span><h4>Residence Permit</h4><p>After WP→Exit-Entry Bureau. Bring:passport+WP+registration+photo. 1-5yr.</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l2Summary">
+          <p class="pay-kicker" data-i18n="l2.kicker">Get Permitted</p>
+          <p class="pay-intro" data-i18n="l2.intro">The two-step process every foreign worker goes through. Since late 2025, a one-stop online portal integrates work permit, residence permit, and social security registration.</p>
+          <div class="pay-stats">
+            <div class="pay-stat"><strong class="pay-stat-num">~6</strong><span data-i18n="l2.stat1">working days avg</span></div>
+            <div class="pay-stat"><strong class="pay-stat-num">1-stop</strong><span data-i18n="l2.stat2">online portal since 2025</span></div>
+            <div class="pay-stat"><strong class="pay-stat-num">¥0</strong><span data-i18n="l2.stat3">physical card eliminated</span></div>
+          </div>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l2','workPermit')"><span>📝</span><span data-i18n="l2.workPermit.label">Step 1</span><span class="pay-btn-sub" data-i18n="l2.workPermit.sub">Foreigner's Work Permit</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l2','residencePermit')"><span>🪪</span><span data-i18n="l2.residencePermit.label">Step 2</span><span class="pay-btn-sub" data-i18n="l2.residencePermit.sub">Residence Permit</span></button>
+          </div>
+        </div>
+        <div class="pay-detail" id="l2Detail"></div>
+      </div>
     </div>
   </section>
 
@@ -282,12 +310,25 @@
   <section class="slide slide--long slide-pos--mid" id="l3">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📶💳</span><h2 class="s-title">Phone+Bank</h2><p class="s-sub">CN number+bank→full digital life.</p></div>
+        <div class="slide-head"><span class="s-icon">📶💳</span><h2 class="s-title" data-i18n="l3.meta.title">Phone + Bank</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards">
-        <div class="info-card"><span class="c-label">📱 Phone</span><p>Mobile/Unicom/Telecom. Passport. ¥29-99/mo. Then:unlock Alipay/WeChat→full features.</p></div>
-        <div class="info-card"><span class="c-label">🏦 Bank</span><p>Passport+RP+work+phone. Rec:BOC/ICBC. Then link Alipay/WeChat→lift ¥200 limit.</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l3Summary">
+          <p class="pay-kicker" data-i18n="l3.kicker">Digital Keys</p>
+          <p class="pay-intro" data-i18n="l3.intro">A Chinese phone number and bank account are the keys to everyday life in China.</p>
+          <div class="pay-stats">
+            <div class="pay-stat"><strong class="pay-stat-num">900M+</strong><span data-i18n="l3.stat1">mobile payment users</span></div>
+            <div class="pay-stat"><strong class="pay-stat-num">All</strong><span data-i18n="l3.stat2">major banks accept passports</span></div>
+            <div class="pay-stat"><strong class="pay-stat-num">¥29</strong><span data-i18n="l3.stat3">monthly plan from</span></div>
+          </div>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l3','phone')"><span>📱</span><span data-i18n="l3.phone.label">SIM Card</span><span class="pay-btn-sub" data-i18n="l3.phone.sub">Passport required. ¥29-99/month.</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l3','bank')"><span>🏦</span><span data-i18n="l3.bank.label">Bank Account</span><span class="pay-btn-sub" data-i18n="l3.bank.sub">BOC/ICBC/CMB. Lifts ¥200 limit.</span></button>
+          </div>
+          <div class="tip-box tip-box--info" data-i18n="l3.tip"><strong>💡 Priority order</strong><span>Get SIM → open bank account → link to Alipay/WeChat.</span></div>
+        </div>
+        <div class="pay-detail" id="l3Detail"></div>
+      </div>
     </div>
   </section>
 
@@ -295,12 +336,20 @@
   <section class="slide slide--long slide-pos--mid" id="l4">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏢</span><h2 class="s-title">Finding a Home</h2></div>
+        <div class="slide-head"><span class="s-icon">🏢</span><h2 class="s-title" data-i18n="l4.meta.title">Finding a Home</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards">
-        <div class="info-card"><span class="c-label">🏠 Rent</span><p><strong>Ziroom/Beike</strong> expat listings.<br><strong>Contract</strong>:1mo dep+3mo rent,bilingual. Confirm landlord helps registration.<br><strong>Areas</strong>:SH Gubei/Jing'an,BJ Chaoyang/Shunyi,GZ Tianhe.</p></div>
-        <div class="info-card"><span class="c-label">📝 Register</span><p>Re-register within 24h/move. Since Mar 2026:12367 online(7 pilot). Prerequisite for all admin. Failure=warning+fine(Art.76).</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l4Summary">
+          <p class="pay-kicker" data-i18n="l4.kicker">Find Your Home</p>
+          <p class="pay-intro" data-i18n="l4.intro">Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.</p>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l4','rent')"><span>🏠</span><span data-i18n="l4.rent.label">Renting</span><span class="pay-btn-sub" data-i18n="l4.rent.sub">Rental Guide</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l4','registration')"><span>📝</span><span data-i18n="l4.registration.label">Registration</span><span class="pay-btn-sub" data-i18n="l4.registration.sub">Police Registration</span></button>
+          </div>
+          <div class="tip-box tip-box--info" data-i18n="l4.sinceMar2026"><strong>💡 Since Mar 2026</strong><span>12367 platform supports online registration in 7 pilot cities: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.</span></div>
+        </div>
+        <div class="pay-detail" id="l4Detail"></div>
+      </div>
     </div>
   </section>
 
@@ -308,12 +357,24 @@
   <section class="slide slide--long slide-pos--bot" id="l5">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title">Health+Social</h2></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="l5.meta.title">Health + Social Insurance</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards">
-        <div class="info-card"><span class="c-label">🏥 Social Insurance</span><p>Pension+medical+injury+unemployment+maternity+housing fund. Paid jointly. Public hospital partial reimbursement.</p></div>
-        <div class="info-card"><span class="c-label">🛡️ Private</span><p>Most buy supplementary intl insurance→private clinics. Cigna/Allianz/Bupa. ~¥15K-50K/yr. Hospitals:UFH/Jiahui/OASIS/Clifford.</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l5Summary">
+          <p class="pay-kicker" data-i18n="l5.kicker">Stay Covered</p>
+          <p class="pay-intro" data-i18n="l5.intro">Foreign employees must enroll in all five social insurances within 30 days of work permit issuance. Most expats also buy supplementary international health insurance for private clinics with English-speaking doctors.</p>
+          <div class="pay-stats">
+            <div class="pay-stat"><strong class="pay-stat-num">~35%</strong><span data-i18n="l5.stat1">employer contribution on top</span></div>
+            <div class="pay-stat"><strong class="pay-stat-num">5+1</strong><span data-i18n="l5.stat2">insurances + housing fund</span></div>
+            <div class="pay-stat"><strong class="pay-stat-num">12</strong><span data-i18n="l5.stat3">countries with bilateral exemption</span></div>
+          </div>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l5','socialIns')"><span>🏥</span><span data-i18n="l5.socialIns.label">Social Insurance</span><span class="pay-btn-sub" data-i18n="l5.socialIns.sub">Five Insurances + Housing Fund</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l5','privateIns')"><span>🛡️</span><span data-i18n="l5.privateIns.label">Private Insurance</span><span class="pay-btn-sub" data-i18n="l5.privateIns.sub">International Health Insurance</span></button>
+          </div>
+        </div>
+        <div class="pay-detail" id="l5Detail"></div>
+      </div>
     </div>
   </section>
 
@@ -321,39 +382,69 @@
   <section class="slide slide--long slide-pos--mid" id="l6">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🚗👨‍👩‍👧</span><h2 class="s-title">Drive+School</h2></div>
+        <div class="slide-head"><span class="s-icon">🚗👨‍👩‍👧</span><h2 class="s-title" data-i18n="l6.meta.title">Drive + School</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards">
-        <div class="info-card"><span class="c-label">🚗 License</span><p><strong>Temp</strong>:foreign+notarized translation.<br><strong>Transfer</strong>:some(BE/FR)direct swap. Others:written test(EN/JP/KR).</p></div>
-        <div class="info-card"><span class="c-label">🎒 School</span><p><strong>Types</strong>:pure intl/bilingual/public intl.<br><strong>Areas</strong>:BJ Shunyi,SH Pudong/Changning,GZ Tianhe.<br><strong>Cost</strong>:¥80K-300K+/yr. Apply 6mo ahead+interview.</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l6Summary">
+          <p class="pay-kicker" data-i18n="l6.kicker">Drive & Learn</p>
+          <p class="pay-intro" data-i18n="l6.intro">Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead.</p>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l6','license')"><span>🚗</span><span data-i18n="l6.license.label">Driver's License</span><span class="pay-btn-sub" data-i18n="l6.license.sub">Temp permit, swap, or written test</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l6','school')"><span>🎒</span><span data-i18n="l6.school.label">Schools</span><span class="pay-btn-sub" data-i18n="l6.school.sub">International & bilingual options</span></button>
+          </div>
+        </div>
+        <div class="pay-detail" id="l6Detail"></div>
+      </div>
     </div>
   </section>
 
-  <!-- L7: Daily  mid -->
+  <!-- L7: Daily Life  mid -->
   <section class="slide slide--long slide-pos--mid" id="l7">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🛒🍜</span><h2 class="s-title">Daily Life</h2></div>
+        <div class="slide-head"><span class="s-icon">🛒🍜👔</span><h2 class="s-title" data-i18n="l7.meta.title">Daily Life</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards col3">
-        <div class="info-card"><span class="c-label">🛒 Shop</span><p><strong>Taobao/JD</strong>:biggest.<br><strong>Pinduoduo</strong>:budget.<br><strong>Hema</strong>:fresh+delivery.<br>Same/next-day delivery.</p></div>
-        <div class="info-card"><span class="c-label">🍜 Food</span><p><strong>Dianping</strong>:find.<br><strong>Meituan/Ele.me</strong>:delivery.<br>Import:CityShop/Hema/Ole'.<br>Halal/veg tips same as short-term.</p></div>
-        <div class="info-card"><span class="c-label">👔 Clothing</span><p>CN 1-2 smaller. US M≈CN L/XL. Uniqlo/ZARA global. 4 seasons:N -10°C/S humid. Autumn best.</p></div>
-      </div></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l7Summary">
+          <p class="pay-kicker" data-i18n="l7.kicker">Live Local</p>
+          <p class="pay-intro" data-i18n="l7.intro">Once you have your phone, bank, and apartment sorted, here's everything for daily life — from where to shop to what to eat to how to dress.</p>
+          <div class="pay-stats">
+            <button class="pay-icon-btn" onclick="openPayDetail('l7','shopping')"><span>🛒</span><span data-i18n="l7.shopping.label">Shopping</span><span class="pay-btn-sub" data-i18n="l7.shopping.sub">Taobao·JD·Pinduoduo·Hema</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l7','food')"><span>🍜</span><span data-i18n="l7.food.label">Dining</span><span class="pay-btn-sub" data-i18n="l7.food.sub">Dianping·Meituan·Ele.me</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l7','clothing')"><span>👔</span><span data-i18n="l7.clothing.label">Clothing</span><span class="pay-btn-sub" data-i18n="l7.clothing.sub">Sizes & seasonal dressing</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l7','transport')"><span>🚕</span><span data-i18n="l7.transport.label">Transport</span><span class="pay-btn-sub" data-i18n="l7.transport.sub">Metro·DiDi·Shared bikes·HSR</span></button>
+          </div>
+        </div>
+        <div class="pay-detail" id="l7Detail"></div>
+      </div>
     </div>
   </section>
 
-  <!-- L8: Compliance  mid -->
-  <section class="slide slide--long" id="l8">
+  <!-- L8: Compliance+Emergency  mid — S10 pattern -->
+  <section class="slide slide--long slide-pos--mid" id="l8">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📅🆘</span><h2 class="s-title">Compliance+Emergency</h2></div>
+        <div class="slide-head"><span class="s-icon">📅🆘</span><h2 class="s-title" data-i18n="l8.meta.title">Compliance + Emergency</h2></div>
       </div>
-      <div class="slide-body"><div class="info-cards">
-        <div class="info-card"><span class="c-label">📅 Renewal</span><p><strong>30d before expiry.</strong> Overstay=¥500/day→deportation.<br><strong>New passport</strong>:transfer RP 10d.<br><strong>Job change</strong>:re-WP→update RP.<br><strong>Green Card</strong>:3yr+work(≥6mo/yr),income 2-3x local avg(~¥240K-360K/yr).</p></div>
-        <div class="info-card"><span class="c-label">🆘 Emerg</span><div class="em-grid"><div class="em-card"><div class="num">12367</div><div class="lbl">Immigration 24h</div></div><div class="em-card"><div class="num">110</div><div class="lbl">Police</div></div><div class="em-card"><div class="num">120</div><div class="lbl">Ambulance</div></div><div class="em-card"><div class="num">119</div><div class="lbl">Fire</div></div></div><div class="tip-box tip-box--warn" style="margin-top:6px"><strong>⚠️ Carry Passport</strong><span>Lost→police→consulate. Save embassy contacts in phone.</span></div></div>
-      </div><p class="slide-footer"><span>🧳 China Entry Guide · Updated July 2026 · Based on NIA & MFA public info · NIA 12367 · s.nia.gov.cn</span></p></div>
+      <div class="slide-body slide-body--pay">
+        <div class="pay-summary" id="l8Summary">
+          <p class="pay-kicker" data-i18n="l8.kicker">Stay Legal</p>
+          <p class="pay-intro" data-i18n="l8.intro">Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires.</p>
+          <div class="pay-icons">
+            <button class="pay-icon-btn" onclick="openPayDetail('l8','renewal')"><span>📅</span><span data-i18n="l8.renewal.label">Renewal & Compliance</span><span class="pay-btn-sub" data-i18n="l8.renewal.sub">Staying Legal</span></button>
+          </div>
+          <p class="pay-intro" style="margin-top:16px" data-i18n="l8.emergency.desc">Save these numbers. Tap each one to learn when to call and what to expect.</p>
+          <div class="pay-stats">
+            <button class="pay-icon-btn" onclick="openPayDetail('l8','12367')"><span class="pay-stat-num">12367</span><span data-i18n="l8.emergency.hotline12367">Immigration 24h</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l8','110')"><span class="pay-stat-num">110</span><span data-i18n="l8.emergency.hotline110">Police</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l8','120')"><span class="pay-stat-num">120</span><span data-i18n="l8.emergency.hotline120">Ambulance</span></button>
+            <button class="pay-icon-btn" onclick="openPayDetail('l8','119')"><span class="pay-stat-num">119</span><span data-i18n="l8.emergency.hotline119">Fire</span></button>
+          </div>
+          <div class="tip-box tip-box--warn"><strong data-i18n="l8.emergency.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="l8.emergency.passportWarningDetail">File police report (110) → contact embassy → keep passport photo on phone → transfer RP within 10 days.</span></div>
+        </div>
+        <div class="pay-detail" id="l8Detail"></div>
+        <p class="slide-footer" data-i18n="app.cover.footer">📅 Updated July 2026 · 🌐 Bilingual</p>
+      </div>
     </div>
   </section>
 

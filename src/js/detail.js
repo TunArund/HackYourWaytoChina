@@ -28,7 +28,11 @@ function openDetail(slide, key, sub) {
     if (container) container.style.scrollSnapType = 'y mandatory';
   }, 120);
 
-  history.pushState({ slide, key, sub }, '', `#${slide}-detail-${key}${sub ? '-' + sub : ''}`);
+  if (typeof _restoring !== 'undefined' && _restoring) {
+    history.replaceState({ slide, key, sub }, '', `#${slide}-detail-${key}${sub ? '-' + sub : ''}`);
+  } else {
+    history.pushState({ slide, key, sub }, '', `#${slide}-detail-${key}${sub ? '-' + sub : ''}`);
+  }
 }
 
 function closeDetail(slide) {
@@ -52,14 +56,19 @@ function closeDetail(slide) {
     if (container) container.style.scrollSnapType = 'y mandatory';
   }, 120);
 
-  history.pushState(null, '', '#' + slide);
+  history.replaceState(null, '', '#' + slide);
 }
 
 window.addEventListener('popstate', e => {
   const cd = currentDetail;
-  if (cd.slide && e.state && e.state.slide === cd.slide && e.state.key === cd.key) {
-    openDetail(e.state.slide, e.state.key, e.state.sub || null);
-  } else if (cd.slide && (!e.state || e.state.slide !== cd.slide)) {
+  if (e.state && e.state.slide) {
+    // Forward/back to a detail state — open it if not already showing
+    if (!cd.slide || cd.slide !== e.state.slide || cd.key !== e.state.key) {
+      if (cd.slide) closeDetail(cd.slide);
+      openDetail(e.state.slide, e.state.key, e.state.sub || null);
+    }
+  } else if (cd.slide) {
+    // Navigated away from detail — close it
     closeDetail(cd.slide);
   }
 });
