@@ -1,7 +1,7 @@
 {
   "app": {
     "nav": {
-      "title": "🧳 Hướng dẫn nhập cảnh Trung Quốc",
+      "title": "Hướng dẫn nhập cảnh Trung Quốc",
       "home": "↩ Trang chủ"
     },
     "cover": {
@@ -77,22 +77,22 @@
       "sub": "Danh sách kiểm tra + thẻ nhập cảnh + kiểm tra cuối. 97% du khách tại Bắc Kinh sử dụng điền trực tuyến."
     },
     "passport": {
-      "label": "📘 Bắt buộc",
+      "label": "Bắt buộc",
       "title": "Hộ chiếu",
       "desc": "Hiệu lực≥6 tháng, ≥2 trang trống"
     },
     "tickets": {
-      "label": "🎫 Bắt buộc",
+      "label": "Bắt buộc",
       "title": "Vé khứ hồi+Khách sạn",
       "desc": "In/chụp màn hình vé điện tử; khách sạn có địa chỉ"
     },
     "arrivalCard": {
-      "label": "📱 Thẻ nhập cảnh",
+      "label": "Thẻ nhập cảnh",
       "title": "Điền trực tuyến trước",
       "desc": "s.nia.gov.cn → điền → chụp màn hình QR → quét. Hỗ trợ quét ảnh hộ chiếu. Cũng có: NIA 12367 APP / WeChat / Alipay mini programs."
     },
     "finalCheck": {
-      "label": "✅ Kiểm tra cuối",
+      "label": "Kiểm tra cuối",
       "items": [
         "<strong>Hộ chiếu≥6 tháng?</strong>",
         "<strong>Xác nhận thị thực?</strong>",
@@ -108,15 +108,15 @@
       "sub": "Quy trình+hải quan+đăng ký. Dưới 14 / trên 70 miễn vân tay."
     },
     "steps": {
-      "label": "🛂 6 bước",
+      "label": "6 bước",
       "desc": "①Y tế→②Vân tay→③Biên giới→④Hành lý→⑤Hải quan→⑥Sảnh đến"
     },
     "customs": {
-      "label": "🛃 Giới hạn",
+      "label": "Giới hạn",
       "desc": "Tiền mặt≤$5K·Rượu≤1.5L·Thuốc lá≤400. Thuốc theo toa cần đơn. Kênh xanh. Cấm：vũ khí/ma túy/ngà voi."
     },
     "registration": {
-      "label": "🏨 Đăng ký",
+      "label": "Đăng ký",
       "desc": "Khách sạn tự động. Nhà riêng：12367 trực tuyến(7 thành phố thí điểm) hoặc công an. Đăng ký lại mỗi lần di chuyển. Điều 39：trong 24h."
     }
   },
@@ -126,22 +126,22 @@
       "sub": "Google/WA/IG bị chặn. Ưu tiên: trực tuyến."
     },
     "esim": {
-      "label": "📱 Tốt nhất",
+      "label": "Tốt nhất",
       "title": "eSIM",
       "desc": "Airalo/Holafly/Nomad. Mua trước→dữ liệu khi hạ cánh. Chỉ dữ liệu, không có số Trung Quốc."
     },
     "sim": {
-      "label": "📱 Thay thế",
+      "label": "Thay thế",
       "title": "SIM Trung Quốc",
       "desc": "Sân bay：Mobile/Unicom/Telecom. Hộ chiếu. ¥29-99/tháng. Lấy số→đăng ký ứng dụng."
     },
     "vpn": {
-      "label": "🔐 VPN",
+      "label": "VPN",
       "title": "Cài đặt sớm",
       "desc": "Mullvad/Astrill. Cài đặt+thanh toán trước. Giữ 2 giao thức khác nhau dự phòng."
     },
     "blocked": {
-      "label": "🚫 Bị chặn",
+      "label": "Bị chặn",
       "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>Thay thế：Baidu/Xiaohongshu/Weibo/Bilibili"
     }
   },
@@ -174,19 +174,19 @@
       "sub": "Di chuyển, ăn uống, lưu trú & mẹo quần áo"
     },
     "transport": {
-      "label": "🚕 Giao thông",
+      "label": "Giao thông",
       "desc": "<strong>DiDi</strong>:Alipay, tiếng Anh+thẻ.<br><strong>Tàu điện ngầm</strong>:mã đi lại.<br><strong>Tàu cao tốc</strong>:12306.cn/en thẻ.<br><strong>Xe đạp</strong>:Alipay ¥1.5-3."
     },
     "food": {
-      "label": "🍜 Ăn uống",
+      "label": "Ăn uống",
       "desc": "<strong>Dianping</strong>:ảnh+điểm.<br><strong>Quét WeChat→Dịch</strong>:thực đơn.<br><strong>Meituan/Ele.me</strong>:giao hàng.<br>Halal:\"清真\"/mì Lanzhou.<br>Chay:\"素食\"(chú ý nước dùng).<br>Dị ứng:mang thẻ song ngữ."
     },
     "accommodation": {
-      "label": "🏨 Lưu trú",
+      "label": "Lưu trú",
       "desc": "<strong>Trip.com/Booking</strong>:kiểm tra \"chấp nhận khách nước ngoài\".<br><strong>Airbnb</strong>:đã ngừng hoạt động tại Trung Quốc.<br><strong>Tiêu chuẩn khách nước ngoài</strong>:không phải tất cả khách sạn đều có thể nhận khách nước ngoài. Xác nhận trước khi đặt."
     },
     "clothing": {
-      "label": "👔 Quần áo",
+      "label": "Quần áo",
       "desc": "Size Trung Quốc nhỏ hơn US/EU 1-2 size. US M≈CN L/XL. Uniqlo/ZARA size quốc tế. Xuân:ấm·Hè:nóng ẩm·Thu:tuyệt nhất·Đông:Bắc -10°C/Nam ẩm lạnh."
     }
   },
@@ -212,7 +212,7 @@
       "tianjinNote": "Bệnh viện cấp ba nước ngoài",
       "hainanName": "Khu thí điểm Lecheng",
       "hainanNote": "Thuốc/thiết bị quốc tế",
-      "sectionMeds": "Thuốc thông dụng (CN/EN/RU)",
+      "sectionMeds": "Thuốc thông dụng",
       "colCn": "CN",
       "colUse": "Công dụng",
       "medIbuprofenUse": "Giảm đau/Hạ sốt",
@@ -278,7 +278,7 @@
       "warning": "⚠️ Lưu ý",
       "warningDetail": "Đặt trước 1-2 tuần. Nhịn ăn cho một số xét nghiệm. Tham khảo bác sĩ về thuốc."
     },
-    "back": "← Quay lại"
+    "back": "Quay lại"
   },
   "s8": {
     "meta": {
@@ -337,7 +337,6 @@
     "cityshops": {
       "title": "🗺️ Hướng dẫn Mua sắm Thành phố",
       "tapHint": "Nhấn vào thành phố để xem chi tiết",
-      "backToCityGuide": "← Quay lại Hướng dẫn Thành phố",
       "cities": {
         "shenzhen": {
           "name": "Thâm Quyến·Hoa Cường Bắc",
@@ -366,7 +365,7 @@
         }
       }
     },
-    "back": "← Quay lại"
+    "back": "Quay lại"
   },
   "s9": {
     "meta": {
@@ -400,8 +399,7 @@
       },
       "sizingTip": "👔 Kích cỡ: CN nhỏ hơn US 1-2 cỡ. US M≈CN L/XL. Uniqlo/ZARA kích cỡ toàn cầu."
     },
-    "back": "← Quay lại",
-    "backToCityList": "← Quay lại danh sách thành phố",
+    "back": "Quay lại",
     "tapHint": "Nhấn vào thành phố để xem chi tiết"
   },
   "s10": {

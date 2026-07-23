@@ -1,7 +1,7 @@
 {
   "app": {
     "nav": {
-      "title": "🧳 중국 입국 가이드",
+      "title": "중국 입국 가이드",
       "home": "↩ 홈"
     },
     "cover": {
@@ -77,22 +77,22 @@
       "sub": "체크리스트 + 입국 카드 + 최종 확인. 베이징 공항 97% 여행객이 온라인 작성 이용."
     },
     "passport": {
-      "label": "📘 필수",
+      "label": "필수",
       "title": "여권",
       "desc": "유효기간≥6개월, 빈 페이지≥2장"
     },
     "tickets": {
-      "label": "🎫 필수",
+      "label": "필수",
       "title": "왕복 항공권+호텔",
       "desc": "전자 티켓 인쇄 또는 스크린샷, 주소가 있는 호텔 예약"
     },
     "arrivalCard": {
-      "label": "📱 입국 카드",
+      "label": "입국 카드",
       "title": "사전 온라인 작성",
       "desc": "s.nia.gov.cn → 작성 → QR코드 스크린샷 → 스캔 통과. 여권 사진 스캔 지원. NIA 12367 앱/WeChat/Alipay 미니 프로그램도 가능."
     },
     "finalCheck": {
-      "label": "✅ 최종 확인",
+      "label": "최종 확인",
       "items": [
         "<strong>여권≥6개월?</strong>",
         "<strong>비자 자격 확인?</strong>",
@@ -108,15 +108,15 @@
       "sub": "절차+세관+등록. 14세 미만/70세 이상 지문 면제."
     },
     "steps": {
-      "label": "🛂 6단계",
+      "label": "6단계",
       "desc": "①건강 검역→②지문→③입국 심사→④수하물→⑤세관→⑥도착홀"
     },
     "customs": {
-      "label": "🛃 제한",
+      "label": "제한",
       "desc": "현금≤$5K·주류≤1.5L·담배≤400개비. 처방약은 처방전 지참. 녹색 채널. 금지：무기/마약/상아."
     },
     "registration": {
-      "label": "🏨 등록",
+      "label": "등록",
       "desc": "호텔은 자동. 민박：12367 온라인(7개 도시 시범) 또는 경찰서. 이동 시마다 재등록. 제39조：24시간 내."
     }
   },
@@ -126,22 +126,22 @@
       "sub": "Google/WA/IG 차단. 도착 후 즉시 온라인 연결."
     },
     "esim": {
-      "label": "📱 권장",
+      "label": "권장",
       "title": "eSIM",
       "desc": "Airalo/Holafly/Nomad. 출발 전 구매→도착 시 즉시 데이터 이용. 데이터만, 중국 번호 없음."
     },
     "sim": {
-      "label": "📱 대체",
+      "label": "대체",
       "title": "중국 SIM",
       "desc": "공항：이동/연통/전신. 여권 필요. ¥29-99/월. 번호 취득→앱 등록."
     },
     "vpn": {
-      "label": "🔐 VPN",
+      "label": "VPN",
       "title": "사전 설치",
       "desc": "Mullvad/Astrill. 출발 전 설치+결제. 다른 프로토콜 2개 준비."
     },
     "blocked": {
-      "label": "🚫 차단",
+      "label": "차단",
       "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>대체：바이두/샤오홍슈/웨이보/빌리빌리"
     }
   },
@@ -174,19 +174,19 @@
       "sub": "교통·식사·숙박·의류 팁"
     },
     "transport": {
-      "label": "🚕 교통",
+      "label": "교통",
       "desc": "<strong>DiDi</strong>:Alipay, 영어+카드 지원.<br><strong>지하철</strong>:승차 코드.<br><strong>고속철도</strong>:12306.cn/en 카드.<br><strong>자전거</strong>:Alipay ¥1.5-3."
     },
     "food": {
-      "label": "🍜 식사",
+      "label": "식사",
       "desc": "<strong>따중댄핑</strong>:사진+평점.<br><strong>WeChat 스캔→번역</strong>:메뉴.<br><strong>메이투안/어러머</strong>:배달.<br>할랄:\"清真\"/란저우 라면.<br>채식:\"素食\"(국물 주의).<br>알레르기:이중 언어 카드 휴대."
     },
     "accommodation": {
-      "label": "🏨 숙박",
+      "label": "숙박",
       "desc": "<strong>Trip.com/Booking</strong>:\"외국인 수용\" 확인.<br><strong>Airbnb</strong>:중국 사업 중단.<br><strong>외국인 수용 자격</strong>:모든 호텔이 외국인을 받을 수 있는 것은 아님. 예약 전 확인."
     },
     "clothing": {
-      "label": "👔 의류",
+      "label": "의류",
       "desc": "중국 사이즈는 구미보다 1-2 작음. US M≈CN L/XL. 유니클로/ZARA 글로벌 사이즈. 봄:온화·여름:무덥고 습함·가을:최적·겨울:북 -10°C/남 습하고 추움."
     }
   },
@@ -212,7 +212,7 @@
       "tianjinNote": "외국자본 3급병원",
       "hainanName": "보아오 러청 선행구",
       "hainanNote": "해외 미승인 약품/기기 사용 가능",
-      "sectionMeds": "상용 약품 중영러 대조",
+      "sectionMeds": "상용 약품",
       "colCn": "중국어",
       "colUse": "용도",
       "medIbuprofenUse": "진통/해열",
@@ -278,7 +278,7 @@
       "warning": "⚠️ 주의사항",
       "warningDetail": "1-2주 전 예약 권장. 공복 필수, 일부 항목은 복약 중단 필요(의사 지시 준수)."
     },
-    "back": "← 돌아가기"
+    "back": "돌아가기"
   },
   "s8": {
     "meta": {
@@ -337,7 +337,6 @@
     "cityshops": {
       "title": "🗺️ 도시 쇼핑 지도",
       "tapHint": "도시 클릭하여 상세정보 보기",
-      "backToCityGuide": "← 쇼핑 지도로 돌아가기",
       "cities": {
         "shenzhen": {
           "name": "선전·화창베이",
@@ -366,7 +365,7 @@
         }
       }
     },
-    "back": "← 돌아가기"
+    "back": "돌아가기"
   },
   "s9": {
     "meta": {
@@ -400,8 +399,7 @@
       },
       "sizingTip": "👔 사이즈 팁: CN은 US보다 1-2사이즈 작음, US M≈CN L/XL. 유니클로/ZARA는 전 세계 동일."
     },
-    "back": "← 돌아가기",
-    "backToCityList": "← 도시 목록으로 돌아가기",
+    "back": "돌아가기",
     "tapHint": "도시 클릭하여 상세정보 보기"
   },
   "s10": {

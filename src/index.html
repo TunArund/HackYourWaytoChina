@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>入境中国图文攻略 | China Entry Guide</title>
+<title>🧳 China Entry Guide — 入境中国攻略</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +13,7 @@
      Top Bar
      ============================================================ -->
 <div class="top-bar" id="topBar">
-  <span class="top-bar-title" data-i18n="app.nav.title">🧳 China Entry Guide</span>
+  <span class="top-bar-title"><span class="top-bar-emoji">🧳</span> <span data-i18n="app.nav.title">China Entry Guide</span></span>
   <div class="top-bar-actions">
     <button class="top-btn--version" id="versionSwitch" onclick="resetToCover()"><span data-i18n="app.nav.home">↩ Home</span></button>
     <button class="top-btn" id="btnLang" aria-label="Switch language">🇬🇧 English</button>
@@ -57,8 +57,8 @@
       </div>
       <div class="slide-body"><div class="visa-checker" id="visaChecker">
         <p class="slide-kicker" data-i18n="s1.kicker">Visa Check</p>
-        <div id="vcCards" class="vc-cards"></div>
         <button id="vcBack" class="vc-back" onclick="showContinents()" style="display:none"><span data-i18n="app.buttons.back">← Back</span></button>
+        <div id="vcCards" class="vc-cards"></div>
         <div id="vcResult" class="vc-result"></div>
         <button id="vcReset" class="vc-reset" onclick="showContinents()"><span data-i18n="app.buttons.reset">🔄 Select Again</span></button>
       </div></div>
@@ -76,10 +76,10 @@
           <p class="slide-kicker" data-i18n="s2.kicker">Kicker</p>
           <p class="slide-intro" data-i18n="s2.intro">Before you fly, make sure you have these essentials ready. Tap each item for details.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('s2','passport')"><span>📘</span><span data-i18n="s2.passport.label">Passport</span><span class="slide-btn-sub" data-i18n="s2.passport.sub">Validity & blank pages</span></button>
-            <button class="slide-btn" onclick="openDetail('s2','tickets')"><span>🎫</span><span data-i18n="s2.tickets.label">Return+Hotel</span><span class="slide-btn-sub" data-i18n="s2.tickets.sub">Return flight & hotel proof</span></button>
-            <button class="slide-btn" onclick="openDetail('s2','arrivalCard')"><span>📱</span><span data-i18n="s2.arrivalCard.label">Arrival Card</span><span class="slide-btn-sub" data-i18n="s2.arrivalCard.sub">Pre-fill online, save QR code</span></button>
-            <button class="slide-btn" onclick="openDetail('s2','finalCheck')"><span>✅</span><span data-i18n="s2.finalCheck.label">Final Check</span><span class="slide-btn-sub" data-i18n="s2.finalCheck.sub">7-item checklist before boarding</span></button>
+            <button class="card" onclick="openDetail('s2','passport')"><span>📘</span><span data-i18n="s2.passport.label">Passport</span><span class="card-sub" data-i18n="s2.passport.sub">Validity & blank pages</span></button>
+            <button class="card" onclick="openDetail('s2','tickets')"><span>🎫</span><span data-i18n="s2.tickets.label">Return+Hotel</span><span class="card-sub" data-i18n="s2.tickets.sub">Return flight & hotel proof</span></button>
+            <button class="card" onclick="openDetail('s2','arrivalCard')"><span>📱</span><span data-i18n="s2.arrivalCard.label">Arrival Card</span><span class="card-sub" data-i18n="s2.arrivalCard.sub">Pre-fill online, save QR code</span></button>
+            <button class="card" onclick="openDetail('s2','finalCheck')"><span>✅</span><span data-i18n="s2.finalCheck.label">Final Check</span><span class="card-sub" data-i18n="s2.finalCheck.sub">7-item checklist before boarding</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s2Detail"></div>
@@ -98,9 +98,9 @@
           <p class="slide-kicker" data-i18n="s3.kicker">Kicker</p>
           <p class="slide-intro" data-i18n="s3.intro">Landing in China? Tap to learn about immigration, customs, and registration.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('s3','steps')"><span>🛂</span><span data-i18n="s3.steps.label">Immigration</span><span class="slide-btn-sub" data-i18n="s3.steps.sub">6-step process at border control</span></button>
-            <button class="slide-btn" onclick="openDetail('s3','customs')"><span>🛃</span><span data-i18n="s3.customs.label">Customs</span><span class="slide-btn-sub" data-i18n="s3.customs.sub">Duty-free limits & restricted items</span></button>
-            <button class="slide-btn" onclick="openDetail('s3','registration')"><span>🏨</span><span data-i18n="s3.registration.label">Registration</span><span class="slide-btn-sub" data-i18n="s3.registration.sub">Hotel / police station / online</span></button>
+            <button class="card" onclick="openDetail('s3','steps')"><span>🛂</span><span data-i18n="s3.steps.label">Immigration</span><span class="card-sub" data-i18n="s3.steps.sub">6-step process at border control</span></button>
+            <button class="card" onclick="openDetail('s3','customs')"><span>🛃</span><span data-i18n="s3.customs.label">Customs</span><span class="card-sub" data-i18n="s3.customs.sub">Duty-free limits & restricted items</span></button>
+            <button class="card" onclick="openDetail('s3','registration')"><span>🏨</span><span data-i18n="s3.registration.label">Registration</span><span class="card-sub" data-i18n="s3.registration.sub">Hotel / police station / online</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s3Detail"></div>
@@ -119,10 +119,10 @@
           <p class="slide-kicker" data-i18n="s4.kicker">Kicker</p>
           <p class="slide-intro" data-i18n="s4.intro">Google, WhatsApp, and Instagram are blocked in China. Here is how to stay connected.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('s4','esim')"><span>📱</span><span data-i18n="s4.esim.label">eSIM</span><span class="slide-btn-sub" data-i18n="s4.esim.sub">Buy before flying, from $4</span></button>
-            <button class="slide-btn" onclick="openDetail('s4','sim')"><span>📱</span><span data-i18n="s4.sim.label">CN SIM</span><span class="slide-btn-sub" data-i18n="s4.sim.sub">Airport kiosk, 29-99 yuan/month</span></button>
-            <button class="slide-btn" onclick="openDetail('s4','vpn')"><span>🔐</span><span data-i18n="s4.vpn.label">VPN</span><span class="slide-btn-sub" data-i18n="s4.vpn.sub">Install before arriving</span></button>
-            <button class="slide-btn" onclick="openDetail('s4','blocked')"><span>🚫</span><span data-i18n="s4.blocked.label">Blocked</span><span class="slide-btn-sub" data-i18n="s4.blocked.sub">What's blocked & alternatives</span></button>
+            <button class="card" onclick="openDetail('s4','esim')"><span>📱</span><span data-i18n="s4.esim.label">eSIM</span><span class="card-sub" data-i18n="s4.esim.sub">Buy before flying, from $4</span></button>
+            <button class="card" onclick="openDetail('s4','sim')"><span>📱</span><span data-i18n="s4.sim.label">CN SIM</span><span class="card-sub" data-i18n="s4.sim.sub">Airport kiosk, 29-99 yuan/month</span></button>
+            <button class="card" onclick="openDetail('s4','vpn')"><span>🔐</span><span data-i18n="s4.vpn.label">VPN</span><span class="card-sub" data-i18n="s4.vpn.sub">Install before arriving</span></button>
+            <button class="card" onclick="openDetail('s4','blocked')"><span>🚫</span><span data-i18n="s4.blocked.label">Blocked</span><span class="card-sub" data-i18n="s4.blocked.sub">What's blocked & alternatives</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s4Detail"></div>
@@ -146,8 +146,8 @@
             <div class="slide-stat"><strong class="slide-stat-num">2</strong><span data-i18n="s5.stat3">apps cover 95%+ of scenarios</span></div>
           </div>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('s5','alipay')"><img src="img/支付宝.png" alt="Alipay"><span>Alipay</span></button>
-            <button class="slide-btn" onclick="openDetail('s5','wechat')"><img src="img/微信.png" alt="WeChat"><span>WeChat Pay</span></button>
+            <button class="card" onclick="openDetail('s5','alipay')"><img src="img/支付宝.png" alt="Alipay"><span>Alipay</span></button>
+            <button class="card" onclick="openDetail('s5','wechat')"><img src="img/微信.png" alt="WeChat"><span>WeChat Pay</span></button>
           </div>
           <div class="tip-box tip-box--info" data-i18n="s5.backup"><strong>💡 Backup</strong><span>Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one app fails, try the other.</span></div>
         </div>
@@ -167,10 +167,10 @@
           <p class="slide-kicker" data-i18n="s6.kicker">Kicker</p>
           <p class="slide-intro" data-i18n="s6.intro">Getting around, eating well, and finding a place to stay. Tap each item for practical tips.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('s6','transport')"><span>🚕</span><span data-i18n="s6.transport.label">Transport</span><span class="slide-btn-sub" data-i18n="s6.transport.sub">DiDi, metro, high-speed rail</span></button>
-            <button class="slide-btn" onclick="openDetail('s6','food')"><span>🍜</span><span data-i18n="s6.food.label">Dining</span><span class="slide-btn-sub" data-i18n="s6.food.sub">Order in Chinese, dietary tips</span></button>
-            <button class="slide-btn" onclick="openDetail('s6','accommodation')"><span>🏨</span><span data-i18n="s6.accommodation.label">Stay</span><span class="slide-btn-sub" data-i18n="s6.accommodation.sub">Booking, registration, tips</span></button>
-            <button class="slide-btn" onclick="openDetail('s6','clothing')"><span>👔</span><span data-i18n="s6.clothing.label">Clothing</span><span class="slide-btn-sub" data-i18n="s6.clothing.sub">Sizes, seasons, what to pack</span></button>
+            <button class="card" onclick="openDetail('s6','transport')"><span>🚕</span><span data-i18n="s6.transport.label">Transport</span><span class="card-sub" data-i18n="s6.transport.sub">DiDi, metro, high-speed rail</span></button>
+            <button class="card" onclick="openDetail('s6','food')"><span>🍜</span><span data-i18n="s6.food.label">Dining</span><span class="card-sub" data-i18n="s6.food.sub">Order in Chinese, dietary tips</span></button>
+            <button class="card" onclick="openDetail('s6','accommodation')"><span>🏨</span><span data-i18n="s6.accommodation.label">Stay</span><span class="card-sub" data-i18n="s6.accommodation.sub">Booking, registration, tips</span></button>
+            <button class="card" onclick="openDetail('s6','clothing')"><span>👔</span><span data-i18n="s6.clothing.label">Clothing</span><span class="card-sub" data-i18n="s6.clothing.sub">Sizes, seasons, what to pack</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s6Detail"></div>
@@ -187,9 +187,9 @@
       <div class="slide-body">
         <p class="slide-kicker" data-i18n="s7.kicker">Kicker</p>
         <div class="info-cards slide-summary" id="s7Summary">
-          <div class="info-card" onclick="openDetail('s7','hospital')" style="cursor:pointer"><span class="c-label" data-i18n="s7.hospital.label">🏥 Hospitals</span><h4 data-i18n="s7.hospital.title">Intl Hospitals & Meds</h4><p data-i18n="s7.hospital.desc">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="info-card" onclick="openDetail('s7','big3')" style="cursor:pointer"><span class="c-label" data-i18n="s7.big3.label">🦷👁️🌿 Medical Tourism</span><h4 data-i18n="s7.big3.title">Dental·Eye·TCM</h4><p data-i18n="s7.big3.desc">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="info-card" onclick="openDetail('s7','checkup')" style="cursor:pointer"><span class="c-label" data-i18n="s7.checkup.label">📋 Checkup</span><h4 data-i18n="s7.checkup.title">Executive Checkup</h4><p data-i18n="s7.checkup.desc">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s7','hospital')"><h4 data-i18n="s7.hospital.title">Intl Hospitals & Meds</h4><p data-i18n="s7.hospital.desc">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s7','big3')"><h4 data-i18n="s7.big3.title">Dental·Eye·TCM</h4><p data-i18n="s7.big3.desc">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s7','checkup')"><h4 data-i18n="s7.checkup.title">Executive Checkup</h4><p data-i18n="s7.checkup.desc">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel slide-detail" id="s7Detail"></div>
       </div>
@@ -205,10 +205,10 @@
       <div class="slide-body">
         <p class="slide-kicker" data-i18n="s8.kicker">Kicker</p>
         <div class="info-cards slide-summary" id="s8Summary">
-          <div class="info-card" onclick="openDetail('s8','electronics')" style="cursor:pointer"><span class="c-label" data-i18n="s8.electronics.label">📱 Electronics</span><h4 data-i18n="s8.electronics.title">Foldables·Drones·AI Glasses</h4><p data-i18n="s8.electronics.desc">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="info-card" onclick="openDetail('s8','souvenirs')" style="cursor:pointer"><span class="c-label" data-i18n="s8.souvenirs.label">🎨 Souvenirs</span><h4 data-i18n="s8.souvenirs.title">Palace Museum·Craft·Local</h4><p data-i18n="s8.souvenirs.desc">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="info-card" onclick="openDetail('s8','taxrefund')" style="cursor:pointer"><span class="c-label" data-i18n="s8.taxrefund.label">💰 Tax Refund</span><h4 data-i18n="s8.taxrefund.title">Rules·Process·Instant</h4><p data-i18n="s8.taxrefund.desc">≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="info-card" onclick="openDetail('s8','cityshops')" style="cursor:pointer"><span class="c-label" data-i18n="s8.cityshops.label">🗺️ City Guide</span><h4 data-i18n="s8.cityshops.title">Shopping by City</h4><p data-i18n="s8.cityshops.desc">SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','electronics')"><h4 data-i18n="s8.electronics.title">Foldables·Drones·AI Glasses</h4><p data-i18n="s8.electronics.desc">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','souvenirs')"><h4 data-i18n="s8.souvenirs.title">Palace Museum·Craft·Local</h4><p data-i18n="s8.souvenirs.desc">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','taxrefund')"><h4 data-i18n="s8.taxrefund.title">Rules·Process·Instant</h4><p data-i18n="s8.taxrefund.desc">≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','cityshops')"><h4 data-i18n="s8.cityshops.title">Shopping by City</h4><p data-i18n="s8.cityshops.desc">SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel slide-detail" id="s8Detail"></div>
       </div>
@@ -224,9 +224,9 @@
       <div class="slide-body">
         <p class="slide-kicker" data-i18n="s9.kicker">Kicker</p>
         <div class="info-cards col3 slide-summary" id="s9Summary">
-          <div class="info-card" onclick="openDetail('s9','top10')" style="cursor:pointer"><span class="c-label" data-i18n="s9.top10.label">🏙️ Top 10</span><h4 data-i18n="s9.top10.title">Must-Visit Cities</h4><p data-i18n="s9.top10.desc">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
-          <div class="info-card" onclick="openDetail('s9','rising')" style="cursor:pointer"><span class="c-label" data-i18n="s9.rising.label">🚀 Rising</span><h4 data-i18n="s9.rising.title">Social Media Stars</h4><p data-i18n="s9.rising.desc">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
-          <div class="info-card" onclick="openDetail('s9','seasons')" style="cursor:pointer"><span class="c-label" data-i18n="s9.seasons.label">🌍 Seasons</span><h4 data-i18n="s9.seasons.title">Best by Season</h4><p data-i18n="s9.seasons.desc">Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&Sanya</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s9','top10')"><h4 data-i18n="s9.top10.title">Must-Visit Cities</h4><p data-i18n="s9.top10.desc">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
+          <div class="card info-card" onclick="openDetail('s9','rising')"><h4 data-i18n="s9.rising.title">Social Media Stars</h4><p data-i18n="s9.rising.desc">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
+          <div class="card info-card" onclick="openDetail('s9','seasons')"><h4 data-i18n="s9.seasons.title">Best by Season</h4><p data-i18n="s9.seasons.desc">Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&Sanya</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel slide-detail" id="s9Detail"></div>
       </div>
@@ -244,14 +244,14 @@
           <p class="slide-kicker" data-i18n="s10.kicker">Kicker</p>
           <p class="slide-intro" data-i18n="s10.intro">Save these numbers. In an emergency, knowing who to call can make the difference.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('s10','12367')"><span class="slide-stat-num">12367</span><span data-i18n="s10.hotline.12367.label">Immigration 24h</span></button>
-            <button class="slide-btn" onclick="openDetail('s10','110')"><span class="slide-stat-num">110</span><span data-i18n="s10.hotline.110.label">Police</span></button>
-            <button class="slide-btn" onclick="openDetail('s10','120')"><span class="slide-stat-num">120</span><span data-i18n="s10.hotline.120.label">Ambulance</span></button>
-            <button class="slide-btn" onclick="openDetail('s10','119')"><span class="slide-stat-num">119</span><span data-i18n="s10.hotline.119.label">Fire</span></button>
+            <button class="card" onclick="openDetail('s10','12367')"><span class="slide-stat-num">12367</span><span data-i18n="s10.hotline.12367.label">Immigration 24h</span></button>
+            <button class="card" onclick="openDetail('s10','110')"><span class="slide-stat-num">110</span><span data-i18n="s10.hotline.110.label">Police</span></button>
+            <button class="card" onclick="openDetail('s10','120')"><span class="slide-stat-num">120</span><span data-i18n="s10.hotline.120.label">Ambulance</span></button>
+            <button class="card" onclick="openDetail('s10','119')"><span class="slide-stat-num">119</span><span data-i18n="s10.hotline.119.label">Fire</span></button>
           </div>
           <div class="tip-box tip-box--warn"><strong data-i18n="s10.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="s10.passportWarningDetail">File police report immediately → contact your embassy/consulate → apply for emergency travel document. Keep a photo of your passport and visa on your phone.</span></div>
           <p class="slide-intro" style="margin-top:16px" data-i18n="s10.departIntro">Leaving China? A few things to take care of before you go.</p>
-          <button class="slide-btn" onclick="openDetail('s10','depart')"><span>👋</span><span data-i18n="s10.departure">Departure Checklist</span></button>
+          <button class="card" onclick="openDetail('s10','depart')"><span>👋</span><span data-i18n="s10.departure">Departure Checklist</span></button>
         </div>
         <div class="slide-detail" id="s10Detail"></div>
         <p class="slide-footer" data-i18n="app.cover.footer">📅 Updated July 2026 · 🌐 Bilingual</p>
@@ -274,9 +274,9 @@
           <p class="slide-kicker" data-i18n="l1.kicker">Your Route In</p>
           <p class="slide-intro" data-i18n="l1.intro">Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process.</p>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l1','pathA')"><span>🔄</span><span data-i18n="l1.pathA.label">Path A</span><span class="slide-btn-sub" data-i18n="l1.pathA.sub">Tourist → Work</span></button>
-            <button class="slide-btn" onclick="openDetail('l1','pathB')"><span>🎓</span><span data-i18n="l1.pathB.label">Path B</span><span class="slide-btn-sub" data-i18n="l1.pathB.sub">Student → Work</span></button>
-            <button class="slide-btn" onclick="openDetail('l1','pathC')"><span>🔬</span><span data-i18n="l1.pathC.label">Path C</span><span class="slide-btn-sub" data-i18n="l1.pathC.sub">K Visa (STEM Talent)</span></button>
+            <button class="card" onclick="openDetail('l1','pathA')"><span>🔄</span><span data-i18n="l1.pathA.label">Path A</span><span class="card-sub" data-i18n="l1.pathA.sub">Tourist → Work</span></button>
+            <button class="card" onclick="openDetail('l1','pathB')"><span>🎓</span><span data-i18n="l1.pathB.label">Path B</span><span class="card-sub" data-i18n="l1.pathB.sub">Student → Work</span></button>
+            <button class="card" onclick="openDetail('l1','pathC')"><span>🔬</span><span data-i18n="l1.pathC.label">Path C</span><span class="card-sub" data-i18n="l1.pathC.sub">K Visa (STEM Talent)</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l1Detail"></div>
@@ -300,8 +300,8 @@
             <div class="slide-stat"><strong class="slide-stat-num">¥0</strong><span data-i18n="l2.stat3">physical card eliminated</span></div>
           </div>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l2','workPermit')"><span>📝</span><span data-i18n="l2.workPermit.label">Step 1</span><span class="slide-btn-sub" data-i18n="l2.workPermit.sub">Foreigner's Work Permit</span></button>
-            <button class="slide-btn" onclick="openDetail('l2','residencePermit')"><span>🪪</span><span data-i18n="l2.residencePermit.label">Step 2</span><span class="slide-btn-sub" data-i18n="l2.residencePermit.sub">Residence Permit</span></button>
+            <button class="card" onclick="openDetail('l2','workPermit')"><span>📝</span><span data-i18n="l2.workPermit.label">Step 1</span><span class="card-sub" data-i18n="l2.workPermit.sub">Foreigner's Work Permit</span></button>
+            <button class="card" onclick="openDetail('l2','residencePermit')"><span>🪪</span><span data-i18n="l2.residencePermit.label">Step 2</span><span class="card-sub" data-i18n="l2.residencePermit.sub">Residence Permit</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l2Detail"></div>
@@ -325,8 +325,8 @@
             <div class="slide-stat"><strong class="slide-stat-num">¥29</strong><span data-i18n="l3.stat3">monthly plan from</span></div>
           </div>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l3','phone')"><span>📱</span><span data-i18n="l3.phone.label">SIM Card</span><span class="slide-btn-sub" data-i18n="l3.phone.sub">Passport required. ¥29-99/month.</span></button>
-            <button class="slide-btn" onclick="openDetail('l3','bank')"><span>🏦</span><span data-i18n="l3.bank.label">Bank Account</span><span class="slide-btn-sub" data-i18n="l3.bank.sub">BOC/ICBC/CMB. Lifts ¥200 limit.</span></button>
+            <button class="card" onclick="openDetail('l3','phone')"><span>📱</span><span data-i18n="l3.phone.label">SIM Card</span><span class="card-sub" data-i18n="l3.phone.sub">Passport required. ¥29-99/month.</span></button>
+            <button class="card" onclick="openDetail('l3','bank')"><span>🏦</span><span data-i18n="l3.bank.label">Bank Account</span><span class="card-sub" data-i18n="l3.bank.sub">BOC/ICBC/CMB. Lifts ¥200 limit.</span></button>
           </div>
           <div class="tip-box tip-box--info" data-i18n="l3.tip"><strong>💡 Priority order</strong><span>Get SIM → open bank account → link to Alipay/WeChat.</span></div>
         </div>
@@ -346,8 +346,8 @@
           <p class="slide-kicker" data-i18n="l4.kicker">Find Your Home</p>
           <p class="slide-intro" data-i18n="l4.intro">Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.</p>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l4','rent')"><span>🏠</span><span data-i18n="l4.rent.label">Renting</span><span class="slide-btn-sub" data-i18n="l4.rent.sub">Rental Guide</span></button>
-            <button class="slide-btn" onclick="openDetail('l4','registration')"><span>📝</span><span data-i18n="l4.registration.label">Registration</span><span class="slide-btn-sub" data-i18n="l4.registration.sub">Police Registration</span></button>
+            <button class="card" onclick="openDetail('l4','rent')"><span>🏠</span><span data-i18n="l4.rent.label">Renting</span><span class="card-sub" data-i18n="l4.rent.sub">Rental Guide</span></button>
+            <button class="card" onclick="openDetail('l4','registration')"><span>📝</span><span data-i18n="l4.registration.label">Registration</span><span class="card-sub" data-i18n="l4.registration.sub">Police Registration</span></button>
           </div>
           <div class="tip-box tip-box--info" data-i18n="l4.sinceMar2026"><strong>💡 Since Mar 2026</strong><span>12367 platform supports online registration in 7 pilot cities: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.</span></div>
         </div>
@@ -372,8 +372,8 @@
             <div class="slide-stat"><strong class="slide-stat-num">12</strong><span data-i18n="l5.stat3">countries with bilateral exemption</span></div>
           </div>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l5','socialIns')"><span>🏥</span><span data-i18n="l5.socialIns.label">Social Insurance</span><span class="slide-btn-sub" data-i18n="l5.socialIns.sub">Five Insurances + Housing Fund</span></button>
-            <button class="slide-btn" onclick="openDetail('l5','privateIns')"><span>🛡️</span><span data-i18n="l5.privateIns.label">Private Insurance</span><span class="slide-btn-sub" data-i18n="l5.privateIns.sub">International Health Insurance</span></button>
+            <button class="card" onclick="openDetail('l5','socialIns')"><span>🏥</span><span data-i18n="l5.socialIns.label">Social Insurance</span><span class="card-sub" data-i18n="l5.socialIns.sub">Five Insurances + Housing Fund</span></button>
+            <button class="card" onclick="openDetail('l5','privateIns')"><span>🛡️</span><span data-i18n="l5.privateIns.label">Private Insurance</span><span class="card-sub" data-i18n="l5.privateIns.sub">International Health Insurance</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l5Detail"></div>
@@ -392,8 +392,8 @@
           <p class="slide-kicker" data-i18n="l6.kicker">Drive & Learn</p>
           <p class="slide-intro" data-i18n="l6.intro">Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead.</p>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l6','license')"><span>🚗</span><span data-i18n="l6.license.label">Driver's License</span><span class="slide-btn-sub" data-i18n="l6.license.sub">Temp permit, swap, or written test</span></button>
-            <button class="slide-btn" onclick="openDetail('l6','school')"><span>🎒</span><span data-i18n="l6.school.label">Schools</span><span class="slide-btn-sub" data-i18n="l6.school.sub">International & bilingual options</span></button>
+            <button class="card" onclick="openDetail('l6','license')"><span>🚗</span><span data-i18n="l6.license.label">Driver's License</span><span class="card-sub" data-i18n="l6.license.sub">Temp permit, swap, or written test</span></button>
+            <button class="card" onclick="openDetail('l6','school')"><span>🎒</span><span data-i18n="l6.school.label">Schools</span><span class="card-sub" data-i18n="l6.school.sub">International & bilingual options</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l6Detail"></div>
@@ -412,10 +412,10 @@
           <p class="slide-kicker" data-i18n="l7.kicker">Live Local</p>
           <p class="slide-intro" data-i18n="l7.intro">Once you have your phone, bank, and apartment sorted, here's everything for daily life — from where to shop to what to eat to how to dress.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('l7','shopping')"><span>🛒</span><span data-i18n="l7.shopping.label">Shopping</span><span class="slide-btn-sub" data-i18n="l7.shopping.sub">Taobao·JD·Pinduoduo·Hema</span></button>
-            <button class="slide-btn" onclick="openDetail('l7','food')"><span>🍜</span><span data-i18n="l7.food.label">Dining</span><span class="slide-btn-sub" data-i18n="l7.food.sub">Dianping·Meituan·Ele.me</span></button>
-            <button class="slide-btn" onclick="openDetail('l7','clothing')"><span>👔</span><span data-i18n="l7.clothing.label">Clothing</span><span class="slide-btn-sub" data-i18n="l7.clothing.sub">Sizes & seasonal dressing</span></button>
-            <button class="slide-btn" onclick="openDetail('l7','transport')"><span>🚕</span><span data-i18n="l7.transport.label">Transport</span><span class="slide-btn-sub" data-i18n="l7.transport.sub">Metro·DiDi·Shared bikes·HSR</span></button>
+            <button class="card" onclick="openDetail('l7','shopping')"><span>🛒</span><span data-i18n="l7.shopping.label">Shopping</span><span class="card-sub" data-i18n="l7.shopping.sub">Taobao·JD·Pinduoduo·Hema</span></button>
+            <button class="card" onclick="openDetail('l7','food')"><span>🍜</span><span data-i18n="l7.food.label">Dining</span><span class="card-sub" data-i18n="l7.food.sub">Dianping·Meituan·Ele.me</span></button>
+            <button class="card" onclick="openDetail('l7','clothing')"><span>👔</span><span data-i18n="l7.clothing.label">Clothing</span><span class="card-sub" data-i18n="l7.clothing.sub">Sizes & seasonal dressing</span></button>
+            <button class="card" onclick="openDetail('l7','transport')"><span>🚕</span><span data-i18n="l7.transport.label">Transport</span><span class="card-sub" data-i18n="l7.transport.sub">Metro·DiDi·Shared bikes·HSR</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l7Detail"></div>
@@ -434,14 +434,14 @@
           <p class="slide-kicker" data-i18n="l8.kicker">Stay Legal</p>
           <p class="slide-intro" data-i18n="l8.intro">Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires.</p>
           <div class="slide-icons">
-            <button class="slide-btn" onclick="openDetail('l8','renewal')"><span>📅</span><span data-i18n="l8.renewal.label">Renewal & Compliance</span><span class="slide-btn-sub" data-i18n="l8.renewal.sub">Staying Legal</span></button>
+            <button class="card" onclick="openDetail('l8','renewal')"><span>📅</span><span data-i18n="l8.renewal.label">Renewal & Compliance</span><span class="card-sub" data-i18n="l8.renewal.sub">Staying Legal</span></button>
           </div>
           <p class="slide-intro" style="margin-top:16px" data-i18n="l8.emergency.desc">Save these numbers. Tap each one to learn when to call and what to expect.</p>
           <div class="slide-stats">
-            <button class="slide-btn" onclick="openDetail('l8','12367')"><span class="slide-stat-num">12367</span><span data-i18n="l8.emergency.hotline12367">Immigration 24h</span></button>
-            <button class="slide-btn" onclick="openDetail('l8','110')"><span class="slide-stat-num">110</span><span data-i18n="l8.emergency.hotline110">Police</span></button>
-            <button class="slide-btn" onclick="openDetail('l8','120')"><span class="slide-stat-num">120</span><span data-i18n="l8.emergency.hotline120">Ambulance</span></button>
-            <button class="slide-btn" onclick="openDetail('l8','119')"><span class="slide-stat-num">119</span><span data-i18n="l8.emergency.hotline119">Fire</span></button>
+            <button class="card" onclick="openDetail('l8','12367')"><span class="slide-stat-num">12367</span><span data-i18n="l8.emergency.hotline12367">Immigration 24h</span></button>
+            <button class="card" onclick="openDetail('l8','110')"><span class="slide-stat-num">110</span><span data-i18n="l8.emergency.hotline110">Police</span></button>
+            <button class="card" onclick="openDetail('l8','120')"><span class="slide-stat-num">120</span><span data-i18n="l8.emergency.hotline120">Ambulance</span></button>
+            <button class="card" onclick="openDetail('l8','119')"><span class="slide-stat-num">119</span><span data-i18n="l8.emergency.hotline119">Fire</span></button>
           </div>
           <div class="tip-box tip-box--warn"><strong data-i18n="l8.emergency.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="l8.emergency.passportWarningDetail">File police report (110) → contact embassy → keep passport photo on phone → transfer RP within 10 days.</span></div>
         </div>

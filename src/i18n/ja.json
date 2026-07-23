@@ -1,7 +1,7 @@
 {
   "app": {
     "nav": {
-      "title": "🧳 中国入国ガイド",
+      "title": "中国入国ガイド",
       "home": "↩ ホーム"
     },
     "cover": {
@@ -77,22 +77,22 @@
       "sub": "チェックリスト + 入国カード + 最終確認。北京空港の97%の旅行者がオンライン記入を利用。"
     },
     "passport": {
-      "label": "📘 必須",
+      "label": "必須",
       "title": "パスポート",
       "desc": "有効期限≥6ヶ月、空白ページ≥2枚"
     },
     "tickets": {
-      "label": "🎫 必須",
+      "label": "必須",
       "title": "往復航空券+ホテル",
       "desc": "電子チケットを印刷またはスクリーンショット、住所付きホテル予約"
     },
     "arrivalCard": {
-      "label": "📱 入国カード",
+      "label": "入国カード",
       "title": "事前オンライン記入",
       "desc": "s.nia.gov.cn → 記入 → QRコードスクリーンショット → スキャン通過。パスポート写真スキャン対応。NIA 12367アプリ/WeChat/Alipayミニプログラムも可。"
     },
     "finalCheck": {
-      "label": "✅ 最終確認",
+      "label": "最終確認",
       "items": [
         "<strong>パスポート≥6ヶ月？</strong>",
         "<strong>ビザ資格確認？</strong>",
@@ -108,15 +108,15 @@
       "sub": "手続き+税関+登録。14歳未満/70歳以上は指紋免除。"
     },
     "steps": {
-      "label": "🛂 6ステップ",
+      "label": "6ステップ",
       "desc": "①健康検疫→②指紋→③入国審査→④手荷物→⑤税関→⑥到着ホール"
     },
     "customs": {
-      "label": "🛃 制限",
+      "label": "制限",
       "desc": "現金≤$5K・酒≤1.5L・タバコ≤400本。処方薬は処方箋付き。グリーンチャネル。禁止：武器/麻薬/象牙。"
     },
     "registration": {
-      "label": "🏨 登録",
+      "label": "登録",
       "desc": "ホテルは自動。民泊：12367オンライン(7都市試験)または警察署。移動毎に再登録。第39条：24時間以内。"
     }
   },
@@ -126,22 +126,22 @@
       "sub": "Google/WA/IGブロック。到着後すぐにオンライン接続を。"
     },
     "esim": {
-      "label": "📱 推奨",
+      "label": "推奨",
       "title": "eSIM",
       "desc": "Airalo/Holafly/Nomad。出発前購入→到着時すぐデータ利用可。データのみ、中国番号なし。"
     },
     "sim": {
-      "label": "📱 代替",
+      "label": "代替",
       "title": "中国SIM",
       "desc": "空港：移動/聯通/電信。パスポート必要。¥29-99/月。番号取得→アプリ登録。"
     },
     "vpn": {
-      "label": "🔐 VPN",
+      "label": "VPN",
       "title": "事前インストール",
       "desc": "Mullvad/Astrill。出発前インストール+支払い。異なるプロトコルを2つ用意。"
     },
     "blocked": {
-      "label": "🚫 ブロック",
+      "label": "ブロック",
       "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>代替：百度/小紅書/微博/哔哩哔哩"
     }
   },
@@ -174,19 +174,19 @@
       "sub": "交通・食事・宿泊・服装のヒント"
     },
     "transport": {
-      "label": "🚕 交通",
+      "label": "交通",
       "desc": "<strong>DiDi</strong>:Alipay、英語+カード対応。<br><strong>地下鉄</strong>:乗車コード。<br><strong>高速鉄道</strong>:12306.cn/en カード。<br><strong>自転車</strong>:Alipay ¥1.5-3。"
     },
     "food": {
-      "label": "🍜 食事",
+      "label": "食事",
       "desc": "<strong>大衆点評</strong>:写真+評価。<br><strong>WeChatスキャン→翻訳</strong>:メニュー。<br><strong>美団/饿了么</strong>:デリバリー。<br>ハラール:\"清真\"/蘭州拉麺。<br>ベジタリアン:\"素食\"(スープに注意)。<br>アレルギー:バイリンガルカード携帯。"
     },
     "accommodation": {
-      "label": "🏨 宿泊",
+      "label": "宿泊",
       "desc": "<strong>Trip.com/Booking</strong>:\"外国人受入可\"を確認。<br><strong>Airbnb</strong>:中国事業停止。<br><strong>外国人受入資格</strong>:すべてのホテルが外国人を受け入れられるわけではない。予約前に確認。"
     },
     "clothing": {
-      "label": "👔 服装",
+      "label": "服装",
       "desc": "中国サイズは欧米より1-2サイズ小さめ。US M≈CN L/XL。ユニクロ/ZARAは世界共通。春:温暖·夏:蒸し暑い·秋:最適·冬:北は-10°C/南は湿冷。"
     }
   },
@@ -212,7 +212,7 @@
       "tianjinNote": "外資系三次病院",
       "hainanName": "楽城パイロットゾーン",
       "hainanNote": "国際医薬品/機器",
-      "sectionMeds": "一般医薬品（中/英/露）",
+      "sectionMeds": "一般医薬品",
       "colCn": "中国語",
       "colUse": "用途",
       "medIbuprofenUse": "鎮痛/解熱",
@@ -278,7 +278,7 @@
       "warning": "⚠️ 注意",
       "warningDetail": "1〜2週間前に予約。一部検査は空腹が必要。薬剤について医師に相談。"
     },
-    "back": "← 戻る"
+    "back": "戻る"
   },
   "s8": {
     "meta": {
@@ -337,7 +337,6 @@
     "cityshops": {
       "title": "🗺️ 都市別ショッピングガイド",
       "tapHint": "都市をタップして詳細表示",
-      "backToCityGuide": "← 都市ガイドに戻る",
       "cities": {
         "shenzhen": {
           "name": "深圳·華強北",
@@ -366,7 +365,7 @@
         }
       }
     },
-    "back": "← 戻る"
+    "back": "戻る"
   },
   "s9": {
     "meta": {
@@ -400,8 +399,7 @@
       },
       "sizingTip": "👔 サイズ：中国はUSより1〜2サイズ小さめ。US M≈中国L/XL。ユニクロ/ZARAはグローバルサイズ。"
     },
-    "back": "← 戻る",
-    "backToCityList": "← 都市リストに戻る",
+    "back": "戻る",
     "tapHint": "都市をタップして詳細表示"
   },
   "s10": {

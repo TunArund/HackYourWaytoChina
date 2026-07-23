@@ -67,6 +67,16 @@ const MEDS = [
   { cn:'奥美拉唑', en:'Omeprazole', ru:'Омепразол', k:'omeprazole' },
 ];
 
+/* ---- Language labels for dynamic CN|targetLang display ---- */
+var LANG_LABELS = {
+  en: { short: 'EN', full: 'English' },
+  zh: { short: '中', full: '中文' },
+  ja: { short: '日', full: '日本語' },
+  ko: { short: '한', full: '한국어' },
+  ru: { short: 'RU', full: 'Русский' },
+  vi: { short: 'VI', full: 'Tiếng Việt' }
+};
+
 /* ---- Treatment lists (keys map to i18n for display) ---- */
 const MEDICAL_DENTAL = ['cleaning','filling','root','implant','crown'];
 const MEDICAL_TCM = ['acupuncture','tuina','bonesetting','cupping','herbal'];
@@ -91,7 +101,7 @@ var LAYOUT = {
         { t: 'intro', k: 's7.hospital.intro' },
         { t: 'h4',    k: 's7.hospital.sectionHospitals' },
         { t: 'table', ref: 's7_hospitals' },
-        { t: 'h4',    k: 's7.hospital.sectionMeds' },
+        { t: 'h4',    k: 's7.hospital.sectionMeds', pair: true },
         { t: 'table', ref: 's7_meds' },
         { t: 'tip',   k: 's7.hospital.insuranceWarning', body: 's7.hospital.insuranceDetail', s: 'warn' }
       ]
@@ -205,8 +215,9 @@ var BLOCK_HANDLERS = {
   },
 
   s7_meds: function () {
-    var cols = [t('s7.hospital.colCn'), 'English', 'Русский', t('s7.hospital.colUse')];
-    var rows = MEDS.map(function (m) { return [m.cn, m.en, m.ru, t('s7.hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]; });
+    var tl = LANG_LABELS[LANG] || LANG_LABELS['en'];
+    var cols = [t('s7.hospital.colCn'), tl.full, t('s7.hospital.colUse')];
+    var rows = MEDS.map(function (m) { return [m.cn, m[LANG] || m.en, t('s7.hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]; });
     return renderTable(cols, rows);
   },
 
@@ -248,7 +259,7 @@ var BLOCK_HANDLERS = {
 
   top10: function (sub) {
     if (sub) {
-      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'top10\')">← ' + t('s9.backToCityList') + '</button>'
+      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'top10\')">← ' + t('s9.back') + '</button>'
         + '<h3>' + t('city.' + sub + '.label') + '</h3>'
         + '<p class="dp-subtitle">' + t('city.' + sub + '.tag') + '</p>'
         + '<p class="dp-text">' + t('city.' + sub + '.desc') + '</p>';
@@ -258,7 +269,7 @@ var BLOCK_HANDLERS = {
 
   rising: function (sub) {
     if (sub) {
-      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'rising\')">← ' + t('s9.backToCityList') + '</button>'
+      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'rising\')">← ' + t('s9.back') + '</button>'
         + '<h3>' + t('city.' + sub + '.label') + '</h3>'
         + '<p class="dp-subtitle">' + t('city.' + sub + '.tag') + '</p>'
         + '<p class="dp-text">' + t('city.' + sub + '.desc') + '</p>';
@@ -268,7 +279,7 @@ var BLOCK_HANDLERS = {
 
   cityshops: function (sub) {
     if (sub) {
-      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s8\',\'cityshops\')">← ' + t('s8.cityshops.backToCityGuide') + '</button>'
+      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s8\',\'cityshops\')">← ' + t('s8.back') + '</button>'
         + '<h3>' + t('shop.' + sub + '.name') + '</h3>'
         + '<p class="dp-text">' + t('shop.' + sub + '.desc') + '</p>';
     }

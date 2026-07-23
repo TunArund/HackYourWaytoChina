@@ -1,7 +1,7 @@
 {
   "app": {
     "nav": {
-      "title": "🧳 China Entry Guide",
+      "title": "China Entry Guide",
       "home": "↩ Home"
     },
     "cover": {
@@ -287,7 +287,7 @@
         }
       ]
     },
-    "back": "Back to Payment"
+    "back": "Back"
   },
   "s6": {
     "kicker": "Navigate China Like a Local",
@@ -361,7 +361,7 @@
       "tianjinNote": "Foreign-owned tertiary",
       "hainanName": "Lecheng Pilot Zone",
       "hainanNote": "Intl drugs/devices",
-      "sectionMeds": "Common Meds (CN/EN/RU)",
+      "sectionMeds": "Common Meds",
       "colCn": "CN",
       "colUse": "Use",
       "medIbuprofenUse": "Pain/Fever",
@@ -428,7 +428,7 @@
       "warningDetail": "Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications."
     },
     "kicker": "World-Class Care, Fraction of the Cost",
-    "back": "← Back"
+    "back": "Back"
   },
   "s8": {
     "meta": {
@@ -487,7 +487,7 @@
     "cityshops": {
       "title": "🗺️ City Shopping Guide",
       "tapHint": "Tap a city for details",
-      "backToCityGuide": "← Back to City Guide",
+
       "cities": {
         "shenzhen": {
           "name": "Shenzhen·Huaqiangbei",
@@ -517,7 +517,7 @@
       }
     },
     "kicker": "Buy the Best + Get Your Tax Back",
-    "back": "← Back"
+    "back": "Back"
   },
   "s9": {
     "meta": {
@@ -552,8 +552,8 @@
       "sizingTip": "👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
     },
     "kicker": "Nearly 500 Cities Await You",
-    "back": "← Back",
-    "backToCityList": "← Back to City List",
+    "back": "Back",
+
     "tapHint": "Tap a city for details"
   },
   "s10": {
@@ -969,7 +969,7 @@
       ],
       "sub": "Self-sponsored, 5-year multi-entry"
     },
-    "back": "← Back"
+    "back": "Back"
   },
   "l2": {
     "meta": {
@@ -1011,7 +1011,7 @@
       ],
       "sub": "Step 2 — Within 30 days of entry"
     },
-    "back": "← Back"
+    "back": "Back"
   },
   "l3": {
     "meta": {
@@ -1051,7 +1051,7 @@
       "sub": "BOC / ICBC / CMB. Lifts ¥200 limit"
     },
     "tip": "<strong>💡 Priority order</strong>: Get SIM → open bank account → link to Alipay/WeChat. Without a Chinese phone number, you cannot open a bank account. Without a bank account, your mobile payment features are limited.",
-    "back": "← Back"
+    "back": "Back"
   },
   "l4": {
     "meta": {
@@ -1089,7 +1089,7 @@
       ],
       "sub": "Mandatory within 24h of moving"
     },
-    "back": "← Back"
+    "back": "Back"
   },
   "l5": {
     "meta": {
@@ -1129,7 +1129,7 @@
       ],
       "sub": "Cigna · Allianz · Bupa"
     },
-    "back": "← Back"
+    "back": "Back"
   },
   "l6": {
     "meta": {
@@ -1164,7 +1164,7 @@
       ],
       "sub": "International · Bilingual · Public Intl"
     },
-    "back": "← Back"
+    "back": "Back"
   },
   "l7": {
     "meta": {
@@ -1223,7 +1223,7 @@
       ],
       "sub": "Metro · DiDi · Shared bikes · HSR"
     },
-    "back": "← Back"
+    "back": "Back"
   },
   "l8": {
     "meta": {
@@ -1259,6 +1259,6 @@
       "passportWarning": "⚠️ Lost Passport?",
       "passportWarningDetail": "1) File police report immediately (call 110). 2) Contact your embassy for emergency travel document. 3) Keep a photo of your passport and visa on your phone. 4) Transfer residence permit to new passport within 10 days."
     },
-    "back": "← Back"
+    "back": "Back"
   }
 }

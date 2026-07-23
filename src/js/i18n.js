@@ -47,6 +47,7 @@ function refreshUI() {
   if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
   if (typeof updateLanguageButton === 'function') updateLanguageButton();
   if (typeof updateCountryLang === 'function') updateCountryLang();
+  document.title = t('app.nav.title') || document.title;
 }
 
 /* Init: load bundled (offline) or fetch (dev) immediately */

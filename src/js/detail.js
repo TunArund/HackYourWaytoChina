@@ -67,7 +67,7 @@ function renderCardGrid(items, slide, key, prefix, labelSuffix, descSuffix, desc
 function renderBlock(b, sub) {
   switch (b.t) {
     case 'h3':    return '<h3>' + t(b.k) + '</h3>';
-    case 'h4':    return '<h4>' + t(b.k) + '</h4>';
+    case 'h4':    var h = t(b.k); if (b.pair) { var ll = (LANG_LABELS[LANG] || LANG_LABELS['en']).short; h += ' (CN|' + ll + ')'; } return '<h4>' + h + '</h4>';
     case 'intro': return '<p class="dp-intro">' + t(b.k) + '</p>';
     case 'p':     return '<p class="dp-text">' + t(b.k) + '</p>';
     case 'muted': return '<p class="muted-sm mt-sm">' + t(b.k) + '</p>';

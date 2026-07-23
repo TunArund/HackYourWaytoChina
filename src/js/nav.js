@@ -3,6 +3,27 @@
    ============================================================ */
 
 /* ============================================================
+   Scrollbar width detection — Chrome overlay=0, Firefox classic≈18
+   ============================================================ */
+function getScrollbarWidth() {
+  var outer = document.createElement('div');
+  outer.style.cssText = 'position:absolute;visibility:hidden;width:100px;overflow:scroll';
+  document.body.appendChild(outer);
+  var inner = document.createElement('div');
+  inner.style.width = '100%';
+  outer.appendChild(inner);
+  var w = outer.offsetWidth - inner.offsetWidth;
+  outer.remove();
+  return w;
+}
+function updateScrollbarGap() {
+  // Chrome/Safari hides scrollbar via ::-webkit-scrollbar{display:none}, no offset needed.
+  // Only Firefox renders a visible scrollbar that can overlap the scrubber.
+  if (CSS.supports('selector(::-webkit-scrollbar)')) return;
+  document.documentElement.style.setProperty('--scrollbar-w', getScrollbarWidth() + 'px');
+}
+
+/* ============================================================
    Version Management
    ============================================================ */
 let currentVersion = null;
@@ -22,6 +43,7 @@ function startVersion(v, targetSlide) {
   versionSwitch.classList.add('visible');
   scrubber.classList.add('visible');
   updateVersionSwitchText();
+  updateScrollbarGap();
   buildBars();
   var dest = targetSlide || (v === 'short' ? document.getElementById('s1') : document.getElementById('l1'));
   if (dest) dest.scrollIntoView({ behavior: targetSlide ? 'instant' : 'smooth', block: 'start' });
@@ -151,4 +173,4 @@ scrubber.addEventListener('pointerleave', () => {
   }
 });
 container.addEventListener('scroll', () => { if (!dragging) updateBarHighlight(currentSlideIndex()); });
-window.addEventListener('resize', () => { if (currentVersion) { buildBars(); updateBarHighlight(currentSlideIndex()); } });
+window.addEventListener('resize', () => { updateScrollbarGap(); if (currentVersion) { buildBars(); updateBarHighlight(currentSlideIndex()); } });

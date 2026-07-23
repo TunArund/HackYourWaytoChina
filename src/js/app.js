@@ -26,7 +26,7 @@ function showContinents() {
   for (var i = 0; i < CONTINENT_ORDER.length; i++) {
     var c = CONTINENT_ORDER[i];
     var name = t('s1.continents.' + c) || c;
-    html += '<div class="vc-card" onclick="showCountries(\'' + c + '\')" role="button" tabindex="0">'
+    html += '<div class="card vc-card" onclick="showCountries(\'' + c + '\')" role="button" tabindex="0">'
       + '<span class="vc-card-label">' + name + '</span>'
       + '</div>';
   }
@@ -46,7 +46,7 @@ function showCountries(continent) {
   for (var i = 0; i < codes.length; i++) {
     var code = codes[i];
     var name = t('countries.' + code) || code;
-    html += '<div class="vc-card" onclick="showVisaPolicies(\'' + code + '\')" role="button" tabindex="0">'
+    html += '<div class="card vc-card" onclick="showVisaPolicies(\'' + code + '\')" role="button" tabindex="0">'
       + '<span class="vc-card-label">' + name + '</span>'
       + '</div>';
   }
@@ -80,9 +80,11 @@ function renderVisaSection(type, code) {
   var linksBlock = links.length
     ? '<div class="vc-links-block"><p class="vc-links-heading">🔗 ' + t('app.links.official') + '</p>' + links.map(function (l) { return '<a href="' + l.url + '" target="_blank" rel="noopener" class="vc-link">' + t('visa.links.' + l.key) + ' →</a>'; }).join('') + '</div>' : '';
 
-  return '<h4 class="vc-section-title">📋 ' + t('visa.' + type + '.detailTitle') + '</h4>'
+  return '<div class="vc-section">'
+    + '<h4 class="vc-section-title">📋 ' + t('visa.' + type + '.detailTitle') + '</h4>'
     + '<ul class="step-list">' + condList.map(function (c) { return '<li>' + c + '</li>'; }).join('') + '</ul>'
-    + ruNote + linksBlock;
+    + ruNote + linksBlock
+    + '</div>';
 }
 
 /* i18n update: re-render card labels */

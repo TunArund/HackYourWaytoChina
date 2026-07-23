@@ -18,9 +18,9 @@
   font-size:16px;
 }
 @media(min-width:640px){:root{--tl-right:36px;--tl-dot-s:14px}}
-@media(min-width:1024px){:root{--tl-right:44px}}
-@media(min-width:1600px){:root{font-size:17px}}
-@media(min-width:2200px){:root{font-size:18px}}
+@media(min-width:1024px){:root{--tl-right:44px;font-size:17px}}
+@media(min-width:1440px){:root{font-size:18px}}
+@media(min-width:1920px){:root{font-size:19px}}
 
 /* ============================================================
    Reset
@@ -39,6 +39,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
   scroll-snap-type:y mandatory;
   scroll-behavior:smooth;
   scrollbar-gutter:stable;
+  overscroll-behavior-y:none;
   touch-action:pan-y;
   -webkit-overflow-scrolling:touch;
 }
@@ -48,14 +49,15 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:
 .slide--short,.slide--long{display:none}
 body.version-short .slide--short,body.version-long .slide--long{display:flex}
 body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
-.slide:not(.slide--cover){scroll-margin-top:49px}
+.slide:not(.slide--cover){padding-top:49px}
+.slide:not(.slide--cover)::before{top:49px}
 
 /* ============================================================
    Slide
    min-height instead of height — dvh for dynamic address bar
    ============================================================ */
 .slide{
-  min-height:100svh;scroll-snap-align:start;overflow:hidden;
+  min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always;overflow:hidden;
   position:relative;display:grid;grid-template-rows:minmax(100svh,auto);
   background:var(--bg);
 }
@@ -144,17 +146,6 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 @media(min-width:1440px){.info-cards{grid-template-columns:repeat(4,1fr);gap:14px}}
 @media(min-width:1920px){.info-cards{grid-template-columns:repeat(5,1fr);gap:16px}}
 @media(min-width:1024px){.info-cards.col3{grid-template-columns:repeat(3,1fr)}}
-.info-card{min-width:0;
-  background:var(--surface);border:1px solid var(--border);
-  border-radius:var(--radius);padding:14px 16px;max-width:480px;
-  box-shadow:var(--card-shadow);transition:all var(--transition);
-}
-.info-card:hover{box-shadow:var(--card-shadow-hover);border-color:color-mix(in srgb,var(--border) 70%,var(--accent))}
-.info-card .c-label{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:3px}
-.info-card h4{font-size:1rem;font-weight:700;margin-bottom:3px;color:var(--text)}
-.info-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
-.info-card ol,.info-card ul{margin:6px 0 0 16px;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
-
 /* Embedded links + icons inside cards */
 .card-link{color:var(--info);text-decoration:underline;font-size:0.78rem}
 .card-link:hover{opacity:0.7}
@@ -175,13 +166,26 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .slide-stat-num{display:block;font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1.2}
 .slide-stat span{font-size:0.8rem;color:var(--text-muted)}
 .slide-icons{display:grid;gap:16px;grid-template-columns:repeat(2,1fr);margin-bottom:18px}
-.slide-btn{display:flex;flex-direction:column;align-items:center;gap:8px;
-  padding:20px 16px;border:1px solid var(--border);border-radius:var(--radius);
+.card{display:flex;flex-direction:column;align-items:center;gap:8px;
+  padding:16px 16px;border:1px solid var(--border);border-radius:var(--radius);
   background:var(--surface);cursor:pointer;transition:all var(--transition);
-  font-size:0.92rem;font-weight:600;color:var(--text);font-family:var(--font);text-align:center}
-.slide-btn:hover{transform:translateY(-2px);box-shadow:var(--card-shadow-hover);border-color:var(--accent)}
-.slide-btn img{width:48px;height:48px;border-radius:12px}
-.slide-btn .slide-btn-sub{display:block;font-size:0.78rem;font-weight:400;color:var(--text-muted);margin-top:-4px}
+  font-size:1rem;font-weight:600;color:var(--text);font-family:var(--font);text-align:center;
+  box-shadow:var(--card-shadow)}
+.card:hover{transform:translateY(-2px);box-shadow:var(--card-shadow-hover);border-color:var(--accent)}
+.card img{width:48px;height:48px;border-radius:12px}
+.card .card-sub{display:block;font-size:0.88rem;font-weight:400;color:var(--text-muted);margin-top:-4px}
+
+/* Card fonts scale up at larger screens */
+@media(min-width:1440px){.card{font-size:1.1rem}.card-sub{font-size:0.95rem}.info-card h4{font-size:1.15rem}.info-card p{font-size:1rem}.vc-card-label{font-size:1.1rem}}
+@media(min-width:1920px){.card{font-size:1.2rem}.card-sub{font-size:1.05rem}.info-card h4{font-size:1.25rem}.info-card p{font-size:1.1rem}.vc-card-label{font-size:1.2rem}}
+
+/* Info card overrides — AFTER .card to win cascade */
+.info-card{display:block;min-width:0;max-width:480px;padding:14px 16px}
+.info-card .c-label{font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:3px}
+.info-card h4{font-size:1rem;font-weight:700;margin-bottom:3px;color:var(--text)}
+.info-card p{font-size:0.88rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+.info-card ol,.info-card ul{margin:6px 0 0 16px;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;overflow-wrap:break-word}
+
 .slide-summary{transition:opacity 0.3s ease,transform 0.3s ease}
 .slide-summary.hide{display:none}
 .slide-detail{display:none;opacity:0;transform:translateY(12px);transition:opacity 0.35s ease,transform 0.35s ease}
@@ -229,21 +233,15 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 @media(min-width:1200px){.vc-cards--sm{grid-template-columns:repeat(6,1fr);gap:12px}}
 
 /* Single card */
-.vc-card{
-  display:flex;align-items:center;justify-content:center;
-  padding:18px 14px;border:1px solid var(--border);border-radius:var(--radius);
-  background:var(--surface);cursor:pointer;transition:all var(--transition);
-  text-align:center;min-height:64px;
-}
-.vc-card:hover{transform:translateY(-2px);box-shadow:var(--card-shadow-hover);border-color:var(--accent)}
-.vc-card-label{font-size:0.92rem;font-weight:600;color:var(--text);line-height:1.3}
+.vc-card{justify-content:center}
+.vc-card-label{font-size:1rem;font-weight:600;color:var(--text);line-height:1.3}
 
-@media(min-width:640px){.vc-card{padding:22px 16px;min-height:72px}.vc-card-label{font-size:1rem}}
-@media(min-width:1024px){.vc-card{padding:26px 18px;min-height:80px}.vc-card-label{font-size:1.1rem}}
+@media(min-width:640px){.vc-card{padding:18px 20px}}
+@media(min-width:1024px){.vc-card{padding:20px 24px}}
 
 /* Back button */
 .vc-back{
-  display:inline-flex;align-items:center;gap:4px;margin-top:10px;
+  display:inline-flex;align-items:center;gap:4px;margin-bottom:10px;
   font-size:0.85rem;font-weight:600;color:var(--accent);
   background:none;border:none;cursor:pointer;padding:4px 0;
 }
@@ -253,11 +251,16 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 .vc-result{display:none;margin-top:14px;font-size:0.94rem;line-height:1.6;max-width:720px}
 .vc-result.show{display:block;animation:fadeIn 0.35s ease}
 @media(min-width:640px){.vc-result{font-size:0.96rem}}
-@media(min-width:1024px){.vc-result{font-size:1rem;columns:2;column-gap:28px}.vc-result .vc-section-title{column-span:all}}
+@media(min-width:1024px){.vc-result{font-size:1rem}.vc-result.show{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}}
 @media(min-width:1600px){.vc-result{font-size:1.05rem}}
 
+/* Section wrapper in result */
+.vc-section{break-inside:avoid}
 /* Section title inside result */
 .vc-section-title{font-size:1rem;font-weight:700;margin-bottom:0.625rem;color:var(--text)}
+
+@media(min-width:1024px){.vc-section-title{font-size:1.1rem}}
+@media(min-width:1440px){.vc-section-title{font-size:1.2rem}}
 
 /* Links block inside result */
 .vc-links-block{margin-top:0.75rem}
@@ -295,7 +298,7 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
    Draggable Scrubber — dark bars on light bg
    ============================================================ */
 .nav-scrubber{
-  position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:100;
+  position:fixed;right:var(--scrollbar-w,0px);top:50%;transform:translateY(-50%);z-index:100;
   display:flex;flex-direction:column;align-items:flex-end;gap:7px;
   cursor:pointer;
   opacity:0;pointer-events:none;transition:opacity 0.3s;
@@ -445,13 +448,13 @@ body.version-short .slide--cover,body.version-long .slide--cover{display:flex}
 @media(max-width:639px){
 
   .info-cards{gap:6px}
+  .card{padding:14px 12px;font-size:0.92rem}
+  .card .card-sub{font-size:0.8rem}
   .info-card{padding:10px 12px}
   .tip-box{padding:8px 10px;font-size:0.78rem}
   .step-list li{margin-bottom:6px}
   .detail-panel{padding:14px 12px}
   .detail-table{font-size:0.72rem}
   .detail-table th,.detail-table td{padding:4px 6px}
-  .slide-btn{padding:16px 12px;font-size:0.88rem}
-  .slide-btn .slide-btn-sub{font-size:0.74rem}
   .slide-stats{gap:8px}
 }

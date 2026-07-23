@@ -2,24 +2,24 @@
 
 ## ⚡ 快赢（立竿见影）
 
+根据`<span class="top-bar-title" data-i18n="app.nav.title">🧳 China Entry Guide</span>`修改meta title和favicon
+Common Meds (CN/EN/RU)逻辑有误，应该写成CN|targetLang
+
 | # | Task | Effort |
 |---|------|--------|
-| 6 | **S1 改为卡片选择** — 两级下拉 → 洲→国家卡片直观选。放大触控目标，充分利用屏幕，顺带改 `vc*` 命名 | 中 |
 | 4 | **短/长版配色区分** — `.version-short`（绿 `--short-accent`）vs `.version-long`（紫 `--long-accent`），切换 `--accent` | 小 |
-| 7 | **favicon** — 浏览器 tab 显示图标 | 小 |
 | 10 | **S5 绑卡截图** — 支付宝/微信绑卡操作截图，图文并茂 | 小 |
-| 3 | **`slide-inner` DOM 简化** — 去一层嵌套，减少 overflow 问题 | 中 |
-| 9 | **小屏溢出修复** — S2-S6 detail ≤480px 可能溢出 | 小 |
 
 ## 🔧 结构优化（重要但见效慢）
-
+CSS框架化 参考bootstrap
+| 3 |  DOM 简化** — 去嵌套，减少 overflow 问题 | 中 |
 | # | Task | Effort |
 |---|------|--------|
 | 1 | **事件委托 + 模块化** — HTML `onclick` → JS 事件委托 + IIFE 包裹各文件 | 大 |
 | 2 | **i18n 按概念重排** — `sX.xxx` → `visa.xxx` / `payment.xxx` / `city.xxx` 去重 | 大 |
 | 5 | **CSS 多行格式化** — 当前 ~440 行单行压缩，展开 | 小 |
 | 8 | **JSDoc** — 导出函数加注释 | 小 |
-
+emoji从i18n中抽离
 ## 📝 内容充实
 
 | # | Task |
