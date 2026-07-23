@@ -1,251 +1,182 @@
 /* ============================================================
-   detail.js — Detail panel system (data-driven)
+   detail.js — Unified detail system (data-driven dispatch)
+   Layout-driven for S7/S8/S9; generic step-list for pay-detail slides.
+   Zero namespace configuration — i18n keys follow slide.key.* pattern.
    ============================================================ */
 
+/* ---- State ---- */
 const currentDetail = { slide: null, key: null, sub: null };
 
-/* ---- open / close ---- */
-function openDetail(slide, key, sub) {
-  const panel = document.getElementById('detail-' + slide);
-  if (!panel) return;
-  const sec = panel.closest('.slide');
-  const container = document.getElementById('slidesContainer');
 
-  // Temporarily disable snap to prevent auto-jump to another slide during DOM change
-  if (container) container.style.scrollSnapType = 'none';
-  if (sec) sec.style.overflow = 'hidden';
+/* ---- Generic step-list renderer (pay-detail slides: S2-S6,S10,L1-L8) ---- */
 
-  currentDetail.slide = slide; currentDetail.key = key; currentDetail.sub = sub || null;
-  panel.innerHTML = renderDetail(slide, key, sub);
-  panel.classList.add('active');
-  const body = panel.parentElement;
-  const cards = body.querySelector('.info-cards');
-  if (cards) cards.style.display = 'none';
-
-  // Scroll to this slide and re-enable snap after layout settles
-  if (sec) sec.scrollIntoView({ behavior: 'instant', block: 'start' });
-  setTimeout(() => {
-    if (container) container.style.scrollSnapType = 'y mandatory';
-  }, 120);
-
-  if (typeof _restoring !== 'undefined' && _restoring) {
-    history.replaceState({ slide, key, sub }, '', `#${slide}-detail-${key}${sub ? '-' + sub : ''}`);
-  } else {
-    history.pushState({ slide, key, sub }, '', `#${slide}-detail-${key}${sub ? '-' + sub : ''}`);
+function renderSteps(slide, key) {
+  // L8 hotlines redirect to S10 data
+  if (slide === 'l8' && key !== 'renewal') {
+    var hotSteps = tArray('s10.' + key + '.steps');
+    var hotList = Array.isArray(hotSteps) ? hotSteps : [];
+    return '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">← ' + (t(slide + '.back') || '← Back') + '</button>'
+      + '<h3>' + t('s10.' + key + '.title') + '</h3>'
+      + '<ol class="step-list">' + hotList.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
   }
-}
 
-function closeDetail(slide) {
-  const panel = document.getElementById('detail-' + slide);
-  if (!panel) return;
-  const sec = panel.closest('.slide');
-  const container = document.getElementById('slidesContainer');
+  var P = slide + '.' + key + '.';
+  var steps = tArray(P + 'steps');
+  var stepList = Array.isArray(steps) ? steps : [];
+  var links = tArray(P + 'links');
+  var linkList = Array.isArray(links) ? links : [];
 
-  if (container) container.style.scrollSnapType = 'none';
-  if (sec) sec.style.overflow = '';
-
-  panel.classList.remove('active'); panel.innerHTML = '';
-  const body = panel.parentElement;
-  const cards = body.querySelector('.info-cards');
-  if (cards) cards.style.display = '';
-
-  currentDetail.slide = null; currentDetail.key = null; currentDetail.sub = null;
-
-  if (sec) sec.scrollIntoView({ behavior: 'instant', block: 'start' });
-  setTimeout(() => {
-    if (container) container.style.scrollSnapType = 'y mandatory';
-  }, 120);
-
-  history.replaceState(null, '', '#' + slide);
-}
-
-window.addEventListener('popstate', e => {
-  const cd = currentDetail;
-  if (e.state && e.state.slide) {
-    // Forward/back to a detail state — open it if not already showing
-    if (!cd.slide || cd.slide !== e.state.slide || cd.key !== e.state.key) {
-      if (cd.slide) closeDetail(cd.slide);
-      openDetail(e.state.slide, e.state.key, e.state.sub || null);
-    }
-  } else if (cd.slide) {
-    // Navigated away from detail — close it
-    closeDetail(cd.slide);
+  var backLabel = t(slide + '.back') || '← Back';
+  var h = '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">← ' + backLabel + '</button>';
+  h += '<h3>' + t(P + 'title') + '</h3>';
+  if (stepList.length) {
+    h += '<ol class="step-list">' + stepList.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
   }
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape' && currentDetail.slide) closeDetail(currentDetail.slide); });
+  if (linkList.length) {
+    h += '<p style="margin-top:12px">' + linkList.map(function (l) {
+      return '<a class="card-link" href="' + l.url + '" target="_blank" rel="noopener">' + (l.label || l.key) + ' →</a>';
+    }).join('<br>') + '</p>';
+  }
+  return h;
+}
 
 
 /* ---- Render helpers ---- */
 
-const H = {
-  back: (slide) => `<button class="detail-back" onclick="closeDetail('${slide}')">← ${t(slide + '.detail.back')}</button>`,
-  title: (text) => `<h3>${text}</h3>`,
-  h4: (text) => `<h4>${text}</h4>`,
-  intro: (key) => `<p class="dp-intro">${t(key)}</p>`,
-  table: (headers, rows) => `<div class="table-wrapper"><table class="detail-table"><thead><tr>${headers.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`,
-  tip: (type, title, body) => `<div class="tip-box tip-box--${type}"><strong>${title}</strong><span>${body}</span></div>`,
-  subGrid: (items) => `<div class="sub-card-grid">${items.join('')}</div>`,
-  subCard: (title, desc, onclick) => `<div class="sub-card" onclick="${onclick}"><div class="sc-title">${title}</div><div class="sc-desc">${desc}</div><div class="sc-hint">[ ${t('app.buttons.expand')} ]</div></div>`,
-  nav: (prev, next, idx, total) => `<div class="detail-nav">${prev || '<span></span>'}<span class="dn-center">${idx + 1}/${total}</span>${next || '<span></span>'}</div>`,
-  muted: (text) => `<p class="muted-sm mt-sm">${text}</p>`,
-};
+function renderTable(cols, rows) {
+  return '<div class="table-wrapper"><table class="detail-table"><thead><tr>'
+    + cols.map(function (c) { return '<th>' + c + '</th>'; }).join('')
+    + '</tr></thead><tbody>'
+    + rows.map(function (r) { return '<tr>' + r.map(function (c) { return '<td>' + c + '</td>'; }).join('') + '</tr>'; }).join('')
+    + '</tbody></table></div>';
+}
 
-/* ---- Master dispatch ---- */
+function renderCardGrid(items, slide, key, prefix, labelSuffix, descSuffix, descFn) {
+  return '<div class="sub-card-grid">'
+    + items.map(function (id) {
+      var label = t(prefix + id + '.' + labelSuffix);
+      var desc = descFn ? descFn(id) : t(prefix + id + '.' + descSuffix);
+      return '<div class="sub-card" onclick="event.stopPropagation();openDetail(\'' + slide + '\',\'' + key + '\',\'' + id + '\')"><div class="sc-title">' + label + '</div><div class="sc-desc">' + desc + '</div><div class="sc-hint">[ ' + t('app.buttons.expand') + ' ]</div></div>';
+    }).join('')
+    + '</div>';
+}
+
+
+/* ---- Block renderer (generic, drives all detail views) ---- */
+
+function renderBlock(b, sub) {
+  switch (b.t) {
+    case 'h3':    return '<h3>' + t(b.k) + '</h3>';
+    case 'h4':    return '<h4>' + t(b.k) + '</h4>';
+    case 'intro': return '<p class="dp-intro">' + t(b.k) + '</p>';
+    case 'p':     return '<p class="dp-text">' + t(b.k) + '</p>';
+    case 'muted': return '<p class="muted-sm mt-sm">' + t(b.k) + '</p>';
+    case 'tip':   return '<div class="tip-box tip-box--' + (b.s || 'info') + '"><strong>' + t(b.k) + '</strong><span>' + t(b.body) + '</span></div>';
+    case 'table':
+    case 'cards':
+    case 'ul':
+    case 'ol':    var fn = BLOCK_HANDLERS[b.ref]; return fn ? fn(sub) : '';
+    default:      return '';
+  }
+}
+
+
+/* ---- Master render dispatch ---- */
 
 function renderDetail(slide, key, sub) {
-  if (slide === 's3') return renderS3(key);
-  if (slide === 's4') return renderS4(key);
-  if (slide === 's7') return renderS7(key, sub);
-  if (slide === 's8') return renderS8(key, sub);
-  if (slide === 's9') return renderS9(key, sub);
-  return '';
-}
-
-
-/* ============================================================
-   S3  Arrival & Immigration
-   ============================================================ */
-
-function renderS3(key) {
-  const P = 's3.detail.' + key + '.';
-  const items = ta(P + 'items');
-  const itemList = Array.isArray(items) ? items : [];
-  return H.back('s3') + H.title(t(P + 'title')) + H.intro(P + 'intro')
-    + '<ul class="step-list">' + itemList.map(i => '<li>' + i + '</li>').join('') + '</ul>'
-    + (t(P + 'linkUrl') ? '<p style="margin-top:12px"><a class="card-link" href="' + t(P + 'linkUrl') + '" target="_blank" rel="noopener">' + t(P + 'linkLabel') + ' →</a></p>' : '');
-}
-
-
-/* ============================================================
-   S4  Connectivity
-   ============================================================ */
-
-function renderS4(key) {
-  const P = 's4.detail.' + key + '.';
-  const items = ta(P + 'items');
-  const itemList = Array.isArray(items) ? items : [];
-  return H.back('s4') + H.title(t(P + 'title')) + H.intro(P + 'intro')
-    + '<ul class="step-list">' + itemList.map(i => '<li>' + i + '</li>').join('') + '</ul>';
-}
-
-
-/* ============================================================
-   S7  Medical & Aesthetics
-   ============================================================ */
-
-function renderS7(key, sub) {
-  const P = 's7.detail.';
-
-  if (key === 'hospital') {
-    const cols = [t(P + 'hospital.colCity'), t(P + 'hospital.colHospital'), t(P + 'hospital.colNote')];
-    const hrows = HOSPITAL_CITIES.map(c => [t('city.' + c + '.label'), t(P + 'hospital.' + c + 'Name'), t(P + 'hospital.' + c + 'Note')]);
-    const mcols = [t(P + 'hospital.colCn'), 'English', 'Русский', t(P + 'hospital.colUse')];
-    const mrows = MEDS.map(m => [m.cn, m.en, m.ru, t(P + 'hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]);
-    return H.back('s7') + H.title(t(P + 'hospital.title')) + H.intro(P + 'hospital.intro')
-      + H.h4(t(P + 'hospital.sectionHospitals')) + H.table(cols, hrows)
-      + H.h4(t(P + 'hospital.sectionMeds')) + H.table(mcols, mrows)
-      + H.tip('warn', t(P + 'hospital.insuranceWarning'), t(P + 'hospital.insuranceDetail'));
-  }
-
-  if (key === 'big3') {
-    const BP = P + 'big3.';
-    const dCols = [t(BP + 'colItem'), t(BP + 'colChinaPrice'), t(BP + 'colUsEuPrice')];
-    const dRows = BIG3_DENTAL.map(k => [t(BP + 'dental_' + k), t(BP + 'dental_' + k + '_cn'), t(BP + 'dental_' + k + '_us')]);
-    const tCols = [t(BP + 'colTherapy'), t(BP + 'colDescription'), t(BP + 'colPrice')];
-    const tRows = BIG3_TCM.map(k => [t(BP + 'tcm_' + k), t(BP + 'tcm_' + k + '_desc'), t(BP + 'tcm_' + k + '_price')]);
-    return H.back('s7') + H.title(t(BP + 'title'))
-      + H.h4(t(BP + 'sectionDental')) + H.table(dCols, dRows)
-      + H.h4(t(BP + 'sectionEye')) + H.intro(BP + 'eyeDesc')
-      + H.h4(t(BP + 'sectionTcm')) + H.table(tCols, tRows)
-      + H.tip('info', t(BP + 'tcmHotspots'), t(BP + 'tcmHotspotsDetail'));
-  }
-
-  if (key === 'checkup') {
-    const CP = P + 'checkup.';
-    return H.back('s7') + H.title(t(CP + 'title')) + H.intro(CP + 'intro') + H.intro(CP + 'recommended')
-      + H.tip('warn', t(CP + 'warning'), t(CP + 'warningDetail'));
-  }
-  return '';
-}
-
-
-/* ============================================================
-   S8  Shopping
-   ============================================================ */
-
-function renderS8(key, sub) {
-  const P = 's8.detail.';
-
-  if (key === 'electronics') {
-    const EP = P + 'electronics.';
-    const eCols = [t(EP + 'colCategory'), t(EP + 'colWhy'), t(EP + 'colPrice')];
-    const eRows = SHOP_ELECTRONICS.map(k => [t(EP + k), t(EP + k + '_why'), t(EP + k + '_price') || '—']);
-    return H.back('s8') + H.title(t(EP + 'title')) + H.table(eCols, eRows)
-      + H.tip('info', t(EP + 'whereToBuy'), t(EP + 'whereToBuyDetail'));
-  }
-
-  if (key === 'souvenirs') {
-    const SP = P + 'souvenirs.';
-    const sCols = [t(SP + 'colCity'), t(SP + 'colItem')];
-    const sRows = SOUVENIR_CITIES.map(k => [t('city.' + (k === 'xian' ? 'xian' : k) + '.label'), t(SP + k + '_item')]);
-    return H.back('s8') + H.title(t(SP + 'title')) + H.table(sCols, sRows) + H.muted(t(SP + 'tip'));
-  }
-
-  if (key === 'taxrefund') {
-    const TP = P + 'taxrefund.';
-    return H.back('s8') + H.title(t(TP + 'title')) + H.intro(TP + 'stats')
-      + H.h4(t(TP + 'sectionRequirements')) + '<ul class="step-list">' + TAXREFUND_REQS.map(k => `<li>${t(TP + k)}</li>`).join('') + '</ul>'
-      + H.h4(t(TP + 'sectionProcess')) + '<ol class="step-list">' + TAXREFUND_STEPS.map(k => `<li>${t(TP + k)}</li>`).join('') + '</ol>'
-      + H.tip('good', t(TP + 'instantRefundTitle'), t(TP + 'instantRefundDetail'));
-  }
-
-  if (key === 'cityshops') {
+  var layout = LAYOUT[slide] && LAYOUT[slide][key];
+  if (layout) {
+    // Sub-navigation: if sub is set, delegate to cards handler
     if (sub) {
-      return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s8','cityshops')">← ${t(P + 'cityshops.backToCityGuide')}</button>
-        <h3>🛍️ ${t('shop.' + sub + '.name')}</h3><p class="dp-text">${t('shop.' + sub + '.desc')}</p>`;
+      for (var i = 0; i < layout.blocks.length; i++) {
+        var b = layout.blocks[i];
+        if (b.t === 'cards' && BLOCK_HANDLERS[b.ref]) {
+          return BLOCK_HANDLERS[b.ref](sub);
+        }
+      }
     }
-    const cards = SHOP_CITY_KEYS.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s8','cityshops','${k}')"><div class="sc-title">${t('shop.' + k + '.name')}</div><div class="sc-desc">${t(P + 'cityshops.cities.' + k + '.subtitle')}</div></div>`);
-    return H.back('s8') + H.title(t(P + 'cityshops.title')) + H.muted(t(P + 'cityshops.tapHint')) + H.subGrid(cards);
+    return '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">← ' + t(layout.back) + '</button>'
+      + layout.blocks.map(function (b) { return renderBlock(b, null); }).join('');
   }
-  return '';
+  return renderSteps(slide, key);
 }
 
 
-/* ============================================================
-   S9  Destinations
-   ============================================================ */
+/* ---- Unified open ---- */
 
-function renderS9(key, sub) {
-  const P = 's9.detail.';
+function openDetail(slide, key, sub) {
+  var summary = document.getElementById(slide + 'Summary');
+  var detailEl = document.getElementById(slide + 'Detail');
+  if (!summary || !detailEl) return;
 
-  if (key === 'top10') {
-    if (sub) return renderDestCity(sub, TOP10_CITIES);
-    const cards = TOP10_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','top10','${k}')"><div class="sc-title">${t('city.' + k + '.label')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
-    return H.back('s9') + H.title(t(P + 'top10.title')) + H.muted(t(P + 'tapHint')) + H.subGrid(cards);
+  var sec = detailEl.closest('.slide');
+  var container = document.getElementById('slidesContainer');
+
+  if (container) container.style.scrollSnapType = 'none';
+  if (sec) sec.style.overflow = 'hidden';
+
+  currentDetail.slide = slide; currentDetail.key = key; currentDetail.sub = sub || null;
+
+  detailEl.innerHTML = renderDetail(slide, key, sub);
+  summary.classList.add('hide');
+  detailEl.classList.add('show');
+
+  if (sec) sec.scrollIntoView({ behavior: 'instant', block: 'start' });
+  setTimeout(function () {
+    if (container) container.style.scrollSnapType = 'y mandatory';
+  }, 120);
+
+  if (typeof isRestoring !== 'undefined' && isRestoring) {
+    history.replaceState({ slide: slide, key: key, sub: sub }, '', '#' + slide + '-detail-' + key + (sub ? '-' + sub : ''));
+  } else {
+    history.pushState({ slide: slide, key: key, sub: sub }, '', '#' + slide + '-detail-' + key + (sub ? '-' + sub : ''));
   }
-
-  if (key === 'rising') {
-    if (sub) return renderDestCity(sub, RISING_CITIES);
-    const cards = RISING_CITIES.map(k => `<div class="sub-card" onclick="event.stopPropagation();openDetail('s9','rising','${k}')"><div class="sc-title">${t('city.' + k + '.label')}</div><div class="sc-desc">${t('city.' + k + '.tag')}</div></div>`);
-    return H.back('s9') + H.title(t(P + 'rising.title')) + H.muted(t(P + 'rising.subtitle')) + H.subGrid(cards);
-  }
-
-  if (key === 'seasons') {
-    const SP = P + 'seasons.';
-    return H.back('s9') + H.title(t(SP + 'title'))
-      + SEASONS.map(s => H.tip('info', t(SP + s + '.title'), t(SP + s + '.desc'))).join('')
-      + H.muted(t(SP + 'sizingTip'));
-  }
-  return '';
 }
 
-function renderDestCity(key, cities) {
-  const idx = cities.indexOf(key);
-  const prev = idx > 0 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx - 1]}')">← ${t('city.' + cities[idx - 1] + '.label')}</button>` : null;
-  const next = idx < cities.length - 1 ? `<button onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}','${cities[idx + 1]}')">${t('city.' + cities[idx + 1] + '.label')} →</button>` : null;
-  return `<button class="detail-back" onclick="event.stopPropagation();openDetail('s9','${cities === TOP10_CITIES ? 'top10' : 'rising'}')">← ${t('s9.detail.backToCityList')}</button>
-    <h3>${t('city.' + key + '.label')}</h3>
-    <p class="dp-subtitle">${t('city.' + key + '.tag')}</p>
-    <p class="dp-text">${t('city.' + key + '.desc')}</p>
-    ${H.nav(prev, next, idx, cities.length)}`;
+
+/* ---- Unified close ---- */
+
+function closeDetail(slide) {
+  var summary = document.getElementById(slide + 'Summary');
+  var detailEl = document.getElementById(slide + 'Detail');
+  if (!summary || !detailEl) return;
+
+  var sec = detailEl.closest('.slide');
+  var container = document.getElementById('slidesContainer');
+
+  if (container) container.style.scrollSnapType = 'none';
+  if (sec) sec.style.overflow = '';
+
+  summary.classList.remove('hide');
+  detailEl.classList.remove('show');
+  detailEl.innerHTML = '';
+
+  currentDetail.slide = null; currentDetail.key = null; currentDetail.sub = null;
+
+  if (sec) sec.scrollIntoView({ behavior: 'instant', block: 'start' });
+  setTimeout(function () {
+    if (container) container.style.scrollSnapType = 'y mandatory';
+  }, 120);
+
+  history.replaceState({ _closeDetail: true }, '', '#' + slide);
 }
+
+
+/* ---- Unified popstate (single handler for all detail navigation) ---- */
+
+window.addEventListener('popstate', function (e) {
+  var cd = currentDetail;
+  if (e.state && e.state.slide) {
+    if (!cd.slide || cd.slide !== e.state.slide || cd.key !== e.state.key || cd.sub !== e.state.sub) {
+      if (cd.slide) closeDetail(cd.slide);
+      openDetail(e.state.slide, e.state.key, e.state.sub || null);
+    }
+  } else if (cd.slide) {
+    closeDetail(cd.slide);
+  }
+});
+
+/* Escape key to close detail */
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && currentDetail.slide) closeDetail(currentDetail.slide);
+});

@@ -21,7 +21,7 @@
     },
     "buttons": {
       "reset": "🔄 重新检测",
-      "back": "← 返回检测结果",
+      "back": "← 返回",
       "details": "📋 查看签证详情 ▸",
       "expand": "展开 →"
     },
@@ -65,7 +65,8 @@
     "continents": {
       "asiaPacific": "🌏 亚太地区",
       "middleEast": "🏜️ 中东",
-      "europe": "🌍 欧洲",
+      "europeWest": "🏰 西欧",
+      "europeEast": "🏛️ 东欧",
       "americas": "🌎 美洲",
       "africa": "🌍 非洲",
       "other": "🌐 其他"
@@ -79,9 +80,6 @@
     },
     "kicker": "出发前搞定这些",
     "intro": "出发前请确认以下材料准备就绪。点击每项查看详情。",
-    "detail": {
-      "back": "返回"
-    },
     "passport": {
       "label": "护照",
       "title": "护照要求",
@@ -131,7 +129,8 @@
         "旅行保险：保单号保存，紧急联系电话记好。"
       ],
       "sub": "登机前7项检查清单"
-    }
+    },
+    "back": "返回"
   },
   "s3": {
     "meta": {
@@ -139,66 +138,49 @@
       "sub": "通关流程+海关限额+住宿登记。14岁以下/70岁以上免指纹。"
     },
     "steps": {
-      "label": "入境流程",
-      "desc": "<strong>① 健康检疫</strong> — 体温检测，出示健康申报二维码（建议出发前在线填写）<br><strong>② 指纹采集</strong> — 14-70岁外国人需留指纹（14岁以下、70岁以上免采）<br><strong>③ 边检</strong> — 出示护照、签证、入境卡，现场拍照<br><strong>④ 行李提取</strong> — 根据航班号查看电子屏找到对应转盘<br><strong>⑤ 海关</strong> — 绿通（无申报物品）或红通（有物品需申报）<br><strong>⑥ 到达大厅</strong> — 出口右转：出租车、地铁、机场大巴<br><a class=\"card-link\" href=\"https://www.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">国家移民管理局官网 →</a>",
-      "sub": "边检6步通关指南"
+      "title": "入境通关 — 6步",
+      "steps": [
+        "健康检疫：体温检测，出示健康申报二维码。",
+        "指纹采集：14-70岁外国人需留指纹。",
+        "边检：出示护照+签证+入境卡，拍照。",
+        "行李提取：查看电子屏找对应转盘。",
+        "海关：绿通（无申报）或红通（申报）。",
+        "到达大厅：出租车、地铁、机场大巴、网约车。"
+      ],
+      "linkUrl": "https://www.nia.gov.cn",
+      "linkLabel": "国家移民管理局官网"
     },
     "customs": {
-      "label": "海关申报",
-      "desc": "<strong>现金</strong>: ≤$5,000（或等值外币）— 超出需申报<br><strong>酒类</strong>: ≤1.5L（含白酒、红酒、啤酒合计）<br><strong>香烟</strong>: ≤400支（2条）<br><strong>处方药</strong>: 携带医生处方+说明，管制药品需申报<br><strong>🟢 绿色通道</strong>: 无申报物品 — 直接通行<br><strong>🔴 红色通道</strong>: 超出免税限额或有限制物品 — 填写申报单<br><strong>⛔ 禁止入境</strong>: 武器、毒品、象牙及其制品、濒危动植物、新鲜水果/植物<br><a class=\"card-link\" href=\"https://www.customs.gov.cn\" target=\"_blank\" rel=\"noopener\">中国海关 →</a>",
-      "sub": "免税限额与违禁品清单"
+      "title": "海关规定",
+      "steps": [
+        "现金：不超过$5,000或等值外币。",
+        "酒类：总计1.5升。",
+        "香烟：400支（2条）。",
+        "电子产品：自用没问题，礼品超5000Y应申报。",
+        "处方药：携带医生处方。",
+        "禁止：武器、毒品、象牙、新鲜水果/植物。",
+        "绿色通道：无申报。",
+        "红色通道：超免税限额，填申报单。"
+      ],
+      "linkUrl": "https://www.customs.gov.cn",
+      "linkLabel": "中国海关"
     },
     "registration": {
-      "label": "住宿登记",
-      "desc": "<strong>酒店住宿</strong>: 前台自动办理登记 — 入住时提供护照即可<br><strong>私人住所</strong>: 入住后24小时内到<strong>当地派出所</strong>办理登记<br><strong>网上登记（7个试点城市）</strong>: 上海、北京、广州、深圳、成都、杭州、厦门 — 使用NIA政务平台或12367 APP<br><strong>所需材料</strong>: 护照、有效签证、租房合同或房东身份证复印件<br><strong>法律依据</strong>: 《出境入境管理法》第39条 — 24小时内办理住宿登记是法定义务<br><strong>换住所须重新登记</strong><br><a class=\"card-link\" href=\"https://s.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">NIA 在线登记 →</a> ",
-      "sub": "酒店自动 / 派出所 / 线上"
-    },
-    "detail": {
-      "back": "返回",
-      "steps": {
-        "title": "入境通关 — 6步",
-        "steps": [
-          "健康检疫：体温检测，出示健康申报二维码。",
-          "指纹采集：14-70岁外国人需留指纹。",
-          "边检：出示护照+签证+入境卡，拍照。",
-          "行李提取：查看电子屏找对应转盘。",
-          "海关：绿通（无申报）或红通（申报）。",
-          "到达大厅：出租车、地铁、机场大巴、网约车。"
-        ],
-        "linkUrl": "https://www.nia.gov.cn",
-        "linkLabel": "国家移民管理局官网"
-      },
-      "customs": {
-        "title": "海关规定",
-        "steps": [
-          "现金：不超过$5,000或等值外币。",
-          "酒类：总计1.5升。",
-          "香烟：400支（2条）。",
-          "电子产品：自用没问题，礼品超5000Y应申报。",
-          "处方药：携带医生处方。",
-          "禁止：武器、毒品、象牙、新鲜水果/植物。",
-          "绿色通道：无申报。",
-          "红色通道：超免税限额，填申报单。"
-        ],
-        "linkUrl": "https://www.customs.gov.cn",
-        "linkLabel": "中国海关"
-      },
-      "registration": {
-        "title": "住宿登记",
-        "steps": [
-          "酒店：前台自动办理。",
-          "私人住所：24小时内到派出所。",
-          "网上登记（7城）：上海 北京 广州 深圳 成都 杭州 厦门。",
-          "法律：《出境入境管理法》第39条。",
-          "换住所须重新登记。",
-          "12367热线：24小时多语种。"
-        ],
-        "linkUrl": "https://s.nia.gov.cn",
-        "linkLabel": "NIA在线登记"
-      }
+      "title": "住宿登记",
+      "steps": [
+        "酒店：前台自动办理。",
+        "私人住所：24小时内到派出所。",
+        "网上登记（7城）：上海 北京 广州 深圳 成都 杭州 厦门。",
+        "法律：《出境入境管理法》第39条。",
+        "换住所须重新登记。",
+        "12367热线：24小时多语种。"
+      ],
+      "linkUrl": "https://s.nia.gov.cn",
+      "linkLabel": "NIA在线登记"
     },
     "kicker": "落地到出关只需6步",
-    "intro": "即将落地中国？点击了解入境流程、海关规定和住宿登记。"
+    "intro": "即将落地中国？点击了解入境流程、海关规定和住宿登记。",
+    "back": "返回"
   },
   "s4": {
     "meta": {
@@ -206,75 +188,50 @@
       "sub": "Google/WA/IG 不可用。落地第一件事：搞定网络。"
     },
     "esim": {
-      "label": "eSIM",
-      "title": "eSIM",
-      "desc": "<strong>Airalo</strong> — 全球eSIM平台，中国流量$5起<br><strong>Holafly</strong> — 无限流量，中国$19起<br><strong>Nomad</strong> — 实惠之选，中国$4起<br><strong>出发前购买+安装</strong> — 落地即连<br><strong>⚠️ 注意</strong>: 仅流量，无中国手机号（部分App如美团注册受限）<br><a class=\"card-link\" href=\"https://www.airalo.com\" target=\"_blank\" rel=\"noopener\">Airalo →</a> <a class=\"card-link\" href=\"https://holafly.com\" target=\"_blank\" rel=\"noopener\">Holafly →</a>",
-      "sub": "出发前购买，最低$4起"
+      "title": "eSIM — 出发前购买",
+      "steps": [
+        "Airalo：中国流量$5起（1GB/7天）。",
+        "Holafly：无限流量$19起。",
+        "Nomad：实惠之选$4起。",
+        "出发前购买安装。",
+        "注意：仅流量，无手机号。"
+      ]
     },
     "sim": {
-      "label": "国内SIM",
       "title": "中国SIM卡",
-      "desc": "<strong>中国移动 / 中国联通 / 中国电信</strong><br>机场到达厅设有柜台（出关后、出大厅前）<br><strong>所需材料</strong>: 护照原件（不接受复印件）<br><strong>游客套餐</strong>: ¥29-99/月 — 含流量+国内通话+短信<br><strong>提示</strong>: 先办号码，再用号码注册支付宝、微信、滴滴、美团<br><strong>eSIM游客版</strong>: 部分运营商提供短期游客eSIM — 向柜台咨询",
-      "sub": "机场柜台办理，29-99元/月"
+      "steps": [
+        "机场到达厅柜台（移动/联通/电信）。",
+        "需要：护照原件。",
+        "套餐：29-99Y/月。",
+        "得号码→注册支付宝/微信/滴滴。",
+        "保留原SIM卡收验证码。"
+      ]
     },
     "vpn": {
-      "label": "VPN",
-      "title": "出发前装好",
-      "desc": "<strong>Mullvad</strong> — 开源，€5/月，无日志，支持WireGuard<br><strong>Astrill</strong> — 中国线路优化，约$15-30/月，多协议<br><strong>⚠️ 务必出发前安装+订阅</strong> — VPN官网在国内可能无法访问<br><strong>备2个协议</strong>: WireGuard（日常快速）+ OpenVPN/StealthVPN（备用）<br><a class=\"card-link\" href=\"https://mullvad.net\" target=\"_blank\" rel=\"noopener\">Mullvad →</a> <a class=\"card-link\" href=\"https://www.astrill.com\" target=\"_blank\" rel=\"noopener\">Astrill →</a>",
-      "sub": "出发前安装——关键步骤"
+      "title": "VPN — 出发前装好",
+      "steps": [
+        "Mullvad：5EUR/月，开源，WireGuard。",
+        "Astrill：$15-30/月，中国优化。",
+        "出发前安装+付费。",
+        "备2个协议。",
+        "出发前测试。"
+      ]
     },
     "blocked": {
-      "label": "被墙应用",
-      "desc": "🚫 <strong>被屏蔽</strong>: Google, Gmail, Maps, YouTube, WhatsApp, Instagram, Facebook, X/Twitter, Dropbox, LINE<br>✅ <strong>可直接使用</strong>: iCloud, Slack, Zoom, Microsoft Teams, Outlook<br>🔄 <strong>国内替代</strong>:<br><a class=\"card-link\" href=\"https://www.xiaohongshu.com\" target=\"_blank\" rel=\"noopener\">小红书 (替代Ins) →</a><br><a class=\"card-link\" href=\"https://weibo.com\" target=\"_blank\" rel=\"noopener\">微博 (替代Twitter) →</a><br><a class=\"card-link\" href=\"https://www.bilibili.com\" target=\"_blank\" rel=\"noopener\">哔哩哔哩 (替代YouTube) →</a><br><a class=\"card-link\" href=\"https://www.amap.com\" target=\"_blank\" rel=\"noopener\">高德地图 (替代Google Maps) →</a>",
-      "sub": "哪些不能用 & 替代方案"
-    },
-    "detail": {
-      "back": "返回",
-      "esim": {
-        "title": "eSIM — 出发前购买",
-        "steps": [
-          "Airalo：中国流量$5起（1GB/7天）。",
-          "Holafly：无限流量$19起。",
-          "Nomad：实惠之选$4起。",
-          "出发前购买安装。",
-          "注意：仅流量，无手机号。"
-        ]
-      },
-      "sim": {
-        "title": "中国SIM卡",
-        "steps": [
-          "机场到达厅柜台（移动/联通/电信）。",
-          "需要：护照原件。",
-          "套餐：29-99Y/月。",
-          "得号码→注册支付宝/微信/滴滴。",
-          "保留原SIM卡收验证码。"
-        ]
-      },
-      "vpn": {
-        "title": "VPN — 出发前装好",
-        "steps": [
-          "Mullvad：5EUR/月，开源，WireGuard。",
-          "Astrill：$15-30/月，中国优化。",
-          "出发前安装+付费。",
-          "备2个协议。",
-          "出发前测试。"
-        ]
-      },
-      "blocked": {
-        "title": "被墙服务与替代",
-        "steps": [
-          "被屏蔽：Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE。",
-          "可直接用：iCloud, Slack, Zoom, Teams, Outlook。",
-          "地图→高德/百度地图。",
-          "Ins→小红书。",
-          "Twitter→微博。",
-          "YouTube→B站。",
-          "WhatsApp→微信。"
-        ]
-      }
+      "title": "被墙服务与替代",
+      "steps": [
+        "被屏蔽：Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE。",
+        "可直接用：iCloud, Slack, Zoom, Teams, Outlook。",
+        "地图→高德/百度地图。",
+        "Ins→小红书。",
+        "Twitter→微博。",
+        "YouTube→B站。",
+        "WhatsApp→微信。"
+      ]
     },
     "kicker": "翻越防火墙，保持在线",
-    "intro": "Google、WhatsApp、Instagram在中国被屏蔽。落地前搞定网络。"
+    "intro": "Google、WhatsApp、Instagram在中国被屏蔽。落地前搞定网络。",
+    "back": "返回"
   },
   "s5": {
     "meta": {
@@ -287,9 +244,6 @@
     "stat2": "单笔交易免手续费",
     "stat3": "两个App覆盖95%+场景",
     "backup": "<strong>💡 备用方案</strong><span>随身携带¥500-1,000现金备用。中国银行/工商银行/招商银行ATM支持外卡取现（认Visa/MC标志）。如一个App出问题，换另一个试试。</span>",
-    "detail": {
-      "back": "返回支付页"
-    },
     "alipay": {
       "title": "支付宝设置指南",
       "steps": [
@@ -332,75 +286,58 @@
           "url": "https://www.wechat.com"
         }
       ]
-    }
+    },
+    "back": "返回支付页"
   },
   "s6": {
     "kicker": "像本地人一样穿梭中国",
     "intro": "出行、饮食、住宿和穿衣。点击每项查看实用提示。",
-    "detail": {
-      "back": "返回",
-      "transport": {
-        "title": "出行交通",
-        "steps": [
-          "滴滴：内置于支付宝，英文界面，外卡支付。",
-          "地铁：支付宝乘车码扫码。覆盖40+城市。",
-          "高铁：12306.cn/en订票，支持外卡。",
-          "共享单车：支付宝/美团扫码，1.5-3Y/次。",
-          "提示：支付宝小程序全搞定。"
-        ]
-      },
-      "food": {
-        "title": "餐饮美食",
-        "steps": [
-          "大众点评：餐厅评价、图片、评分。",
-          "微信扫一扫→翻译：对准菜单自动翻译。",
-          "美团/饿了么：外卖送到酒店。",
-          "清真：认准清真标识或兰州牛肉面。",
-          "素食：说纯素，注意汤底。",
-          "过敏：携带双语过敏卡。"
-        ]
-      },
-      "accommodation": {
-        "title": "住宿选择",
-        "steps": [
-          "Trip.com/Booking.com：筛选接待外宾。",
-          "Airbnb：已停止中国业务，改用途家。",
-          "涉外资质：酒店需特殊许可。经济型酒店可能拒住。",
-          "涉外连锁：万豪、希尔顿、洲际、凯悦、锦江之星。",
-          "被拒住：拨打12367求助。"
-        ]
-      },
-      "clothing": {
-        "title": "穿衣指南",
-        "steps": [
-          "尺码：中国比欧美小1-2码。US M=CN L/XL。",
-          "春季(3-5月)：10-22°C，薄外套+叠穿。",
-          "夏季(6-8月)：28-38°C湿热，透气面料+防晒+伞。",
-          "秋季(9-11月)：10-25°C最佳季节，薄毛衣。",
-          "冬季(12-2月)：北方-10°C厚羽绒服，南方0-10°C湿冷多层。"
-        ]
-      }
-    },
     "transport": {
-      "label": "出行",
-      "sub": "滴滴、地铁、高铁"
+      "title": "出行交通",
+      "steps": [
+        "滴滴：内置于支付宝，英文界面，外卡支付。",
+        "地铁：支付宝乘车码扫码。覆盖40+城市。",
+        "高铁：12306.cn/en订票，支持外卡。",
+        "共享单车：支付宝/美团扫码，1.5-3Y/次。",
+        "提示：支付宝小程序全搞定。"
+      ]
     },
     "food": {
-      "label": "美食",
-      "sub": "中文点餐、饮食禁忌提示"
+      "title": "餐饮美食",
+      "steps": [
+        "大众点评：餐厅评价、图片、评分。",
+        "微信扫一扫→翻译：对准菜单自动翻译。",
+        "美团/饿了么：外卖送到酒店。",
+        "清真：认准清真标识或兰州牛肉面。",
+        "素食：说纯素，注意汤底。",
+        "过敏：携带双语过敏卡。"
+      ]
     },
     "accommodation": {
-      "label": "住宿",
-      "sub": "预订、登记、实用建议"
+      "title": "住宿选择",
+      "steps": [
+        "Trip.com/Booking.com：筛选接待外宾。",
+        "Airbnb：已停止中国业务，改用途家。",
+        "涉外资质：酒店需特殊许可。经济型酒店可能拒住。",
+        "涉外连锁：万豪、希尔顿、洲际、凯悦、锦江之星。",
+        "被拒住：拨打12367求助。"
+      ]
     },
     "clothing": {
-      "label": "穿衣",
-      "sub": "尺码、季节、行李清单"
+      "title": "穿衣指南",
+      "steps": [
+        "尺码：中国比欧美小1-2码。US M=CN L/XL。",
+        "春季(3-5月)：10-22°C，薄外套+叠穿。",
+        "夏季(6-8月)：28-38°C湿热，透气面料+防晒+伞。",
+        "秋季(9-11月)：10-25°C最佳季节，薄毛衣。",
+        "冬季(12-2月)：北方-10°C厚羽绒服，南方0-10°C湿冷多层。"
+      ]
     },
     "meta": {
       "title": "食·行·住",
       "sub": ""
-    }
+    },
+    "back": "返回"
   },
   "s7": {
     "meta": {
@@ -408,107 +345,90 @@
       "sub": "全国57城850+机构开展国际医疗。点击卡片查看详情。"
     },
     "hospital": {
-      "label": "🏥 基础医疗",
-      "title": "国际医院 + 常用药品",
-      "desc": "全国主要城市国际医院、药品中英俄对照、旅行保险"
+      "title": "🏥 国际医疗服务",
+      "intro": "全国57城市、850+机构开展国际医疗。2025年128万国际患者(+73.6%)。",
+      "sectionHospitals": "国际医院",
+      "colCity": "城市",
+      "colHospital": "机构",
+      "colNote": "备注",
+      "shanghaiName": "华山医院 / 嘉会国际",
+      "shanghaiNote": "90+国患者",
+      "beijingName": "协和医院 / 和睦家",
+      "beijingNote": "国际部¥600-1200",
+      "guangzhouName": "中山一院 / 祈福",
+      "guangzhouNote": "25家试点",
+      "tianjinName": "鹏瑞利医院",
+      "tianjinNote": "外商独资三级",
+      "hainanName": "博鳌乐城先行区",
+      "hainanNote": "境外未批药械可用",
+      "sectionMeds": "常用药品中英俄对照",
+      "colCn": "中文",
+      "colUse": "用途",
+      "medIbuprofenUse": "止痛/退烧",
+      "medAmoxicillinUse": "抗生素(Rx)",
+      "medLoperamideUse": "止泻",
+      "medLoratadineUse": "抗过敏",
+      "medOmeprazoleUse": "胃酸/胃痛",
+      "insuranceWarning": "⚠️ 务必购买旅行医疗保险",
+      "insuranceDetail": "门诊¥800-1,500+，国际部挂号¥600-1,200。推荐Cigna/Allianz/Bupa。"
     },
     "big3": {
-      "label": "🦷👁️🌿 医疗旅游三件套",
-      "title": "牙科·眼科·中医理疗",
-      "desc": "种植牙<¥5K、验光配镜立等可取、针灸推拿正骨。俄罗斯游客#1诉求。"
+      "title": "🦷👁️🌿 医疗新三件",
+      "sectionDental": "🦷 牙科",
+      "colItem": "项目",
+      "colChinaPrice": "中国价格",
+      "colUsEuPrice": "美国/欧洲",
+      "dental_cleaning": "洗牙",
+      "dental_cleaning_cn": "¥200-500",
+      "dental_cleaning_us": "$100-200",
+      "dental_filling": "补牙",
+      "dental_filling_cn": "¥300-800",
+      "dental_filling_us": "$150-400",
+      "dental_root": "根管治疗",
+      "dental_root_cn": "¥1,500-3,000",
+      "dental_root_us": "$800-1,500",
+      "dental_implant": "种植牙",
+      "dental_implant_cn": "¥5,000-15,000",
+      "dental_implant_us": "$3,000-6,000",
+      "dental_crown": "美容牙冠",
+      "dental_crown_cn": "¥2,000-5,000",
+      "dental_crown_us": "$1,000-2,500",
+      "dentalNote": "💡 价格优势：中国牙科为欧美的25-35%。数据来源：大众点评、Reddit expat社区反馈（2024-2025）",
+      "dentalClinics": "🏥 推荐机构",
+      "dentalClinicsDetail": "上海嘉会口腔(英语服务)·北京和睦家口腔·深圳爱康健·瑞尔齿科(全国连锁)。建议：提前预约，询问是否提供英语服务。",
+      "sectionEye": "👁️ 眼科",
+      "eyeDesc": "验光配镜\"立等可取\"，当天取镜(¥500-2,000)。激光近视手术¥8,000-20,000。推荐：上海眼耳鼻喉科医院、北京同仁医院、爱尔眼科(全国连锁)。",
+      "sectionTcm": "🌿 中医理疗（俄罗斯游客 #1 诉求）",
+      "colTherapy": "项目",
+      "colDescription": "说明",
+      "colPrice": "价格",
+      "tcm_acupuncture": "针灸",
+      "tcm_acupuncture_desc": "颈椎/腰椎/肩周炎",
+      "tcm_acupuncture_price": "¥100-300/次",
+      "tcm_tuina": "推拿",
+      "tcm_tuina_desc": "经络推拿",
+      "tcm_tuina_price": "¥150-400/次",
+      "tcm_bonesetting": "正骨",
+      "tcm_bonesetting_desc": "骨伤复位",
+      "tcm_bonesetting_price": "¥200-500/次",
+      "tcm_cupping": "拔罐",
+      "tcm_cupping_desc": "祛湿排毒",
+      "tcm_cupping_price": "¥50-150/次",
+      "tcm_herbal": "草药",
+      "tcm_herbal_desc": "个性化配方",
+      "tcm_herbal_price": "¥100-500/剂",
+      "tcmHotspots": "📍 TCM 热门目的地",
+      "tcmHotspotsDetail": "三亚市中医院(国际部)·黑河市中医院(俄语服务,年2,000+患者)·珲春市医院(俄语翻译)·饶河县中医院(保健浴+推拿)·北京同仁堂(传统老字号)"
     },
     "checkup": {
-      "label": "📋 体检",
-      "title": "高端体检套餐",
-      "desc": "¥2K-10K+，含多项检查，部分机构24h出报告。半天完成。"
+      "title": "📋 健康体检",
+      "intro": "中国大型三甲医院体检中心,套餐¥2,000-10,000+,含多项检查。部分机构24h出报告,无需住院,半天完成。",
+      "recommended": "<strong>推荐：</strong>协和国际部、华山国际部、嘉会国际",
+      "warning": "⚠️ 注意",
+      "warningDetail": "建议提前1-2周预约。空腹前往,部分项目需停服药物(遵医嘱)。"
     },
-    "detail": {
-      "back": "← 返回",
-      "hospital": {
-        "title": "🏥 国际医疗服务",
-        "intro": "全国57城市、850+机构开展国际医疗。2025年128万国际患者(+73.6%)。",
-        "sectionHospitals": "国际医院",
-        "colCity": "城市",
-        "colHospital": "机构",
-        "colNote": "备注",
-        "shanghaiName": "华山医院 / 嘉会国际",
-        "shanghaiNote": "90+国患者",
-        "beijingName": "协和医院 / 和睦家",
-        "beijingNote": "国际部¥600-1200",
-        "guangzhouName": "中山一院 / 祈福",
-        "guangzhouNote": "25家试点",
-        "tianjinName": "鹏瑞利医院",
-        "tianjinNote": "外商独资三级",
-        "hainanName": "博鳌乐城先行区",
-        "hainanNote": "境外未批药械可用",
-        "sectionMeds": "常用药品中英俄对照",
-        "colCn": "中文",
-        "colUse": "用途",
-        "medIbuprofenUse": "止痛/退烧",
-        "medAmoxicillinUse": "抗生素(Rx)",
-        "medLoperamideUse": "止泻",
-        "medLoratadineUse": "抗过敏",
-        "medOmeprazoleUse": "胃酸/胃痛",
-        "insuranceWarning": "⚠️ 务必购买旅行医疗保险",
-        "insuranceDetail": "门诊¥800-1,500+，国际部挂号¥600-1,200。推荐Cigna/Allianz/Bupa。"
-      },
-      "big3": {
-        "title": "🦷👁️🌿 医疗新三件",
-        "sectionDental": "🦷 牙科",
-        "colItem": "项目",
-        "colChinaPrice": "中国价格",
-        "colUsEuPrice": "美国/欧洲",
-        "dental_cleaning": "洗牙",
-        "dental_cleaning_cn": "¥200-500",
-        "dental_cleaning_us": "$100-200",
-        "dental_filling": "补牙",
-        "dental_filling_cn": "¥300-800",
-        "dental_filling_us": "$150-400",
-        "dental_root": "根管治疗",
-        "dental_root_cn": "¥1,500-3,000",
-        "dental_root_us": "$800-1,500",
-        "dental_implant": "种植牙",
-        "dental_implant_cn": "¥5,000-15,000",
-        "dental_implant_us": "$3,000-6,000",
-        "dental_crown": "美容牙冠",
-        "dental_crown_cn": "¥2,000-5,000",
-        "dental_crown_us": "$1,000-2,500",
-        "dentalNote": "💡 价格优势：中国牙科为欧美的25-35%。数据来源：大众点评、Reddit expat社区反馈（2024-2025）",
-        "dentalClinics": "🏥 推荐机构",
-        "dentalClinicsDetail": "上海嘉会口腔(英语服务)·北京和睦家口腔·深圳爱康健·瑞尔齿科(全国连锁)。建议：提前预约，询问是否提供英语服务。",
-        "sectionEye": "👁️ 眼科",
-        "eyeDesc": "验光配镜\"立等可取\"，当天取镜(¥500-2,000)。激光近视手术¥8,000-20,000。推荐：上海眼耳鼻喉科医院、北京同仁医院、爱尔眼科(全国连锁)。",
-        "sectionTcm": "🌿 中医理疗（俄罗斯游客 #1 诉求）",
-        "colTherapy": "项目",
-        "colDescription": "说明",
-        "colPrice": "价格",
-        "tcm_acupuncture": "针灸",
-        "tcm_acupuncture_desc": "颈椎/腰椎/肩周炎",
-        "tcm_acupuncture_price": "¥100-300/次",
-        "tcm_tuina": "推拿",
-        "tcm_tuina_desc": "经络推拿",
-        "tcm_tuina_price": "¥150-400/次",
-        "tcm_bonesetting": "正骨",
-        "tcm_bonesetting_desc": "骨伤复位",
-        "tcm_bonesetting_price": "¥200-500/次",
-        "tcm_cupping": "拔罐",
-        "tcm_cupping_desc": "祛湿排毒",
-        "tcm_cupping_price": "¥50-150/次",
-        "tcm_herbal": "草药",
-        "tcm_herbal_desc": "个性化配方",
-        "tcm_herbal_price": "¥100-500/剂",
-        "tcmHotspots": "📍 TCM 热门目的地",
-        "tcmHotspotsDetail": "三亚市中医院(国际部)·黑河市中医院(俄语服务,年2,000+患者)·珲春市医院(俄语翻译)·饶河县中医院(保健浴+推拿)·北京同仁堂(传统老字号)"
-      },
-      "checkup": {
-        "title": "📋 健康体检",
-        "intro": "中国大型三甲医院体检中心,套餐¥2,000-10,000+,含多项检查。部分机构24h出报告,无需住院,半天完成。",
-        "recommended": "<strong>推荐：</strong>协和国际部、华山国际部、嘉会国际",
-        "warning": "⚠️ 注意",
-        "warningDetail": "建议提前1-2周预约。空腹前往,部分项目需停服药物(遵医嘱)。"
-      }
-    },
-    "kicker": "世界级医疗，价格只要零头"
+    "kicker": "世界级医疗，价格只要零头",
+    "back": "← 返回"
   },
   "s8": {
     "meta": {
@@ -516,110 +436,88 @@
       "sub": "2025年退税旅客+305%。12,252家退税商店,7,000+支持即买即退。"
     },
     "electronics": {
-      "label": "📱 科技电子",
-      "title": "折叠屏·无人机·AI眼镜",
-      "desc": "深圳华强北、北京王府井、义乌。中国科技新品，价格优势明显。"
+      "title": "📱 科技电子产品",
+      "colCategory": "品类",
+      "colWhy": "推荐理由",
+      "colPrice": "参考价",
+      "foldable": "折叠屏手机",
+      "foldable_why": "中国品牌全球领先",
+      "drone": "无人机",
+      "drone_why": "DJI全球霸主",
+      "ai_glasses": "AI眼镜",
+      "ai_glasses_why": "新兴品类,中国先行",
+      "translator": "智能翻译器",
+      "translator_why": "100+语种实时互译",
+      "earbuds": "蓝牙耳机",
+      "earbuds_why": "性价比极高",
+      "whereToBuy": "📍 推荐购买地",
+      "whereToBuyDetail": "深圳华强北—\"中国电子第一街\",35家专业市场,多语种+外卡+退税。北京王府井—品牌旗舰店集中。浙江义乌—\"世界超市\",一站式。",
+      "foldable_price": "¥5,000-15,000",
+      "drone_price": "¥2,000-8,000",
+      "ai_glasses_price": "¥1,500-3,000",
+      "translator_price": "¥300-1,500",
+      "earbuds_price": "¥100-500"
     },
     "souvenirs": {
-      "label": "🎨 文创伴手礼",
-      "title": "故宫文创·非遗·地方特色",
-      "desc": "北京冰箱贴、成都蜀锦熊猫、西安绒馍馍、贵州扎染围巾。"
+      "title": "🎨 文创伴手礼",
+      "colCity": "城市",
+      "colItem": "代表商品",
+      "beijing_item": "天宫藻井冰箱贴·故宫文创",
+      "chengdu_item": "非遗蜀锦熊猫文创·宽窄巷子手信",
+      "xian_item": "\"绒馍馍\"肉夹馍文创·兵马俑周边",
+      "chongqing_item": "黄铜摆件(铜师傅)·洪崖洞文创",
+      "guizhou_item": "扎染围巾·银饰冰箱贴·民族风钥匙扣",
+      "tip": "💡 各城市文创店集中在景区周边和特色街区"
     },
     "taxrefund": {
-      "label": "💰 退税攻略",
-      "title": "条件·流程·即买即退",
-      "desc": "同日同店≥¥500→退11%增值税(实约9%)。90天内离境。7,000+店即买即退。"
+      "title": "💰 离境退税指南",
+      "stats": "📊 全国12,252家退税商店。2025年退税旅客+305%。",
+      "sectionRequirements": "退税条件",
+      "reqStay": "外国游客,停留不超过183天",
+      "reqAmount": "同日同店消费≥¥500",
+      "reqDeparture": "离境日距购买日≤90天",
+      "reqCarry": "商品随身携带(勿托运)",
+      "sectionProcess": "退税流程",
+      "stepInvoice": "购物时索要《离境退税申请单》+ 发票",
+      "stepCustoms": "机场海关核验(出示商品+护照+单证)",
+      "stepCollect": "退税窗口领取退税款(现金/卡/支付宝)",
+      "instantRefundTitle": "💡 \"即买即退\"",
+      "instantRefundDetail": "7,000+商店支持,购物时直接抵扣,无需机场排队。上海\"全市通退\"全域覆盖,海南离岛免税。"
     },
     "cityshops": {
-      "label": "🗺️ 城市购物地图",
-      "title": "各城购物特色指南",
-      "desc": "上海面料市场·深圳华强北·义乌小商品·三亚免税城·北京王府井"
-    },
-    "detail": {
-      "back": "← 返回",
-      "electronics": {
-        "title": "📱 科技电子产品",
-        "colCategory": "品类",
-        "colWhy": "推荐理由",
-        "colPrice": "参考价",
-        "foldable": "折叠屏手机",
-        "foldable_why": "中国品牌全球领先",
-        "drone": "无人机",
-        "drone_why": "DJI全球霸主",
-        "ai_glasses": "AI眼镜",
-        "ai_glasses_why": "新兴品类,中国先行",
-        "translator": "智能翻译器",
-        "translator_why": "100+语种实时互译",
-        "earbuds": "蓝牙耳机",
-        "earbuds_why": "性价比极高",
-        "whereToBuy": "📍 推荐购买地",
-        "whereToBuyDetail": "深圳华强北—\"中国电子第一街\",35家专业市场,多语种+外卡+退税。北京王府井—品牌旗舰店集中。浙江义乌—\"世界超市\",一站式。",
-        "foldable_price": "¥5,000-15,000",
-        "drone_price": "¥2,000-8,000",
-        "ai_glasses_price": "¥1,500-3,000",
-        "translator_price": "¥300-1,500",
-        "earbuds_price": "¥100-500"
-      },
-      "souvenirs": {
-        "title": "🎨 文创伴手礼",
-        "colCity": "城市",
-        "colItem": "代表商品",
-        "beijing_item": "天宫藻井冰箱贴·故宫文创",
-        "chengdu_item": "非遗蜀锦熊猫文创·宽窄巷子手信",
-        "xian_item": "\"绒馍馍\"肉夹馍文创·兵马俑周边",
-        "chongqing_item": "黄铜摆件(铜师傅)·洪崖洞文创",
-        "guizhou_item": "扎染围巾·银饰冰箱贴·民族风钥匙扣",
-        "tip": "💡 各城市文创店集中在景区周边和特色街区"
-      },
-      "taxrefund": {
-        "title": "💰 离境退税指南",
-        "stats": "📊 全国12,252家退税商店。2025年退税旅客+305%。",
-        "sectionRequirements": "退税条件",
-        "reqStay": "外国游客,停留不超过183天",
-        "reqAmount": "同日同店消费≥¥500",
-        "reqDeparture": "离境日距购买日≤90天",
-        "reqCarry": "商品随身携带(勿托运)",
-        "sectionProcess": "退税流程",
-        "stepInvoice": "购物时索要《离境退税申请单》+ 发票",
-        "stepCustoms": "机场海关核验(出示商品+护照+单证)",
-        "stepCollect": "退税窗口领取退税款(现金/卡/支付宝)",
-        "instantRefundTitle": "💡 \"即买即退\"",
-        "instantRefundDetail": "7,000+商店支持,购物时直接抵扣,无需机场排队。上海\"全市通退\"全域覆盖,海南离岛免税。"
-      },
-      "cityshops": {
-        "title": "🗺️ 城市购物地图",
-        "tapHint": "点击城市查看详情",
-        "backToCityGuide": "← 返回购物地图",
-        "cities": {
-          "shenzhen": {
-            "name": "深圳·华强北",
-            "subtitle": "中国电子第一街",
-            "desc": "\"中国电子第一街\",35家专业市场。品类:手机、配件、无人机、智能穿戴。多语种标识+外卡支付+退税配套。交通:地铁1号线华强路站。贴士:货比三家,部分市场可砍价。"
-          },
-          "shanghai": {
-            "name": "上海·面料市场",
-            "subtitle": "旗袍定制·西装定制",
-            "desc": "南外滩轻纺面料市场等。旗袍定制、西装定制,落地量身。价格¥300-2,000+不等,2-3天取货。支持外卡。"
-          },
-          "yiwu": {
-            "name": "义乌·国际商贸城",
-            "subtitle": "世界超市·一站式",
-            "desc": "\"世界超市\",从手机壳到智能家电、无人机应有尽有。2026上半年机票量+60%。一站式购物体验,多语种标识+外卡支付。"
-          },
-          "sanya": {
-            "name": "三亚·免税城",
-            "subtitle": "离岛免税·国际品牌",
-            "desc": "离岛+离境旅客均享免税优惠。国际品牌齐全,价格优势明显。2025年政策升级。购物流程简单:登记→扫码支付→机场提货,<3分钟办完。"
-          },
-          "beijing": {
-            "name": "北京·王府井",
-            "subtitle": "品牌旗舰·老字号",
-            "desc": "品牌数码旗舰店集中,传统老字号+现代购物中心。配眼镜\"立等可取\"。退税商店密集,支持即买即退。"
-          }
+      "title": "🗺️ 城市购物地图",
+      "tapHint": "点击城市查看详情",
+      "backToCityGuide": "← 返回购物地图",
+      "cities": {
+        "shenzhen": {
+          "name": "深圳·华强北",
+          "subtitle": "中国电子第一街",
+          "desc": "\"中国电子第一街\",35家专业市场。品类:手机、配件、无人机、智能穿戴。多语种标识+外卡支付+退税配套。交通:地铁1号线华强路站。贴士:货比三家,部分市场可砍价。"
+        },
+        "shanghai": {
+          "name": "上海·面料市场",
+          "subtitle": "旗袍定制·西装定制",
+          "desc": "南外滩轻纺面料市场等。旗袍定制、西装定制,落地量身。价格¥300-2,000+不等,2-3天取货。支持外卡。"
+        },
+        "yiwu": {
+          "name": "义乌·国际商贸城",
+          "subtitle": "世界超市·一站式",
+          "desc": "\"世界超市\",从手机壳到智能家电、无人机应有尽有。2026上半年机票量+60%。一站式购物体验,多语种标识+外卡支付。"
+        },
+        "sanya": {
+          "name": "三亚·免税城",
+          "subtitle": "离岛免税·国际品牌",
+          "desc": "离岛+离境旅客均享免税优惠。国际品牌齐全,价格优势明显。2025年政策升级。购物流程简单:登记→扫码支付→机场提货,<3分钟办完。"
+        },
+        "beijing": {
+          "name": "北京·王府井",
+          "subtitle": "品牌旗舰·老字号",
+          "desc": "品牌数码旗舰店集中,传统老字号+现代购物中心。配眼镜\"立等可取\"。退税商店密集,支持即买即退。"
         }
       }
     },
-    "kicker": "买最好的+退税拿回来"
+    "kicker": "买最好的+退税拿回来",
+    "back": "← 返回"
   },
   "s9": {
     "meta": {
@@ -627,53 +525,36 @@
       "sub": "外国游客足迹已覆盖近500城。点击探索热门目的地。"
     },
     "top10": {
-      "label": "🏙️ 热门TOP10",
-      "title": "经典必游城市",
-      "desc": "上海·北京·广州·深圳·重庆·成都·杭州·昆明·哈尔滨·青岛"
+      "title": "🏙️ 热门城市 TOP10"
     },
     "rising": {
-      "label": "🚀 新兴黑马",
-      "title": "社交平台新宠",
-      "desc": "郑州(汉服)·太原(古建)·贵阳(贵替)·福州(山水)·义乌(购物)"
+      "title": "🚀 新兴黑马城市",
+      "subtitle": "社交平台爆红的新兴目的地"
     },
     "seasons": {
-      "label": "🌍 四季推荐",
-      "title": "各季最佳目的地",
-      "desc": "春·江南 / 夏·北戴河青岛 / 秋·北京西安 / 冬·哈尔滨三亚"
-    },
-    "detail": {
-      "back": "← 返回",
-      "backToCityList": "← 返回城市列表",
-      "tapHint": "点击城市查看详情",
-      "top10": {
-        "title": "🏙️ 热门城市 TOP10"
+      "title": "🌍 四季推荐",
+      "spring": {
+        "title": "🌸 春 (3-5月)",
+        "desc": "温暖舒适,江南最佳。杭州西湖·苏州园林·昆明花海。"
       },
-      "rising": {
-        "title": "🚀 新兴黑马城市",
-        "subtitle": "社交平台爆红的新兴目的地"
+      "summer": {
+        "title": "🌿 夏 (6-8月)",
+        "desc": "北戴河/青岛避暑。青岛啤酒节·哈尔滨凉爽·张家界。"
       },
-      "seasons": {
-        "title": "🌍 四季推荐",
-        "spring": {
-          "title": "🌸 春 (3-5月)",
-          "desc": "温暖舒适,江南最佳。杭州西湖·苏州园林·昆明花海。"
-        },
-        "summer": {
-          "title": "🌿 夏 (6-8月)",
-          "desc": "北戴河/青岛避暑。青岛啤酒节·哈尔滨凉爽·张家界。"
-        },
-        "autumn": {
-          "title": "🍂 秋 (9-11月) 最佳季节",
-          "desc": "全国皆宜。北京香山红叶·西安古城·桂林山水。"
-        },
-        "winter": {
-          "title": "❄️ 冬 (12-2月)",
-          "desc": "北国冰雪vs南国暖阳。哈尔滨冰雪大世界(东南亚最爱)·三亚热带海滨(俄罗斯最爱)。"
-        },
-        "sizingTip": "👔 尺码提示:CN比US小1-2码,US M≈CN L/XL。优衣库/ZARA全球一致。"
-      }
+      "autumn": {
+        "title": "🍂 秋 (9-11月) 最佳季节",
+        "desc": "全国皆宜。北京香山红叶·西安古城·桂林山水。"
+      },
+      "winter": {
+        "title": "❄️ 冬 (12-2月)",
+        "desc": "北国冰雪vs南国暖阳。哈尔滨冰雪大世界(东南亚最爱)·三亚热带海滨(俄罗斯最爱)。"
+      },
+      "sizingTip": "👔 尺码提示:CN比US小1-2码,US M≈CN L/XL。优衣库/ZARA全球一致。"
     },
-    "kicker": "近500座城市等你探索"
+    "kicker": "近500座城市等你探索",
+    "back": "← 返回",
+    "backToCityList": "← 返回城市列表",
+    "tapHint": "点击城市查看详情"
   },
   "s10": {
     "meta": {
@@ -683,69 +564,65 @@
     "kicker": "遇到麻烦了——打给谁",
     "intro": "保存这些号码。点击每个号码了解何时拨打以及会发生什么。",
     "departIntro": "准备离开中国？这是你的离境前清单。",
-    "detail": {
-      "back": "返回"
-    },
     "departure": "离境清单",
     "passportWarning": "护照丢失？",
     "passportWarningDetail": "1) 立即报警（拨打110）。2) 联系大使馆/领事馆申请紧急旅行证件。3) 手机上保存护照信息页和签证照片。",
-    "hotline": {
-      "12367": {
-        "label": "移民局",
-        "title": "12367 — 移民局服务热线",
-        "steps": [
-          "国家移民管理局24小时服务热线。",
-          "语言：中文、英语、俄语、日语、韩语等多语种。",
-          "何时拨打：签证问题、住宿登记、逾期滞留、护照丢失、出入境咨询。",
-          "也可通过APP和微信小程序使用。",
-          "境外拨打：+86-10-12367。"
-        ]
-      },
-      "110": {
-        "label": "警察",
-        "title": "110 — 公安报警",
-        "steps": [
-          "公安紧急报警电话。",
-          "何时拨打：正在发生的犯罪、盗窃、护照丢失、人身安全威胁、交通事故。",
-          "说明位置和需要英语协助。",
-          "非紧急：前往派出所办理。",
-          "护照丢失报警后索取书面报警回执。"
-        ]
-      },
-      "120": {
-        "label": "急救",
-        "title": "120 — 医疗急救",
-        "steps": [
-          "紧急医疗服务。",
-          "何时拨打：严重受伤、胸痛、呼吸困难、大出血、意识丧失。",
-          "城市内救护车10-15分钟到达。急救人员英语可能有限。",
-          "准备好：位置、护照、保险卡、药物清单。",
-          "如条件允许，直接前往国际医院（见S7）。"
-        ]
-      },
-      "119": {
-        "label": "火警",
-        "title": "119 — 火警救援",
-        "steps": [
-          "火灾和救援服务。",
-          "何时拨打：火灾、燃气泄漏、被困电梯、建筑坍塌、洪水。",
-          "说明地址、燃烧物、是否有人被困。",
-          "注意酒店房门上的消防逃生图。"
-        ]
-      },
-      "depart": {
-        "label": "离境",
-        "title": "离境清单",
-        "steps": [
-          "提前2-3小时到机场办国际航班值机、安检、退税。",
-          "退税商品放随身行李，托运行李前办海关盖章。",
-          "机场兑换剩余人民币。",
-          "离境前备份照片到iCloud或U盘（Google Photos被屏蔽）。",
-          "归还随身WiFi/退SIM卡押金。",
-          "保留入境卡存根——出境边检可能需要。"
-        ]
-      }
-    }
+    "12367": {
+      "label": "移民局",
+      "title": "12367 — 移民局服务热线",
+      "steps": [
+        "国家移民管理局24小时服务热线。",
+        "语言：中文、英语、俄语、日语、韩语等多语种。",
+        "何时拨打：签证问题、住宿登记、逾期滞留、护照丢失、出入境咨询。",
+        "也可通过APP和微信小程序使用。",
+        "境外拨打：+86-10-12367。"
+      ]
+    },
+    "110": {
+      "label": "警察",
+      "title": "110 — 公安报警",
+      "steps": [
+        "公安紧急报警电话。",
+        "何时拨打：正在发生的犯罪、盗窃、护照丢失、人身安全威胁、交通事故。",
+        "说明位置和需要英语协助。",
+        "非紧急：前往派出所办理。",
+        "护照丢失报警后索取书面报警回执。"
+      ]
+    },
+    "120": {
+      "label": "急救",
+      "title": "120 — 医疗急救",
+      "steps": [
+        "紧急医疗服务。",
+        "何时拨打：严重受伤、胸痛、呼吸困难、大出血、意识丧失。",
+        "城市内救护车10-15分钟到达。急救人员英语可能有限。",
+        "准备好：位置、护照、保险卡、药物清单。",
+        "如条件允许，直接前往国际医院（见S7）。"
+      ]
+    },
+    "119": {
+      "label": "火警",
+      "title": "119 — 火警救援",
+      "steps": [
+        "火灾和救援服务。",
+        "何时拨打：火灾、燃气泄漏、被困电梯、建筑坍塌、洪水。",
+        "说明地址、燃烧物、是否有人被困。",
+        "注意酒店房门上的消防逃生图。"
+      ]
+    },
+    "depart": {
+      "label": "离境",
+      "title": "离境清单",
+      "steps": [
+        "提前2-3小时到机场办国际航班值机、安检、退税。",
+        "退税商品放随身行李，托运行李前办海关盖章。",
+        "机场兑换剩余人民币。",
+        "离境前备份照片到iCloud或U盘（Google Photos被屏蔽）。",
+        "归还随身WiFi/退SIM卡押金。",
+        "保留入境卡存根——出境边检可能需要。"
+      ]
+    },
+    "back": "返回"
   },
   "city": {
     "beijing": {
@@ -1044,9 +921,6 @@
       "title": "身份转换",
       "sub": "已持旅游签/学生签入境？这里是你转为长期工作/居留许可的路径。"
     },
-    "detail": {
-      "back": "← 返回"
-    },
     "kicker": "你的入境之路",
     "intro": "选择你的身份转换路径。每条路径要求不同——点击查看完整流程。",
     "pathA": {
@@ -1094,15 +968,13 @@
         "💡 K签证适合想要灵活性的人——可以自由职业、换工作、创业，无需重新办理签证。不适用于非STEM领域（金融、市场营销、法律等）。"
       ],
       "sub": "无需雇主，5年多次入境"
-    }
+    },
+    "back": "← 返回"
   },
   "l2": {
     "meta": {
       "title": "工作与居留",
       "sub": "两份必备文件。新变化：一站式在线申请，平均约6个工作日。"
-    },
-    "detail": {
-      "back": "← 返回"
     },
     "kicker": "拿到许可",
     "intro": "每位外国工作者都要经历的两步流程。自2025年底起，一站式在线平台整合了工作许可、居留许可和社保登记。",
@@ -1138,7 +1010,8 @@
         "⏱ 处理时间：5-10个工作日。入境后30天内申请。 —— 💡 居留许可替代了签证。一旦持有，在有效期可自由出入境——无需另外办理签证。"
       ],
       "sub": "第二步——入境30天内办理"
-    }
+    },
+    "back": "← 返回"
   },
   "l3": {
     "meta": {
@@ -1150,9 +1023,6 @@
     "stat1": "移动支付用户",
     "stat2": "主流银行接受护照开户",
     "stat3": "月套餐低至",
-    "detail": {
-      "back": "← 返回"
-    },
     "phone": {
       "label": "手机卡",
       "title": "中国手机号",
@@ -1180,15 +1050,13 @@
       ],
       "sub": "中行/工行/招行。解除¥200限额"
     },
-    "tip": "<strong>💡 优先级</strong>：办手机卡 → 开银行账户 → 绑定支付宝/微信。没有中国手机号无法开银行账户，没有银行账户移动支付功能受限。"
+    "tip": "<strong>💡 优先级</strong>：办手机卡 → 开银行账户 → 绑定支付宝/微信。没有中国手机号无法开银行账户，没有银行账户移动支付功能受限。",
+    "back": "← 返回"
   },
   "l4": {
     "meta": {
       "title": "租房",
       "sub": "住在哪里、如何租房、强制住宿登记。7个城市已开通在线登记。"
-    },
-    "detail": {
-      "back": "← 返回"
     },
     "kicker": "找到你的家",
     "intro": "自如和贝壳是两大租房平台。标准合同为押一付三。搬家后24小时内须到派出所登记。",
@@ -1220,15 +1088,13 @@
         "💡 自2026年3月起，12367平台在7个试点城市开通了在线登记。这是一项重大改进——无需再在派出所排队。"
       ],
       "sub": "搬家24小时内强制办理"
-    }
+    },
+    "back": "← 返回"
   },
   "l5": {
     "meta": {
       "title": "保险",
       "sub": "五项强制社保 + 住房公积金。大多数外籍人士额外购买国际商业保险。"
-    },
-    "detail": {
-      "back": "← 返回"
     },
     "kicker": "给自己保障",
     "intro": "外籍雇员须在工作许可签发后30天内参加全部五项社保。单位在薪资外额外承担约26-37%的社保成本。大多数外籍人士还额外购买国际商业保险。",
@@ -1262,15 +1128,13 @@
         "💡 部分雇主将Cigna/Allianz作为外籍员工福利包含在package中。如果没有，请自行购买——一次无保险的就医费用可能超过一年的保费。"
       ],
       "sub": "Cigna·Allianz·Bupa"
-    }
+    },
+    "back": "← 返回"
   },
   "l6": {
     "meta": {
       "title": "驾照+学校",
       "sub": "驾照换领和外籍人员子女入学选择。"
-    },
-    "detail": {
-      "back": "← 返回"
     },
     "kicker": "上路+上学",
     "intro": "外国驾照不能直接在中国使用——但转换很简单：临时许可、直接换领或科目一考试。子女教育方面，国际学校提供美式/英式/IB课程。建议提前6-12个月规划。",
@@ -1299,7 +1163,8 @@
         "💡 纯国际学校依法不能招收中国护照持有者（港澳台除外）。如果孩子持中国护照，请考虑双语学校或公立学校国际部。"
       ],
       "sub": "国际·双语·公立国际部"
-    }
+    },
+    "back": "← 返回"
   },
   "l7": {
     "meta": {
@@ -1308,9 +1173,6 @@
     },
     "kicker": "像本地人一样生活",
     "intro": "搞定手机、银行和住房后，这里是日常生活的一切——从去哪购物到吃什么到怎么穿衣。",
-    "detail": {
-      "back": "← 返回"
-    },
     "shopping": {
       "label": "购物",
       "title": "网购与生鲜",
@@ -1360,15 +1222,13 @@
         "<strong>其他网约车</strong>：曹操出行——高端车型。T3出行——国有车企背景。部分城市支持英文服务。"
       ],
       "sub": "地铁·滴滴·共享单车·高铁"
-    }
+    },
+    "back": "← 返回"
   },
   "l8": {
     "meta": {
       "title": "合规",
       "sub": "续签提醒、逾期居留后果、永久居留途径、紧急联系方式。"
-    },
-    "detail": {
-      "back": "← 返回"
     },
     "kicker": "守规矩，少麻烦",
     "intro": "及时办理续签，遇到紧急情况知道拨打哪个电话。逾期居留后果严重——在许可到期前60天设置日历提醒。",
@@ -1398,6 +1258,7 @@
       "hotline119": "火警",
       "passportWarning": "⚠️ 护照丢失？",
       "passportWarningDetail": "1) 立即报警(110)。2) 联系本国使领馆办理紧急旅行证件。3) 手机保存护照和签证照片。4) 10天内将居留许可转移至新护照。"
-    }
+    },
+    "back": "← 返回"
   }
 }

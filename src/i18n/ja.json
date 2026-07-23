@@ -196,106 +196,89 @@
       "sub": "全国57都市850以上の機関。カードをタップして詳細表示。"
     },
     "hospital": {
-      "label": "🏥 病院",
-      "title": "国際病院と医薬品",
-      "desc": "主要都市の病院、三言語医薬品リスト、旅行保険"
+      "title": "🏥 国際医療サービス",
+      "intro": "全国57都市850以上の機関。2025年は128万人の国際患者（+73.6%）。",
+      "sectionHospitals": "国際病院",
+      "colCity": "都市",
+      "colHospital": "病院",
+      "colNote": "備考",
+      "shanghaiName": "華山病院 / 嘉会国際",
+      "shanghaiNote": "90カ国以上",
+      "beijingName": "協和医院 / UFH",
+      "beijingNote": "国際部¥600〜1200",
+      "guangzhouName": "中山大学第一附属病院 / Clifford",
+      "guangzhouNote": "25のパイロット病院",
+      "tianjinName": "鵬瑞利病院",
+      "tianjinNote": "外資系三次病院",
+      "hainanName": "楽城パイロットゾーン",
+      "hainanNote": "国際医薬品/機器",
+      "sectionMeds": "一般医薬品（中/英/露）",
+      "colCn": "中国語",
+      "colUse": "用途",
+      "medIbuprofenUse": "鎮痛/解熱",
+      "medAmoxicillinUse": "抗生物質（処方）",
+      "medLoperamideUse": "下痢止め",
+      "medLoratadineUse": "抗ヒスタミン",
+      "medOmeprazoleUse": "胃酸逆流",
+      "insuranceWarning": "⚠️ 旅行保険の購入を",
+      "insuranceDetail": "外来¥800〜1,500+。国際部登録¥600〜1,200。CignaまたはAllianz/Bupa推奨。"
     },
     "big3": {
-      "label": "🦷👁️🌿 メディカルツーリズム",
-      "title": "歯科·眼科·中医",
-      "desc": "インプラント<¥5K、メガネ即日、鍼灸とマッサージ。ロシア人No.1需要。"
+      "title": "🦷👁️🌿 医療「ビッグスリー」",
+      "sectionDental": "🦷 歯科",
+      "colItem": "項目",
+      "colChinaPrice": "中国",
+      "colUsEuPrice": "米国/欧州",
+      "dental_cleaning": "クリーニング",
+      "dental_cleaning_cn": "¥200〜500",
+      "dental_cleaning_us": "$100〜200",
+      "dental_filling": "詰め物",
+      "dental_filling_cn": "¥300〜800",
+      "dental_filling_us": "$150〜400",
+      "dental_root": "根管治療",
+      "dental_root_cn": "¥1,500〜3,000",
+      "dental_root_us": "$800〜1,500",
+      "dental_implant": "デンタルインプラント",
+      "dental_implant_cn": "¥5,000〜15,000",
+      "dental_implant_us": "$3,000〜6,000",
+      "dental_crown": "美容クラウン",
+      "dental_crown_cn": "¥2,000〜5,000",
+      "dental_crown_us": "$1,000〜2,500",
+      "dentalNote": "💡 コストメリット：中国歯科は米国/EUの25〜35%。出典：大衆点評、Reddit駐在員フィードバック（2024〜2025）",
+      "dentalClinics": "🏥 推奨クリニック",
+      "dentalClinicsDetail": "嘉会歯科上海（英語対応）·UFH歯科北京·iKang歯科深圳·Arrail歯科（全国）。ヒント：事前予約、英語対応を確認。",
+      "sectionEye": "👁️ 眼科",
+      "eyeDesc": "メガネ即日サービス（¥500〜2,000）。レーザー眼科手術¥8K〜20K。推奨：上海眼耳鼻喉科医院、北京同仁医院、愛爾眼科（全国）。",
+      "sectionTcm": "🌿 中医療法（ロシア人No.1需要）",
+      "colTherapy": "療法",
+      "colDescription": "説明",
+      "colPrice": "料金",
+      "tcm_acupuncture": "鍼灸",
+      "tcm_acupuncture_desc": "首/背中/肩",
+      "tcm_acupuncture_price": "¥100〜300/回",
+      "tcm_tuina": "推拿マッサージ",
+      "tcm_tuina_desc": "経絡マッサージ",
+      "tcm_tuina_price": "¥150〜400/回",
+      "tcm_bonesetting": "整骨",
+      "tcm_bonesetting_desc": "整形外科リセット",
+      "tcm_bonesetting_price": "¥200〜500/回",
+      "tcm_cupping": "カッピング",
+      "tcm_cupping_desc": "デトックス&湿気除去",
+      "tcm_cupping_price": "¥50〜150/回",
+      "tcm_herbal": "漢方薬",
+      "tcm_herbal_desc": "パーソナライズ処方",
+      "tcm_herbal_price": "¥100〜500/服",
+      "tcmHotspots": "📍 中医ホットスポット",
+      "tcmHotspotsDetail": "三亜中医院（国際部）·黒河中医院（露語対応、年2,000人以上）·琿春病院（露語通訳）·饒河中医院（スパ+マッサージ）·北京同仁堂（伝統）"
     },
     "checkup": {
-      "label": "📋 健康診断",
-      "title": "エグゼクティブ健診",
-      "desc": "¥2K〜10K+、総合パネル、24時間レポートあり。半日で完了。"
+      "title": "📋 健康診断",
+      "intro": "主要病院でエグゼクティブ健診を提供、¥2K〜10K+。24時間レポートあり。入院不要、半日で完了。",
+      "recommended": "<strong>推奨：</strong>協和国際部、華山国際部、嘉会国際",
+      "warning": "⚠️ 注意",
+      "warningDetail": "1〜2週間前に予約。一部検査は空腹が必要。薬剤について医師に相談。"
     },
-    "detail": {
-      "back": "← 戻る",
-      "hospital": {
-        "title": "🏥 国際医療サービス",
-        "intro": "全国57都市850以上の機関。2025年は128万人の国際患者（+73.6%）。",
-        "sectionHospitals": "国際病院",
-        "colCity": "都市",
-        "colHospital": "病院",
-        "colNote": "備考",
-        "shanghaiName": "華山病院 / 嘉会国際",
-        "shanghaiNote": "90カ国以上",
-        "beijingName": "協和医院 / UFH",
-        "beijingNote": "国際部¥600〜1200",
-        "guangzhouName": "中山大学第一附属病院 / Clifford",
-        "guangzhouNote": "25のパイロット病院",
-        "tianjinName": "鵬瑞利病院",
-        "tianjinNote": "外資系三次病院",
-        "hainanName": "楽城パイロットゾーン",
-        "hainanNote": "国際医薬品/機器",
-        "sectionMeds": "一般医薬品（中/英/露）",
-        "colCn": "中国語",
-        "colUse": "用途",
-        "medIbuprofenUse": "鎮痛/解熱",
-        "medAmoxicillinUse": "抗生物質（処方）",
-        "medLoperamideUse": "下痢止め",
-        "medLoratadineUse": "抗ヒスタミン",
-        "medOmeprazoleUse": "胃酸逆流",
-        "insuranceWarning": "⚠️ 旅行保険の購入を",
-        "insuranceDetail": "外来¥800〜1,500+。国際部登録¥600〜1,200。CignaまたはAllianz/Bupa推奨。"
-      },
-      "big3": {
-        "title": "🦷👁️🌿 医療「ビッグスリー」",
-        "sectionDental": "🦷 歯科",
-        "colItem": "項目",
-        "colChinaPrice": "中国",
-        "colUsEuPrice": "米国/欧州",
-        "dental_cleaning": "クリーニング",
-        "dental_cleaning_cn": "¥200〜500",
-        "dental_cleaning_us": "$100〜200",
-        "dental_filling": "詰め物",
-        "dental_filling_cn": "¥300〜800",
-        "dental_filling_us": "$150〜400",
-        "dental_root": "根管治療",
-        "dental_root_cn": "¥1,500〜3,000",
-        "dental_root_us": "$800〜1,500",
-        "dental_implant": "デンタルインプラント",
-        "dental_implant_cn": "¥5,000〜15,000",
-        "dental_implant_us": "$3,000〜6,000",
-        "dental_crown": "美容クラウン",
-        "dental_crown_cn": "¥2,000〜5,000",
-        "dental_crown_us": "$1,000〜2,500",
-        "dentalNote": "💡 コストメリット：中国歯科は米国/EUの25〜35%。出典：大衆点評、Reddit駐在員フィードバック（2024〜2025）",
-        "dentalClinics": "🏥 推奨クリニック",
-        "dentalClinicsDetail": "嘉会歯科上海（英語対応）·UFH歯科北京·iKang歯科深圳·Arrail歯科（全国）。ヒント：事前予約、英語対応を確認。",
-        "sectionEye": "👁️ 眼科",
-        "eyeDesc": "メガネ即日サービス（¥500〜2,000）。レーザー眼科手術¥8K〜20K。推奨：上海眼耳鼻喉科医院、北京同仁医院、愛爾眼科（全国）。",
-        "sectionTcm": "🌿 中医療法（ロシア人No.1需要）",
-        "colTherapy": "療法",
-        "colDescription": "説明",
-        "colPrice": "料金",
-        "tcm_acupuncture": "鍼灸",
-        "tcm_acupuncture_desc": "首/背中/肩",
-        "tcm_acupuncture_price": "¥100〜300/回",
-        "tcm_tuina": "推拿マッサージ",
-        "tcm_tuina_desc": "経絡マッサージ",
-        "tcm_tuina_price": "¥150〜400/回",
-        "tcm_bonesetting": "整骨",
-        "tcm_bonesetting_desc": "整形外科リセット",
-        "tcm_bonesetting_price": "¥200〜500/回",
-        "tcm_cupping": "カッピング",
-        "tcm_cupping_desc": "デトックス&湿気除去",
-        "tcm_cupping_price": "¥50〜150/回",
-        "tcm_herbal": "漢方薬",
-        "tcm_herbal_desc": "パーソナライズ処方",
-        "tcm_herbal_price": "¥100〜500/服",
-        "tcmHotspots": "📍 中医ホットスポット",
-        "tcmHotspotsDetail": "三亜中医院（国際部）·黒河中医院（露語対応、年2,000人以上）·琿春病院（露語通訳）·饒河中医院（スパ+マッサージ）·北京同仁堂（伝統）"
-      },
-      "checkup": {
-        "title": "📋 健康診断",
-        "intro": "主要病院でエグゼクティブ健診を提供、¥2K〜10K+。24時間レポートあり。入院不要、半日で完了。",
-        "recommended": "<strong>推奨：</strong>協和国際部、華山国際部、嘉会国際",
-        "warning": "⚠️ 注意",
-        "warningDetail": "1〜2週間前に予約。一部検査は空腹が必要。薬剤について医師に相談。"
-      }
-    }
+    "back": "← 戻る"
   },
   "s8": {
     "meta": {
@@ -303,109 +286,87 @@
       "sub": "2025年免税旅行者+305%。12,252店舗、7,000店以上で即時免税。"
     },
     "electronics": {
-      "label": "📱 電子機器",
-      "title": "折りたたみ式·ドローン·AIメガネ",
-      "desc": "華強北SZ、王府井BJ、義烏。最新テクノロジーがお得に。"
+      "title": "📱 電子機器とガジェット",
+      "colCategory": "カテゴリ",
+      "colWhy": "購入理由",
+      "colPrice": "価格",
+      "foldable": "折りたたみ式スマートフォン",
+      "foldable_why": "中国ブランドが世界をリード",
+      "drone": "ドローン",
+      "drone_why": "DJIが世界を支配",
+      "ai_glasses": "AIメガネ",
+      "ai_glasses_why": "新カテゴリ、中国先行",
+      "translator": "スマート翻訳機",
+      "translator_why": "100以上の言語をリアルタイム",
+      "earbuds": "TWSイヤホン",
+      "earbuds_why": "コスパ最高",
+      "whereToBuy": "📍 購入場所",
+      "whereToBuyDetail": "深圳華強北—「中国電子街」、35市場、多言語+カード+免税。北京王府井—フラッグシップストア。義烏—「世界スーパーマーケット」、ワンストップ。",
+      "foldable_price": "¥5,000-15,000",
+      "drone_price": "¥2,000-8,000",
+      "ai_glasses_price": "¥1,500-3,000",
+      "translator_price": "¥300-1,500",
+      "earbuds_price": "¥100-500"
     },
     "souvenirs": {
-      "label": "🎨 お土産",
-      "title": "故宮博物院·工芸品·地方特産",
-      "desc": "故宮マグネット、成都パンダ刺繍、西安ぬいぐるみ、貴州藍染。"
+      "title": "🎨 文化的お土産",
+      "colCity": "都市",
+      "colItem": "商品",
+      "beijing_item": "故宮冷蔵庫マグネット",
+      "chengdu_item": "パンダ刺繍工芸品·寛窄巷子ギフト",
+      "xian_item": "ぬいぐるみ「肉夹馍」·兵馬俑お土産",
+      "chongqing_item": "真鍮装飾品·洪崖洞工芸品",
+      "guizhou_item": "藍染スカーフ·シルバーマグネット·民族キーホルダー",
+      "tip": "💡 文化ショップは観光地や歴史的街並みに集中"
     },
     "taxrefund": {
-      "label": "💰 免税",
-      "title": "ルール·プロセス·即時",
-      "desc": "同店≥¥500→11%付加価値税（実質約9%）。90日以内出国。7,000店以上で即時免税。"
+      "title": "💰 免税ガイド",
+      "stats": "📊 全国12,252の免税店。2025年は免税旅行者+305%。",
+      "sectionRequirements": "要件",
+      "reqStay": "外国人訪問者、滞在≤183日",
+      "reqAmount": "同店同日≥¥500",
+      "reqDeparture": "購入から出国まで≤90日",
+      "reqCarry": "商品を手荷物で携帯（預け入れ禁止）",
+      "sectionProcess": "プロセス",
+      "stepInvoice": "「免税申請書」+領収書を依頼",
+      "stepCustoms": "税関確認（商品+パスポート+書類を提示）",
+      "stepCollect": "免税金受取（現金/カード/Alipay）",
+      "instantRefundTitle": "💡 即時免税",
+      "instantRefundDetail": "7,000店以上：購入時に控除、空港で並ぶ必要なし。上海市全域。海南免税。"
     },
     "cityshops": {
-      "label": "🗺️ 都市ガイド",
-      "title": "都市別ショッピング",
-      "desc": "上海生地市場·深圳電子街·義烏卸売·三亜免税·北京王府井"
-    },
-    "detail": {
-      "back": "← 戻る",
-      "electronics": {
-        "title": "📱 電子機器とガジェット",
-        "colCategory": "カテゴリ",
-        "colWhy": "購入理由",
-        "colPrice": "価格",
-        "foldable": "折りたたみ式スマートフォン",
-        "foldable_why": "中国ブランドが世界をリード",
-        "drone": "ドローン",
-        "drone_why": "DJIが世界を支配",
-        "ai_glasses": "AIメガネ",
-        "ai_glasses_why": "新カテゴリ、中国先行",
-        "translator": "スマート翻訳機",
-        "translator_why": "100以上の言語をリアルタイム",
-        "earbuds": "TWSイヤホン",
-        "earbuds_why": "コスパ最高",
-        "whereToBuy": "📍 購入場所",
-        "whereToBuyDetail": "深圳華強北—「中国電子街」、35市場、多言語+カード+免税。北京王府井—フラッグシップストア。義烏—「世界スーパーマーケット」、ワンストップ。",
-        "foldable_price": "¥5,000-15,000",
-        "drone_price": "¥2,000-8,000",
-        "ai_glasses_price": "¥1,500-3,000",
-        "translator_price": "¥300-1,500",
-        "earbuds_price": "¥100-500"
-      },
-      "souvenirs": {
-        "title": "🎨 文化的お土産",
-        "colCity": "都市",
-        "colItem": "商品",
-        "beijing_item": "故宮冷蔵庫マグネット",
-        "chengdu_item": "パンダ刺繍工芸品·寛窄巷子ギフト",
-        "xian_item": "ぬいぐるみ「肉夹馍」·兵馬俑お土産",
-        "chongqing_item": "真鍮装飾品·洪崖洞工芸品",
-        "guizhou_item": "藍染スカーフ·シルバーマグネット·民族キーホルダー",
-        "tip": "💡 文化ショップは観光地や歴史的街並みに集中"
-      },
-      "taxrefund": {
-        "title": "💰 免税ガイド",
-        "stats": "📊 全国12,252の免税店。2025年は免税旅行者+305%。",
-        "sectionRequirements": "要件",
-        "reqStay": "外国人訪問者、滞在≤183日",
-        "reqAmount": "同店同日≥¥500",
-        "reqDeparture": "購入から出国まで≤90日",
-        "reqCarry": "商品を手荷物で携帯（預け入れ禁止）",
-        "sectionProcess": "プロセス",
-        "stepInvoice": "「免税申請書」+領収書を依頼",
-        "stepCustoms": "税関確認（商品+パスポート+書類を提示）",
-        "stepCollect": "免税金受取（現金/カード/Alipay）",
-        "instantRefundTitle": "💡 即時免税",
-        "instantRefundDetail": "7,000店以上：購入時に控除、空港で並ぶ必要なし。上海市全域。海南免税。"
-      },
-      "cityshops": {
-        "title": "🗺️ 都市別ショッピングガイド",
-        "tapHint": "都市をタップして詳細表示",
-        "backToCityGuide": "← 都市ガイドに戻る",
-        "cities": {
-          "shenzhen": {
-            "name": "深圳·華強北",
-            "subtitle": "中国電子街",
-            "desc": "「中国電子街」、35の専門市場。カテゴリ：スマホ、アクセサリー、ドローン、ウェアラブル。多言語標識+国際カード+免税。地下鉄1号線華強路駅。ヒント：価格比較、一部市場で交渉可。"
-          },
-          "shanghai": {
-            "name": "上海·生地市場",
-            "subtitle": "チャイナドレス＆スーツテーラリング",
-            "desc": "南外灘生地市場など。オーダーメイドチャイナドレス＆スーツ、その場で採寸。¥300〜2,000+、2〜3日で受取。国際カード可。"
-          },
-          "yiwu": {
-            "name": "義烏·貿易城",
-            "subtitle": "世界スーパーマーケット",
-            "desc": "「世界スーパーマーケット」、スマホケースからスマート家電、ドローンまで。2026年上半期フライト予約+60%。ワンストップショッピング、多言語+国際カード。"
-          },
-          "sanya": {
-            "name": "三亜·免税モール",
-            "subtitle": "オフショア免税",
-            "desc": "オフショア＆出発免税。国際ブランド完備。2025年政策アップグレード。簡単プロセス：登録→スキャン→支払→空港受取、<3分。"
-          },
-          "beijing": {
-            "name": "北京·王府井",
-            "subtitle": "フラッグシップ·老舗",
-            "desc": "フラッグシップ電子機器店、老舗ブランド+モダンモール。メガネ即日。密集免税店、即時免税あり。"
-          }
+      "title": "🗺️ 都市別ショッピングガイド",
+      "tapHint": "都市をタップして詳細表示",
+      "backToCityGuide": "← 都市ガイドに戻る",
+      "cities": {
+        "shenzhen": {
+          "name": "深圳·華強北",
+          "subtitle": "中国電子街",
+          "desc": "「中国電子街」、35の専門市場。カテゴリ：スマホ、アクセサリー、ドローン、ウェアラブル。多言語標識+国際カード+免税。地下鉄1号線華強路駅。ヒント：価格比較、一部市場で交渉可。"
+        },
+        "shanghai": {
+          "name": "上海·生地市場",
+          "subtitle": "チャイナドレス＆スーツテーラリング",
+          "desc": "南外灘生地市場など。オーダーメイドチャイナドレス＆スーツ、その場で採寸。¥300〜2,000+、2〜3日で受取。国際カード可。"
+        },
+        "yiwu": {
+          "name": "義烏·貿易城",
+          "subtitle": "世界スーパーマーケット",
+          "desc": "「世界スーパーマーケット」、スマホケースからスマート家電、ドローンまで。2026年上半期フライト予約+60%。ワンストップショッピング、多言語+国際カード。"
+        },
+        "sanya": {
+          "name": "三亜·免税モール",
+          "subtitle": "オフショア免税",
+          "desc": "オフショア＆出発免税。国際ブランド完備。2025年政策アップグレード。簡単プロセス：登録→スキャン→支払→空港受取、<3分。"
+        },
+        "beijing": {
+          "name": "北京·王府井",
+          "subtitle": "フラッグシップ·老舗",
+          "desc": "フラッグシップ電子機器店、老舗ブランド+モダンモール。メガネ即日。密集免税店、即時免税あり。"
         }
       }
-    }
+    },
+    "back": "← 戻る"
   },
   "s9": {
     "meta": {
@@ -413,52 +374,35 @@
       "sub": "外国人旅行者は約500都市を探索。タップして発見。"
     },
     "top10": {
-      "label": "🏙️ トップ10",
-      "title": "必訪都市",
-      "desc": "上海·北京·広州·深圳·重慶·成都·杭州·昆明·ハルビン·青島"
+      "title": "🏙️ トップ10都市"
     },
     "rising": {
-      "label": "🚀 注目",
-      "title": "SNSスター",
-      "desc": "鄭州·太原·貴陽·福州·義烏 — SNSでトレンド"
+      "title": "🚀 注目の新興都市",
+      "subtitle": "SNSでトレンドの目的地"
     },
     "seasons": {
-      "label": "🌍 季節",
-      "title": "季節別ベスト",
-      "desc": "春：江南 / 夏：北戴河 / 秋：北京 / 冬：ハルビン＆三亜"
+      "title": "🌍 季節別おすすめ",
+      "spring": {
+        "title": "🌸 春（3〜5月）",
+        "desc": "温暖で快適。杭州西湖·蘇州庭園·昆明の花。"
+      },
+      "summer": {
+        "title": "🌿 夏（6〜8月）",
+        "desc": "暑さを逃れて：北戴河/青島。ビール祭り·ハルビンの涼しさ·張家界。"
+      },
+      "autumn": {
+        "title": "🍂 秋（9〜11月）ベスト！",
+        "desc": "全国的にベスト。北京の紅葉·西安古城·桂林の風景。"
+      },
+      "winter": {
+        "title": "❄️ 冬（12〜2月）",
+        "desc": "北の氷vs南の太陽。ハルビン氷祭り（東南アジア人気）·三亜熱帯（ロシア人人気）。"
+      },
+      "sizingTip": "👔 サイズ：中国はUSより1〜2サイズ小さめ。US M≈中国L/XL。ユニクロ/ZARAはグローバルサイズ。"
     },
-    "detail": {
-      "back": "← 戻る",
-      "backToCityList": "← 都市リストに戻る",
-      "tapHint": "都市をタップして詳細表示",
-      "top10": {
-        "title": "🏙️ トップ10都市"
-      },
-      "rising": {
-        "title": "🚀 注目の新興都市",
-        "subtitle": "SNSでトレンドの目的地"
-      },
-      "seasons": {
-        "title": "🌍 季節別おすすめ",
-        "spring": {
-          "title": "🌸 春（3〜5月）",
-          "desc": "温暖で快適。杭州西湖·蘇州庭園·昆明の花。"
-        },
-        "summer": {
-          "title": "🌿 夏（6〜8月）",
-          "desc": "暑さを逃れて：北戴河/青島。ビール祭り·ハルビンの涼しさ·張家界。"
-        },
-        "autumn": {
-          "title": "🍂 秋（9〜11月）ベスト！",
-          "desc": "全国的にベスト。北京の紅葉·西安古城·桂林の風景。"
-        },
-        "winter": {
-          "title": "❄️ 冬（12〜2月）",
-          "desc": "北の氷vs南の太陽。ハルビン氷祭り（東南アジア人気）·三亜熱帯（ロシア人人気）。"
-        },
-        "sizingTip": "👔 サイズ：中国はUSより1〜2サイズ小さめ。US M≈中国L/XL。ユニクロ/ZARAはグローバルサイズ。"
-      }
-    }
+    "back": "← 戻る",
+    "backToCityList": "← 都市リストに戻る",
+    "tapHint": "都市をタップして詳細表示"
   },
   "s10": {
     "meta": {

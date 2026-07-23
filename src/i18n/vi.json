@@ -196,106 +196,89 @@
       "sub": "850+ cơ sở tại 57 thành phố. Nhấn thẻ để xem chi tiết."
     },
     "hospital": {
-      "label": "🏥 Bệnh viện",
-      "title": "Bệnh viện Quốc tế & Thuốc",
-      "desc": "Bệnh viện thành phố lớn, danh sách thuốc ba ngôn ngữ, bảo hiểm du lịch"
+      "title": "🏥 Dịch vụ Y tế Quốc tế",
+      "intro": "850+ cơ sở tại 57 thành phố. 1,28 triệu bệnh nhân quốc tế năm 2025 (+73,6%).",
+      "sectionHospitals": "Bệnh viện Quốc tế",
+      "colCity": "Thành phố",
+      "colHospital": "Bệnh viện",
+      "colNote": "Ghi chú",
+      "shanghaiName": "Huashan / Jiahui",
+      "shanghaiNote": "90+ quốc gia",
+      "beijingName": "PUMCH / UFH",
+      "beijingNote": "Phòng quốc tế ¥600-1200",
+      "guangzhouName": "SYSU 1st / Clifford",
+      "guangzhouNote": "25 bệnh viện thí điểm",
+      "tianjinName": "Pengruili",
+      "tianjinNote": "Bệnh viện cấp ba nước ngoài",
+      "hainanName": "Khu thí điểm Lecheng",
+      "hainanNote": "Thuốc/thiết bị quốc tế",
+      "sectionMeds": "Thuốc thông dụng (CN/EN/RU)",
+      "colCn": "CN",
+      "colUse": "Công dụng",
+      "medIbuprofenUse": "Giảm đau/Hạ sốt",
+      "medAmoxicillinUse": "Kháng sinh(Rx)",
+      "medLoperamideUse": "Chống tiêu chảy",
+      "medLoratadineUse": "Kháng histamine",
+      "medOmeprazoleUse": "Trào ngược axit",
+      "insuranceWarning": "⚠️ Mua Bảo hiểm Du lịch",
+      "insuranceDetail": "Ngoại trú ¥800-1.500+. Đăng ký phòng quốc tế ¥600-1.200. Khuyến nghị Cigna/Allianz/Bupa."
     },
     "big3": {
-      "label": "🦷👁️🌿 Du lịch y tế",
-      "title": "Nha khoa·Mắt·Y học cổ truyền",
-      "desc": "Cấy ghép <¥5K, kính mắt trong ngày, châm cứu & massage. #1 cho người Nga."
+      "title": "🦷👁️🌿 \"Bộ ba Y tế\"",
+      "sectionDental": "🦷 Nha khoa",
+      "colItem": "Hạng mục",
+      "colChinaPrice": "Trung Quốc",
+      "colUsEuPrice": "Mỹ/EU",
+      "dental_cleaning": "Lấy cao răng",
+      "dental_cleaning_cn": "¥200-500",
+      "dental_cleaning_us": "$100-200",
+      "dental_filling": "Hàn răng",
+      "dental_filling_cn": "¥300-800",
+      "dental_filling_us": "$150-400",
+      "dental_root": "Điều trị tủy",
+      "dental_root_cn": "¥1.500-3.000",
+      "dental_root_us": "$800-1.500",
+      "dental_implant": "Cấy ghép răng",
+      "dental_implant_cn": "¥5.000-15.000",
+      "dental_implant_us": "$3.000-6.000",
+      "dental_crown": "Mão răng thẩm mỹ",
+      "dental_crown_cn": "¥2.000-5.000",
+      "dental_crown_us": "$1.000-2.500",
+      "dentalNote": "💡 Ưu thế chi phí: Nha khoa Trung Quốc 25-35% so với Mỹ/EU. Nguồn: Dianping, phản hồi Reddit expat (2024-2025)",
+      "dentalClinics": "🏥 Phòng khám khuyến nghị",
+      "dentalClinicsDetail": "Nha khoa Jiahui Thượng Hải (tiếng Anh)·Nha khoa UFH Bắc Kinh·Nha khoa iKang Thâm Quyến·Nha khoa Arrail (Toàn quốc). Mẹo: Đặt trước, hỏi về dịch vụ tiếng Anh.",
+      "sectionEye": "👁️ Nhãn khoa",
+      "eyeDesc": "Kính mắt dịch vụ trong ngày (¥500-2.000). Phẫu thuật mắt laser ¥8K-20K. Khuyến nghị: Bệnh viện Mắt & Tai Mũi Họng Thượng Hải, Tông Nhân Bắc Kinh, Bệnh viện Mắt Aier (Toàn quốc).",
+      "sectionTcm": "🌿 Trị liệu Y học cổ truyền Trung Quốc (#1 yêu cầu Nga)",
+      "colTherapy": "Liệu pháp",
+      "colDescription": "Mô tả",
+      "colPrice": "Giá",
+      "tcm_acupuncture": "Châm cứu",
+      "tcm_acupuncture_desc": "Cổ/Lưng/Vai",
+      "tcm_acupuncture_price": "¥100-300/buổi",
+      "tcm_tuina": "Massage Tuina",
+      "tcm_tuina_desc": "Massage kinh mạch",
+      "tcm_tuina_price": "¥150-400/buổi",
+      "tcm_bonesetting": "Chỉnh xương",
+      "tcm_bonesetting_desc": "Phục hồi chỉnh hình",
+      "tcm_bonesetting_price": "¥200-500/buổi",
+      "tcm_cupping": "Giác hơi",
+      "tcm_cupping_desc": "Giải độc & ẩm",
+      "tcm_cupping_price": "¥50-150/buổi",
+      "tcm_herbal": "Thuốc thảo dược",
+      "tcm_herbal_desc": "Công thức cá nhân hóa",
+      "tcm_herbal_price": "¥100-500/liều",
+      "tcmHotspots": "📍 Điểm nóng Y học cổ truyền",
+      "tcmHotspotsDetail": "Bệnh viện Y học cổ truyền Tam Á (quốc tế)·Y học cổ truyền Hắc Hà (dịch vụ tiếng Nga, 2000+ bệnh nhân/năm)·Bệnh viện Hỗn Xuân (phiên dịch tiếng Nga)·Y học cổ truyền Nhiêu Hà (spa+massage)·Đồng Nhân Đường Bắc Kinh (truyền thống)"
     },
     "checkup": {
-      "label": "📋 Khám sức khỏe",
-      "title": "Khám sức khỏe tổng quát",
-      "desc": "¥2K-10K+, bảng toàn diện, một số báo cáo 24h. Nửa ngày."
+      "title": "📋 Khám sức khỏe",
+      "intro": "Bệnh viện lớn cung cấp khám sức khỏe tổng quát, ¥2K-10K+. Một số báo cáo 24h. Không cần ở lại qua đêm, nửa ngày.",
+      "recommended": "<strong>Khuyến nghị:</strong> PUMCH Quốc tế, Huashan Quốc tế, Jiahui Quốc tế",
+      "warning": "⚠️ Lưu ý",
+      "warningDetail": "Đặt trước 1-2 tuần. Nhịn ăn cho một số xét nghiệm. Tham khảo bác sĩ về thuốc."
     },
-    "detail": {
-      "back": "← Quay lại",
-      "hospital": {
-        "title": "🏥 Dịch vụ Y tế Quốc tế",
-        "intro": "850+ cơ sở tại 57 thành phố. 1,28 triệu bệnh nhân quốc tế năm 2025 (+73,6%).",
-        "sectionHospitals": "Bệnh viện Quốc tế",
-        "colCity": "Thành phố",
-        "colHospital": "Bệnh viện",
-        "colNote": "Ghi chú",
-        "shanghaiName": "Huashan / Jiahui",
-        "shanghaiNote": "90+ quốc gia",
-        "beijingName": "PUMCH / UFH",
-        "beijingNote": "Phòng quốc tế ¥600-1200",
-        "guangzhouName": "SYSU 1st / Clifford",
-        "guangzhouNote": "25 bệnh viện thí điểm",
-        "tianjinName": "Pengruili",
-        "tianjinNote": "Bệnh viện cấp ba nước ngoài",
-        "hainanName": "Khu thí điểm Lecheng",
-        "hainanNote": "Thuốc/thiết bị quốc tế",
-        "sectionMeds": "Thuốc thông dụng (CN/EN/RU)",
-        "colCn": "CN",
-        "colUse": "Công dụng",
-        "medIbuprofenUse": "Giảm đau/Hạ sốt",
-        "medAmoxicillinUse": "Kháng sinh(Rx)",
-        "medLoperamideUse": "Chống tiêu chảy",
-        "medLoratadineUse": "Kháng histamine",
-        "medOmeprazoleUse": "Trào ngược axit",
-        "insuranceWarning": "⚠️ Mua Bảo hiểm Du lịch",
-        "insuranceDetail": "Ngoại trú ¥800-1.500+. Đăng ký phòng quốc tế ¥600-1.200. Khuyến nghị Cigna/Allianz/Bupa."
-      },
-      "big3": {
-        "title": "🦷👁️🌿 \"Bộ ba Y tế\"",
-        "sectionDental": "🦷 Nha khoa",
-        "colItem": "Hạng mục",
-        "colChinaPrice": "Trung Quốc",
-        "colUsEuPrice": "Mỹ/EU",
-        "dental_cleaning": "Lấy cao răng",
-        "dental_cleaning_cn": "¥200-500",
-        "dental_cleaning_us": "$100-200",
-        "dental_filling": "Hàn răng",
-        "dental_filling_cn": "¥300-800",
-        "dental_filling_us": "$150-400",
-        "dental_root": "Điều trị tủy",
-        "dental_root_cn": "¥1.500-3.000",
-        "dental_root_us": "$800-1.500",
-        "dental_implant": "Cấy ghép răng",
-        "dental_implant_cn": "¥5.000-15.000",
-        "dental_implant_us": "$3.000-6.000",
-        "dental_crown": "Mão răng thẩm mỹ",
-        "dental_crown_cn": "¥2.000-5.000",
-        "dental_crown_us": "$1.000-2.500",
-        "dentalNote": "💡 Ưu thế chi phí: Nha khoa Trung Quốc 25-35% so với Mỹ/EU. Nguồn: Dianping, phản hồi Reddit expat (2024-2025)",
-        "dentalClinics": "🏥 Phòng khám khuyến nghị",
-        "dentalClinicsDetail": "Nha khoa Jiahui Thượng Hải (tiếng Anh)·Nha khoa UFH Bắc Kinh·Nha khoa iKang Thâm Quyến·Nha khoa Arrail (Toàn quốc). Mẹo: Đặt trước, hỏi về dịch vụ tiếng Anh.",
-        "sectionEye": "👁️ Nhãn khoa",
-        "eyeDesc": "Kính mắt dịch vụ trong ngày (¥500-2.000). Phẫu thuật mắt laser ¥8K-20K. Khuyến nghị: Bệnh viện Mắt & Tai Mũi Họng Thượng Hải, Tông Nhân Bắc Kinh, Bệnh viện Mắt Aier (Toàn quốc).",
-        "sectionTcm": "🌿 Trị liệu Y học cổ truyền Trung Quốc (#1 yêu cầu Nga)",
-        "colTherapy": "Liệu pháp",
-        "colDescription": "Mô tả",
-        "colPrice": "Giá",
-        "tcm_acupuncture": "Châm cứu",
-        "tcm_acupuncture_desc": "Cổ/Lưng/Vai",
-        "tcm_acupuncture_price": "¥100-300/buổi",
-        "tcm_tuina": "Massage Tuina",
-        "tcm_tuina_desc": "Massage kinh mạch",
-        "tcm_tuina_price": "¥150-400/buổi",
-        "tcm_bonesetting": "Chỉnh xương",
-        "tcm_bonesetting_desc": "Phục hồi chỉnh hình",
-        "tcm_bonesetting_price": "¥200-500/buổi",
-        "tcm_cupping": "Giác hơi",
-        "tcm_cupping_desc": "Giải độc & ẩm",
-        "tcm_cupping_price": "¥50-150/buổi",
-        "tcm_herbal": "Thuốc thảo dược",
-        "tcm_herbal_desc": "Công thức cá nhân hóa",
-        "tcm_herbal_price": "¥100-500/liều",
-        "tcmHotspots": "📍 Điểm nóng Y học cổ truyền",
-        "tcmHotspotsDetail": "Bệnh viện Y học cổ truyền Tam Á (quốc tế)·Y học cổ truyền Hắc Hà (dịch vụ tiếng Nga, 2000+ bệnh nhân/năm)·Bệnh viện Hỗn Xuân (phiên dịch tiếng Nga)·Y học cổ truyền Nhiêu Hà (spa+massage)·Đồng Nhân Đường Bắc Kinh (truyền thống)"
-      },
-      "checkup": {
-        "title": "📋 Khám sức khỏe",
-        "intro": "Bệnh viện lớn cung cấp khám sức khỏe tổng quát, ¥2K-10K+. Một số báo cáo 24h. Không cần ở lại qua đêm, nửa ngày.",
-        "recommended": "<strong>Khuyến nghị:</strong> PUMCH Quốc tế, Huashan Quốc tế, Jiahui Quốc tế",
-        "warning": "⚠️ Lưu ý",
-        "warningDetail": "Đặt trước 1-2 tuần. Nhịn ăn cho một số xét nghiệm. Tham khảo bác sĩ về thuốc."
-      }
-    }
+    "back": "← Quay lại"
   },
   "s8": {
     "meta": {
@@ -303,109 +286,87 @@
       "sub": "Du khách hoàn thuế +305% năm 2025. 12.252 cửa hàng, 7.000+ hoàn ngay."
     },
     "electronics": {
-      "label": "📱 Điện tử",
-      "title": "Điện thoại gập·Drone·Kính AI",
-      "desc": "Hoa Cường Bắc SZ, Vương Phủ Tỉnh BJ, Nghĩa Ô. Công nghệ mới nhất giá tốt."
+      "title": "📱 Điện tử & Thiết bị",
+      "colCategory": "Danh mục",
+      "colWhy": "Tại sao mua",
+      "colPrice": "Giá",
+      "foldable": "Điện thoại gập",
+      "foldable_why": "Thương hiệu Trung Quốc dẫn đầu toàn cầu",
+      "drone": "Drone",
+      "drone_why": "DJI thống trị toàn cầu",
+      "ai_glasses": "Kính AI",
+      "ai_glasses_why": "Danh mục mới, Trung Quốc đầu tiên",
+      "translator": "Máy dịch thông minh",
+      "translator_why": "100+ ngôn ngữ thời gian thực",
+      "earbuds": "Tai nghe TWS",
+      "earbuds_why": "Giá trị tuyệt vời",
+      "whereToBuy": "📍 Mua ở đâu",
+      "whereToBuyDetail": "Hoa Cường Bắc SZ—\"Phố điện tử Trung Quốc\", 35 chợ, đa ngôn ngữ+thẻ+hoàn thuế. Vương Phủ Tỉnh BJ—cửa hàng hàng đầu. Nghĩa Ô—\"Siêu thị thế giới\", một điểm.",
+      "foldable_price": "¥5,000-15,000",
+      "drone_price": "¥2,000-8,000",
+      "ai_glasses_price": "¥1,500-3,000",
+      "translator_price": "¥300-1,500",
+      "earbuds_price": "¥100-500"
     },
     "souvenirs": {
-      "label": "🎨 Quà lưu niệm",
-      "title": "Bảo tàng Cố Cung·Thủ công·Địa phương",
-      "desc": "Nam châm Tử Cấm Thành, thổ cẩm gấu trúc Thành Đô, nhồi bông Tây An, chàm Quý Châu."
+      "title": "🎨 Quà lưu niệm văn hóa",
+      "colCity": "Thành phố",
+      "colItem": "Sản phẩm",
+      "beijing_item": "Nam châm tủ lạnh Tử Cấm Thành",
+      "chengdu_item": "Thủ công thổ cẩm gấu trúc·Quà Khoan Trại",
+      "xian_item": "Nhồi bông \"Roujiamo\"·Quà lưu niệm Binh Mã Dũng",
+      "chongqing_item": "Đồ trang trí đồng·Thủ công Hồng Nha Động",
+      "guizhou_item": "Khăn quàng chàm·Nam châm bạc·Móc chìa khóa dân tộc",
+      "tip": "💡 Cửa hàng văn hóa tập trung gần điểm tham quan và phố di sản"
     },
     "taxrefund": {
-      "label": "💰 Hoàn thuế",
-      "title": "Quy định·Quy trình·Hoàn ngay",
-      "desc": "≥¥500 cùng cửa hàng→11% VAT (~9% ròng). Khởi hành trong 90 ngày. 7.000+ hoàn ngay."
+      "title": "💰 Hướng dẫn Hoàn thuế",
+      "stats": "📊 12.252 cửa hàng hoàn thuế toàn quốc. +305% du khách hoàn thuế năm 2025.",
+      "sectionRequirements": "Yêu cầu",
+      "reqStay": "Du khách nước ngoài, ở ≤183 ngày",
+      "reqAmount": "Cùng cửa hàng cùng ngày ≥¥500",
+      "reqDeparture": "Khởi hành ≤90 ngày từ khi mua",
+      "reqCarry": "Mang theo hàng (KHÔNG ký gửi)",
+      "sectionProcess": "Quy trình",
+      "stepInvoice": "Yêu cầu \"Đơn xin hoàn thuế\" + hóa đơn",
+      "stepCustoms": "Xác minh hải quan (xuất trình hàng+hộ chiếu+tài liệu)",
+      "stepCollect": "Nhận hoàn thuế (tiền mặt/thẻ/Alipay)",
+      "instantRefundTitle": "💡 Hoàn thuế ngay",
+      "instantRefundDetail": "7.000+ cửa hàng: khấu trừ khi mua, không cần xếp hàng sân bay. Toàn thành phố Thượng Hải. Miễn thuế Hải Nam."
     },
     "cityshops": {
-      "label": "🗺️ Hướng dẫn thành phố",
-      "title": "Mua sắm theo thành phố",
-      "desc": "Chợ vải SH·Điện tử SZ·Bán sỉ Nghĩa Ô·Miễn thuế Tam Á·Vương Phủ Tỉnh BJ"
-    },
-    "detail": {
-      "back": "← Quay lại",
-      "electronics": {
-        "title": "📱 Điện tử & Thiết bị",
-        "colCategory": "Danh mục",
-        "colWhy": "Tại sao mua",
-        "colPrice": "Giá",
-        "foldable": "Điện thoại gập",
-        "foldable_why": "Thương hiệu Trung Quốc dẫn đầu toàn cầu",
-        "drone": "Drone",
-        "drone_why": "DJI thống trị toàn cầu",
-        "ai_glasses": "Kính AI",
-        "ai_glasses_why": "Danh mục mới, Trung Quốc đầu tiên",
-        "translator": "Máy dịch thông minh",
-        "translator_why": "100+ ngôn ngữ thời gian thực",
-        "earbuds": "Tai nghe TWS",
-        "earbuds_why": "Giá trị tuyệt vời",
-        "whereToBuy": "📍 Mua ở đâu",
-        "whereToBuyDetail": "Hoa Cường Bắc SZ—\"Phố điện tử Trung Quốc\", 35 chợ, đa ngôn ngữ+thẻ+hoàn thuế. Vương Phủ Tỉnh BJ—cửa hàng hàng đầu. Nghĩa Ô—\"Siêu thị thế giới\", một điểm.",
-        "foldable_price": "¥5,000-15,000",
-        "drone_price": "¥2,000-8,000",
-        "ai_glasses_price": "¥1,500-3,000",
-        "translator_price": "¥300-1,500",
-        "earbuds_price": "¥100-500"
-      },
-      "souvenirs": {
-        "title": "🎨 Quà lưu niệm văn hóa",
-        "colCity": "Thành phố",
-        "colItem": "Sản phẩm",
-        "beijing_item": "Nam châm tủ lạnh Tử Cấm Thành",
-        "chengdu_item": "Thủ công thổ cẩm gấu trúc·Quà Khoan Trại",
-        "xian_item": "Nhồi bông \"Roujiamo\"·Quà lưu niệm Binh Mã Dũng",
-        "chongqing_item": "Đồ trang trí đồng·Thủ công Hồng Nha Động",
-        "guizhou_item": "Khăn quàng chàm·Nam châm bạc·Móc chìa khóa dân tộc",
-        "tip": "💡 Cửa hàng văn hóa tập trung gần điểm tham quan và phố di sản"
-      },
-      "taxrefund": {
-        "title": "💰 Hướng dẫn Hoàn thuế",
-        "stats": "📊 12.252 cửa hàng hoàn thuế toàn quốc. +305% du khách hoàn thuế năm 2025.",
-        "sectionRequirements": "Yêu cầu",
-        "reqStay": "Du khách nước ngoài, ở ≤183 ngày",
-        "reqAmount": "Cùng cửa hàng cùng ngày ≥¥500",
-        "reqDeparture": "Khởi hành ≤90 ngày từ khi mua",
-        "reqCarry": "Mang theo hàng (KHÔNG ký gửi)",
-        "sectionProcess": "Quy trình",
-        "stepInvoice": "Yêu cầu \"Đơn xin hoàn thuế\" + hóa đơn",
-        "stepCustoms": "Xác minh hải quan (xuất trình hàng+hộ chiếu+tài liệu)",
-        "stepCollect": "Nhận hoàn thuế (tiền mặt/thẻ/Alipay)",
-        "instantRefundTitle": "💡 Hoàn thuế ngay",
-        "instantRefundDetail": "7.000+ cửa hàng: khấu trừ khi mua, không cần xếp hàng sân bay. Toàn thành phố Thượng Hải. Miễn thuế Hải Nam."
-      },
-      "cityshops": {
-        "title": "🗺️ Hướng dẫn Mua sắm Thành phố",
-        "tapHint": "Nhấn vào thành phố để xem chi tiết",
-        "backToCityGuide": "← Quay lại Hướng dẫn Thành phố",
-        "cities": {
-          "shenzhen": {
-            "name": "Thâm Quyến·Hoa Cường Bắc",
-            "subtitle": "Phố điện tử Trung Quốc",
-            "desc": "\"Phố điện tử Trung Quốc\", 35 chợ chuyên dụng. Danh mục: điện thoại, phụ kiện, drone, thiết bị đeo. Biển báo đa ngôn ngữ+thẻ quốc tế+hoàn thuế. Tàu điện ngầm Tuyến 1 Hoa Cường Lộ. Mẹo: so sánh giá, một số chợ có thể trả giá."
-          },
-          "shanghai": {
-            "name": "Thượng Hải·Chợ vải",
-            "subtitle": "May áo dài & Vest",
-            "desc": "Chợ vải Nam Ngoại Thân v.v. Áo dài & vest tùy chỉnh, đo tại chỗ. ¥300-2.000+, giao trong 2-3 ngày. Chấp nhận thẻ quốc tế."
-          },
-          "yiwu": {
-            "name": "Nghĩa Ô·Thành Thương mại",
-            "subtitle": "Siêu thị thế giới",
-            "desc": "\"Siêu thị thế giới\", từ ốp điện thoại đến thiết bị gia dụng thông minh đến drone. Đặt chuyến bay +60% H1 2026. Mua sắm một điểm, đa ngôn ngữ+thẻ quốc tế."
-          },
-          "sanya": {
-            "name": "Tam Á·Trung tâm Miễn thuế",
-            "subtitle": "Miễn thuế ngoại đảo",
-            "desc": "Miễn thuế ngoại đảo & khởi hành. Đầy đủ thương hiệu quốc tế. Chính sách nâng cấp 2025. Quy trình đơn giản: đăng ký→quét→thanh toán→nhận tại sân bay, <3 phút."
-          },
-          "beijing": {
-            "name": "Bắc Kinh·Vương Phủ Tỉnh",
-            "subtitle": "Hàng đầu·Di sản",
-            "desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay."
-          }
+      "title": "🗺️ Hướng dẫn Mua sắm Thành phố",
+      "tapHint": "Nhấn vào thành phố để xem chi tiết",
+      "backToCityGuide": "← Quay lại Hướng dẫn Thành phố",
+      "cities": {
+        "shenzhen": {
+          "name": "Thâm Quyến·Hoa Cường Bắc",
+          "subtitle": "Phố điện tử Trung Quốc",
+          "desc": "\"Phố điện tử Trung Quốc\", 35 chợ chuyên dụng. Danh mục: điện thoại, phụ kiện, drone, thiết bị đeo. Biển báo đa ngôn ngữ+thẻ quốc tế+hoàn thuế. Tàu điện ngầm Tuyến 1 Hoa Cường Lộ. Mẹo: so sánh giá, một số chợ có thể trả giá."
+        },
+        "shanghai": {
+          "name": "Thượng Hải·Chợ vải",
+          "subtitle": "May áo dài & Vest",
+          "desc": "Chợ vải Nam Ngoại Thân v.v. Áo dài & vest tùy chỉnh, đo tại chỗ. ¥300-2.000+, giao trong 2-3 ngày. Chấp nhận thẻ quốc tế."
+        },
+        "yiwu": {
+          "name": "Nghĩa Ô·Thành Thương mại",
+          "subtitle": "Siêu thị thế giới",
+          "desc": "\"Siêu thị thế giới\", từ ốp điện thoại đến thiết bị gia dụng thông minh đến drone. Đặt chuyến bay +60% H1 2026. Mua sắm một điểm, đa ngôn ngữ+thẻ quốc tế."
+        },
+        "sanya": {
+          "name": "Tam Á·Trung tâm Miễn thuế",
+          "subtitle": "Miễn thuế ngoại đảo",
+          "desc": "Miễn thuế ngoại đảo & khởi hành. Đầy đủ thương hiệu quốc tế. Chính sách nâng cấp 2025. Quy trình đơn giản: đăng ký→quét→thanh toán→nhận tại sân bay, <3 phút."
+        },
+        "beijing": {
+          "name": "Bắc Kinh·Vương Phủ Tỉnh",
+          "subtitle": "Hàng đầu·Di sản",
+          "desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay."
         }
       }
-    }
+    },
+    "back": "← Quay lại"
   },
   "s9": {
     "meta": {
@@ -413,52 +374,35 @@
       "sub": "Du khách nước ngoài đã khám phá gần 500 thành phố. Nhấn để khám phá."
     },
     "top10": {
-      "label": "🏙️ Top 10",
-      "title": "Thành phố phải đến",
-      "desc": "Thượng Hải·Bắc Kinh·Quảng Châu·Thâm Quyến·Trùng Khánh·Thành Đô·Hàng Châu·Côn Minh·Cáp Nhĩ Tân·Thanh Đảo"
+      "title": "🏙️ Top 10 thành phố"
     },
     "rising": {
-      "label": "🚀 Đang lên",
-      "title": "Ngôi sao Mạng xã hội",
-      "desc": "Trịnh Châu·Thái Nguyên·Quý Dương·Phúc Châu·Nghĩa Ô — xu hướng trên mạng xã hội"
+      "title": "🚀 Thành phố Ngôi sao Đang lên",
+      "subtitle": "Điểm đến xu hướng trên mạng xã hội"
     },
     "seasons": {
-      "label": "🌍 Mùa",
-      "title": "Tốt nhất theo mùa",
-      "desc": "Xuân:Giang Nam / Hạ:Bắc Đới Hà / Thu:Bắc Kinh / Đông:Cáp Nhĩ Tân&Tam Á"
+      "title": "🌍 Gợi ý theo mùa",
+      "spring": {
+        "title": "🌸 Xuân (3-5)",
+        "desc": "Ôn hòa & dễ chịu. Tây Hồ Hàng Châu·Vườn Tô Châu·hoa Côn Minh."
+      },
+      "summer": {
+        "title": "🌿 Hạ (6-8)",
+        "desc": "Tránh nóng: Bắc Đới Hà/Thanh Đảo. Lễ hội bia·Cáp Nhĩ Tân mát·Trương Gia Giới."
+      },
+      "autumn": {
+        "title": "🍂 Thu (9-11) Tốt nhất!",
+        "desc": "Tốt nhất toàn quốc. Lá đỏ Bắc Kinh·cổ thành Tây An·cảnh Quế Lâm."
+      },
+      "winter": {
+        "title": "❄️ Đông (12-2)",
+        "desc": "Băng Bắc vs nắng Nam. Lễ hội băng Cáp Nhĩ Tân (yêu thích Đông Nam Á)·nhiệt đới Tam Á (yêu thích Nga)."
+      },
+      "sizingTip": "👔 Kích cỡ: CN nhỏ hơn US 1-2 cỡ. US M≈CN L/XL. Uniqlo/ZARA kích cỡ toàn cầu."
     },
-    "detail": {
-      "back": "← Quay lại",
-      "backToCityList": "← Quay lại danh sách thành phố",
-      "tapHint": "Nhấn vào thành phố để xem chi tiết",
-      "top10": {
-        "title": "🏙️ Top 10 thành phố"
-      },
-      "rising": {
-        "title": "🚀 Thành phố Ngôi sao Đang lên",
-        "subtitle": "Điểm đến xu hướng trên mạng xã hội"
-      },
-      "seasons": {
-        "title": "🌍 Gợi ý theo mùa",
-        "spring": {
-          "title": "🌸 Xuân (3-5)",
-          "desc": "Ôn hòa & dễ chịu. Tây Hồ Hàng Châu·Vườn Tô Châu·hoa Côn Minh."
-        },
-        "summer": {
-          "title": "🌿 Hạ (6-8)",
-          "desc": "Tránh nóng: Bắc Đới Hà/Thanh Đảo. Lễ hội bia·Cáp Nhĩ Tân mát·Trương Gia Giới."
-        },
-        "autumn": {
-          "title": "🍂 Thu (9-11) Tốt nhất!",
-          "desc": "Tốt nhất toàn quốc. Lá đỏ Bắc Kinh·cổ thành Tây An·cảnh Quế Lâm."
-        },
-        "winter": {
-          "title": "❄️ Đông (12-2)",
-          "desc": "Băng Bắc vs nắng Nam. Lễ hội băng Cáp Nhĩ Tân (yêu thích Đông Nam Á)·nhiệt đới Tam Á (yêu thích Nga)."
-        },
-        "sizingTip": "👔 Kích cỡ: CN nhỏ hơn US 1-2 cỡ. US M≈CN L/XL. Uniqlo/ZARA kích cỡ toàn cầu."
-      }
-    }
+    "back": "← Quay lại",
+    "backToCityList": "← Quay lại danh sách thành phố",
+    "tapHint": "Nhấn vào thành phố để xem chi tiết"
   },
   "s10": {
     "meta": {

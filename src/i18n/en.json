@@ -21,7 +21,7 @@
     },
     "buttons": {
       "reset": "🔄 Check Again",
-      "back": "← Back to result",
+      "back": "← Back",
       "details": "📋 Visa Details ▸",
       "expand": "Expand →"
     },
@@ -65,7 +65,8 @@
     "continents": {
       "asiaPacific": "🌏 Asia-Pacific",
       "middleEast": "🏜️ Middle East",
-      "europe": "🌍 Europe",
+      "europeWest": "🏰 Western Europe",
+      "europeEast": "🏛️ Eastern Europe",
       "americas": "🌎 Americas",
       "africa": "🌍 Africa",
       "other": "🌐 Other"
@@ -79,9 +80,6 @@
     },
     "kicker": "What to Sort Before You Fly",
     "intro": "Before you fly, make sure you have these essentials ready. Tap each item for details.",
-    "detail": {
-      "back": "Back"
-    },
     "passport": {
       "label": "Passport",
       "title": "Passport Requirements",
@@ -131,7 +129,8 @@
         "Travel insurance: policy number saved, emergency contact number noted."
       ],
       "sub": "7-item checklist before boarding"
-    }
+    },
+    "back": "Back"
   },
   "s3": {
     "meta": {
@@ -139,66 +138,49 @@
       "sub": "Flow+customs+registration. Under 14 / over 70 fingerprint exempt."
     },
     "steps": {
-      "label": "Immigration",
-      "desc": "<strong>① Health Check</strong> — temperature scan, health declaration QR (fill online before landing)<br><strong>② Fingerprint</strong> — all foreigners aged 14-70 (exempt: under 14 / over 70)<br><strong>③ Border Control</strong> — present passport, visa, arrival card; photo taken<br><strong>④ Baggage Claim</strong> — check flight carousel number on screens<br><strong>⑤ Customs</strong> — Green channel (nothing to declare) or Red channel (goods to declare)<br><strong>⑥ Arrival Hall</strong> — exit to taxi stand, metro, or airport bus<br><a class=\"card-link\" href=\"https://en.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">NIA Official Site →</a>",
-      "sub": "6-step process at border control"
+      "title": "Immigration — 6 Steps",
+      "steps": [
+        "Health Check: Temperature scan. Show health declaration QR.",
+        "Fingerprint: All foreigners 14-70. Under 14 / over 70 exempt.",
+        "Border Control: Passport + visa + arrival card. Photo taken.",
+        "Baggage Claim: Check screens for carousel number.",
+        "Customs: Green (nothing to declare) or Red channel.",
+        "Arrival Hall: Taxi, metro, airport bus, ride-hailing."
+      ],
+      "linkUrl": "https://en.nia.gov.cn",
+      "linkLabel": "NIA Official Site"
     },
     "customs": {
-      "label": "Customs",
-      "desc": "<strong>Cash</strong>: ≤$5,000 (or foreign currency equivalent) — declare if exceeding<br><strong>Alcohol</strong>: ≤1.5L (liquor/wine/beer combined)<br><strong>Cigarettes</strong>: ≤400 sticks (2 cartons)<br><strong>Rx Medication</strong>: carry doctor's note + prescription; declare controlled substances<br><strong>🟢 Green Channel</strong>: nothing to declare — walk through<br><strong>🔴 Red Channel</strong>: goods exceeding duty-free limits — submit declaration form<br><strong>⛔ Banned</strong>: weapons, drugs, ivory, endangered species products, fresh fruit/plants<br><a class=\"card-link\" href=\"https://www.customs.gov.cn\" target=\"_blank\" rel=\"noopener\">China Customs →</a>",
-      "sub": "Duty-free limits & restricted items"
+      "title": "Customs Rules",
+      "steps": [
+        "Cash: Up to $5,000 USD. Declare if exceeding.",
+        "Alcohol: 1.5L total.",
+        "Cigarettes: 400 sticks (2 cartons).",
+        "Electronics: Personal fine. Gifts >5000Y should declare.",
+        "Rx Medication: Doctor note + prescription required.",
+        "Prohibited: Weapons, drugs, ivory, fresh fruit/plants.",
+        "Green Channel: Nothing to declare.",
+        "Red Channel: Goods exceed limits. Fill declaration form."
+      ],
+      "linkUrl": "https://www.customs.gov.cn",
+      "linkLabel": "China Customs"
     },
     "registration": {
-      "label": "Registration",
-      "desc": "<strong>Hotels</strong>: front desk registers you automatically — just hand over your passport at check-in<br><strong>Private Residence</strong>: must register at <strong>local police station</strong> within 24 hours of arrival<br><strong>Online Registration (7 pilot cities)</strong>: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen — use NIA platform or 12367 APP<br><strong>Documents needed</strong>: passport, valid visa, lease contract or host's Chinese ID copy<br><strong>Legal basis</strong>: Exit-Entry Administration Law Art.39 — registration within 24h is mandatory<br><strong>Re-register</strong> if you move to a new address or change cities<br><a class=\"card-link\" href=\"https://s.nia.gov.cn\" target=\"_blank\" rel=\"noopener\">NIA Online Registration →</a> ",
-      "sub": "Hotel / police station / online"
-    },
-    "detail": {
-      "back": "Back",
-      "steps": {
-        "title": "Immigration — 6 Steps",
-        "steps": [
-          "Health Check: Temperature scan. Show health declaration QR.",
-          "Fingerprint: All foreigners 14-70. Under 14 / over 70 exempt.",
-          "Border Control: Passport + visa + arrival card. Photo taken.",
-          "Baggage Claim: Check screens for carousel number.",
-          "Customs: Green (nothing to declare) or Red channel.",
-          "Arrival Hall: Taxi, metro, airport bus, ride-hailing."
-        ],
-        "linkUrl": "https://en.nia.gov.cn",
-        "linkLabel": "NIA Official Site"
-      },
-      "customs": {
-        "title": "Customs Rules",
-        "steps": [
-          "Cash: Up to $5,000 USD. Declare if exceeding.",
-          "Alcohol: 1.5L total.",
-          "Cigarettes: 400 sticks (2 cartons).",
-          "Electronics: Personal fine. Gifts >5000Y should declare.",
-          "Rx Medication: Doctor note + prescription required.",
-          "Prohibited: Weapons, drugs, ivory, fresh fruit/plants.",
-          "Green Channel: Nothing to declare.",
-          "Red Channel: Goods exceed limits. Fill declaration form."
-        ],
-        "linkUrl": "https://www.customs.gov.cn",
-        "linkLabel": "China Customs"
-      },
-      "registration": {
-        "title": "Accommodation Registration",
-        "steps": [
-          "Hotels: Automatic at check-in with passport.",
-          "Private: Go to police station within 24h.",
-          "Online (7 cities): Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.",
-          "Legal: Exit-Entry Law Art.39 — mandatory.",
-          "Re-register when moving address/city.",
-          "12367 hotline: 24/7 multi-language."
-        ],
-        "linkUrl": "https://s.nia.gov.cn",
-        "linkLabel": "NIA Registration"
-      }
+      "title": "Accommodation Registration",
+      "steps": [
+        "Hotels: Automatic at check-in with passport.",
+        "Private: Go to police station within 24h.",
+        "Online (7 cities): Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.",
+        "Legal: Exit-Entry Law Art.39 — mandatory.",
+        "Re-register when moving address/city.",
+        "12367 hotline: 24/7 multi-language."
+      ],
+      "linkUrl": "https://s.nia.gov.cn",
+      "linkLabel": "NIA Registration"
     },
     "kicker": "From Tarmac to Taxi in 6 Steps",
-    "intro": "Landing in China? Tap to learn about immigration, customs, and registration."
+    "intro": "Landing in China? Tap to learn about immigration, customs, and registration.",
+    "back": "Back"
   },
   "s4": {
     "meta": {
@@ -206,75 +188,50 @@
       "sub": "Google/WA/IG blocked. Priority: get online."
     },
     "esim": {
-      "label": "eSIM",
-      "title": "eSIM",
-      "desc": "<strong>Airalo</strong> — global eSIM marketplace, China data from $5<br><strong>Holafly</strong> — unlimited data, China from $19<br><strong>Nomad</strong> — budget eSIM, China from $4<br>Buy & install <strong>before departure</strong> — connects on landing<br><strong>⚠️ Note</strong>: data only, no Chinese phone number (can't register some apps like Meituan)<br><a class=\"card-link\" href=\"https://www.airalo.com\" target=\"_blank\" rel=\"noopener\">Airalo →</a> <a class=\"card-link\" href=\"https://holafly.com\" target=\"_blank\" rel=\"noopener\">Holafly →</a>",
-      "sub": "Buy before flying, data from $4"
+      "title": "eSIM — Buy Before You Fly",
+      "steps": [
+        "Airalo: China from $5 (1GB/7 days).",
+        "Holafly: Unlimited data, China from $19.",
+        "Nomad: Budget, China from $4.",
+        "Buy & install BEFORE departure.",
+        "Note: Data only, no phone number."
+      ]
     },
     "sim": {
-      "label": "CN SIM",
-      "title": "CN SIM",
-      "desc": "<strong>China Mobile / China Unicom / China Telecom</strong><br>Kiosks in airport arrival halls (before exiting to transport)<br><strong>Required</strong>: original passport (not a copy)<br><strong>Tourist plans</strong>: ¥29-99/month — includes data + domestic calls + texts<br><strong>Tip</strong>: get a local number first, then use it to register Alipay, WeChat, DiDi, Meituan<br><strong>eSIM tourist option</strong>: some carriers offer short-term tourist eSIMs — ask at the kiosk",
-      "sub": "Airport kiosk, 29-99 yuan/month"
+      "title": "China SIM Card",
+      "steps": [
+        "Airport arrival hall kiosks (Mobile/Unicom/Telecom).",
+        "Need: Original passport.",
+        "Plans: 29-99Y/month. Data + calls + SMS.",
+        "Get number -> register Alipay/WeChat/DiDi.",
+        "Keep home SIM for SMS verification."
+      ]
     },
     "vpn": {
-      "label": "VPN",
-      "title": "Install Early",
-      "desc": "<strong>Mullvad</strong> — open-source, €5/month, no logs, WireGuard<br><strong>Astrill</strong> — optimized for China users, ~$15-30/month, multiple protocols<br><strong>⚠️ Install + subscribe BEFORE arriving</strong> — VPN provider websites are blocked inside China<br><strong>Keep 2 protocols</strong>: WireGuard (fast, primary) + OpenVPN/StealthVPN (backup)<br><a class=\"card-link\" href=\"https://mullvad.net\" target=\"_blank\" rel=\"noopener\">Mullvad →</a> <a class=\"card-link\" href=\"https://www.astrill.com\" target=\"_blank\" rel=\"noopener\">Astrill →</a>",
-      "sub": "Install before arriving - critical"
+      "title": "VPN — Install Before Arriving",
+      "steps": [
+        "Mullvad: 5EUR/month. Open-source. WireGuard.",
+        "Astrill: $15-30/month. China-optimized.",
+        "Install + pay BEFORE arriving.",
+        "Keep 2 protocols: WireGuard + fallback.",
+        "Test before departure."
+      ]
     },
     "blocked": {
-      "label": "Blocked",
-      "desc": "🚫 <strong>Blocked</strong>: Google, Gmail, Maps, YouTube, WhatsApp, Instagram, Facebook, X/Twitter, Dropbox, LINE<br>✅ <strong>Works without VPN</strong>: iCloud, Slack, Zoom, Microsoft Teams, Outlook<br>🔄 <strong>Chinese alternatives</strong>:<br><a class=\"card-link\" href=\"https://www.xiaohongshu.com\" target=\"_blank\" rel=\"noopener\">Xiaohongshu (Insta alt) →</a><br><a class=\"card-link\" href=\"https://weibo.com\" target=\"_blank\" rel=\"noopener\">Weibo (Twitter alt) →</a><br><a class=\"card-link\" href=\"https://www.bilibili.com\" target=\"_blank\" rel=\"noopener\">Bilibili (YouTube alt) →</a><br><a class=\"card-link\" href=\"https://www.amap.com\" target=\"_blank\" rel=\"noopener\">Amap (Google Maps alt) →</a>",
-      "sub": "What is blocked & alternatives"
-    },
-    "detail": {
-      "back": "Back",
-      "esim": {
-        "title": "eSIM — Buy Before You Fly",
-        "steps": [
-          "Airalo: China from $5 (1GB/7 days).",
-          "Holafly: Unlimited data, China from $19.",
-          "Nomad: Budget, China from $4.",
-          "Buy & install BEFORE departure.",
-          "Note: Data only, no phone number."
-        ]
-      },
-      "sim": {
-        "title": "China SIM Card",
-        "steps": [
-          "Airport arrival hall kiosks (Mobile/Unicom/Telecom).",
-          "Need: Original passport.",
-          "Plans: 29-99Y/month. Data + calls + SMS.",
-          "Get number -> register Alipay/WeChat/DiDi.",
-          "Keep home SIM for SMS verification."
-        ]
-      },
-      "vpn": {
-        "title": "VPN — Install Before Arriving",
-        "steps": [
-          "Mullvad: 5EUR/month. Open-source. WireGuard.",
-          "Astrill: $15-30/month. China-optimized.",
-          "Install + pay BEFORE arriving.",
-          "Keep 2 protocols: WireGuard + fallback.",
-          "Test before departure."
-        ]
-      },
-      "blocked": {
-        "title": "Blocked Services & Alternatives",
-        "steps": [
-          "Blocked: Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE.",
-          "Works: iCloud, Slack, Zoom, Teams, Outlook.",
-          "Maps -> Amap/Baidu Maps.",
-          "Instagram -> Xiaohongshu.",
-          "Twitter/X -> Weibo.",
-          "YouTube -> Bilibili.",
-          "WhatsApp -> WeChat."
-        ]
-      }
+      "title": "Blocked Services & Alternatives",
+      "steps": [
+        "Blocked: Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE.",
+        "Works: iCloud, Slack, Zoom, Teams, Outlook.",
+        "Maps -> Amap/Baidu Maps.",
+        "Instagram -> Xiaohongshu.",
+        "Twitter/X -> Weibo.",
+        "YouTube -> Bilibili.",
+        "WhatsApp -> WeChat."
+      ]
     },
     "kicker": "Stay Online Behind the Firewall",
-    "intro": "Google, WhatsApp, Instagram blocked. Get connected before you land."
+    "intro": "Google, WhatsApp, Instagram blocked. Get connected before you land.",
+    "back": "Back"
   },
   "s5": {
     "meta": {
@@ -287,9 +244,6 @@
     "stat2": "no fee per transaction",
     "stat3": "apps cover 95%+ of scenarios",
     "backup": "<strong>💡 Backup</strong><span>Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one payment app fails, try the other.</span>",
-    "detail": {
-      "back": "Back to Payment"
-    },
     "alipay": {
       "title": "Alipay Setup Guide",
       "steps": [
@@ -332,75 +286,58 @@
           "url": "https://www.wechat.com"
         }
       ]
-    }
+    },
+    "back": "Back to Payment"
   },
   "s6": {
     "kicker": "Navigate China Like a Local",
     "intro": "Getting around, eating well, and finding a place to stay. Tap each item for practical tips.",
-    "detail": {
-      "back": "Back",
-      "transport": {
-        "title": "Getting Around",
-        "steps": [
-          "DiDi: Ride-hailing built into Alipay. English UI. Pay with linked foreign card.",
-          "Metro: Use Alipay transport QR code at gates. 40+ cities. No ticket machine needed.",
-          "HSR (High-Speed Rail): Book at 12306.cn/en. Foreign cards accepted.",
-          "Shared Bikes: Scan with Alipay/Meituan. 1.5-3Y/ride. No deposit for most.",
-          "Tip: Alipay mini-programs handle DiDi, metro, bikes, trains — one app."
-        ]
-      },
-      "food": {
-        "title": "Dining Out",
-        "steps": [
-          "Dianping: Restaurant reviews, photos, ratings. Search by area or cuisine.",
-          "WeChat Scan > Translate: Point camera at Chinese menu, auto-translates.",
-          "Meituan / Ele.me: Food delivery to your hotel (like Uber Eats).",
-          "Halal: Look for halal sign or Lanzhou beef noodle chains.",
-          "Vegetarian: Say chun su (pure vegan). Watch for meat broth.",
-          "Allergy: Carry a bilingual allergy card. Show to staff."
-        ]
-      },
-      "accommodation": {
-        "title": "Where to Stay",
-        "steps": [
-          "Trip.com / Booking.com: Filter accepts foreign guests. Not all hotels can host foreigners.",
-          "Airbnb: Stopped China operations. Use Tujia instead.",
-          "Foreign Guest Qualification: Chinese hotels need a special license. Budget hotels may turn you away.",
-          "Foreigner-friendly chains: Marriott, Hilton, IHG, Hyatt, Jin Jiang.",
-          "If turned away: Call 12367 for help finding compliant accommodation."
-        ]
-      },
-      "clothing": {
-        "title": "What to Wear",
-        "steps": [
-          "Sizing: China sizes 1-2 smaller than US/EU. US M = CN L/XL.",
-          "Spring (Mar-May): 10-22C. Light jacket + layers.",
-          "Summer (Jun-Aug): 28-38C hot humid. Breathable fabrics, sunscreen, umbrella.",
-          "Autumn (Sep-Nov): 10-25C. Best season. Light sweater.",
-          "Winter (Dec-Feb): North -10C heavy coat. South 0-10C damp cold, layers work best."
-        ]
-      }
-    },
     "transport": {
-      "label": "Transport",
-      "sub": "DiDi, metro, high-speed rail"
+      "title": "Getting Around",
+      "steps": [
+        "DiDi: Ride-hailing built into Alipay. English UI. Pay with linked foreign card.",
+        "Metro: Use Alipay transport QR code at gates. 40+ cities. No ticket machine needed.",
+        "HSR (High-Speed Rail): Book at 12306.cn/en. Foreign cards accepted.",
+        "Shared Bikes: Scan with Alipay/Meituan. 1.5-3Y/ride. No deposit for most.",
+        "Tip: Alipay mini-programs handle DiDi, metro, bikes, trains — one app."
+      ]
     },
     "food": {
-      "label": "Dining",
-      "sub": "Order in Chinese, dietary tips"
+      "title": "Dining Out",
+      "steps": [
+        "Dianping: Restaurant reviews, photos, ratings. Search by area or cuisine.",
+        "WeChat Scan > Translate: Point camera at Chinese menu, auto-translates.",
+        "Meituan / Ele.me: Food delivery to your hotel (like Uber Eats).",
+        "Halal: Look for halal sign or Lanzhou beef noodle chains.",
+        "Vegetarian: Say chun su (pure vegan). Watch for meat broth.",
+        "Allergy: Carry a bilingual allergy card. Show to staff."
+      ]
     },
     "accommodation": {
-      "label": "Stay",
-      "sub": "Booking, registration, tips"
+      "title": "Where to Stay",
+      "steps": [
+        "Trip.com / Booking.com: Filter accepts foreign guests. Not all hotels can host foreigners.",
+        "Airbnb: Stopped China operations. Use Tujia instead.",
+        "Foreign Guest Qualification: Chinese hotels need a special license. Budget hotels may turn you away.",
+        "Foreigner-friendly chains: Marriott, Hilton, IHG, Hyatt, Jin Jiang.",
+        "If turned away: Call 12367 for help finding compliant accommodation."
+      ]
     },
     "clothing": {
-      "label": "Clothing",
-      "sub": "Sizes, seasons, what to pack"
+      "title": "What to Wear",
+      "steps": [
+        "Sizing: China sizes 1-2 smaller than US/EU. US M = CN L/XL.",
+        "Spring (Mar-May): 10-22C. Light jacket + layers.",
+        "Summer (Jun-Aug): 28-38C hot humid. Breathable fabrics, sunscreen, umbrella.",
+        "Autumn (Sep-Nov): 10-25C. Best season. Light sweater.",
+        "Winter (Dec-Feb): North -10C heavy coat. South 0-10C damp cold, layers work best."
+      ]
     },
     "meta": {
       "title": "Eat · Move · Stay",
       "sub": ""
-    }
+    },
+    "back": "Back"
   },
   "s7": {
     "meta": {
@@ -408,107 +345,90 @@
       "sub": "850+ institutions across 57 cities. Tap cards for details."
     },
     "hospital": {
-      "label": "🏥 Hospitals",
-      "title": "Intl Hospitals & Meds",
-      "desc": "Major city hospitals, trilingual meds list, travel insurance"
+      "title": "🏥 International Medical Services",
+      "intro": "850+ institutions across 57 cities. 1.28M international patients in 2025 (+73.6%).",
+      "sectionHospitals": "International Hospitals",
+      "colCity": "City",
+      "colHospital": "Hospital",
+      "colNote": "Note",
+      "shanghaiName": "Huashan / Jiahui",
+      "shanghaiNote": "90+ countries",
+      "beijingName": "PUMCH / UFH",
+      "beijingNote": "Intl dept ¥600-1200",
+      "guangzhouName": "SYSU 1st / Clifford",
+      "guangzhouNote": "25 pilot hospitals",
+      "tianjinName": "Pengruili",
+      "tianjinNote": "Foreign-owned tertiary",
+      "hainanName": "Lecheng Pilot Zone",
+      "hainanNote": "Intl drugs/devices",
+      "sectionMeds": "Common Meds (CN/EN/RU)",
+      "colCn": "CN",
+      "colUse": "Use",
+      "medIbuprofenUse": "Pain/Fever",
+      "medAmoxicillinUse": "Antibiotic(Rx)",
+      "medLoperamideUse": "Anti-diarrheal",
+      "medLoratadineUse": "Antihistamine",
+      "medOmeprazoleUse": "Acid reflux",
+      "insuranceWarning": "⚠️ Buy Travel Insurance",
+      "insuranceDetail": "Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa."
     },
     "big3": {
-      "label": "🦷👁️🌿 Medical Tourism",
-      "title": "Dental·Eye·TCM",
-      "desc": "Implants <¥5K, glasses same-day, acupuncture & massage. #1 for Russians."
+      "title": "🦷👁️🌿 Medical \"Big Three\"",
+      "sectionDental": "🦷 Dental",
+      "colItem": "Item",
+      "colChinaPrice": "China",
+      "colUsEuPrice": "US/EU",
+      "dental_cleaning": "Cleaning",
+      "dental_cleaning_cn": "¥200-500",
+      "dental_cleaning_us": "$100-200",
+      "dental_filling": "Filling",
+      "dental_filling_cn": "¥300-800",
+      "dental_filling_us": "$150-400",
+      "dental_root": "Root Canal",
+      "dental_root_cn": "¥1,500-3,000",
+      "dental_root_us": "$800-1,500",
+      "dental_implant": "Dental Implant",
+      "dental_implant_cn": "¥5,000-15,000",
+      "dental_implant_us": "$3,000-6,000",
+      "dental_crown": "Cosmetic Crown",
+      "dental_crown_cn": "¥2,000-5,000",
+      "dental_crown_us": "$1,000-2,500",
+      "dentalNote": "💡 Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
+      "dentalClinics": "🏥 Recommended Clinics",
+      "dentalClinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service.",
+      "sectionEye": "👁️ Ophthalmology",
+      "eyeDesc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide).",
+      "sectionTcm": "🌿 TCM Therapy (#1 Russian request)",
+      "colTherapy": "Therapy",
+      "colDescription": "Description",
+      "colPrice": "Price",
+      "tcm_acupuncture": "Acupuncture",
+      "tcm_acupuncture_desc": "Neck/Back/Shoulder",
+      "tcm_acupuncture_price": "¥100-300/sess",
+      "tcm_tuina": "Tuina Massage",
+      "tcm_tuina_desc": "Meridian massage",
+      "tcm_tuina_price": "¥150-400/sess",
+      "tcm_bonesetting": "Bone-Setting",
+      "tcm_bonesetting_desc": "Orthopedic reset",
+      "tcm_bonesetting_price": "¥200-500/sess",
+      "tcm_cupping": "Cupping",
+      "tcm_cupping_desc": "Detox & moisture",
+      "tcm_cupping_price": "¥50-150/sess",
+      "tcm_herbal": "Herbal Medicine",
+      "tcm_herbal_desc": "Personalized formula",
+      "tcm_herbal_price": "¥100-500/dose",
+      "tcmHotspots": "📍 TCM Hotspots",
+      "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
     },
     "checkup": {
-      "label": "📋 Checkup",
-      "title": "Executive Checkup",
-      "desc": "¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit."
+      "title": "📋 Health Checkup",
+      "intro": "Major hospitals offer executive checkups, ¥2K-10K+. Some 24h reports. No overnight stay, half-day visit.",
+      "recommended": "<strong>Recommended:</strong> PUMCH Intl, Huashan Intl, Jiahui Intl",
+      "warning": "⚠️ Note",
+      "warningDetail": "Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications."
     },
-    "detail": {
-      "back": "← Back",
-      "hospital": {
-        "title": "🏥 International Medical Services",
-        "intro": "850+ institutions across 57 cities. 1.28M international patients in 2025 (+73.6%).",
-        "sectionHospitals": "International Hospitals",
-        "colCity": "City",
-        "colHospital": "Hospital",
-        "colNote": "Note",
-        "shanghaiName": "Huashan / Jiahui",
-        "shanghaiNote": "90+ countries",
-        "beijingName": "PUMCH / UFH",
-        "beijingNote": "Intl dept ¥600-1200",
-        "guangzhouName": "SYSU 1st / Clifford",
-        "guangzhouNote": "25 pilot hospitals",
-        "tianjinName": "Pengruili",
-        "tianjinNote": "Foreign-owned tertiary",
-        "hainanName": "Lecheng Pilot Zone",
-        "hainanNote": "Intl drugs/devices",
-        "sectionMeds": "Common Meds (CN/EN/RU)",
-        "colCn": "CN",
-        "colUse": "Use",
-        "medIbuprofenUse": "Pain/Fever",
-        "medAmoxicillinUse": "Antibiotic(Rx)",
-        "medLoperamideUse": "Anti-diarrheal",
-        "medLoratadineUse": "Antihistamine",
-        "medOmeprazoleUse": "Acid reflux",
-        "insuranceWarning": "⚠️ Buy Travel Insurance",
-        "insuranceDetail": "Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa."
-      },
-      "big3": {
-        "title": "🦷👁️🌿 Medical \"Big Three\"",
-        "sectionDental": "🦷 Dental",
-        "colItem": "Item",
-        "colChinaPrice": "China",
-        "colUsEuPrice": "US/EU",
-        "dental_cleaning": "Cleaning",
-        "dental_cleaning_cn": "¥200-500",
-        "dental_cleaning_us": "$100-200",
-        "dental_filling": "Filling",
-        "dental_filling_cn": "¥300-800",
-        "dental_filling_us": "$150-400",
-        "dental_root": "Root Canal",
-        "dental_root_cn": "¥1,500-3,000",
-        "dental_root_us": "$800-1,500",
-        "dental_implant": "Dental Implant",
-        "dental_implant_cn": "¥5,000-15,000",
-        "dental_implant_us": "$3,000-6,000",
-        "dental_crown": "Cosmetic Crown",
-        "dental_crown_cn": "¥2,000-5,000",
-        "dental_crown_us": "$1,000-2,500",
-        "dentalNote": "💡 Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
-        "dentalClinics": "🏥 Recommended Clinics",
-        "dentalClinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service.",
-        "sectionEye": "👁️ Ophthalmology",
-        "eyeDesc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide).",
-        "sectionTcm": "🌿 TCM Therapy (#1 Russian request)",
-        "colTherapy": "Therapy",
-        "colDescription": "Description",
-        "colPrice": "Price",
-        "tcm_acupuncture": "Acupuncture",
-        "tcm_acupuncture_desc": "Neck/Back/Shoulder",
-        "tcm_acupuncture_price": "¥100-300/sess",
-        "tcm_tuina": "Tuina Massage",
-        "tcm_tuina_desc": "Meridian massage",
-        "tcm_tuina_price": "¥150-400/sess",
-        "tcm_bonesetting": "Bone-Setting",
-        "tcm_bonesetting_desc": "Orthopedic reset",
-        "tcm_bonesetting_price": "¥200-500/sess",
-        "tcm_cupping": "Cupping",
-        "tcm_cupping_desc": "Detox & moisture",
-        "tcm_cupping_price": "¥50-150/sess",
-        "tcm_herbal": "Herbal Medicine",
-        "tcm_herbal_desc": "Personalized formula",
-        "tcm_herbal_price": "¥100-500/dose",
-        "tcmHotspots": "📍 TCM Hotspots",
-        "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
-      },
-      "checkup": {
-        "title": "📋 Health Checkup",
-        "intro": "Major hospitals offer executive checkups, ¥2K-10K+. Some 24h reports. No overnight stay, half-day visit.",
-        "recommended": "<strong>Recommended:</strong> PUMCH Intl, Huashan Intl, Jiahui Intl",
-        "warning": "⚠️ Note",
-        "warningDetail": "Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications."
-      }
-    },
-    "kicker": "World-Class Care, Fraction of the Cost"
+    "kicker": "World-Class Care, Fraction of the Cost",
+    "back": "← Back"
   },
   "s8": {
     "meta": {
@@ -516,110 +436,88 @@
       "sub": "Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund."
     },
     "electronics": {
-      "label": "📱 Electronics",
-      "title": "Foldables·Drones·AI Glasses",
-      "desc": "Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices."
+      "title": "📱 Electronics & Gadgets",
+      "colCategory": "Category",
+      "colWhy": "Why Buy",
+      "colPrice": "Price",
+      "foldable": "Foldable Phone",
+      "foldable_why": "Chinese brands lead globally",
+      "drone": "Drone",
+      "drone_why": "DJI dominates globally",
+      "ai_glasses": "AI Glasses",
+      "ai_glasses_why": "New category,China-first",
+      "translator": "Smart Translator",
+      "translator_why": "100+ languages real-time",
+      "earbuds": "TWS Earbuds",
+      "earbuds_why": "Great value",
+      "whereToBuy": "📍 Where to Buy",
+      "whereToBuyDetail": "SZ Huaqiangbei—\"China Electronics Street\",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—\"World Supermarket\",one-stop.",
+      "foldable_price": "¥5,000-15,000",
+      "drone_price": "¥2,000-8,000",
+      "ai_glasses_price": "¥1,500-3,000",
+      "translator_price": "¥300-1,500",
+      "earbuds_price": "¥100-500"
     },
     "souvenirs": {
-      "label": "🎨 Souvenirs",
-      "title": "Palace Museum·Craft·Local",
-      "desc": "Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo."
+      "title": "🎨 Cultural Souvenirs",
+      "colCity": "City",
+      "colItem": "Item",
+      "beijing_item": "Forbidden City fridge magnets",
+      "chengdu_item": "Panda brocade crafts·Kuanzhai gifts",
+      "xian_item": "Plush \"Roujiamo\"·Terracotta souvenirs",
+      "chongqing_item": "Brass ornaments·Hongyadong crafts",
+      "guizhou_item": "Indigo scarves·Silver magnets·Ethnic keychains",
+      "tip": "💡 Cultural shops cluster near scenic spots and heritage streets"
     },
     "taxrefund": {
-      "label": "💰 Tax Refund",
-      "title": "Rules·Process·Instant",
-      "desc": "≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund."
+      "title": "💰 Tax Refund Guide",
+      "stats": "📊 12,252 refund stores nationwide. +305% refund travelers in 2025.",
+      "sectionRequirements": "Requirements",
+      "reqStay": "Foreign visitor, stay ≤183 days",
+      "reqAmount": "Same store same day ≥¥500",
+      "reqDeparture": "Departure ≤90 days from purchase",
+      "reqCarry": "Carry items (do NOT check in)",
+      "sectionProcess": "Process",
+      "stepInvoice": "Ask for \"Tax Refund Application\" + invoice",
+      "stepCustoms": "Customs verification (show goods+passport+docs)",
+      "stepCollect": "Collect refund (cash/card/Alipay)",
+      "instantRefundTitle": "💡 Instant Refund",
+      "instantRefundDetail": "7,000+ stores: deduct at purchase, no airport queue. Shanghai city-wide. Hainan duty-free."
     },
     "cityshops": {
-      "label": "🗺️ City Guide",
-      "title": "Shopping by City",
-      "desc": "SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing"
-    },
-    "detail": {
-      "back": "← Back",
-      "electronics": {
-        "title": "📱 Electronics & Gadgets",
-        "colCategory": "Category",
-        "colWhy": "Why Buy",
-        "colPrice": "Price",
-        "foldable": "Foldable Phone",
-        "foldable_why": "Chinese brands lead globally",
-        "drone": "Drone",
-        "drone_why": "DJI dominates globally",
-        "ai_glasses": "AI Glasses",
-        "ai_glasses_why": "New category,China-first",
-        "translator": "Smart Translator",
-        "translator_why": "100+ languages real-time",
-        "earbuds": "TWS Earbuds",
-        "earbuds_why": "Great value",
-        "whereToBuy": "📍 Where to Buy",
-        "whereToBuyDetail": "SZ Huaqiangbei—\"China Electronics Street\",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—\"World Supermarket\",one-stop.",
-        "foldable_price": "¥5,000-15,000",
-        "drone_price": "¥2,000-8,000",
-        "ai_glasses_price": "¥1,500-3,000",
-        "translator_price": "¥300-1,500",
-        "earbuds_price": "¥100-500"
-      },
-      "souvenirs": {
-        "title": "🎨 Cultural Souvenirs",
-        "colCity": "City",
-        "colItem": "Item",
-        "beijing_item": "Forbidden City fridge magnets",
-        "chengdu_item": "Panda brocade crafts·Kuanzhai gifts",
-        "xian_item": "Plush \"Roujiamo\"·Terracotta souvenirs",
-        "chongqing_item": "Brass ornaments·Hongyadong crafts",
-        "guizhou_item": "Indigo scarves·Silver magnets·Ethnic keychains",
-        "tip": "💡 Cultural shops cluster near scenic spots and heritage streets"
-      },
-      "taxrefund": {
-        "title": "💰 Tax Refund Guide",
-        "stats": "📊 12,252 refund stores nationwide. +305% refund travelers in 2025.",
-        "sectionRequirements": "Requirements",
-        "reqStay": "Foreign visitor, stay ≤183 days",
-        "reqAmount": "Same store same day ≥¥500",
-        "reqDeparture": "Departure ≤90 days from purchase",
-        "reqCarry": "Carry items (do NOT check in)",
-        "sectionProcess": "Process",
-        "stepInvoice": "Ask for \"Tax Refund Application\" + invoice",
-        "stepCustoms": "Customs verification (show goods+passport+docs)",
-        "stepCollect": "Collect refund (cash/card/Alipay)",
-        "instantRefundTitle": "💡 Instant Refund",
-        "instantRefundDetail": "7,000+ stores: deduct at purchase, no airport queue. Shanghai city-wide. Hainan duty-free."
-      },
-      "cityshops": {
-        "title": "🗺️ City Shopping Guide",
-        "tapHint": "Tap a city for details",
-        "backToCityGuide": "← Back to City Guide",
-        "cities": {
-          "shenzhen": {
-            "name": "Shenzhen·Huaqiangbei",
-            "subtitle": "China Electronics Street",
-            "desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable."
-          },
-          "shanghai": {
-            "name": "Shanghai·Fabric Market",
-            "subtitle": "Qipao & Suit Tailoring",
-            "desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted."
-          },
-          "yiwu": {
-            "name": "Yiwu·Trade City",
-            "subtitle": "World Supermarket",
-            "desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards."
-          },
-          "sanya": {
-            "name": "Sanya·Duty Free Mall",
-            "subtitle": "Offshore Duty-Free",
-            "desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min."
-          },
-          "beijing": {
-            "name": "Beijing·Wangfujing",
-            "subtitle": "Flagship·Heritage",
-            "desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund."
-          }
+      "title": "🗺️ City Shopping Guide",
+      "tapHint": "Tap a city for details",
+      "backToCityGuide": "← Back to City Guide",
+      "cities": {
+        "shenzhen": {
+          "name": "Shenzhen·Huaqiangbei",
+          "subtitle": "China Electronics Street",
+          "desc": "\"China Electronics Street\",35 specialized markets. Categories: phones, accessories, drones, wearables. Multilingual signs+intl cards+tax refund. Metro Line 1 Huaqiang Rd. Tip: compare prices, some markets negotiable."
+        },
+        "shanghai": {
+          "name": "Shanghai·Fabric Market",
+          "subtitle": "Qipao & Suit Tailoring",
+          "desc": "South Bund Fabric Market etc. Custom qipao & suits, measured on-site. ¥300-2,000+, 2-3 day turnaround. Intl cards accepted."
+        },
+        "yiwu": {
+          "name": "Yiwu·Trade City",
+          "subtitle": "World Supermarket",
+          "desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards."
+        },
+        "sanya": {
+          "name": "Sanya·Duty Free Mall",
+          "subtitle": "Offshore Duty-Free",
+          "desc": "Offshore & departure duty-free. Full range of intl brands. Policy upgraded 2025. Simple process: register→scan→pay→airport pickup, <3min."
+        },
+        "beijing": {
+          "name": "Beijing·Wangfujing",
+          "subtitle": "Flagship·Heritage",
+          "desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund."
         }
       }
     },
-    "kicker": "Buy the Best + Get Your Tax Back"
+    "kicker": "Buy the Best + Get Your Tax Back",
+    "back": "← Back"
   },
   "s9": {
     "meta": {
@@ -627,53 +525,36 @@
       "sub": "Foreign travelers have explored nearly 500 cities. Tap to discover."
     },
     "top10": {
-      "label": "🏙️ Top 10",
-      "title": "Must-Visit Cities",
-      "desc": "Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao"
+      "title": "🏙️ Top 10 Cities"
     },
     "rising": {
-      "label": "🚀 Rising",
-      "title": "Social Media Stars",
-      "desc": "Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media"
+      "title": "🚀 Rising Star Cities",
+      "subtitle": "Trending destinations on social media"
     },
     "seasons": {
-      "label": "🌍 Seasons",
-      "title": "Best by Season",
-      "desc": "Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&Sanya"
-    },
-    "detail": {
-      "back": "← Back",
-      "backToCityList": "← Back to City List",
-      "tapHint": "Tap a city for details",
-      "top10": {
-        "title": "🏙️ Top 10 Cities"
+      "title": "🌍 Seasonal Picks",
+      "spring": {
+        "title": "🌸 Spring (Mar-May)",
+        "desc": "Mild & pleasant. Hangzhou West Lake·Suzhou Gardens·Kunming flowers."
       },
-      "rising": {
-        "title": "🚀 Rising Star Cities",
-        "subtitle": "Trending destinations on social media"
+      "summer": {
+        "title": "🌿 Summer (Jun-Aug)",
+        "desc": "Escape heat: Beidaihe/Qingdao. Beer Festival·Harbin cool·Zhangjiajie."
       },
-      "seasons": {
-        "title": "🌍 Seasonal Picks",
-        "spring": {
-          "title": "🌸 Spring (Mar-May)",
-          "desc": "Mild & pleasant. Hangzhou West Lake·Suzhou Gardens·Kunming flowers."
-        },
-        "summer": {
-          "title": "🌿 Summer (Jun-Aug)",
-          "desc": "Escape heat: Beidaihe/Qingdao. Beer Festival·Harbin cool·Zhangjiajie."
-        },
-        "autumn": {
-          "title": "🍂 Autumn (Sep-Nov) Best!",
-          "desc": "Best nationwide. Beijing red leaves·Xi'an ancient city·Guilin scenery."
-        },
-        "winter": {
-          "title": "❄️ Winter (Dec-Feb)",
-          "desc": "North ice vs South sun. Harbin Ice Festival(SE Asia fav)·Sanya tropics(Russian fav)."
-        },
-        "sizingTip": "👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
-      }
+      "autumn": {
+        "title": "🍂 Autumn (Sep-Nov) Best!",
+        "desc": "Best nationwide. Beijing red leaves·Xi'an ancient city·Guilin scenery."
+      },
+      "winter": {
+        "title": "❄️ Winter (Dec-Feb)",
+        "desc": "North ice vs South sun. Harbin Ice Festival(SE Asia fav)·Sanya tropics(Russian fav)."
+      },
+      "sizingTip": "👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
     },
-    "kicker": "Nearly 500 Cities Await You"
+    "kicker": "Nearly 500 Cities Await You",
+    "back": "← Back",
+    "backToCityList": "← Back to City List",
+    "tapHint": "Tap a city for details"
   },
   "s10": {
     "meta": {
@@ -683,69 +564,65 @@
     "kicker": "When Things Go Wrong — Who to Call",
     "intro": "Save these numbers. Tap each one to learn when to call and what to expect.",
     "departIntro": "Leaving China? Here is your pre-flight checklist.",
-    "detail": {
-      "back": "Back"
-    },
     "departure": "Departure Checklist",
     "passportWarning": "Lost Passport?",
     "passportWarningDetail": "1) File a police report immediately (call 110). 2) Contact your embassy/consulate for an emergency travel document. 3) Keep a photo of your passport ID page and visa on your phone.",
-    "hotline": {
-      "12367": {
-        "label": "Immigration 24h",
-        "title": "12367 — NIA Immigration Hotline",
-        "steps": [
-          "National Immigration Administration 24/7 hotline.",
-          "Languages: Chinese, English, Russian, Japanese, Korean, and more.",
-          "When to call: Visa questions, registration, overstay, lost passport, entry/exit inquiries.",
-          "Also as mobile APP and WeChat mini-program.",
-          "From abroad: +86-10-12367."
-        ]
-      },
-      "110": {
-        "label": "Police",
-        "title": "110 — Police",
-        "steps": [
-          "Emergency police number (like 911/112).",
-          "When to call: Crime, theft, lost passport, safety threat, traffic accident.",
-          "State your location and need for English-speaking assistance.",
-          "Non-emergency: visit nearest police station for reports.",
-          "After reporting lost passport, get a written police report receipt."
-        ]
-      },
-      "120": {
-        "label": "Ambulance",
-        "title": "120 — Medical Emergency",
-        "steps": [
-          "Emergency medical services.",
-          "When to call: Serious injury, chest pain, breathing difficulty, severe bleeding, unconsciousness.",
-          "Ambulance arrives 10-15 min in cities. Paramedics may have limited English.",
-          "Have ready: location, passport, insurance card, medications list.",
-          "If possible, go directly to an international hospital (see S7)."
-        ]
-      },
-      "119": {
-        "label": "Fire",
-        "title": "119 — Fire Emergency",
-        "steps": [
-          "Fire and rescue services.",
-          "When to call: Fire, gas leak, trapped in elevator, building collapse, flood.",
-          "Give address, what is burning, if anyone is trapped.",
-          "Note fire exit map on hotel room door."
-        ]
-      },
-      "depart": {
-        "label": "Depart",
-        "title": "Departure Checklist",
-        "steps": [
-          "Arrive 2-3 hours early for international check-in, security, tax refund.",
-          "Carry tax refund items in hand luggage. Get customs stamp before checking bags.",
-          "Spend or convert leftover RMB at airport.",
-          "Backup photos to iCloud or USB before leaving (Google Photos blocked).",
-          "Return portable WiFi / collect SIM deposits.",
-          "Keep arrival card stub — may need at exit border control."
-        ]
-      }
-    }
+    "12367": {
+      "label": "Immigration 24h",
+      "title": "12367 — NIA Immigration Hotline",
+      "steps": [
+        "National Immigration Administration 24/7 hotline.",
+        "Languages: Chinese, English, Russian, Japanese, Korean, and more.",
+        "When to call: Visa questions, registration, overstay, lost passport, entry/exit inquiries.",
+        "Also as mobile APP and WeChat mini-program.",
+        "From abroad: +86-10-12367."
+      ]
+    },
+    "110": {
+      "label": "Police",
+      "title": "110 — Police",
+      "steps": [
+        "Emergency police number (like 911/112).",
+        "When to call: Crime, theft, lost passport, safety threat, traffic accident.",
+        "State your location and need for English-speaking assistance.",
+        "Non-emergency: visit nearest police station for reports.",
+        "After reporting lost passport, get a written police report receipt."
+      ]
+    },
+    "120": {
+      "label": "Ambulance",
+      "title": "120 — Medical Emergency",
+      "steps": [
+        "Emergency medical services.",
+        "When to call: Serious injury, chest pain, breathing difficulty, severe bleeding, unconsciousness.",
+        "Ambulance arrives 10-15 min in cities. Paramedics may have limited English.",
+        "Have ready: location, passport, insurance card, medications list.",
+        "If possible, go directly to an international hospital (see S7)."
+      ]
+    },
+    "119": {
+      "label": "Fire",
+      "title": "119 — Fire Emergency",
+      "steps": [
+        "Fire and rescue services.",
+        "When to call: Fire, gas leak, trapped in elevator, building collapse, flood.",
+        "Give address, what is burning, if anyone is trapped.",
+        "Note fire exit map on hotel room door."
+      ]
+    },
+    "depart": {
+      "label": "Depart",
+      "title": "Departure Checklist",
+      "steps": [
+        "Arrive 2-3 hours early for international check-in, security, tax refund.",
+        "Carry tax refund items in hand luggage. Get customs stamp before checking bags.",
+        "Spend or convert leftover RMB at airport.",
+        "Backup photos to iCloud or USB before leaving (Google Photos blocked).",
+        "Return portable WiFi / collect SIM deposits.",
+        "Keep arrival card stub — may need at exit border control."
+      ]
+    },
+    "back": "Back"
   },
   "city": {
     "beijing": {
@@ -1044,9 +921,6 @@
       "title": "Status Transfer",
       "sub": "Already in China on a tourist/student visa? Here are your pathways to a long-term work/residence permit."
     },
-    "detail": {
-      "back": "← Back"
-    },
     "kicker": "Your Route In",
     "intro": "Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process.",
     "pathA": {
@@ -1094,15 +968,13 @@
         "💡 K visa is ideal if you want flexibility — you can freelance, change jobs, or start a company without restarting the visa process. Not for non-STEM fields (finance, marketing, law)."
       ],
       "sub": "Self-sponsored, 5-year multi-entry"
-    }
+    },
+    "back": "← Back"
   },
   "l2": {
     "meta": {
       "title": "Work & Residence",
       "sub": "Two essential documents. New: one-stop online application, ~6 working days average."
-    },
-    "detail": {
-      "back": "← Back"
     },
     "kicker": "Get Permitted",
     "intro": "The two-step process every foreign worker goes through. Since late 2025, a one-stop online portal integrates work permit, residence permit, and social security registration.",
@@ -1138,7 +1010,8 @@
         "⏱ Processing: 5-10 business days. Apply within 30 days of entry. — 💡 The residence permit replaces your visa. Once you have it, you can enter/exit China freely during its validity period."
       ],
       "sub": "Step 2 — Within 30 days of entry"
-    }
+    },
+    "back": "← Back"
   },
   "l3": {
     "meta": {
@@ -1150,9 +1023,6 @@
     "stat1": "mobile payment users in China",
     "stat2": "banks accept foreign passport",
     "stat3": "monthly phone plan from",
-    "detail": {
-      "back": "← Back"
-    },
     "phone": {
       "label": "SIM Card",
       "title": "Chinese Phone Number",
@@ -1180,15 +1050,13 @@
       ],
       "sub": "BOC / ICBC / CMB. Lifts ¥200 limit"
     },
-    "tip": "<strong>💡 Priority order</strong>: Get SIM → open bank account → link to Alipay/WeChat. Without a Chinese phone number, you cannot open a bank account. Without a bank account, your mobile payment features are limited."
+    "tip": "<strong>💡 Priority order</strong>: Get SIM → open bank account → link to Alipay/WeChat. Without a Chinese phone number, you cannot open a bank account. Without a bank account, your mobile payment features are limited.",
+    "back": "← Back"
   },
   "l4": {
     "meta": {
       "title": "Housing",
       "sub": "Where to live, how to rent, and mandatory registration. 7 cities now support online registration."
-    },
-    "detail": {
-      "back": "← Back"
     },
     "kicker": "Find Your Home",
     "intro": "Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.",
@@ -1220,15 +1088,13 @@
         "💡 Since Mar 2026, the 12367 platform supports online registration in 7 pilot cities. This is a game-changer — no more queuing at the police station."
       ],
       "sub": "Mandatory within 24h of moving"
-    }
+    },
+    "back": "← Back"
   },
   "l5": {
     "meta": {
       "title": "Insurance",
       "sub": "Five mandatory insurances + housing fund. Most expats also buy private international coverage."
-    },
-    "detail": {
-      "back": "← Back"
     },
     "kicker": "Stay Covered",
     "intro": "Foreign employees must enroll in all five social insurances within 30 days of work permit issuance. Employer contributions add ~26-37% on top of your gross salary. Most expats also buy supplementary international health insurance.",
@@ -1262,15 +1128,13 @@
         "💡 Some employers provide Cigna/Allianz as part of the expat package. If not, buy individual coverage — one hospital visit without insurance can cost more than a year's premium."
       ],
       "sub": "Cigna · Allianz · Bupa"
-    }
+    },
+    "back": "← Back"
   },
   "l6": {
     "meta": {
       "title": "Drive + School",
       "sub": "Driver's license conversion and international school options for expat families."
-    },
-    "detail": {
-      "back": "← Back"
     },
     "kicker": "Hit the Road, Hit the Books",
     "intro": "Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead.",
@@ -1299,7 +1163,8 @@
         "💡 Pure international schools legally cannot admit Chinese passport holders (except Hong Kong/Macau/Taiwan). If your child holds a Chinese passport, look at bilingual schools or public school international departments."
       ],
       "sub": "International · Bilingual · Public Intl"
-    }
+    },
+    "back": "← Back"
   },
   "l7": {
     "meta": {
@@ -1308,9 +1173,6 @@
     },
     "kicker": "Live Like a Local",
     "intro": "Once you have your phone, bank, and apartment sorted, here's everything you need for daily life — from where to shop to what to eat to how to dress.",
-    "detail": {
-      "back": "← Back"
-    },
     "shopping": {
       "label": "Shopping",
       "title": "Online Shopping & Groceries",
@@ -1360,15 +1222,13 @@
         "<strong>Ride-hailing alternatives</strong>: CaoCao (曹操出行) — premium cars. T3 (T3出行) — backed by state automakers. Both have English support in some cities."
       ],
       "sub": "Metro · DiDi · Shared bikes · HSR"
-    }
+    },
+    "back": "← Back"
   },
   "l8": {
     "meta": {
       "title": "Compliance",
       "sub": "Renewal reminders, overstay consequences, permanent residence pathway, and emergency contacts."
-    },
-    "detail": {
-      "back": "← Back"
     },
     "kicker": "Play by the Rules",
     "intro": "Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires.",
@@ -1398,6 +1258,7 @@
       "hotline119": "Fire",
       "passportWarning": "⚠️ Lost Passport?",
       "passportWarningDetail": "1) File police report immediately (call 110). 2) Contact your embassy for emergency travel document. 3) Keep a photo of your passport and visa on your phone. 4) Transfer residence permit to new passport within 10 days."
-    }
+    },
+    "back": "← Back"
   }
 }

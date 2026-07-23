@@ -6,6 +6,15 @@ let I18N = {};
 let LANG = 'en';
 let _ready = false;
 
+/* Sanitize HTML string — strip <script> and inline event handlers, keep formatting tags */
+function safeHtml(str) {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/<script\b[\s\S]*?<\/script>/gi, '')
+    .replace(/\son\w+\s*=\s*"[^"]*"/gi, '')
+    .replace(/\son\w+\s*=\s*'[^']*'/gi, '');
+}
+
 /* Translate all elements with data-i18n attribute */
 function translateDOM() {
   document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -17,8 +26,8 @@ function translateDOM() {
     const isMissingKey = translation && translation.startsWith('[') && translation.endsWith(']') && !translation.includes(' ');
 
     if (translation && !isMissingKey) {
-      // Use innerHTML to preserve HTML tags like <strong>
-      el.innerHTML = translation;
+      // Use innerHTML to preserve HTML tags like <strong>, sanitized to strip XSS
+      el.innerHTML = safeHtml(translation);
     }
   });
 }
@@ -30,9 +39,9 @@ function refreshUI() {
   const vcR = document.getElementById('vcResult');
   if (vcR && vcR.classList.contains('show') && vcR._lastCountry && typeof showVisaPolicies === 'function') showVisaPolicies(vcR._lastCountry);
   if (typeof currentDetail !== 'undefined' && currentDetail.slide) {
-    const panel = document.getElementById('detail-' + currentDetail.slide);
-    if (panel && panel.classList.contains('active') && typeof renderDetail === 'function') {
-      panel.innerHTML = renderDetail(currentDetail.slide, currentDetail.key, currentDetail.sub);
+    var pd = document.getElementById(currentDetail.slide + 'Detail');
+    if (pd && pd.classList.contains('show') && typeof renderDetail === 'function') {
+      pd.innerHTML = renderDetail(currentDetail.slide, currentDetail.key, currentDetail.sub);
     }
   }
   if (typeof updateVersionSwitchText === 'function') updateVersionSwitchText();
@@ -106,8 +115,8 @@ function t(key) {
   return '[' + key + ']';
 }
 
-/* ta(key) — like t() but returns raw value (for arrays, objects) */
-function ta(key) {
+/* tArray(key) — like t() but returns raw value (for arrays, objects) */
+function tArray(key) {
   if (!_ready) return [];
   let v = _lookup(I18N, key);
   if (v !== undefined) return v;

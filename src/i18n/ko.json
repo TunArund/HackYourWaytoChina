@@ -196,106 +196,89 @@
       "sub": "전국 57개 도시 850+개 기관에서 국제의료 진행. 카드 클릭하여 상세정보 확인."
     },
     "hospital": {
-      "label": "🏥 기초 의료",
-      "title": "국제병원 + 상용 약품",
-      "desc": "전국 주요 도시 국제병원, 약품 중영러 대조, 여행 보험"
+      "title": "🏥 국제 의료 서비스",
+      "intro": "전국 57개 도시, 850+개 기관에서 국제의료 진행. 2025년 128만 국제 환자(+73.6%).",
+      "sectionHospitals": "국제병원",
+      "colCity": "도시",
+      "colHospital": "기관",
+      "colNote": "비고",
+      "shanghaiName": "화산병원 / 자후이 국제",
+      "shanghaiNote": "90+개국 환자",
+      "beijingName": "협화병원 / 허무자",
+      "beijingNote": "국제부 ¥600-1200",
+      "guangzhouName": "중산1원 / 치푸",
+      "guangzhouNote": "25개 시범병원",
+      "tianjinName": "펑루이리 병원",
+      "tianjinNote": "외국자본 3급병원",
+      "hainanName": "보아오 러청 선행구",
+      "hainanNote": "해외 미승인 약품/기기 사용 가능",
+      "sectionMeds": "상용 약품 중영러 대조",
+      "colCn": "중국어",
+      "colUse": "용도",
+      "medIbuprofenUse": "진통/해열",
+      "medAmoxicillinUse": "항생제(처방)",
+      "medLoperamideUse": "지사제",
+      "medLoratadineUse": "항알레르기",
+      "medOmeprazoleUse": "위산/위통",
+      "insuranceWarning": "⚠️ 반드시 여행 의료보험 구매",
+      "insuranceDetail": "외래진료 ¥800-1,500+, 국제부 접수 ¥600-1,200. Cigna/Allianz/Bupa 권장."
     },
     "big3": {
-      "label": "🦷👁️🌿 의료관광 3종 세트",
-      "title": "치과·안과·중의학 테라피",
-      "desc": "임플란트<¥5K, 안경 즉시 제작, 침술 추나 정골. 러시아 관광객 #1 수요."
+      "title": "🦷👁️🌿 의료 신3종",
+      "sectionDental": "🦷 치과",
+      "colItem": "항목",
+      "colChinaPrice": "중국 가격",
+      "colUsEuPrice": "미국/유럽",
+      "dental_cleaning": "스케일링",
+      "dental_cleaning_cn": "¥200-500",
+      "dental_cleaning_us": "$100-200",
+      "dental_filling": "충치 치료",
+      "dental_filling_cn": "¥300-800",
+      "dental_filling_us": "$150-400",
+      "dental_root": "신경 치료",
+      "dental_root_cn": "¥1,500-3,000",
+      "dental_root_us": "$800-1,500",
+      "dental_implant": "임플란트",
+      "dental_implant_cn": "¥5,000-15,000",
+      "dental_implant_us": "$3,000-6,000",
+      "dental_crown": "미용 크라운",
+      "dental_crown_cn": "¥2,000-5,000",
+      "dental_crown_us": "$1,000-2,500",
+      "dentalNote": "💡 가격 우위: 중국 치과는 미국/유럽의 25-35%. 자료출처: 다중평, Reddit expat 커뮤니티 피드백(2024-2025)",
+      "dentalClinics": "🏥 추천 기관",
+      "dentalClinicsDetail": "상하이 자후이 치과(영어 서비스)·베이징 허무자 치과·선전 아이캉젠·루이얼 치과(전국 체인). 제안: 사전 예약, 영어 서비스 가능 여부 문의.",
+      "sectionEye": "👁️ 안과",
+      "eyeDesc": "검안 안경 '당일 수령', 당일 수령(¥500-2,000). 레이저 근시수술 ¥8,000-20,000. 추천: 상하이 이비인후과병원, 베이징 퉁런병원, 아이얼안과(전국 체인).",
+      "sectionTcm": "🌿 중의학 테라피(러시아 관광객 #1 수요)",
+      "colTherapy": "항목",
+      "colDescription": "설명",
+      "colPrice": "가격",
+      "tcm_acupuncture": "침술",
+      "tcm_acupuncture_desc": "경추/요추/견주염",
+      "tcm_acupuncture_price": "¥100-300/회",
+      "tcm_tuina": "추나",
+      "tcm_tuina_desc": "경락 추나",
+      "tcm_tuina_price": "¥150-400/회",
+      "tcm_bonesetting": "정골",
+      "tcm_bonesetting_desc": "골상 복위",
+      "tcm_bonesetting_price": "¥200-500/회",
+      "tcm_cupping": "부항",
+      "tcm_cupping_desc": "습기 제거 해독",
+      "tcm_cupping_price": "¥50-150/회",
+      "tcm_herbal": "한약",
+      "tcm_herbal_desc": "개인 맞춤 처방",
+      "tcm_herbal_price": "¥100-500/제",
+      "tcmHotspots": "📍 중의학 인기 목적지",
+      "tcmHotspotsDetail": "싼야시 중의원(국제부)·헤이허시 중의원(러시아어 서비스, 연 2,000+환자)·훈춘시 병원(러시아어 통역)·라오허현 중의원(온천욕+추나)·베이징 퉁런탕(전통 노포)"
     },
     "checkup": {
-      "label": "📋 건강검진",
-      "title": "고급 건강검진 패키지",
-      "desc": "¥2K-10K+, 다양한 검사 포함, 일부 기관 24시간 내 보고서. 반나절 완료."
+      "title": "📋 건강검진",
+      "intro": "중국 대형 3급갑등병원 건강검진센터, 패키지 ¥2,000-10,000+, 다양한 검사 포함. 일부 기관 24시간 내 보고서 발급, 입원 불필요, 반나절 완료.",
+      "recommended": "<strong>추천:</strong> 협화 국제부, 화산 국제부, 자후이 국제",
+      "warning": "⚠️ 주의사항",
+      "warningDetail": "1-2주 전 예약 권장. 공복 필수, 일부 항목은 복약 중단 필요(의사 지시 준수)."
     },
-    "detail": {
-      "back": "← 돌아가기",
-      "hospital": {
-        "title": "🏥 국제 의료 서비스",
-        "intro": "전국 57개 도시, 850+개 기관에서 국제의료 진행. 2025년 128만 국제 환자(+73.6%).",
-        "sectionHospitals": "국제병원",
-        "colCity": "도시",
-        "colHospital": "기관",
-        "colNote": "비고",
-        "shanghaiName": "화산병원 / 자후이 국제",
-        "shanghaiNote": "90+개국 환자",
-        "beijingName": "협화병원 / 허무자",
-        "beijingNote": "국제부 ¥600-1200",
-        "guangzhouName": "중산1원 / 치푸",
-        "guangzhouNote": "25개 시범병원",
-        "tianjinName": "펑루이리 병원",
-        "tianjinNote": "외국자본 3급병원",
-        "hainanName": "보아오 러청 선행구",
-        "hainanNote": "해외 미승인 약품/기기 사용 가능",
-        "sectionMeds": "상용 약품 중영러 대조",
-        "colCn": "중국어",
-        "colUse": "용도",
-        "medIbuprofenUse": "진통/해열",
-        "medAmoxicillinUse": "항생제(처방)",
-        "medLoperamideUse": "지사제",
-        "medLoratadineUse": "항알레르기",
-        "medOmeprazoleUse": "위산/위통",
-        "insuranceWarning": "⚠️ 반드시 여행 의료보험 구매",
-        "insuranceDetail": "외래진료 ¥800-1,500+, 국제부 접수 ¥600-1,200. Cigna/Allianz/Bupa 권장."
-      },
-      "big3": {
-        "title": "🦷👁️🌿 의료 신3종",
-        "sectionDental": "🦷 치과",
-        "colItem": "항목",
-        "colChinaPrice": "중국 가격",
-        "colUsEuPrice": "미국/유럽",
-        "dental_cleaning": "스케일링",
-        "dental_cleaning_cn": "¥200-500",
-        "dental_cleaning_us": "$100-200",
-        "dental_filling": "충치 치료",
-        "dental_filling_cn": "¥300-800",
-        "dental_filling_us": "$150-400",
-        "dental_root": "신경 치료",
-        "dental_root_cn": "¥1,500-3,000",
-        "dental_root_us": "$800-1,500",
-        "dental_implant": "임플란트",
-        "dental_implant_cn": "¥5,000-15,000",
-        "dental_implant_us": "$3,000-6,000",
-        "dental_crown": "미용 크라운",
-        "dental_crown_cn": "¥2,000-5,000",
-        "dental_crown_us": "$1,000-2,500",
-        "dentalNote": "💡 가격 우위: 중국 치과는 미국/유럽의 25-35%. 자료출처: 다중평, Reddit expat 커뮤니티 피드백(2024-2025)",
-        "dentalClinics": "🏥 추천 기관",
-        "dentalClinicsDetail": "상하이 자후이 치과(영어 서비스)·베이징 허무자 치과·선전 아이캉젠·루이얼 치과(전국 체인). 제안: 사전 예약, 영어 서비스 가능 여부 문의.",
-        "sectionEye": "👁️ 안과",
-        "eyeDesc": "검안 안경 '당일 수령', 당일 수령(¥500-2,000). 레이저 근시수술 ¥8,000-20,000. 추천: 상하이 이비인후과병원, 베이징 퉁런병원, 아이얼안과(전국 체인).",
-        "sectionTcm": "🌿 중의학 테라피(러시아 관광객 #1 수요)",
-        "colTherapy": "항목",
-        "colDescription": "설명",
-        "colPrice": "가격",
-        "tcm_acupuncture": "침술",
-        "tcm_acupuncture_desc": "경추/요추/견주염",
-        "tcm_acupuncture_price": "¥100-300/회",
-        "tcm_tuina": "추나",
-        "tcm_tuina_desc": "경락 추나",
-        "tcm_tuina_price": "¥150-400/회",
-        "tcm_bonesetting": "정골",
-        "tcm_bonesetting_desc": "골상 복위",
-        "tcm_bonesetting_price": "¥200-500/회",
-        "tcm_cupping": "부항",
-        "tcm_cupping_desc": "습기 제거 해독",
-        "tcm_cupping_price": "¥50-150/회",
-        "tcm_herbal": "한약",
-        "tcm_herbal_desc": "개인 맞춤 처방",
-        "tcm_herbal_price": "¥100-500/제",
-        "tcmHotspots": "📍 중의학 인기 목적지",
-        "tcmHotspotsDetail": "싼야시 중의원(국제부)·헤이허시 중의원(러시아어 서비스, 연 2,000+환자)·훈춘시 병원(러시아어 통역)·라오허현 중의원(온천욕+추나)·베이징 퉁런탕(전통 노포)"
-      },
-      "checkup": {
-        "title": "📋 건강검진",
-        "intro": "중국 대형 3급갑등병원 건강검진센터, 패키지 ¥2,000-10,000+, 다양한 검사 포함. 일부 기관 24시간 내 보고서 발급, 입원 불필요, 반나절 완료.",
-        "recommended": "<strong>추천:</strong> 협화 국제부, 화산 국제부, 자후이 국제",
-        "warning": "⚠️ 주의사항",
-        "warningDetail": "1-2주 전 예약 권장. 공복 필수, 일부 항목은 복약 중단 필요(의사 지시 준수)."
-      }
-    }
+    "back": "← 돌아가기"
   },
   "s8": {
     "meta": {
@@ -303,109 +286,87 @@
       "sub": "2025년 환급 여행객 +305%. 12,252개 환급 상점, 7,000+개 즉시환급 지원."
     },
     "electronics": {
-      "label": "📱 전자제품",
-      "title": "폴더블폰·드론·AI 안경",
-      "desc": "선전 화창베이, 베이징 왕푸징, 이우. 중국 과학기술 신제품, 가격 우위 확실."
+      "title": "📱 전자제품",
+      "colCategory": "카테고리",
+      "colWhy": "추천 이유",
+      "colPrice": "참고가",
+      "foldable": "폴더블폰",
+      "foldable_why": "중국 브랜드 세계 선도",
+      "drone": "드론",
+      "drone_why": "DJI 세계 최강자",
+      "ai_glasses": "AI 안경",
+      "ai_glasses_why": "신흥 카테고리, 중국 선행",
+      "translator": "스마트 번역기",
+      "translator_why": "100+개 언어 실시간 통역",
+      "earbuds": "블루투스 이어폰",
+      "earbuds_why": "가성비 최고",
+      "whereToBuy": "📍 추천 구매지",
+      "whereToBuyDetail": "선전 화창베이—'중국 전자 제1거리', 35개 전문시장, 다국어+해외카드+환급. 베이징 왕푸징—브랜드 플래그십 스토어 집중. 저장 이우—'세계 슈퍼마켓', 원스톱.",
+      "foldable_price": "¥5,000-15,000",
+      "drone_price": "¥2,000-8,000",
+      "ai_glasses_price": "¥1,500-3,000",
+      "translator_price": "¥300-1,500",
+      "earbuds_price": "¥100-500"
     },
     "souvenirs": {
-      "label": "🎨 문화 기념품",
-      "title": "고궁 문화상품·무형문화재·지역 특색",
-      "desc": "베이징 냉장고 자석, 청두 촉나라 비단 판다, 시안 융마오마오, 구이저우 쪽염색 스카프."
+      "title": "🎨 문화 기념품",
+      "colCity": "도시",
+      "colItem": "대표 상품",
+      "beijing_item": "천궁 조정 냉장고 자석·고궁 문화상품",
+      "chengdu_item": "무형문화재 촉나라 비단 판다 문화상품·관자이 골목 기념품",
+      "xian_item": "'융마오마오' 러우자모 문화상품·병마용 기념품",
+      "chongqing_item": "황동 장식품(퉁스푸)·홍야동 문화상품",
+      "guizhou_item": "쪽염색 스카프·은 장식 냉장고 자석·민족풍 열쇠고리",
+      "tip": "💡 각 도시 문화상품점은 관광지 주변과 특색거리에 집중"
     },
     "taxrefund": {
-      "label": "💰 환급 가이드",
-      "title": "조건·절차·즉시환급",
-      "desc": "같은 날 같은 점포 ≥¥500→11% 부가세 환급(실제 약 9%). 90일 내 출국. 7,000+개 점포 즉시환급."
+      "title": "💰 출국 환급 가이드",
+      "stats": "📊 전국 12,252개 환급 상점. 2025년 환급 여행객 +305%.",
+      "sectionRequirements": "환급 조건",
+      "reqStay": "외국 관광객, 체류 183일 이하",
+      "reqAmount": "같은 날 같은 점포 소비 ≥¥500",
+      "reqDeparture": "출국일이 구매일로부터 ≤90일",
+      "reqCarry": "상품 휴대 소지(수하물 부치지 않기)",
+      "sectionProcess": "환급 절차",
+      "stepInvoice": "쇼핑 시 《출국 환급 신청서》+ 영수증 요청",
+      "stepCustoms": "공항 세관 검증(상품+여권+서류 제시)",
+      "stepCollect": "환급 창구에서 환급금 수령(현금/카드/알리페이)",
+      "instantRefundTitle": "💡 '즉시환급'",
+      "instantRefundDetail": "7,000+개 상점 지원, 쇼핑 시 직접 공제, 공항 줄서기 불필요. 상하이 '전시 통합환급' 전역 커버, 하이난 도서면세."
     },
     "cityshops": {
-      "label": "🗺️ 도시 쇼핑 지도",
-      "title": "각 도시 쇼핑 특색 가이드",
-      "desc": "상하이 원단시장·선전 화창베이·이우 소상품·싼야 면세점·베이징 왕푸징"
-    },
-    "detail": {
-      "back": "← 돌아가기",
-      "electronics": {
-        "title": "📱 전자제품",
-        "colCategory": "카테고리",
-        "colWhy": "추천 이유",
-        "colPrice": "참고가",
-        "foldable": "폴더블폰",
-        "foldable_why": "중국 브랜드 세계 선도",
-        "drone": "드론",
-        "drone_why": "DJI 세계 최강자",
-        "ai_glasses": "AI 안경",
-        "ai_glasses_why": "신흥 카테고리, 중국 선행",
-        "translator": "스마트 번역기",
-        "translator_why": "100+개 언어 실시간 통역",
-        "earbuds": "블루투스 이어폰",
-        "earbuds_why": "가성비 최고",
-        "whereToBuy": "📍 추천 구매지",
-        "whereToBuyDetail": "선전 화창베이—'중국 전자 제1거리', 35개 전문시장, 다국어+해외카드+환급. 베이징 왕푸징—브랜드 플래그십 스토어 집중. 저장 이우—'세계 슈퍼마켓', 원스톱.",
-        "foldable_price": "¥5,000-15,000",
-        "drone_price": "¥2,000-8,000",
-        "ai_glasses_price": "¥1,500-3,000",
-        "translator_price": "¥300-1,500",
-        "earbuds_price": "¥100-500"
-      },
-      "souvenirs": {
-        "title": "🎨 문화 기념품",
-        "colCity": "도시",
-        "colItem": "대표 상품",
-        "beijing_item": "천궁 조정 냉장고 자석·고궁 문화상품",
-        "chengdu_item": "무형문화재 촉나라 비단 판다 문화상품·관자이 골목 기념품",
-        "xian_item": "'융마오마오' 러우자모 문화상품·병마용 기념품",
-        "chongqing_item": "황동 장식품(퉁스푸)·홍야동 문화상품",
-        "guizhou_item": "쪽염색 스카프·은 장식 냉장고 자석·민족풍 열쇠고리",
-        "tip": "💡 각 도시 문화상품점은 관광지 주변과 특색거리에 집중"
-      },
-      "taxrefund": {
-        "title": "💰 출국 환급 가이드",
-        "stats": "📊 전국 12,252개 환급 상점. 2025년 환급 여행객 +305%.",
-        "sectionRequirements": "환급 조건",
-        "reqStay": "외국 관광객, 체류 183일 이하",
-        "reqAmount": "같은 날 같은 점포 소비 ≥¥500",
-        "reqDeparture": "출국일이 구매일로부터 ≤90일",
-        "reqCarry": "상품 휴대 소지(수하물 부치지 않기)",
-        "sectionProcess": "환급 절차",
-        "stepInvoice": "쇼핑 시 《출국 환급 신청서》+ 영수증 요청",
-        "stepCustoms": "공항 세관 검증(상품+여권+서류 제시)",
-        "stepCollect": "환급 창구에서 환급금 수령(현금/카드/알리페이)",
-        "instantRefundTitle": "💡 '즉시환급'",
-        "instantRefundDetail": "7,000+개 상점 지원, 쇼핑 시 직접 공제, 공항 줄서기 불필요. 상하이 '전시 통합환급' 전역 커버, 하이난 도서면세."
-      },
-      "cityshops": {
-        "title": "🗺️ 도시 쇼핑 지도",
-        "tapHint": "도시 클릭하여 상세정보 보기",
-        "backToCityGuide": "← 쇼핑 지도로 돌아가기",
-        "cities": {
-          "shenzhen": {
-            "name": "선전·화창베이",
-            "subtitle": "중국 전자 제1거리",
-            "desc": "'중국 전자 제1거리', 35개 전문시장. 품목: 휴대폰, 액세서리, 드론, 스마트웨어러블. 다국어 표시+해외카드 결제+환급 지원. 교통: 지하철 1호선 화창루역. 팁: 가격 비교, 일부 시장 흥정 가능."
-          },
-          "shanghai": {
-            "name": "상하이·원단시장",
-            "subtitle": "치파오 맞춤·정장 맞춤",
-            "desc": "난와이탄 경방 원단시장 등. 치파오 맞춤, 정장 맞춤, 현장 채치. 가격 ¥300-2,000+, 2-3일 수령. 해외카드 지원."
-          },
-          "yiwu": {
-            "name": "이우·국제상역성",
-            "subtitle": "세계 슈퍼마켓·원스톱",
-            "desc": "'세계 슈퍼마켓', 휴대폰 케이스부터 스마트 가전, 드론까지 모두 보유. 2026년 상반기 항공권 +60%. 원스톱 쇼핑 경험, 다국어 표시+해외카드 결제."
-          },
-          "sanya": {
-            "name": "싼야·면세점",
-            "subtitle": "도서면세·국제 브랜드",
-            "desc": "도서+출국 여행객 모두 면세 혜택 향유. 국제 브랜드 완비, 가격 우위 확실. 2025년 정책 업그레이드. 쇼핑 절차 간편: 등록→스캔 결제→공항 수령, <3분 완료."
-          },
-          "beijing": {
-            "name": "베이징·왕푸징",
-            "subtitle": "브랜드 플래그십·노포",
-            "desc": "브랜드 디지털 플래그십 스토어 집중, 전통 노포+현대 쇼핑센터. 안경 '당일 수령'. 환급 상점 밀집, 즉시환급 지원."
-          }
+      "title": "🗺️ 도시 쇼핑 지도",
+      "tapHint": "도시 클릭하여 상세정보 보기",
+      "backToCityGuide": "← 쇼핑 지도로 돌아가기",
+      "cities": {
+        "shenzhen": {
+          "name": "선전·화창베이",
+          "subtitle": "중국 전자 제1거리",
+          "desc": "'중국 전자 제1거리', 35개 전문시장. 품목: 휴대폰, 액세서리, 드론, 스마트웨어러블. 다국어 표시+해외카드 결제+환급 지원. 교통: 지하철 1호선 화창루역. 팁: 가격 비교, 일부 시장 흥정 가능."
+        },
+        "shanghai": {
+          "name": "상하이·원단시장",
+          "subtitle": "치파오 맞춤·정장 맞춤",
+          "desc": "난와이탄 경방 원단시장 등. 치파오 맞춤, 정장 맞춤, 현장 채치. 가격 ¥300-2,000+, 2-3일 수령. 해외카드 지원."
+        },
+        "yiwu": {
+          "name": "이우·국제상역성",
+          "subtitle": "세계 슈퍼마켓·원스톱",
+          "desc": "'세계 슈퍼마켓', 휴대폰 케이스부터 스마트 가전, 드론까지 모두 보유. 2026년 상반기 항공권 +60%. 원스톱 쇼핑 경험, 다국어 표시+해외카드 결제."
+        },
+        "sanya": {
+          "name": "싼야·면세점",
+          "subtitle": "도서면세·국제 브랜드",
+          "desc": "도서+출국 여행객 모두 면세 혜택 향유. 국제 브랜드 완비, 가격 우위 확실. 2025년 정책 업그레이드. 쇼핑 절차 간편: 등록→스캔 결제→공항 수령, <3분 완료."
+        },
+        "beijing": {
+          "name": "베이징·왕푸징",
+          "subtitle": "브랜드 플래그십·노포",
+          "desc": "브랜드 디지털 플래그십 스토어 집중, 전통 노포+현대 쇼핑센터. 안경 '당일 수령'. 환급 상점 밀집, 즉시환급 지원."
         }
       }
-    }
+    },
+    "back": "← 돌아가기"
   },
   "s9": {
     "meta": {
@@ -413,52 +374,35 @@
       "sub": "외국 관광객 발자취가 이미 500개 가까운 도시를 커버. 클릭하여 인기 목적지 탐색."
     },
     "top10": {
-      "label": "🏙️ 인기 TOP10",
-      "title": "클래식 필수 방문 도시",
-      "desc": "상하이·베이징·광저우·선전·충칭·청두·항저우·쿤밍·하얼빈·칭다오"
+      "title": "🏙️ 인기 도시 TOP10"
     },
     "rising": {
-      "label": "🚀 신흥 흑마",
-      "title": "소셜 플랫폼 신규 인기",
-      "desc": "정저우(한복)·타이위안(고건축)·구이양(대체)·푸저우(산수)·이우(쇼핑)"
+      "title": "🚀 신흥 흑마 도시",
+      "subtitle": "소셜 플랫폼에서 폭발적 인기를 끄는 신흥 목적지"
     },
     "seasons": {
-      "label": "🌍 사계절 추천",
-      "title": "각 계절 최적 목적지",
-      "desc": "봄·장난 / 여름·베이다이허 칭다오 / 가을·베이징 시안 / 겨울·하얼빈 싼야"
+      "title": "🌍 사계절 추천",
+      "spring": {
+        "title": "🌸 봄 (3-5월)",
+        "desc": "따뜻하고 쾌적, 장난 지역 최적. 항저우 서호·쑤저우 정원·쿤밍 꽃바다."
+      },
+      "summer": {
+        "title": "🌿 여름 (6-8월)",
+        "desc": "베이다이허/칭다오 피서. 칭다오 맥주축제·하얼빈 시원함·장자제."
+      },
+      "autumn": {
+        "title": "🍂 가을 (9-11월) 최적 계절",
+        "desc": "전국 모두 적합. 베이징 샹산 단풍·시안 고성·구이린 산수."
+      },
+      "winter": {
+        "title": "❄️ 겨울 (12-2월)",
+        "desc": "북국 빙설vs남국 따뜻한 햇살. 하얼빈 빙설대세계(동남아 최애)·싼야 열대 해변(러시아 최애)."
+      },
+      "sizingTip": "👔 사이즈 팁: CN은 US보다 1-2사이즈 작음, US M≈CN L/XL. 유니클로/ZARA는 전 세계 동일."
     },
-    "detail": {
-      "back": "← 돌아가기",
-      "backToCityList": "← 도시 목록으로 돌아가기",
-      "tapHint": "도시 클릭하여 상세정보 보기",
-      "top10": {
-        "title": "🏙️ 인기 도시 TOP10"
-      },
-      "rising": {
-        "title": "🚀 신흥 흑마 도시",
-        "subtitle": "소셜 플랫폼에서 폭발적 인기를 끄는 신흥 목적지"
-      },
-      "seasons": {
-        "title": "🌍 사계절 추천",
-        "spring": {
-          "title": "🌸 봄 (3-5월)",
-          "desc": "따뜻하고 쾌적, 장난 지역 최적. 항저우 서호·쑤저우 정원·쿤밍 꽃바다."
-        },
-        "summer": {
-          "title": "🌿 여름 (6-8월)",
-          "desc": "베이다이허/칭다오 피서. 칭다오 맥주축제·하얼빈 시원함·장자제."
-        },
-        "autumn": {
-          "title": "🍂 가을 (9-11월) 최적 계절",
-          "desc": "전국 모두 적합. 베이징 샹산 단풍·시안 고성·구이린 산수."
-        },
-        "winter": {
-          "title": "❄️ 겨울 (12-2월)",
-          "desc": "북국 빙설vs남국 따뜻한 햇살. 하얼빈 빙설대세계(동남아 최애)·싼야 열대 해변(러시아 최애)."
-        },
-        "sizingTip": "👔 사이즈 팁: CN은 US보다 1-2사이즈 작음, US M≈CN L/XL. 유니클로/ZARA는 전 세계 동일."
-      }
-    }
+    "back": "← 돌아가기",
+    "backToCityList": "← 도시 목록으로 돌아가기",
+    "tapHint": "도시 클릭하여 상세정보 보기"
   },
   "s10": {
     "meta": {
