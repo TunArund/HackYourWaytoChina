@@ -27,7 +27,8 @@ function renderSteps(slide, key) {
   }
 
   var domain = SLIDE_DOMAIN[slide] || slide;
-  var P = domain + '.' + key + '.';
+  // Entities that live outside their slide domain (top-level, not nested)
+  var P = ((slide === 's10' && key === 'departure') ? key : domain + '.' + key) + '.';
   var steps = tArray(P + 'steps');
   var stepList = Array.isArray(steps) ? steps : [];
   var links = tArray(P + 'links');
