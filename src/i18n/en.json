@@ -2,12 +2,13 @@
   "app": {
     "nav": {
       "title": "China Entry Guide",
-      "home": "↩ Home"
+      "home": "Home"
     },
     "cover": {
       "title": "The Complete China Guide",
       "subtitle": "Choose your journey for a tailored guide",
-      "footer": "📅 Updated July 2026 · 🌐 Bilingual",
+      "footerDate": "Updated July 2026",
+      "footerBilingual": "Multilingual",
       "short": {
         "label": "Short-term Visitor",
         "tagline": "2 – 30 days",
@@ -20,10 +21,10 @@
       }
     },
     "buttons": {
-      "reset": "🔄 Check Again",
-      "back": "← Back",
-      "details": "📋 Visa Details ▸",
-      "expand": "Expand →"
+      "reset": "Check Again",
+      "back": "Back",
+      "details": "Visa Details",
+      "expand": "Expand"
     },
     "links": {
       "official": "Official Links"
@@ -32,12 +33,117 @@
       "scroll": "Scroll down"
     }
   },
-  "s0": {},
-  "s1": {
-    "meta": {
-      "title": "Visa",
-      "sub": "Select your nationality to see applicable policies."
+
+  "slide": {
+    "s1": {
+      "meta": { "title": "Visa", "sub": "Select your nationality to see applicable policies." },
+      "kicker": "Find Out If You Need One"
     },
+    "s2": {
+      "meta": { "title": "Preparation", "sub": "Checklist + arrival card + final check. 97% Beijing arrivals use online filing." },
+      "kicker": "What to Sort Before You Fly",
+      "intro": "Before you fly, make sure you have these essentials ready. Tap each item for details."
+    },
+    "s3": {
+      "meta": { "title": "Arrival", "sub": "Flow+customs+registration. Under 14 / over 70 fingerprint exempt." },
+      "kicker": "From Tarmac to Taxi in 6 Steps",
+      "intro": "Landing in China? Tap to learn about immigration, customs, and registration."
+    },
+    "s4": {
+      "meta": { "title": "Connectivity", "sub": "Google/WA/IG blocked. Priority: get online." },
+      "kicker": "Stay Online Behind the Firewall",
+      "intro": "Google, WhatsApp, and Instagram are blocked in China. Here is how to stay connected."
+    },
+    "s5": {
+      "meta": { "title": "Payment", "sub": "China is cashless. Link foreign card before — most critical step." },
+      "kicker": "Go Cashless — Link in 5 Minutes",
+      "intro": "China is largely cashless — mobile payment is the default, accounting for over 86% of consumer transactions. Foreign visitors can now link Visa, Mastercard, JCB, and Amex directly to Alipay and WeChat Pay. No Chinese bank account needed.",
+      "stat1": "cashless transactions",
+      "stat2": "no fee per transaction",
+      "stat3": "apps cover 95%+ of scenarios",
+      "backupLabel": "Backup",
+      "backupDetail": "Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one payment app fails, try the other."
+    },
+    "s6": {
+      "meta": { "title": "Eat · Move · Stay", "sub": "" },
+      "kicker": "Navigate China Like a Local",
+      "intro": "Getting around, eating well, and finding a place to stay. Tap each item for practical tips."
+    },
+    "s7": {
+      "meta": { "title": "Medical", "sub": "850+ institutions across 57 cities. Tap cards for details." },
+      "kicker": "World-Class Care, Fraction of the Cost"
+    },
+    "s8": {
+      "meta": { "title": "Shopping", "sub": "Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund." },
+      "kicker": "Buy the Best + Get Your Tax Back"
+    },
+    "s9": {
+      "meta": { "title": "Destinations", "sub": "Foreign travelers have explored nearly 500 cities. Tap to discover." },
+      "kicker": "Nearly 500 Cities Await You",
+      "tapHint": "Tap a city for details"
+    },
+    "s10": {
+      "meta": { "title": "Emergency", "sub": "" },
+      "kicker": "When Things Go Wrong — Who to Call",
+      "intro": "Save these numbers. In an emergency, knowing who to call can make the difference.",
+      "departIntro": "Leaving China? A few things to take care of before you go.",
+      "departureLabel": "Departure Checklist"
+    },
+    "l1": {
+      "meta": { "title": "Status Transfer", "sub": "Already in China on a tourist/student visa? Here are your pathways to a long-term work/residence permit." },
+      "kicker": "Your Route In",
+      "intro": "Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process."
+    },
+    "l2": {
+      "meta": { "title": "Work & Residence", "sub": "Two essential documents. New: one-stop online application, ~6 working days average." },
+      "kicker": "Get Permitted",
+      "intro": "The two-step process every foreign worker goes through. Since late 2025, a one-stop online portal integrates work permit, residence permit, and social security registration.",
+      "stat1": "working days avg",
+      "stat2": "online portal since 2025",
+      "stat3": "physical card eliminated"
+    },
+    "l3": {
+      "meta": { "title": "Phone + Bank", "sub": "Chinese phone number + bank account = full digital life. Unlock all app features." },
+      "kicker": "Digital Keys to Everyday Life",
+      "intro": "A Chinese phone number and bank account are the keys to everyday life in China — from mobile payment to food delivery to ride-hailing. Get these two sorted first.",
+      "stat1": "mobile payment users in China",
+      "stat2": "major banks accept passports",
+      "stat3": "monthly phone plan from",
+      "tip": "Priority order: Get SIM → open bank account → link to Alipay/WeChat. Without a Chinese phone number, you cannot open a bank account. Without a bank account, your mobile payment features are limited."
+    },
+    "l4": {
+      "meta": { "title": "Housing", "sub": "Where to live, how to rent, and mandatory registration. 7 cities now support online registration." },
+      "kicker": "Find Your Home",
+      "intro": "Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.",
+      "sinceMar2026Label": "Since Mar 2026",
+      "sinceMar2026Detail": "12367 platform supports online registration in 7 pilot cities: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen."
+    },
+    "l5": {
+      "meta": { "title": "Insurance", "sub": "Five mandatory insurances + housing fund. Most expats also buy private international coverage." },
+      "kicker": "Stay Covered",
+      "intro": "Foreign employees must enroll in all five social insurances within 30 days of work permit issuance. Employer contributions add ~26-37% on top of your gross salary. Most expats also buy supplementary international health insurance.",
+      "stat1": "employer contribution on top",
+      "stat2": "insurances + housing fund",
+      "stat3": "countries with bilateral exemption"
+    },
+    "l6": {
+      "meta": { "title": "Drive + School", "sub": "Driver's license conversion and international school options for expat families." },
+      "kicker": "Hit the Road, Hit the Books",
+      "intro": "Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead."
+    },
+    "l7": {
+      "meta": { "title": "Daily Life", "sub": "Shopping, eating, and dressing for life in China. Same-day delivery, 24/7 food delivery, and four distinct seasons." },
+      "kicker": "Live Like a Local",
+      "intro": "Once you have your phone, bank, and apartment sorted, here's everything you need for daily life — from where to shop to what to eat to how to dress."
+    },
+    "l8": {
+      "meta": { "title": "Compliance", "sub": "Renewal reminders, overstay consequences, permanent residence pathway, and emergency contacts." },
+      "kicker": "Play by the Rules",
+      "intro": "Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires."
+    }
+  },
+
+  "visa": {
     "questions": {
       "q1": "Step 1: Region",
       "q2": "Step 2: Country",
@@ -45,11 +151,11 @@
       "q4": "Q4 · Onward ticket?"
     },
     "purpose": {
-      "tourism": "🏖 Tourism",
-      "business": "💼 Business",
-      "family": "👨‍👩‍👧 Visit",
-      "transit": "🔄 Transit",
-      "work": "💻 Work/Study"
+      "tourism": "Tourism",
+      "business": "Business",
+      "family": "Visit",
+      "transit": "Transit",
+      "work": "Work/Study"
     },
     "duration": {
       "short": "≤10d",
@@ -58,30 +164,179 @@
       "xlong": ">180d"
     },
     "onward": {
-      "yes": "✅ Yes",
-      "no": "❌ No"
+      "yes": "Yes",
+      "no": "No"
     },
     "placeholder": "— Select —",
     "continents": {
-      "asiaPacific": "🌏 Asia-Pacific",
-      "middleEast": "🏜️ Middle East",
-      "europeWest": "🏰 Western Europe",
-      "europeEast": "🏛️ Eastern Europe",
-      "americas": "🌎 Americas",
-      "africa": "🌍 Africa",
-      "other": "🌐 Other"
+      "asiaPacific": "Asia-Pacific",
+      "middleEast": "Middle East",
+      "europeWest": "Western Europe",
+      "europeEast": "Eastern Europe",
+      "americas": "Americas",
+      "africa": "Africa",
+      "other": "Other"
     },
-    "kicker": "Find Out If You Need One"
+    "mutual": {
+      "title": "No Visa (Mutual)",
+      "body": "Mutual exemption. Ordinary passport, typically 15-30d.",
+      "tips": [
+        "Passport≥6mo",
+        "Return ticket+booking",
+        "Pre-fill arrival card"
+      ],
+      "detailTitle": "Mutual Visa Exemption",
+      "conditions": [
+        "Bilateral exemption agreement",
+        "Ordinary passport, typically 15-30d",
+        "Return ticket+accommodation",
+        "No work/study",
+        "Subject to specific agreement terms"
+      ]
+    },
+    "free": {
+      "title": "No Visa (Unilateral)",
+      "body": "50 visa-free countries, ≤30d.",
+      "bodyRuNote": "Russia until Sep 14, 2026",
+      "bodyDefault": "Valid until Dec 31, 2026",
+      "tips": [
+        "Ordinary passport",
+        "≤30 days",
+        "Return ticket+booking"
+      ],
+      "detailTitle": "Unilateral Visa-Free",
+      "conditions": [
+        "Ordinary passport, ≥6mo valid",
+        "Stay ≤30d, non-extendable",
+        "Return ticket+hotel booking required",
+        "No paid work/study allowed",
+        "Valid until Dec 31, 2026"
+      ],
+      "ruWarning": "Russian citizens: Valid until Sep 14, 2026 (not Dec 31)"
+    },
+    "transit": {
+      "title": "240h Transit",
+      "body": "55 countries. Onward ticket→≤240h(10d), 24 provincial regions, 60+ ports.",
+      "tips": [
+        "Onward ticket required",
+        "Designated ports",
+        "24 provincial regions"
+      ],
+      "detailTitle": "240h Transit Visa-Free",
+      "conditions": [
+        "55 eligible countries",
+        "Onward ticket to 3rd country required",
+        "Designated ports only (60+)",
+        "Stay ≤240h (10 days)",
+        "24 provincial regions only",
+        "Cannot leave allowed area"
+      ]
+    },
+    "kvisa": {
+      "title": "K Visa (STEM)",
+      "body": "Oct 2025. STEM degree+<~40→no employer. Multi/5yr/≤180d.",
+      "tips": [
+        "STEM degree",
+        "No employer needed",
+        "Work/research/startup"
+      ],
+      "detailTitle": "K Visa (STEM Talent)",
+      "conditions": [
+        "Launched Oct 2025",
+        "STEM bachelor degree or above",
+        "Under ~40 years old",
+        "No employer sponsorship needed",
+        "Apply in-country, no exit required",
+        "Multiple entry/5yr/≤180d per stay",
+        "Work, research, startup allowed"
+      ]
+    },
+    "visaRequired": {
+      "title": "Visa Required",
+      "body": "Apply in advance per nationality/purpose/duration. Visit local CVASC.",
+      "tips": [
+        "visaforchina.cn",
+        "Passport+photo+form+invitation",
+        "~4-5 business days"
+      ],
+      "detailTitle": "Visa Required",
+      "conditions": [
+        "Apply at Chinese embassy/consulate",
+        "Passport+photo+form+invitation",
+        "~4-5 business days processing",
+        "Types: L(tourist)/M(business)/Q(family)/Z(work)/X(student)",
+        "Fee varies by nationality & type"
+      ]
+    },
+    "links": {
+      "niaVisaFree": "NIA Visa-Free Policy",
+      "beijingVisaFaq": "Beijing Visa-Free FAQ",
+      "mfaConsular": "MFA Consular",
+      "niaTransit": "NIA Transit Policy",
+      "cvasc": "CVASC Application",
+      "onlineBooking": "Online Booking",
+      "consularServices": "Consular Services",
+      "niaKVisa": "NIA K Visa Policy"
+    }
   },
-  "s2": {
-    "meta": {
-      "title": "Preparation",
-      "sub": "Checklist + arrival card + final check. 97% Beijing arrivals use online filing."
-    },
-    "kicker": "What to Sort Before You Fly",
-    "intro": "Before you fly, make sure you have these essentials ready. Tap each item for details.",
+
+  "countries": {
+    "default": "— Select —",
+    "AU": "Australia",
+    "NZ": "New Zealand",
+    "JP": "Japan",
+    "KR": "South Korea",
+    "SG": "Singapore",
+    "MY": "Malaysia",
+    "TH": "Thailand",
+    "ID": "Indonesia",
+    "IN": "India",
+    "PH": "Philippines",
+    "VN": "Vietnam",
+    "BN": "Brunei",
+    "AE": "UAE",
+    "QA": "Qatar",
+    "SA": "Saudi Arabia",
+    "KW": "Kuwait",
+    "OM": "Oman",
+    "BH": "Bahrain",
+    "GB": "UK",
+    "FR": "France",
+    "DE": "Germany",
+    "IT": "Italy",
+    "ES": "Spain",
+    "PT": "Portugal",
+    "NL": "Netherlands",
+    "BE": "Belgium",
+    "CH": "Switzerland",
+    "AT": "Austria",
+    "SE": "Sweden",
+    "NO": "Norway",
+    "DK": "Denmark",
+    "FI": "Finland",
+    "IS": "Iceland",
+    "IE": "Ireland",
+    "PL": "Poland",
+    "HU": "Hungary",
+    "GR": "Greece",
+    "RO": "Romania",
+    "RU": "Russia",
+    "US": "United States",
+    "CA": "Canada",
+    "BR": "Brazil",
+    "AR": "Argentina",
+    "CL": "Chile",
+    "MX": "Mexico",
+    "PE": "Peru",
+    "UY": "Uruguay",
+    "ZA": "South Africa",
+    "OTHER": "Other"
+  },
+
+  "preparation": {
     "passport": {
       "label": "Passport",
+      "sub": "Validity & blank pages",
       "title": "Passport Requirements",
       "steps": [
         "Valid for at least 6 months beyond your planned departure from China.",
@@ -89,22 +344,22 @@
         "If your passport expires soon: renew it before applying for a Chinese visa.",
         "Keep a digital copy (photo or scan) of your passport ID page on your phone and in email — in case of loss.",
         "For dual citizens: use the same passport throughout (visa application, entry, exit)."
-      ],
-      "sub": "Validity & blank pages"
+      ]
     },
     "tickets": {
       "label": "Return+Hotel",
+      "sub": "Return flight & hotel proof",
       "title": "Return Ticket & Hotel Booking",
       "steps": [
         "Print or screenshot your return/onward flight ticket — immigration may ask to see proof of departure.",
         "Hotel booking confirmation with full address in Chinese and English.",
         "If staying with friends/family: have an invitation letter with the host's name, address, phone number, and ID copy.",
         "Pro tip: book a refundable hotel for visa/entry purposes, then cancel after arrival if plans change."
-      ],
-      "sub": "Return flight & hotel proof"
+      ]
     },
     "arrivalCard": {
       "label": "Arrival Card",
+      "sub": "Pre-fill online, save QR code",
       "title": "Arrival Card — Pre-fill Online",
       "steps": [
         "Visit s.nia.gov.cn before your flight — fill out the arrival card online (free).",
@@ -113,11 +368,11 @@
         "Alternative methods: NIA 12367 APP (iOS/Android), WeChat mini-program, Alipay mini-program.",
         "97% of travelers at Beijing Capital Airport now use the online form. Skip the paper form entirely.",
         "Each traveler needs their own arrival card (including children)."
-      ],
-      "sub": "Pre-fill online, save QR code"
+      ]
     },
     "finalCheck": {
       "label": "Final Check",
+      "sub": "7-item checklist before boarding",
       "title": "Final Checklist Before Departure",
       "steps": [
         "Passport: valid for 6+ months, 2+ blank pages.",
@@ -127,18 +382,17 @@
         "Hotel address: saved in Chinese and English on your phone (show to immigration and taxi driver).",
         "VPN: installed, paid, and tested before departure (see S4).",
         "Travel insurance: policy number saved, emergency contact number noted."
-      ],
-      "sub": "7-item checklist before boarding"
-    },
-    "back": "Back"
+      ]
+    }
   },
-  "s3": {
-    "meta": {
-      "title": "Arrival",
-      "sub": "Flow+customs+registration. Under 14 / over 70 fingerprint exempt."
-    },
-    "steps": {
+
+  "arrival": {
+    "immigration": {
+      "label": "Immigration",
+      "sub": "6-step process at border control",
       "title": "Immigration — 6 Steps",
+      "linkUrl": "https://en.nia.gov.cn",
+      "linkLabel": "NIA Official Site",
       "steps": [
         "Health Check: Temperature scan. Show health declaration QR.",
         "Fingerprint: All foreigners 14-70. Under 14 / over 70 exempt.",
@@ -146,12 +400,14 @@
         "Baggage Claim: Check screens for carousel number.",
         "Customs: Green (nothing to declare) or Red channel.",
         "Arrival Hall: Taxi, metro, airport bus, ride-hailing."
-      ],
-      "linkUrl": "https://en.nia.gov.cn",
-      "linkLabel": "NIA Official Site"
+      ]
     },
     "customs": {
+      "label": "Customs",
+      "sub": "Duty-free limits & restricted items",
       "title": "Customs Rules",
+      "linkUrl": "https://www.customs.gov.cn",
+      "linkLabel": "China Customs",
       "steps": [
         "Cash: Up to $5,000 USD. Declare if exceeding.",
         "Alcohol: 1.5L total.",
@@ -161,12 +417,14 @@
         "Prohibited: Weapons, drugs, ivory, fresh fruit/plants.",
         "Green Channel: Nothing to declare.",
         "Red Channel: Goods exceed limits. Fill declaration form."
-      ],
-      "linkUrl": "https://www.customs.gov.cn",
-      "linkLabel": "China Customs"
+      ]
     },
     "registration": {
+      "label": "Registration",
+      "sub": "Hotel / police station / online",
       "title": "Accommodation Registration",
+      "linkUrl": "https://s.nia.gov.cn",
+      "linkLabel": "NIA Registration",
       "steps": [
         "Hotels: Automatic at check-in with passport.",
         "Private: Go to police station within 24h.",
@@ -174,20 +432,14 @@
         "Legal: Exit-Entry Law Art.39 — mandatory.",
         "Re-register when moving address/city.",
         "12367 hotline: 24/7 multi-language."
-      ],
-      "linkUrl": "https://s.nia.gov.cn",
-      "linkLabel": "NIA Registration"
-    },
-    "kicker": "From Tarmac to Taxi in 6 Steps",
-    "intro": "Landing in China? Tap to learn about immigration, customs, and registration.",
-    "back": "Back"
+      ]
+    }
   },
-  "s4": {
-    "meta": {
-      "title": "Connectivity",
-      "sub": "Google/WA/IG blocked. Priority: get online."
-    },
+
+  "connectivity": {
     "esim": {
+      "label": "eSIM",
+      "sub": "Buy before flying, from $4",
       "title": "eSIM — Buy Before You Fly",
       "steps": [
         "Airalo: China from $5 (1GB/7 days).",
@@ -197,7 +449,9 @@
         "Note: Data only, no phone number."
       ]
     },
-    "sim": {
+    "chinaSim": {
+      "label": "CN SIM",
+      "sub": "Airport kiosk, 29-99 yuan/month",
       "title": "China SIM Card",
       "steps": [
         "Airport arrival hall kiosks (Mobile/Unicom/Telecom).",
@@ -208,6 +462,8 @@
       ]
     },
     "vpn": {
+      "label": "VPN",
+      "sub": "Install before arriving",
       "title": "VPN — Install Before Arriving",
       "steps": [
         "Mullvad: 5EUR/month. Open-source. WireGuard.",
@@ -217,7 +473,9 @@
         "Test before departure."
       ]
     },
-    "blocked": {
+    "blockedServices": {
+      "label": "Blocked",
+      "sub": "What's blocked & alternatives",
       "title": "Blocked Services & Alternatives",
       "steps": [
         "Blocked: Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE.",
@@ -228,22 +486,10 @@
         "YouTube -> Bilibili.",
         "WhatsApp -> WeChat."
       ]
-    },
-    "kicker": "Stay Online Behind the Firewall",
-    "intro": "Google, WhatsApp, Instagram blocked. Get connected before you land.",
-    "back": "Back"
+    }
   },
-  "s5": {
-    "meta": {
-      "title": "Payment",
-      "sub": "China is cashless. Link foreign card before — most critical step."
-    },
-    "kicker": "Go Cashless — Link in 5 Minutes",
-    "intro": "China is largely cashless — mobile payment is the default, accounting for over 86% of consumer transactions. Foreign visitors can now link Visa, Mastercard, JCB, and Amex directly to Alipay and WeChat Pay. No Chinese bank account needed.",
-    "stat1": "cashless transactions",
-    "stat2": "no fee per transaction",
-    "stat3": "apps cover 95%+ of scenarios",
-    "backup": "<strong>💡 Backup</strong><span>Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one payment app fails, try the other.</span>",
+
+  "payment": {
     "alipay": {
       "title": "Alipay Setup Guide",
       "steps": [
@@ -254,19 +500,11 @@
         "<strong>TourPass</strong>: prepaid card for visitors — no Chinese bank account needed"
       ],
       "links": [
-        {
-          "key": "download",
-          "label": "Download Alipay",
-          "url": "https://www.alipay.com"
-        },
-        {
-          "key": "support",
-          "label": "☎ Support: 95188 / +86-571-26886000",
-          "url": "https://render.alipay.com/p/s/alipaycard"
-        }
+        { "key": "download", "label": "Download Alipay", "url": "https://www.alipay.com" },
+        { "key": "support", "label": "Support: 95188 / +86-571-26886000", "url": "https://render.alipay.com/p/s/alipaycard" }
       ]
     },
-    "wechat": {
+    "wechatPay": {
       "title": "WeChat Pay Setup Guide",
       "steps": [
         "Download WeChat from <a href=\"https://www.wechat.com\" target=\"_blank\" rel=\"noopener\">wechat.com</a> or your app store",
@@ -275,24 +513,16 @@
         "<strong>Mini-Programs</strong>: order food, hail taxis, buy train tickets — all inside WeChat"
       ],
       "links": [
-        {
-          "key": "download",
-          "label": "Download WeChat",
-          "url": "https://www.wechat.com"
-        },
-        {
-          "key": "support",
-          "label": "☎ Support: 95017",
-          "url": "https://www.wechat.com"
-        }
+        { "key": "download", "label": "Download WeChat", "url": "https://www.wechat.com" },
+        { "key": "support", "label": "Support: 95017", "url": "https://www.wechat.com" }
       ]
-    },
-    "back": "Back"
+    }
   },
-  "s6": {
-    "kicker": "Navigate China Like a Local",
-    "intro": "Getting around, eating well, and finding a place to stay. Tap each item for practical tips.",
+
+  "lifestyle": {
     "transport": {
+      "label": "Transport",
+      "sub": "DiDi, metro, high-speed rail",
       "title": "Getting Around",
       "steps": [
         "DiDi: Ride-hailing built into Alipay. English UI. Pay with linked foreign card.",
@@ -302,7 +532,9 @@
         "Tip: Alipay mini-programs handle DiDi, metro, bikes, trains — one app."
       ]
     },
-    "food": {
+    "dining": {
+      "label": "Dining",
+      "sub": "Order in Chinese, dietary tips",
       "title": "Dining Out",
       "steps": [
         "Dianping: Restaurant reviews, photos, ratings. Search by area or cuisine.",
@@ -314,6 +546,8 @@
       ]
     },
     "accommodation": {
+      "label": "Stay",
+      "sub": "Booking, registration, tips",
       "title": "Where to Stay",
       "steps": [
         "Trip.com / Booking.com: Filter accepts foreign guests. Not all hotels can host foreigners.",
@@ -324,6 +558,8 @@
       ]
     },
     "clothing": {
+      "label": "Clothing",
+      "sub": "Sizes, seasons, what to pack",
       "title": "What to Wear",
       "steps": [
         "Sizing: China sizes 1-2 smaller than US/EU. US M = CN L/XL.",
@@ -332,20 +568,13 @@
         "Autumn (Sep-Nov): 10-25C. Best season. Light sweater.",
         "Winter (Dec-Feb): North -10C heavy coat. South 0-10C damp cold, layers work best."
       ]
-    },
-    "meta": {
-      "title": "Eat · Move · Stay",
-      "sub": ""
-    },
-    "back": "Back"
+    }
   },
-  "s7": {
-    "meta": {
-      "title": "Medical",
-      "sub": "850+ institutions across 57 cities. Tap cards for details."
-    },
+
+  "medical": {
     "hospital": {
-      "title": "🏥 International Medical Services",
+      "desc": "Major city hospitals, trilingual meds list, travel insurance",
+      "title": "International Medical Services",
       "intro": "850+ institutions across 57 cities. 1.28M international patients in 2025 (+73.6%).",
       "sectionHospitals": "International Hospitals",
       "colCity": "City",
@@ -369,125 +598,129 @@
       "medLoperamideUse": "Anti-diarrheal",
       "medLoratadineUse": "Antihistamine",
       "medOmeprazoleUse": "Acid reflux",
-      "insuranceWarning": "⚠️ Buy Travel Insurance",
+      "insuranceWarning": "Buy Travel Insurance",
       "insuranceDetail": "Outpatient ¥800-1,500+. Intl dept registration ¥600-1,200. Recommend Cigna/Allianz/Bupa."
     },
-    "big3": {
-      "title": "🦷👁️🌿 Medical \"Big Three\"",
-      "sectionDental": "🦷 Dental",
+    "dental": {
+      "desc": "Implants <¥5K, glasses same-day, acupuncture & massage. #1 for Russians.",
+      "title": "Medical Big Three",
+      "sectionDental": "Dental",
       "colItem": "Item",
       "colChinaPrice": "China",
       "colUsEuPrice": "US/EU",
-      "dental_cleaning": "Cleaning",
-      "dental_cleaning_cn": "¥200-500",
-      "dental_cleaning_us": "$100-200",
-      "dental_filling": "Filling",
-      "dental_filling_cn": "¥300-800",
-      "dental_filling_us": "$150-400",
-      "dental_root": "Root Canal",
-      "dental_root_cn": "¥1,500-3,000",
-      "dental_root_us": "$800-1,500",
-      "dental_implant": "Dental Implant",
-      "dental_implant_cn": "¥5,000-15,000",
-      "dental_implant_us": "$3,000-6,000",
-      "dental_crown": "Cosmetic Crown",
-      "dental_crown_cn": "¥2,000-5,000",
-      "dental_crown_us": "$1,000-2,500",
-      "dentalNote": "💡 Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
-      "dentalClinics": "🏥 Recommended Clinics",
-      "dentalClinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service.",
-      "sectionEye": "👁️ Ophthalmology",
-      "eyeDesc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide).",
-      "sectionTcm": "🌿 TCM Therapy (#1 Russian request)",
+      "cleaning": "Cleaning",
+      "cleaningCn": "¥200-500",
+      "cleaningUs": "$100-200",
+      "filling": "Filling",
+      "fillingCn": "¥300-800",
+      "fillingUs": "$150-400",
+      "rootCanal": "Root Canal",
+      "rootCanalCn": "¥1,500-3,000",
+      "rootCanalUs": "$800-1,500",
+      "implant": "Dental Implant",
+      "implantCn": "¥5,000-15,000",
+      "implantUs": "$3,000-6,000",
+      "crown": "Cosmetic Crown",
+      "crownCn": "¥2,000-5,000",
+      "crownUs": "$1,000-2,500",
+      "note": "Cost advantage: China dental 25-35% of US/EU. Source: Dianping, Reddit expat feedback (2024-2025)",
+      "clinics": "Recommended Clinics",
+      "clinicsDetail": "Jiahui Dental Shanghai (English)·UFH Dental Beijing·iKang Dental Shenzhen·Arrail Dental (Nationwide). Tip: Book ahead, ask about English service."
+    },
+    "eyeCare": {
+      "sectionTitle": "Ophthalmology",
+      "desc": "Glasses same-day service (¥500-2,000). Laser eye surgery ¥8K-20K. Recommended: Shanghai Eye & ENT Hospital, Beijing Tongren, Aier Eye Hospital (Nationwide)."
+    },
+    "tcm": {
+      "sectionTitle": "TCM Therapy (#1 Russian request)",
       "colTherapy": "Therapy",
       "colDescription": "Description",
       "colPrice": "Price",
-      "tcm_acupuncture": "Acupuncture",
-      "tcm_acupuncture_desc": "Neck/Back/Shoulder",
-      "tcm_acupuncture_price": "¥100-300/sess",
-      "tcm_tuina": "Tuina Massage",
-      "tcm_tuina_desc": "Meridian massage",
-      "tcm_tuina_price": "¥150-400/sess",
-      "tcm_bonesetting": "Bone-Setting",
-      "tcm_bonesetting_desc": "Orthopedic reset",
-      "tcm_bonesetting_price": "¥200-500/sess",
-      "tcm_cupping": "Cupping",
-      "tcm_cupping_desc": "Detox & moisture",
-      "tcm_cupping_price": "¥50-150/sess",
-      "tcm_herbal": "Herbal Medicine",
-      "tcm_herbal_desc": "Personalized formula",
-      "tcm_herbal_price": "¥100-500/dose",
-      "tcmHotspots": "📍 TCM Hotspots",
-      "tcmHotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
+      "acupuncture": "Acupuncture",
+      "acupunctureDesc": "Neck/Back/Shoulder",
+      "acupuncturePrice": "¥100-300/sess",
+      "tuina": "Tuina Massage",
+      "tuinaDesc": "Meridian massage",
+      "tuinaPrice": "¥150-400/sess",
+      "bonesetting": "Bone-Setting",
+      "bonesettingDesc": "Orthopedic reset",
+      "bonesettingPrice": "¥200-500/sess",
+      "cupping": "Cupping",
+      "cuppingDesc": "Detox & moisture",
+      "cuppingPrice": "¥50-150/sess",
+      "herbal": "Herbal Medicine",
+      "herbalDesc": "Personalized formula",
+      "herbalPrice": "¥100-500/dose",
+      "hotspots": "TCM Hotspots",
+      "hotspotsDetail": "Sanya TCM Hospital(intl)·Heihe TCM(RU service,2000+ patients/yr)·Hunchun Hospital(RU interpreter)·Raohe TCM(spa+massage)·Tongrentang Beijing(traditional)"
     },
-    "checkup": {
-      "title": "📋 Health Checkup",
+    "healthCheckup": {
+      "desc": "¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.",
+      "title": "Health Checkup",
       "intro": "Major hospitals offer executive checkups, ¥2K-10K+. Some 24h reports. No overnight stay, half-day visit.",
-      "recommended": "<strong>Recommended:</strong> PUMCH Intl, Huashan Intl, Jiahui Intl",
-      "warning": "⚠️ Note",
+      "recommended": "Recommended: PUMCH Intl, Huashan Intl, Jiahui Intl",
+      "warning": "Note",
       "warningDetail": "Book 1-2 weeks ahead. Fasting required for some tests. Consult doctor about medications."
-    },
-    "kicker": "World-Class Care, Fraction of the Cost",
-    "back": "Back"
+    }
   },
-  "s8": {
-    "meta": {
-      "title": "Shopping",
-      "sub": "Tax refund travelers +305% in 2025. 12,252 stores, 7,000+ instant refund."
-    },
+
+  "shopping": {
     "electronics": {
-      "title": "📱 Electronics & Gadgets",
+      "desc": "Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.",
+      "title": "Electronics & Gadgets",
       "colCategory": "Category",
       "colWhy": "Why Buy",
       "colPrice": "Price",
       "foldable": "Foldable Phone",
-      "foldable_why": "Chinese brands lead globally",
+      "foldableWhy": "Chinese brands lead globally",
+      "foldablePrice": "¥5,000-15,000",
       "drone": "Drone",
-      "drone_why": "DJI dominates globally",
-      "ai_glasses": "AI Glasses",
-      "ai_glasses_why": "New category,China-first",
+      "droneWhy": "DJI dominates globally",
+      "dronePrice": "¥2,000-8,000",
+      "aiGlasses": "AI Glasses",
+      "aiGlassesWhy": "New category, China-first",
+      "aiGlassesPrice": "¥1,500-3,000",
       "translator": "Smart Translator",
-      "translator_why": "100+ languages real-time",
+      "translatorWhy": "100+ languages real-time",
+      "translatorPrice": "¥300-1,500",
       "earbuds": "TWS Earbuds",
-      "earbuds_why": "Great value",
-      "whereToBuy": "📍 Where to Buy",
-      "whereToBuyDetail": "SZ Huaqiangbei—\"China Electronics Street\",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—\"World Supermarket\",one-stop.",
-      "foldable_price": "¥5,000-15,000",
-      "drone_price": "¥2,000-8,000",
-      "ai_glasses_price": "¥1,500-3,000",
-      "translator_price": "¥300-1,500",
-      "earbuds_price": "¥100-500"
+      "earbudsWhy": "Great value",
+      "earbudsPrice": "¥100-500",
+      "whereToBuy": "Where to Buy",
+      "whereToBuyDetail": "SZ Huaqiangbei—\"China Electronics Street\",35 markets,multilingual+cards+tax refund. BJ Wangfujing—flagship stores. Yiwu—\"World Supermarket\",one-stop."
     },
     "souvenirs": {
-      "title": "🎨 Cultural Souvenirs",
+      "desc": "Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.",
+      "title": "Cultural Souvenirs",
       "colCity": "City",
       "colItem": "Item",
-      "beijing_item": "Forbidden City fridge magnets",
-      "chengdu_item": "Panda brocade crafts·Kuanzhai gifts",
-      "xian_item": "Plush \"Roujiamo\"·Terracotta souvenirs",
-      "chongqing_item": "Brass ornaments·Hongyadong crafts",
-      "guizhou_item": "Indigo scarves·Silver magnets·Ethnic keychains",
-      "tip": "💡 Cultural shops cluster near scenic spots and heritage streets"
+      "beijingItem": "Forbidden City fridge magnets",
+      "chengduItem": "Panda brocade crafts·Kuanzhai gifts",
+      "xianItem": "Plush \"Roujiamo\"·Terracotta souvenirs",
+      "chongqingItem": "Brass ornaments·Hongyadong crafts",
+      "guizhouItem": "Indigo scarves·Silver magnets·Ethnic keychains",
+      "tip": "Cultural shops cluster near scenic spots and heritage streets"
     },
     "taxrefund": {
-      "title": "💰 Tax Refund Guide",
-      "stats": "📊 12,252 refund stores nationwide. +305% refund travelers in 2025.",
+      "desc": "≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.",
+      "title": "Tax Refund Guide",
+      "stats": "12,252 refund stores nationwide. +305% refund travelers in 2025.",
       "sectionRequirements": "Requirements",
+      "sectionProcess": "Process",
       "reqStay": "Foreign visitor, stay ≤183 days",
       "reqAmount": "Same store same day ≥¥500",
       "reqDeparture": "Departure ≤90 days from purchase",
       "reqCarry": "Carry items (do NOT check in)",
-      "sectionProcess": "Process",
       "stepInvoice": "Ask for \"Tax Refund Application\" + invoice",
       "stepCustoms": "Customs verification (show goods+passport+docs)",
       "stepCollect": "Collect refund (cash/card/Alipay)",
-      "instantRefundTitle": "💡 Instant Refund",
+      "instantRefundTitle": "Instant Refund",
       "instantRefundDetail": "7,000+ stores: deduct at purchase, no airport queue. Shanghai city-wide. Hainan duty-free."
     },
     "cityshops": {
-      "title": "🗺️ City Shopping Guide",
+      "desc": "SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing",
+      "title": "City Shopping Guide",
       "tapHint": "Tap a city for details",
-
       "cities": {
         "shenzhen": {
           "name": "Shenzhen·Huaqiangbei",
@@ -515,58 +748,43 @@
           "desc": "Flagship electronics stores, heritage brands+modern malls. Same-day glasses. Dense tax refund stores with instant refund."
         }
       }
-    },
-    "kicker": "Buy the Best + Get Your Tax Back",
-    "back": "Back"
+    }
   },
-  "s9": {
-    "meta": {
-      "title": "Destinations",
-      "sub": "Foreign travelers have explored nearly 500 cities. Tap to discover."
-    },
+
+  "destinations": {
     "top10": {
-      "title": "🏙️ Top 10 Cities"
+      "desc": "Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao",
+      "title": "Top 10 Cities"
     },
     "rising": {
-      "title": "🚀 Rising Star Cities",
+      "desc": "Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media",
+      "title": "Rising Star Cities",
       "subtitle": "Trending destinations on social media"
     },
     "seasons": {
-      "title": "🌍 Seasonal Picks",
+      "desc": "Spring: Jiangnan / Summer: Beidaihe / Autumn: Beijing / Winter: Harbin & Sanya",
+      "title": "Seasonal Picks",
       "spring": {
-        "title": "🌸 Spring (Mar-May)",
+        "title": "Spring (Mar-May)",
         "desc": "Mild & pleasant. Hangzhou West Lake·Suzhou Gardens·Kunming flowers."
       },
       "summer": {
-        "title": "🌿 Summer (Jun-Aug)",
+        "title": "Summer (Jun-Aug)",
         "desc": "Escape heat: Beidaihe/Qingdao. Beer Festival·Harbin cool·Zhangjiajie."
       },
       "autumn": {
-        "title": "🍂 Autumn (Sep-Nov) Best!",
+        "title": "Autumn (Sep-Nov) Best!",
         "desc": "Best nationwide. Beijing red leaves·Xi'an ancient city·Guilin scenery."
       },
       "winter": {
-        "title": "❄️ Winter (Dec-Feb)",
+        "title": "Winter (Dec-Feb)",
         "desc": "North ice vs South sun. Harbin Ice Festival(SE Asia fav)·Sanya tropics(Russian fav)."
       },
-      "sizingTip": "👔 Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
-    },
-    "kicker": "Nearly 500 Cities Await You",
-    "back": "Back",
-
-    "tapHint": "Tap a city for details"
+      "sizingTip": "Sizing: CN 1-2 smaller than US. US M≈CN L/XL. Uniqlo/ZARA global sizing."
+    }
   },
-  "s10": {
-    "meta": {
-      "title": "Emergency",
-      "sub": ""
-    },
-    "kicker": "When Things Go Wrong — Who to Call",
-    "intro": "Save these numbers. Tap each one to learn when to call and what to expect.",
-    "departIntro": "Leaving China? Here is your pre-flight checklist.",
-    "departure": "Departure Checklist",
-    "passportWarning": "Lost Passport?",
-    "passportWarningDetail": "1) File a police report immediately (call 110). 2) Contact your embassy/consulate for an emergency travel document. 3) Keep a photo of your passport ID page and visa on your phone.",
+
+  "emergency": {
     "12367": {
       "label": "Immigration 24h",
       "title": "12367 — NIA Immigration Hotline",
@@ -610,20 +828,23 @@
         "Note fire exit map on hotel room door."
       ]
     },
-    "depart": {
-      "label": "Depart",
-      "title": "Departure Checklist",
-      "steps": [
-        "Arrive 2-3 hours early for international check-in, security, tax refund.",
-        "Carry tax refund items in hand luggage. Get customs stamp before checking bags.",
-        "Spend or convert leftover RMB at airport.",
-        "Backup photos to iCloud or USB before leaving (Google Photos blocked).",
-        "Return portable WiFi / collect SIM deposits.",
-        "Keep arrival card stub — may need at exit border control."
-      ]
-    },
-    "back": "Back"
+    "passportWarning": "Lost Passport?",
+    "passportWarningDetail": "1) File a police report immediately (call 110). 2) Contact your embassy/consulate for an emergency travel document. 3) Keep a photo of your passport ID page and visa on your phone."
   },
+
+  "departure": {
+    "label": "Depart",
+    "title": "Departure Checklist",
+    "steps": [
+      "Arrive 2-3 hours early for international check-in, security, tax refund.",
+      "Carry tax refund items in hand luggage. Get customs stamp before checking bags.",
+      "Spend or convert leftover RMB at airport.",
+      "Backup photos to iCloud or USB before leaving (Google Photos blocked).",
+      "Return portable WiFi / collect SIM deposits.",
+      "Keep arrival card stub — may need at exit border control."
+    ]
+  },
+
   "city": {
     "beijing": {
       "label": "Beijing",
@@ -721,6 +942,7 @@
       "tag": ""
     }
   },
+
   "shop": {
     "beijing": {
       "name": "Beijing·Wangfujing",
@@ -743,6 +965,7 @@
       "desc": "\"World Supermarket\", phone cases to smart appliances to drones. Flight bookings +60% H1 2026. One-stop shopping, multilingual+intl cards."
     }
   },
+
   "clinic": {
     "jiahui": {
       "label": "Shanghai Jiahui Intl Hospital",
@@ -761,504 +984,283 @@
       "desc": "Served clients from Korea, Japan, Middle East. Uses filler-based contouring instead of high-risk bone shaving. Natural aesthetics philosophy."
     }
   },
-  "countries": {
-    "default": "— Select —",
-    "AU": "🇦🇺 Australia",
-    "NZ": "🇳🇿 New Zealand",
-    "JP": "🇯🇵 Japan",
-    "KR": "🇰🇷 South Korea",
-    "SG": "🇸🇬 Singapore",
-    "MY": "🇲🇾 Malaysia",
-    "TH": "🇹🇭 Thailand",
-    "ID": "🇮🇩 Indonesia",
-    "IN": "🇮🇳 India",
-    "PH": "🇵🇭 Philippines",
-    "VN": "🇻🇳 Vietnam",
-    "BN": "🇧🇳 Brunei",
-    "AE": "🇦🇪 UAE",
-    "QA": "🇶🇦 Qatar",
-    "SA": "🇸🇦 Saudi Arabia",
-    "KW": "🇰🇼 Kuwait",
-    "OM": "🇴🇲 Oman",
-    "BH": "🇧🇭 Bahrain",
-    "GB": "🇬🇧 UK",
-    "FR": "🇫🇷 France",
-    "DE": "🇩🇪 Germany",
-    "IT": "🇮🇹 Italy",
-    "ES": "🇪🇸 Spain",
-    "PT": "🇵🇹 Portugal",
-    "NL": "🇳🇱 Netherlands",
-    "BE": "🇧🇪 Belgium",
-    "CH": "🇨🇭 Switzerland",
-    "AT": "🇦🇹 Austria",
-    "SE": "🇸🇪 Sweden",
-    "NO": "🇳🇴 Norway",
-    "DK": "🇩🇰 Denmark",
-    "FI": "🇫🇮 Finland",
-    "IS": "🇮🇸 Iceland",
-    "IE": "🇮🇪 Ireland",
-    "PL": "🇵🇱 Poland",
-    "HU": "🇭🇺 Hungary",
-    "GR": "🇬🇷 Greece",
-    "RO": "🇷🇴 Romania",
-    "RU": "🇷🇺 Russia",
-    "US": "🇺🇸 United States",
-    "CA": "🇨🇦 Canada",
-    "BR": "🇧🇷 Brazil",
-    "AR": "🇦🇷 Argentina",
-    "CL": "🇨🇱 Chile",
-    "MX": "🇲🇽 Mexico",
-    "PE": "🇵🇪 Peru",
-    "UY": "🇺🇾 Uruguay",
-    "ZA": "🇿🇦 South Africa",
-    "OTHER": "🌍 Other"
-  },
-  "visa": {
-    "mutual": {
-      "title": "✅ No Visa (Mutual)",
-      "body": "Mutual exemption. Ordinary passport,typically 15-30d.",
-      "tips": [
-        "Passport≥6mo",
-        "Return ticket+booking",
-        "Pre-fill arrival card"
-      ],
-      "detailTitle": "Mutual Visa Exemption",
-      "conditions": [
-        "Bilateral exemption agreement",
-        "Ordinary passport,typically 15-30d",
-        "Return ticket+accommodation",
-        "No work/study",
-        "Subject to specific agreement terms"
-      ]
+
+  "longstay": {
+    "transfer": {
+      "pathA": {
+        "label": "Tourist → Work",
+        "sub": "Employer sponsors, convert or re-enter",
+        "title": "Tourist → Work",
+        "steps": [
+          "On a tourist visa (L) or visa-free entry. Get a job offer → employer sponsors work permit → convert to residence permit.",
+          "Receive a job offer from a Chinese employer willing to sponsor your work permit.",
+          "Employer applies for your Foreigner's Work Permit Notification Letter online (www.12333.gov.cn). Processing: ~6 business days average.",
+          "If your current visa allows in-country conversion: apply directly at the local Exit-Entry Bureau. <strong>Check with the bureau first</strong> — rules vary by city.",
+          "If in-country conversion is NOT allowed: you must exit China (e.g. to Hong Kong, Seoul, Bangkok), apply for a Z visa at a Chinese embassy, and re-enter.",
+          "Within 30 days of receiving your work permit: apply for a work-type Residence Permit at the PSB Exit-Entry Administration.",
+          "Complete medical check at a designated hospital (required for residence permit >1 year).",
+          "Shanghai, Beijing, and GZ are generally more flexible with in-country conversion. Always call 12367 to confirm before making travel plans."
+        ]
+      },
+      "pathB": {
+        "label": "Student → Work",
+        "sub": "Graduate & convert in-country, no exit",
+        "title": "Student → Work",
+        "steps": [
+          "For fresh graduates from Chinese universities. No need to exit China — convert directly in-country.",
+          "Graduate from a Chinese university (bachelor's, master's, or PhD).",
+          "Secure a job offer from a Chinese employer. The employer applies for your work permit.",
+          "You can convert your student residence permit (X1) to a work residence permit <strong>without leaving China</strong>.",
+          "Required documents: diploma (authenticated by CSCSE), employment contract, employer business license, health check, passport, and police registration.",
+          "Apply at the local Exit-Entry Bureau. Standard processing: 7-15 business days.",
+          "Note: this pathway is only for fresh graduates. If you graduated >1 year ago, use Path A instead.",
+          "Many cities offer fast-track processing for foreign graduates of local universities. Shanghai and Beijing have dedicated 'foreign graduate talent' windows."
+        ]
+      },
+      "pathC": {
+        "label": "K Visa (STEM Talent)",
+        "sub": "Self-sponsored, 5-year multi-entry",
+        "title": "K Visa (STEM Talent)",
+        "steps": [
+          "Launched Oct 2025. Self-sponsored visa for STEM graduates. No employer needed.",
+          "<strong>Eligibility</strong>: STEM degree (bachelor's or above) from a recognized university, generally under ~40 years old.",
+          "<strong>No employer sponsorship required</strong> — self-apply. This is the biggest difference from Z visa.",
+          "Apply at a Chinese embassy/consulate abroad (or CVASC). Documents: passport, diploma + apostille + certified Chinese translation, CV, application form, photo.",
+          "Standard processing: 4-5 business days. Fee: $30-$140 depending on nationality. Total preparation time: ~3-4 weeks.",
+          "<strong>Visa features</strong>: 5-year validity, multiple entry, up to 180 days per stay. Permits work, study, research, business, and entrepreneurship — all on one visa.",
+          "After arrival: employer obtains work permit → you apply for residence permit within 30 days → register address within 24h.",
+          "<strong>Path to Green Card</strong>: Work 3 continuous years + reside ≥6 months/year + pay tax 3 years + income ~2-3× local avg. Total timeline: ~3.5-4 years.",
+          "K visa is ideal if you want flexibility — you can freelance, change jobs, or start a company without restarting the visa process. Not for non-STEM fields (finance, marketing, law)."
+        ]
+      }
     },
-    "free": {
-      "title": "✅ No Visa (Unilateral)",
-      "body": "50 visa-free countries,≤30d.",
-      "bodyRuNote": "⚠️Russia until Sep 14,2026",
-      "bodyDefault": "Valid until Dec 31,2026",
-      "tips": [
-        "Ordinary passport",
-        "≤30 days",
-        "Return ticket+booking"
-      ],
-      "detailTitle": "Unilateral Visa-Free",
-      "conditions": [
-        "Ordinary passport,≥6mo valid",
-        "Stay≤30d,non-extendable",
-        "Return ticket+hotel booking required",
-        "No paid work/study allowed",
-        "Valid until Dec 31,2026"
-      ],
-      "ruWarning": "⚠️ Russian citizens: Valid until Sep 14,2026 (not Dec 31)"
+    "permits": {
+      "workPermit": {
+        "label": "Work Permit",
+        "sub": "Step 1 — Employer applies online",
+        "title": "Foreigner's Work Permit",
+        "steps": [
+          "Employer applies online. One-stop portal integrates work permit, residence permit, and social security since late 2025.",
+          "<strong>Employer registers</strong> at www.12333.gov.cn (select 'Corporate User'). Verification: 3-5 business days.",
+          "<strong>Prepare documents</strong>: passport (6+ months valid, 2+ blank pages), degree certificate (apostille + certified Chinese translation), no-criminal-record certificate (<6 months old, apostille), health check (from designated facility), 2-inch white-background photo, CV (past 10 years, no gaps), employment contract.",
+          "<strong>Points-based classification</strong>: Category A (85+ points, high-end talent, 5-year permit), Category B (60-84, professional, 1-3 years), Category C (<60, general worker, quota-limited). Points from: salary, education, experience, age, Chinese language.",
+          "<strong>Submit application</strong> through the one-stop portal. Three departments review in parallel: Science & Technology Bureau (qualifications), Exit-Entry Administration (passport/visa history), Human Resources Bureau (social security).",
+          "<strong>Processing time</strong>: 3-15 business days, ~6 days national average. Shanghai: ~3 days. Newer cities: 10-15 days.",
+          "<strong>Receive Notification Letter</strong> (PDF). Use this to apply for Z visa or convert in-country.",
+          "Total: 6-12 weeks (including 4-8 weeks for document authentication). Start 3 months before your intended start date. — As of Dec 2024, the physical work permit card is eliminated. Work permit info is embedded in the electronic 'Join in Card' via the 12333 APP."
+        ]
+      },
+      "residencePermit": {
+        "label": "Residence Permit",
+        "sub": "Step 2 — Within 30 days of entry",
+        "title": "Residence Permit",
+        "steps": [
+          "Apply within 30 days of entry. This is a sticker in your passport — it's your long-term stay authorization.",
+          "Apply at the local <strong>Public Security Bureau (PSB) Exit-Entry Administration</strong>.",
+          "<strong>Required documents</strong>: passport (with valid visa + entry stamp), Notification of Foreigner's Work Permit (printed), completed application form, recent 2-inch photo (white background, 48×33mm), police registration proof (from hotel or police station), health check certificate (for permits >1 year), employer business license copy (first-time only), employment contract.",
+          "Submit all documents. Your <strong>passport will be held</strong> during processing — you'll receive a receipt that serves as proof of status.",
+          "Processing: <strong>5-10 business days</strong>. Collect your passport with the residence permit sticker affixed.",
+          "<strong>Validity</strong>: typically 1 year for first-timers, 1-5 years for renewals. Category A talent may get 5 years on first application.",
+          "<strong>Fees</strong>: ¥400 (<1 year), ¥800 (1-3 years), ¥1,000 (3-5 years).",
+          "Processing: 5-10 business days. Apply within 30 days of entry. — The residence permit replaces your visa. Once you have it, you can enter/exit China freely during its validity period."
+        ]
+      }
     },
-    "transit": {
-      "title": "✅ 240h Transit",
-      "body": "55 countries. Onward ticket→≤240h(10d),24 provincial regions,60+ ports.",
-      "tips": [
-        "Onward ticket required",
-        "Designated ports",
-        "24 provincial regions"
-      ],
-      "detailTitle": "240h Transit Visa-Free",
-      "conditions": [
-        "55 eligible countries",
-        "Onward ticket to 3rd country required",
-        "Designated ports only(60+)",
-        "Stay≤240h(10 days)",
-        "24 provincial regions only",
-        "Cannot leave allowed area"
-      ]
+    "phonebank": {
+      "phone": {
+        "label": "SIM Card",
+        "sub": "Passport required. ¥29-99/month",
+        "title": "Chinese Phone Number",
+        "steps": [
+          "Visit a <strong>China Mobile / China Unicom / China Telecom</strong> service hall with your original passport (not a copy).",
+          "Choose a plan: <strong>¥29-99/month</strong>. Includes data, domestic calls + SMS. Ask for English service at larger branches.",
+          "The SIM is tied to your passport. Keep your passport with you — you'll need it for account changes.",
+          "<strong>Why it matters</strong>: Many apps (Alipay, WeChat, DiDi, Meituan) require a Chinese number for full functionality. Foreign numbers work but have limited features.",
+          "Keep your home country SIM for 2FA verification codes from your home bank/services.",
+          "<strong>Pro tip</strong>: Some carriers offer tourist eSIMs for short stays. For long-term, get a physical SIM for reliable service."
+        ]
+      },
+      "bank": {
+        "label": "Bank Account",
+        "sub": "BOC / ICBC / CMB. Lifts ¥200 limit",
+        "title": "Chinese Bank Account",
+        "steps": [
+          "Visit a major bank branch: <strong>Bank of China (BOC), ICBC, China Merchants Bank, or China Construction Bank</strong>. ICBC has the most English-friendly branches.",
+          "<strong>Required documents</strong>: original passport, residence permit (or visa + registration form), work permit (or employment contract), Chinese phone number.",
+          "Open a <strong>Class II account</strong> initially (limited to ¥10,000/day). Upgrade to <strong>Class I</strong> (unlimited) once you have a residence permit and work permit.",
+          "<strong>Get a UnionPay debit card</strong>. Link it to Alipay and WeChat Pay immediately at the counter (staff can help).",
+          "This <strong>lifts the ¥200 transaction limit</strong> on Alipay/WeChat Pay. You can now send/receive large amounts.",
+          "Enable mobile banking app. Set up <strong>cross-border transfer</strong> if you need to send money home (Wise, PayPal, or SWIFT via bank app).",
+          "<strong>Credit cards</strong>: Difficult for first-year foreigners. Use your home country credit card + Chinese debit card as a pair."
+        ]
+      }
     },
-    "kvisa": {
-      "title": "💡 K Visa (STEM)",
-      "body": "Oct 2025. STEM degree+<~40→no employer. Multi/5yr/≤180d.",
-      "tips": [
-        "STEM degree",
-        "No employer needed",
-        "Work/research/startup"
-      ],
-      "detailTitle": "K Visa (STEM Talent)",
-      "conditions": [
-        "Launched Oct 2025",
-        "STEM bachelor degree or above",
-        "Under ~40 years old",
-        "No employer sponsorship needed",
-        "Apply in-country,no exit required",
-        "Multiple entry/5yr/≤180d per stay",
-        "Work,research,startup allowed"
-      ]
+    "housing": {
+      "rent": {
+        "label": "Renting",
+        "sub": "Ziroom · Beike · Contracts · Costs",
+        "title": "Rental Guide",
+        "steps": [
+          "Ziroom (自如) and Beike (贝壳) are the two biggest rental platforms. Both have some English support.",
+          "Platforms: Ziroom — standardized apartments, English app, quick maintenance. Beike — largest listing platform, wider range. Lianjia — major brokerage, physical offices everywhere.",
+          "Contract norms: Standard is '押一付三' (1 month deposit + 3 months rent upfront). Always get a <strong>bilingual contract</strong> (Chinese + English). Confirm in writing that the landlord will <strong>assist with police registration</strong> — if they refuse, find another apartment.",
+          "Expat neighborhoods: Shanghai — Gubei, Jing'an, French Concession. Beijing — Chaoyang (Sanlitun), Shunyi (villas, family-friendly), Liangmaqiao. Guangzhou — Tianhe, Zhujiang New Town. Shenzhen — Shekou, Nanshan.",
+          "<strong>Red flags</strong>: Landlord refuses to provide property ownership certificate (needed for registration). No written contract. Asking for >3 months rent upfront. No heat in winter (northern cities).",
+          "Cost reference (mid-2026): Shanghai/Jing'an 1BR: ¥8K-25K/month. Beijing/Chaoyang: ¥7K-20K. GZ/Tianhe: ¥4K-12K. SZ/Shekou: ¥6K-15K."
+        ]
+      },
+      "registration": {
+        "label": "Registration",
+        "sub": "Mandatory within 24h of moving",
+        "title": "Police Registration",
+        "steps": [
+          "Mandatory within 24 hours of moving to a new address. Legal basis: Exit-Entry Administration Law Art. 39.",
+          "<strong>Hotel residents</strong>: The hotel registers you automatically at check-in — just hand over your passport. No action needed.",
+          "<strong>Private residence</strong>: Go to the <strong>local police station</strong> within 24 hours of moving in. Bring: passport, residence permit (or visa), rental contract, landlord's property ownership certificate copy, landlord's ID copy.",
+          "<strong>Online registration (7 pilot cities)</strong>: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen. Use NIA website (s.nia.gov.cn) or 12367 APP. Since March 2026.",
+          "<strong>Re-register every time you move</strong>. This is a legal requirement, not optional. Your registration receipt is needed for residence permit renewal.",
+          "<strong>Failure to register</strong>: Warning on first offense. Repeated failure: fine up to ¥2,000 (Art. 76). Can affect future visa/residence permit applications.",
+          "<strong>Pro tip</strong>: Keep a photo of your registration receipt on your phone. You'll need it for bank, phone, and permit applications.",
+          "Since Mar 2026, the 12367 platform supports online registration in 7 pilot cities. This is a game-changer — no more queuing at the police station."
+        ]
+      }
     },
-    "visaRequired": {
-      "title": "📋 Visa Required",
-      "body": "Apply in advance per nationality/purpose/duration. Visit local CVASC.",
-      "tips": [
-        "visaforchina.cn",
-        "Passport+photo+form+invitation",
-        "~4-5 business days"
-      ],
-      "detailTitle": "Visa Required",
-      "conditions": [
-        "Apply at Chinese embassy/consulate",
-        "Passport+photo+form+invitation",
-        "~4-5 business days processing",
-        "Types:L(tourist)/M(business)/Q(family)/Z(work)/X(student)",
-        "Fee varies by nationality & type"
-      ]
+    "insurance": {
+      "socialIns": {
+        "label": "Social Insurance",
+        "sub": "Five Insurances + Housing Fund",
+        "title": "Five Social Insurances + Housing Fund",
+        "steps": [
+          "Mandatory for all foreign employees. Registration must be completed within 30 days of work permit issuance. Contribution rates match Chinese employees.",
+          "<strong>Pension</strong> (Employee 8% + Employer 14-16%): You can withdraw your personal account balance (8% + interest) when permanently leaving China. Employer contributions stay in the pooling fund.",
+          "<strong>Medical</strong> (Employee 2% + Employer ~6.85-10%): Covers public hospital visits with partial reimbursement. Most expats use this as a base and add private insurance for international clinics.",
+          "<strong>Unemployment</strong> (Employee 0.2-0.5% + Employer 0.5-0.8%): Provides limited benefits. Must have contributed 1+ years and be 'involuntarily unemployed.'",
+          "<strong>Work Injury</strong> (Employer 0.16-1.9%, Employee 0%): Covers work-related injuries and occupational diseases. Employer pays full cost.",
+          "<strong>Maternity</strong> (merged with Medical): Covers childbirth costs and maternity leave pay. Both male and female employees contribute.",
+          "<strong>Housing Fund</strong> (Employee 5-12% + Employer 5-12%): Varies by city. Shanghai allows foreigners to opt out. Your contributions + employer match go into a personal account. Can be withdrawn when leaving China or buying property.",
+          "<strong>Bilateral exemptions</strong>: 12 countries (DE, KR, DK, FI, CA, CH, NL, ES, LU, JP, RS, KG) have social security agreements with China — may exempt pension/unemployment contributions. Medical + work injury still mandatory. Apply for Certificate of Coverage.",
+          "Total employer cost above your gross salary: ~26-37%. This is part of your total compensation — negotiate with this in mind."
+        ]
+      },
+      "privateIns": {
+        "label": "Private Insurance",
+        "sub": "Cigna · Allianz · Bupa",
+        "title": "International Health Insurance",
+        "steps": [
+          "Most expats buy supplementary international insurance for access to private clinics with English-speaking doctors.",
+          "<strong>Major providers</strong>: Cigna (~¥15K-30K/yr), Allianz (~¥12K-25K/yr), Bupa (~¥20K-50K/yr), Aetna, MSH China. All have direct billing with international hospitals.",
+          "<strong>Key hospitals</strong>: Shanghai — Jiahui, UFH, Parkway Health. Beijing — UFH, PUMCH International, OASIS. Guangzhou — Clifford, CanAm. Shenzhen — UFH Shekou.",
+          "Cost reference: GP visit ¥800-1,500 at international dept, specialist ¥1,200-2,500. ER visit ¥2,000-5,000. Hospitalization ¥5,000-15,000/night. Insurance is strongly recommended.",
+          "Some employers provide Cigna/Allianz as part of the expat package. If not, buy individual coverage — one hospital visit without insurance can cost more than a year's premium."
+        ]
+      }
     },
-    "links": {
-      "niaVisaFree": "NIA Visa-Free Policy",
-      "beijingVisaFaq": "Beijing Visa-Free FAQ",
-      "mfaConsular": "MFA Consular",
-      "niaTransit": "NIA Transit Policy",
-      "cvasc": "CVASC Application",
-      "onlineBooking": "Online Booking",
-      "consularServices": "Consular Services",
-      "niaKVisa": "NIA K Visa Policy"
+    "driveschool": {
+      "license": {
+        "label": "Driver's License",
+        "sub": "Temp permit, direct swap, or written test",
+        "title": "Driver's License",
+        "steps": [
+          "Foreign licenses are not valid in China. You have three options: temporary permit, direct swap (some countries), or take the written test.",
+          "<strong>Temporary Permit</strong>: Valid 3 months. Apply at the vehicle management office with: passport, foreign license, notarized Chinese translation, residence registration, 3 photos, health check. Processing: same day to 3 days. Good for short-term needs.",
+          "<strong>Direct Swap</strong>: Citizens of Belgium, France (and a few others) can directly exchange their license for a Chinese one — no test required. Check with your country's embassy for the latest list, as bilateral agreements change.",
+          "<strong>Written Test (most foreigners)</strong>: Pass the 100-question multiple-choice test (90/100 to pass). Available in English, Japanese, Korean, Russian, French, German, Spanish, and more. Study the official app (驾考宝典). Book at your local vehicle management office. After passing: receive a Chinese C1 license (valid 6 years).",
+          "<strong>Where to apply</strong>: Vehicle Management Office. Bring: passport + residence permit, foreign license + notarized translation, residence registration form, health check (from designated hospital), 3-5 photos.",
+          "Unlike many countries, China does not require a driving test (road test) for foreign license conversion — just the written test. The test focuses on Chinese traffic rules and signs."
+        ]
+      },
+      "school": {
+        "label": "Schools",
+        "sub": "International & bilingual options",
+        "title": "International Schools",
+        "steps": [
+          "Three types: pure international (foreign passport only), bilingual (mixed), and public school international departments. Plan 6-12 months ahead.",
+          "<strong>School types</strong>: <br>1) <strong>Pure International</strong>: Foreign passport only. Follow US/UK/IB curriculum. English instruction. Best fit if planning to return home for university. <br>2) <strong>Bilingual</strong>: Chinese + English. Open to both foreign and Chinese students. More immersion in local culture. <br>3) <strong>Public School Intl Dept</strong>: Attached to top public schools. Chinese curriculum + international elements. Most affordable.",
+          "<strong>Annual tuition (2025-2026)</strong>: Pure International: ¥150K-350K+. Bilingual: ¥80K-200K. Public Intl Dept: ¥30K-80K. Plus: application fee (¥2K-5K), uniform, meals, bus, activities.",
+          "<strong>Key areas</strong>: Beijing — Shunyi (ISB, WAB, Dulwich, BSY). Shanghai — Pudong (Dulwich, Wellington, Concordia), Changning (YCIS, SCIS). Guangzhou — Tianhe, Panyu. Shenzhen — Shekou (SIS, BASIS).",
+          "<strong>Admission</strong>: Apply 6-12 months before start date. Most schools require: previous school reports, recommendation letters, student interview, parent interview, English proficiency assessment. Some have waitlists of 1-2 years.",
+          "Pure international schools legally cannot admit Chinese passport holders (except Hong Kong/Macau/Taiwan). If your child holds a Chinese passport, look at bilingual schools or public school international departments."
+        ]
+      }
+    },
+    "daily": {
+      "shopping": {
+        "label": "Shopping",
+        "sub": "Taobao · JD · Pinduoduo · Hema",
+        "title": "Online Shopping & Groceries",
+        "steps": [
+          "<strong>Taobao (淘宝)</strong>: The biggest marketplace — everything from furniture to phone cases. Prices are unbeatable. Use image search to find items. Most sellers ship same/next day.",
+          "<strong>JD (京东)</strong>: Electronics, appliances, and branded goods. Better quality control, higher prices. JD Logistics delivers within hours in major cities. Recommended for electronics.",
+          "<strong>Pinduoduo (拼多多)</strong>: Budget platform. Great for daily essentials and household items. Group-buy model for lowest prices.",
+          "<strong>Hema (盒马)</strong>: Alibaba's fresh grocery chain. 30-minute delivery to your door. Great for imported foods, fresh produce, and ready-to-eat meals. Higher prices but excellent quality.",
+          "<strong>Sam's Club / Costco</strong>: Both in major cities. Bulk imported goods. Great for cheese, wine, and Western staples.",
+          "<strong>Import supermarkets</strong>: CityShop (城市超市), Ole', BHG — stock Western/Japanese/Korean groceries. Pricey but worth it for comfort food."
+        ]
+      },
+      "food": {
+        "label": "Dining",
+        "sub": "Dianping · Meituan · Ele.me",
+        "title": "Eating Out & Delivery",
+        "steps": [
+          "<strong>Dianping (大众点评)</strong>: The Yelp of China. Restaurant reviews, photos, ratings. Search by cuisine type, area, or price. Essential for finding good restaurants.",
+          "<strong>Meituan (美团) / Ele.me (饿了么)</strong>: Food delivery to your door, typically 30-40 minutes. Coverage is nearly universal. Delivery fee ¥3-8. Both built into Alipay and WeChat.",
+          "<strong>WeChat translate</strong>: Point your phone camera at a Chinese menu → WeChat scan → translate. Not perfect, but good enough to understand what you're ordering.",
+          "<strong>Dietary needs</strong>: Halal — look for 清真 (qīngzhēn) signs or Lanzhou beef noodle chains. Vegetarian — say 纯素 (chún sù) for pure vegan, 素食 (sù shí) for vegetarian. Watch for meat broth in vegetable dishes. Allergies — carry a bilingual allergy card.",
+          "<strong>Paying</strong>: Almost no one uses cash. Scan the table QR code with Alipay/WeChat to order AND pay. Some restaurants are fully QR-code ordering — no physical menu.",
+          "<strong>Tip culture</strong>: No tipping in China. It's not expected and sometimes refused."
+        ]
+      },
+      "clothing": {
+        "label": "Clothing",
+        "sub": "Sizes & seasonal dressing guide",
+        "title": "Sizing & Seasonal Dressing",
+        "steps": [
+          "<strong>Sizing</strong>: China sizes are 1-2 smaller than US/EU. US M = CN L/XL. US L = CN XXL. Always check the size chart in cm — don't rely on letter sizes. Uniqlo and Zara in China use global sizing, so they're reliable references.",
+          "<strong>Spring (Mar-May, 10-22°C)</strong>: Light jacket + layers. This is the most comfortable season. Occasional rain in the south — bring a light raincoat.",
+          "<strong>Summer (Jun-Aug, 28-38°C+)</strong>: Hot and humid, especially south of the Yangtze. Breathable fabrics (cotton, linen). Sunscreen, hat, and UV umbrella essential. Every building has AC. Carry a light cardigan for indoor cold.",
+          "<strong>Autumn (Sep-Nov, 10-25°C)</strong>: The BEST season. Clear skies, comfortable temperatures. Light sweater or jacket in the evening. Ideal for travel and outdoor activities.",
+          "<strong>Winter (Dec-Feb)</strong>: North (Beijing/Harbin): -10°C to -20°C. Heavy down coat, thermal layers, gloves, hat, boots — you need full winter gear. South (Shanghai/Guangzhou): 0-10°C. Damp cold feels colder than the number. Layers work better than one thick coat. Indoor heating is universal in the north, but southern apartments may not have central heating — check before renting."
+        ]
+      },
+      "transport": {
+        "label": "Transport",
+        "sub": "Metro · DiDi · Shared bikes · HSR",
+        "title": "Getting Around Daily",
+        "steps": [
+          "<strong>Metro</strong>: Best way to get around major cities. Use Alipay transport QR code at gates — no ticket needed. ¥2-10 per ride. Extensive networks in all Tier 1/2 cities. English signs and announcements in most cities.",
+          "<strong>DiDi (滴滴)</strong>: Built into Alipay and WeChat. English UI available. Pay with linked foreign or Chinese card. Multiple car types (Express, Premier, Taxi). ~¥20-50 for a typical city ride.",
+          "<strong>Shared bikes</strong>: Scan with Alipay/Meituan. ¥1.5-3 per ride. No deposit for most. Hello Bike (哈啰), Meituan Bike (美团单车), DiDi Bike (青桔). Blue, yellow, green — you'll recognize them.",
+          "<strong>High-Speed Rail (高铁)</strong>: For inter-city travel. Book at 12306.cn (English version available). Foreign passports accepted. 300+ km/h. Shanghai to Beijing: 4.5 hours. Book 1-2 weeks ahead for peak times.",
+          "<strong>Ride-hailing alternatives</strong>: CaoCao (曹操出行) — premium cars. T3 (T3出行) — backed by state automakers. Both have English support in some cities."
+        ]
+      }
+    },
+    "compliance": {
+      "renewal": {
+        "label": "Renewal & Compliance",
+        "sub": "Permits · Overstay · Green Card",
+        "title": "Staying Legal",
+        "steps": [
+          "Your residence permit must be renewed 30 days before expiry. Overstaying has serious consequences.",
+          "<strong>Renew 30-60 days before expiry</strong>. Set a calendar reminder. Late renewal may require explanation and additional documents.",
+          "<strong>Overstay penalties</strong>: ¥500 per day of overstay, up to ¥10,000 maximum. In serious cases: 5-15 days detention + deportation. A 5-year entry ban may be imposed.",
+          "<strong>Lost/stolen passport</strong>: 1) File a police report immediately (call 110 or visit the nearest police station). 2) Get a police report receipt. 3) Contact your embassy/consulate for an emergency travel document or new passport. 4) Transfer your residence permit to the new passport within 10 days at the Exit-Entry Bureau.",
+          "<strong>Change of employer</strong>: New employer must apply for a new work permit. Then update your residence permit at the Exit-Entry Bureau within 10 days of the change. You cannot start working for the new employer until both permits are updated.",
+          "<strong>Change of address</strong>: Re-register at the new police station within 24 hours of moving. Update your address in the Exit-Entry system.",
+          "<strong>Lost residence permit</strong>: Report to the Exit-Entry Bureau immediately. Apply for a replacement (¥200 fee, 7-10 business days).",
+          "<strong>Permanent Residence (Green Card)</strong>: Eligibility — work 3+ continuous years in China, reside ≥6 months/year, pay individual tax for 3 consecutive years, income ~2-6× local average (~¥240K-720K/year). K visa pathway: ~2-3× local avg. Apply via Exit-Entry Bureau. Processing: 6-12 months, quota applies. Green card holders can work without a separate permit and enter/exit China freely.",
+          "<strong>Critical</strong>: Never let your residence permit expire. Overstay records can permanently affect future visa applications. If you realize it's expiring and you can't renew in time, call 12367 for guidance BEFORE it expires."
+        ]
+      },
+      "emergency": {
+        "desc": "Save these numbers. Tap each one to learn when to call and what to expect.",
+        "hotline12367": "Immigration 24h",
+        "hotline110": "Police",
+        "hotline120": "Ambulance",
+        "hotline119": "Fire",
+        "passportWarning": "Lost Passport?",
+        "passportWarningDetail": "1) File police report immediately (call 110). 2) Contact your embassy for emergency travel document. 3) Keep a photo of your passport and visa on your phone. 4) Transfer residence permit to new passport within 10 days."
+      }
     }
-  },
-  "l1": {
-    "meta": {
-      "title": "Status Transfer",
-      "sub": "Already in China on a tourist/student visa? Here are your pathways to a long-term work/residence permit."
-    },
-    "kicker": "Your Route In",
-    "intro": "Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process.",
-    "pathA": {
-      "label": "Tourist → Work",
-      "title": "Tourist → Work",
-      "steps": [
-        "On a tourist visa (L) or visa-free entry. Get a job offer → employer sponsors work permit → convert to residence permit.",
-        "Receive a job offer from a Chinese employer willing to sponsor your work permit.",
-        "Employer applies for your Foreigner's Work Permit Notification Letter online (www.12333.gov.cn). Processing: ~6 business days average.",
-        "If your current visa allows in-country conversion: apply directly at the local Exit-Entry Bureau. <strong>Check with the bureau first</strong> — rules vary by city.",
-        "If in-country conversion is NOT allowed: you must exit China (e.g. to Hong Kong, Seoul, Bangkok), apply for a Z visa at a Chinese embassy, and re-enter.",
-        "Within 30 days of receiving your work permit: apply for a work-type Residence Permit at the PSB Exit-Entry Administration.",
-        "Complete medical check at a designated hospital (required for residence permit >1 year).",
-        "💡 Shanghai, Beijing, and GZ are generally more flexible with in-country conversion. Always call 12367 to confirm before making travel plans."
-      ],
-      "sub": "Employer sponsors, convert or re-enter"
-    },
-    "pathB": {
-      "label": "Student → Work",
-      "title": "Student → Work",
-      "steps": [
-        "For fresh graduates from Chinese universities. No need to exit China — convert directly in-country.",
-        "Graduate from a Chinese university (bachelor's, master's, or PhD).",
-        "Secure a job offer from a Chinese employer. The employer applies for your work permit.",
-        "You can convert your student residence permit (X1) to a work residence permit <strong>without leaving China</strong>.",
-        "Required documents: diploma (authenticated by CSCSE), employment contract, employer business license, health check, passport, and police registration.",
-        "Apply at the local Exit-Entry Bureau. Standard processing: 7-15 business days.",
-        "Note: this pathway is only for fresh graduates. If you graduated >1 year ago, use Path A instead.",
-        "💡 Many cities offer fast-track processing for foreign graduates of local universities. Shanghai and Beijing have dedicated 'foreign graduate talent' windows."
-      ],
-      "sub": "Graduate & convert in-country, no exit"
-    },
-    "pathC": {
-      "label": "K Visa (STEM Talent)",
-      "title": "K Visa (STEM Talent)",
-      "steps": [
-        "Launched Oct 2025. Self-sponsored visa for STEM graduates. No employer needed.",
-        "<strong>Eligibility</strong>: STEM degree (bachelor's or above) from a recognized university, generally under ~40 years old.",
-        "<strong>No employer sponsorship required</strong> — self-apply. This is the biggest difference from Z visa.",
-        "Apply at a Chinese embassy/consulate abroad (or CVASC). Documents: passport, diploma + apostille + certified Chinese translation, CV, application form, photo.",
-        "Standard processing: 4-5 business days. Fee: $30-$140 depending on nationality. Total preparation time: ~3-4 weeks.",
-        "<strong>Visa features</strong>: 5-year validity, multiple entry, up to 180 days per stay. Permits work, study, research, business, and entrepreneurship — all on one visa.",
-        "After arrival: employer obtains work permit → you apply for residence permit within 30 days → register address within 24h.",
-        "<strong>Path to Green Card</strong>: Work 3 continuous years + reside ≥6 months/year + pay tax 3 years + income ~2-3× local avg. Total timeline: ~3.5-4 years.",
-        "💡 K visa is ideal if you want flexibility — you can freelance, change jobs, or start a company without restarting the visa process. Not for non-STEM fields (finance, marketing, law)."
-      ],
-      "sub": "Self-sponsored, 5-year multi-entry"
-    },
-    "back": "Back"
-  },
-  "l2": {
-    "meta": {
-      "title": "Work & Residence",
-      "sub": "Two essential documents. New: one-stop online application, ~6 working days average."
-    },
-    "kicker": "Get Permitted",
-    "intro": "The two-step process every foreign worker goes through. Since late 2025, a one-stop online portal integrates work permit, residence permit, and social security registration.",
-    "stat1": "working days avg",
-    "stat2": "online portal since 2025",
-    "stat3": "physical card eliminated",
-    "workPermit": {
-      "label": "Work Permit",
-      "title": "Foreigner's Work Permit",
-      "steps": [
-        "Employer applies online. One-stop portal integrates work permit, residence permit, and social security since late 2025.",
-        "<strong>Employer registers</strong> at www.12333.gov.cn (select 'Corporate User'). Verification: 3-5 business days.",
-        "<strong>Prepare documents</strong>: passport (6+ months valid, 2+ blank pages), degree certificate (apostille + certified Chinese translation), no-criminal-record certificate (<6 months old, apostille), health check (from designated facility), 2-inch white-background photo, CV (past 10 years, no gaps), employment contract.",
-        "<strong>Points-based classification</strong>: Category A (85+ points, high-end talent, 5-year permit), Category B (60-84, professional, 1-3 years), Category C (<60, general worker, quota-limited). Points from: salary, education, experience, age, Chinese language.",
-        "<strong>Submit application</strong> through the one-stop portal. Three departments review in parallel: Science & Technology Bureau (qualifications), Exit-Entry Administration (passport/visa history), Human Resources Bureau (social security).",
-        "<strong>Processing time</strong>: 3-15 business days, ~6 days national average. Shanghai: ~3 days. Newer cities: 10-15 days.",
-        "<strong>Receive Notification Letter</strong> (PDF). Use this to apply for Z visa or convert in-country.",
-        "⏱ Total: 6-12 weeks (including 4-8 weeks for document authentication). Start 3 months before your intended start date. — 💡 As of Dec 2024, the physical work permit card is eliminated. Work permit info is embedded in the electronic 'Join in Card' via the 12333 APP."
-      ],
-      "sub": "Step 1 — Employer applies online"
-    },
-    "residencePermit": {
-      "label": "Residence Permit",
-      "title": "Residence Permit",
-      "steps": [
-        "Apply within 30 days of entry. This is a sticker in your passport — it's your long-term stay authorization.",
-        "Apply at the local <strong>Public Security Bureau (PSB) Exit-Entry Administration</strong>.",
-        "<strong>Required documents</strong>: passport (with valid visa + entry stamp), Notification of Foreigner's Work Permit (printed), completed application form, recent 2-inch photo (white background, 48×33mm), police registration proof (from hotel or police station), health check certificate (for permits >1 year), employer business license copy (first-time only), employment contract.",
-        "Submit all documents. Your <strong>passport will be held</strong> during processing — you'll receive a receipt that serves as proof of status.",
-        "Processing: <strong>5-10 business days</strong>. Collect your passport with the residence permit sticker affixed.",
-        "<strong>Validity</strong>: typically 1 year for first-timers, 1-5 years for renewals. Category A talent may get 5 years on first application.",
-        "<strong>Fees</strong>: ¥400 (<1 year), ¥800 (1-3 years), ¥1,000 (3-5 years).",
-        "⏱ Processing: 5-10 business days. Apply within 30 days of entry. — 💡 The residence permit replaces your visa. Once you have it, you can enter/exit China freely during its validity period."
-      ],
-      "sub": "Step 2 — Within 30 days of entry"
-    },
-    "back": "Back"
-  },
-  "l3": {
-    "meta": {
-      "title": "Phone + Bank",
-      "sub": "Chinese phone number + bank account = full digital life. Unlock all app features."
-    },
-    "kicker": "Digital Keys to Everyday Life",
-    "intro": "A Chinese phone number and bank account are the keys to everyday life in China — from mobile payment to food delivery to ride-hailing. Get these two sorted first.",
-    "stat1": "mobile payment users in China",
-    "stat2": "banks accept foreign passport",
-    "stat3": "monthly phone plan from",
-    "phone": {
-      "label": "SIM Card",
-      "title": "Chinese Phone Number",
-      "steps": [
-        "Visit a <strong>China Mobile / China Unicom / China Telecom</strong> service hall with your original passport (not a copy).",
-        "Choose a plan: <strong>¥29-99/month</strong>. Includes data, domestic calls + SMS. Ask for English service at larger branches.",
-        "The SIM is tied to your passport. Keep your passport with you — you'll need it for account changes.",
-        "<strong>Why it matters</strong>: Many apps (Alipay, WeChat, DiDi, Meituan) require a Chinese number for full functionality. Foreign numbers work but have limited features.",
-        "Keep your home country SIM for 2FA verification codes from your home bank/services.",
-        "<strong>Pro tip</strong>: Some carriers offer tourist eSIMs for short stays. For long-term, get a physical SIM for reliable service."
-      ],
-      "sub": "Passport required. ¥29-99/month"
-    },
-    "bank": {
-      "label": "Bank Account",
-      "title": "Chinese Bank Account",
-      "steps": [
-        "Visit a major bank branch: <strong>Bank of China (BOC), ICBC, China Merchants Bank, or China Construction Bank</strong>. ICBC has the most English-friendly branches.",
-        "<strong>Required documents</strong>: original passport, residence permit (or visa + registration form), work permit (or employment contract), Chinese phone number.",
-        "Open a <strong>Class II account</strong> initially (limited to ¥10,000/day). Upgrade to <strong>Class I</strong> (unlimited) once you have a residence permit and work permit.",
-        "<strong>Get a UnionPay debit card</strong>. Link it to Alipay and WeChat Pay immediately at the counter (staff can help).",
-        "This <strong>lifts the ¥200 transaction limit</strong> on Alipay/WeChat Pay. You can now send/receive large amounts.",
-        "Enable mobile banking app. Set up <strong>cross-border transfer</strong> if you need to send money home (Wise, PayPal, or SWIFT via bank app).",
-        "<strong>Credit cards</strong>: Difficult for first-year foreigners. Use your home country credit card + Chinese debit card as a pair."
-      ],
-      "sub": "BOC / ICBC / CMB. Lifts ¥200 limit"
-    },
-    "tip": "<strong>💡 Priority order</strong>: Get SIM → open bank account → link to Alipay/WeChat. Without a Chinese phone number, you cannot open a bank account. Without a bank account, your mobile payment features are limited.",
-    "back": "Back"
-  },
-  "l4": {
-    "meta": {
-      "title": "Housing",
-      "sub": "Where to live, how to rent, and mandatory registration. 7 cities now support online registration."
-    },
-    "kicker": "Find Your Home",
-    "intro": "Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.",
-    "sinceMar2026": "<strong>💡 Since Mar 2026</strong><span>12367 platform supports online registration in 7 pilot cities: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.</span>",
-    "rent": {
-      "label": "Renting",
-      "title": "Rental Guide",
-      "steps": [
-        "Ziroom (自如) and Beike (贝壳) are the two biggest rental platforms. Both have some English support.",
-        "🏢 <strong>Platforms</strong>: Ziroom (自如) — standardized apartments, English app, quick maintenance. Beike (贝壳) — largest listing platform, wider range. Lianjia (链家) — major brokerage, physical offices everywhere.",
-        "📝 <strong>Contract norms</strong>: Standard is '押一付三' (1 month deposit + 3 months rent upfront). Always get a <strong>bilingual contract</strong> (Chinese + English). Confirm in writing that the landlord will <strong>assist with police registration</strong> — if they refuse, find another apartment.",
-        "📍 <strong>Expat neighborhoods</strong>: Shanghai — Gubei, Jing'an, French Concession. Beijing — Chaoyang (Sanlitun), Shunyi (villas, family-friendly), Liangmaqiao. Guangzhou — Tianhe, Zhujiang New Town. Shenzhen — Shekou, Nanshan.",
-        "<strong>⚠️ Red flags</strong>: Landlord refuses to provide property ownership certificate (needed for registration). No written contract. Asking for >3 months rent upfront. No heat in winter (northern cities).",
-        "💰 <strong>Cost reference (mid-2026)</strong>: Shanghai/Jing'an 1BR: ¥8K-25K/month. Beijing/Chaoyang: ¥7K-20K. GZ/Tianhe: ¥4K-12K. SZ/Shekou: ¥6K-15K."
-      ],
-      "sub": "Ziroom · Beike · Contracts · Costs"
-    },
-    "registration": {
-      "label": "Registration",
-      "title": "Police Registration",
-      "steps": [
-        "Mandatory within 24 hours of moving to a new address. Legal basis: Exit-Entry Administration Law Art. 39.",
-        "<strong>Hotel residents</strong>: The hotel registers you automatically at check-in — just hand over your passport. No action needed.",
-        "<strong>Private residence</strong>: Go to the <strong>local police station</strong> (派出所) within 24 hours of moving in. Bring: passport, residence permit (or visa), rental contract, landlord's property ownership certificate copy, landlord's ID copy.",
-        "<strong>Online registration (7 pilot cities)</strong>: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen. Use NIA website (s.nia.gov.cn) or 12367 APP. Since March 2026.",
-        "<strong>Re-register every time you move</strong>. This is a legal requirement, not optional. Your registration receipt is needed for residence permit renewal.",
-        "<strong>Failure to register</strong>: Warning on first offense. Repeated failure: fine up to ¥2,000 (Art. 76). Can affect future visa/residence permit applications.",
-        "<strong>Pro tip</strong>: Keep a photo of your registration receipt on your phone. You'll need it for bank, phone, and permit applications.",
-        "💡 Since Mar 2026, the 12367 platform supports online registration in 7 pilot cities. This is a game-changer — no more queuing at the police station."
-      ],
-      "sub": "Mandatory within 24h of moving"
-    },
-    "back": "Back"
-  },
-  "l5": {
-    "meta": {
-      "title": "Insurance",
-      "sub": "Five mandatory insurances + housing fund. Most expats also buy private international coverage."
-    },
-    "kicker": "Stay Covered",
-    "intro": "Foreign employees must enroll in all five social insurances within 30 days of work permit issuance. Employer contributions add ~26-37% on top of your gross salary. Most expats also buy supplementary international health insurance.",
-    "stat1": "employer contribution on top",
-    "stat2": "insurances + housing fund",
-    "stat3": "countries with bilateral exemption",
-    "socialIns": {
-      "label": "Social Insurance",
-      "title": "Five Social Insurances + Housing Fund",
-      "steps": [
-        "Mandatory for all foreign employees. Registration must be completed within 30 days of work permit issuance. Contribution rates match Chinese employees.",
-        "🏦 <strong>Pension</strong> (Employee 8% + Employer 14-16%): You can withdraw your personal account balance (8% + interest) when permanently leaving China. Employer contributions stay in the pooling fund.",
-        "🏥 <strong>Medical</strong> (Employee 2% + Employer ~6.85-10%): Covers public hospital visits with partial reimbursement. Most expats use this as a base and add private insurance for international clinics.",
-        "📋 <strong>Unemployment</strong> (Employee 0.2-0.5% + Employer 0.5-0.8%): Provides limited benefits. Must have contributed 1+ years and be 'involuntarily unemployed.'",
-        "⚠️ <strong>Work Injury</strong> (Employer 0.16-1.9%, Employee 0%): Covers work-related injuries and occupational diseases. Employer pays full cost.",
-        "👶 <strong>Maternity</strong> (merged with Medical): Covers childbirth costs and maternity leave pay. Both male and female employees contribute.",
-        "🏠 <strong>Housing Fund</strong> (Employee 5-12% + Employer 5-12%): Varies by city. Shanghai allows foreigners to opt out. Your contributions + employer match go into a personal account. Can be withdrawn when leaving China or buying property.",
-        "🌐 <strong>Bilateral exemptions</strong>: 12 countries (DE, KR, DK, FI, CA, CH, NL, ES, LU, JP, RS, KG) have social security agreements with China — may exempt pension/unemployment contributions. Medical + work injury still mandatory. Apply for Certificate of Coverage.",
-        "💡 Total employer cost above your gross salary: ~26-37%. This is part of your total compensation — negotiate with this in mind."
-      ],
-      "sub": "Five mandatory insurances + housing fund"
-    },
-    "privateIns": {
-      "label": "Private Insurance",
-      "title": "International Health Insurance",
-      "steps": [
-        "Most expats buy supplementary international insurance for access to private clinics with English-speaking doctors.",
-        "🏥 <strong>Major providers</strong>: Cigna (~¥15K-30K/yr), Allianz (~¥12K-25K/yr), Bupa (~¥20K-50K/yr), Aetna, MSH China. All have direct billing with international hospitals.",
-        "🏥 <strong>Key hospitals</strong>: Shanghai — Jiahui, UFH, Parkway Health. Beijing — UFH, PUMCH International, OASIS. Guangzhou — Clifford, CanAm. Shenzhen — UFH Shekou.",
-        "💰 <strong>Cost reference</strong>: GP visit ¥800-1,500 at international dept, specialist ¥1,200-2,500. ER visit ¥2,000-5,000. Hospitalization ¥5,000-15,000/night. Insurance is strongly recommended.",
-        "💡 Some employers provide Cigna/Allianz as part of the expat package. If not, buy individual coverage — one hospital visit without insurance can cost more than a year's premium."
-      ],
-      "sub": "Cigna · Allianz · Bupa"
-    },
-    "back": "Back"
-  },
-  "l6": {
-    "meta": {
-      "title": "Drive + School",
-      "sub": "Driver's license conversion and international school options for expat families."
-    },
-    "kicker": "Hit the Road, Hit the Books",
-    "intro": "Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead.",
-    "license": {
-      "label": "Driver's License",
-      "title": "Driver's License",
-      "steps": [
-        "Foreign licenses are not valid in China. You have three options: temporary permit, direct swap (some countries), or take the written test.",
-        "📋 <strong>Temporary Permit</strong>: Valid 3 months. Apply at the vehicle management office (车管所) with: passport, foreign license, notarized Chinese translation, residence registration, 3 photos, health check. Processing: same day to 3 days. Good for short-term needs.",
-        "🔄 <strong>Direct Swap</strong>: Citizens of Belgium, France (and a few others) can directly exchange their license for a Chinese one — no test required. Check with your country's embassy for the latest list, as bilateral agreements change.",
-        "📝 <strong>Written Test (most foreigners)</strong>: Pass the 100-question multiple-choice test (90/100 to pass). Available in English, Japanese, Korean, Russian, French, German, Spanish, and more. Study the official app (驾考宝典). Book at your local vehicle management office. After passing: receive a Chinese C1 license (valid 6 years).",
-        "📍 <strong>Where to apply</strong>: Vehicle Management Office (车辆管理所). Bring: passport + residence permit, foreign license + notarized translation, residence registration form, health check (from designated hospital), 3-5 photos.",
-        "💡 Unlike many countries, China does not require a driving test (road test) for foreign license conversion — just the written test. The test focuses on Chinese traffic rules and signs."
-      ],
-      "sub": "Temp permit, direct swap, or written test"
-    },
-    "school": {
-      "label": "Schools",
-      "title": "International Schools",
-      "steps": [
-        "Three types: pure international (foreign passport only), bilingual (mixed), and public school international departments. Plan 6-12 months ahead.",
-        "🏫 <strong>School types</strong>: <br>1) <strong>Pure International</strong>: Foreign passport only. Follow US/UK/IB curriculum. English instruction. Best fit if planning to return home for university. <br>2) <strong>Bilingual</strong>: Chinese + English. Open to both foreign and Chinese students. More immersion in local culture. <br>3) <strong>Public School Intl Dept</strong>: Attached to top public schools. Chinese curriculum + international elements. Most affordable.",
-        "💰 <strong>Annual tuition (2025-2026)</strong>: Pure International: ¥150K-350K+. Bilingual: ¥80K-200K. Public Intl Dept: ¥30K-80K. Plus: application fee (¥2K-5K), uniform, meals, bus, activities.",
-        "📍 <strong>Key areas</strong>: Beijing — Shunyi (ISB, WAB, Dulwich, BSY). Shanghai — Pudong (Dulwich, Wellington, Concordia), Changning (YCIS, SCIS). Guangzhou — Tianhe, Panyu. Shenzhen — Shekou (SIS, BASIS).",
-        "📋 <strong>Admission</strong>: Apply 6-12 months before start date. Most schools require: previous school reports, recommendation letters, student interview, parent interview, English proficiency assessment. Some have waitlists of 1-2 years.",
-        "💡 Pure international schools legally cannot admit Chinese passport holders (except Hong Kong/Macau/Taiwan). If your child holds a Chinese passport, look at bilingual schools or public school international departments."
-      ],
-      "sub": "International · Bilingual · Public Intl"
-    },
-    "back": "Back"
-  },
-  "l7": {
-    "meta": {
-      "title": "Daily Life",
-      "sub": "Shopping, eating, and dressing for life in China. Same-day delivery, 24/7 food delivery, and four distinct seasons."
-    },
-    "kicker": "Live Like a Local",
-    "intro": "Once you have your phone, bank, and apartment sorted, here's everything you need for daily life — from where to shop to what to eat to how to dress.",
-    "shopping": {
-      "label": "Shopping",
-      "title": "Online Shopping & Groceries",
-      "steps": [
-        "<strong>Taobao (淘宝)</strong>: The biggest marketplace — everything from furniture to phone cases. Prices are unbeatable. Use image search to find items. Most sellers ship same/next day.",
-        "<strong>JD (京东)</strong>: Electronics, appliances, and branded goods. Better quality control, higher prices. JD Logistics delivers within hours in major cities. Recommended for electronics.",
-        "<strong>Pinduoduo (拼多多)</strong>: Budget platform. Great for daily essentials and household items. Group-buy model for lowest prices.",
-        "<strong>Hema (盒马)</strong>: Alibaba's fresh grocery chain. 30-minute delivery to your door. Great for imported foods, fresh produce, and ready-to-eat meals. Higher prices but excellent quality.",
-        "<strong>Sam's Club / Costco</strong>: Both in major cities. Bulk imported goods. Great for cheese, wine, and Western staples.",
-        "<strong>Import supermarkets</strong>: CityShop (城市超市), Ole', BHG — stock Western/Japanese/Korean groceries. Pricey but worth it for comfort food."
-      ],
-      "sub": "Taobao · JD · Pinduoduo · Hema"
-    },
-    "food": {
-      "label": "Dining",
-      "title": "Eating Out & Delivery",
-      "steps": [
-        "<strong>Dianping (大众点评)</strong>: The Yelp of China. Restaurant reviews, photos, ratings. Search by cuisine type, area, or price. Essential for finding good restaurants.",
-        "<strong>Meituan (美团) / Ele.me (饿了么)</strong>: Food delivery to your door, typically 30-40 minutes. Coverage is nearly universal. Delivery fee ¥3-8. Both built into Alipay and WeChat.",
-        "<strong>WeChat translate</strong>: Point your phone camera at a Chinese menu → WeChat scan → translate. Not perfect, but good enough to understand what you're ordering.",
-        "<strong>Dietary needs</strong>: Halal — look for 清真 (qīngzhēn) signs or Lanzhou beef noodle chains. Vegetarian — say 纯素 (chún sù) for pure vegan, 素食 (sù shí) for vegetarian. Watch for meat broth in vegetable dishes. Allergies — carry a bilingual allergy card.",
-        "<strong>Paying</strong>: Almost no one uses cash. Scan the table QR code with Alipay/WeChat to order AND pay. Some restaurants are fully QR-code ordering — no physical menu.",
-        "<strong>Tip culture</strong>: No tipping in China. It's not expected and sometimes refused."
-      ],
-      "sub": "Dianping · Meituan · Ele.me"
-    },
-    "clothing": {
-      "label": "Clothing",
-      "title": "Sizing & Seasonal Dressing",
-      "steps": [
-        "<strong>Sizing</strong>: China sizes are 1-2 smaller than US/EU. US M = CN L/XL. US L = CN XXL. Always check the size chart in cm — don't rely on letter sizes. Uniqlo and Zara in China use global sizing, so they're reliable references.",
-        "<strong>Spring (Mar-May, 10-22°C)</strong>: Light jacket + layers. This is the most comfortable season. Occasional rain in the south — bring a light raincoat.",
-        "<strong>Summer (Jun-Aug, 28-38°C+)</strong>: Hot and humid, especially south of the Yangtze. Breathable fabrics (cotton, linen). Sunscreen, hat, and UV umbrella essential. Every building has AC. Carry a light cardigan for indoor cold.",
-        "<strong>Autumn (Sep-Nov, 10-25°C)</strong>: The BEST season. Clear skies, comfortable temperatures. Light sweater or jacket in the evening. Ideal for travel and outdoor activities.",
-        "<strong>Winter (Dec-Feb)</strong>: North (Beijing/Harbin): -10°C to -20°C. Heavy down coat, thermal layers, gloves, hat, boots — you need full winter gear. South (Shanghai/Guangzhou): 0-10°C. Damp cold feels colder than the number. Layers work better than one thick coat. Indoor heating is universal in the north, but southern apartments may not have central heating — check before renting."
-      ],
-      "sub": "Sizes & seasonal dressing guide"
-    },
-    "transport": {
-      "label": "Transport",
-      "title": "Getting Around Daily",
-      "steps": [
-        "<strong>Metro</strong>: Best way to get around major cities. Use Alipay transport QR code at gates — no ticket needed. ¥2-10 per ride. Extensive networks in all Tier 1/2 cities. English signs and announcements in most cities.",
-        "<strong>DiDi (滴滴)</strong>: Built into Alipay and WeChat. English UI available. Pay with linked foreign or Chinese card. Multiple car types (Express, Premier, Taxi). ~¥20-50 for a typical city ride.",
-        "<strong>Shared bikes</strong>: Scan with Alipay/Meituan. ¥1.5-3 per ride. No deposit for most. Hello Bike (哈啰), Meituan Bike (美团单车), DiDi Bike (青桔). Blue, yellow, green — you'll recognize them.",
-        "<strong>High-Speed Rail (高铁)</strong>: For inter-city travel. Book at 12306.cn (English version available). Foreign passports accepted. 300+ km/h. Shanghai to Beijing: 4.5 hours. Book 1-2 weeks ahead for peak times.",
-        "<strong>Ride-hailing alternatives</strong>: CaoCao (曹操出行) — premium cars. T3 (T3出行) — backed by state automakers. Both have English support in some cities."
-      ],
-      "sub": "Metro · DiDi · Shared bikes · HSR"
-    },
-    "back": "Back"
-  },
-  "l8": {
-    "meta": {
-      "title": "Compliance",
-      "sub": "Renewal reminders, overstay consequences, permanent residence pathway, and emergency contacts."
-    },
-    "kicker": "Play by the Rules",
-    "intro": "Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires.",
-    "renewal": {
-      "label": "Renewal & Compliance",
-      "title": "Staying Legal",
-      "steps": [
-        "Your residence permit must be renewed 30 days before expiry. Overstaying has serious consequences.",
-        "<strong>Renew 30-60 days before expiry</strong>. Set a calendar reminder. Late renewal may require explanation and additional documents.",
-        "<strong>Overstay penalties</strong>: ¥500 per day of overstay, up to ¥10,000 maximum. In serious cases: 5-15 days detention + deportation. A 5-year entry ban may be imposed.",
-        "<strong>Lost/stolen passport</strong>: 1) File a police report immediately (call 110 or visit the nearest police station). 2) Get a police report receipt. 3) Contact your embassy/consulate for an emergency travel document or new passport. 4) Transfer your residence permit to the new passport within 10 days at the Exit-Entry Bureau.",
-        "<strong>Change of employer</strong>: New employer must apply for a new work permit. Then update your residence permit at the Exit-Entry Bureau within 10 days of the change. You cannot start working for the new employer until both permits are updated.",
-        "<strong>Change of address</strong>: Re-register at the new police station within 24 hours of moving. Update your address in the Exit-Entry system.",
-        "<strong>Lost residence permit</strong>: Report to the Exit-Entry Bureau immediately. Apply for a replacement (¥200 fee, 7-10 business days).",
-        "🟢 <strong>Permanent Residence (Green Card)</strong>: Eligibility — work 3+ continuous years in China, reside ≥6 months/year, pay individual tax for 3 consecutive years, income ~2-6× local average (~¥240K-720K/year). K visa pathway: ~2-3× local avg. Apply via Exit-Entry Bureau. Processing: 6-12 months, quota applies. Green card holders can work without a separate permit and enter/exit China freely.",
-        "⚠️ <strong>Critical</strong>: Never let your residence permit expire. Overstay records can permanently affect future visa applications. If you realize it's expiring and you can't renew in time, call 12367 for guidance BEFORE it expires."
-      ],
-      "sub": "Permits · Overstay · Green Card"
-    },
-    "emergency": {
-      "label": "Emergency",
-      "title": "Emergency Contacts",
-      "desc": "Save these numbers. Tap each for details.",
-      "hotline12367": "Immigration 24h",
-      "hotline110": "Police",
-      "hotline120": "Ambulance",
-      "hotline119": "Fire",
-      "passportWarning": "⚠️ Lost Passport?",
-      "passportWarningDetail": "1) File police report immediately (call 110). 2) Contact your embassy for emergency travel document. 3) Keep a photo of your passport and visa on your phone. 4) Transfer residence permit to new passport within 10 days."
-    },
-    "back": "Back"
   }
 }

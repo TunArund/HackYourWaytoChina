@@ -42,7 +42,7 @@
           <div class="cover-card cover-card--short" onclick="startVersion('short')" role="button" tabindex="0"><span class="icon">🛫</span><h3 data-i18n="app.cover.short.label">Short-term Visitor</h3><span class="tagline" data-i18n="app.cover.short.tagline">2 – 30 days</span><span class="examples" data-i18n="app.cover.short.examples">Tourism · Business · Visit · Transit</span></div>
           <div class="cover-card cover-card--long" onclick="startVersion('long')" role="button" tabindex="0"><span class="icon">🏠</span><h3 data-i18n="app.cover.long.label">Long-term Resident</h3><span class="tagline" data-i18n="app.cover.long.tagline">Already in China · Settling</span><span class="examples" data-i18n="app.cover.long.examples">Work · Study · Visa Transfer · Settle</span></div>
         </div>
-        <p class="slide-footer slide-footer--cover" data-i18n="app.cover.footer">📅 Updated July 2026 &nbsp;·&nbsp; 🌐 Multilingual</p>
+        <p class="slide-footer slide-footer--cover">📅 <span data-i18n="app.cover.footerDate">Updated July 2026</span> · 🌐 <span data-i18n="app.cover.footerBilingual">Multilingual</span></p>
       </div>
     </div>
   </section>
@@ -53,14 +53,14 @@
   <section class="slide slide--short slide-pos--top" id="s1">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🔍</span><h2 class="s-title" data-i18n="s1.meta.title">Do I Need a Visa?</h2></div>
+        <div class="slide-head"><span class="s-icon">🔍</span><h2 class="s-title" data-i18n="slide.s1.meta.title">Visa</h2></div>
       </div>
       <div class="slide-body"><div class="visa-checker" id="visaChecker">
-        <p class="slide-kicker" data-i18n="s1.kicker">Visa Check</p>
+        <p class="slide-kicker" data-i18n="slide.s1.kicker">Find Out If You Need One</p>
         <button id="vcBack" class="vc-back" onclick="showContinents()" style="display:none"><span data-i18n="app.buttons.back">← Back</span></button>
         <div id="vcCards" class="vc-cards"></div>
         <div id="vcResult" class="vc-result"></div>
-        <button id="vcReset" class="vc-reset" onclick="showContinents()"><span data-i18n="app.buttons.reset">🔄 Select Again</span></button>
+        <button id="vcReset" class="vc-reset" onclick="showContinents()"><span data-i18n="app.buttons.reset">🔄 Check Again</span></button>
       </div></div>
     </div>
   </section>
@@ -69,17 +69,17 @@
   <section class="slide slide--short slide-pos--mid" id="s2">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="s2.meta.title">Before You Go</h2></div>
+        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="slide.s2.meta.title">Preparation</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="s2Summary">
-          <p class="slide-kicker" data-i18n="s2.kicker">Kicker</p>
-          <p class="slide-intro" data-i18n="s2.intro">Before you fly, make sure you have these essentials ready. Tap each item for details.</p>
+          <p class="slide-kicker" data-i18n="slide.s2.kicker">What to Sort Before You Fly</p>
+          <p class="slide-intro" data-i18n="slide.s2.intro">Before you fly, make sure you have these essentials ready. Tap each item for details.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('s2','passport')"><span>📘</span><span data-i18n="s2.passport.label">Passport</span><span class="card-sub" data-i18n="s2.passport.sub">Validity & blank pages</span></button>
-            <button class="card" onclick="openDetail('s2','tickets')"><span>🎫</span><span data-i18n="s2.tickets.label">Return+Hotel</span><span class="card-sub" data-i18n="s2.tickets.sub">Return flight & hotel proof</span></button>
-            <button class="card" onclick="openDetail('s2','arrivalCard')"><span>📱</span><span data-i18n="s2.arrivalCard.label">Arrival Card</span><span class="card-sub" data-i18n="s2.arrivalCard.sub">Pre-fill online, save QR code</span></button>
-            <button class="card" onclick="openDetail('s2','finalCheck')"><span>✅</span><span data-i18n="s2.finalCheck.label">Final Check</span><span class="card-sub" data-i18n="s2.finalCheck.sub">7-item checklist before boarding</span></button>
+            <button class="card" onclick="openDetail('s2','passport')"><span>📘</span><span data-i18n="preparation.passport.label">Passport</span><span class="card-sub" data-i18n="preparation.passport.sub">Validity & blank pages</span></button>
+            <button class="card" onclick="openDetail('s2','tickets')"><span>🎫</span><span data-i18n="preparation.tickets.label">Return+Hotel</span><span class="card-sub" data-i18n="preparation.tickets.sub">Return flight & hotel proof</span></button>
+            <button class="card" onclick="openDetail('s2','arrivalCard')"><span>📱</span><span data-i18n="preparation.arrivalCard.label">Arrival Card</span><span class="card-sub" data-i18n="preparation.arrivalCard.sub">Pre-fill online, save QR code</span></button>
+            <button class="card" onclick="openDetail('s2','finalCheck')"><span>✅</span><span data-i18n="preparation.finalCheck.label">Final Check</span><span class="card-sub" data-i18n="preparation.finalCheck.sub">7-item checklist before boarding</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s2Detail"></div>
@@ -91,16 +91,16 @@
   <section class="slide slide--short slide-pos--mid" id="s3">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">✈️</span><h2 class="s-title" data-i18n="s3.meta.title">Arrival & Immigration</h2></div>
+        <div class="slide-head"><span class="s-icon">✈️</span><h2 class="s-title" data-i18n="slide.s3.meta.title">Arrival</h2></div>
       </div>
             <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="s3Summary">
-          <p class="slide-kicker" data-i18n="s3.kicker">Kicker</p>
-          <p class="slide-intro" data-i18n="s3.intro">Landing in China? Tap to learn about immigration, customs, and registration.</p>
+          <p class="slide-kicker" data-i18n="slide.s3.kicker">From Tarmac to Taxi in 6 Steps</p>
+          <p class="slide-intro" data-i18n="slide.s3.intro">Landing in China? Tap to learn about immigration, customs, and registration.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('s3','steps')"><span>🛂</span><span data-i18n="s3.steps.label">Immigration</span><span class="card-sub" data-i18n="s3.steps.sub">6-step process at border control</span></button>
-            <button class="card" onclick="openDetail('s3','customs')"><span>🛃</span><span data-i18n="s3.customs.label">Customs</span><span class="card-sub" data-i18n="s3.customs.sub">Duty-free limits & restricted items</span></button>
-            <button class="card" onclick="openDetail('s3','registration')"><span>🏨</span><span data-i18n="s3.registration.label">Registration</span><span class="card-sub" data-i18n="s3.registration.sub">Hotel / police station / online</span></button>
+            <button class="card" onclick="openDetail('s3','immigration')"><span>🛂</span><span data-i18n="arrival.immigration.label">Immigration</span><span class="card-sub" data-i18n="arrival.immigration.sub">6-step process at border control</span></button>
+            <button class="card" onclick="openDetail('s3','customs')"><span>🛃</span><span data-i18n="arrival.customs.label">Customs</span><span class="card-sub" data-i18n="arrival.customs.sub">Duty-free limits & restricted items</span></button>
+            <button class="card" onclick="openDetail('s3','registration')"><span>🏨</span><span data-i18n="arrival.registration.label">Registration</span><span class="card-sub" data-i18n="arrival.registration.sub">Hotel / police station / online</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s3Detail"></div>
@@ -112,17 +112,17 @@
   <section class="slide slide--short slide-pos--mid" id="s4">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📶</span><h2 class="s-title" data-i18n="s4.meta.title">Connectivity</h2></div>
+        <div class="slide-head"><span class="s-icon">📶</span><h2 class="s-title" data-i18n="slide.s4.meta.title">Connectivity</h2></div>
       </div>
             <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="s4Summary">
-          <p class="slide-kicker" data-i18n="s4.kicker">Kicker</p>
-          <p class="slide-intro" data-i18n="s4.intro">Google, WhatsApp, and Instagram are blocked in China. Here is how to stay connected.</p>
+          <p class="slide-kicker" data-i18n="slide.s4.kicker">Stay Online Behind the Firewall</p>
+          <p class="slide-intro" data-i18n="slide.s4.intro">Google, WhatsApp, and Instagram are blocked in China. Here is how to stay connected.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('s4','esim')"><span>📱</span><span data-i18n="s4.esim.label">eSIM</span><span class="card-sub" data-i18n="s4.esim.sub">Buy before flying, from $4</span></button>
-            <button class="card" onclick="openDetail('s4','sim')"><span>📱</span><span data-i18n="s4.sim.label">CN SIM</span><span class="card-sub" data-i18n="s4.sim.sub">Airport kiosk, 29-99 yuan/month</span></button>
-            <button class="card" onclick="openDetail('s4','vpn')"><span>🔐</span><span data-i18n="s4.vpn.label">VPN</span><span class="card-sub" data-i18n="s4.vpn.sub">Install before arriving</span></button>
-            <button class="card" onclick="openDetail('s4','blocked')"><span>🚫</span><span data-i18n="s4.blocked.label">Blocked</span><span class="card-sub" data-i18n="s4.blocked.sub">What's blocked & alternatives</span></button>
+            <button class="card" onclick="openDetail('s4','esim')"><span>📱</span><span data-i18n="connectivity.esim.label">eSIM</span><span class="card-sub" data-i18n="connectivity.esim.sub">Buy before flying, from $4</span></button>
+            <button class="card" onclick="openDetail('s4','chinaSim')"><span>📱</span><span data-i18n="connectivity.chinaSim.label">CN SIM</span><span class="card-sub" data-i18n="connectivity.chinaSim.sub">Airport kiosk, 29-99 yuan/month</span></button>
+            <button class="card" onclick="openDetail('s4','vpn')"><span>🔐</span><span data-i18n="connectivity.vpn.label">VPN</span><span class="card-sub" data-i18n="connectivity.vpn.sub">Install before arriving</span></button>
+            <button class="card" onclick="openDetail('s4','blockedServices')"><span>🚫</span><span data-i18n="connectivity.blockedServices.label">Blocked</span><span class="card-sub" data-i18n="connectivity.blockedServices.sub">What's blocked & alternatives</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s4Detail"></div>
@@ -134,22 +134,22 @@
   <section class="slide slide--short slide-pos--mid" id="s5">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">💳</span><h2 class="s-title" data-i18n="s5.meta.title">Mobile Payment</h2></div>
+        <div class="slide-head"><span class="s-icon">💳</span><h2 class="s-title" data-i18n="slide.s5.meta.title">Payment</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="s5Summary">
-          <p class="slide-kicker" data-i18n="s5.kicker">Kicker</p>
-          <p class="slide-intro" data-i18n="s5.intro">China is largely cashless — mobile payment is the default, accounting for over 86% of consumer transactions. Foreign visitors can now link Visa, Mastercard, JCB, and Amex directly to Alipay and WeChat Pay. No Chinese bank account needed.</p>
+          <p class="slide-kicker" data-i18n="slide.s5.kicker">Go Cashless — Link in 5 Minutes</p>
+          <p class="slide-intro" data-i18n="slide.s5.intro">China is largely cashless — mobile payment is the default, accounting for over 86% of consumer transactions. Foreign visitors can now link Visa, Mastercard, JCB, and Amex directly to Alipay and WeChat Pay. No Chinese bank account needed.</p>
           <div class="slide-stats">
-            <div class="slide-stat"><strong class="slide-stat-num">86%</strong><span data-i18n="s5.stat1">cashless transactions</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">≤¥200</strong><span data-i18n="s5.stat2">no fee per transaction</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">2</strong><span data-i18n="s5.stat3">apps cover 95%+ of scenarios</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">86%</strong><span data-i18n="slide.s5.stat1">cashless transactions</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">≤¥200</strong><span data-i18n="slide.s5.stat2">no fee per transaction</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">2</strong><span data-i18n="slide.s5.stat3">apps cover 95%+ of scenarios</span></div>
           </div>
           <div class="slide-icons">
             <button class="card" onclick="openDetail('s5','alipay')"><img src="img/支付宝.png" alt="Alipay"><span>Alipay</span></button>
-            <button class="card" onclick="openDetail('s5','wechat')"><img src="img/微信.png" alt="WeChat"><span>WeChat Pay</span></button>
+            <button class="card" onclick="openDetail('s5','wechatPay')"><img src="img/微信.png" alt="WeChat"><span>WeChat Pay</span></button>
           </div>
-          <div class="tip-box tip-box--info" data-i18n="s5.backup"><strong>💡 Backup</strong><span>Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one app fails, try the other.</span></div>
+          <div class="tip-box tip-box--info"><strong>💡 <span data-i18n="slide.s5.backupLabel">Backup</span></strong><span data-i18n="slide.s5.backupDetail">Carry ¥500-1,000 RMB cash as backup. ATMs at Bank of China / ICBC / China Merchants Bank accept foreign cards (look for Visa/MC logo). If one payment app fails, try the other.</span></div>
         </div>
         <div class="slide-detail" id="s5Detail"></div>
       </div>
@@ -160,17 +160,17 @@
   <section class="slide slide--short slide-pos--mid" id="s6">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🚇🍜🏨</span><h2 class="s-title" data-i18n="s6.meta.title">Move+Eat+Stay</h2></div>
+        <div class="slide-head"><span class="s-icon">🚇🍜🏨</span><h2 class="s-title" data-i18n="slide.s6.meta.title">Eat · Move · Stay</h2></div>
       </div>
             <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="s6Summary">
-          <p class="slide-kicker" data-i18n="s6.kicker">Kicker</p>
-          <p class="slide-intro" data-i18n="s6.intro">Getting around, eating well, and finding a place to stay. Tap each item for practical tips.</p>
+          <p class="slide-kicker" data-i18n="slide.s6.kicker">Navigate China Like a Local</p>
+          <p class="slide-intro" data-i18n="slide.s6.intro">Getting around, eating well, and finding a place to stay. Tap each item for practical tips.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('s6','transport')"><span>🚕</span><span data-i18n="s6.transport.label">Transport</span><span class="card-sub" data-i18n="s6.transport.sub">DiDi, metro, high-speed rail</span></button>
-            <button class="card" onclick="openDetail('s6','food')"><span>🍜</span><span data-i18n="s6.food.label">Dining</span><span class="card-sub" data-i18n="s6.food.sub">Order in Chinese, dietary tips</span></button>
-            <button class="card" onclick="openDetail('s6','accommodation')"><span>🏨</span><span data-i18n="s6.accommodation.label">Stay</span><span class="card-sub" data-i18n="s6.accommodation.sub">Booking, registration, tips</span></button>
-            <button class="card" onclick="openDetail('s6','clothing')"><span>👔</span><span data-i18n="s6.clothing.label">Clothing</span><span class="card-sub" data-i18n="s6.clothing.sub">Sizes, seasons, what to pack</span></button>
+            <button class="card" onclick="openDetail('s6','transport')"><span>🚕</span><span data-i18n="lifestyle.transport.label">Transport</span><span class="card-sub" data-i18n="lifestyle.transport.sub">DiDi, metro, high-speed rail</span></button>
+            <button class="card" onclick="openDetail('s6','dining')"><span>🍜</span><span data-i18n="lifestyle.dining.label">Dining</span><span class="card-sub" data-i18n="lifestyle.dining.sub">Order in Chinese, dietary tips</span></button>
+            <button class="card" onclick="openDetail('s6','accommodation')"><span>🏨</span><span data-i18n="lifestyle.accommodation.label">Stay</span><span class="card-sub" data-i18n="lifestyle.accommodation.sub">Booking, registration, tips</span></button>
+            <button class="card" onclick="openDetail('s6','clothing')"><span>👔</span><span data-i18n="lifestyle.clothing.label">Clothing</span><span class="card-sub" data-i18n="lifestyle.clothing.sub">Sizes, seasons, what to pack</span></button>
           </div>
         </div>
         <div class="slide-detail" id="s6Detail"></div>
@@ -182,14 +182,14 @@
   <section class="slide slide--short slide-pos--mid" id="s7">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="s7.meta.title">Medical Services</h2></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="slide.s7.meta.title">Medical</h2></div>
       </div>
       <div class="slide-body">
-        <p class="slide-kicker" data-i18n="s7.kicker">Kicker</p>
+        <p class="slide-kicker" data-i18n="slide.s7.kicker">World-Class Care, Fraction of the Cost</p>
         <div class="info-cards slide-summary" id="s7Summary">
-          <div class="card info-card" onclick="openDetail('s7','hospital')"><h4 data-i18n="s7.hospital.title">Intl Hospitals & Meds</h4><p data-i18n="s7.hospital.desc">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="card info-card" onclick="openDetail('s7','big3')"><h4 data-i18n="s7.big3.title">Dental·Eye·TCM</h4><p data-i18n="s7.big3.desc">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="card info-card" onclick="openDetail('s7','checkup')"><h4 data-i18n="s7.checkup.title">Executive Checkup</h4><p data-i18n="s7.checkup.desc">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s7','hospital')"><h4>🏥 <span data-i18n="medical.hospital.title">International Medical Services</span></h4><p data-i18n="medical.hospital.desc">Major city hospitals, trilingual meds list, travel insurance</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s7','big3')"><h4>🦷 <span data-i18n="medical.dental.title">Medical Big Three</span></h4><p data-i18n="medical.dental.desc">Implants &lt;¥5K, glasses same-day, acupuncture &amp; massage. #1 for Russians.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s7','checkup')"><h4>📋 <span data-i18n="medical.healthCheckup.title">Health Checkup</span></h4><p data-i18n="medical.healthCheckup.desc">¥2K-10K+, comprehensive panels, some 24h reports. Half-day visit.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel slide-detail" id="s7Detail"></div>
       </div>
@@ -200,15 +200,15 @@
   <section class="slide slide--short slide-pos--mid" id="s8">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🛍️</span><h2 class="s-title" data-i18n="s8.meta.title">Shopping & Tax Refund</h2></div>
+        <div class="slide-head"><span class="s-icon">🛍️</span><h2 class="s-title" data-i18n="slide.s8.meta.title">Shopping</h2></div>
       </div>
       <div class="slide-body">
-        <p class="slide-kicker" data-i18n="s8.kicker">Kicker</p>
+        <p class="slide-kicker" data-i18n="slide.s8.kicker">Buy the Best + Get Your Tax Back</p>
         <div class="info-cards slide-summary" id="s8Summary">
-          <div class="card info-card" onclick="openDetail('s8','electronics')"><h4 data-i18n="s8.electronics.title">Foldables·Drones·AI Glasses</h4><p data-i18n="s8.electronics.desc">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="card info-card" onclick="openDetail('s8','souvenirs')"><h4 data-i18n="s8.souvenirs.title">Palace Museum·Craft·Local</h4><p data-i18n="s8.souvenirs.desc">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="card info-card" onclick="openDetail('s8','taxrefund')"><h4 data-i18n="s8.taxrefund.title">Rules·Process·Instant</h4><p data-i18n="s8.taxrefund.desc">≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
-          <div class="card info-card" onclick="openDetail('s8','cityshops')"><h4 data-i18n="s8.cityshops.title">Shopping by City</h4><p data-i18n="s8.cityshops.desc">SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','electronics')"><h4>📱 <span data-i18n="shopping.electronics.title">Electronics & Gadgets</span></h4><p data-i18n="shopping.electronics.desc">Huaqiangbei SZ, Wangfujing BJ, Yiwu. Latest tech at great prices.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','souvenirs')"><h4>🎨 <span data-i18n="shopping.souvenirs.title">Cultural Souvenirs</span></h4><p data-i18n="shopping.souvenirs.desc">Forbidden City magnets, Chengdu panda brocade, Xi'an plush, Guizhou indigo.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','taxrefund')"><h4>💰 <span data-i18n="shopping.taxrefund.title">Tax Refund Guide</span></h4><p data-i18n="shopping.taxrefund.desc">≥¥500 same store→11% VAT (~9% net). Depart within 90d. 7,000+ instant refund.</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s8','cityshops')"><h4>🗺️ <span data-i18n="shopping.cityshops.title">City Shopping Guide</span></h4><p data-i18n="shopping.cityshops.desc">SH Fabric Market·SZ Electronics·Yiwu Wholesale·Sanya Duty-Free·BJ Wangfujing</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel slide-detail" id="s8Detail"></div>
       </div>
@@ -219,14 +219,14 @@
   <section class="slide slide--short slide-pos--mid" id="s9">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🗺️</span><h2 class="s-title" data-i18n="s9.meta.title">Destinations</h2></div>
+        <div class="slide-head"><span class="s-icon">🗺️</span><h2 class="s-title" data-i18n="slide.s9.meta.title">Destinations</h2></div>
       </div>
       <div class="slide-body">
-        <p class="slide-kicker" data-i18n="s9.kicker">Kicker</p>
+        <p class="slide-kicker" data-i18n="slide.s9.kicker">Nearly 500 Cities Await You</p>
         <div class="info-cards col3 slide-summary" id="s9Summary">
-          <div class="card info-card" onclick="openDetail('s9','top10')"><h4 data-i18n="s9.top10.title">Must-Visit Cities</h4><p data-i18n="s9.top10.desc">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
-          <div class="card info-card" onclick="openDetail('s9','rising')"><h4 data-i18n="s9.rising.title">Social Media Stars</h4><p data-i18n="s9.rising.desc">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">Expand →</p></div>
-          <div class="card info-card" onclick="openDetail('s9','seasons')"><h4 data-i18n="s9.seasons.title">Best by Season</h4><p data-i18n="s9.seasons.desc">Spring:Jiangnan / Summer:Beidaihe / Autumn:Beijing / Winter:Harbin&Sanya</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s9','top10')"><h4>🏙️ <span data-i18n="destinations.top10.title">Top 10 Cities</span></h4><p data-i18n="destinations.top10.desc">Shanghai·Beijing·Guangzhou·Shenzhen·Chongqing·Chengdu·Hangzhou·Kunming·Harbin·Qingdao</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s9','rising')"><h4>🚀 <span data-i18n="destinations.rising.title">Rising Star Cities</span></h4><p data-i18n="destinations.rising.desc">Zhengzhou·Taiyuan·Guiyang·Fuzhou·Yiwu — trending on social media</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
+          <div class="card info-card" onclick="openDetail('s9','seasons')"><h4>🌍 <span data-i18n="destinations.seasons.title">Seasonal Picks</span></h4><p data-i18n="destinations.seasons.desc">Spring: Jiangnan / Summer: Beidaihe / Autumn: Beijing / Winter: Harbin & Sanya</p><p class="c-label" style="margin-top:6px;color:var(--accent)" data-i18n="app.buttons.expand">[ Expand → ]</p></div>
         </div>
         <div class="detail-panel slide-detail" id="s9Detail"></div>
       </div>
@@ -237,24 +237,24 @@
   <section class="slide slide--short slide-pos--mid" id="s10">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🆘👋</span><h2 class="s-title" data-i18n="s10.meta.title">Emergency+Exit</h2></div>
+        <div class="slide-head"><span class="s-icon">🆘👋</span><h2 class="s-title" data-i18n="slide.s10.meta.title">Emergency</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="s10Summary">
-          <p class="slide-kicker" data-i18n="s10.kicker">Kicker</p>
-          <p class="slide-intro" data-i18n="s10.intro">Save these numbers. In an emergency, knowing who to call can make the difference.</p>
+          <p class="slide-kicker" data-i18n="slide.s10.kicker">When Things Go Wrong — Who to Call</p>
+          <p class="slide-intro" data-i18n="slide.s10.intro">Save these numbers. In an emergency, knowing who to call can make the difference.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('s10','12367')"><span class="slide-stat-num">12367</span><span data-i18n="s10.hotline.12367.label">Immigration 24h</span></button>
-            <button class="card" onclick="openDetail('s10','110')"><span class="slide-stat-num">110</span><span data-i18n="s10.hotline.110.label">Police</span></button>
-            <button class="card" onclick="openDetail('s10','120')"><span class="slide-stat-num">120</span><span data-i18n="s10.hotline.120.label">Ambulance</span></button>
-            <button class="card" onclick="openDetail('s10','119')"><span class="slide-stat-num">119</span><span data-i18n="s10.hotline.119.label">Fire</span></button>
+            <button class="card" onclick="openDetail('s10','12367')"><span class="slide-stat-num">12367</span><span data-i18n="emergency.12367.label">Immigration 24h</span></button>
+            <button class="card" onclick="openDetail('s10','110')"><span class="slide-stat-num">110</span><span data-i18n="emergency.110.label">Police</span></button>
+            <button class="card" onclick="openDetail('s10','120')"><span class="slide-stat-num">120</span><span data-i18n="emergency.120.label">Ambulance</span></button>
+            <button class="card" onclick="openDetail('s10','119')"><span class="slide-stat-num">119</span><span data-i18n="emergency.119.label">Fire</span></button>
           </div>
-          <div class="tip-box tip-box--warn"><strong data-i18n="s10.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="s10.passportWarningDetail">File police report immediately → contact your embassy/consulate → apply for emergency travel document. Keep a photo of your passport and visa on your phone.</span></div>
-          <p class="slide-intro" style="margin-top:16px" data-i18n="s10.departIntro">Leaving China? A few things to take care of before you go.</p>
-          <button class="card" onclick="openDetail('s10','depart')"><span>👋</span><span data-i18n="s10.departure">Departure Checklist</span></button>
+          <div class="tip-box tip-box--warn"><strong data-i18n="emergency.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="emergency.passportWarningDetail">File police report immediately → contact your embassy/consulate → apply for emergency travel document. Keep a photo of your passport and visa on your phone.</span></div>
+          <p class="slide-intro" style="margin-top:16px" data-i18n="slide.s10.departIntro">Leaving China? A few things to take care of before you go.</p>
+          <button class="card" onclick="openDetail('s10','departure')"><span>👋</span><span data-i18n="slide.s10.departureLabel">Departure Checklist</span></button>
         </div>
         <div class="slide-detail" id="s10Detail"></div>
-        <p class="slide-footer" data-i18n="app.cover.footer">📅 Updated July 2026 · 🌐 Bilingual</p>
+        <p class="slide-footer">📅 <span data-i18n="app.cover.footerDate">Updated July 2026</span> · 🌐 <span data-i18n="app.cover.footerBilingual">Multilingual</span></p>
       </div>
     </div>
   </section>
@@ -267,16 +267,16 @@
   <section class="slide slide--long slide-pos--top" id="l1">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="l1.meta.title">Status Transfer</h2></div>
+        <div class="slide-head"><span class="s-icon">📋</span><h2 class="s-title" data-i18n="slide.l1.meta.title">Status Transfer</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l1Summary">
-          <p class="slide-kicker" data-i18n="l1.kicker">Your Route In</p>
-          <p class="slide-intro" data-i18n="l1.intro">Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process.</p>
+          <p class="slide-kicker" data-i18n="slide.l1.kicker">Your Route In</p>
+          <p class="slide-intro" data-i18n="slide.l1.intro">Choose your conversion pathway. Each has different requirements — tap to see the full step-by-step process.</p>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l1','pathA')"><span>🔄</span><span data-i18n="l1.pathA.label">Path A</span><span class="card-sub" data-i18n="l1.pathA.sub">Tourist → Work</span></button>
-            <button class="card" onclick="openDetail('l1','pathB')"><span>🎓</span><span data-i18n="l1.pathB.label">Path B</span><span class="card-sub" data-i18n="l1.pathB.sub">Student → Work</span></button>
-            <button class="card" onclick="openDetail('l1','pathC')"><span>🔬</span><span data-i18n="l1.pathC.label">Path C</span><span class="card-sub" data-i18n="l1.pathC.sub">K Visa (STEM Talent)</span></button>
+            <button class="card" onclick="openDetail('l1','pathA')"><span>🔄</span><span data-i18n="longstay.transfer.pathA.label">Path A</span><span class="card-sub" data-i18n="longstay.transfer.pathA.sub">Tourist → Work</span></button>
+            <button class="card" onclick="openDetail('l1','pathB')"><span>🎓</span><span data-i18n="longstay.transfer.pathB.label">Path B</span><span class="card-sub" data-i18n="longstay.transfer.pathB.sub">Student → Work</span></button>
+            <button class="card" onclick="openDetail('l1','pathC')"><span>🔬</span><span data-i18n="longstay.transfer.pathC.label">Path C</span><span class="card-sub" data-i18n="longstay.transfer.pathC.sub">K Visa (STEM Talent)</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l1Detail"></div>
@@ -288,20 +288,20 @@
   <section class="slide slide--long slide-pos--mid" id="l2">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">💼</span><h2 class="s-title" data-i18n="l2.meta.title">Work & Residence Permits</h2></div>
+        <div class="slide-head"><span class="s-icon">💼</span><h2 class="s-title" data-i18n="slide.l2.meta.title">Work & Residence</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l2Summary">
-          <p class="slide-kicker" data-i18n="l2.kicker">Get Permitted</p>
-          <p class="slide-intro" data-i18n="l2.intro">The two-step process every foreign worker goes through. Since late 2025, a one-stop online portal integrates work permit, residence permit, and social security registration.</p>
+          <p class="slide-kicker" data-i18n="slide.l2.kicker">Get Permitted</p>
+          <p class="slide-intro" data-i18n="slide.l2.intro">The two-step process every foreign worker goes through. Since late 2025, a one-stop online portal integrates work permit, residence permit, and social security registration.</p>
           <div class="slide-stats">
-            <div class="slide-stat"><strong class="slide-stat-num">~6</strong><span data-i18n="l2.stat1">working days avg</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">1-stop</strong><span data-i18n="l2.stat2">online portal since 2025</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">¥0</strong><span data-i18n="l2.stat3">physical card eliminated</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">~6</strong><span data-i18n="slide.l2.stat1">working days avg</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">1-stop</strong><span data-i18n="slide.l2.stat2">online portal since 2025</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">¥0</strong><span data-i18n="slide.l2.stat3">physical card eliminated</span></div>
           </div>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l2','workPermit')"><span>📝</span><span data-i18n="l2.workPermit.label">Step 1</span><span class="card-sub" data-i18n="l2.workPermit.sub">Foreigner's Work Permit</span></button>
-            <button class="card" onclick="openDetail('l2','residencePermit')"><span>🪪</span><span data-i18n="l2.residencePermit.label">Step 2</span><span class="card-sub" data-i18n="l2.residencePermit.sub">Residence Permit</span></button>
+            <button class="card" onclick="openDetail('l2','workPermit')"><span>📝</span><span data-i18n="longstay.permits.workPermit.label">Step 1</span><span class="card-sub" data-i18n="longstay.permits.workPermit.sub">Foreigner's Work Permit</span></button>
+            <button class="card" onclick="openDetail('l2','residencePermit')"><span>🆔</span><span data-i18n="longstay.permits.residencePermit.label">Step 2</span><span class="card-sub" data-i18n="longstay.permits.residencePermit.sub">Residence Permit</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l2Detail"></div>
@@ -313,22 +313,22 @@
   <section class="slide slide--long slide-pos--mid" id="l3">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📶💳</span><h2 class="s-title" data-i18n="l3.meta.title">Phone + Bank</h2></div>
+        <div class="slide-head"><span class="s-icon">📶💳</span><h2 class="s-title" data-i18n="slide.l3.meta.title">Phone + Bank</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l3Summary">
-          <p class="slide-kicker" data-i18n="l3.kicker">Digital Keys</p>
-          <p class="slide-intro" data-i18n="l3.intro">A Chinese phone number and bank account are the keys to everyday life in China.</p>
+          <p class="slide-kicker" data-i18n="slide.l3.kicker">Digital Keys to Everyday Life</p>
+          <p class="slide-intro" data-i18n="slide.l3.intro">A Chinese phone number and bank account are the keys to everyday life in China.</p>
           <div class="slide-stats">
-            <div class="slide-stat"><strong class="slide-stat-num">900M+</strong><span data-i18n="l3.stat1">mobile payment users</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">All</strong><span data-i18n="l3.stat2">major banks accept passports</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">¥29</strong><span data-i18n="l3.stat3">monthly plan from</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">900M+</strong><span data-i18n="slide.l3.stat1">mobile payment users</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">All</strong><span data-i18n="slide.l3.stat2">major banks accept passports</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">¥29</strong><span data-i18n="slide.l3.stat3">monthly plan from</span></div>
           </div>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l3','phone')"><span>📱</span><span data-i18n="l3.phone.label">SIM Card</span><span class="card-sub" data-i18n="l3.phone.sub">Passport required. ¥29-99/month.</span></button>
-            <button class="card" onclick="openDetail('l3','bank')"><span>🏦</span><span data-i18n="l3.bank.label">Bank Account</span><span class="card-sub" data-i18n="l3.bank.sub">BOC/ICBC/CMB. Lifts ¥200 limit.</span></button>
+            <button class="card" onclick="openDetail('l3','phone')"><span>📱</span><span data-i18n="longstay.phonebank.phone.label">SIM Card</span><span class="card-sub" data-i18n="longstay.phonebank.phone.sub">Passport required. ¥29-99/month.</span></button>
+            <button class="card" onclick="openDetail('l3','bank')"><span>🏦</span><span data-i18n="longstay.phonebank.bank.label">Bank Account</span><span class="card-sub" data-i18n="longstay.phonebank.bank.sub">BOC/ICBC/CMB. Lifts ¥200 limit.</span></button>
           </div>
-          <div class="tip-box tip-box--info" data-i18n="l3.tip"><strong>💡 Priority order</strong><span>Get SIM → open bank account → link to Alipay/WeChat.</span></div>
+          <div class="tip-box tip-box--info" ><strong>💡 <span data-i18n="slide.l3.tip">Priority order: Get SIM → open bank account → link to Alipay/WeChat.</span></strong></div>
         </div>
         <div class="slide-detail" id="l3Detail"></div>
       </div>
@@ -339,17 +339,17 @@
   <section class="slide slide--long slide-pos--mid" id="l4">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏢</span><h2 class="s-title" data-i18n="l4.meta.title">Finding a Home</h2></div>
+        <div class="slide-head"><span class="s-icon">🏢</span><h2 class="s-title" data-i18n="slide.l4.meta.title">Housing</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l4Summary">
-          <p class="slide-kicker" data-i18n="l4.kicker">Find Your Home</p>
-          <p class="slide-intro" data-i18n="l4.intro">Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.</p>
+          <p class="slide-kicker" data-i18n="slide.l4.kicker">Find Your Home</p>
+          <p class="slide-intro" data-i18n="slide.l4.intro">Ziroom and Beike are the two biggest rental platforms. Standard contract is 1 month deposit + 3 months rent. Police registration is mandatory within 24 hours of moving in.</p>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l4','rent')"><span>🏠</span><span data-i18n="l4.rent.label">Renting</span><span class="card-sub" data-i18n="l4.rent.sub">Rental Guide</span></button>
-            <button class="card" onclick="openDetail('l4','registration')"><span>📝</span><span data-i18n="l4.registration.label">Registration</span><span class="card-sub" data-i18n="l4.registration.sub">Police Registration</span></button>
+            <button class="card" onclick="openDetail('l4','rent')"><span>🏠</span><span data-i18n="longstay.housing.rent.label">Renting</span><span class="card-sub" data-i18n="longstay.housing.rent.sub">Ziroom · Beike · Contracts · Costs</span></button>
+            <button class="card" onclick="openDetail('l4','registration')"><span>📝</span><span data-i18n="longstay.housing.registration.label">Registration</span><span class="card-sub" data-i18n="longstay.housing.registration.sub">Mandatory within 24h of moving</span></button>
           </div>
-          <div class="tip-box tip-box--info" data-i18n="l4.sinceMar2026"><strong>💡 Since Mar 2026</strong><span>12367 platform supports online registration in 7 pilot cities: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.</span></div>
+          <div class="tip-box tip-box--info"><strong>💡 <span data-i18n="slide.l4.sinceMar2026Label">Since Mar 2026</span></strong><span data-i18n="slide.l4.sinceMar2026Detail">12367 platform supports online registration in 7 pilot cities: Shanghai, Beijing, Guangzhou, Shenzhen, Chengdu, Hangzhou, Xiamen.</span></div>
         </div>
         <div class="slide-detail" id="l4Detail"></div>
       </div>
@@ -360,20 +360,20 @@
   <section class="slide slide--long slide-pos--bot" id="l5">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="l5.meta.title">Health + Social Insurance</h2></div>
+        <div class="slide-head"><span class="s-icon">🏥</span><h2 class="s-title" data-i18n="slide.l5.meta.title">Insurance</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l5Summary">
-          <p class="slide-kicker" data-i18n="l5.kicker">Stay Covered</p>
-          <p class="slide-intro" data-i18n="l5.intro">Foreign employees must enroll in all five social insurances within 30 days of work permit issuance. Most expats also buy supplementary international health insurance for private clinics with English-speaking doctors.</p>
+          <p class="slide-kicker" data-i18n="slide.l5.kicker">Stay Covered</p>
+          <p class="slide-intro" data-i18n="slide.l5.intro">Foreign employees must enroll in all five social insurances within 30 days of work permit issuance. Most expats also buy supplementary international health insurance for private clinics with English-speaking doctors.</p>
           <div class="slide-stats">
-            <div class="slide-stat"><strong class="slide-stat-num">~35%</strong><span data-i18n="l5.stat1">employer contribution on top</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">5+1</strong><span data-i18n="l5.stat2">insurances + housing fund</span></div>
-            <div class="slide-stat"><strong class="slide-stat-num">12</strong><span data-i18n="l5.stat3">countries with bilateral exemption</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">~35%</strong><span data-i18n="slide.l5.stat1">employer contribution on top</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">5+1</strong><span data-i18n="slide.l5.stat2">insurances + housing fund</span></div>
+            <div class="slide-stat"><strong class="slide-stat-num">12</strong><span data-i18n="slide.l5.stat3">countries with bilateral exemption</span></div>
           </div>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l5','socialIns')"><span>🏥</span><span data-i18n="l5.socialIns.label">Social Insurance</span><span class="card-sub" data-i18n="l5.socialIns.sub">Five Insurances + Housing Fund</span></button>
-            <button class="card" onclick="openDetail('l5','privateIns')"><span>🛡️</span><span data-i18n="l5.privateIns.label">Private Insurance</span><span class="card-sub" data-i18n="l5.privateIns.sub">International Health Insurance</span></button>
+            <button class="card" onclick="openDetail('l5','socialIns')"><span>🏥</span><span data-i18n="longstay.insurance.socialIns.label">Social Insurance</span><span class="card-sub" data-i18n="longstay.insurance.socialIns.sub">Five Insurances + Housing Fund</span></button>
+            <button class="card" onclick="openDetail('l5','privateIns')"><span>🛡️</span><span data-i18n="longstay.insurance.privateIns.label">Private Insurance</span><span class="card-sub" data-i18n="longstay.insurance.privateIns.sub">International Health Insurance</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l5Detail"></div>
@@ -385,15 +385,15 @@
   <section class="slide slide--long slide-pos--mid" id="l6">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🚗👨‍👩‍👧</span><h2 class="s-title" data-i18n="l6.meta.title">Drive + School</h2></div>
+        <div class="slide-head"><span class="s-icon">🚗👨‍👩‍👧</span><h2 class="s-title" data-i18n="slide.l6.meta.title">Drive + School</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l6Summary">
-          <p class="slide-kicker" data-i18n="l6.kicker">Drive & Learn</p>
-          <p class="slide-intro" data-i18n="l6.intro">Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead.</p>
+          <p class="slide-kicker" data-i18n="slide.l6.kicker">Hit the Road, Hit the Books</p>
+          <p class="slide-intro" data-i18n="slide.l6.intro">Foreign licenses aren't valid in China — but conversion is straightforward: temporary permit, direct swap, or written test. For families, international schools offer US/UK/IB curricula. Plan 6-12 months ahead.</p>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l6','license')"><span>🚗</span><span data-i18n="l6.license.label">Driver's License</span><span class="card-sub" data-i18n="l6.license.sub">Temp permit, swap, or written test</span></button>
-            <button class="card" onclick="openDetail('l6','school')"><span>🎒</span><span data-i18n="l6.school.label">Schools</span><span class="card-sub" data-i18n="l6.school.sub">International & bilingual options</span></button>
+            <button class="card" onclick="openDetail('l6','license')"><span>🚗</span><span data-i18n="longstay.driveschool.license.label">Driver's License</span><span class="card-sub" data-i18n="longstay.driveschool.license.sub">Temp permit, swap, or written test</span></button>
+            <button class="card" onclick="openDetail('l6','school')"><span>🎒</span><span data-i18n="longstay.driveschool.school.label">Schools</span><span class="card-sub" data-i18n="longstay.driveschool.school.sub">International & bilingual options</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l6Detail"></div>
@@ -405,17 +405,17 @@
   <section class="slide slide--long slide-pos--mid" id="l7">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">🛒🍜👔</span><h2 class="s-title" data-i18n="l7.meta.title">Daily Life</h2></div>
+        <div class="slide-head"><span class="s-icon">🛒🍜👔</span><h2 class="s-title" data-i18n="slide.l7.meta.title">Daily Life</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l7Summary">
-          <p class="slide-kicker" data-i18n="l7.kicker">Live Local</p>
-          <p class="slide-intro" data-i18n="l7.intro">Once you have your phone, bank, and apartment sorted, here's everything for daily life — from where to shop to what to eat to how to dress.</p>
+          <p class="slide-kicker" data-i18n="slide.l7.kicker">Live Like a Local</p>
+          <p class="slide-intro" data-i18n="slide.l7.intro">Once you have your phone, bank, and apartment sorted, here's everything for daily life — from where to shop to what to eat to how to dress.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('l7','shopping')"><span>🛒</span><span data-i18n="l7.shopping.label">Shopping</span><span class="card-sub" data-i18n="l7.shopping.sub">Taobao·JD·Pinduoduo·Hema</span></button>
-            <button class="card" onclick="openDetail('l7','food')"><span>🍜</span><span data-i18n="l7.food.label">Dining</span><span class="card-sub" data-i18n="l7.food.sub">Dianping·Meituan·Ele.me</span></button>
-            <button class="card" onclick="openDetail('l7','clothing')"><span>👔</span><span data-i18n="l7.clothing.label">Clothing</span><span class="card-sub" data-i18n="l7.clothing.sub">Sizes & seasonal dressing</span></button>
-            <button class="card" onclick="openDetail('l7','transport')"><span>🚕</span><span data-i18n="l7.transport.label">Transport</span><span class="card-sub" data-i18n="l7.transport.sub">Metro·DiDi·Shared bikes·HSR</span></button>
+            <button class="card" onclick="openDetail('l7','shopping')"><span>🛒</span><span data-i18n="longstay.daily.shopping.label">Shopping</span><span class="card-sub" data-i18n="longstay.daily.shopping.sub">Taobao · JD · Pinduoduo · Hema</span></button>
+            <button class="card" onclick="openDetail('l7','food')"><span>🍜</span><span data-i18n="longstay.daily.food.label">Dining</span><span class="card-sub" data-i18n="longstay.daily.food.sub">Dianping · Meituan · Ele.me</span></button>
+            <button class="card" onclick="openDetail('l7','clothing')"><span>👔</span><span data-i18n="longstay.daily.clothing.label">Clothing</span><span class="card-sub" data-i18n="longstay.daily.clothing.sub">Sizes & seasonal dressing guide</span></button>
+            <button class="card" onclick="openDetail('l7','transport')"><span>🚕</span><span data-i18n="longstay.daily.transport.label">Transport</span><span class="card-sub" data-i18n="longstay.daily.transport.sub">Metro · DiDi · Shared bikes · HSR</span></button>
           </div>
         </div>
         <div class="slide-detail" id="l7Detail"></div>
@@ -427,26 +427,26 @@
   <section class="slide slide--long slide-pos--mid" id="l8">
     <div class="slide-inner">
       <div class="tl-head-row"><div class="tl-dot"></div>
-        <div class="slide-head"><span class="s-icon">📅🆘</span><h2 class="s-title" data-i18n="l8.meta.title">Compliance + Emergency</h2></div>
+        <div class="slide-head"><span class="s-icon">📅🆘</span><h2 class="s-title" data-i18n="slide.l8.meta.title">Compliance</h2></div>
       </div>
       <div class="slide-body slide-body--detail">
         <div class="slide-summary" id="l8Summary">
-          <p class="slide-kicker" data-i18n="l8.kicker">Stay Legal</p>
-          <p class="slide-intro" data-i18n="l8.intro">Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires.</p>
+          <p class="slide-kicker" data-i18n="slide.l8.kicker">Play by the Rules</p>
+          <p class="slide-intro" data-i18n="slide.l8.intro">Stay on top of renewal deadlines and know who to call in an emergency. Overstay penalties can be severe — set a calendar reminder 60 days before your permit expires.</p>
           <div class="slide-icons">
-            <button class="card" onclick="openDetail('l8','renewal')"><span>📅</span><span data-i18n="l8.renewal.label">Renewal & Compliance</span><span class="card-sub" data-i18n="l8.renewal.sub">Staying Legal</span></button>
+            <button class="card" onclick="openDetail('l8','renewal')"><span>📅</span><span data-i18n="longstay.compliance.renewal.label">Renewal & Compliance</span><span class="card-sub" data-i18n="longstay.compliance.renewal.sub">Permits · Overstay · Green Card</span></button>
           </div>
-          <p class="slide-intro" style="margin-top:16px" data-i18n="l8.emergency.desc">Save these numbers. Tap each one to learn when to call and what to expect.</p>
+          <p class="slide-intro" style="margin-top:16px" data-i18n="longstay.compliance.emergency.desc">Save these numbers. Tap each one to learn when to call and what to expect.</p>
           <div class="slide-stats">
-            <button class="card" onclick="openDetail('l8','12367')"><span class="slide-stat-num">12367</span><span data-i18n="l8.emergency.hotline12367">Immigration 24h</span></button>
-            <button class="card" onclick="openDetail('l8','110')"><span class="slide-stat-num">110</span><span data-i18n="l8.emergency.hotline110">Police</span></button>
-            <button class="card" onclick="openDetail('l8','120')"><span class="slide-stat-num">120</span><span data-i18n="l8.emergency.hotline120">Ambulance</span></button>
-            <button class="card" onclick="openDetail('l8','119')"><span class="slide-stat-num">119</span><span data-i18n="l8.emergency.hotline119">Fire</span></button>
+            <button class="card" onclick="openDetail('l8','12367')"><span class="slide-stat-num">12367</span><span data-i18n="emergency.12367.label">Immigration 24h</span></button>
+            <button class="card" onclick="openDetail('l8','110')"><span class="slide-stat-num">110</span><span data-i18n="emergency.110.label">Police</span></button>
+            <button class="card" onclick="openDetail('l8','120')"><span class="slide-stat-num">120</span><span data-i18n="emergency.120.label">Ambulance</span></button>
+            <button class="card" onclick="openDetail('l8','119')"><span class="slide-stat-num">119</span><span data-i18n="emergency.119.label">Fire</span></button>
           </div>
-          <div class="tip-box tip-box--warn"><strong data-i18n="l8.emergency.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="l8.emergency.passportWarningDetail">File police report (110) → contact embassy → keep passport photo on phone → transfer RP within 10 days.</span></div>
+          <div class="tip-box tip-box--warn"><strong data-i18n="emergency.passportWarning">⚠️ Lost Passport?</strong><span data-i18n="emergency.passportWarningDetail">1) File police report immediately (call 110). 2) Contact your embassy for emergency travel document. 3) Keep a photo of your passport and visa on your phone. 4) Transfer residence permit to new passport within 10 days.</span></div>
         </div>
         <div class="slide-detail" id="l8Detail"></div>
-        <p class="slide-footer" data-i18n="app.cover.footer">📅 Updated July 2026 · 🌐 Bilingual</p>
+        <p class="slide-footer">📅 <span data-i18n="app.cover.footerDate">Updated July 2026</span> · 🌐 <span data-i18n="app.cover.footerBilingual">Multilingual</span></p>
       </div>
     </div>
   </section>
@@ -454,7 +454,7 @@
 </div><!-- end slides-container -->
 
 <!-- ============================================================
-     Scripts (order matters: data → i18n → detail → app)
+     Scripts (order matters: data → i18n → detail → nav → app)
      ============================================================ -->
 <script src="js/data.js"></script>
 <script src="js/i18n.js"></script>

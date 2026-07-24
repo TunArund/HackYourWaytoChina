@@ -62,7 +62,7 @@ function resetToCover() {
 }
 
 function updateVersionSwitchText() {
-  versionSwitch.innerHTML = safeHtml(t('app.nav.home')) || '↩ Home';
+  versionSwitch.innerHTML = safeHtml(BUTTON_ICONS.home + ' ' + t('app.nav.home')) || '↩ Home';
 }
 
 

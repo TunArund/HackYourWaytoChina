@@ -3,6 +3,25 @@
    All display text lives in i18n/*.json
    ============================================================ */
 
+/* ---- Emoji / Icon Constants (pure decoration, not in i18n) ---- */
+const COUNTRY_FLAGS = { AU:'🇦🇺',NZ:'🇳🇿',JP:'🇯🇵',KR:'🇰🇷',SG:'🇸🇬',MY:'🇲🇾',TH:'🇹🇭',ID:'🇮🇩',IN:'🇮🇳',PH:'🇵🇭',VN:'🇻🇳',BN:'🇧🇳',AE:'🇦🇪',QA:'🇶🇦',SA:'🇸🇦',KW:'🇰🇼',OM:'🇴🇲',BH:'🇧🇭',GB:'🇬🇧',FR:'🇫🇷',DE:'🇩🇪',IT:'🇮🇹',ES:'🇪🇸',PT:'🇵🇹',NL:'🇳🇱',BE:'🇧🇪',CH:'🇨🇭',AT:'🇦🇹',SE:'🇸🇪',NO:'🇳🇴',DK:'🇩🇰',FI:'🇫🇮',IS:'🇮🇸',IE:'🇮🇪',PL:'🇵🇱',HU:'🇭🇺',GR:'🇬🇷',RO:'🇷🇴',RU:'🇷🇺',US:'🇺🇸',CA:'🇨🇦',BR:'🇧🇷',AR:'🇦🇷',CL:'🇨🇱',MX:'🇲🇽',PE:'🇵🇪',UY:'🇺🇾',ZA:'🇿🇦',OTHER:'🌍' };
+const CONTINENT_ICONS = { asiaPacific:'🌏',middleEast:'🏜️',europeWest:'🏰',europeEast:'🏛️',americas:'🌎',africa:'🌍' };
+const PURPOSE_ICONS = { tourism:'🏖',business:'💼',family:'👨‍👩‍👧',transit:'🔄',work:'💻' };
+const ONWARD_ICONS = { yes:'✅',no:'❌' };
+const VISA_TYPE_ICONS = { mutual:'✅',free:'✅',transit:'✅',kvisa:'💡',visaRequired:'📋' };
+const BUTTON_ICONS = { back:'←',reset:'🔄',details:'📋',home:'↩',expand:'→' };
+const SEASON_ICONS = { spring:'🌸',summer:'🌿',autumn:'🍂',winter:'❄️' };
+
+/* ---- Slide → Domain mapping (for detail.js renderSteps) ---- */
+const SLIDE_DOMAIN = {
+  s2:'preparation',s3:'arrival',s4:'connectivity',
+  s5:'payment',s6:'lifestyle',s7:'medical',
+  s8:'shopping',s9:'destinations',s10:'emergency',
+  l1:'longstay.transfer',l2:'longstay.permits',l3:'longstay.phonebank',
+  l4:'longstay.housing',l5:'longstay.insurance',l6:'longstay.driveschool',
+  l7:'longstay.daily',l8:'longstay.compliance'
+};
+
 /* ---- Visa Rules ---- */
 const VISA_FREE = new Set(['FR','DE','IT','NL','ES','CH','IE','HU','AT','BE','LU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','BG','RO','HR','ME','MK','MT','EE','LV','RU','SE','GB','BN','KR','JP','SA','OM','KW','BH','BR','AR','CL','PE','UY','CA','AU','NZ']);
 const TRANSIT = new Set(['AT','BE','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IT','LV','LT','LU','MT','NL','PL','PT','SK','SI','ES','SE','CH','MC','RU','GB','IE','CY','BG','RO','UA','RS','HR','BA','ME','MK','AL','BY','NO','US','CA','BR','MX','AR','CL','AU','NZ','KR','JP','SG','BN','AE','QA','ID']);
@@ -78,9 +97,9 @@ var LANG_LABELS = {
 };
 
 /* ---- Treatment lists (keys map to i18n for display) ---- */
-const MEDICAL_DENTAL = ['cleaning','filling','root','implant','crown'];
+const MEDICAL_DENTAL = ['cleaning','filling','rootCanal','implant','crown'];
 const MEDICAL_TCM = ['acupuncture','tuina','bonesetting','cupping','herbal'];
-const SHOP_ELECTRONICS = ['foldable','drone','ai_glasses','translator','earbuds'];
+const SHOP_ELECTRONICS = ['foldable','drone','aiGlasses','translator','earbuds'];
 const SOUVENIR_CITIES = ['beijing','chengdu','xian','chongqing','guizhou'];
 const TAXREFUND_REQS = ['reqStay','reqAmount','reqDeparture','reqCarry'];
 const TAXREFUND_STEPS = ['stepInvoice','stepCustoms','stepCollect'];
@@ -91,108 +110,99 @@ const SEASONS = ['spring','summer','autumn','winter'];
    Layout definitions — block arrays for detail views
    One copy, developer-maintained. i18n only holds text.
    Block types: h3, h4, intro, p, muted, tip, table, cards, ul, ol
+   icon: optional emoji prepended before translated text
    ============================================================ */
 var LAYOUT = {
   s7: {
     hospital: {
-      back: 's7.back',
       blocks: [
-        { t: 'h3',    k: 's7.hospital.title' },
-        { t: 'intro', k: 's7.hospital.intro' },
-        { t: 'h4',    k: 's7.hospital.sectionHospitals' },
+        { t: 'h3',    k: 'medical.hospital.title', icon: '🏥' },
+        { t: 'intro', k: 'medical.hospital.intro' },
+        { t: 'h4',    k: 'medical.hospital.sectionHospitals' },
         { t: 'table', ref: 's7_hospitals' },
-        { t: 'h4',    k: 's7.hospital.sectionMeds', pair: true },
+        { t: 'h4',    k: 'medical.hospital.sectionMeds', pair: true },
         { t: 'table', ref: 's7_meds' },
-        { t: 'tip',   k: 's7.hospital.insuranceWarning', body: 's7.hospital.insuranceDetail', s: 'warn' }
+        { t: 'tip',   k: 'medical.hospital.insuranceWarning', body: 'medical.hospital.insuranceDetail', s: 'warn' }
       ]
     },
     big3: {
-      back: 's7.back',
       blocks: [
-        { t: 'h3',    k: 's7.big3.title' },
-        { t: 'h4',    k: 's7.big3.sectionDental' },
+        { t: 'h3',    k: 'medical.dental.title', icon: '🦷' },
+        { t: 'h4',    k: 'medical.dental.sectionDental' },
         { t: 'table', ref: 'big3_dental' },
-        { t: 'h4',    k: 's7.big3.sectionEye' },
-        { t: 'intro', k: 's7.big3.eyeDesc' },
-        { t: 'h4',    k: 's7.big3.sectionTcm' },
+        { t: 'h4',    k: 'medical.eyeCare.sectionTitle' },
+        { t: 'intro', k: 'medical.eyeCare.desc' },
+        { t: 'h4',    k: 'medical.tcm.sectionTitle' },
         { t: 'table', ref: 'big3_tcm' },
-        { t: 'tip',   k: 's7.big3.tcmHotspots', body: 's7.big3.tcmHotspotsDetail', s: 'info' }
+        { t: 'tip',   k: 'medical.tcm.hotspots', body: 'medical.tcm.hotspotsDetail', s: 'info' }
       ]
     },
     checkup: {
-      back: 's7.back',
       blocks: [
-        { t: 'h3',    k: 's7.checkup.title' },
-        { t: 'intro', k: 's7.checkup.intro' },
-        { t: 'intro', k: 's7.checkup.recommended' },
-        { t: 'tip',   k: 's7.checkup.warning', body: 's7.checkup.warningDetail', s: 'warn' }
+        { t: 'h3',    k: 'medical.healthCheckup.title', icon: '📋' },
+        { t: 'intro', k: 'medical.healthCheckup.intro' },
+        { t: 'intro', k: 'medical.healthCheckup.recommended' },
+        { t: 'tip',   k: 'medical.healthCheckup.warning', body: 'medical.healthCheckup.warningDetail', s: 'warn' }
       ]
     }
   },
   s8: {
     electronics: {
-      back: 's8.back',
       blocks: [
-        { t: 'h3',    k: 's8.electronics.title' },
+        { t: 'h3',    k: 'shopping.electronics.title', icon: '📱' },
         { t: 'table', ref: 's8_electronics' },
-        { t: 'tip',   k: 's8.electronics.whereToBuy', body: 's8.electronics.whereToBuyDetail', s: 'info' }
+        { t: 'tip',   k: 'shopping.electronics.whereToBuy', body: 'shopping.electronics.whereToBuyDetail', s: 'info' }
       ]
     },
     souvenirs: {
-      back: 's8.back',
       blocks: [
-        { t: 'h3',    k: 's8.souvenirs.title' },
+        { t: 'h3',    k: 'shopping.souvenirs.title', icon: '🎨' },
         { t: 'table', ref: 's8_souvenirs' },
-        { t: 'muted', k: 's8.souvenirs.tip' }
+        { t: 'muted', k: 'shopping.souvenirs.tip' }
       ]
     },
     taxrefund: {
-      back: 's8.back',
       blocks: [
-        { t: 'h3',    k: 's8.taxrefund.title' },
-        { t: 'intro', k: 's8.taxrefund.stats' },
-        { t: 'h4',    k: 's8.taxrefund.sectionRequirements' },
+        { t: 'h3',    k: 'shopping.taxrefund.title', icon: '💰' },
+        { t: 'intro', k: 'shopping.taxrefund.stats' },
+        { t: 'h4',    k: 'shopping.taxrefund.sectionRequirements' },
         { t: 'ul',    ref: 'taxrefund_reqs' },
-        { t: 'h4',    k: 's8.taxrefund.sectionProcess' },
+        { t: 'h4',    k: 'shopping.taxrefund.sectionProcess' },
         { t: 'ol',    ref: 'taxrefund_steps' },
-        { t: 'tip',   k: 's8.taxrefund.instantRefundTitle', body: 's8.taxrefund.instantRefundDetail', s: 'good' }
+        { t: 'tip',   k: 'shopping.taxrefund.instantRefundTitle', body: 'shopping.taxrefund.instantRefundDetail', s: 'good' }
       ]
     },
     cityshops: {
-      back: 's8.back',
       blocks: [
-        { t: 'h3',    k: 's8.cityshops.title' },
-        { t: 'muted', k: 's8.cityshops.tapHint' },
+        { t: 'h3',    k: 'shopping.cityshops.title', icon: '🗺️' },
+        { t: 'muted', k: 'shopping.cityshops.tapHint' },
         { t: 'cards', ref: 'cityshops' }
       ]
     }
   },
   s9: {
     top10: {
-      back: 's9.back',
       blocks: [
-        { t: 'h3',    k: 's9.top10.title' },
-        { t: 'muted', k: 's9.tapHint' },
+        { t: 'h3',    k: 'destinations.top10.title', icon: '🏙️' },
+        { t: 'muted', k: 'slide.s9.tapHint' },
         { t: 'cards', ref: 'top10' }
       ]
     },
     rising: {
-      back: 's9.back',
       blocks: [
-        { t: 'h3',    k: 's9.rising.title' },
-        { t: 'muted', k: 's9.rising.subtitle' },
+        { t: 'h3',    k: 'destinations.rising.title', icon: '🚀' },
+        { t: 'muted', k: 'destinations.rising.subtitle' },
         { t: 'cards', ref: 'rising' }
       ]
     },
     seasons: {
-      back: 's9.back',
       blocks: [
-        { t: 'h3',    k: 's9.seasons.title' },
-        { t: 'tip',   k: 's9.seasons.spring.title',  body: 's9.seasons.spring.desc',  s: 'info' },
-        { t: 'tip',   k: 's9.seasons.summer.title',  body: 's9.seasons.summer.desc',  s: 'info' },
-        { t: 'tip',   k: 's9.seasons.autumn.title',  body: 's9.seasons.autumn.desc',  s: 'info' },
-        { t: 'tip',   k: 's9.seasons.winter.title',  body: 's9.seasons.winter.desc',  s: 'info' },
-        { t: 'muted', k: 's9.seasons.sizingTip' }
+        { t: 'h3',    k: 'destinations.seasons.title', icon: '🌍' },
+        { t: 'tip',   k: 'destinations.seasons.spring.title',  body: 'destinations.seasons.spring.desc',  s: 'info' },
+        { t: 'tip',   k: 'destinations.seasons.summer.title',  body: 'destinations.seasons.summer.desc',  s: 'info' },
+        { t: 'tip',   k: 'destinations.seasons.autumn.title',  body: 'destinations.seasons.autumn.desc',  s: 'info' },
+        { t: 'tip',   k: 'destinations.seasons.winter.title',  body: 'destinations.seasons.winter.desc',  s: 'info' },
+        { t: 'muted', k: 'destinations.seasons.sizingTip' }
       ]
     }
   }
@@ -209,57 +219,57 @@ var BLOCK_HANDLERS = {
   /* ---- Tables ---- */
 
   s7_hospitals: function () {
-    var cols = [t('s7.hospital.colCity'), t('s7.hospital.colHospital'), t('s7.hospital.colNote')];
-    var rows = HOSPITAL_CITIES.map(function (c) { return [t('city.' + c + '.label'), t('s7.hospital.' + c + 'Name'), t('s7.hospital.' + c + 'Note')]; });
+    var cols = [t('medical.hospital.colCity'), t('medical.hospital.colHospital'), t('medical.hospital.colNote')];
+    var rows = HOSPITAL_CITIES.map(function (c) { return [t('city.' + c + '.label'), t('medical.hospital.' + c + 'Name'), t('medical.hospital.' + c + 'Note')]; });
     return renderTable(cols, rows);
   },
 
   s7_meds: function () {
     var tl = LANG_LABELS[LANG] || LANG_LABELS['en'];
-    var cols = [t('s7.hospital.colCn'), tl.full, t('s7.hospital.colUse')];
-    var rows = MEDS.map(function (m) { return [m.cn, m[LANG] || m.en, t('s7.hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]; });
+    var cols = [t('medical.hospital.colCn'), tl.full, t('medical.hospital.colUse')];
+    var rows = MEDS.map(function (m) { return [m.cn, m[LANG] || m.en, t('medical.hospital.med' + m.k.charAt(0).toUpperCase() + m.k.slice(1) + 'Use')]; });
     return renderTable(cols, rows);
   },
 
   big3_dental: function () {
-    var cols = [t('s7.big3.colItem'), t('s7.big3.colChinaPrice'), t('s7.big3.colUsEuPrice')];
-    var rows = MEDICAL_DENTAL.map(function (k) { return [t('s7.big3.dental_' + k), t('s7.big3.dental_' + k + '_cn'), t('s7.big3.dental_' + k + '_us')]; });
+    var cols = [t('medical.dental.colItem'), t('medical.dental.colChinaPrice'), t('medical.dental.colUsEuPrice')];
+    var rows = MEDICAL_DENTAL.map(function (k) { return [t('medical.dental.' + k), t('medical.dental.' + k + 'Cn'), t('medical.dental.' + k + 'Us')]; });
     return renderTable(cols, rows);
   },
 
   big3_tcm: function () {
-    var cols = [t('s7.big3.colTherapy'), t('s7.big3.colDescription'), t('s7.big3.colPrice')];
-    var rows = MEDICAL_TCM.map(function (k) { return [t('s7.big3.tcm_' + k), t('s7.big3.tcm_' + k + '_desc'), t('s7.big3.tcm_' + k + '_price')]; });
+    var cols = [t('medical.tcm.colTherapy'), t('medical.tcm.colDescription'), t('medical.tcm.colPrice')];
+    var rows = MEDICAL_TCM.map(function (k) { return [t('medical.tcm.' + k), t('medical.tcm.' + k + 'Desc'), t('medical.tcm.' + k + 'Price')]; });
     return renderTable(cols, rows);
   },
 
   s8_electronics: function () {
-    var cols = [t('s8.electronics.colCategory'), t('s8.electronics.colWhy'), t('s8.electronics.colPrice')];
-    var rows = SHOP_ELECTRONICS.map(function (k) { return [t('s8.electronics.' + k), t('s8.electronics.' + k + '_why'), t('s8.electronics.' + k + '_price') || '—']; });
+    var cols = [t('shopping.electronics.colCategory'), t('shopping.electronics.colWhy'), t('shopping.electronics.colPrice')];
+    var rows = SHOP_ELECTRONICS.map(function (k) { return [t('shopping.electronics.' + k), t('shopping.electronics.' + k + 'Why'), t('shopping.electronics.' + k + 'Price') || '—']; });
     return renderTable(cols, rows);
   },
 
   s8_souvenirs: function () {
-    var cols = [t('s8.souvenirs.colCity'), t('s8.souvenirs.colItem')];
-    var rows = SOUVENIR_CITIES.map(function (k) { return [t('city.' + (k === 'xian' ? 'xian' : k) + '.label'), t('s8.souvenirs.' + k + '_item')]; });
+    var cols = [t('shopping.souvenirs.colCity'), t('shopping.souvenirs.colItem')];
+    var rows = SOUVENIR_CITIES.map(function (k) { return [t('city.' + (k === 'xian' ? 'xian' : k) + '.label'), t('shopping.souvenirs.' + k + 'Item')]; });
     return renderTable(cols, rows);
   },
 
   /* ---- Lists ---- */
 
   taxrefund_reqs: function () {
-    return '<ul class="step-list">' + TAXREFUND_REQS.map(function (k) { return '<li>' + t('s8.taxrefund.' + k) + '</li>'; }).join('') + '</ul>';
+    return '<ul class="step-list">' + TAXREFUND_REQS.map(function (k) { return '<li>' + t('shopping.taxrefund.' + k) + '</li>'; }).join('') + '</ul>';
   },
 
   taxrefund_steps: function () {
-    return '<ol class="step-list">' + TAXREFUND_STEPS.map(function (k) { return '<li>' + t('s8.taxrefund.' + k) + '</li>'; }).join('') + '</ol>';
+    return '<ol class="step-list">' + TAXREFUND_STEPS.map(function (k) { return '<li>' + t('shopping.taxrefund.' + k) + '</li>'; }).join('') + '</ol>';
   },
 
   /* ---- Cards (with sub-navigation) ---- */
 
   top10: function (sub) {
     if (sub) {
-      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'top10\')">← ' + t('s9.back') + '</button>'
+      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'top10\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>'
         + '<h3>' + t('city.' + sub + '.label') + '</h3>'
         + '<p class="dp-subtitle">' + t('city.' + sub + '.tag') + '</p>'
         + '<p class="dp-text">' + t('city.' + sub + '.desc') + '</p>';
@@ -269,7 +279,7 @@ var BLOCK_HANDLERS = {
 
   rising: function (sub) {
     if (sub) {
-      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'rising\')">← ' + t('s9.back') + '</button>'
+      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s9\',\'rising\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>'
         + '<h3>' + t('city.' + sub + '.label') + '</h3>'
         + '<p class="dp-subtitle">' + t('city.' + sub + '.tag') + '</p>'
         + '<p class="dp-text">' + t('city.' + sub + '.desc') + '</p>';
@@ -279,10 +289,10 @@ var BLOCK_HANDLERS = {
 
   cityshops: function (sub) {
     if (sub) {
-      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s8\',\'cityshops\')">← ' + t('s8.back') + '</button>'
+      return '<button class="detail-back" onclick="event.stopPropagation();openDetail(\'s8\',\'cityshops\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>'
         + '<h3>' + t('shop.' + sub + '.name') + '</h3>'
         + '<p class="dp-text">' + t('shop.' + sub + '.desc') + '</p>';
     }
-    return renderCardGrid(SHOP_CITY_KEYS, 's8', 'cityshops', 'shop.', 'name', null, function (k) { return t('s8.cityshops.cities.' + k + '.subtitle'); });
+    return renderCardGrid(SHOP_CITY_KEYS, 's8', 'cityshops', 'shop.', 'name', null, function (k) { return t('shopping.cityshops.cities.' + k + '.subtitle'); });
   }
 };

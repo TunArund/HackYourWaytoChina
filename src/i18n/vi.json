@@ -2,12 +2,13 @@
   "app": {
     "nav": {
       "title": "Hướng dẫn nhập cảnh Trung Quốc",
-      "home": "↩ Trang chủ"
+      "home": "Trang chủ"
     },
     "cover": {
       "title": "Hướng dẫn toàn diện về Trung Quốc",
       "subtitle": "Chọn hành trình của bạn để nhận hướng dẫn phù hợp",
-      "footer": "📅 Cập nhật tháng 7/2026 · 🌐 Song ngữ",
+      "footerDate": "Cập nhật tháng 7/2026",
+      "footerBilingual": "Đa ngôn ngữ",
       "short": {
         "label": "Du khách ngắn hạn",
         "tagline": "2 – 30 ngày",
@@ -20,9 +21,9 @@
       }
     },
     "buttons": {
-      "reset": "🔄 Kiểm tra lại",
-      "back": "← Quay lại kết quả",
-      "details": "📋 Chi tiết thị thực ▸",
+      "reset": "Kiểm tra lại",
+      "back": "Quay lại kết quả",
+      "details": "Chi tiết thị thực",
       "expand": "Mở rộng →"
     },
     "links": {
@@ -32,12 +33,169 @@
       "scroll": "Cuộn xuống"
     }
   },
-  "s0": {},
-  "s1": {
-    "meta": {
-      "title": "Tôi có cần thị thực không?",
-      "sub": "Chọn quốc tịch để xem chính sách áp dụng."
+  "slide": {
+    "s1": {
+      "meta": {
+        "title": "Tôi có cần thị thực không?",
+        "sub": "Chọn quốc tịch để xem chính sách áp dụng."
+      },
+      "kicker": "Kiểm tra xem bạn có cần thị thực không"
     },
+    "s2": {
+      "meta": {
+        "title": "Trước khi đi",
+        "sub": "Danh sách kiểm tra + thẻ nhập cảnh + kiểm tra cuối. 97% du khách tại Bắc Kinh sử dụng điền trực tuyến."
+      },
+      "kicker": "Những việc cần chuẩn bị trước khi bay",
+      "intro": "Trước khi bay, hãy đảm bảo bạn đã chuẩn bị sẵn những thứ cần thiết. Nhấn vào từng mục để xem chi tiết."
+    },
+    "s3": {
+      "meta": {
+        "title": "Đến và nhập cảnh",
+        "sub": "Quy trình+hải quan+đăng ký. Dưới 14 / trên 70 miễn vân tay."
+      },
+      "kicker": "Từ sân bay đến taxi trong 6 bước",
+      "intro": "Đến Trung Quốc? Nhấn để tìm hiểu về nhập cảnh, hải quan và đăng ký."
+    },
+    "s4": {
+      "meta": {
+        "title": "Kết nối",
+        "sub": "Google/WA/IG bị chặn. Ưu tiên: trực tuyến."
+      },
+      "kicker": "Duy trì kết nối sau tường lửa",
+      "intro": "Google, WhatsApp và Instagram bị chặn tại Trung Quốc. Đây là cách để bạn duy trì kết nối."
+    },
+    "s5": {
+      "meta": {
+        "title": "Thanh toán di động",
+        "sub": "Trung Quốc không dùng tiền mặt. Liên kết thẻ nước ngoài trước — bước quan trọng nhất."
+      },
+      "kicker": "Không tiền mặt — Liên kết trong 5 phút",
+      "intro": "Trung Quốc phần lớn không dùng tiền mặt — thanh toán di động là mặc định, chiếm hơn 86% giao dịch tiêu dùng. Du khách nước ngoài hiện có thể liên kết Visa, Mastercard, JCB và Amex trực tiếp với Alipay và WeChat Pay. Không cần tài khoản ngân hàng Trung Quốc.",
+      "stat1": "giao dịch không tiền mặt",
+      "stat2": "không phí mỗi giao dịch",
+      "stat3": "ứng dụng phủ 95%+ tình huống",
+      "backupLabel": "Dự phòng",
+      "backupDetail": "Mang theo ¥500-1.000 nhân dân tệ tiền mặt dự phòng. ATM tại Ngân hàng Trung Quốc / ICBC / Ngân hàng Chiêu Thương chấp nhận thẻ nước ngoài (tìm logo Visa/MC). Nếu một ứng dụng thanh toán lỗi, thử ứng dụng kia."
+    },
+    "s6": {
+      "meta": {
+        "title": "Di chuyển+Ăn uống+Lưu trú",
+        "sub": "Di chuyển, ăn uống, lưu trú & mẹo quần áo"
+      },
+      "kicker": "Di chuyển khắp Trung Quốc như người địa phương",
+      "intro": "Di chuyển, ăn uống ngon và tìm nơi lưu trú. Nhấn vào từng mục để xem mẹo thực tế."
+    },
+    "s7": {
+      "meta": {
+        "title": "Dịch vụ y tế",
+        "sub": "850+ cơ sở tại 57 thành phố. Nhấn thẻ để xem chi tiết."
+      },
+      "kicker": "Dịch vụ đẳng cấp thế giới, chi phí chỉ một phần nhỏ"
+    },
+    "s8": {
+      "meta": {
+        "title": "Mua sắm & Hoàn thuế",
+        "sub": "Du khách hoàn thuế +305% năm 2025. 12.252 cửa hàng, 7.000+ hoàn ngay."
+      },
+      "kicker": "Mua hàng tốt nhất + Nhận lại thuế"
+    },
+    "s9": {
+      "meta": {
+        "title": "Điểm đến",
+        "sub": "Du khách nước ngoài đã khám phá gần 500 thành phố. Nhấn để khám phá."
+      },
+      "kicker": "Gần 500 thành phố đang chờ bạn",
+      "tapHint": "Nhấn vào thành phố để xem chi tiết"
+    },
+    "s10": {
+      "meta": {
+        "title": "Khẩn cấp+Xuất cảnh",
+        "sub": ""
+      },
+      "kicker": "Khi gặp sự cố — Gọi cho ai",
+      "intro": "Lưu những số này. Trong tình huống khẩn cấp, biết gọi cho ai có thể tạo ra sự khác biệt.",
+      "departIntro": "Rời Trung Quốc? Một vài việc cần làm trước khi đi.",
+      "departureLabel": "Danh sách kiểm tra xuất cảnh"
+    },
+    "l1": {
+      "meta": {
+        "title": "Chuyển đổi trạng thái",
+        "sub": "Đã ở Trung Quốc với thị thực du lịch/du học? Đây là các lộ trình để có giấy phép làm việc/cư trú dài hạn."
+      },
+      "kicker": "Lộ trình của bạn",
+      "intro": "Chọn lộ trình chuyển đổi của bạn. Mỗi lộ trình có yêu cầu khác nhau — nhấn để xem quy trình từng bước đầy đủ."
+    },
+    "l2": {
+      "meta": {
+        "title": "Giấy phép Làm việc & Cư trú",
+        "sub": "Hai tài liệu thiết yếu. Mới: nộp đơn trực tuyến một cửa, trung bình ~6 ngày làm việc."
+      },
+      "kicker": "Nhận giấy phép",
+      "intro": "Quy trình hai bước mà mọi lao động nước ngoài phải trải qua. Từ cuối 2025, cổng trực tuyến một cửa tích hợp giấy phép lao động, giấy phép cư trú và đăng ký bảo hiểm xã hội.",
+      "stat1": "ngày làm việc trung bình",
+      "stat2": "cổng trực tuyến từ 2025",
+      "stat3": "thẻ vật lý đã bỏ"
+    },
+    "l3": {
+      "meta": {
+        "title": "Điện thoại + Ngân hàng",
+        "sub": "Số điện thoại Trung Quốc + tài khoản ngân hàng = cuộc sống số đầy đủ. Mở khóa tất cả tính năng ứng dụng."
+      },
+      "kicker": "Chìa khóa số cho cuộc sống hàng ngày",
+      "intro": "Số điện thoại và tài khoản ngân hàng Trung Quốc là chìa khóa cho cuộc sống hàng ngày tại Trung Quốc — từ thanh toán di động đến giao đồ ăn đến gọi xe. Hãy lo hai việc này trước.",
+      "stat1": "người dùng thanh toán di động tại Trung Quốc",
+      "stat2": "ngân hàng lớn chấp nhận hộ chiếu",
+      "stat3": "gói điện thoại hàng tháng từ",
+      "tip": "Thứ tự ưu tiên: Nhận SIM → mở tài khoản ngân hàng → liên kết với Alipay/WeChat. Không có số điện thoại Trung Quốc, bạn không thể mở tài khoản ngân hàng. Không có tài khoản ngân hàng, tính năng thanh toán di động của bạn bị hạn chế."
+    },
+    "l4": {
+      "meta": {
+        "title": "Nhà ở",
+        "sub": "Sống ở đâu, cách thuê nhà và đăng ký bắt buộc. 7 thành phố hiện hỗ trợ đăng ký trực tuyến."
+      },
+      "kicker": "Tìm tổ ấm của bạn",
+      "intro": "Ziroom và Beike là hai nền tảng cho thuê lớn nhất. Hợp đồng tiêu chuẩn là 1 tháng đặt cọc + 3 tháng tiền thuê. Đăng ký cảnh sát là bắt buộc trong vòng 24 giờ sau khi chuyển vào.",
+      "sinceMar2026Label": "Từ tháng 3/2026",
+      "sinceMar2026Detail": "Nền tảng 12367 hỗ trợ đăng ký trực tuyến tại 7 thành phố thí điểm: Thượng Hải, Bắc Kinh, Quảng Châu, Thâm Quyến, Thành Đô, Hàng Châu, Hạ Môn."
+    },
+    "l5": {
+      "meta": {
+        "title": "Bảo hiểm",
+        "sub": "Năm bảo hiểm bắt buộc + quỹ nhà ở. Hầu hết người nước ngoài cũng mua bảo hiểm quốc tế tư nhân."
+      },
+      "kicker": "Luôn được bảo vệ",
+      "intro": "Lao động nước ngoài phải đăng ký tất cả năm bảo hiểm xã hội trong vòng 30 ngày kể từ khi được cấp giấy phép lao động. Đóng góp của chủ lao động thêm ~26-37% trên lương gộp của bạn. Hầu hết người nước ngoài cũng mua bảo hiểm sức khỏe quốc tế bổ sung.",
+      "stat1": "đóng góp của chủ lao động thêm vào",
+      "stat2": "bảo hiểm + quỹ nhà ở",
+      "stat3": "quốc gia có thỏa thuận miễn song phương"
+    },
+    "l6": {
+      "meta": {
+        "title": "Lái xe + Trường học",
+        "sub": "Chuyển đổi bằng lái và lựa chọn trường quốc tế cho gia đình người nước ngoài."
+      },
+      "kicker": "Lên đường, đến trường",
+      "intro": "Bằng lái nước ngoài không có hiệu lực tại Trung Quốc — nhưng chuyển đổi khá đơn giản: giấy phép tạm thời, đổi trực tiếp hoặc thi lý thuyết. Cho gia đình, trường quốc tế cung cấp chương trình Mỹ/Anh/IB. Lên kế hoạch trước 6-12 tháng."
+    },
+    "l7": {
+      "meta": {
+        "title": "Cuộc sống hàng ngày",
+        "sub": "Mua sắm, ăn uống và trang phục cho cuộc sống tại Trung Quốc. Giao hàng trong ngày, giao đồ ăn 24/7 và bốn mùa rõ rệt."
+      },
+      "kicker": "Sống như người địa phương",
+      "intro": "Khi đã có điện thoại, ngân hàng và căn hộ, đây là mọi thứ bạn cần cho cuộc sống hàng ngày — từ nơi mua sắm đến món ăn đến cách ăn mặc."
+    },
+    "l8": {
+      "meta": {
+        "title": "Tuân thủ quy định",
+        "sub": "Nhắc gia hạn, hậu quả quá hạn, lộ trình thường trú và liên hệ khẩn cấp."
+      },
+      "kicker": "Tuân thủ luật chơi",
+      "intro": "Theo dõi thời hạn gia hạn và biết gọi cho ai khi khẩn cấp. Hình phạt quá hạn có thể nghiêm trọng — đặt nhắc lịch 60 ngày trước khi giấy phép hết hạn."
+    }
+  },
+  "visa": {
     "questions": {
       "q1": "Bước 1: Khu vực",
       "q2": "Bước 2: Quốc gia",
@@ -45,11 +203,11 @@
       "q4": "Q4 · Vé máy bay tiếp nối?"
     },
     "purpose": {
-      "tourism": "🏖 Du lịch",
-      "business": "💼 Kinh doanh",
+      "tourism": "Du lịch",
+      "business": "Kinh doanh",
       "family": "👨‍👩‍👧 Thăm thân",
-      "transit": "🔄 Quá cảnh",
-      "work": "💻 Làm việc/Học tập"
+      "transit": "Quá cảnh",
+      "work": "Làm việc/Học tập"
     },
     "duration": {
       "short": "≤10 ngày",
@@ -58,145 +216,426 @@
       "xlong": ">180 ngày"
     },
     "onward": {
-      "yes": "✅ Có",
-      "no": "❌ Không"
+      "yes": "Có",
+      "no": "Không"
     },
     "placeholder": "— Chọn —",
     "continents": {
-      "asiaPacific": "🌏 Châu Á-Thái Bình Dương",
-      "middleEast": "🏜️ Trung Đông",
-      "europe": "🌍 Châu Âu",
-      "americas": "🌎 Châu Mỹ",
-      "africa": "🌍 Châu Phi",
-      "other": "🌐 Khác"
+      "asiaPacific": "Châu Á-Thái Bình Dương",
+      "middleEast": "Trung Đông",
+      "europeWest": "Tây Âu",
+      "europeEast": "Đông Âu",
+      "americas": "Châu Mỹ",
+      "africa": "Châu Phi",
+      "other": "Khác"
+    },
+    "mutual": {
+      "title": "Không cần thị thực (Tương hỗ)",
+      "body": "Miễn thị thực tương hỗ. Hộ chiếu thường, thường 15-30 ngày.",
+      "tips": [
+        "Hộ chiếu ≥6 tháng",
+        "Vé khứ hồi + đặt phòng",
+        "Điền trước thẻ nhập cảnh"
+      ],
+      "detailTitle": "Miễn thị thực tương hỗ",
+      "conditions": [
+        "Thỏa thuận miễn song phương",
+        "Hộ chiếu thường, thường 15-30 ngày",
+        "Vé khứ hồi + chỗ ở",
+        "Không làm việc/học tập",
+        "Tuân theo điều khoản thỏa thuận cụ thể"
+      ]
+    },
+    "free": {
+      "title": "Không cần thị thực (Đơn phương)",
+      "body": "50 quốc gia miễn thị thực, ≤30 ngày.",
+      "bodyRuNote": "Nga đến 14/9/2026",
+      "bodyDefault": "Có hiệu lực đến 31/12/2026",
+      "tips": [
+        "Hộ chiếu thường",
+        "≤30 ngày",
+        "Vé khứ hồi + đặt phòng"
+      ],
+      "detailTitle": "Miễn thị thực đơn phương",
+      "conditions": [
+        "Hộ chiếu thường, còn hạn ≥6 tháng",
+        "Ở ≤30 ngày, không gia hạn",
+        "Yêu cầu vé khứ hồi + đặt phòng khách sạn",
+        "Không làm việc/học tập có trả phí",
+        "Có hiệu lực đến 31/12/2026"
+      ],
+      "ruWarning": "Công dân Nga: Có hiệu lực đến 14/9/2026 (không phải 31/12)"
+    },
+    "transit": {
+      "title": "Quá cảnh 240h",
+      "body": "55 quốc gia. Vé tiếp nối→≤240h(10 ngày), 24 khu vực cấp tỉnh, 60+ cửa khẩu.",
+      "tips": [
+        "Yêu cầu vé nối chuyến",
+        "Cửa khẩu chỉ định",
+        "24 khu vực cấp tỉnh"
+      ],
+      "detailTitle": "Miễn thị thực quá cảnh 240h",
+      "conditions": [
+        "55 quốc gia đủ điều kiện",
+        "Yêu cầu vé nối chuyến đến nước thứ ba",
+        "Chỉ cửa khẩu chỉ định (60+)",
+        "Ở ≤240h (10 ngày)",
+        "Chỉ 24 khu vực cấp tỉnh",
+        "Không rời khu vực cho phép"
+      ]
+    },
+    "kvisa": {
+      "title": "Thị thực K (STEM)",
+      "body": "Tháng 10/2025. Bằng STEM+<~40 tuổi→không cần nhà tuyển dụng. Nhiều lần/5 năm/≤180 ngày.",
+      "tips": [
+        "Bằng STEM",
+        "Không cần nhà tuyển dụng",
+        "Làm việc/nghiên cứu/khởi nghiệp"
+      ],
+      "detailTitle": "Thị thực K (Nhân tài STEM)",
+      "conditions": [
+        "Ra mắt tháng 10/2025",
+        "Bằng STEM cử nhân trở lên",
+        "Dưới ~40 tuổi",
+        "Không cần bảo trợ của nhà tuyển dụng",
+        "Nộp đơn trong nước, không cần xuất cảnh",
+        "Nhiều lần/5 năm/≤180 ngày mỗi lần",
+        "Cho phép làm việc, nghiên cứu, khởi nghiệp"
+      ]
+    },
+    "visaRequired": {
+      "title": "Yêu cầu thị thực",
+      "body": "Nộp đơn trước theo quốc tịch/mục đích/thời gian. Đến CVASC địa phương.",
+      "tips": [
+        "visaforchina.cn",
+        "Hộ chiếu+ảnh+đơn+thư mời",
+        "~4-5 ngày làm việc"
+      ],
+      "detailTitle": "Yêu cầu thị thực",
+      "conditions": [
+        "Nộp đơn tại đại sứ quán/lãnh sự quán Trung Quốc",
+        "Hộ chiếu+ảnh+đơn+thư mời",
+        "Xử lý ~4-5 ngày làm việc",
+        "Loại: L(du lịch)/M(kinh doanh)/Q(thăm thân)/Z(làm việc)/X(du học)",
+        "Phí thay đổi theo quốc tịch & loại"
+      ]
+    },
+    "links": {
+      "niaVisaFree": "Chính sách Miễn thị thực NIA",
+      "beijingVisaFaq": "FAQ Miễn thị thực Bắc Kinh",
+      "mfaConsular": "Lãnh sự MFA",
+      "niaTransit": "Chính sách Quá cảnh NIA",
+      "cvasc": "Đơn xin CVASC",
+      "onlineBooking": "Đặt trước trực tuyến",
+      "consularServices": "Dịch vụ Lãnh sự",
+      "niaKVisa": "Chính sách Thị thực K NIA"
     }
   },
-  "s2": {
-    "meta": {
-      "title": "Trước khi đi",
-      "sub": "Danh sách kiểm tra + thẻ nhập cảnh + kiểm tra cuối. 97% du khách tại Bắc Kinh sử dụng điền trực tuyến."
-    },
+  "countries": {
+    "default": "— Chọn —",
+    "AU": "Úc",
+    "NZ": "New Zealand",
+    "JP": "Nhật Bản",
+    "KR": "Hàn Quốc",
+    "SG": "Singapore",
+    "MY": "Malaysia",
+    "TH": "Thái Lan",
+    "ID": "Indonesia",
+    "IN": "Ấn Độ",
+    "PH": "Philippines",
+    "VN": "Việt Nam",
+    "BN": "Brunei",
+    "AE": "UAE",
+    "QA": "Qatar",
+    "SA": "Ả Rập Saudi",
+    "KW": "Kuwait",
+    "OM": "Oman",
+    "BH": "Bahrain",
+    "GB": "Anh",
+    "FR": "Pháp",
+    "DE": "Đức",
+    "IT": "Ý",
+    "ES": "Tây Ban Nha",
+    "PT": "Bồ Đào Nha",
+    "NL": "Hà Lan",
+    "BE": "Bỉ",
+    "CH": "Thụy Sĩ",
+    "AT": "Áo",
+    "SE": "Thụy Điển",
+    "NO": "Na Uy",
+    "DK": "Đan Mạch",
+    "FI": "Phần Lan",
+    "IS": "Iceland",
+    "IE": "Ireland",
+    "PL": "Ba Lan",
+    "HU": "Hungary",
+    "GR": "Hy Lạp",
+    "RO": "Romania",
+    "RU": "Nga",
+    "US": "Hoa Kỳ",
+    "CA": "Canada",
+    "BR": "Brazil",
+    "AR": "Argentina",
+    "CL": "Chile",
+    "MX": "Mexico",
+    "PE": "Peru",
+    "UY": "Uruguay",
+    "ZA": "Nam Phi",
+    "OTHER": "Khác"
+  },
+  "preparation": {
     "passport": {
       "label": "Bắt buộc",
+      "sub": "Thời hạn & trang trống",
       "title": "Hộ chiếu",
-      "desc": "Hiệu lực≥6 tháng, ≥2 trang trống"
+      "steps": [
+        "Còn hạn ít nhất 6 tháng sau ngày dự kiến rời Trung Quốc.",
+        "Ít nhất 2 trang thị thực trống (trang sửa đổi/xác nhận không tính).",
+        "Nếu hộ chiếu sắp hết hạn: gia hạn trước khi nộp đơn xin thị thực Trung Quốc.",
+        "Giữ bản sao kỹ thuật số (ảnh hoặc scan) trang nhân thân hộ chiếu trên điện thoại và email — phòng khi mất.",
+        "Người hai quốc tịch: dùng cùng một hộ chiếu xuyên suốt (xin thị thực, nhập cảnh, xuất cảnh)."
+      ]
     },
     "tickets": {
       "label": "Bắt buộc",
+      "sub": "Vé khứ hồi & xác nhận khách sạn",
       "title": "Vé khứ hồi+Khách sạn",
-      "desc": "In/chụp màn hình vé điện tử; khách sạn có địa chỉ"
+      "steps": [
+        "In hoặc chụp màn hình vé khứ hồi/vé nối chuyến — nhập cảnh có thể yêu cầu bằng chứng khởi hành.",
+        "Xác nhận đặt phòng khách sạn với địa chỉ đầy đủ bằng tiếng Trung và tiếng Anh.",
+        "Nếu ở cùng bạn bè/người thân: cần thư mời có tên chủ nhà, địa chỉ, số điện thoại và bản sao CMND.",
+        "Mẹo: đặt khách sạn có thể hủy cho mục đích thị thực/nhập cảnh, sau đó hủy sau khi đến nếu kế hoạch thay đổi."
+      ]
     },
     "arrivalCard": {
       "label": "Thẻ nhập cảnh",
+      "sub": "Điền trước trực tuyến, lưu mã QR",
       "title": "Điền trực tuyến trước",
-      "desc": "s.nia.gov.cn → điền → chụp màn hình QR → quét. Hỗ trợ quét ảnh hộ chiếu. Cũng có: NIA 12367 APP / WeChat / Alipay mini programs."
+      "steps": [
+        "Truy cập s.nia.gov.cn trước chuyến bay — điền thẻ nhập cảnh trực tuyến (miễn phí).",
+        "Chụp màn hình mã QR sau khi nộp — bạn sẽ quét mã này tại quầy nhập cảnh.",
+        "Biểu mẫu hỗ trợ quét ảnh hộ chiếu (tự động điền thông tin của bạn).",
+        "Phương thức thay thế: APP NIA 12367 (iOS/Android), mini-program WeChat, mini-program Alipay.",
+        "97% du khách tại Sân bay Thủ đô Bắc Kinh hiện sử dụng biểu mẫu trực tuyến. Bỏ qua hoàn toàn biểu mẫu giấy.",
+        "Mỗi du khách cần thẻ nhập cảnh riêng (bao gồm trẻ em)."
+      ]
     },
     "finalCheck": {
       "label": "Kiểm tra cuối",
-      "items": [
-        "<strong>Hộ chiếu≥6 tháng?</strong>",
-        "<strong>Xác nhận thị thực?</strong>",
-        "<strong>Thẻ nhập cảnh? Chụp màn hình</strong>",
-        "<strong>Alipay/WeChat sẵn sàng?</strong>",
-        "<strong>Địa chỉ khách sạn đã lưu?</strong>"
+      "sub": "Danh sách 7 mục trước khi lên máy bay",
+      "title": "Danh sách kiểm tra cuối cùng trước khi khởi hành",
+      "steps": [
+        "Hộ chiếu: còn hạn 6+ tháng, 2+ trang trống.",
+        "Thị thực hoặc miễn thị thực đã xác nhận (dùng S1 để kiểm tra).",
+        "Thẻ nhập cảnh: đã điền trực tuyến, đã lưu ảnh QR trên điện thoại.",
+        "Alipay / WeChat: đã tải và liên kết thẻ nước ngoài (làm trước khi khởi hành — xem S5).",
+        "Địa chỉ khách sạn: đã lưu bằng tiếng Trung và tiếng Anh trên điện thoại (đưa cho nhập cảnh và tài xế taxi).",
+        "VPN: đã cài đặt, thanh toán và kiểm tra trước khi khởi hành (xem S4).",
+        "Bảo hiểm du lịch: đã lưu số hợp đồng, ghi chú số liên lạc khẩn cấp."
       ]
     }
   },
-  "s3": {
-    "meta": {
-      "title": "Đến và nhập cảnh",
-      "sub": "Quy trình+hải quan+đăng ký. Dưới 14 / trên 70 miễn vân tay."
-    },
-    "steps": {
+  "arrival": {
+    "immigration": {
       "label": "6 bước",
-      "desc": "①Y tế→②Vân tay→③Biên giới→④Hành lý→⑤Hải quan→⑥Sảnh đến"
+      "sub": "Quy trình 6 bước tại kiểm soát biên giới",
+      "title": "Nhập cảnh — 6 bước",
+      "linkUrl": "https://en.nia.gov.cn",
+      "linkLabel": "Trang chính thức NIA",
+      "steps": [
+        "Kiểm tra sức khỏe: Quét nhiệt độ. Xuất trình mã QR khai báo y tế.",
+        "Vân tay: Tất cả người nước ngoài 14-70 tuổi. Dưới 14 / trên 70 được miễn.",
+        "Kiểm soát biên giới: Hộ chiếu + thị thực + thẻ nhập cảnh. Chụp ảnh.",
+        "Nhận hành lý: Kiểm tra màn hình để tìm số băng chuyền.",
+        "Hải quan: Kênh Xanh (không có gì khai báo) hoặc Kênh Đỏ.",
+        "Sảnh đến: Taxi, tàu điện ngầm, xe buýt sân bay, gọi xe."
+      ]
     },
     "customs": {
       "label": "Giới hạn",
-      "desc": "Tiền mặt≤$5K·Rượu≤1.5L·Thuốc lá≤400. Thuốc theo toa cần đơn. Kênh xanh. Cấm：vũ khí/ma túy/ngà voi."
+      "sub": "Hạn mức miễn thuế & mặt hàng hạn chế",
+      "title": "Quy định Hải quan",
+      "linkUrl": "https://www.customs.gov.cn",
+      "linkLabel": "Hải quan Trung Quốc",
+      "steps": [
+        "Tiền mặt: Tối đa $5.000 USD. Khai báo nếu vượt quá.",
+        "Rượu: Tổng cộng 1,5L.",
+        "Thuốc lá: 400 điếu (2 cây).",
+        "Điện tử: Cá nhân được. Quà tặng >5000¥ nên khai báo.",
+        "Thuốc kê đơn: Yêu cầu giấy bác sĩ + đơn thuốc.",
+        "Cấm: Vũ khí, ma túy, ngà voi, trái cây/thực vật tươi.",
+        "Kênh Xanh: Không có gì khai báo.",
+        "Kênh Đỏ: Hàng hóa vượt hạn mức. Điền tờ khai."
+      ]
     },
     "registration": {
       "label": "Đăng ký",
-      "desc": "Khách sạn tự động. Nhà riêng：12367 trực tuyến(7 thành phố thí điểm) hoặc công an. Đăng ký lại mỗi lần di chuyển. Điều 39：trong 24h."
+      "sub": "Khách sạn / đồn cảnh sát / trực tuyến",
+      "title": "Đăng ký Lưu trú",
+      "linkUrl": "https://s.nia.gov.cn",
+      "linkLabel": "Đăng ký NIA",
+      "steps": [
+        "Khách sạn: Tự động khi nhận phòng bằng hộ chiếu.",
+        "Nhà riêng: Đến đồn cảnh sát trong vòng 24h.",
+        "Trực tuyến (7 thành phố): Thượng Hải, Bắc Kinh, Quảng Châu, Thâm Quyến, Thành Đô, Hàng Châu, Hạ Môn.",
+        "Pháp lý: Luật Xuất nhập cảnh Điều 39 — bắt buộc.",
+        "Đăng ký lại khi chuyển địa chỉ/thành phố.",
+        "Đường dây nóng 12367: 24/7 đa ngôn ngữ."
+      ]
     }
   },
-  "s4": {
-    "meta": {
-      "title": "Kết nối",
-      "sub": "Google/WA/IG bị chặn. Ưu tiên: trực tuyến."
-    },
+  "connectivity": {
     "esim": {
       "label": "Tốt nhất",
+      "sub": "Mua trước khi bay, từ $4",
       "title": "eSIM",
-      "desc": "Airalo/Holafly/Nomad. Mua trước→dữ liệu khi hạ cánh. Chỉ dữ liệu, không có số Trung Quốc."
+      "steps": [
+        "Airalo: Trung Quốc từ $5 (1GB/7 ngày).",
+        "Holafly: Dữ liệu không giới hạn, Trung Quốc từ $19.",
+        "Nomad: Tiết kiệm, Trung Quốc từ $4.",
+        "Mua & cài đặt TRƯỚC khi khởi hành.",
+        "Lưu ý: Chỉ dữ liệu, không có số điện thoại."
+      ]
     },
-    "sim": {
+    "chinaSim": {
       "label": "Thay thế",
+      "sub": "Quầy sân bay, 29-99 tệ/tháng",
       "title": "SIM Trung Quốc",
-      "desc": "Sân bay：Mobile/Unicom/Telecom. Hộ chiếu. ¥29-99/tháng. Lấy số→đăng ký ứng dụng."
+      "steps": [
+        "Quầy tại sảnh đến sân bay (Mobile/Unicom/Telecom).",
+        "Cần: Hộ chiếu gốc.",
+        "Gói: 29-99¥/tháng. Dữ liệu + gọi + SMS.",
+        "Nhận số → đăng ký Alipay/WeChat/DiDi.",
+        "Giữ SIM nước nhà để xác minh SMS."
+      ]
     },
     "vpn": {
       "label": "VPN",
+      "sub": "Cài đặt trước khi đến",
       "title": "Cài đặt sớm",
-      "desc": "Mullvad/Astrill. Cài đặt+thanh toán trước. Giữ 2 giao thức khác nhau dự phòng."
+      "steps": [
+        "Mullvad: 5EUR/tháng. Mã nguồn mở. WireGuard.",
+        "Astrill: $15-30/tháng. Tối ưu cho Trung Quốc.",
+        "Cài đặt + thanh toán TRƯỚC khi đến.",
+        "Giữ 2 giao thức: WireGuard + dự phòng.",
+        "Kiểm tra trước khi khởi hành."
+      ]
     },
-    "blocked": {
+    "blockedServices": {
       "label": "Bị chặn",
-      "desc": "🚫Google/Gmail/Maps/YT/WA/IG/FB/X/Dropbox<br>✅iCloud/Slack/Zoom/Teams<br>Thay thế：Baidu/Xiaohongshu/Weibo/Bilibili"
+      "sub": "Những gì bị chặn & giải pháp thay thế",
+      "title": "Dịch vụ bị chặn & Giải pháp thay thế",
+      "steps": [
+        "Bị chặn: Google, Gmail, Maps, YT, WA, IG, FB, X, Dropbox, LINE.",
+        "Hoạt động: iCloud, Slack, Zoom, Teams, Outlook.",
+        "Maps → Amap/Baidu Maps.",
+        "Instagram → Xiaohongshu.",
+        "Twitter/X → Weibo.",
+        "YouTube → Bilibili.",
+        "WhatsApp → WeChat."
+      ]
     }
   },
-  "s5": {
-    "meta": {
-      "title": "Thanh toán di động",
-      "sub": "Trung Quốc không dùng tiền mặt. Liên kết thẻ nước ngoài trước — bước quan trọng nhất."
-    },
+  "payment": {
     "alipay": {
-      "label": "Alipay",
       "title": "Hướng dẫn thiết lập",
-      "step1": "Tìm kiếm \"Alipay\"",
-      "step2": "Phiên bản quốc tế→xác minh hộ chiếu",
-      "step3": "Tôi→Thẻ→Thêm Visa/MC/JCB/Amex",
-      "step4": "Quét/thanh toán mã. ≤¥200 miễn phí"
+      "steps": [
+        "Tải Alipay từ <a href=\"https://www.alipay.com\" target=\"_blank\" rel=\"noopener\">alipay.com</a> hoặc cửa hàng ứng dụng của bạn",
+        "Đăng ký bằng số điện thoại → xác minh danh tính bằng ảnh hộ chiếu",
+        "Tôi → Thẻ ngân hàng → Thêm thẻ → Hỗ trợ Visa / Mastercard / JCB / Amex",
+        "Quét QR của người bán hoặc hiển thị mã thanh toán. <strong>≤¥200/giao dịch: không phí. >¥200: phí dịch vụ 3%.</strong>",
+        "<strong>TourPass</strong>: thẻ trả trước cho du khách — không cần tài khoản ngân hàng Trung Quốc"
+      ],
+      "links": [
+        {
+          "key": "download",
+          "label": "Tải Alipay",
+          "url": "https://www.alipay.com"
+        },
+        {
+          "key": "support",
+          "label": "Hỗ trợ: 95188 / +86-571-26886000",
+          "url": "https://render.alipay.com/p/s/alipaycard"
+        }
+      ]
     },
-    "wechat": {
-      "label": "WeChat",
-      "title": "WeChat Pay",
-      "step1": "Tải xuống→đăng ký",
-      "step2": "Tôi→Dịch vụ→Ví→Thẻ",
-      "step3": "Liên kết Visa/MC (giới hạn thấp hơn)",
-      "backupTitle": "💡 Dự phòng",
-      "backupDesc": "Mang theo một ít tiền mặt RMB+thẻ ATM. Nếu một ứng dụng không hoạt động, hãy thử ứng dụng khác."
+    "wechatPay": {
+      "title": "Hướng dẫn thiết lập WeChat Pay",
+      "steps": [
+        "Tải WeChat từ <a href=\"https://www.wechat.com\" target=\"_blank\" rel=\"noopener\">wechat.com</a> hoặc cửa hàng ứng dụng của bạn",
+        "Tôi → Dịch vụ → Ví → Thẻ → Thêm thẻ Visa/MC/Amex nước ngoài",
+        "Liên kết thẻ (hạn mức chi tiêu thấp hơn Alipay; một số tính năng yêu cầu thẻ ngân hàng Trung Quốc)",
+        "<strong>Mini-Programs</strong>: gọi đồ ăn, gọi taxi, mua vé tàu — tất cả trong WeChat"
+      ],
+      "links": [
+        {
+          "key": "download",
+          "label": "Tải WeChat",
+          "url": "https://www.wechat.com"
+        },
+        {
+          "key": "support",
+          "label": "Hỗ trợ: 95017",
+          "url": "https://www.wechat.com"
+        }
+      ]
     }
   },
-  "s6": {
-    "meta": {
-      "title": "Di chuyển+Ăn uống+Lưu trú",
-      "sub": "Di chuyển, ăn uống, lưu trú & mẹo quần áo"
-    },
+  "lifestyle": {
     "transport": {
       "label": "Giao thông",
-      "desc": "<strong>DiDi</strong>:Alipay, tiếng Anh+thẻ.<br><strong>Tàu điện ngầm</strong>:mã đi lại.<br><strong>Tàu cao tốc</strong>:12306.cn/en thẻ.<br><strong>Xe đạp</strong>:Alipay ¥1.5-3."
+      "sub": "DiDi, tàu điện ngầm, tàu cao tốc",
+      "title": "Di chuyển",
+      "steps": [
+        "DiDi: Gọi xe tích hợp trong Alipay. Giao diện tiếng Anh. Thanh toán bằng thẻ nước ngoài đã liên kết.",
+        "Tàu điện ngầm: Dùng mã QR giao thông Alipay tại cổng. 40+ thành phố. Không cần máy bán vé.",
+        "Tàu cao tốc: Đặt tại 12306.cn/en. Chấp nhận thẻ nước ngoài.",
+        "Xe đạp chia sẻ: Quét bằng Alipay/Meituan. 1,5-3¥/lượt. Hầu hết không cần đặt cọc.",
+        "Mẹo: Mini-programs Alipay xử lý DiDi, tàu điện ngầm, xe đạp, tàu — tất cả trong một ứng dụng."
+      ]
     },
-    "food": {
+    "dining": {
       "label": "Ăn uống",
-      "desc": "<strong>Dianping</strong>:ảnh+điểm.<br><strong>Quét WeChat→Dịch</strong>:thực đơn.<br><strong>Meituan/Ele.me</strong>:giao hàng.<br>Halal:\"清真\"/mì Lanzhou.<br>Chay:\"素食\"(chú ý nước dùng).<br>Dị ứng:mang thẻ song ngữ."
+      "sub": "Gọi món tiếng Trung, mẹo ăn kiêng",
+      "title": "Ăn uống bên ngoài",
+      "steps": [
+        "Dianping: Đánh giá nhà hàng, ảnh, xếp hạng. Tìm kiếm theo khu vực hoặc loại ẩm thực.",
+        "WeChat Quét > Dịch: Hướng camera vào thực đơn tiếng Trung, tự động dịch.",
+        "Meituan / Ele.me: Giao đồ ăn đến khách sạn (như Uber Eats).",
+        "Halal: Tìm biển hiệu halal hoặc chuỗi mì bò Lan Châu.",
+        "Ăn chay: Nói \"chun su\" (thuần chay). Cẩn thận nước dùng thịt.",
+        "Dị ứng: Mang theo thẻ dị ứng song ngữ. Đưa cho nhân viên."
+      ]
     },
     "accommodation": {
       "label": "Lưu trú",
-      "desc": "<strong>Trip.com/Booking</strong>:kiểm tra \"chấp nhận khách nước ngoài\".<br><strong>Airbnb</strong>:đã ngừng hoạt động tại Trung Quốc.<br><strong>Tiêu chuẩn khách nước ngoài</strong>:không phải tất cả khách sạn đều có thể nhận khách nước ngoài. Xác nhận trước khi đặt."
+      "sub": "Đặt phòng, đăng ký, mẹo",
+      "title": "Nơi lưu trú",
+      "steps": [
+        "Trip.com / Booking.com: Lọc \"chấp nhận khách nước ngoài\". Không phải khách sạn nào cũng được đón khách nước ngoài.",
+        "Airbnb: Đã ngừng hoạt động tại Trung Quốc. Dùng Tujia thay thế.",
+        "Điều kiện đón khách nước ngoài: Khách sạn Trung Quốc cần giấy phép đặc biệt. Khách sạn bình dân có thể từ chối bạn.",
+        "Chuỗi thân thiện với người nước ngoài: Marriott, Hilton, IHG, Hyatt, Jin Jiang.",
+        "Nếu bị từ chối: Gọi 12367 để được giúp tìm nơi lưu trú tuân thủ quy định."
+      ]
     },
     "clothing": {
       "label": "Quần áo",
-      "desc": "Size Trung Quốc nhỏ hơn US/EU 1-2 size. US M≈CN L/XL. Uniqlo/ZARA size quốc tế. Xuân:ấm·Hè:nóng ẩm·Thu:tuyệt nhất·Đông:Bắc -10°C/Nam ẩm lạnh."
+      "sub": "Kích cỡ, mùa, nên mang gì",
+      "title": "Mặc gì",
+      "steps": [
+        "Kích cỡ: Size Trung Quốc nhỏ hơn Mỹ/EU 1-2 size. US M = CN L/XL.",
+        "Xuân (3-5): 10-22°C. Áo khoác nhẹ + nhiều lớp.",
+        "Hè (6-8): 28-38°C nóng ẩm. Vải thoáng khí, kem chống nắng, ô.",
+        "Thu (9-11): 10-25°C. Mùa đẹp nhất. Áo len nhẹ.",
+        "Đông (12-2): Miền Bắc -10°C áo dày. Miền Nam 0-10°C lạnh ẩm, mặc nhiều lớp hiệu quả nhất."
+      ]
     }
   },
-  "s7": {
-    "meta": {
-      "title": "Dịch vụ y tế",
-      "sub": "850+ cơ sở tại 57 thành phố. Nhấn thẻ để xem chi tiết."
-    },
+  "medical": {
     "hospital": {
-      "title": "🏥 Dịch vụ Y tế Quốc tế",
+      "desc": "Bệnh viện thành phố lớn, danh sách thuốc ba ngôn ngữ, bảo hiểm du lịch",
+      "title": "Dịch vụ Y tế Quốc tế",
       "intro": "850+ cơ sở tại 57 thành phố. 1,28 triệu bệnh nhân quốc tế năm 2025 (+73,6%).",
       "sectionHospitals": "Bệnh viện Quốc tế",
       "colCity": "Thành phố",
@@ -220,122 +659,127 @@
       "medLoperamideUse": "Chống tiêu chảy",
       "medLoratadineUse": "Kháng histamine",
       "medOmeprazoleUse": "Trào ngược axit",
-      "insuranceWarning": "⚠️ Mua Bảo hiểm Du lịch",
+      "insuranceWarning": "Mua Bảo hiểm Du lịch",
       "insuranceDetail": "Ngoại trú ¥800-1.500+. Đăng ký phòng quốc tế ¥600-1.200. Khuyến nghị Cigna/Allianz/Bupa."
     },
-    "big3": {
-      "title": "🦷👁️🌿 \"Bộ ba Y tế\"",
-      "sectionDental": "🦷 Nha khoa",
+    "dental": {
+      "desc": "Implant <5.000¥, kính trong ngày, châm cứu & massage. Số 1 với người Nga.",
+      "title": "\"Bộ ba Y tế\"",
+      "sectionDental": "Nha khoa",
       "colItem": "Hạng mục",
       "colChinaPrice": "Trung Quốc",
       "colUsEuPrice": "Mỹ/EU",
-      "dental_cleaning": "Lấy cao răng",
-      "dental_cleaning_cn": "¥200-500",
-      "dental_cleaning_us": "$100-200",
-      "dental_filling": "Hàn răng",
-      "dental_filling_cn": "¥300-800",
-      "dental_filling_us": "$150-400",
-      "dental_root": "Điều trị tủy",
-      "dental_root_cn": "¥1.500-3.000",
-      "dental_root_us": "$800-1.500",
-      "dental_implant": "Cấy ghép răng",
-      "dental_implant_cn": "¥5.000-15.000",
-      "dental_implant_us": "$3.000-6.000",
-      "dental_crown": "Mão răng thẩm mỹ",
-      "dental_crown_cn": "¥2.000-5.000",
-      "dental_crown_us": "$1.000-2.500",
-      "dentalNote": "💡 Ưu thế chi phí: Nha khoa Trung Quốc 25-35% so với Mỹ/EU. Nguồn: Dianping, phản hồi Reddit expat (2024-2025)",
-      "dentalClinics": "🏥 Phòng khám khuyến nghị",
-      "dentalClinicsDetail": "Nha khoa Jiahui Thượng Hải (tiếng Anh)·Nha khoa UFH Bắc Kinh·Nha khoa iKang Thâm Quyến·Nha khoa Arrail (Toàn quốc). Mẹo: Đặt trước, hỏi về dịch vụ tiếng Anh.",
-      "sectionEye": "👁️ Nhãn khoa",
-      "eyeDesc": "Kính mắt dịch vụ trong ngày (¥500-2.000). Phẫu thuật mắt laser ¥8K-20K. Khuyến nghị: Bệnh viện Mắt & Tai Mũi Họng Thượng Hải, Tông Nhân Bắc Kinh, Bệnh viện Mắt Aier (Toàn quốc).",
-      "sectionTcm": "🌿 Trị liệu Y học cổ truyền Trung Quốc (#1 yêu cầu Nga)",
+      "cleaning": "Lấy cao răng",
+      "cleaningCn": "¥200-500",
+      "cleaningUs": "$100-200",
+      "filling": "Hàn răng",
+      "fillingCn": "¥300-800",
+      "fillingUs": "$150-400",
+      "rootCanal": "Điều trị tủy",
+      "rootCanalCn": "¥1.500-3.000",
+      "rootCanalUs": "$800-1.500",
+      "implant": "Cấy ghép răng",
+      "implantCn": "¥5.000-15.000",
+      "implantUs": "$3.000-6.000",
+      "crown": "Mão răng thẩm mỹ",
+      "crownCn": "¥2.000-5.000",
+      "crownUs": "$1.000-2.500",
+      "note": "Ưu thế chi phí: Nha khoa Trung Quốc 25-35% so với Mỹ/EU. Nguồn: Dianping, phản hồi Reddit expat (2024-2025)",
+      "clinics": "Phòng khám khuyến nghị",
+      "clinicsDetail": "Nha khoa Jiahui Thượng Hải (tiếng Anh)·Nha khoa UFH Bắc Kinh·Nha khoa iKang Thâm Quyến·Nha khoa Arrail (Toàn quốc). Mẹo: Đặt trước, hỏi về dịch vụ tiếng Anh."
+    },
+    "eyeCare": {
+      "sectionTitle": "Nhãn khoa",
+      "desc": "Kính mắt dịch vụ trong ngày (¥500-2.000). Phẫu thuật mắt laser ¥8K-20K. Khuyến nghị: Bệnh viện Mắt & Tai Mũi Họng Thượng Hải, Tông Nhân Bắc Kinh, Bệnh viện Mắt Aier (Toàn quốc)."
+    },
+    "tcm": {
+      "sectionTitle": "Trị liệu Y học cổ truyền Trung Quốc (#1 yêu cầu Nga)",
       "colTherapy": "Liệu pháp",
       "colDescription": "Mô tả",
       "colPrice": "Giá",
-      "tcm_acupuncture": "Châm cứu",
-      "tcm_acupuncture_desc": "Cổ/Lưng/Vai",
-      "tcm_acupuncture_price": "¥100-300/buổi",
-      "tcm_tuina": "Massage Tuina",
-      "tcm_tuina_desc": "Massage kinh mạch",
-      "tcm_tuina_price": "¥150-400/buổi",
-      "tcm_bonesetting": "Chỉnh xương",
-      "tcm_bonesetting_desc": "Phục hồi chỉnh hình",
-      "tcm_bonesetting_price": "¥200-500/buổi",
-      "tcm_cupping": "Giác hơi",
-      "tcm_cupping_desc": "Giải độc & ẩm",
-      "tcm_cupping_price": "¥50-150/buổi",
-      "tcm_herbal": "Thuốc thảo dược",
-      "tcm_herbal_desc": "Công thức cá nhân hóa",
-      "tcm_herbal_price": "¥100-500/liều",
-      "tcmHotspots": "📍 Điểm nóng Y học cổ truyền",
-      "tcmHotspotsDetail": "Bệnh viện Y học cổ truyền Tam Á (quốc tế)·Y học cổ truyền Hắc Hà (dịch vụ tiếng Nga, 2000+ bệnh nhân/năm)·Bệnh viện Hỗn Xuân (phiên dịch tiếng Nga)·Y học cổ truyền Nhiêu Hà (spa+massage)·Đồng Nhân Đường Bắc Kinh (truyền thống)"
+      "acupuncture": "Châm cứu",
+      "acupunctureDesc": "Cổ/Lưng/Vai",
+      "acupuncturePrice": "¥100-300/buổi",
+      "tuina": "Massage Tuina",
+      "tuinaDesc": "Massage kinh mạch",
+      "tuinaPrice": "¥150-400/buổi",
+      "bonesetting": "Chỉnh xương",
+      "bonesettingDesc": "Phục hồi chỉnh hình",
+      "bonesettingPrice": "¥200-500/buổi",
+      "cupping": "Giác hơi",
+      "cuppingDesc": "Giải độc & ẩm",
+      "cuppingPrice": "¥50-150/buổi",
+      "herbal": "Thuốc thảo dược",
+      "herbalDesc": "Công thức cá nhân hóa",
+      "herbalPrice": "¥100-500/liều",
+      "hotspots": "Điểm nóng Y học cổ truyền",
+      "hotspotsDetail": "Bệnh viện Y học cổ truyền Tam Á (quốc tế)·Y học cổ truyền Hắc Hà (dịch vụ tiếng Nga, 2000+ bệnh nhân/năm)·Bệnh viện Hỗn Xuân (phiên dịch tiếng Nga)·Y học cổ truyền Nhiêu Hà (spa+massage)·Đồng Nhân Đường Bắc Kinh (truyền thống)"
     },
-    "checkup": {
-      "title": "📋 Khám sức khỏe",
-      "intro": "Bệnh viện lớn cung cấp khám sức khỏe tổng quát, ¥2K-10K+. Một số báo cáo 24h. Không cần ở lại qua đêm, nửa ngày.",
-      "recommended": "<strong>Khuyến nghị:</strong> PUMCH Quốc tế, Huashan Quốc tế, Jiahui Quốc tế",
-      "warning": "⚠️ Lưu ý",
-      "warningDetail": "Đặt trước 1-2 tuần. Nhịn ăn cho một số xét nghiệm. Tham khảo bác sĩ về thuốc."
-    },
-    "back": "Quay lại"
+    "healthCheckup": {
+      "desc": "¥2K-10K+, gói toàn diện, một số có báo cáo 24h. Khám nửa ngày.",
+      "title": "Khám sức khỏe",
+      "intro": "Các bệnh viện lớn cung cấp gói khám cao cấp, ¥2K-10K+. Một số có báo cáo trong 24h. Không cần nằm viện, khám nửa ngày.",
+      "recommended": "Khuyến nghị: PUMCH Intl, Huashan Intl, Jiahui Intl",
+      "warning": "Lưu ý",
+      "warningDetail": "Đặt trước 1-2 tuần. Một số xét nghiệm yêu cầu nhịn ăn. Tham khảo ý kiến bác sĩ về thuốc đang dùng."
+    }
   },
-  "s8": {
-    "meta": {
-      "title": "Mua sắm & Hoàn thuế",
-      "sub": "Du khách hoàn thuế +305% năm 2025. 12.252 cửa hàng, 7.000+ hoàn ngay."
-    },
+  "shopping": {
     "electronics": {
-      "title": "📱 Điện tử & Thiết bị",
+      "desc": "Hoa Cường Bắc TQ, Vương Phủ Tỉnh BJ, Nghĩa Ô. Công nghệ mới nhất giá tốt.",
+      "title": "Điện tử & Thiết bị",
       "colCategory": "Danh mục",
       "colWhy": "Tại sao mua",
       "colPrice": "Giá",
       "foldable": "Điện thoại gập",
-      "foldable_why": "Thương hiệu Trung Quốc dẫn đầu toàn cầu",
+      "foldableWhy": "Thương hiệu Trung Quốc dẫn đầu toàn cầu",
+      "foldablePrice": "¥5.000-15.000",
       "drone": "Drone",
-      "drone_why": "DJI thống trị toàn cầu",
-      "ai_glasses": "Kính AI",
-      "ai_glasses_why": "Danh mục mới, Trung Quốc đầu tiên",
+      "droneWhy": "DJI thống trị toàn cầu",
+      "dronePrice": "¥2.000-8.000",
+      "aiGlasses": "Kính AI",
+      "aiGlassesWhy": "Danh mục mới, Trung Quốc tiên phong",
+      "aiGlassesPrice": "¥1.500-3.000",
       "translator": "Máy dịch thông minh",
-      "translator_why": "100+ ngôn ngữ thời gian thực",
+      "translatorWhy": "100+ ngôn ngữ thời gian thực",
+      "translatorPrice": "¥300-1.500",
       "earbuds": "Tai nghe TWS",
-      "earbuds_why": "Giá trị tuyệt vời",
-      "whereToBuy": "📍 Mua ở đâu",
-      "whereToBuyDetail": "Hoa Cường Bắc SZ—\"Phố điện tử Trung Quốc\", 35 chợ, đa ngôn ngữ+thẻ+hoàn thuế. Vương Phủ Tỉnh BJ—cửa hàng hàng đầu. Nghĩa Ô—\"Siêu thị thế giới\", một điểm.",
-      "foldable_price": "¥5,000-15,000",
-      "drone_price": "¥2,000-8,000",
-      "ai_glasses_price": "¥1,500-3,000",
-      "translator_price": "¥300-1,500",
-      "earbuds_price": "¥100-500"
+      "earbudsWhy": "Giá trị tuyệt vời",
+      "earbudsPrice": "¥100-500",
+      "whereToBuy": "Mua ở đâu",
+      "whereToBuyDetail": "Hoa Cường Bắc TQ—\"Phố điện tử Trung Quốc\", 35 chợ, đa ngôn ngữ+thẻ+hoàn thuế. Vương Phủ Tỉnh BJ—cửa hàng hàng đầu. Nghĩa Ô—\"Siêu thị thế giới\", một điểm đến."
     },
     "souvenirs": {
-      "title": "🎨 Quà lưu niệm văn hóa",
+      "desc": "Nam châm Tử Cấm Thành, thổ cẩm gấu trúc Thành Đô, thú nhồi bông Tây An, chàm Quý Châu.",
+      "title": "Quà lưu niệm văn hóa",
       "colCity": "Thành phố",
       "colItem": "Sản phẩm",
-      "beijing_item": "Nam châm tủ lạnh Tử Cấm Thành",
-      "chengdu_item": "Thủ công thổ cẩm gấu trúc·Quà Khoan Trại",
-      "xian_item": "Nhồi bông \"Roujiamo\"·Quà lưu niệm Binh Mã Dũng",
-      "chongqing_item": "Đồ trang trí đồng·Thủ công Hồng Nha Động",
-      "guizhou_item": "Khăn quàng chàm·Nam châm bạc·Móc chìa khóa dân tộc",
-      "tip": "💡 Cửa hàng văn hóa tập trung gần điểm tham quan và phố di sản"
+      "beijingItem": "Nam châm tủ lạnh Tử Cấm Thành",
+      "chengduItem": "Thủ công thổ cẩm gấu trúc·Quà Khoan Trại",
+      "xianItem": "Nhồi bông \"Roujiamo\"·Quà lưu niệm Binh Mã Dũng",
+      "chongqingItem": "Đồ trang trí đồng·Thủ công Hồng Nha Động",
+      "guizhouItem": "Khăn quàng chàm·Nam châm bạc·Móc chìa khóa dân tộc",
+      "tip": "Cửa hàng văn hóa tập trung gần điểm tham quan và phố di sản"
     },
     "taxrefund": {
-      "title": "💰 Hướng dẫn Hoàn thuế",
-      "stats": "📊 12.252 cửa hàng hoàn thuế toàn quốc. +305% du khách hoàn thuế năm 2025.",
+      "desc": "≥¥500 cùng cửa hàng→VAT 11% (~9% thực nhận). Xuất cảnh trong 90 ngày. 7.000+ hoàn ngay.",
+      "title": "Hướng dẫn Hoàn thuế",
+      "stats": "12.252 cửa hàng hoàn thuế toàn quốc. +305% du khách hoàn thuế năm 2025.",
       "sectionRequirements": "Yêu cầu",
+      "sectionProcess": "Quy trình",
       "reqStay": "Du khách nước ngoài, ở ≤183 ngày",
       "reqAmount": "Cùng cửa hàng cùng ngày ≥¥500",
       "reqDeparture": "Khởi hành ≤90 ngày từ khi mua",
       "reqCarry": "Mang theo hàng (KHÔNG ký gửi)",
-      "sectionProcess": "Quy trình",
       "stepInvoice": "Yêu cầu \"Đơn xin hoàn thuế\" + hóa đơn",
       "stepCustoms": "Xác minh hải quan (xuất trình hàng+hộ chiếu+tài liệu)",
       "stepCollect": "Nhận hoàn thuế (tiền mặt/thẻ/Alipay)",
-      "instantRefundTitle": "💡 Hoàn thuế ngay",
+      "instantRefundTitle": "Hoàn thuế ngay",
       "instantRefundDetail": "7.000+ cửa hàng: khấu trừ khi mua, không cần xếp hàng sân bay. Toàn thành phố Thượng Hải. Miễn thuế Hải Nam."
     },
     "cityshops": {
-      "title": "🗺️ Hướng dẫn Mua sắm Thành phố",
+      "desc": "Chợ Vải TH·Điện tử TQ·Bán sỉ Nghĩa Ô·Miễn thuế Tam Á·Vương Phủ Tỉnh BJ",
+      "title": "Hướng dẫn Mua sắm Thành phố",
       "tapHint": "Nhấn vào thành phố để xem chi tiết",
       "cities": {
         "shenzhen": {
@@ -364,62 +808,98 @@
           "desc": "Cửa hàng điện tử hàng đầu, thương hiệu di sản+trung tâm thương mại hiện đại. Kính mắt trong ngày. Cửa hàng hoàn thuế dày đặc với hoàn ngay."
         }
       }
-    },
-    "back": "Quay lại"
+    }
   },
-  "s9": {
-    "meta": {
-      "title": "Điểm đến",
-      "sub": "Du khách nước ngoài đã khám phá gần 500 thành phố. Nhấn để khám phá."
-    },
+  "destinations": {
     "top10": {
-      "title": "🏙️ Top 10 thành phố"
+      "desc": "Thượng Hải·Bắc Kinh·Quảng Châu·Thâm Quyến·Trùng Khánh·Thành Đô·Hàng Châu·Côn Minh·Cáp Nhĩ Tân·Thanh Đảo",
+      "title": "Top 10 thành phố"
     },
     "rising": {
-      "title": "🚀 Thành phố Ngôi sao Đang lên",
+      "desc": "Trịnh Châu·Thái Nguyên·Quý Dương·Phúc Châu·Nghĩa Ô — xu hướng trên mạng xã hội",
+      "title": "Thành phố Ngôi sao Đang lên",
       "subtitle": "Điểm đến xu hướng trên mạng xã hội"
     },
     "seasons": {
-      "title": "🌍 Gợi ý theo mùa",
+      "desc": "Xuân: Giang Nam / Hè: Bắc Đới Hà / Thu: Bắc Kinh / Đông: Cáp Nhĩ Tân & Tam Á",
+      "title": "Gợi ý theo mùa",
       "spring": {
-        "title": "🌸 Xuân (3-5)",
+        "title": "Xuân (3-5)",
         "desc": "Ôn hòa & dễ chịu. Tây Hồ Hàng Châu·Vườn Tô Châu·hoa Côn Minh."
       },
       "summer": {
-        "title": "🌿 Hạ (6-8)",
+        "title": "Hạ (6-8)",
         "desc": "Tránh nóng: Bắc Đới Hà/Thanh Đảo. Lễ hội bia·Cáp Nhĩ Tân mát·Trương Gia Giới."
       },
       "autumn": {
-        "title": "🍂 Thu (9-11) Tốt nhất!",
+        "title": "Thu (9-11) Tốt nhất!",
         "desc": "Tốt nhất toàn quốc. Lá đỏ Bắc Kinh·cổ thành Tây An·cảnh Quế Lâm."
       },
       "winter": {
-        "title": "❄️ Đông (12-2)",
+        "title": "Đông (12-2)",
         "desc": "Băng Bắc vs nắng Nam. Lễ hội băng Cáp Nhĩ Tân (yêu thích Đông Nam Á)·nhiệt đới Tam Á (yêu thích Nga)."
       },
-      "sizingTip": "👔 Kích cỡ: CN nhỏ hơn US 1-2 cỡ. US M≈CN L/XL. Uniqlo/ZARA kích cỡ toàn cầu."
-    },
-    "back": "Quay lại",
-    "tapHint": "Nhấn vào thành phố để xem chi tiết"
+      "sizingTip": "Kích cỡ: CN nhỏ hơn US 1-2 cỡ. US M≈CN L/XL. Uniqlo/ZARA kích cỡ toàn cầu."
+    }
   },
-  "s10": {
-    "meta": {
-      "title": "Khẩn cấp+Xuất cảnh",
-      "sub": ""
+  "emergency": {
+    "12367": {
+      "label": "Nhập cảnh 24h",
+      "title": "12367 — Đường dây nóng Nhập cảnh NIA",
+      "steps": [
+        "Đường dây nóng 24/7 của Cục Quản lý Xuất nhập cảnh Quốc gia.",
+        "Ngôn ngữ: Trung, Anh, Nga, Nhật, Hàn và hơn nữa.",
+        "Khi nào gọi: Câu hỏi thị thực, đăng ký, quá hạn, mất hộ chiếu, thắc mắc xuất nhập cảnh.",
+        "Cũng có dưới dạng APP di động và mini-program WeChat.",
+        "Từ nước ngoài: +86-10-12367."
+      ]
     },
-    "hotlines": "📞 Đường dây nóng",
-    "immigration24h": "Quản lý Xuất nhập cảnh 24h",
-    "police": "Cảnh sát",
-    "ambulance": "Xe cứu thương",
-    "fire": "Cứu hỏa",
-    "passportWarning": "⚠️ Hộ chiếu",
-    "passportWarningDetail": "Luôn mang theo. Mất→cảnh sát→lãnh sự quán. Lưu số liên lạc đại sứ quán.",
-    "departure": "👋 Khởi hành",
-    "departStep1": "Đến sân bay sớm 2-3 giờ",
-    "departStep2": "Mang theo hàng hoàn thuế",
-    "departStep3": "Tiêu hết RMB còn lại",
-    "departStep4": "Sao lưu ảnh (Google Photos bị chặn)",
-    "footer": "🧳 Hướng dẫn nhập cảnh Trung Quốc · Cập nhật tháng 7/2026 · Dựa trên thông tin công khai NIA & MFA · NIA 12367 · s.nia.gov.cn"
+    "110": {
+      "label": "Cảnh sát",
+      "title": "110 — Cảnh sát",
+      "steps": [
+        "Số điện thoại cảnh sát khẩn cấp (như 911/112).",
+        "Khi nào gọi: Tội phạm, trộm cắp, mất hộ chiếu, đe dọa an toàn, tai nạn giao thông.",
+        "Nêu vị trí của bạn và yêu cầu hỗ trợ tiếng Anh.",
+        "Không khẩn cấp: đến đồn cảnh sát gần nhất để báo cáo.",
+        "Sau khi báo mất hộ chiếu, nhận biên lai báo cáo của cảnh sát."
+      ]
+    },
+    "120": {
+      "label": "Cấp cứu",
+      "title": "120 — Cấp cứu Y tế",
+      "steps": [
+        "Dịch vụ cấp cứu y tế.",
+        "Khi nào gọi: Chấn thương nặng, đau ngực, khó thở, chảy máu nhiều, bất tỉnh.",
+        "Xe cứu thương đến trong 10-15 phút tại thành phố. Nhân viên y tế có thể hạn chế tiếng Anh.",
+        "Chuẩn bị sẵn: vị trí, hộ chiếu, thẻ bảo hiểm, danh sách thuốc.",
+        "Nếu có thể, đến trực tiếp bệnh viện quốc tế (xem S7)."
+      ]
+    },
+    "119": {
+      "label": "Cứu hỏa",
+      "title": "119 — Cứu hỏa",
+      "steps": [
+        "Dịch vụ cứu hỏa và cứu hộ.",
+        "Khi nào gọi: Hỏa hoạn, rò rỉ gas, kẹt thang máy, sập nhà, lũ lụt.",
+        "Cung cấp địa chỉ, thứ đang cháy, có ai bị kẹt không.",
+        "Chú ý sơ đồ thoát hiểm trên cửa phòng khách sạn."
+      ]
+    },
+    "passportWarning": "Hộ chiếu",
+    "passportWarningDetail": "Luôn mang theo. Mất→cảnh sát→lãnh sự quán. Lưu số liên lạc đại sứ quán."
+  },
+  "departure": {
+    "label": "Xuất cảnh",
+    "title": "Danh sách kiểm tra xuất cảnh",
+    "steps": [
+      "Đến sớm 2-3 tiếng để làm thủ tục quốc tế, an ninh, hoàn thuế.",
+      "Mang đồ hoàn thuế trong hành lý xách tay. Xin dấu hải quan trước khi ký gửi hành lý.",
+      "Tiêu hoặc đổi nhân dân tệ còn lại tại sân bay.",
+      "Sao lưu ảnh vào iCloud hoặc USB trước khi đi (Google Photos bị chặn).",
+      "Trả WiFi di động / nhận lại đặt cọc SIM.",
+      "Giữ cuống thẻ nhập cảnh — có thể cần tại kiểm soát biên giới khi xuất cảnh."
+    ]
   },
   "city": {
     "beijing": {
@@ -504,7 +984,7 @@
     },
     "yiwu": {
       "label": "Nghĩa Ô",
-      "desc": "\"Thủ đô hàng hóa nhỏ thế giới\". Chuyến bay +60% H1 2026. Phải đến: Thành Thương mại Quốc tế (5 khu). Ẩm thực: nhiều nhà hàng Trung Đông. Mua sắm: từ ốp điện thoại đến drone, một điểm.",
+      "desc": "\"Thủ đô hàng hóa nhỏ thế giới\". Chuyến bay +60% H1 2026. Phải đến: Thành Thương mại Quốc tế (5 khu). Ẩm thực: nhiều nhà hàng Trung Đông. Mua sắm: từ ốp điện thoại đến drone, một điểm đến.",
       "tag": "Chợ thế giới·Bán sỉ"
     },
     "zhengzhou": {
@@ -558,159 +1038,282 @@
       "desc": "Đã phục vụ khách từ Hàn Quốc, Nhật Bản, Trung Đông. Sử dụng phương pháp filler thay vì phẫu thuật xương nguy hiểm. Triết lý thẩm mỹ tự nhiên."
     }
   },
-  "countries": {
-    "default": "— Chọn —",
-    "AU": "🇦🇺 Úc",
-    "NZ": "🇳🇿 New Zealand",
-    "JP": "🇯🇵 Nhật Bản",
-    "KR": "🇰🇷 Hàn Quốc",
-    "SG": "🇸🇬 Singapore",
-    "MY": "🇲🇾 Malaysia",
-    "TH": "🇹🇭 Thái Lan",
-    "ID": "🇮🇩 Indonesia",
-    "IN": "🇮🇳 Ấn Độ",
-    "PH": "🇵🇭 Philippines",
-    "VN": "🇻🇳 Việt Nam",
-    "BN": "🇧🇳 Brunei",
-    "AE": "🇦🇪 UAE",
-    "QA": "🇶🇦 Qatar",
-    "SA": "🇸🇦 Ả Rập Saudi",
-    "KW": "🇰🇼 Kuwait",
-    "OM": "🇴🇲 Oman",
-    "BH": "🇧🇭 Bahrain",
-    "GB": "🇬🇧 Anh",
-    "FR": "🇫🇷 Pháp",
-    "DE": "🇩🇪 Đức",
-    "IT": "🇮🇹 Ý",
-    "ES": "🇪🇸 Tây Ban Nha",
-    "PT": "🇵🇹 Bồ Đào Nha",
-    "NL": "🇳🇱 Hà Lan",
-    "BE": "🇧🇪 Bỉ",
-    "CH": "🇨🇭 Thụy Sĩ",
-    "AT": "🇦🇹 Áo",
-    "SE": "🇸🇪 Thụy Điển",
-    "NO": "🇳🇴 Na Uy",
-    "DK": "🇩🇰 Đan Mạch",
-    "FI": "🇫🇮 Phần Lan",
-    "IS": "🇮🇸 Iceland",
-    "IE": "🇮🇪 Ireland",
-    "PL": "🇵🇱 Ba Lan",
-    "HU": "🇭🇺 Hungary",
-    "GR": "🇬🇷 Hy Lạp",
-    "RO": "🇷🇴 Romania",
-    "RU": "🇷🇺 Nga",
-    "US": "🇺🇸 Hoa Kỳ",
-    "CA": "🇨🇦 Canada",
-    "BR": "🇧🇷 Brazil",
-    "AR": "🇦🇷 Argentina",
-    "CL": "🇨🇱 Chile",
-    "MX": "🇲🇽 Mexico",
-    "PE": "🇵🇪 Peru",
-    "UY": "🇺🇾 Uruguay",
-    "ZA": "🇿🇦 Nam Phi",
-    "OTHER": "🌍 Khác"
-  },
-  "visa": {
-    "mutual": {
-      "title": "✅ Không cần thị thực (Tương hỗ)",
-      "body": "Miễn thị thực tương hỗ. Hộ chiếu thường, thường 15-30 ngày.",
-      "tips": [
-        "Hộ chiếu≥6 tháng",
-        "Vé khứ hồi+đặt chỗ",
-        "Điền trước thẻ nhập cảnh"
-      ],
-      "detailTitle": "Miễn thị thực tương hỗ",
-      "conditions": [
-        "Thỏa thuận miễn thị thực song phương",
-        "Hộ chiếu thường, thường 15-30 ngày",
-        "Vé khứ hồi+chỗ ở",
-        "Không làm việc/học tập",
-        "Tuân theo điều khoản thỏa thuận cụ thể"
-      ]
+  "longstay": {
+    "transfer": {
+      "pathA": {
+        "label": "Du lịch → Làm việc",
+        "sub": "Nhà tuyển dụng bảo trợ, chuyển đổi hoặc nhập cảnh lại",
+        "title": "Du lịch → Làm việc",
+        "steps": [
+          "Đang có thị thực du lịch (L) hoặc nhập cảnh miễn thị thực. Nhận được lời mời làm việc → nhà tuyển dụng bảo trợ giấy phép lao động → chuyển đổi sang giấy phép cư trú.",
+          "Nhận lời mời làm việc từ nhà tuyển dụng Trung Quốc sẵn sàng bảo trợ giấy phép lao động cho bạn.",
+          "Nhà tuyển dụng nộp đơn xin Thư Thông báo Giấy phép Lao động cho Người nước ngoài trực tuyến (www.12333.gov.cn). Xử lý: trung bình ~6 ngày làm việc.",
+          "Nếu thị thực hiện tại cho phép chuyển đổi trong nước: nộp đơn trực tiếp tại Cục Xuất nhập cảnh địa phương. <strong>Kiểm tra với cục trước</strong> — quy định khác nhau tùy thành phố.",
+          "Nếu KHÔNG được phép chuyển đổi trong nước: bạn phải xuất cảnh (VD: đến Hồng Kông, Seoul, Bangkok), xin thị thực Z tại đại sứ quán Trung Quốc và nhập cảnh lại.",
+          "Trong vòng 30 ngày kể từ khi nhận giấy phép lao động: nộp đơn xin Giấy phép Cư trú loại lao động tại Cục Quản lý Xuất nhập cảnh.",
+          "Hoàn thành kiểm tra sức khỏe tại bệnh viện chỉ định (yêu cầu với giấy phép cư trú >1 năm).",
+          "Thượng Hải, Bắc Kinh và Quảng Châu thường linh hoạt hơn với chuyển đổi trong nước. Luôn gọi 12367 để xác nhận trước khi lên kế hoạch di chuyển."
+        ]
+      },
+      "pathB": {
+        "label": "Du học → Làm việc",
+        "sub": "Tốt nghiệp & chuyển đổi trong nước, không cần xuất cảnh",
+        "title": "Du học → Làm việc",
+        "steps": [
+          "Dành cho sinh viên mới tốt nghiệp từ các trường đại học Trung Quốc. Không cần xuất cảnh — chuyển đổi trực tiếp trong nước.",
+          "Tốt nghiệp từ một trường đại học Trung Quốc (cử nhân, thạc sĩ hoặc tiến sĩ).",
+          "Nhận lời mời làm việc từ nhà tuyển dụng Trung Quốc. Nhà tuyển dụng nộp đơn xin giấy phép lao động cho bạn.",
+          "Bạn có thể chuyển đổi giấy phép cư trú du học (X1) sang giấy phép cư trú lao động <strong>mà không cần rời Trung Quốc</strong>.",
+          "Hồ sơ cần: bằng tốt nghiệp (được xác thực bởi CSCSE), hợp đồng lao động, giấy phép kinh doanh của nhà tuyển dụng, kiểm tra sức khỏe, hộ chiếu và đăng ký cảnh sát.",
+          "Nộp đơn tại Cục Xuất nhập cảnh địa phương. Xử lý tiêu chuẩn: 7-15 ngày làm việc.",
+          "Lưu ý: lộ trình này chỉ dành cho sinh viên mới tốt nghiệp. Nếu bạn đã tốt nghiệp >1 năm, sử dụng Lộ trình A.",
+          "Nhiều thành phố có xử lý nhanh cho sinh viên nước ngoài tốt nghiệp từ đại học địa phương. Thượng Hải và Bắc Kinh có quầy riêng 'nhân tài nước ngoài tốt nghiệp'."
+        ]
+      },
+      "pathC": {
+        "label": "Thị thực K (Nhân tài STEM)",
+        "sub": "Tự bảo trợ, 5 năm nhiều lần",
+        "title": "Thị thực K (Nhân tài STEM)",
+        "steps": [
+          "Ra mắt tháng 10/2025. Thị thực tự bảo trợ cho sinh viên tốt nghiệp STEM. Không cần nhà tuyển dụng.",
+          "<strong>Điều kiện</strong>: Bằng STEM (cử nhân trở lên) từ trường đại học được công nhận, thường dưới ~40 tuổi.",
+          "<strong>Không cần bảo trợ của nhà tuyển dụng</strong> — tự nộp đơn. Đây là điểm khác biệt lớn nhất so với thị thực Z.",
+          "Nộp đơn tại đại sứ quán/lãnh sự quán Trung Quốc ở nước ngoài (hoặc CVASC). Hồ sơ: hộ chiếu, bằng cấp + apostille + bản dịch tiếng Trung có chứng thực, CV, đơn đăng ký, ảnh.",
+          "Xử lý tiêu chuẩn: 4-5 ngày làm việc. Phí: $30-$140 tùy quốc tịch. Tổng thời gian chuẩn bị: ~3-4 tuần.",
+          "<strong>Tính năng thị thực</strong>: Hiệu lực 5 năm, nhiều lần, tối đa 180 ngày mỗi lần. Cho phép làm việc, học tập, nghiên cứu, kinh doanh và khởi nghiệp — tất cả trên một thị thực.",
+          "Sau khi đến: nhà tuyển dụng xin giấy phép lao động → bạn nộp đơn xin giấy phép cư trú trong vòng 30 ngày → đăng ký địa chỉ trong vòng 24h.",
+          "<strong>Lộ trình Thẻ Xanh</strong>: Làm việc 3 năm liên tục + cư trú ≥6 tháng/năm + nộp thuế 3 năm + thu nhập ~2-3 lần trung bình địa phương. Tổng thời gian: ~3,5-4 năm.",
+          "Thị thực K lý tưởng nếu bạn muốn linh hoạt — bạn có thể làm tự do, đổi việc hoặc thành lập công ty mà không cần làm lại quy trình thị thực. Không áp dụng cho lĩnh vực phi STEM (tài chính, marketing, luật)."
+        ]
+      }
     },
-    "free": {
-      "title": "✅ Không cần thị thực (Đơn phương)",
-      "body": "50 quốc gia miễn thị thực, ≤30 ngày.",
-      "bodyRuNote": "⚠️Nga đến 14/9/2026",
-      "bodyDefault": "Có hiệu lực đến 31/12/2026",
-      "tips": [
-        "Hộ chiếu thường",
-        "≤30 ngày",
-        "Vé khứ hồi+đặt chỗ"
-      ],
-      "detailTitle": "Miễn thị thực đơn phương",
-      "conditions": [
-        "Hộ chiếu thường, hợp lệ≥6 tháng",
-        "Lưu trú≤30 ngày, không gia hạn",
-        "Yêu cầu vé khứ hồi+đặt khách sạn",
-        "Không được làm việc/học tập có trả công",
-        "Có hiệu lực đến 31/12/2026"
-      ],
-      "ruWarning": "⚠️ Công dân Nga: Có hiệu lực đến 14/9/2026 (không phải 31/12)"
+    "permits": {
+      "workPermit": {
+        "label": "Giấy phép Lao động",
+        "sub": "Bước 1 — Nhà tuyển dụng nộp đơn trực tuyến",
+        "title": "Giấy phép Lao động cho Người nước ngoài",
+        "steps": [
+          "Nhà tuyển dụng nộp đơn trực tuyến. Cổng một cửa tích hợp giấy phép lao động, giấy phép cư trú và bảo hiểm xã hội từ cuối 2025.",
+          "<strong>Nhà tuyển dụng đăng ký</strong> tại www.12333.gov.cn (chọn 'Người dùng Doanh nghiệp'). Xác minh: 3-5 ngày làm việc.",
+          "<strong>Chuẩn bị hồ sơ</strong>: hộ chiếu (còn hạn 6+ tháng, 2+ trang trống), bằng cấp (apostille + bản dịch tiếng Trung có chứng thực), giấy chứng nhận không tiền án tiền sự (<6 tháng, apostille), kiểm tra sức khỏe (từ cơ sở chỉ định), ảnh nền trắng 2 inch, CV (10 năm qua, không khoảng trống), hợp đồng lao động.",
+          "<strong>Phân loại theo điểm</strong>: Hạng A (85+ điểm, nhân tài cao cấp, giấy phép 5 năm), Hạng B (60-84, chuyên gia, 1-3 năm), Hạng C (<60, lao động phổ thông, giới hạn hạn ngạch). Điểm từ: lương, học vấn, kinh nghiệm, tuổi, tiếng Trung.",
+          "<strong>Nộp đơn</strong> qua cổng một cửa. Ba cơ quan xét duyệt song song: Sở Khoa học & Công nghệ (trình độ), Cục Xuất nhập cảnh (hộ chiếu/lịch sử thị thực), Sở Nhân lực (bảo hiểm xã hội).",
+          "<strong>Thời gian xử lý</strong>: 3-15 ngày làm việc, trung bình toàn quốc ~6 ngày. Thượng Hải: ~3 ngày. Thành phố mới hơn: 10-15 ngày.",
+          "<strong>Nhận Thư Thông báo</strong> (PDF). Dùng thư này để xin thị thực Z hoặc chuyển đổi trong nước.",
+          "Tổng cộng: 6-12 tuần (bao gồm 4-8 tuần xác thực hồ sơ). Bắt đầu 3 tháng trước ngày dự kiến bắt đầu. — Từ tháng 12/2024, thẻ giấy phép lao động vật lý đã bị loại bỏ. Thông tin giấy phép lao động được tích hợp trong 'Thẻ Join in' điện tử qua APP 12333."
+        ]
+      },
+      "residencePermit": {
+        "label": "Giấy phép Cư trú",
+        "sub": "Bước 2 — Trong vòng 30 ngày sau khi nhập cảnh",
+        "title": "Giấy phép Cư trú",
+        "steps": [
+          "Nộp đơn trong vòng 30 ngày sau khi nhập cảnh. Đây là nhãn dán trong hộ chiếu — là giấy phép cư trú dài hạn của bạn.",
+          "Nộp đơn tại <strong>Cục Quản lý Xuất nhập cảnh Công an (PSB)</strong> địa phương.",
+          "<strong>Hồ sơ cần</strong>: hộ chiếu (có thị thực hợp lệ + dấu nhập cảnh), Thư Thông báo Giấy phép Lao động cho Người nước ngoài (bản in), đơn đăng ký đã điền, ảnh 2 inch gần đây (nền trắng, 48×33mm), giấy đăng ký cảnh sát (từ khách sạn hoặc đồn cảnh sát), giấy chứng nhận kiểm tra sức khỏe (cho giấy phép >1 năm), bản sao giấy phép kinh doanh của nhà tuyển dụng (chỉ lần đầu), hợp đồng lao động.",
+          "Nộp tất cả hồ sơ. <strong>Hộ chiếu sẽ bị giữ</strong> trong thời gian xử lý — bạn sẽ nhận được biên lai làm bằng chứng về tình trạng.",
+          "Xử lý: <strong>5-10 ngày làm việc</strong>. Nhận lại hộ chiếu với nhãn dán giấy phép cư trú.",
+          "<strong>Hiệu lực</strong>: thường 1 năm cho lần đầu, 1-5 năm cho gia hạn. Nhân tài Hạng A có thể được 5 năm ngay lần đầu.",
+          "<strong>Phí</strong>: ¥400 (<1 năm), ¥800 (1-3 năm), ¥1.000 (3-5 năm).",
+          "Xử lý: 5-10 ngày làm việc. Nộp đơn trong vòng 30 ngày sau khi nhập cảnh. — Giấy phép cư trú thay thế thị thực của bạn. Khi đã có, bạn có thể tự do xuất nhập cảnh Trung Quốc trong thời hạn hiệu lực."
+        ]
+      }
     },
-    "transit": {
-      "title": "✅ Quá cảnh 240h",
-      "body": "55 quốc gia. Vé tiếp nối→≤240h(10 ngày), 24 khu vực cấp tỉnh, 60+ cửa khẩu.",
-      "tips": [
-        "Yêu cầu vé tiếp nối",
-        "Cửa khẩu chỉ định",
-        "24 khu vực cấp tỉnh"
-      ],
-      "detailTitle": "Miễn thị thực quá cảnh 240h",
-      "conditions": [
-        "55 quốc gia đủ điều kiện",
-        "Yêu cầu vé tiếp nối đến nước thứ 3",
-        "Chỉ cửa khẩu chỉ định (60+)",
-        "Lưu trú≤240h(10 ngày)",
-        "Chỉ 24 khu vực cấp tỉnh",
-        "Không thể rời khu vực cho phép"
-      ]
+    "phonebank": {
+      "phone": {
+        "label": "Thẻ SIM",
+        "sub": "Yêu cầu hộ chiếu. ¥29-99/tháng",
+        "title": "Số điện thoại Trung Quốc",
+        "steps": [
+          "Đến phòng dịch vụ của <strong>China Mobile / China Unicom / China Telecom</strong> với hộ chiếu gốc (không phải bản sao).",
+          "Chọn gói: <strong>¥29-99/tháng</strong>. Bao gồm dữ liệu, gọi nội địa + SMS. Hỏi dịch vụ tiếng Anh tại chi nhánh lớn.",
+          "SIM gắn với hộ chiếu của bạn. Luôn mang theo hộ chiếu — bạn sẽ cần nó để thay đổi tài khoản.",
+          "<strong>Tại sao quan trọng</strong>: Nhiều ứng dụng (Alipay, WeChat, DiDi, Meituan) yêu cầu số Trung Quốc để có đầy đủ chức năng. Số nước ngoài hoạt động nhưng tính năng hạn chế.",
+          "Giữ SIM nước nhà để nhận mã xác minh 2FA từ ngân hàng/dịch vụ nước nhà.",
+          "<strong>Mẹo</strong>: Một số nhà mạng cung cấp eSIM du lịch cho thời gian ngắn. Cho dài hạn, nên dùng SIM vật lý để dịch vụ ổn định."
+        ]
+      },
+      "bank": {
+        "label": "Tài khoản Ngân hàng",
+        "sub": "BOC / ICBC / CMB. Bỏ giới hạn ¥200",
+        "title": "Tài khoản Ngân hàng Trung Quốc",
+        "steps": [
+          "Đến chi nhánh ngân hàng lớn: <strong>Bank of China (BOC), ICBC, China Merchants Bank hoặc China Construction Bank</strong>. ICBC có nhiều chi nhánh hỗ trợ tiếng Anh nhất.",
+          "<strong>Hồ sơ cần</strong>: hộ chiếu gốc, giấy phép cư trú (hoặc thị thực + phiếu đăng ký), giấy phép lao động (hoặc hợp đồng lao động), số điện thoại Trung Quốc.",
+          "Mở <strong>tài khoản Hạng II</strong> ban đầu (giới hạn ¥10.000/ngày). Nâng cấp lên <strong>Hạng I</strong> (không giới hạn) khi đã có giấy phép cư trú và giấy phép lao động.",
+          "<strong>Nhận thẻ ghi nợ UnionPay</strong>. Liên kết ngay với Alipay và WeChat Pay tại quầy (nhân viên có thể giúp).",
+          "Điều này <strong>bỏ giới hạn giao dịch ¥200</strong> trên Alipay/WeChat Pay. Bạn có thể gửi/nhận số tiền lớn.",
+          "Kích hoạt ứng dụng ngân hàng di động. Thiết lập <strong>chuyển tiền xuyên biên giới</strong> nếu bạn cần gửi tiền về nước (Wise, PayPal hoặc SWIFT qua ứng dụng ngân hàng).",
+          "<strong>Thẻ tín dụng</strong>: Khó cho người nước ngoài năm đầu. Dùng thẻ tín dụng nước nhà + thẻ ghi nợ Trung Quốc làm cặp đôi."
+        ]
+      }
     },
-    "kvisa": {
-      "title": "💡 Thị thực K (STEM)",
-      "body": "Tháng 10/2025. Bằng STEM+<~40 tuổi→không cần nhà tuyển dụng. Nhiều lần/5 năm/≤180 ngày.",
-      "tips": [
-        "Bằng STEM",
-        "Không cần nhà tuyển dụng",
-        "Làm việc/nghiên cứu/khởi nghiệp"
-      ],
-      "detailTitle": "Thị thực K (Nhân tài STEM)",
-      "conditions": [
-        "Ra mắt tháng 10/2025",
-        "Bằng cử nhân STEM trở lên",
-        "Dưới ~40 tuổi",
-        "Không cần tài trợ nhà tuyển dụng",
-        "Nộp đơn trong nước, không cần xuất cảnh",
-        "Nhiều lần nhập cảnh/5 năm/≤180 ngày mỗi lần",
-        "Được phép làm việc, nghiên cứu, khởi nghiệp"
-      ]
+    "housing": {
+      "rent": {
+        "label": "Thuê nhà",
+        "sub": "Ziroom · Beike · Hợp đồng · Chi phí",
+        "title": "Hướng dẫn Thuê nhà",
+        "steps": [
+          "Ziroom (自如) và Beike (贝壳) là hai nền tảng cho thuê lớn nhất. Cả hai đều có hỗ trợ tiếng Anh một phần.",
+          "Nền tảng: Ziroom — căn hộ tiêu chuẩn hóa, ứng dụng tiếng Anh, bảo trì nhanh. Beike — nền tảng niêm yết lớn nhất, phạm vi rộng hơn. Lianjia — môi giới lớn, văn phòng khắp nơi.",
+          "Quy tắc hợp đồng: Tiêu chuẩn là '押一付三' (1 tháng đặt cọc + 3 tháng tiền thuê trả trước). Luôn yêu cầu <strong>hợp đồng song ngữ</strong> (Trung + Anh). Xác nhận bằng văn bản rằng chủ nhà sẽ <strong>hỗ trợ đăng ký cảnh sát</strong> — nếu họ từ chối, tìm căn hộ khác.",
+          "Khu người nước ngoài: Thượng Hải — Cổ Bắc, Tĩnh An, Tô Giới Pháp. Bắc Kinh — Triều Dương (Tam Lý Đồn), Thuận Nghĩa (biệt thự, thân thiện gia đình), Lượng Mã Kiều. Quảng Châu — Thiên Hà, Chu Giang Tân Thành. Thâm Quyến — Shekou, Nam Sơn.",
+          "<strong>Dấu hiệu cảnh báo</strong>: Chủ nhà từ chối cung cấp giấy chứng nhận quyền sở hữu (cần cho đăng ký). Không có hợp đồng bằng văn bản. Yêu cầu >3 tháng tiền thuê trả trước. Không có hệ thống sưởi mùa đông (thành phố phía Bắc).",
+          "Tham khảo chi phí (giữa 2026): Thượng Hải/Tĩnh An 1PN: ¥8K-25K/tháng. Bắc Kinh/Triều Dương: ¥7K-20K. Quảng Châu/Thiên Hà: ¥4K-12K. Thâm Quyến/Shekou: ¥6K-15K."
+        ]
+      },
+      "registration": {
+        "label": "Đăng ký",
+        "sub": "Bắt buộc trong vòng 24h sau khi chuyển vào",
+        "title": "Đăng ký Cảnh sát",
+        "steps": [
+          "Bắt buộc trong vòng 24 giờ sau khi chuyển đến địa chỉ mới. Cơ sở pháp lý: Luật Quản lý Xuất nhập cảnh Điều 39.",
+          "<strong>Khách ở khách sạn</strong>: Khách sạn tự động đăng ký cho bạn khi nhận phòng — chỉ cần đưa hộ chiếu. Không cần làm gì thêm.",
+          "<strong>Nhà ở riêng</strong>: Đến <strong>đồn cảnh sát địa phương</strong> trong vòng 24 giờ sau khi chuyển vào. Mang theo: hộ chiếu, giấy phép cư trú (hoặc thị thực), hợp đồng thuê, bản sao giấy chứng nhận quyền sở hữu của chủ nhà, bản sao CMND của chủ nhà.",
+          "<strong>Đăng ký trực tuyến (7 thành phố thí điểm)</strong>: Thượng Hải, Bắc Kinh, Quảng Châu, Thâm Quyến, Thành Đô, Hàng Châu, Hạ Môn. Sử dụng trang web NIA (s.nia.gov.cn) hoặc APP 12367. Từ tháng 3/2026.",
+          "<strong>Đăng ký lại mỗi khi chuyển nhà</strong>. Đây là yêu cầu pháp lý, không phải tùy chọn. Biên lai đăng ký cần cho gia hạn giấy phép cư trú.",
+          "<strong>Không đăng ký</strong>: Cảnh cáo lần đầu. Tái phạm: phạt đến ¥2.000 (Điều 76). Có thể ảnh hưởng đến đơn xin thị thực/giấy phép cư trú sau này.",
+          "<strong>Mẹo</strong>: Giữ ảnh biên lai đăng ký trên điện thoại. Bạn sẽ cần nó cho ngân hàng, điện thoại và đơn xin giấy phép.",
+          "Từ tháng 3/2026, nền tảng 12367 hỗ trợ đăng ký trực tuyến tại 7 thành phố thí điểm. Đây là một thay đổi lớn — không còn phải xếp hàng tại đồn cảnh sát."
+        ]
+      }
     },
-    "visaRequired": {
-      "title": "📋 Yêu cầu thị thực",
-      "body": "Nộp đơn trước theo quốc tịch/mục đích/thời gian. Đến CVASC địa phương.",
-      "tips": [
-        "visaforchina.cn",
-        "Hộ chiếu+ảnh+đơn+thư mời",
-        "~4-5 ngày làm việc"
-      ],
-      "detailTitle": "Yêu cầu thị thực",
-      "conditions": [
-        "Nộp đơn tại đại sứ quán/lãnh sự quán Trung Quốc",
-        "Hộ chiếu+ảnh+đơn+thư mời",
-        "~4-5 ngày làm việc xử lý",
-        "Loại: L(du lịch)/M(kinh doanh)/Q(thăm thân)/Z(làm việc)/X(học sinh)",
-        "Phí thay đổi theo quốc tịch & loại"
-      ]
+    "insurance": {
+      "socialIns": {
+        "label": "Bảo hiểm Xã hội",
+        "sub": "Năm bảo hiểm + Quỹ Nhà ở",
+        "title": "Năm Bảo hiểm Xã hội + Quỹ Nhà ở",
+        "steps": [
+          "Bắt buộc cho tất cả lao động nước ngoài. Đăng ký phải hoàn thành trong vòng 30 ngày kể từ khi cấp giấy phép lao động. Tỷ lệ đóng góp bằng với lao động Trung Quốc.",
+          "<strong>Hưu trí</strong> (Người lao động 8% + Chủ lao động 14-16%): Bạn có thể rút số dư tài khoản cá nhân (8% + lãi) khi rời Trung Quốc vĩnh viễn. Đóng góp của chủ lao động ở lại quỹ chung.",
+          "<strong>Y tế</strong> (Người lao động 2% + Chủ lao động ~6,85-10%): Chi trả khám bệnh viện công với hoàn trả một phần. Hầu hết người nước ngoài dùng cái này làm nền tảng và thêm bảo hiểm tư nhân cho phòng khám quốc tế.",
+          "<strong>Thất nghiệp</strong> (Người lao động 0,2-0,5% + Chủ lao động 0,5-0,8%): Cung cấp trợ cấp hạn chế. Phải đóng 1+ năm và 'thất nghiệp không tự nguyện'.",
+          "<strong>Tai nạn Lao động</strong> (Chủ lao động 0,16-1,9%, Người lao động 0%): Chi trả thương tật liên quan đến công việc và bệnh nghề nghiệp. Chủ lao động trả toàn bộ.",
+          "<strong>Thai sản</strong> (đã sáp nhập với Y tế): Chi trả chi phí sinh đẻ và lương nghỉ thai sản. Cả nam và nữ đều đóng góp.",
+          "<strong>Quỹ Nhà ở</strong> (Người lao động 5-12% + Chủ lao động 5-12%): Khác nhau tùy thành phố. Thượng Hải cho phép người nước ngoài không tham gia. Khoản đóng góp của bạn + phần chủ lao động đối ứng vào tài khoản cá nhân. Có thể rút khi rời Trung Quốc hoặc mua nhà.",
+          "<strong>Miễn song phương</strong>: 12 quốc gia (Đức, Hàn, Đan Mạch, Phần Lan, Canada, Thụy Sĩ, Hà Lan, Tây Ban Nha, Luxembourg, Nhật, Serbia, Kyrgyzstan) có thỏa thuận bảo hiểm xã hội với Trung Quốc — có thể miễn đóng hưu trí/thất nghiệp. Y tế + tai nạn lao động vẫn bắt buộc. Xin Giấy Chứng nhận Bảo hiểm.",
+          "Tổng chi phí chủ lao động trên lương gộp của bạn: ~26-37%. Đây là một phần trong tổng thù lao của bạn — hãy đàm phán với điều này trong đầu."
+        ]
+      },
+      "privateIns": {
+        "label": "Bảo hiểm Tư nhân",
+        "sub": "Cigna · Allianz · Bupa",
+        "title": "Bảo hiểm Sức khỏe Quốc tế",
+        "steps": [
+          "Hầu hết người nước ngoài mua bảo hiểm quốc tế bổ sung để tiếp cận phòng khám tư nhân với bác sĩ nói tiếng Anh.",
+          "<strong>Nhà cung cấp chính</strong>: Cigna (~¥15K-30K/năm), Allianz (~¥12K-25K/năm), Bupa (~¥20K-50K/năm), Aetna, MSH China. Tất cả đều có thanh toán trực tiếp với bệnh viện quốc tế.",
+          "<strong>Bệnh viện chính</strong>: Thượng Hải — Jiahui, UFH, Parkway Health. Bắc Kinh — UFH, PUMCH International, OASIS. Quảng Châu — Clifford, CanAm. Thâm Quyến — UFH Shekou.",
+          "Tham khảo chi phí: Khám đa khoa ¥800-1.500 tại khoa quốc tế, chuyên khoa ¥1.200-2.500. Cấp cứu ¥2.000-5.000. Nằm viện ¥5.000-15.000/đêm. Bảo hiểm được khuyến nghị mạnh mẽ.",
+          "Một số nhà tuyển dụng cung cấp Cigna/Allianz như một phần của gói expat. Nếu không, mua bảo hiểm cá nhân — một lần khám bệnh không bảo hiểm có thể tốn hơn phí bảo hiểm cả năm."
+        ]
+      }
     },
-    "links": {
-      "niaVisaFree": "Chính sách Miễn thị thực NIA",
-      "beijingVisaFaq": "FAQ Miễn thị thực Bắc Kinh",
-      "mfaConsular": "Lãnh sự MFA",
-      "niaTransit": "Chính sách Quá cảnh NIA",
-      "cvasc": "Đơn xin CVASC",
-      "onlineBooking": "Đặt trước trực tuyến",
-      "consularServices": "Dịch vụ Lãnh sự",
-      "niaKVisa": "Chính sách Thị thực K NIA"
+    "driveschool": {
+      "license": {
+        "label": "Bằng lái xe",
+        "sub": "Giấy phép tạm, đổi trực tiếp hoặc thi lý thuyết",
+        "title": "Bằng lái xe",
+        "steps": [
+          "Bằng lái nước ngoài không có hiệu lực tại Trung Quốc. Bạn có ba lựa chọn: giấy phép tạm thời, đổi trực tiếp (một số quốc gia) hoặc thi lý thuyết.",
+          "<strong>Giấy phép Tạm thời</strong>: Hiệu lực 3 tháng. Nộp đơn tại văn phòng quản lý phương tiện với: hộ chiếu, bằng lái nước ngoài, bản dịch có công chứng tiếng Trung, đăng ký cư trú, 3 ảnh, kiểm tra sức khỏe. Xử lý: cùng ngày đến 3 ngày. Tốt cho nhu cầu ngắn hạn.",
+          "<strong>Đổi trực tiếp</strong>: Công dân Bỉ, Pháp (và một số nước khác) có thể đổi trực tiếp bằng lái lấy bằng Trung Quốc — không cần thi. Kiểm tra với đại sứ quán nước bạn để có danh sách mới nhất, vì thỏa thuận song phương thay đổi.",
+          "<strong>Thi lý thuyết (hầu hết người nước ngoài)</strong>: Vượt qua bài thi 100 câu trắc nghiệm (90/100 để đỗ). Có sẵn bằng tiếng Anh, Nhật, Hàn, Nga, Pháp, Đức, Tây Ban Nha và hơn nữa. Học ứng dụng chính thức (驾考宝典). Đặt lịch tại văn phòng quản lý phương tiện địa phương. Sau khi đỗ: nhận bằng C1 Trung Quốc (hiệu lực 6 năm).",
+          "<strong>Nơi nộp đơn</strong>: Văn phòng Quản lý Phương tiện. Mang theo: hộ chiếu + giấy phép cư trú, bằng lái nước ngoài + bản dịch có công chứng, phiếu đăng ký cư trú, kiểm tra sức khỏe (từ bệnh viện chỉ định), 3-5 ảnh.",
+          "Khác với nhiều quốc gia, Trung Quốc không yêu cầu thi lái xe thực hành (thi đường trường) cho chuyển đổi bằng lái nước ngoài — chỉ cần thi lý thuyết. Bài thi tập trung vào luật giao thông và biển báo Trung Quốc."
+        ]
+      },
+      "school": {
+        "label": "Trường học",
+        "sub": "Lựa chọn quốc tế & song ngữ",
+        "title": "Trường Quốc tế",
+        "steps": [
+          "Ba loại: quốc tế thuần túy (chỉ hộ chiếu nước ngoài), song ngữ (hỗn hợp) và khoa quốc tế trường công. Lên kế hoạch trước 6-12 tháng.",
+          "<strong>Loại trường</strong>: <br>1) <strong>Quốc tế Thuần túy</strong>: Chỉ hộ chiếu nước ngoài. Theo chương trình Mỹ/Anh/IB. Giảng dạy bằng tiếng Anh. Phù hợp nhất nếu dự định về nước học đại học. <br>2) <strong>Song ngữ</strong>: Trung + Anh. Mở cho cả học sinh nước ngoài và Trung Quốc. Hòa nhập văn hóa địa phương nhiều hơn. <br>3) <strong>Khoa Quốc tế Trường Công</strong>: Trực thuộc trường công hàng đầu. Chương trình Trung Quốc + yếu tố quốc tế. Giá cả phải chăng nhất.",
+          "<strong>Học phí hàng năm (2025-2026)</strong>: Quốc tế Thuần túy: ¥150K-350K+. Song ngữ: ¥80K-200K. Khoa Quốc tế Công: ¥30K-80K. Thêm: phí đăng ký (¥2K-5K), đồng phục, ăn uống, xe buýt, hoạt động.",
+          "<strong>Khu vực chính</strong>: Bắc Kinh — Thuận Nghĩa (ISB, WAB, Dulwich, BSY). Thượng Hải — Phố Đông (Dulwich, Wellington, Concordia), Trường Ninh (YCIS, SCIS). Quảng Châu — Thiên Hà, Phiên Ngung. Thâm Quyến — Shekou (SIS, BASIS).",
+          "<strong>Tuyển sinh</strong>: Nộp đơn 6-12 tháng trước ngày bắt đầu. Hầu hết trường yêu cầu: học bạ trước đây, thư giới thiệu, phỏng vấn học sinh, phỏng vấn phụ huynh, đánh giá trình độ tiếng Anh. Một số có danh sách chờ 1-2 năm.",
+          "Trường quốc tế thuần túy về mặt pháp lý không thể nhận học sinh có hộ chiếu Trung Quốc (trừ Hồng Kông/Macau/Đài Loan). Nếu con bạn có hộ chiếu Trung Quốc, hãy xem xét trường song ngữ hoặc khoa quốc tế trường công."
+        ]
+      }
+    },
+    "daily": {
+      "shopping": {
+        "label": "Mua sắm",
+        "sub": "Taobao · JD · Pinduoduo · Hema",
+        "title": "Mua sắm Trực tuyến & Thực phẩm",
+        "steps": [
+          "<strong>Taobao (淘宝)</strong>: Sàn thương mại lớn nhất — mọi thứ từ đồ nội thất đến ốp điện thoại. Giá không thể đánh bại. Dùng tìm kiếm bằng hình ảnh để tìm sản phẩm. Hầu hết người bán giao hàng trong ngày/hôm sau.",
+          "<strong>JD (京东)</strong>: Điện tử, thiết bị gia dụng và hàng hiệu. Kiểm soát chất lượng tốt hơn, giá cao hơn. JD Logistics giao trong vài giờ tại thành phố lớn. Khuyến nghị cho đồ điện tử.",
+          "<strong>Pinduoduo (拼多多)</strong>: Nền tảng giá rẻ. Tuyệt vời cho đồ dùng hàng ngày và đồ gia dụng. Mô hình mua nhóm cho giá thấp nhất.",
+          "<strong>Hema (盒马)</strong>: Chuỗi thực phẩm tươi của Alibaba. Giao hàng 30 phút đến tận cửa. Tuyệt vời cho thực phẩm nhập khẩu, nông sản tươi và đồ ăn sẵn. Giá cao hơn nhưng chất lượng tuyệt vời.",
+          "<strong>Sam's Club / Costco</strong>: Cả hai đều có tại thành phố lớn. Hàng nhập khẩu số lượng lớn. Tuyệt vời cho phô mai, rượu vang và thực phẩm phương Tây cơ bản.",
+          "<strong>Siêu thị nhập khẩu</strong>: CityShop (城市超市), Ole', BHG — bán thực phẩm phương Tây/Nhật/Hàn. Đắt nhưng đáng cho đồ ăn quen thuộc."
+        ]
+      },
+      "food": {
+        "label": "Ăn uống",
+        "sub": "Dianping · Meituan · Ele.me",
+        "title": "Ăn ngoài & Giao đồ ăn",
+        "steps": [
+          "<strong>Dianping (大众点评)</strong>: Yelp của Trung Quốc. Đánh giá nhà hàng, ảnh, xếp hạng. Tìm kiếm theo loại ẩm thực, khu vực hoặc giá. Cần thiết để tìm nhà hàng ngon.",
+          "<strong>Meituan (美团) / Ele.me (饿了么)</strong>: Giao đồ ăn đến tận cửa, thường 30-40 phút. Phủ sóng gần như toàn quốc. Phí giao hàng ¥3-8. Cả hai tích hợp trong Alipay và WeChat.",
+          "<strong>WeChat dịch</strong>: Hướng camera điện thoại vào thực đơn tiếng Trung → WeChat quét → dịch. Không hoàn hảo nhưng đủ hiểu bạn đang gọi món gì.",
+          "<strong>Nhu cầu ăn kiêng</strong>: Halal — tìm biển hiệu 清真 (qīngzhēn) hoặc chuỗi mì bò Lan Châu. Ăn chay — nói 纯素 (chún sù) cho thuần chay, 素食 (sù shí) cho chay. Cẩn thận nước dùng thịt trong món rau. Dị ứng — mang theo thẻ dị ứng song ngữ.",
+          "<strong>Thanh toán</strong>: Hầu như không ai dùng tiền mặt. Quét mã QR trên bàn bằng Alipay/WeChat để gọi món VÀ thanh toán. Một số nhà hàng hoàn toàn gọi món bằng QR — không có thực đơn giấy.",
+          "<strong>Văn hóa tip</strong>: Không có tip tại Trung Quốc. Không được mong đợi và đôi khi bị từ chối."
+        ]
+      },
+      "clothing": {
+        "label": "Quần áo",
+        "sub": "Kích cỡ & hướng dẫn mặc theo mùa",
+        "title": "Kích cỡ & Trang phục theo mùa",
+        "steps": [
+          "<strong>Kích cỡ</strong>: Size Trung Quốc nhỏ hơn Mỹ/EU 1-2 size. US M = CN L/XL. US L = CN XXL. Luôn kiểm tra bảng size bằng cm — đừng dựa vào size chữ. Uniqlo và Zara tại Trung Quốc dùng size toàn cầu nên là tham chiếu đáng tin cậy.",
+          "<strong>Xuân (3-5, 10-22°C)</strong>: Áo khoác nhẹ + nhiều lớp. Đây là mùa thoải mái nhất. Thỉnh thoảng mưa ở miền Nam — mang áo mưa nhẹ.",
+          "<strong>Hè (6-8, 28-38°C+)</strong>: Nóng và ẩm, đặc biệt phía nam sông Dương Tử. Vải thoáng khí (cotton, linen). Kem chống nắng, mũ và ô UV cần thiết. Mọi tòa nhà đều có điều hòa. Mang áo khoác mỏng cho trong nhà lạnh.",
+          "<strong>Thu (9-11, 10-25°C)</strong>: Mùa TUYỆT NHẤT. Trời trong, nhiệt độ thoải mái. Áo len hoặc áo khoác nhẹ vào buổi tối. Lý tưởng cho du lịch và hoạt động ngoài trời.",
+          "<strong>Đông (12-2)</strong>: Miền Bắc (Bắc Kinh/Cáp Nhĩ Tân): -10°C đến -20°C. Áo lông vũ dày, lớp giữ nhiệt, găng tay, mũ, ủng — bạn cần đồ mùa đông đầy đủ. Miền Nam (Thượng Hải/Quảng Châu): 0-10°C. Lạnh ẩm cảm giác lạnh hơn con số. Mặc nhiều lớp hiệu quả hơn một áo dày. Hệ thống sưởi trong nhà phổ biến ở miền Bắc, nhưng căn hộ miền Nam có thể không có hệ thống sưởi trung tâm — kiểm tra trước khi thuê."
+        ]
+      },
+      "transport": {
+        "label": "Giao thông",
+        "sub": "Tàu điện ngầm · DiDi · Xe đạp chia sẻ · Tàu cao tốc",
+        "title": "Di chuyển hàng ngày",
+        "steps": [
+          "<strong>Tàu điện ngầm</strong>: Cách tốt nhất để di chuyển trong thành phố lớn. Dùng mã QR giao thông Alipay tại cổng — không cần vé. ¥2-10 mỗi lượt. Mạng lưới rộng khắp tại tất cả thành phố hạng 1/2. Biển báo và thông báo tiếng Anh tại hầu hết thành phố.",
+          "<strong>DiDi (滴滴)</strong>: Tích hợp trong Alipay và WeChat. Giao diện tiếng Anh có sẵn. Thanh toán bằng thẻ nước ngoài hoặc thẻ Trung Quốc đã liên kết. Nhiều loại xe (Express, Premier, Taxi). ~¥20-50 cho chuyến đi thông thường trong thành phố.",
+          "<strong>Xe đạp chia sẻ</strong>: Quét bằng Alipay/Meituan. ¥1,5-3 mỗi lượt. Hầu hết không cần đặt cọc. Hello Bike (哈啰), Meituan Bike (美团单车), DiDi Bike (青桔). Xanh dương, vàng, xanh lá — bạn sẽ nhận ra chúng.",
+          "<strong>Tàu cao tốc (高铁)</strong>: Cho di chuyển liên tỉnh. Đặt tại 12306.cn (có phiên bản tiếng Anh). Chấp nhận hộ chiếu nước ngoài. 300+ km/h. Thượng Hải đến Bắc Kinh: 4,5 giờ. Đặt trước 1-2 tuần cho thời gian cao điểm.",
+          "<strong>Gọi xe thay thế</strong>: CaoCao (曹操出行) — xe cao cấp. T3 (T3出行) — được hậu thuẫn bởi hãng xe nhà nước. Cả hai có hỗ trợ tiếng Anh tại một số thành phố."
+        ]
+      }
+    },
+    "compliance": {
+      "renewal": {
+        "label": "Gia hạn & Tuân thủ",
+        "sub": "Giấy phép · Quá hạn · Thẻ Xanh",
+        "title": "Giữ đúng pháp luật",
+        "steps": [
+          "Giấy phép cư trú của bạn phải được gia hạn 30 ngày trước khi hết hạn. Quá hạn có hậu quả nghiêm trọng.",
+          "<strong>Gia hạn 30-60 ngày trước khi hết hạn</strong>. Đặt nhắc lịch. Gia hạn muộn có thể yêu cầu giải trình và hồ sơ bổ sung.",
+          "<strong>Hình phạt quá hạn</strong>: ¥500 mỗi ngày quá hạn, tối đa ¥10.000. Trường hợp nghiêm trọng: tạm giam 5-15 ngày + trục xuất. Có thể bị cấm nhập cảnh 5 năm.",
+          "<strong>Mất/đánh cắp hộ chiếu</strong>: 1) Báo cảnh sát ngay lập tức (gọi 110 hoặc đến đồn cảnh sát gần nhất). 2) Nhận biên lai báo cáo cảnh sát. 3) Liên hệ đại sứ quán/lãnh sự quán của bạn để xin giấy thông hành khẩn cấp hoặc hộ chiếu mới. 4) Chuyển giấy phép cư trú sang hộ chiếu mới trong vòng 10 ngày tại Cục Xuất nhập cảnh.",
+          "<strong>Thay đổi nhà tuyển dụng</strong>: Nhà tuyển dụng mới phải nộp đơn xin giấy phép lao động mới. Sau đó cập nhật giấy phép cư trú tại Cục Xuất nhập cảnh trong vòng 10 ngày kể từ khi thay đổi. Bạn không thể bắt đầu làm việc cho nhà tuyển dụng mới cho đến khi cả hai giấy phép được cập nhật.",
+          "<strong>Thay đổi địa chỉ</strong>: Đăng ký lại tại đồn cảnh sát mới trong vòng 24 giờ sau khi chuyển đi. Cập nhật địa chỉ trong hệ thống Xuất nhập cảnh.",
+          "<strong>Mất giấy phép cư trú</strong>: Báo cho Cục Xuất nhập cảnh ngay lập tức. Nộp đơn xin cấp lại (phí ¥200, 7-10 ngày làm việc).",
+          "<strong>Thường trú (Thẻ Xanh)</strong>: Điều kiện — làm việc 3+ năm liên tục tại Trung Quốc, cư trú ≥6 tháng/năm, nộp thuế cá nhân 3 năm liên tiếp, thu nhập ~2-6 lần trung bình địa phương (~¥240K-720K/năm). Lộ trình thị thực K: ~2-3 lần trung bình địa phương. Nộp đơn qua Cục Xuất nhập cảnh. Xử lý: 6-12 tháng, áp dụng hạn ngạch. Người có Thẻ Xanh có thể làm việc không cần giấy phép riêng và tự do xuất nhập cảnh Trung Quốc.",
+          "<strong>Quan trọng</strong>: Không bao giờ để giấy phép cư trú hết hạn. Hồ sơ quá hạn có thể ảnh hưởng vĩnh viễn đến đơn xin thị thực sau này. Nếu bạn nhận ra sắp hết hạn và không thể gia hạn kịp, gọi 12367 để được hướng dẫn TRƯỚC KHI hết hạn."
+        ]
+      },
+      "emergency": {
+        "desc": "Lưu những số này. Nhấn vào từng số để biết khi nào gọi và điều gì sẽ xảy ra.",
+        "hotline12367": "Nhập cảnh 24h",
+        "hotline110": "Cảnh sát",
+        "hotline120": "Cấp cứu",
+        "hotline119": "Cứu hỏa",
+        "passportWarning": "Mất Hộ chiếu?",
+        "passportWarningDetail": "1) Báo cảnh sát ngay lập tức (gọi 110). 2) Liên hệ đại sứ quán của bạn để xin giấy thông hành khẩn cấp. 3) Giữ ảnh hộ chiếu và thị thực trên điện thoại. 4) Chuyển giấy phép cư trú sang hộ chiếu mới trong vòng 10 ngày."
+      }
     }
   }
 }

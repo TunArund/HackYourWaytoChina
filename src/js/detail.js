@@ -1,40 +1,46 @@
 /* ============================================================
    detail.js — Unified detail system (data-driven dispatch)
    Layout-driven for S7/S8/S9; generic step-list for pay-detail slides.
-   Zero namespace configuration — i18n keys follow slide.key.* pattern.
+   Domain-prefixed i18n keys via SLIDE_DOMAIN mapping.
    ============================================================ */
 
 /* ---- State ---- */
 const currentDetail = { slide: null, key: null, sub: null };
 
 
+/* ---- Shared back button HTML ---- */
+function backBtn() {
+  return '<button class="detail-back" onclick="event.stopPropagation();closeDetail(\'' + (currentDetail.slide||'') + '\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>';
+}
+
+
 /* ---- Generic step-list renderer (pay-detail slides: S2-S6,S10,L1-L8) ---- */
 
 function renderSteps(slide, key) {
-  // L8 hotlines redirect to S10 data
+  // L8 hotlines redirect to emergency entity
   if (slide === 'l8' && key !== 'renewal') {
-    var hotSteps = tArray('s10.' + key + '.steps');
+    var hotSteps = tArray('emergency.' + key + '.steps');
     var hotList = Array.isArray(hotSteps) ? hotSteps : [];
-    return '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">← ' + (t(slide + '.back') || '← Back') + '</button>'
-      + '<h3>' + t('s10.' + key + '.title') + '</h3>'
+    return '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>'
+      + '<h3>' + t('emergency.' + key + '.title') + '</h3>'
       + '<ol class="step-list">' + hotList.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
   }
 
-  var P = slide + '.' + key + '.';
+  var domain = SLIDE_DOMAIN[slide] || slide;
+  var P = domain + '.' + key + '.';
   var steps = tArray(P + 'steps');
   var stepList = Array.isArray(steps) ? steps : [];
   var links = tArray(P + 'links');
   var linkList = Array.isArray(links) ? links : [];
 
-  var backLabel = t(slide + '.back') || '← Back';
-  var h = '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">← ' + backLabel + '</button>';
+  var h = '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>';
   h += '<h3>' + t(P + 'title') + '</h3>';
   if (stepList.length) {
     h += '<ol class="step-list">' + stepList.map(function (s) { return '<li>' + s + '</li>'; }).join('') + '</ol>';
   }
   if (linkList.length) {
     h += '<p style="margin-top:12px">' + linkList.map(function (l) {
-      return '<a class="card-link" href="' + l.url + '" target="_blank" rel="noopener">' + (l.label || l.key) + ' →</a>';
+      return '<a class="card-link" href="' + l.url + '" target="_blank" rel="noopener">' + (l.label || l.key) + ' ' + BUTTON_ICONS.expand + '</a>';
     }).join('<br>') + '</p>';
   }
   return h;
@@ -56,7 +62,7 @@ function renderCardGrid(items, slide, key, prefix, labelSuffix, descSuffix, desc
     + items.map(function (id) {
       var label = t(prefix + id + '.' + labelSuffix);
       var desc = descFn ? descFn(id) : t(prefix + id + '.' + descSuffix);
-      return '<div class="sub-card" onclick="event.stopPropagation();openDetail(\'' + slide + '\',\'' + key + '\',\'' + id + '\')"><div class="sc-title">' + label + '</div><div class="sc-desc">' + desc + '</div><div class="sc-hint">[ ' + t('app.buttons.expand') + ' ]</div></div>';
+      return '<div class="sub-card" onclick="event.stopPropagation();openDetail(\'' + slide + '\',\'' + key + '\',\'' + id + '\')"><div class="sc-title">' + label + '</div><div class="sc-desc">' + desc + '</div><div class="sc-hint">[ ' + t('app.buttons.expand') + ' ' + BUTTON_ICONS.expand + ' ]</div></div>';
     }).join('')
     + '</div>';
 }
@@ -66,8 +72,8 @@ function renderCardGrid(items, slide, key, prefix, labelSuffix, descSuffix, desc
 
 function renderBlock(b, sub) {
   switch (b.t) {
-    case 'h3':    return '<h3>' + t(b.k) + '</h3>';
-    case 'h4':    var h = t(b.k); if (b.pair) { var ll = (LANG_LABELS[LANG] || LANG_LABELS['en']).short; h += ' (CN|' + ll + ')'; } return '<h4>' + h + '</h4>';
+    case 'h3':    var h3 = b.icon ? b.icon + ' ' + t(b.k) : t(b.k); return '<h3>' + h3 + '</h3>';
+    case 'h4':    var h4 = b.icon ? b.icon + ' ' + t(b.k) : t(b.k); if (b.pair) { var ll = (LANG_LABELS[LANG] || LANG_LABELS['en']).short; h4 += ' (CN|' + ll + ')'; } return '<h4>' + h4 + '</h4>';
     case 'intro': return '<p class="dp-intro">' + t(b.k) + '</p>';
     case 'p':     return '<p class="dp-text">' + t(b.k) + '</p>';
     case 'muted': return '<p class="muted-sm mt-sm">' + t(b.k) + '</p>';
@@ -95,7 +101,7 @@ function renderDetail(slide, key, sub) {
         }
       }
     }
-    return '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">← ' + t(layout.back) + '</button>'
+    return '<button class="detail-back" onclick="closeDetail(\'' + slide + '\')">' + BUTTON_ICONS.back + ' ' + t('app.buttons.back') + '</button>'
       + layout.blocks.map(function (b) { return renderBlock(b, null); }).join('');
   }
   return renderSteps(slide, key);

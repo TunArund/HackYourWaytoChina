@@ -13,7 +13,7 @@ source /c/Users/TunArund/miniconda3/etc/profile.d/conda.sh && conda activate
 ```powershell
 & "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy ByPass -NoExit -Command "& 'C:\Users\TunArund\miniconda3\shell\condabin\conda-hook.ps1' ; conda activate 'C:\Users\TunArund\miniconda3'"
 ```
-### 编码注意事项
+### 脚本编写注意
 
 Windows 终端默认 GBK 编码，Python 脚本输出中文/emoji 极易报错。
 
@@ -37,8 +37,9 @@ conda activate md
 python -m http.server -d src -b 0.0.0.0 8081
 ```
 之后可通过`curl -s http://localhost:8081/`测试
-提示：有nodejs环境
+提示：有nodejs环境，可直接使用`node|npm|npx|corepack|pnpm`
 
-## git限制
+## 修改约束
 不允许主动commit/push，只允许生成commit comment，让用户自行commit/push
 不允许主动通过checkout HEAD从仓库历史还原文件，但可在备份后提示用户执行
+危险操作（如大批量修改）前注意备份（fork）
