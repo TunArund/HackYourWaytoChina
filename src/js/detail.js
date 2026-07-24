@@ -40,7 +40,7 @@ function renderSteps(slide, key) {
   }
   if (linkList.length) {
     h += '<p style="margin-top:12px">' + linkList.map(function (l) {
-      return '<a class="card-link" href="' + l.url + '" target="_blank" rel="noopener">' + (l.label || l.key) + ' ' + BUTTON_ICONS.expand + '</a>';
+      var linkUrl = l.url || (SERVICE_URLS && SERVICE_URLS[l.key]) || '#'; return '<a class="card-link" href="' + linkUrl + '" target="_blank" rel="noopener">' + (l.label || l.key) + ' ' + BUTTON_ICONS.expand + '</a>';
     }).join('<br>') + '</p>';
   }
   return h;

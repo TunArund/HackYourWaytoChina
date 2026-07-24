@@ -447,6 +447,11 @@
         "Nomad: Budget, China from $4.",
         "Buy & install BEFORE departure.",
         "Note: Data only, no phone number."
+      ],
+      "links": [
+        {"key":"airalo","label":"Airalo"},
+        {"key":"holafly","label":"Holafly"},
+        {"key":"nomadesim","label":"Nomad"}
       ]
     },
     "chinaSim": {
@@ -471,6 +476,10 @@
         "Install + pay BEFORE arriving.",
         "Keep 2 protocols: WireGuard + fallback.",
         "Test before departure."
+      ],
+      "links": [
+        {"key":"mullvad","label":"Mullvad VPN"},
+        {"key":"astrill","label":"Astrill VPN"}
       ]
     },
     "blockedServices": {
@@ -485,6 +494,13 @@
         "Twitter/X -> Weibo.",
         "YouTube -> Bilibili.",
         "WhatsApp -> WeChat."
+      ],
+      "links": [
+        {"key":"baidu","label":"Baidu / Bing"},
+        {"key":"xiaohongshu","label":"Xiaohongshu"},
+        {"key":"weibo","label":"Weibo"},
+        {"key":"bilibili","label":"Bilibili"},
+        {"key":"wechat","label":"WeChat"}
       ]
     }
   },
@@ -530,6 +546,11 @@
         "HSR (High-Speed Rail): Book at 12306.cn/en. Foreign cards accepted.",
         "Shared Bikes: Scan with Alipay/Meituan. 1.5-3Y/ride. No deposit for most.",
         "Tip: Alipay mini-programs handle DiDi, metro, bikes, trains — one app."
+      ],
+      "links": [
+        {"key":"didiglobal","label":"DiDi"},
+        {"key":"railway12306","label":"12306 (Railway)"},
+        {"key":"amap","label":"Amap / Baidu Maps"}
       ]
     },
     "dining": {
@@ -543,6 +564,11 @@
         "Halal: Look for halal sign or Lanzhou beef noodle chains.",
         "Vegetarian: Say chun su (pure vegan). Watch for meat broth.",
         "Allergy: Carry a bilingual allergy card. Show to staff."
+      ],
+      "links": [
+        {"key":"dianping","label":"Dianping"},
+        {"key":"meituan","label":"Meituan"},
+        {"key":"eleme","label":"Ele.me"}
       ]
     },
     "accommodation": {
@@ -555,6 +581,10 @@
         "Foreign Guest Qualification: Chinese hotels need a special license. Budget hotels may turn you away.",
         "Foreigner-friendly chains: Marriott, Hilton, IHG, Hyatt, Jin Jiang.",
         "If turned away: Call 12367 for help finding compliant accommodation."
+      ],
+      "links": [
+        {"key":"trip","label":"Trip.com"},
+        {"key":"tujia","label":"Tujia"}
       ]
     },
     "clothing": {
@@ -1107,6 +1137,11 @@
           "Expat neighborhoods: Shanghai — Gubei, Jing'an, French Concession. Beijing — Chaoyang (Sanlitun), Shunyi (villas, family-friendly), Liangmaqiao. Guangzhou — Tianhe, Zhujiang New Town. Shenzhen — Shekou, Nanshan.",
           "<strong>Red flags</strong>: Landlord refuses to provide property ownership certificate (needed for registration). No written contract. Asking for >3 months rent upfront. No heat in winter (northern cities).",
           "Cost reference (mid-2026): Shanghai/Jing'an 1BR: ¥8K-25K/month. Beijing/Chaoyang: ¥7K-20K. GZ/Tianhe: ¥4K-12K. SZ/Shekou: ¥6K-15K."
+        ],
+        "links": [
+          {"key":"ziroom","label":"Ziroom"},
+          {"key":"beike","label":"Beike"},
+          {"key":"lianjia","label":"Lianjia"}
         ]
       },
       "registration": {
@@ -1195,6 +1230,12 @@
           "<strong>Hema (盒马)</strong>: Alibaba's fresh grocery chain. 30-minute delivery to your door. Great for imported foods, fresh produce, and ready-to-eat meals. Higher prices but excellent quality.",
           "<strong>Sam's Club / Costco</strong>: Both in major cities. Bulk imported goods. Great for cheese, wine, and Western staples.",
           "<strong>Import supermarkets</strong>: CityShop (城市超市), Ole', BHG — stock Western/Japanese/Korean groceries. Pricey but worth it for comfort food."
+        ],
+        "links": [
+          {"key":"taobao","label":"Taobao"},
+          {"key":"jd","label":"JD"},
+          {"key":"pinduoduo","label":"Pinduoduo"},
+          {"key":"hema","label":"Hema"}
         ]
       },
       "food": {
@@ -1208,6 +1249,11 @@
           "<strong>Dietary needs</strong>: Halal — look for 清真 (qīngzhēn) signs or Lanzhou beef noodle chains. Vegetarian — say 纯素 (chún sù) for pure vegan, 素食 (sù shí) for vegetarian. Watch for meat broth in vegetable dishes. Allergies — carry a bilingual allergy card.",
           "<strong>Paying</strong>: Almost no one uses cash. Scan the table QR code with Alipay/WeChat to order AND pay. Some restaurants are fully QR-code ordering — no physical menu.",
           "<strong>Tip culture</strong>: No tipping in China. It's not expected and sometimes refused."
+        ],
+        "links": [
+          {"key":"dianping","label":"Dianping"},
+          {"key":"meituan","label":"Meituan"},
+          {"key":"eleme","label":"Ele.me"}
         ]
       },
       "clothing": {
@@ -1232,6 +1278,11 @@
           "<strong>Shared bikes</strong>: Scan with Alipay/Meituan. ¥1.5-3 per ride. No deposit for most. Hello Bike (哈啰), Meituan Bike (美团单车), DiDi Bike (青桔). Blue, yellow, green — you'll recognize them.",
           "<strong>High-Speed Rail (高铁)</strong>: For inter-city travel. Book at 12306.cn (English version available). Foreign passports accepted. 300+ km/h. Shanghai to Beijing: 4.5 hours. Book 1-2 weeks ahead for peak times.",
           "<strong>Ride-hailing alternatives</strong>: CaoCao (曹操出行) — premium cars. T3 (T3出行) — backed by state automakers. Both have English support in some cities."
+        ],
+        "links": [
+          {"key":"didiglobal","label":"DiDi"},
+          {"key":"railway12306","label":"12306 (Railway)"},
+          {"key":"amap","label":"Amap / Baidu Maps"}
         ]
       }
     },

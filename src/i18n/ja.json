@@ -495,6 +495,20 @@
         "Nomad：格安プラン、中国向け$4〜。",
         "出発前に購入してインストール。",
         "注意：データ通信のみ、電話番号なし。"
+      ],
+      "links": [
+        {
+          "key": "airalo",
+          "label": "Airalo"
+        },
+        {
+          "key": "holafly",
+          "label": "Holafly"
+        },
+        {
+          "key": "nomadesim",
+          "label": "Nomad"
+        }
       ]
     },
     "chinaSim": {
@@ -519,6 +533,16 @@
         "到着前にインストール+支払い。",
         "2つのプロトコルを保持：WireGuard + 予備。",
         "出発前にテスト。"
+      ],
+      "links": [
+        {
+          "key": "mullvad",
+          "label": "Mullvad VPN"
+        },
+        {
+          "key": "astrill",
+          "label": "Astrill VPN"
+        }
       ]
     },
     "blockedServices": {
@@ -533,6 +557,28 @@
         "Twitter/X → 微博。",
         "YouTube → Bilibili。",
         "WhatsApp → WeChat。"
+      ],
+      "links": [
+        {
+          "key": "baidu",
+          "label": "Baidu / Bing"
+        },
+        {
+          "key": "xiaohongshu",
+          "label": "Xiaohongshu"
+        },
+        {
+          "key": "weibo",
+          "label": "Weibo"
+        },
+        {
+          "key": "bilibili",
+          "label": "Bilibili"
+        },
+        {
+          "key": "wechat",
+          "label": "WeChat"
+        }
       ]
     }
   },
@@ -549,12 +595,12 @@
       "links": [
         {
           "key": "download",
-          "label": "支付宝をダウンロード",
+          "label": "Download Alipay",
           "url": "https://www.alipay.com"
         },
         {
           "key": "support",
-          "label": "サポート：95188 / +86-571-26886000",
+          "label": "Support: 95188 / +86-571-26886000",
           "url": "https://render.alipay.com/p/s/alipaycard"
         }
       ]
@@ -570,12 +616,12 @@
       "links": [
         {
           "key": "download",
-          "label": "WeChatをダウンロード",
+          "label": "Download WeChat",
           "url": "https://www.wechat.com"
         },
         {
           "key": "support",
-          "label": "サポート：95017",
+          "label": "Support: 95017",
           "url": "https://www.wechat.com"
         }
       ]
@@ -592,6 +638,20 @@
         "高速鉄道（高鉄）：12306.cn/enで予約。外国カード対応。",
         "シェア自転車：支付宝/美団でスキャン。1回1.5〜3元。ほとんどが保証金不要。",
         "ヒント：支付宝のミニプログラムで滴滴、地下鉄、自転車、鉄道を一括管理。"
+      ],
+      "links": [
+        {
+          "key": "didiglobal",
+          "label": "DiDi"
+        },
+        {
+          "key": "railway12306",
+          "label": "12306 (Railway)"
+        },
+        {
+          "key": "amap",
+          "label": "Amap / Baidu Maps"
+        }
       ]
     },
     "dining": {
@@ -605,6 +665,20 @@
         "ハラール：清真の表示または蘭州牛肉麺チェーンを探す。",
         "ベジタリアン：「純素」（完全菜食）と言う。肉スープに注意。",
         "アレルギー：二ヶ国語のアレルギーカードを携帯し、店員に提示。"
+      ],
+      "links": [
+        {
+          "key": "dianping",
+          "label": "Dianping"
+        },
+        {
+          "key": "meituan",
+          "label": "Meituan"
+        },
+        {
+          "key": "eleme",
+          "label": "Ele.me"
+        }
       ]
     },
     "accommodation": {
@@ -617,6 +691,16 @@
         "外国人受入資格：中国のホテルには特別な許可が必要です。格安ホテルは宿泊拒否の可能性あり。",
         "外国人対応チェーン：マリオット、ヒルトン、IHG、ハイアット、錦江。",
         "断られた場合：12367に電話して適切な宿泊施設を探す支援を依頼。"
+      ],
+      "links": [
+        {
+          "key": "trip",
+          "label": "Trip.com"
+        },
+        {
+          "key": "tujia",
+          "label": "Tujia"
+        }
       ]
     },
     "clothing": {
@@ -1160,6 +1244,20 @@
           "駐在員向けエリア：上海 — 古北、静安、フランス租界。北京 — 朝陽（三里屯）、順義（別荘、家族向け）、亮馬橋。広州 — 天河、珠江新城。深圳 — 蛇口、南山。",
           "<strong>要注意サイン</strong>：家主が不動産権利証の提供を拒否（登録に必要）。書面契約なし。3ヶ月超の前払い家賃要求。冬に暖房なし（北方都市）。",
           "費用参考（2026年半ば）：上海静安1BR：¥8K〜25K/月。北京朝陽：¥7K〜20K。広州天河：¥4K〜12K。深圳蛇口：¥6K〜15K。"
+        ],
+        "links": [
+          {
+            "key": "ziroom",
+            "label": "Ziroom"
+          },
+          {
+            "key": "beike",
+            "label": "Beike"
+          },
+          {
+            "key": "lianjia",
+            "label": "Lianjia"
+          }
         ]
       },
       "registration": {
@@ -1248,6 +1346,24 @@
           "<strong>盒馬（フーマー）</strong>：アリババの生鮮食品チェーン。30分配送。輸入食品、新鮮野菜、出来立て食事に優れる。高価だが品質は抜群。",
           "<strong>Sam's Club / Costco</strong>：いずれも主要都市に展開。輸入品のまとめ買い。チーズ、ワイン、西洋食材に最適。",
           "<strong>輸入スーパー</strong>：城市超市、Ole'、BHG — 西洋/日本/韓国の食品を販売。やや高価だがコンフォートフードのために価値あり。"
+        ],
+        "links": [
+          {
+            "key": "taobao",
+            "label": "Taobao"
+          },
+          {
+            "key": "jd",
+            "label": "JD"
+          },
+          {
+            "key": "pinduoduo",
+            "label": "Pinduoduo"
+          },
+          {
+            "key": "hema",
+            "label": "Hema"
+          }
         ]
       },
       "food": {
@@ -1261,6 +1377,20 @@
           "<strong>食事制限</strong>：ハラール — 「清真」の表示または蘭州牛肉麺チェーンを探す。ベジタリアン — 完全菜食は「純素」、菜食は「素食」と言う。野菜料理の肉スープに注意。アレルギー — 二ヶ国語のアレルギーカードを携帯。",
           "<strong>支払い</strong>：ほぼ誰も現金を使わない。テーブルのQRコードを支付宝/微信でスキャンして注文と支払いを完了。一部の飲食店は完全QRコード注文 — 紙メニューなし。",
           "<strong>チップ文化</strong>：中国ではチップ不要。期待されず、断られることも。"
+        ],
+        "links": [
+          {
+            "key": "dianping",
+            "label": "Dianping"
+          },
+          {
+            "key": "meituan",
+            "label": "Meituan"
+          },
+          {
+            "key": "eleme",
+            "label": "Ele.me"
+          }
         ]
       },
       "clothing": {
@@ -1285,6 +1415,20 @@
           "<strong>シェア自転車</strong>：支付宝/美団でスキャン。¥1.5〜3/回。ほとんどが保証金不要。哈囉（青）、美団（黄）、滴滴青桔（緑） — すぐに見分けられます。",
           "<strong>高速鉄道（高鉄）</strong>：都市間移動に。12306.cnで予約（英語版あり）。外国パスポート対応。時速300km以上。上海から北京：4.5時間。ピーク時は1〜2週間前に予約。",
           "<strong>その他の配車サービス</strong>：曹操出行 — プレミアム車両。T3出行 — 国有自動車メーカー系。一部都市で英語サポートあり。"
+        ],
+        "links": [
+          {
+            "key": "didiglobal",
+            "label": "DiDi"
+          },
+          {
+            "key": "railway12306",
+            "label": "12306 (Railway)"
+          },
+          {
+            "key": "amap",
+            "label": "Amap / Baidu Maps"
+          }
         ]
       }
     },

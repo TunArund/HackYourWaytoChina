@@ -495,6 +495,20 @@
         "Nomad: Tiết kiệm, Trung Quốc từ $4.",
         "Mua & cài đặt TRƯỚC khi khởi hành.",
         "Lưu ý: Chỉ dữ liệu, không có số điện thoại."
+      ],
+      "links": [
+        {
+          "key": "airalo",
+          "label": "Airalo"
+        },
+        {
+          "key": "holafly",
+          "label": "Holafly"
+        },
+        {
+          "key": "nomadesim",
+          "label": "Nomad"
+        }
       ]
     },
     "chinaSim": {
@@ -519,6 +533,16 @@
         "Cài đặt + thanh toán TRƯỚC khi đến.",
         "Giữ 2 giao thức: WireGuard + dự phòng.",
         "Kiểm tra trước khi khởi hành."
+      ],
+      "links": [
+        {
+          "key": "mullvad",
+          "label": "Mullvad VPN"
+        },
+        {
+          "key": "astrill",
+          "label": "Astrill VPN"
+        }
       ]
     },
     "blockedServices": {
@@ -533,6 +557,28 @@
         "Twitter/X → Weibo.",
         "YouTube → Bilibili.",
         "WhatsApp → WeChat."
+      ],
+      "links": [
+        {
+          "key": "baidu",
+          "label": "Baidu / Bing"
+        },
+        {
+          "key": "xiaohongshu",
+          "label": "Xiaohongshu"
+        },
+        {
+          "key": "weibo",
+          "label": "Weibo"
+        },
+        {
+          "key": "bilibili",
+          "label": "Bilibili"
+        },
+        {
+          "key": "wechat",
+          "label": "WeChat"
+        }
       ]
     }
   },
@@ -549,12 +595,12 @@
       "links": [
         {
           "key": "download",
-          "label": "Tải Alipay",
+          "label": "Download Alipay",
           "url": "https://www.alipay.com"
         },
         {
           "key": "support",
-          "label": "Hỗ trợ: 95188 / +86-571-26886000",
+          "label": "Support: 95188 / +86-571-26886000",
           "url": "https://render.alipay.com/p/s/alipaycard"
         }
       ]
@@ -570,12 +616,12 @@
       "links": [
         {
           "key": "download",
-          "label": "Tải WeChat",
+          "label": "Download WeChat",
           "url": "https://www.wechat.com"
         },
         {
           "key": "support",
-          "label": "Hỗ trợ: 95017",
+          "label": "Support: 95017",
           "url": "https://www.wechat.com"
         }
       ]
@@ -592,6 +638,20 @@
         "Tàu cao tốc: Đặt tại 12306.cn/en. Chấp nhận thẻ nước ngoài.",
         "Xe đạp chia sẻ: Quét bằng Alipay/Meituan. 1,5-3¥/lượt. Hầu hết không cần đặt cọc.",
         "Mẹo: Mini-programs Alipay xử lý DiDi, tàu điện ngầm, xe đạp, tàu — tất cả trong một ứng dụng."
+      ],
+      "links": [
+        {
+          "key": "didiglobal",
+          "label": "DiDi"
+        },
+        {
+          "key": "railway12306",
+          "label": "12306 (Railway)"
+        },
+        {
+          "key": "amap",
+          "label": "Amap / Baidu Maps"
+        }
       ]
     },
     "dining": {
@@ -605,6 +665,20 @@
         "Halal: Tìm biển hiệu halal hoặc chuỗi mì bò Lan Châu.",
         "Ăn chay: Nói \"chun su\" (thuần chay). Cẩn thận nước dùng thịt.",
         "Dị ứng: Mang theo thẻ dị ứng song ngữ. Đưa cho nhân viên."
+      ],
+      "links": [
+        {
+          "key": "dianping",
+          "label": "Dianping"
+        },
+        {
+          "key": "meituan",
+          "label": "Meituan"
+        },
+        {
+          "key": "eleme",
+          "label": "Ele.me"
+        }
       ]
     },
     "accommodation": {
@@ -617,6 +691,16 @@
         "Điều kiện đón khách nước ngoài: Khách sạn Trung Quốc cần giấy phép đặc biệt. Khách sạn bình dân có thể từ chối bạn.",
         "Chuỗi thân thiện với người nước ngoài: Marriott, Hilton, IHG, Hyatt, Jin Jiang.",
         "Nếu bị từ chối: Gọi 12367 để được giúp tìm nơi lưu trú tuân thủ quy định."
+      ],
+      "links": [
+        {
+          "key": "trip",
+          "label": "Trip.com"
+        },
+        {
+          "key": "tujia",
+          "label": "Tujia"
+        }
       ]
     },
     "clothing": {
@@ -1160,6 +1244,20 @@
           "Khu người nước ngoài: Thượng Hải — Cổ Bắc, Tĩnh An, Tô Giới Pháp. Bắc Kinh — Triều Dương (Tam Lý Đồn), Thuận Nghĩa (biệt thự, thân thiện gia đình), Lượng Mã Kiều. Quảng Châu — Thiên Hà, Chu Giang Tân Thành. Thâm Quyến — Shekou, Nam Sơn.",
           "<strong>Dấu hiệu cảnh báo</strong>: Chủ nhà từ chối cung cấp giấy chứng nhận quyền sở hữu (cần cho đăng ký). Không có hợp đồng bằng văn bản. Yêu cầu >3 tháng tiền thuê trả trước. Không có hệ thống sưởi mùa đông (thành phố phía Bắc).",
           "Tham khảo chi phí (giữa 2026): Thượng Hải/Tĩnh An 1PN: ¥8K-25K/tháng. Bắc Kinh/Triều Dương: ¥7K-20K. Quảng Châu/Thiên Hà: ¥4K-12K. Thâm Quyến/Shekou: ¥6K-15K."
+        ],
+        "links": [
+          {
+            "key": "ziroom",
+            "label": "Ziroom"
+          },
+          {
+            "key": "beike",
+            "label": "Beike"
+          },
+          {
+            "key": "lianjia",
+            "label": "Lianjia"
+          }
         ]
       },
       "registration": {
@@ -1248,6 +1346,24 @@
           "<strong>Hema (盒马)</strong>: Chuỗi thực phẩm tươi của Alibaba. Giao hàng 30 phút đến tận cửa. Tuyệt vời cho thực phẩm nhập khẩu, nông sản tươi và đồ ăn sẵn. Giá cao hơn nhưng chất lượng tuyệt vời.",
           "<strong>Sam's Club / Costco</strong>: Cả hai đều có tại thành phố lớn. Hàng nhập khẩu số lượng lớn. Tuyệt vời cho phô mai, rượu vang và thực phẩm phương Tây cơ bản.",
           "<strong>Siêu thị nhập khẩu</strong>: CityShop (城市超市), Ole', BHG — bán thực phẩm phương Tây/Nhật/Hàn. Đắt nhưng đáng cho đồ ăn quen thuộc."
+        ],
+        "links": [
+          {
+            "key": "taobao",
+            "label": "Taobao"
+          },
+          {
+            "key": "jd",
+            "label": "JD"
+          },
+          {
+            "key": "pinduoduo",
+            "label": "Pinduoduo"
+          },
+          {
+            "key": "hema",
+            "label": "Hema"
+          }
         ]
       },
       "food": {
@@ -1261,6 +1377,20 @@
           "<strong>Nhu cầu ăn kiêng</strong>: Halal — tìm biển hiệu 清真 (qīngzhēn) hoặc chuỗi mì bò Lan Châu. Ăn chay — nói 纯素 (chún sù) cho thuần chay, 素食 (sù shí) cho chay. Cẩn thận nước dùng thịt trong món rau. Dị ứng — mang theo thẻ dị ứng song ngữ.",
           "<strong>Thanh toán</strong>: Hầu như không ai dùng tiền mặt. Quét mã QR trên bàn bằng Alipay/WeChat để gọi món VÀ thanh toán. Một số nhà hàng hoàn toàn gọi món bằng QR — không có thực đơn giấy.",
           "<strong>Văn hóa tip</strong>: Không có tip tại Trung Quốc. Không được mong đợi và đôi khi bị từ chối."
+        ],
+        "links": [
+          {
+            "key": "dianping",
+            "label": "Dianping"
+          },
+          {
+            "key": "meituan",
+            "label": "Meituan"
+          },
+          {
+            "key": "eleme",
+            "label": "Ele.me"
+          }
         ]
       },
       "clothing": {
@@ -1285,6 +1415,20 @@
           "<strong>Xe đạp chia sẻ</strong>: Quét bằng Alipay/Meituan. ¥1,5-3 mỗi lượt. Hầu hết không cần đặt cọc. Hello Bike (哈啰), Meituan Bike (美团单车), DiDi Bike (青桔). Xanh dương, vàng, xanh lá — bạn sẽ nhận ra chúng.",
           "<strong>Tàu cao tốc (高铁)</strong>: Cho di chuyển liên tỉnh. Đặt tại 12306.cn (có phiên bản tiếng Anh). Chấp nhận hộ chiếu nước ngoài. 300+ km/h. Thượng Hải đến Bắc Kinh: 4,5 giờ. Đặt trước 1-2 tuần cho thời gian cao điểm.",
           "<strong>Gọi xe thay thế</strong>: CaoCao (曹操出行) — xe cao cấp. T3 (T3出行) — được hậu thuẫn bởi hãng xe nhà nước. Cả hai có hỗ trợ tiếng Anh tại một số thành phố."
+        ],
+        "links": [
+          {
+            "key": "didiglobal",
+            "label": "DiDi"
+          },
+          {
+            "key": "railway12306",
+            "label": "12306 (Railway)"
+          },
+          {
+            "key": "amap",
+            "label": "Amap / Baidu Maps"
+          }
         ]
       }
     },

@@ -12,6 +12,60 @@ const VISA_TYPE_ICONS = { mutual:'✅',free:'✅',transit:'✅',kvisa:'💡',vis
 const BUTTON_ICONS = { back:'←',reset:'🔄',details:'📋',home:'↩',expand:'→' };
 const SEASON_ICONS = { spring:'🌸',summer:'🌿',autumn:'🍂',winter:'❄️' };
 
+/* ---- Service URL registry (single source of truth, not in i18n) ---- */
+const SERVICE_URLS = {
+  // Transport
+  didiglobal:  'http://www.didiglobal.com',
+  amap:        'https://amap.com',
+  railway12306:'https://www.12306.cn/en/index.html',
+  trip:        'https://www.trip.com',
+  // Connectivity
+  airalo:      'https://www.airalo.com',
+  holafly:     'https://holafly.com',
+  nomadesim:   'https://www.getnomad.app',
+  mullvad:     'https://mullvad.net',
+  astrill:     'https://www.astrill.com',
+  // Accommodation
+  ziroom:      'https://www.ziroom.com',
+  beike:       'https://www.ke.com',
+  lianjia:     'https://www.lianjia.com',
+  tujia:       'https://www.tujia.com',
+  // Shopping
+  taobao:      'https://www.taobao.com',
+  jd:          'https://www.jd.com',
+  pinduoduo:   'https://www.pinduoduo.com',
+  hema:        'https://www.freshhema.com',
+  // Food
+  dianping:    'https://www.dianping.com',
+  meituan:     'https://www.meituan.com',
+  eleme:       'https://www.ele.me',
+  // Medical
+  ufh:         'https://ufh.com.cn/en',
+  jiahui:      'https://www.jiahui.com',
+  oasis:       'https://www.oasishealth.cn',
+  clifford:    'https://www.cliffordhospital.com',
+  // Firewall alternatives
+  baidu:       'https://www.baidu.com',
+  bing:        'https://www.bing.com',
+  xiaohongshu: 'https://www.xiaohongshu.com',
+  weibo:       'https://www.weibo.com',
+  bilibili:    'https://www.bilibili.com',
+  qqmail:      'https://mail.qq.com',
+  // Official
+  nia:         'https://en.nia.gov.cn',
+  niaRegister: 'https://s.nia.gov.cn',
+  customs:     'https://www.customs.gov.cn',
+  mfaConsular: 'https://www.mfa.gov.cn',
+  cvasc:       'https://www.visaforchina.cn',
+  cvascBio:    'https://bio.visaforchina.cn',
+  consularVisa:'https://consular.mfa.gov.cn/VISA/',
+  workPermitPortal:'https://www.12333.gov.cn',
+  // Payment
+  alipay:      'https://www.alipay.com',
+  alipayCard:  'https://render.alipay.com/p/s/alipaycard',
+  wechat:      'https://www.wechat.com',
+};
+
 /* ---- Slide → Domain mapping (for detail.js renderSteps) ---- */
 const SLIDE_DOMAIN = {
   s2:'preparation',s3:'arrival',s4:'connectivity',

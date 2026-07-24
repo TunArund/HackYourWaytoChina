@@ -9,13 +9,9 @@
 
 ## 🔧 结构优化（重要但见效慢）
 CSS框架化 参考bootstrap
-### i18n
-- **按概念重排** — `sX.xxx` → `visa.xxx` / `payment.xxx` / `city.xxx` 去除重复
-- 将emoji特殊字符抽离 i18n最好只负责纯文本 data.js负责排版 过去有特殊字符被抽离到html中，自行选择一种统一的抽离方案
-- 优先做好en.json，然后翻译到其他语言
+emoji从html转移到data.js中排版
 ### js/html/css
-内容无关，只做好slide
-
+内容无关，只做好slide，制作渲染引擎（类md）
 | # | Task | Effort |
 |---|------|--------|
 | 1 | **事件委托 + 模块化** — HTML `onclick` → JS 事件委托 + IIFE 包裹各文件 | 大 |
@@ -24,7 +20,7 @@ CSS框架化 参考bootstrap
 | 8 | **JSDoc** — 导出函数加注释 | 小 |
 ## 📝 内容充实
 重新评估整体板块框架
-research.md中有许多链接，可以在文本中使用，例如 <a href="xxx.com">DiDi</a>
+research.md中有许多链接，可以在文本中使用，例如`<a href="xxx.com">DiDi</a>`又或者通过data.js中render link
 搜集城市风景图、医院图嵌入
 | # | Task |
 |---|------|

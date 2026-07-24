@@ -495,6 +495,20 @@
         "Nomad: 저가형, 중국 $4부터.",
         "출발 전에 구매 및 설치하세요.",
         "주의: 데이터 전용, 전화번호 없음."
+      ],
+      "links": [
+        {
+          "key": "airalo",
+          "label": "Airalo"
+        },
+        {
+          "key": "holafly",
+          "label": "Holafly"
+        },
+        {
+          "key": "nomadesim",
+          "label": "Nomad"
+        }
       ]
     },
     "chinaSim": {
@@ -519,6 +533,16 @@
         "도착 전에 설치+결제 완료.",
         "프로토콜 2개 유지: WireGuard + 예비.",
         "출발 전 테스트."
+      ],
+      "links": [
+        {
+          "key": "mullvad",
+          "label": "Mullvad VPN"
+        },
+        {
+          "key": "astrill",
+          "label": "Astrill VPN"
+        }
       ]
     },
     "blockedServices": {
@@ -533,6 +557,28 @@
         "Twitter/X → 웨이보.",
         "YouTube → 빌리빌리.",
         "WhatsApp → 위챗."
+      ],
+      "links": [
+        {
+          "key": "baidu",
+          "label": "Baidu / Bing"
+        },
+        {
+          "key": "xiaohongshu",
+          "label": "Xiaohongshu"
+        },
+        {
+          "key": "weibo",
+          "label": "Weibo"
+        },
+        {
+          "key": "bilibili",
+          "label": "Bilibili"
+        },
+        {
+          "key": "wechat",
+          "label": "WeChat"
+        }
       ]
     }
   },
@@ -549,12 +595,12 @@
       "links": [
         {
           "key": "download",
-          "label": "알리페이 다운로드",
+          "label": "Download Alipay",
           "url": "https://www.alipay.com"
         },
         {
           "key": "support",
-          "label": "고객센터: 95188 / +86-571-26886000",
+          "label": "Support: 95188 / +86-571-26886000",
           "url": "https://render.alipay.com/p/s/alipaycard"
         }
       ]
@@ -570,12 +616,12 @@
       "links": [
         {
           "key": "download",
-          "label": "위챗 다운로드",
+          "label": "Download WeChat",
           "url": "https://www.wechat.com"
         },
         {
           "key": "support",
-          "label": "고객센터: 95017",
+          "label": "Support: 95017",
           "url": "https://www.wechat.com"
         }
       ]
@@ -592,6 +638,20 @@
         "고속철도(HSR): 12306.cn/en에서 예약. 외국 카드 결제 가능.",
         "공유 자전거: 알리페이/메이퇀으로 스캔. 회당 1.5-3위안. 대부분 보증금 불필요.",
         "팁: 알리페이 미니프로그램으로 디디, 지하철, 자전거, 기차 모두 처리 — 앱 하나로 충분."
+      ],
+      "links": [
+        {
+          "key": "didiglobal",
+          "label": "DiDi"
+        },
+        {
+          "key": "railway12306",
+          "label": "12306 (Railway)"
+        },
+        {
+          "key": "amap",
+          "label": "Amap / Baidu Maps"
+        }
       ]
     },
     "dining": {
@@ -605,6 +665,20 @@
         "할랄: 청진(清真) 표시 또는 란저우 소고기 국수 체인점 찾기.",
         "채식: 춘수(chún sù, 순수 비건)라고 말하기. 고기 육수 주의.",
         "알레르기: 이중언어 알레르기 카드 휴대. 직원에게 제시."
+      ],
+      "links": [
+        {
+          "key": "dianping",
+          "label": "Dianping"
+        },
+        {
+          "key": "meituan",
+          "label": "Meituan"
+        },
+        {
+          "key": "eleme",
+          "label": "Ele.me"
+        }
       ]
     },
     "accommodation": {
@@ -617,6 +691,16 @@
         "외국인 투숙 자격: 중국 호텔은 특별 허가 필요. 저가 호텔은 거부할 수 있음.",
         "외국인 친화적 체인: 메리어트, 힐튼, IHG, 하얏트, 진장.",
         "거부당한 경우: 12367로 전화하여 적합한 숙소 찾기 도움 요청."
+      ],
+      "links": [
+        {
+          "key": "trip",
+          "label": "Trip.com"
+        },
+        {
+          "key": "tujia",
+          "label": "Tujia"
+        }
       ]
     },
     "clothing": {
@@ -1160,6 +1244,20 @@
           "외국인 밀집 지역: 상하이 — 구베이, 징안, 프렌치 컨세션. 베이징 — 차오양(싼리툰), 순이(빌라, 가족 친화적), 량마차오. 광저우 — 톈허, 주장신도시. 선전 — 서커우, 난산.",
           "<strong>위험 신호</strong>: 집주인이 부동산 소유권 증명서 제공 거부(등록 필수). 서면 계약서 없음. 3개월 이상 선납 요구. 북부 도시 겨울철 난방 없음.",
           "가격 참고(2026년 중반): 상하이 징안 원룸: ¥8K-25K/월. 베이징 차오양: ¥7K-20K. 광저우 톈허: ¥4K-12K. 선전 서커우: ¥6K-15K."
+        ],
+        "links": [
+          {
+            "key": "ziroom",
+            "label": "Ziroom"
+          },
+          {
+            "key": "beike",
+            "label": "Beike"
+          },
+          {
+            "key": "lianjia",
+            "label": "Lianjia"
+          }
         ]
       },
       "registration": {
@@ -1248,6 +1346,24 @@
           "<strong>盒马 (허마)</strong>: 알리바바의 신선 식품 체인. 30분 배송. 수입 식품, 신선 농산물, 즉석 식사 품질 우수. 가격은 높지만 품질이 뛰어남.",
           "<strong>Sam's Club / Costco</strong>: 주요 도시에 지점. 대량 수입 상품. 치즈, 와인, 서양 식재료에 최적.",
           "<strong>수입 슈퍼마켓</strong>: CityShop(城市超市), Ole', BHG — 서양/일본/한국 식료품 판매. 가격은 비싸지만 익숙한 음식을 찾을 때 가치 있음."
+        ],
+        "links": [
+          {
+            "key": "taobao",
+            "label": "Taobao"
+          },
+          {
+            "key": "jd",
+            "label": "JD"
+          },
+          {
+            "key": "pinduoduo",
+            "label": "Pinduoduo"
+          },
+          {
+            "key": "hema",
+            "label": "Hema"
+          }
         ]
       },
       "food": {
@@ -1261,6 +1377,20 @@
           "<strong>식이 요구</strong>: 할랄 — 清真(칭전) 표시 또는 란저우 소고기 국수 체인 찾기. 채식 — 완전 비건은 纯素(춘수), 채식은 素食(수스). 채소 요리에 고기 육수 주의. 알레르기 — 이중언어 알레르기 카드 휴대.",
           "<strong>결제</strong>: 거의 아무도 현금을 쓰지 않습니다. 테이블 QR코드를 알리페이/위챗으로 스캔하여 주문과 결제 동시에. 일부 식당은 완전 QR코드 주문 — 종이 메뉴 없음.",
           "<strong>팁 문화</strong>: 중국에서는 팁을 주지 않습니다. 기대하지도 않고 때로는 거절합니다."
+        ],
+        "links": [
+          {
+            "key": "dianping",
+            "label": "Dianping"
+          },
+          {
+            "key": "meituan",
+            "label": "Meituan"
+          },
+          {
+            "key": "eleme",
+            "label": "Ele.me"
+          }
         ]
       },
       "clothing": {
@@ -1285,6 +1415,20 @@
           "<strong>공유 자전거</strong>: 알리페이/메이퇀으로 스캔. ¥1.5-3/회. 대부분 보증금 불필요. 하뤄 자전거(哈啰, 파랑), 메이퇀 자전거(美团单车, 노랑), 디디 칭쥐(青桔, 초록) — 쉽게 알아볼 수 있음.",
           "<strong>고속철도(高铁)</strong>: 도시 간 이동용. 12306.cn에서 예약(영문판 지원). 외국 여권 가능. 시속 300+km. 상하이~베이징: 4.5시간. 성수기 1-2주 전 예약.",
           "<strong>기타 차량 호출</strong>: 차오차오(曹操出行) — 프리미엄 차량. T3(T3出行) — 국유 자동차 회사 지원. 일부 도시 영어 지원."
+        ],
+        "links": [
+          {
+            "key": "didiglobal",
+            "label": "DiDi"
+          },
+          {
+            "key": "railway12306",
+            "label": "12306 (Railway)"
+          },
+          {
+            "key": "amap",
+            "label": "Amap / Baidu Maps"
+          }
         ]
       }
     },
